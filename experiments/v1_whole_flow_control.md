@@ -30,6 +30,14 @@ The controller does **not** receive seed, paired difference, terminal reward, or
 | largest improvement | +3,854 |
 | largest worsening | -17,149 |
 
+These values were checked against the successful V1 Run artifact from the private research repository.
+
+## Consistency note
+
+V1 describes its Flow horizon as `24 agent observations`. The implementation uses `deque(maxlen=DAY_CALLS + 1)` and reads `history[0]`; after warmup this produces an effective comparison distance of 25 observations. The recorded V1 result belongs to that implementation and is therefore retained unchanged rather than silently corrected after the fact.
+
+A true 24-observation horizon, if tested, must be treated as a new experiment rather than a reinterpretation of V1.
+
 ## Observation
 
 The action path exists:
