@@ -39,6 +39,12 @@ Runtime では seed、paired difference、terminal reward、future State を制�
 - max improvement: `+3854`
 - max worsening: `-17149`
 
+この数値は private 側の成功済み V1 Run artifact と照合済みです。
+
+### V1 実装上の注記
+
+V1 は Flow horizon を「24 agent observations」と記述していますが、実装では `deque(maxlen=DAY_CALLS + 1)` と `history[0]` を組み合わせているため、warmup 後の比較距離は実質 25 observations になります。V1 の結果はこの実装で得られた観測事実として保持し、結果を書き換えるための後付け修正は行いません。次版で horizon を再定義する場合は別実験として扱います。
+
 したがって、全体Flow制御という上位設計は保持しつつ、局所原因掘りには戻らず Relation Flow 表現 / 作用写像を再設計します。
 
 ## 公開方針
@@ -52,8 +58,9 @@ Runtime では seed、paired difference、terminal reward、future State を制�
 Python 3.11 + `kaggle-environments` を想定しています。
 
 ```bash
-pip install kaggle-environments
+pip install -r requirements.txt
+bash scripts/fetch_opponent.sh
 python run_whole_flow_control.py
 ```
 
-比較対象の opponent は `opponents/seyamalam_v21.py` に置く想定です。公開スナップショットでは opponent 本体は同梱せず、元リポジトリの固定 revision を利用します。
+比較対象の opponent は `opponents/seyamalam_v21.py` に置きます。opponent 本体は同梱せず、`scripts/fetch_opponent.sh` が元リポジトリの固定 revision を取得します。
