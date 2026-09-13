@@ -1,0 +1,53 @@
+name: Pattern Mining v1 Observation 24
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - PATTERN_MINING_V1_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: |
+          python -m py_compile pattern_mining_observer.py run_pattern_mining_v1.py \
+            g15_agent.py g16_agent.py g17_agent.py strong_origin_body.py \
+            origin_context_integrator.py origin_role_reader.py role_reentry_bridge.py \
+            strong_origin.py g8_agent.py g7_agent.py agent.py x_engine.py
+      - name: Run observation batch
+        run: python run_pattern_mining_v1.py
+      - name: Validate observation boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('pattern_mining_v1_observation24.json').read_text())
+          assert d['schema'] == 'kaggriculture.relation-flow-pattern-mining.v1.observation24'
+          assert len(d['cases']) == 24
+          assert d['control_added'] is False
+          assert d['causal_attribution'] is False
+          assert d['summary']['all_bundles_result_blind'] is True
+          assert all(c['pattern_bundle']['constructed_without_terminal'] for c in d['cases'])
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pattern-mining-v1-observation24
+          path: pattern_mining_v1_observation24.json
