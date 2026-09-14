@@ -1,1 +1,1 @@
-trigger: fresh seeds 3288-3311
+trigger: fresh seeds 3288-3311 retry after market-key fix
