@@ -1,0 +1,53 @@
+name: Full v1 Opponent Action Shadow
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [strong-origin-g5-port]
+    paths:
+      - observe_full_v1_opponent_action.py
+      - full_strong_origin_v1.py
+      - strong_origin_g5_roi.py
+      - strong_origin_g5.py
+      - g8_agent.py
+      - .github/workflows/full-v1-opponent-action-shadow.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile observer
+        run: python -m py_compile observe_full_v1_opponent_action.py full_strong_origin_v1.py strong_origin_g5_roi.py strong_origin_g5.py g8_agent.py x_engine.py
+      - name: Run opponent action observation
+        run: python observe_full_v1_opponent_action.py
+      - name: Validate result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('full_v1_opponent_action_shadow.json').read_text())
+          assert d['schema'] == 'kaggriculture.full-v1-opponent-action-shadow.v1'
+          assert len(d['cases']) == 5
+          assert d['observer_only'] is True
+          assert d['agent_mutated'] is False
+          for row in d['cases']:
+              print(row['seed'], {t:v['different'] for t,v in row['opponent_action_diffs'].items()})
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: full-v1-opponent-action-shadow
+          path: full_v1_opponent_action_shadow.json
