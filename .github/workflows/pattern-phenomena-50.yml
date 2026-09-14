@@ -1,0 +1,55 @@
+name: Pattern Phenomena 50
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - PATTERN_PHENOMENA_50_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: |
+          python -m py_compile run_pattern_phenomena_50.py run_pattern_validation_v1.py \
+            run_pattern_mining_v1.py pattern_mining_observer.py \
+            g15_agent.py g16_agent.py g17_agent.py strong_origin_body.py \
+            origin_context_integrator.py origin_role_reader.py role_reentry_bridge.py \
+            strong_origin.py g8_agent.py g7_agent.py agent.py x_engine.py
+      - name: Run 50-match phenomenon observation
+        run: python run_pattern_phenomena_50.py
+      - name: Validate boundaries
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('pattern_phenomena_50_3312_3361.json').read_text())
+          assert d['schema'] == 'kaggriculture.relation-flow-phenomena50.v1'
+          assert d['observation_seed_range'] == '3312-3361'
+          assert len(d['cases']) == 50
+          s = d['summary']
+          assert s['definitions_frozen_before_batch'] is True
+          assert s['terminal_used_to_define_components'] is False
+          assert s['control_added'] is False
+          print(s)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pattern-phenomena-50-3312-3361
+          path: pattern_phenomena_50_3312_3361.json
