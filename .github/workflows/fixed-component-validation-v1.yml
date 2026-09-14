@@ -1,0 +1,53 @@
+name: Fixed Component Validation v1
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - FIXED_COMPONENT_VALIDATION_V1_RUN
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: |
+          python -m py_compile run_pattern_validation_v1.py run_pattern_mining_v1.py pattern_mining_observer.py \
+            g15_agent.py g16_agent.py g17_agent.py strong_origin_body.py \
+            origin_context_integrator.py origin_role_reader.py role_reentry_bridge.py \
+            strong_origin.py g8_agent.py g7_agent.py agent.py x_engine.py
+      - name: Run fresh-seed validation
+        run: python run_pattern_validation_v1.py
+      - name: Validate boundaries
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('pattern_validation_v1_3288_3311.json').read_text())
+          assert d['schema'] == 'kaggriculture.relation-flow-fixed-components.validation24.v1'
+          assert d['validation_seed_range'] == '3288-3311'
+          assert len(d['cases']) == 24
+          assert d['definitions_frozen_before_validation'] is True
+          assert d['terminal_used_to_define_components'] is False
+          assert d['control_added'] is False
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fixed-component-validation-v1-3288-3311
+          path: pattern_validation_v1_3288_3311.json
