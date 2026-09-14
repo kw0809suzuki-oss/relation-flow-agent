@@ -41,8 +41,8 @@ def relation_series(bundle, self_key, opp_key):
 
 def component_events(bundle):
     p = bundle["series_patterns"]
-    t_melon_price = transitions(p["market.MELON.price"])
-    t_melon_inv = transitions(p["market.MELON.inventory"])
+    t_melon_price = transitions(p["market.prices.MELON"])
+    t_melon_inv = transitions(p["market.inventory.MELON"])
     t_opp_active = transitions(p["opponent.active_tiles"])
     t_self_active = transitions(p["self.active_tiles"])
     t_self_cow = transitions(p["self.animals.COW"])
