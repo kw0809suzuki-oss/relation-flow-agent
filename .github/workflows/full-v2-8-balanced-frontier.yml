@@ -1,0 +1,43 @@
+name: Full v2.8 Balanced Frontier
+
+on:
+  push:
+    paths:
+      - 'run_full_v2_8_balanced_frontier.py'
+      - '.github/workflows/full-v2-8-balanced-frontier.yml'
+  workflow_dispatch:
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile run_full_v2_8_balanced_frontier.py full_strong_origin_v2_6_fat_sweep.py full_strong_origin_v2_1_zero_detour.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run balanced frontier sweep
+        run: python run_full_v2_8_balanced_frontier.py
+      - name: Validate result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('full_v2_8_balanced_frontier_result.json').read_text())
+          assert d['schema']=='kaggriculture.full-v2-8-balanced-frontier.v1'
+          assert d['causal_attribution'] is False
+          assert len(d['configs'])==9
+          assert len(d['same_seed_cases'])==8
+          print(d['pareto_frontier'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: full-v2-8-balanced-frontier-result
+          path: full_v2_8_balanced_frontier_result.json
