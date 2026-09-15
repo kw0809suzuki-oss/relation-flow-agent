@@ -1,0 +1,41 @@
+name: Full v1 Scatter Boundary
+on:
+  push:
+    paths:
+      - 'observe_full_v1_scatter_boundary.py'
+      - '.github/workflows/full-v1-scatter-boundary.yml'
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile observer
+        run: python -m py_compile observe_full_v1_scatter_boundary.py full_strong_origin_v1.py strong_origin_g5_roi.py strong_origin_g5.py g8_agent.py x_engine.py
+      - name: Run scatter boundary observation
+        run: python observe_full_v1_scatter_boundary.py
+      - name: Validate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('full_v1_scatter_boundary.json').read_text())
+          assert d['observer_only'] and not d['agent_mutated']
+          assert not d['terminal_read'] and not d['margin_read']
+          assert not d['distance_metric_used']
+          assert len(d['cases'])==5
+          print([(x['seed'],x['action72']['self_equal'],x['action72']['opponent_equal']) for x in d['cases']])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: full-v1-scatter-boundary
+          path: full_v1_scatter_boundary.json
