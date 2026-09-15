@@ -1,0 +1,54 @@
+name: Full v2.1 Zero Detour Pair
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [strong-origin-g5-port]
+    paths:
+      - full_strong_origin_v2_1_zero_detour.py
+      - run_full_v2_1_zero_detour_pair.py
+      - full_strong_origin_v1.py
+      - g8_agent.py
+      - strong_origin_g5.py
+      - strong_origin_g5_roi.py
+      - .github/workflows/full-v2-1-zero-detour-pair.yml
+  workflow_dispatch:
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile full_strong_origin_v2_1_zero_detour.py run_full_v2_1_zero_detour_pair.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run fresh-50 paired evaluation
+        run: python run_full_v2_1_zero_detour_pair.py
+      - name: Validate result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('full_v2_1_zero_detour_pair_result.json').read_text())
+          assert d['schema'] == 'kaggriculture.full-v2-1-zero-detour-pair.v1'
+          assert len(d['cases']) == 50
+          assert d['baseline_mutated'] is False
+          assert d['result_used_to_define_candidate'] is False
+          assert d['causal_attribution'] is False
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: full-v2-1-zero-detour-pair-result
+          path: full_v2_1_zero_detour_pair_result.json
