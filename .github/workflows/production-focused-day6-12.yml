@@ -1,0 +1,48 @@
+name: Production Focused Day6-12
+
+on:
+  push:
+    branches: [strong-origin-g5-port]
+    paths:
+      - 'run_production_focused_day6_12.py'
+      - '.github/workflows/production-focused-day6-12.yml'
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile run_production_focused_day6_12.py production_agent_v1.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run focused comparison
+        run: python run_production_focused_day6_12.py
+      - name: Validate observation boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('production_focused_day6_12.json').read_text())
+          assert d['schema']=='kaggriculture.production-focused-day6-12.v1'
+          assert d['summary']['case_count']==50
+          assert d['observer_only'] is True
+          assert d['bundle_used_for_control'] is False
+          assert d['relation_used_for_control'] is False
+          assert d['flow_used_for_control'] is False
+          assert d['terminal_attached_after_trace'] is True
+          assert d['window']=={'day_min':6,'day_max':12}
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-focused-day6-12
+          path: production_focused_day6_12.json
