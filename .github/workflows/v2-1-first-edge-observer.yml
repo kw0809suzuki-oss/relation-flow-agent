@@ -1,0 +1,44 @@
+name: V2.1 First Edge Observer
+
+on:
+  push:
+    branches: [strong-origin-g5-port]
+    paths:
+      - observe_v2_1_first_edge.py
+      - .github/workflows/v2-1-first-edge-observer.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile observe_v2_1_first_edge.py full_strong_origin_v2_1_zero_detour.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Observe first edge
+        run: python observe_v2_1_first_edge.py
+      - name: Validate result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('v2_1_first_edge_observer_result.json').read_text())
+          assert d['schema']=='kaggriculture.v2-1-first-edge-observer.v1'
+          assert len(d['rows'])==50
+          assert d['observer_only'] is True
+          assert d['agent_mutated'] is False
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v2-1-first-edge-observer-result
+          path: v2_1_first_edge_observer_result.json
