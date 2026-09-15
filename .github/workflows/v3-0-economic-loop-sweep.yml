@@ -1,0 +1,47 @@
+name: V3.0 Economic Loop Sweep
+
+on:
+  push:
+    branches: [ strong-origin-g5-port ]
+    paths:
+      - 'run_v3_0_economic_loop_sweep.py'
+      - '.github/workflows/v3-0-economic-loop-sweep.yml'
+  workflow_dispatch:
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile run_v3_0_economic_loop_sweep.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run economic-loop sweep
+        run: python run_v3_0_economic_loop_sweep.py
+      - name: Validate result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('v3_0_economic_loop_sweep_result.json').read_text())
+          assert d['schema']=='kaggriculture.v3-0-economic-loop-sweep.v1'
+          assert d['observation_boundary']['bundle_used_for_control'] is False
+          assert d['observation_boundary']['relation_used_for_control'] is False
+          assert d['observation_boundary']['flow_used_for_control'] is False
+          assert len(d['same_seed_cases'])==12
+          assert len(d['results'])==6
+          print('boundary ok')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v3-0-economic-loop-sweep-result
+          path: v3_0_economic_loop_sweep_result.json
