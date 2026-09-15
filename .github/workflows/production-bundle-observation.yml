@@ -1,0 +1,47 @@
+name: Production Bundle Observation
+
+on:
+  push:
+    branches: [ strong-origin-g5-port ]
+    paths:
+      - 'production_bundle_observer.py'
+      - 'run_production_bundle_observation.py'
+      - '.github/workflows/production-bundle-observation.yml'
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile production_bundle_observer.py run_production_bundle_observation.py production_agent_v1.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run production Bundle observation
+        run: python run_production_bundle_observation.py
+      - name: Validate observation boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('production_bundle_observation_result.json').read_text())
+          assert d['schema']=='kaggriculture.production-bundle-observation.v1'
+          assert len(d['cases'])==12
+          assert d['boundary']['bundle_used_for_control'] is False
+          assert d['boundary']['terminal_used_to_construct_bundle'] is False
+          assert d['summary']['all_bundles_result_blind'] is True
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-bundle-observation-result
+          path: production_bundle_observation_result.json
