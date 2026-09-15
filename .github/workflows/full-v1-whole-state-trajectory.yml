@@ -1,0 +1,44 @@
+name: Full v1 Whole State Trajectory
+on:
+  push:
+    branches: [strong-origin-g5-port]
+    paths:
+      - 'observe_full_v1_whole_state_trajectory.py'
+      - '.github/workflows/full-v1-whole-state-trajectory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile observer
+        run: python -m py_compile observe_full_v1_whole_state_trajectory.py full_strong_origin_v1.py strong_origin_g5_roi.py strong_origin_g5.py g8_agent.py x_engine.py
+      - name: Run Whole State trajectory observation
+        run: python observe_full_v1_whole_state_trajectory.py
+      - name: Validate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('full_v1_whole_state_trajectory.json').read_text())
+          assert d['observer_only'] and not d['agent_mutated']
+          assert not d['terminal_read'] and not d['margin_read']
+          assert len(d['cases'])==5
+          assert len(d['cross_seed'])==15
+          print([(x['turn'],x['group_count'],x['groups']) for x in d['cross_seed']])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: full-v1-whole-state-trajectory
+          path: full_v1_whole_state_trajectory.json
