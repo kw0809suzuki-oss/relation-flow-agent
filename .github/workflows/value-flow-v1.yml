@@ -1,0 +1,29 @@
+name: Value Flow observer v1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [scale-chassis-v1]
+    paths:
+      - analyze_value_flow_v1.py
+      - export_scale_baseline_v1.py
+      - .github/workflows/value-flow-v1.yml
+
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - name: Reproduce baseline observations
+        run: python export_scale_baseline_v1.py
+      - name: Observe six-stage value flow
+        run: python analyze_value_flow_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: value-flow-v1
+          path: value_flow_v1.json
