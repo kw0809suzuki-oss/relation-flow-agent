@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fresh10 paired evaluation: v7 release-after-plant vs v6 Bridge1.
+"""Fresh10 replication: v7 release-after-plant vs v6 Bridge1.
 Bundle is comparison-only. Terminal is applied after observation.
 """
 import copy, json, statistics
@@ -10,7 +10,7 @@ import production_agent_v6_bridge1 as baseline_agent
 import production_agent_v7_release_after_plant as candidate_agent
 
 OPPONENT="opponents/seyamalam_v21.py"
-CASES=tuple((seed,(seed-4082)%2) for seed in range(4082,4092))
+CASES=tuple((seed,(seed-4092)%2) for seed in range(4092,4102))
 MAINT={"NORTH","SOUTH","EAST","WEST","WATER","FEED","CARE","PICKUP","DROP"}
 PROD={"PLANT","HARVEST","PLACE","BUILD_PASTURE","COLLECT_FERTILIZER","DIG"}
 
