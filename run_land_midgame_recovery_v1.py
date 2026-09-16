@@ -26,7 +26,10 @@ def main():
     for seed, seat in CASES:
         result = play(seed, seat)
         observations = [ScaleObservation(**row) for row in result["observations"]]
-        observed = [w for w in land_recovery_windows(observations, max_days=5) if w.start_day >= 8]
+        observed = [
+            w for w in land_recovery_windows(observations, window_days=5)
+            if w.expansion_day >= 8
+        ]
         cases.append({
             "seed": seed,
             "seat": seat,
