@@ -1,0 +1,45 @@
+name: Production v10 External Scale Pair
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'production_agent_v10_external_scale.py'
+      - 'run_production_agent_v10_external_scale_pair.py'
+      - '.github/workflows/production-v10-external-scale-pair.yml'
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile production_agent_v10_external_scale.py run_production_agent_v10_external_scale_pair.py production_agent_v6_bridge1.py production_agent_v3_expansion_bridge.py production_agent_v2_capacity_bridge.py production_agent_v1.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run paired evaluation
+        run: python run_production_agent_v10_external_scale_pair.py
+      - name: Validate boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('production_agent_v10_external_scale_pair_result.json').read_text())
+          assert d['summary']['cases']==10
+          b=d['evaluation_boundary']
+          assert b['terminal_only_for_adoption'] is True
+          assert b['bundle_not_inspected'] is True
+          assert b['component_attribution'] is False
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-v10-external-scale-pair
+          path: production_agent_v10_external_scale_pair_result.json
