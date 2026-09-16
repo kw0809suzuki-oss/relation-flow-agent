@@ -13,7 +13,7 @@ at day >= 8 and measure up to five following days while the added LAND remains.
 import json
 from pathlib import Path
 
-from export_scale_baseline_v1 import run_case
+from export_scale_baseline_v1 import play
 from scale_roi_observer import ScaleObservation, land_recovery_windows
 
 # Fresh, disjoint from the previous 4092-4101 baseline set.
@@ -24,7 +24,7 @@ def main():
     cases = []
     windows = []
     for seed, seat in CASES:
-        result = run_case(seed, seat)
+        result = play(seed, seat)
         observations = [ScaleObservation(**row) for row in result["observations"]]
         observed = [w for w in land_recovery_windows(observations, max_days=5) if w.start_day >= 8]
         cases.append({
