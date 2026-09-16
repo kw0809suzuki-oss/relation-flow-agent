@@ -1,0 +1,46 @@
+name: Production v3 Expansion Bridge Pair
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'production_agent_v3_expansion_bridge.py'
+      - 'run_production_agent_v3_expansion_bridge_pair.py'
+      - '.github/workflows/production-v3-expansion-bridge-pair.yml'
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile production_agent_v3_expansion_bridge.py run_production_agent_v3_expansion_bridge_pair.py production_agent_v2_capacity_bridge.py production_agent_v1.py full_strong_origin_v1.py g8_agent.py strong_origin_g5.py strong_origin_g5_roi.py x_engine.py
+      - name: Run paired evaluation
+        run: python run_production_agent_v3_expansion_bridge_pair.py
+      - name: Validate observation boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('production_agent_v3_expansion_bridge_pair_result.json').read_text())
+          assert d['summary']['cases']==50
+          b=d['observation_boundary']
+          assert b['bundle_used_for_control'] is False
+          assert b['relation_used_for_control'] is False
+          assert b['flow_used_for_control'] is False
+          assert b['causal_attribution'] is False
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-v3-expansion-bridge-pair
+          path: production_agent_v3_expansion_bridge_pair_result.json
