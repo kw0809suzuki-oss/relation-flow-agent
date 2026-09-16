@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fresh10 paired evaluation: v6 bridge1 vs frozen v3.
+"""Second fresh10 paired evaluation: v6 bridge1 vs frozen v3.
 
 Bundle is comparison-only. Terminal is applied after observation.
 """
@@ -16,7 +16,7 @@ import production_agent_v3_expansion_bridge as baseline_agent
 import production_agent_v6_bridge1 as candidate_agent
 
 OPPONENT = "opponents/seyamalam_v21.py"
-CASES = tuple((seed, (seed - 4062) % 2) for seed in range(4062, 4072))
+CASES = tuple((seed, (seed - 4072) % 2) for seed in range(4072, 4082))
 
 MAINT = {"NORTH","SOUTH","EAST","WEST","WATER","FEED","CARE","PICKUP","DROP"}
 PROD = {"PLANT","HARVEST","PLACE","BUILD_PASTURE","COLLECT_FERTILIZER","DIG"}
