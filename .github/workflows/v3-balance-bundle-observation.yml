@@ -1,0 +1,44 @@
+name: V3 Balance Bundle Observation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'run_v3_balance_bundle_observation.py'
+      - '.github/workflows/v3-balance-bundle-observation.yml'
+
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: python -m py_compile run_v3_balance_bundle_observation.py production_agent_v3_expansion_bridge.py
+      - name: Observe
+        run: python run_v3_balance_bundle_observation.py
+      - name: Validate boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('v3_balance_bundle_observation.json').read_text())
+          assert d['summary']['cases']==10
+          assert d['observation_only'] is True
+          assert d['bundle_semantics_added'] is False
+          assert d['bundle_used_for_control'] is False
+          assert d['terminal_applied_after_observation'] is True
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v3-balance-bundle-observation
+          path: v3_balance_bundle_observation.json
