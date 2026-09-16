@@ -50,23 +50,42 @@ def _count_animals(farm: Dict[str, Any]):
             return sum(int(v) for v in value.values() if isinstance(v, (int, float)))
         if isinstance(value, (int, float)):
             return int(value)
-    return None
+    # Kaggriculture exposes placed animals on public farm tiles.
+    count = 0
+    seen_tiles = False
+    for row in farm.get("tiles", []) or []:
+        for tile in row or []:
+            if isinstance(tile, dict):
+                seen_tiles = True
+                if tile.get("animal"):
+                    count += 1
+    return count if seen_tiles else None
 
 
-def _inventory_value(private: Dict[str, Any], prices: Dict[str, Any]):
-    inventory = private.get("inventory") or private.get("products")
-    if not isinstance(inventory, dict):
-        return None
+def _product_stock_value(private: Dict[str, Any], prices: Dict[str, Any]):
+    """Value observable harvested product across shed + carried inventories.
+
+    The Kaggriculture private schema is shed/seeds/inventories.  The old observer
+    looked for non-existent inventory/products keys, making production appear
+    unobservable.  Summing shed and carried inventories also avoids false changes
+    caused only by PICKUP/DROP transfers.  Only keys with a market sale price are
+    valued, so animals waiting in the shed are not mistaken for production.
+    """
+    stores = [private.get("shed", {}) or {}]
+    stores.extend(private.get("inventories", []) or [])
     total = 0.0
     seen = False
-    for key, amount in inventory.items():
-        if not isinstance(amount, (int, float)):
+    for store in stores:
+        if not isinstance(store, dict):
             continue
-        price = prices.get(key)
-        if isinstance(price, (int, float)):
-            total += float(amount) * float(price)
-            seen = True
-    return total if seen else None
+        for key, amount in store.items():
+            if not isinstance(amount, (int, float)):
+                continue
+            price = prices.get(key)
+            if isinstance(price, (int, float)):
+                total += float(amount) * float(price)
+                seen = True
+    return total if seen else 0.0
 
 
 def _snapshot(obs: Dict[str, Any]) -> Dict[str, Any]:
@@ -80,7 +99,7 @@ def _snapshot(obs: Dict[str, Any]) -> Dict[str, Any]:
         "land": len(farm.get("unlocked_quadrants", [])),
         "hands": len(farm.get("hands", [])),
         "animals": _count_animals(farm),
-        "inventory_value": _inventory_value(private, prices),
+        "inventory_value": _product_stock_value(private, prices),
     }
 
 
@@ -145,8 +164,9 @@ def main():
         "cases": results,
         "notes": [
             "repair run uses the known whole-flow comparison cases before returning to Scale Chassis",
+            "produced_value is observable harvested-product stock value across shed + carried inventories at current prices; it is descriptive stock, not causal production attribution",
             "collected_value is realized positive daily money delta, not causal profit attribution",
-            "animals/produced_value remain null when unavailable; no value is guessed",
+            "animals are counted from placed public farm tiles when no aggregate animal field exists",
         ],
     }
     Path("scale_baseline_v1.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
