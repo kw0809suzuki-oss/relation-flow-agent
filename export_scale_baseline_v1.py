@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Export v6-only observations for Scale Chassis ROI estimation.
+"""Export observations from the existing whole-flow OFF baseline for Scale Chassis.
 
-This exporter does not alter policy. It wraps the existing agent, records only
-state fields that are observable at runtime, and writes one daily row per game.
-Unknown/unavailable dimensions are kept explicit instead of guessed.
+This exporter does not alter the baseline policy. It reproduces the baseline
+configuration already used by run_whole_flow_control.py, records only runtime
+observable state fields, and keeps unavailable dimensions explicit.
 """
 
 import json
+import os
 from pathlib import Path
 from typing import Any, Dict, List
 
 from kaggle_environments import make
 
-import agent as v6
+import whole_flow_control_agent as v6
 
 
 OPPONENT = "opponents/seyamalam_v21.py"
@@ -22,8 +23,24 @@ DEFAULT_CASES = (
 )
 
 
+def _configure_baseline():
+    """Match the OFF baseline used by run_whole_flow_control.py."""
+    os.environ["ORIGIN_GATE_POLARITY"] = "inverted"
+    os.environ["ORIGIN_GATE_MAGNITUDE"] = "0.04"
+    os.environ["G15_CONNECT_OPPONENT_FIELD_DESCRIPTION"] = "1"
+    os.environ["G15_ADAPTIVE_W_AMPLITUDE"] = "1"
+    os.environ["G15_REMOVE_R_RELATION"] = "0"
+    os.environ["G15_REMOVE_E_RELATION"] = "0"
+    os.environ["G15_REMOVE_W_RELATION"] = "0"
+    os.environ["G15_DISABLE_RESONANCE_CONTROL"] = "0"
+    os.environ["ORIGIN_CROP_COMMITMENT"] = "1"
+    v6.set_control_enabled(False)
+    v6.set_probe_enabled(True)
+    v6.set_attribution_enabled(True)
+    v6.reset_telemetry()
+
+
 def _count_animals(farm: Dict[str, Any]):
-    # Kaggriculture schemas used across experiments have varied. Do not infer.
     for key in ("animals", "livestock"):
         value = farm.get(key)
         if isinstance(value, list):
@@ -36,7 +53,6 @@ def _count_animals(farm: Dict[str, Any]):
 
 
 def _inventory_value(private: Dict[str, Any], prices: Dict[str, Any]):
-    # Conservative proxy for value already produced but not yet collected as cash.
     inventory = private.get("inventory") or private.get("products")
     if not isinstance(inventory, dict):
         return None
@@ -68,8 +84,7 @@ def _snapshot(obs: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def play(seed: int, seat: int) -> Dict[str, Any]:
-    v6.reset_trace()
-    v6.reset_telemetry()
+    _configure_baseline()
     env = make("kaggriculture", configuration={"seed": seed}, debug=False)
     snapshots: List[Dict[str, Any]] = []
     last_day = None
@@ -89,8 +104,6 @@ def play(seed: int, seat: int) -> Dict[str, Any]:
     env.run(players)
     rewards = [state.reward for state in env.state]
 
-    # Derive realized daily cash collection from money deltas only; production is
-    # kept separate/unknown unless observable. Negative deltas are not collection.
     rows = []
     prev_money = None
     for snap in snapshots:
@@ -126,15 +139,23 @@ def main():
     results = [play(seed, seat) for seed, seat in DEFAULT_CASES]
     payload = {
         "schema": "kaggriculture.scale-chassis-baseline.v1",
+        "baseline_identity": "whole_flow_control_agent with control OFF; existing G15/G16/G17 baseline configuration",
         "policy_mutated": False,
         "cases": results,
         "notes": [
+            "configuration mirrors run_whole_flow_control.py OFF baseline",
             "collected_value is realized positive daily money delta, not causal profit attribution",
             "animals/produced_value remain null when unavailable; no value is guessed",
         ],
     }
     Path("scale_baseline_v1.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("SCALE_BASELINE_V1 " + json.dumps({"cases": len(results)}, separators=(",", ":")))
+    summary = {
+        "cases": len(results),
+        "mean_self": sum(row["terminal"]["self"] for row in results) / len(results),
+        "min_self": min(row["terminal"]["self"] for row in results),
+        "max_self": max(row["terminal"]["self"] for row in results),
+    }
+    print("SCALE_BASELINE_V1 " + json.dumps(summary, separators=(",", ":")))
 
 
 if __name__ == "__main__":
