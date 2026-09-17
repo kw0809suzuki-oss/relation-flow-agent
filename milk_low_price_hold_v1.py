@@ -8,23 +8,21 @@ import whole_flow_control_agent as v6
 
 PRICE_THRESHOLD = 180.0
 _hold_used = False
+_hold_count = 0
 
 
 def reset_experiment():
-    global _hold_used
+    global _hold_used, _hold_count
     _hold_used = False
+    _hold_count = 0
+
+
+def get_hold_count():
+    return _hold_count
 
 
 def _day(obs):
-    # Kaggriculture observations used elsewhere expose day directly; keep a
-    # conservative fallback for compatible variants.
-    if isinstance(obs, dict):
-        if "day" in obs:
-            return int(obs.get("day") or 0)
-        world = obs.get("world", {})
-        if isinstance(world, dict) and "day" in world:
-            return int(world.get("day") or 0)
-    return 0
+    return int(obs.get("day", 0)) if isinstance(obs, dict) else 0
 
 
 def _milk_price(obs):
@@ -39,7 +37,7 @@ def _is_sell_milk(action):
 
 
 def agent(obs):
-    global _hold_used
+    global _hold_used, _hold_count
     actions = v6.agent(obs)
     if _hold_used:
         return actions
@@ -49,8 +47,13 @@ def agent(obs):
     if day not in (9, 10) or price is None or price >= PRICE_THRESHOLD:
         return actions
 
-    if not any(_is_sell_milk(a) for a in actions):
+    # v6 returns a dict: {farmer, hands, market}. Only the market list contains SELLs.
+    market = actions.get("market", []) if isinstance(actions, dict) else []
+    if not any(_is_sell_milk(a) for a in market):
         return actions
 
     _hold_used = True
-    return [a for a in actions if not _is_sell_milk(a)]
+    _hold_count += 1
+    revised = dict(actions)
+    revised["market"] = [a for a in market if not _is_sell_milk(a)]
+    return revised
