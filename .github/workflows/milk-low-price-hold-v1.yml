@@ -5,6 +5,7 @@ on:
     paths:
       - milk_low_price_hold_v1.py
       - run_milk_low_price_hold_v1.py
+      - run_seed4119_money_ledger.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
@@ -18,9 +19,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Run matched A/B
-        run: python run_milk_low_price_hold_v1.py
+      - name: Run seed 4119 money ledger
+        run: python run_seed4119_money_ledger.py
       - uses: actions/upload-artifact@v4
         with:
-          name: milk-low-price-hold-v1
-          path: milk_low_price_hold_v1.json
+          name: seed4119-money-ledger
+          path: seed4119_money_ledger.json
