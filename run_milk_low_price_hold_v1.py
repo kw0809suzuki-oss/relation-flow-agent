@@ -6,7 +6,8 @@ import whole_flow_control_agent as baseline
 import milk_low_price_hold_v1 as hold
 
 OPPONENT=base.OPPONENT
-CASES=base.DEFAULT_CASES
+# Fresh, disjoint seeds; alternate seats to keep the next test cheap and direct.
+CASES=[(4102+i, i%2) for i in range(20)]
 
 
 def play(agent_fn, seed, seat, reset=None):
@@ -32,9 +33,10 @@ def main():
              "mean_margin_diff":mean("margin_diff"),"improved":sum(r["self_diff"]>0 for r in rows),
              "worsened":sum(r["self_diff"]<0 for r in rows),"equal":sum(r["self_diff"]==0 for r in rows)}
     out={"hypothesis":"one-shot hold of Day9-10 MILK sell below 180 may improve terminal self",
+         "test":"fresh20 seeds 4102-4121, alternating seats",
          "change":"remove only SELL MILK once when day in 9-10 and current MILK price <180; next turn returns to v6 normally",
          "cases":rows,"summary":summary}
     open("milk_low_price_hold_v1.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
-    print("MILK_LOW_PRICE_HOLD_V1 "+json.dumps(summary,separators=(",",":")))
+    print("MILK_LOW_PRICE_HOLD_V1_FRESH20 "+json.dumps(summary,separators=(",",":")))
 
 if __name__=="__main__": main()
