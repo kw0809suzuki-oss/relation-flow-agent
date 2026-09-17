@@ -1,0 +1,27 @@
+name: Day9-10 Window v1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [scale-chassis-v1]
+    paths:
+      - 'observe_day9_10_window_v1.py'
+      - '.github/workflows/day9-10-window-v1.yml'
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Fetch opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Observe Day9-10 open window
+        run: python observe_day9_10_window_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: day9-10-window-v1
+          path: day9_10_window_v1.json

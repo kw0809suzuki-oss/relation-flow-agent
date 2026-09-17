@@ -1,0 +1,33 @@
+name: LAND recovery window v1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [scale-chassis-v1]
+    paths:
+      - "scale_roi_observer.py"
+      - "run_land_recovery_window_v1.py"
+      - ".github/workflows/land-recovery-window-v1.yml"
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Fetch opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Export fresh v6 baseline
+        run: python export_scale_baseline_v1.py
+      - name: Evaluate LAND recovery window
+        run: python run_land_recovery_window_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: land-recovery-window-v1
+          path: |
+            scale_baseline_v1.json
+            land_recovery_window_v1.json
