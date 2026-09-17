@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Observe the Day9 hour11 value conversion transition without daily compression.
 
-Records exact pre-action MILK/WHEAT prices, market actions, and next observed money.
-Also computes the cash effect implied by listed SELL/BUY_PRODUCT actions at the
-pre-action prices. Observer only; Agent policy is unchanged.
+Records exact pre-action MILK/WHEAT prices from Kaggriculture's market.prices map,
+market actions, and next observed money. Observer only; Agent policy unchanged.
 """
 import json
 from pathlib import Path
@@ -14,20 +13,10 @@ TARGET_SEEDS = {3206, 3222, 3240, 3251, 3202, 3227, 3246, 3231}
 
 
 def price_map(obs):
-    out = {}
-    for row in (obs.get("market", []) or []):
-        if isinstance(row, dict):
-            name = row.get("name") or row.get("product") or row.get("item")
-            price = row.get("price")
-            if name is not None and isinstance(price, (int, float)):
-                out[str(name)] = float(price)
-    # Existing exporter helper is authoritative for this repo's observation schema.
-    if not out and hasattr(base, "_prices"):
-        try:
-            return {k: float(v) for k, v in base._prices(obs).items()}
-        except Exception:
-            pass
-    return out
+    # Official Kaggriculture observation schema: obs['market']['prices'].
+    market = obs.get("market", {}) or {}
+    prices = market.get("prices", {}) or {} if isinstance(market, dict) else {}
+    return {str(k): float(v) for k, v in prices.items() if isinstance(v, (int, float))}
 
 
 def listed_cash_effect(actions, prices):
@@ -93,7 +82,7 @@ def main():
         "coordinate": "AI Desk -> Day9 hour11 value conversion arrow",
         "policy_mutated": False,
         "purpose": "test whether pre-action MILK/WHEAT prices plus listed market actions account for the observed hour11 money transition",
-        "boundary": "listed_cash_effect uses pre-action observed prices and only SELL/BUY_PRODUCT actions; a residual may reflect engine pricing/order, other action costs/revenues, opponent/town/environment processing, or schema mismatch and must not be assigned causally without further observation",
+        "boundary": "listed_cash_effect uses pre-action prices; engine processes market actions sequentially and refreshes prices after transactions, so residual is expected if within-step price movement matters and must not be causally assigned without further observation",
         "rows": rows,
     }
     Path("hour11_value_transition_v1.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
