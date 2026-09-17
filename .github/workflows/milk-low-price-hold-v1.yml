@@ -1,0 +1,26 @@
+name: MILK Low Price Hold v1
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - milk_low_price_hold_v1.py
+      - run_milk_low_price_hold_v1.py
+      - .github/workflows/milk-low-price-hold-v1.yml
+  workflow_dispatch:
+jobs:
+  ab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Fetch opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Run matched A/B
+        run: python run_milk_low_price_hold_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: milk-low-price-hold-v1
+          path: milk_low_price_hold_v1.json
