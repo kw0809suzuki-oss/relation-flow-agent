@@ -1,0 +1,24 @@
+name: Divergence Band v1
+on:
+  workflow_dispatch:
+  push:
+    branches: [scale-chassis-v1]
+    paths:
+      - observe_divergence_band_v1.py
+      - .github/workflows/divergence-band-v1.yml
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python export_scale_baseline_v1.py
+      - run: python observe_divergence_band_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: divergence-band-v1
+          path: divergence_band_v1.json
