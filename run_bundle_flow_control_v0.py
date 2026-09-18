@@ -6,7 +6,7 @@ import export_scale_baseline_v1 as base
 import whole_flow_control_agent as agent
 
 OPPONENT=base.OPPONENT
-CASES=tuple((4122+i, i%2) for i in range(10))
+CASES=tuple((4142+i, i%2) for i in range(20))
 
 def play(seed,seat,enabled):
     base._configure_baseline()
@@ -41,7 +41,7 @@ def main():
     ds=[r["self_diff"] for r in rows]
     md=[r["margin_diff"] for r in rows]
     out={
-      "schema":"bundle-flow-control-v0.fresh10",
+      "schema":"bundle-flow-control-v0.fresh20",
       "objective":"terminal self money",
       "cases":rows,
       "summary":{
@@ -62,7 +62,7 @@ def main():
         "v0 changes only livestock expansion/feed-carry at the existing G15 control surface"
       ]
     }
-    open("bundle_flow_control_v0_fresh10.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
-    print("BUNDLE_FLOW_CONTROL_V0 "+json.dumps(out["summary"],separators=(",",":")))
+    open("bundle_flow_control_v0_fresh20.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
+    print("BUNDLE_FLOW_CONTROL_V0_FRESH20 "+json.dumps(out["summary"],separators=(",",":")))
 
 if __name__=="__main__": main()
