@@ -3,11 +3,12 @@ on:
   push:
     branches: [milk-low-price-hold-v1]
     paths:
-      - observe_whole_value_bundle_flow_v1.py
+      - g15_agent.py
+      - run_bundle_flow_control_v0.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  whole-value-bundle-flow:
+  bundle-flow-control-v0:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +18,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe whole Value Bundle Flow
-        run: python observe_whole_value_bundle_flow_v1.py
+      - name: Run Bundle Flow Control v0 fresh10
+        run: python run_bundle_flow_control_v0.py
       - uses: actions/upload-artifact@v4
         with:
-          name: whole-value-bundle-flow-v1
-          path: whole_value_bundle_flow_v1.json
+          name: bundle-flow-control-v0-fresh10
+          path: bundle_flow_control_v0_fresh10.json
