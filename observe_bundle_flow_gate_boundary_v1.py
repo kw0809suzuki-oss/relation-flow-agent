@@ -168,8 +168,7 @@ def main():
       "summary":{"improved":summarize(rows,"improved"),"worsened":summarize(rows,"worsened"),"equal":summarize(rows,"equal")},
       "state_features":{"improved":state_features(rows,"improved"),"worsened":state_features(rows,"worsened")},
       "boundary":"first differences are temporal observations, not causal attribution"}
-    open("bundle_flow_gate_boundary_v1.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"
-")
+    open("bundle_flow_gate_boundary_v1.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
     print("BUNDLE_FLOW_GATE_BOUNDARY_V1 "+json.dumps(out["summary"],separators=(",",":")))
     print("BUNDLE_FLOW_GATE_STATE_FEATURES "+json.dumps(out["state_features"],separators=(",",":")))
     pre=[]
