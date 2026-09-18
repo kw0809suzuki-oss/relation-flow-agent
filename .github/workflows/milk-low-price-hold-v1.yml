@@ -22,5 +22,5 @@ jobs:
         run: python run_bundle_flow_control_v0.py
       - uses: actions/upload-artifact@v4
         with:
-          name: bundle-flow-control-v0-fresh10
-          path: bundle_flow_control_v0_fresh10.json
+          name: bundle-flow-control-v0-fresh20
+          path: bundle_flow_control_v0_fresh20.json
