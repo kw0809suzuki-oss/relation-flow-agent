@@ -1,0 +1,20 @@
+name: Target Generation Boundary v1
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths: [target_generation_boundary_v1.py, .github/workflows/target-generation-boundary-v1.yml]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python target_generation_boundary_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: target-generation-boundary-v1
+          path: target_generation_boundary_v1.json
