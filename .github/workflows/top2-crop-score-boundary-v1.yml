@@ -1,0 +1,20 @@
+name: Top2 Crop Score Boundary v1
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths: [top2_crop_score_boundary_v1.py, .github/workflows/top2-crop-score-boundary-v1.yml]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python top2_crop_score_boundary_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: top2-crop-score-boundary-v1
+          path: top2_crop_score_boundary_v1.json
