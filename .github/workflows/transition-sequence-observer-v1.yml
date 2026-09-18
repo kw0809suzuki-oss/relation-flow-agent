@@ -1,0 +1,27 @@
+name: Transition Sequence Observer v1
+
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - transition_sequence_observer_v1.py
+      - .github/workflows/transition-sequence-observer-v1.yml
+  workflow_dispatch:
+
+jobs:
+  observe-transition-sequence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Fetch opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Observe transition sequence
+        run: python transition_sequence_observer_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: transition-sequence-observer-v1
+          path: transition_sequence_observer_v1.json
