@@ -43,7 +43,7 @@ def _is_new_investment(action):
     return (
         isinstance(action, (list, tuple))
         and len(action) >= 1
-        and action[0] == "BUY"
+        and isinstance(action[0], str)\n        and action[0].startswith("BUY_")
     )
 
 
