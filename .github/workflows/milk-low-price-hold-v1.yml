@@ -3,11 +3,11 @@ on:
   push:
     branches: [milk-low-price-hold-v1]
     paths:
-      - observe_pre_sell_value_formation_v1.py
+      - observe_resource_conversion_path_v1.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  pre-sell-value-formation:
+  resource-conversion-path:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +17,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe pre-sell value formation
-        run: python observe_pre_sell_value_formation_v1.py
+      - name: Observe resource conversion path
+        run: python observe_resource_conversion_path_v1.py
       - uses: actions/upload-artifact@v4
         with:
-          name: pre-sell-value-formation-v1
-          path: pre_sell_value_formation_v1.json
+          name: resource-conversion-path-v1
+          path: resource_conversion_path_v1.json
