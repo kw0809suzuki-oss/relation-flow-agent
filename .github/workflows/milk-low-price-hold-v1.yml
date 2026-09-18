@@ -3,12 +3,7 @@ on:
   push:
     branches: [milk-low-price-hold-v1]
     paths:
-      - milk_low_price_hold_v1.py
-      - run_milk_low_price_hold_v1.py
-      - run_seed4119_money_ledger.py
-      - observe_seed4119_turn599_value.py
-      - observe_seed4119_actual_state_schema_terminal.py
-      - observe_cash_flow_velocity_v0.py
+      - observe_cash_flow_wave_v1.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
@@ -22,9 +17,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe Cash Flow Velocity v0
-        run: python observe_cash_flow_velocity_v0.py
+      - name: Observe money-wave Cash Flow v1
+        run: python observe_cash_flow_wave_v1.py
       - uses: actions/upload-artifact@v4
         with:
-          name: cash-flow-velocity-v0
-          path: cash_flow_velocity_observer_v0.json
+          name: cash-flow-wave-v1
+          path: cash_flow_wave_observer_v1.json
