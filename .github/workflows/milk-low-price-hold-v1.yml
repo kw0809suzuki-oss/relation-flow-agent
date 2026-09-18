@@ -4,10 +4,11 @@ on:
     branches: [milk-low-price-hold-v1]
     paths:
       - observe_cash_flow_wave_v1.py
+      - observe_cash_flow_time_profile_v2.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  ab:
+  time-profile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +18,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe money-wave Cash Flow v1
-        run: python observe_cash_flow_wave_v1.py
+      - name: Observe Cash Flow time profile v2
+        run: python observe_cash_flow_time_profile_v2.py
       - uses: actions/upload-artifact@v4
         with:
-          name: cash-flow-wave-v1
-          path: cash_flow_wave_observer_v1.json
+          name: cash-flow-time-profile-v2
+          path: cash_flow_time_profile_v2.json
