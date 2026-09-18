@@ -3,11 +3,11 @@ on:
   push:
     branches: [milk-low-price-hold-v1]
     paths:
-      - observe_resource_conversion_path_v1.py
+      - observe_whole_value_bundle_flow_v1.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  resource-conversion-path:
+  whole-value-bundle-flow:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +17,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe resource conversion path
-        run: python observe_resource_conversion_path_v1.py
+      - name: Observe whole Value Bundle Flow
+        run: python observe_whole_value_bundle_flow_v1.py
       - uses: actions/upload-artifact@v4
         with:
-          name: resource-conversion-path-v1
-          path: resource_conversion_path_v1.json
+          name: whole-value-bundle-flow-v1
+          path: whole_value_bundle_flow_v1.json
