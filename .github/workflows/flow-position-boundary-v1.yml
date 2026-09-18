@@ -1,0 +1,27 @@
+name: Flow Position Boundary v1
+
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - flow_position_boundary_v1.py
+      - .github/workflows/flow-position-boundary-v1.yml
+  workflow_dispatch:
+
+jobs:
+  observe-flow-position:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Fetch opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Observe flow position boundary
+        run: python flow_position_boundary_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: flow-position-boundary-v1
+          path: flow_position_boundary_v1.json
