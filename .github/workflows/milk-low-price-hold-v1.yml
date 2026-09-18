@@ -3,11 +3,11 @@ on:
   push:
     branches: [milk-low-price-hold-v1]
     paths:
-      - observe_end_to_end_value_flow_v1.py
+      - observe_late_nonoverlap_value_flow_v2.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  end-to-end-value-flow:
+  late-nonoverlap-value-flow:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +17,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe end-to-end Value Flow
-        run: python observe_end_to_end_value_flow_v1.py
+      - name: Observe late non-overlap Value Flow
+        run: python observe_late_nonoverlap_value_flow_v2.py
       - uses: actions/upload-artifact@v4
         with:
-          name: end-to-end-value-flow-v1
-          path: end_to_end_value_flow_v1.json
+          name: late-nonoverlap-value-flow-v2
+          path: late_nonoverlap_value_flow_v2.json
