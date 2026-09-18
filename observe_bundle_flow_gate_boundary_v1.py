@@ -33,8 +33,10 @@ def snap(obs, action, turn, suppressed):
     return {
       "turn":turn,"day":int(obs.get("day",0)),
       "self_money":float(me.get("money",0)),"opp_money":float(opp.get("money",0)),
-      "self_hands":len(me.get("hands",[])),"self_land":len(me.get("unlocked_quadrants",[])),\n      "self_cows":sum(1 for a in (me.get("animals",[]) or []) if isinstance(a,dict) and a.get("type")=="COW"),
-      "opp_hands":len(opp.get("hands",[])),"opp_land":len(opp.get("unlocked_quadrants",[])),\n      "opp_cows":sum(1 for a in (opp.get("animals",[]) or []) if isinstance(a,dict) and a.get("type")=="COW"),
+      "self_hands":len(me.get("hands",[])),"self_land":len(me.get("unlocked_quadrants",[])),
+      "self_cows":sum(1 for a in (me.get("animals",[]) or []) if isinstance(a,dict) and a.get("type")=="COW"),
+      "opp_hands":len(opp.get("hands",[])),"opp_land":len(opp.get("unlocked_quadrants",[])),
+      "opp_cows":sum(1 for a in (opp.get("animals",[]) or []) if isinstance(a,dict) and a.get("type")=="COW"),
       "stock":product_stock(obs),
       "market_prices":{k:market.get("prices",{}).get(k) for k in PRODUCTS},
       "market_inventory":{k:market.get("inventory",{}).get(k) for k in PRODUCTS},
@@ -113,7 +115,8 @@ def analyze(seed,seat):
       "first_self_diff":row_at(bt,ct,self_i),
       "first_market_diff":row_at(bt,ct,market_i),
       "first_opponent_diff":row_at(bt,ct,opp_i),
-      "gate_events":gate_events,\n      "pre_first_action_diff":row_at(bt,ct,action_i-1 if action_i is not None and action_i>0 else None),
+      "gate_events":gate_events,
+      "pre_first_action_diff":row_at(bt,ct,action_i-1 if action_i is not None and action_i>0 else None),
     }
 
 def summarize(rows,cls):
@@ -148,7 +151,8 @@ def state_features(rows, cls):
               "baseline_opp_money":b["opp_money"],"control_opp_money":q["opp_money"],
               "control_wheat":q["stock"].get("WHEAT",0),
               "control_milk":q["stock"].get("MILK",0),
-              "control_fertilizer":q["stock"].get("FERTILIZER",0),\n              "control_hands":q["self_hands"],"control_land":q["self_land"],"control_cows":q["self_cows"],
+              "control_fertilizer":q["stock"].get("FERTILIZER",0),
+              "control_hands":q["self_hands"],"control_land":q["self_land"],"control_cows":q["self_cows"],
             })
         if vals:
             keys=vals[0].keys()
@@ -164,9 +168,17 @@ def main():
       "summary":{"improved":summarize(rows,"improved"),"worsened":summarize(rows,"worsened"),"equal":summarize(rows,"equal")},
       "state_features":{"improved":state_features(rows,"improved"),"worsened":state_features(rows,"worsened")},
       "boundary":"first differences are temporal observations, not causal attribution"}
-    open("bundle_flow_gate_boundary_v1.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
+    open("bundle_flow_gate_boundary_v1.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"
+")
     print("BUNDLE_FLOW_GATE_BOUNDARY_V1 "+json.dumps(out["summary"],separators=(",",":")))
-    print("BUNDLE_FLOW_GATE_STATE_FEATURES "+json.dumps(out["state_features"],separators=(",",":")))\n    pre=[]\n    for r in rows:\n        ev=r.get("pre_first_action_diff"); ad=r.get("first_action_diff")\n        if not ev or not ad: continue\n        q=ev["control"]\n        pre.append({"seed":r["seed"],"seat":r["seat"],"class":r["class"],"turn":ev["turn"],"day":ev["day"],"cash":q["self_money"],"wheat":q["stock"].get("WHEAT",0),"milk":q["stock"].get("MILK",0),"fertilizer":q["stock"].get("FERTILIZER",0),"cows":q["self_cows"],"land":q["self_land"],"hands":q["self_hands"],"opp_money":q["opp_money"],"baseline_action":ad["baseline"]["action"],"control_action":ad["control"]["action"],"terminal_self_diff":r["self_diff"],"terminal_opp_diff":r["opp_diff"],"terminal_margin_diff":r["margin_diff"]})\n    print("BUNDLE_FLOW_GATE_PRE_ACTION_ROWS "+json.dumps(pre,separators=(",",":")))
+    print("BUNDLE_FLOW_GATE_STATE_FEATURES "+json.dumps(out["state_features"],separators=(",",":")))
+    pre=[]
+    for r in rows:
+        ev=r.get("pre_first_action_diff"); ad=r.get("first_action_diff")
+        if not ev or not ad: continue
+        q=ev["control"]
+        pre.append({"seed":r["seed"],"seat":r["seat"],"class":r["class"],"turn":ev["turn"],"day":ev["day"],"cash":q["self_money"],"wheat":q["stock"].get("WHEAT",0),"milk":q["stock"].get("MILK",0),"fertilizer":q["stock"].get("FERTILIZER",0),"cows":q["self_cows"],"land":q["self_land"],"hands":q["self_hands"],"opp_money":q["opp_money"],"baseline_action":ad["baseline"]["action"],"control_action":ad["control"]["action"],"terminal_self_diff":r["self_diff"],"terminal_opp_diff":r["opp_diff"],"terminal_margin_diff":r["margin_diff"]})
+    print("BUNDLE_FLOW_GATE_PRE_ACTION_ROWS "+json.dumps(pre,separators=(",",":")))
 
 if __name__=="__main__": main()
 # workflow trigger: corrected boundary observer
