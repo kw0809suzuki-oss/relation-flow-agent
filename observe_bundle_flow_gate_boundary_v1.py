@@ -133,13 +133,39 @@ def summarize(rows,cls):
       "mean_first_opponent_diff_turn":avgturn("first_opponent_diff"),
     }
 
+def state_features(rows, cls):
+    xs=[r for r in rows if r["class"]==cls]
+    out={}
+    for label in ("first_action_diff","first_self_diff","first_market_diff","first_opponent_diff"):
+        vals=[]
+        for r in xs:
+            ev=r.get(label)
+            if not ev: continue
+            b=ev["baseline"]; q=ev["control"]
+            vals.append({
+              "turn":ev["turn"],"day":ev["day"],
+              "baseline_self_money":b["self_money"],"control_self_money":q["self_money"],
+              "baseline_opp_money":b["opp_money"],"control_opp_money":q["opp_money"],
+              "control_wheat":q["stock"].get("WHEAT",0),
+              "control_milk":q["stock"].get("MILK",0),
+              "control_fertilizer":q["stock"].get("FERTILIZER",0),
+            })
+        if vals:
+            keys=vals[0].keys()
+            out[label]={k:sum(v[k] for v in vals)/len(vals) for k in keys if k not in ("day",)}
+            out[label]["mean_day"]=sum(v["day"] for v in vals)/len(vals)
+            out[label]["n"]=len(vals)
+    return out
+
 def main():
     rows=[analyze(s,seat) for s,seat in CASES]
     out={"schema":"bundle-flow-gate-boundary.v1","policy_mutated":False,
       "cases":rows,
       "summary":{"improved":summarize(rows,"improved"),"worsened":summarize(rows,"worsened"),"equal":summarize(rows,"equal")},
+      "state_features":{"improved":state_features(rows,"improved"),"worsened":state_features(rows,"worsened")},
       "boundary":"first differences are temporal observations, not causal attribution"}
     open("bundle_flow_gate_boundary_v1.json","w",encoding="utf-8").write(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
     print("BUNDLE_FLOW_GATE_BOUNDARY_V1 "+json.dumps(out["summary"],separators=(",",":")))
+    print("BUNDLE_FLOW_GATE_STATE_FEATURES "+json.dumps(out["state_features"],separators=(",",":")))
 
 if __name__=="__main__": main()
