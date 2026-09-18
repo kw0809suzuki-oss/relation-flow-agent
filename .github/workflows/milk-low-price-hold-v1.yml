@@ -7,6 +7,7 @@ on:
       - run_milk_low_price_hold_v1.py
       - run_seed4119_money_ledger.py
       - observe_seed4119_turn599_value.py
+      - observe_seed4119_actual_state_schema_terminal.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
@@ -20,9 +21,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe seed 4119 turn599 value placement
-        run: python observe_seed4119_turn599_value.py
+      - name: Observe seed 4119 actual State schema and terminal value
+        run: python observe_seed4119_actual_state_schema_terminal.py
       - uses: actions/upload-artifact@v4
         with:
-          name: seed4119-turn599-value
-          path: seed4119_turn599_value_observer.json
+          name: seed4119-actual-state-schema-terminal
+          path: seed4119_actual_state_schema_terminal.json
