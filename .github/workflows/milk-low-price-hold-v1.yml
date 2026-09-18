@@ -5,10 +5,12 @@ on:
     paths:
       - observe_cash_flow_wave_v1.py
       - observe_cash_flow_time_profile_v2.py
+      - remaining_time_recovery_gate_v1.py
+      - run_remaining_time_recovery_gate_v1.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  time-profile:
+  remaining-time-gate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,9 +20,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe Cash Flow time profile v2
-        run: python observe_cash_flow_time_profile_v2.py
+      - name: Run Remaining Time x Recovery Time Gate v1
+        run: python run_remaining_time_recovery_gate_v1.py
       - uses: actions/upload-artifact@v4
         with:
-          name: cash-flow-time-profile-v2
-          path: cash_flow_time_profile_v2.json
+          name: remaining-time-recovery-gate-v1
+          path: remaining_time_recovery_gate_v1.json
