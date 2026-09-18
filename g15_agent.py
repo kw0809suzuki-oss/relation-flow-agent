@@ -40,6 +40,8 @@ def reset_telemetry():
         "origin_gate_scaled_turns": 0, "origin_gate_scale_sum": 0.0,
         "adaptive_w_sum": 0.0, "adaptive_w_min": 1.0, "adaptive_w_turns": 0,
         "opponent_phase_counts": {}, "opponent_phase_transitions": [], "last_opponent_phase": None,
+        "bundle_flow_v0_turns": 0, "bundle_flow_v0_suppressed_expansions": 0,
+        "bundle_flow_v0_supported_turns": 0,
     }
 
 
@@ -80,6 +82,9 @@ def get_telemetry():
         "adaptive_w_turns": _stats.get("adaptive_w_turns", 0),
         "opponent_phase_counts": dict(_stats.get("opponent_phase_counts", {})),
         "opponent_phase_transitions": len(_stats.get("opponent_phase_transitions", [])),
+        "bundle_flow_v0_turns": _stats.get("bundle_flow_v0_turns", 0),
+        "bundle_flow_v0_suppressed_expansions": _stats.get("bundle_flow_v0_suppressed_expansions", 0),
+        "bundle_flow_v0_supported_turns": _stats.get("bundle_flow_v0_supported_turns", 0),
     })
     return base
 
@@ -297,6 +302,57 @@ def agent(obs):
         _stats["pending_event"] = len(_stats["events"])-1
     else:
         target,feed_carry,mode=min(growth_capacity,max(cows,1 if money>=1100 and remaining>=10 else 0)),2,"hold"
+
+    # Value Bundle Flow Control v0.
+    # Keep the native strategy intact; only suppress a new livestock expansion
+    # when the next cycle would consume the cash buffer or cannot fit in time.
+    # Product stock is observed separately and is never counted as current cash.
+    if os.getenv("BUNDLE_FLOW_CONTROL_V0", "0") == "1":
+        private_now = obs.get("private", {}) or {}
+        prices_now = (obs.get("market", {}) or {}).get("prices", {}) or {}
+        stores = [private_now.get("shed", {}) or {}] + list(private_now.get("inventories", []) or [])
+        bundle_value = 0.0
+        total_wheat = 0.0
+        for store in stores:
+            if not isinstance(store, dict):
+                continue
+            total_wheat += float(store.get("WHEAT", 0) or 0)
+            for item, qty in store.items():
+                price = prices_now.get(item)
+                if isinstance(qty, (int, float)) and isinstance(price, (int, float)):
+                    bundle_value += float(qty) * float(price)
+        wheat_price = max(1.0, float(prices_now.get("WHEAT", 25) or 25))
+        expansion_cost = 400.0 if target > cows else 0.0
+        next_cows = max(float(cows), float(target))
+        feed_gap = max(0.0, next_cows * 2.0 - total_wheat)
+        reinvestment_cost = expansion_cost + feed_gap * wheat_price
+        cash_after_reinvestment = float(money) - reinvestment_cost
+        remaining_fit = remaining >= 8
+        cash_fit = cash_after_reinvestment >= 900.0
+        _stats["bundle_flow_v0_turns"] += 1
+
+        if target > cows and (not remaining_fit or not cash_fit):
+            target = cows
+            feed_carry = min(feed_carry, 2)
+            _stats["bundle_flow_v0_suppressed_expansions"] += 1
+        else:
+            # When the native choice already fits the whole cycle, do not
+            # replace it.  Keep enough feed in motion to avoid starving the
+            # next value-forming leg.
+            if cows > 0 and total_wheat >= 3 and remaining >= 4 and money >= 900:
+                feed_carry = max(feed_carry, 3)
+            _stats["bundle_flow_v0_supported_turns"] += 1
+
+        connected_context["bundle_flow_v0"] = {
+            "bundle_value": round(bundle_value, 2),
+            "reinvestment_cost": round(reinvestment_cost, 2),
+            "cash_after_reinvestment": round(cash_after_reinvestment, 2),
+            "remaining_fit": bool(remaining_fit),
+            "cash_fit": bool(cash_fit),
+            "target_after": int(target),
+            "feed_carry_after": int(feed_carry),
+            "future_sale_counted_as_cash": False,
+        }
 
     g8.COW_TARGETS=((31,target),); g8.FEED_CARRY=feed_carry; g8.set_reentry_context(connected_context)
     _stats["turns"] += 1; _stats["resonance_sum"] += resonance; _stats["resonance_max"] = max(_stats["resonance_max"],resonance); _stats["growth_weight_sum"] += growth_weight; _stats["growth_weight_max"] = max(_stats["growth_weight_max"],growth_weight); _stats["adaptive_w_sum"] += w_alpha; _stats["adaptive_w_min"] = min(_stats["adaptive_w_min"],w_alpha)
