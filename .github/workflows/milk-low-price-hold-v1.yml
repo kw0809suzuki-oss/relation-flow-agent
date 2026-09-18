@@ -3,11 +3,11 @@ on:
   push:
     branches: [milk-low-price-hold-v1]
     paths:
-      - observe_late_value_flow_entry_v1.py
+      - observe_late_slow_wave_throughput_v1.py
       - .github/workflows/milk-low-price-hold-v1.yml
   workflow_dispatch:
 jobs:
-  late-value-flow-entry:
+  late-slow-throughput:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +17,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch opponent
         run: bash scripts/fetch_opponent.sh
-      - name: Observe late Value Flow entries
-        run: python observe_late_value_flow_entry_v1.py
+      - name: Observe late slow-wave throughput
+        run: python observe_late_slow_wave_throughput_v1.py
       - uses: actions/upload-artifact@v4
         with:
-          name: late-value-flow-entry-v1
-          path: late_value_flow_entry_v1.json
+          name: late-slow-wave-throughput-v1
+          path: late_slow_wave_throughput_v1.json
