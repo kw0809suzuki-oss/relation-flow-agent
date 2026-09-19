@@ -1,0 +1,24 @@
+name: COW First Purchase Suppress v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - cow_first_purchase_suppress_v0.py
+      - run_cow_first_purchase_suppress_v0.py
+      - .github/workflows/cow-first-purchase-suppress-v0.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_cow_first_purchase_suppress_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cow-first-purchase-suppress-v0
+          path: cow_first_purchase_suppress_v0.json
