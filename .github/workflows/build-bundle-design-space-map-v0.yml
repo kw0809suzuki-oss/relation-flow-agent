@@ -1,0 +1,22 @@
+name: Build Bundle Design Space Map v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - build_bundle_design_space_map_v0.py
+      - .github/workflows/build-bundle-design-space-map-v0.yml
+  workflow_dispatch:
+
+jobs:
+  build-map:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build map from existing evidence
+        run: python build_bundle_design_space_map_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bundle-design-space-map-v0
+          path: |
+            bundle_design_space_map_v0.json
+            BUNDLE_DESIGN_SPACE_MAP_V0.md
