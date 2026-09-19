@@ -1,0 +1,23 @@
+name: COW Accident First Downstream v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - cow_accident_first_downstream_v0.py
+      - .github/workflows/cow-accident-first-downstream-v0.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python cow_accident_first_downstream_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cow-accident-first-downstream-v0
+          path: cow_accident_first_downstream_v0.json
