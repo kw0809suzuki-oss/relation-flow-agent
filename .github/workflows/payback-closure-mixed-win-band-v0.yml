@@ -1,0 +1,24 @@
+name: Payback Closure Mixed Win Band v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_payback_closure_mixed_win_band_v0.py
+      - .github/workflows/payback-closure-mixed-win-band-v0.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python run_payback_closure_mixed_win_band_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: payback-closure-mixed-win-band-v0
+          path: payback_closure_mixed_win_band_v0.json
