@@ -1,0 +1,20 @@
+name: Turn108 WHEAT3 Suppress v1
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths: [turn108_wheat3_suppress_v1.py, run_turn108_wheat3_suppress_v1.py, .github/workflows/turn108-wheat3-suppress-v1.yml]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_turn108_wheat3_suppress_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: turn108-wheat3-suppress-v1
+          path: turn108_wheat3_suppress_v1.json
