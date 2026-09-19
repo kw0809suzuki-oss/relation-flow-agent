@@ -1,0 +1,30 @@
+name: External Asset Curve Compare v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_external_asset_curve_compare_v0.py
+      - .github/workflows/external-asset-curve-compare-v0.yml
+  workflow_dispatch:
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - name: Fetch pinned lonespear v18
+        run: |
+          curl -fL --retry 3 \
+            -o opponents/lonespear_v18.py \
+            https://raw.githubusercontent.com/lonespear/kaggriculture/774b26093ccf4246525517d48420349b841b6e50/main.py
+      - name: Run outside-view asset curves
+        run: python run_external_asset_curve_compare_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: external-asset-curve-compare-v0
+          path: external_asset_curve_compare_v0.json
