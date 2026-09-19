@@ -1,0 +1,23 @@
+name: Difference Propagation Observer v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - difference_propagation_observer_v0.py
+      - .github/workflows/difference-propagation-observer-v0.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python difference_propagation_observer_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: difference-propagation-observer-v0
+          path: difference_propagation_observer_v0.json
