@@ -89,6 +89,17 @@ def main():
 
     print("COW_FIRST_PURCHASE_SUPPRESS_KNOWN " + json.dumps(known["summary"], separators=(",", ":")))
     print("COW_FIRST_PURCHASE_SUPPRESS_FRESH10 " + json.dumps(fresh10["summary"], separators=(",", ":")))
+    print("COW_FIRST_PURCHASE_SUPPRESS_ROWS " + json.dumps([
+        {
+            "seed": r["seed"],
+            "seat": r["seat"],
+            "activation_count": r["activation_count"],
+            "day": (r["activations"][0].get("day") if r["activations"] else None),
+            "self_diff": r["self_diff"],
+            "margin_diff": r["margin_diff"],
+        }
+        for r in fresh10["cases"]
+    ], separators=(",", ":")))
 
 
 if __name__ == "__main__":
