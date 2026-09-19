@@ -1,0 +1,24 @@
+name: Closure Timing Bundle fresh5 v1
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - closure_timing_bundle_v1.py
+      - run_closure_timing_bundle_fresh5_v1.py
+      - .github/workflows/closure-timing-bundle-fresh5-v1.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_closure_timing_bundle_fresh5_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: closure-timing-bundle-fresh5-v1
+          path: closure_timing_bundle_fresh5_v1.json
