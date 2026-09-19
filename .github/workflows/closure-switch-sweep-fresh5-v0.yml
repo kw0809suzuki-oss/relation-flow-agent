@@ -1,0 +1,24 @@
+name: Closure Switch Sweep fresh5 v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - closure_switch_sweep_v0.py
+      - run_closure_switch_sweep_fresh5_v0.py
+      - .github/workflows/closure-switch-sweep-fresh5-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_closure_switch_sweep_fresh5_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: closure-switch-sweep-fresh5-v0
+          path: closure_switch_sweep_fresh5_v0.json
