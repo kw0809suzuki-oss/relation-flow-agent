@@ -265,6 +265,23 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
     print("DIFFERENCE_PROPAGATION_OBSERVER_V0 " + json.dumps(out["summary"], separators=(",", ":")))
+    compact = []
+    for r in rows:
+        p = r["propagation"]
+        compact.append({
+            "seed": r["seed"],
+            "seat": r["seat"],
+            "difference_turn": p.get("difference_turn"),
+            "difference_domains": p.get("difference_domains", []),
+            "persist": p.get("persist"),
+            "reachability": p.get("reachability_changed"),
+            "transformation_turn": p.get("transformation_turn"),
+            "next_difference_turn": p.get("next_difference_turn"),
+            "next_difference_domains": p.get("next_difference_domains", []),
+            "status": p.get("status"),
+            "terminal_class": r["terminal"]["class"],
+        })
+    print("DIFFERENCE_PROPAGATION_ROWS " + json.dumps(compact, separators=(",", ":")))
 
 
 if __name__ == "__main__":
