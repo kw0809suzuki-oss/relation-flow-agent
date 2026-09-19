@@ -1,0 +1,235 @@
+name: WB-0001 Kaggriculture full logs
+
+on:
+  push:
+    paths:
+      - ".github/workflows/wb0001-full-logs.yml"
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout workflow revision
+        uses: actions/checkout@v4
+
+      - name: Checkout pinned relation-flow-agent
+        uses: actions/checkout@v4
+        with:
+          ref: b3160a9e82e727627fe6659a37f0983970d4fbd8
+          path: rf
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install lightweight dependencies
+        run: python -m pip install requests jsonschema
+
+      - name: Fetch pinned Kaggle environment
+        run: |
+          python - <<'PY'
+          import urllib.request, zipfile
+          sha="b2405492c8403f6649f9317290f215e0290a2425"
+          urllib.request.urlretrieve(
+              f"https://github.com/Kaggle/kaggle-environments/archive/{sha}.zip",
+              "ke.zip",
+          )
+          with zipfile.ZipFile("ke.zip") as z:
+              z.extractall(".")
+          PY
+
+      - name: Collect three full logs
+        run: |
+          cat > /tmp/wb0001.py <<'PY'
+          import os, sys, json, gzip, copy, hashlib, datetime
+          from pathlib import Path
+
+          KE_SHA="b2405492c8403f6649f9317290f215e0290a2425"
+          RF_SHA="b3160a9e82e727627fe6659a37f0983970d4fbd8"
+          sys.path.insert(0, str(Path(f"kaggle-environments-{KE_SHA}").resolve()))
+          sys.path.insert(0, str(Path("rf").resolve()))
+
+          from kaggle_environments import make
+          import g17_agent as current
+          import agent as opponent
+
+          OUT=Path("wb0001-output")
+          OUT.mkdir(exist_ok=True)
+          SEEDS=[6105,6104,6108]
+          SEAT=0
+          FLAGS={
+              "ORIGIN_GATE_POLARITY":"inverted",
+              "ORIGIN_GATE_MAGNITUDE":"0.04",
+              "G15_CONNECT_OPPONENT_FIELD_DESCRIPTION":"1",
+              "G15_ADAPTIVE_W_AMPLITUDE":"1",
+              "G15_REMOVE_R_RELATION":"0",
+              "G15_REMOVE_E_RELATION":"0",
+              "G15_REMOVE_W_RELATION":"0",
+              "G15_DISABLE_RESONANCE_CONTROL":"0",
+              "ORIGIN_CROP_COMMITMENT":"1",
+          }
+          for k,v in FLAGS.items():
+              os.environ[k]=v
+
+          def safe(obj,name,*args):
+              f=getattr(obj,name,None)
+              return f(*args) if callable(f) else None
+
+          def count_cows(obs):
+              me=obs["farms"][obs["player"]]
+              private=obs.get("private",{})
+              shed=private.get("shed",{}) if isinstance(private,dict) else {}
+              cows=shed.get("COW",0) if isinstance(shed,dict) else 0
+              try:
+                  for row in me.get("tiles",[]):
+                      for tile in row:
+                          if isinstance(tile,dict) and tile.get("animal")=="COW":
+                              cows+=1
+              except Exception:
+                  pass
+              return int(cows)
+
+          def snapshot(trace):
+              if not isinstance(trace,dict): return {}
+              body=trace.get("observe",{}).get("body",{})
+              if not isinstance(body,dict): return {}
+              out={}
+              for k in ["mode","target","feed","origin","origin_strategy","opponent_phase",
+                        "distortion","counter_opportunity","counter_weight","resonance","probe_state"]:
+                  if k in body: out[k]=copy.deepcopy(body[k])
+              for k in ["flip_events","semantic_reversal_events","boundary_events"]:
+                  arr=body.get(k)
+                  if isinstance(arr,list) and arr:
+                      out[k+"_latest"]=copy.deepcopy(arr[-1])
+              return out
+
+          def sha256(path):
+              h=hashlib.sha256()
+              with open(path,"rb") as f:
+                  for chunk in iter(lambda:f.read(1024*1024),b""):
+                      h.update(chunk)
+              return h.hexdigest()
+
+          def dump_gz(path,obj):
+              with gzip.open(path,"wt",encoding="utf-8") as f:
+                  json.dump(obj,f,ensure_ascii=False,default=str)
+
+          results=[]
+          for seed in SEEDS:
+              safe(current,"set_probe_enabled",True)
+              safe(current,"set_attribution_enabled",True)
+              safe(current,"reset_telemetry")
+              safe(current,"reset_trace")
+              safe(opponent,"reset_telemetry")
+              safe(opponent,"reset_trace")
+              turns=[]
+
+              def observed(obs):
+                  me=obs["farms"][obs["player"]]
+                  action=current.agent(obs)
+                  trace=safe(current,"get_trace")
+                  turns.append({
+                      "turn":len(turns),
+                      "day":int(obs.get("day",-1)),
+                      "hour":int(obs.get("hour",-1)) if obs.get("hour") is not None else None,
+                      "player":int(obs.get("player",SEAT)),
+                      "money":float(me.get("money",0)),
+                      "hands":len(me.get("hands",[])),
+                      "land":len(me.get("unlocked_quadrants",[])),
+                      "cows_observed":count_cows(obs),
+                      "observation_full":copy.deepcopy(obs),
+                      "action_full":copy.deepcopy(action),
+                      "observer_snapshot":snapshot(trace),
+                  })
+                  return action
+
+              players=[opponent.agent,opponent.agent]
+              players[SEAT]=observed
+              env=make("kaggriculture",configuration={"seed":seed},debug=False)
+              env.run(players)
+              rewards=[float(s.reward) for s in env.state]
+              margin=rewards[SEAT]-rewards[1-SEAT]
+              label="WIN_STRONG" if margin>=10000 else ("CLOSE" if abs(margin)<=1500 else ("LOSS" if margin<0 else "WIN"))
+              prefix=f"seed_{seed}_{label}"
+
+              decision=OUT/f"{prefix}_decision_log.jsonl.gz"
+              with gzip.open(decision,"wt",encoding="utf-8") as f:
+                  for row in turns:
+                      f.write(json.dumps(row,ensure_ascii=False,default=str)+"\n")
+
+              steps=OUT/f"{prefix}_env_steps.json.gz"
+              dump_gz(steps,env.steps)
+
+              trace=OUT/f"{prefix}_g17_final_trace.json.gz"
+              dump_gz(trace,safe(current,"get_trace"))
+
+              telemetry=OUT/f"{prefix}_telemetry.json"
+              telemetry.write_text(json.dumps(safe(current,"get_telemetry"),ensure_ascii=False,default=str,indent=2),encoding="utf-8")
+
+              md=OUT/f"{prefix}_FULL.md"
+              with md.open("w",encoding="utf-8") as f:
+                  f.write(f"# Kaggriculture Full Decision Log | seed {seed} | {label}\n\n")
+                  f.write(f"- terminal_self: {rewards[SEAT]:.0f}\n")
+                  f.write(f"- terminal_opponent: {rewards[1-SEAT]:.0f}\n")
+                  f.write(f"- margin: {margin:+.0f}\n")
+                  f.write(f"- win: {rewards[SEAT] > rewards[1-SEAT]}\n")
+                  f.write(f"- decision_turns: {len(turns)}\n")
+                  f.write("- Current: g17_agent.agent\n- Opponent: repo agent.agent\n")
+                  f.write(f"- relation-flow-agent commit: {RF_SHA}\n- kaggle-environments commit: {KE_SHA}\n")
+                  f.write("- boundary: reference material only; not policy evidence\n\n")
+                  f.write("## All decision turns\n\n")
+                  for row in turns:
+                      f.write(f"### Turn {row['turn']:03d} | Day {row['day']} | money {row['money']:.0f} | COW {row['cows_observed']} | HANDS {row['hands']} | LAND {row['land']}\n\n")
+                      f.write("Action JSON\n\n    "+json.dumps(row["action_full"],ensure_ascii=False,default=str)+"\n\n")
+                      f.write("Observer snapshot JSON\n\n    "+json.dumps(row["observer_snapshot"],ensure_ascii=False,default=str)+"\n\n")
+
+              result={
+                  "seed":seed,"label":label,
+                  "terminal_self":rewards[SEAT],
+                  "terminal_opponent":rewards[1-SEAT],
+                  "margin":margin,
+                  "win":rewards[SEAT]>rewards[1-SEAT],
+                  "decision_turns":len(turns),
+                  "files":{}
+              }
+              for p in [md,decision,steps,trace,telemetry]:
+                  result["files"][p.name]={"bytes":p.stat().st_size,"sha256":sha256(p)}
+              result_path=OUT/f"{prefix}_result.json"
+              result_path.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
+              results.append(result)
+              print(json.dumps({k:v for k,v in result.items() if k!="files"},ensure_ascii=False))
+
+          manifest={
+              "run_id":"WB-0001",
+              "created_at_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              "purpose":"3-pattern full-log reference set",
+              "relation_flow_agent_commit":RF_SHA,
+              "kaggle_environments_commit":KE_SHA,
+              "seat":SEAT,
+              "seeds":SEEDS,
+              "environment_flags":FLAGS,
+              "results":results,
+              "boundary":"Reference material only; do not auto-promote to policy or causal evidence."
+          }
+          (OUT/"WB-0001_manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+
+          with (OUT/"INDEX.md").open("w",encoding="utf-8") as f:
+              f.write("# WB-0001 | Kaggriculture 3-pattern full-log set\n\n")
+              f.write("| seed | label | self | opponent | margin | turns |\n")
+              f.write("|---:|---|---:|---:|---:|---:|\n")
+              for r in results:
+                  f.write(f"| {r['seed']} | {r['label']} | {r['terminal_self']:.0f} | {r['terminal_opponent']:.0f} | {r['margin']:+.0f} | {r['decision_turns']} |\n")
+              f.write("\nEach seed includes FULL.md, decision_log.jsonl.gz, env_steps.json.gz, G17 final trace, telemetry, and result metadata.\n")
+              f.write("\nBoundary: reference material only; not policy evidence.\n")
+
+          print("WB0001_DONE")
+          PY
+          python /tmp/wb0001.py
+
+      - name: Upload WB-0001 bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: WB-0001-kaggriculture-3pattern-full-logs
+          path: wb0001-output/
+          retention-days: 90
