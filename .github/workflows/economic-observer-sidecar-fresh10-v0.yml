@@ -1,0 +1,25 @@
+name: Economic Observer Sidecar fresh10 v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_economic_observer_sidecar_fresh10_v0.py
+      - .github/workflows/economic-observer-sidecar-fresh10-v0.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - name: Run frozen Current model with Economic Observer sidecar
+        run: python run_economic_observer_sidecar_fresh10_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: economic-observer-sidecar-fresh10-v0
+          path: economic_observer_sidecar_fresh10_v0.json
