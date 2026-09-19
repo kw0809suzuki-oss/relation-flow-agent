@@ -1,0 +1,26 @@
+name: Closure Switch Mainline ABC v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - closure_cash_switch_candidate_v0.py
+      - run_closure_switch_mainline_abc_v0.py
+      - .github/workflows/closure-switch-mainline-abc-v0.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_stratified_opponents.sh
+      - run: python run_closure_switch_mainline_abc_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: closure-switch-mainline-abc-v0
+          path: closure_switch_mainline_abc_v0.json
