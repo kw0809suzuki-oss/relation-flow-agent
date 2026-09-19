@@ -1,0 +1,26 @@
+name: M2 Early Closure fresh5 v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - m2_early_closure_v0.py
+      - run_m2_early_closure_fresh5_v0.py
+      - .github/workflows/m2-early-closure-fresh5-v0.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - name: Run paired fresh5
+        run: python run_m2_early_closure_fresh5_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m2-early-closure-fresh5-v0
+          path: m2_early_closure_fresh5_v0.json
