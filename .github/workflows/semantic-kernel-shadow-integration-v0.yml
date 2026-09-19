@@ -1,0 +1,26 @@
+name: Semantic Kernel Shadow Integration v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - semantic_kernel_v2.py
+      - kaggriculture_production_adapter_v0.py
+      - semantic_kernel_shadow_agent_v0.py
+      - run_semantic_kernel_shadow_integration_v0.py
+      - .github/workflows/semantic-kernel-shadow-integration-v0.yml
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_semantic_kernel_shadow_integration_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: semantic-kernel-shadow-integration-v0
+          path: semantic_kernel_shadow_integration_v0_result.json
