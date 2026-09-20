@@ -1,0 +1,76 @@
+name: Decision Boundary Aftermath
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - DECISION_BOUNDARY_AFTERMATH_RUN
+  workflow_dispatch:
+
+jobs:
+  aftermath:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install pytest
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Contract tests
+        run: python -m pytest -q tests/test_boundary_aftermath.py tests/test_decision_boundaries.py tests/test_judgment_trace_bridge.py
+      - name: Run repro battle
+        run: python run_decision_boundary_repro.py
+      - name: Build aftermath input
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from judgment_trace_bridge import cycles_from_trace
+          from run_whole_flow_control_v2 import play
+          seed, seat = 3206, 0
+          candidate = play(seed, seat, True)
+          cycles = cycles_from_trace({"whole_flow": candidate["flow_trace"]})
+          def ser(c):
+              return {
+                  "observe": {"known": list(c.observe.known), "missing": list(c.observe.missing)},
+                  "choose": {"selected": c.choose.selected},
+              }
+          Path("aftermath_input.json").write_text(json.dumps({
+              "schema": "kaggriculture.judgment-aftermath-input.v1",
+              "cycles": [ser(c) for c in cycles],
+          }, indent=2) + "\n")
+          PY
+      - name: Analyze aftermath
+        run: python analyze_boundary_aftermath.py aftermath_input.json
+      - name: Validate noncausal boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('decision_boundary_aftermath.json').read_text())
+          assert d['schema'] == 'kaggriculture.decision-boundary-aftermath.v1'
+          assert d['cycle_count'] > 0
+          assert d['boundary'] == 'descriptive_only_no_causal_attribution_no_rule_promotion'
+          assert all(v['causal_attribution'] is False for v in d['aftermath'].values())
+          assert all(v['promote'] is False for v in d['aftermath'].values())
+          print({k: {
+              'transition_count': v['transition_count'],
+              'observed_count': v['observed_count'],
+              'mean': v['mean'],
+              'positive_vote_mean': v['positive_vote_mean'],
+          } for k, v in d['aftermath'].items()})
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: decision-boundary-aftermath
+          path: decision_boundary_aftermath.json
