@@ -3,3 +3,4 @@ rerun after pytest fix
 rerun after install-step repair
 rerun after local-battle outcome split
 rerun with movement context in observe
+run aftermath through established judgment workflow
