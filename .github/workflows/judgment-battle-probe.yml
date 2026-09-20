@@ -36,12 +36,14 @@ jobs:
           import json
           from pathlib import Path
           d = json.loads(Path('judgment_probe_result.json').read_text())
-          assert d['schema'] == 'kaggriculture.judgment-frame-probe.v1'
+          assert d['schema'] == 'kaggriculture.judgment-frame-probe.v2'
           assert d['judgment_cycle_count'] > 0
           assert d['principle_checks']['choice_execution_separated'] is True
+          assert d['principle_checks']['terminal_not_copied_into_local_learn'] is True
+          assert d['principle_checks']['battle_outcome_has_no_causal_attribution'] is True
           assert d['principle_checks']['experience_auto_adopted'] is False
           print({
-              'terminal_margin_delta': d['terminal_margin_delta'],
+              'battle_outcome': d['battle_outcome']['result'],
               'judgment_cycle_count': d['judgment_cycle_count'],
           })
           PY
