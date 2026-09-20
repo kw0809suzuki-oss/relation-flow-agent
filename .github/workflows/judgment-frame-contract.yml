@@ -1,0 +1,26 @@
+name: judgment-frame-contract
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "judgment_frame.py"
+      - "judgment_trace_bridge.py"
+      - "tests/test_judgment_trace_bridge.py"
+      - ".github/workflows/judgment-frame-contract.yml"
+  pull_request:
+    paths:
+      - "judgment_frame.py"
+      - "judgment_trace_bridge.py"
+      - "tests/test_judgment_trace_bridge.py"
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install pytest
+      - run: python -m pytest -q tests/test_judgment_trace_bridge.py
