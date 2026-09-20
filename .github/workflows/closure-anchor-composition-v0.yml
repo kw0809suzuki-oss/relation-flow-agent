@@ -1,0 +1,48 @@
+name: Closure Anchor Composition v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_closure_anchor_composition_v0.py
+      - .github/workflows/closure-anchor-composition-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {seed: 7311, seat: 0}
+          - {seed: 7312, seat: 1}
+          - {seed: 7313, seat: 0}
+          - {seed: 7314, seat: 1}
+          - {seed: 7315, seat: 0}
+          - {seed: 7316, seat: 1}
+          - {seed: 7317, seat: 0}
+          - {seed: 7318, seat: 1}
+          - {seed: 7319, seat: 0}
+          - {seed: 7320, seat: 1}
+          - {seed: 7321, seat: 0}
+          - {seed: 7322, seat: 1}
+          - {seed: 7323, seat: 0}
+          - {seed: 7324, seat: 1}
+          - {seed: 7325, seat: 0}
+          - {seed: 7326, seat: 1}
+          - {seed: 7327, seat: 0}
+          - {seed: 7328, seat: 1}
+          - {seed: 7329, seat: 0}
+          - {seed: 7330, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_closure_anchor_composition_v0.py
