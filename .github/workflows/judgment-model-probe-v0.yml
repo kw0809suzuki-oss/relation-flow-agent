@@ -1,4 +1,4 @@
-name: Judgment Model Probe v0
+name: Judgment Packet Export v0
 on:
   push:
     branches: [milk-low-price-hold-v1]
@@ -8,12 +8,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  probe:
+  export:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      JUDGMENT_MODEL: gpt-5.6-luna
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,5 +21,5 @@ jobs:
       - run: python judgment_model_probe_v0.py
       - uses: actions/upload-artifact@v4
         with:
-          name: judgment-model-probe-v0
+          name: judgment-packet-export-v0
           path: judgment_model_probe_v0.json
