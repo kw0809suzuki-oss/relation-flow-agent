@@ -78,6 +78,19 @@ def main():
     packet = build_open_learning_packet(battle)
     OUT.write_text(json.dumps(packet, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    print("OPEN_LEARNING_DAILY_STATE " + json.dumps([
+        {
+            "day": s["time"]["day"],
+            "remaining": s["time"]["remaining_days"],
+            "money": s["money"],
+            "capacity": s["capacity"],
+            "flow_inputs": s["flow_inputs"],
+            "flow_outputs": s["flow_outputs"],
+            "work_state": s["work_state"],
+        }
+        for s in battle["daily_observed_state"]
+    ], ensure_ascii=False, separators=(",", ":")))
+
     print("OPEN_LEARNING_PROBE_V0 " + json.dumps({
         "case": battle["case_identity"],
         "terminal": battle["terminal"],
