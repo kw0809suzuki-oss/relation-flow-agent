@@ -1,0 +1,26 @@
+name: Judgment Intervention Preflight v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - judgment_intervention_preflight_v0.py
+      - judgment_day16_minimal_intervention_v0.py
+      - .github/workflows/judgment-intervention-preflight-v0.yml
+  workflow_dispatch:
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python judgment_intervention_preflight_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: judgment-intervention-preflight-v0
+          path: judgment_intervention_preflight_v0.json
