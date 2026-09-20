@@ -1,88 +1,65 @@
-"""Batch concrete interventions for Day16 recover Judgment claim.
+"""Day16 Judgment intervention batch v0.1.
 
-Claim remains abstract:
-recover may be realized by reducing incoming workload, increasing work capacity,
-or reprioritizing existing work.
+Same three concrete probes as before, now under one shared single-shot scope:
+- trigger: first eligible call on Day16
+- max_activations: 1
+- reset: immediately after activation
 
-These are concrete probes only. None is an adopted rule.
+This changes intervention scope only. It does not change the Judgment claim.
 """
 import copy
 
 TARGET_DAY = 16
+SCOPE_CONTRACT = {
+    "trigger": "first eligible call on Day16",
+    "max_activations": 1,
+    "reset": "immediately after activation",
+}
 
 CANDIDATES = {
-    "reduce_new_workload": {
-        "facet": "reduce_workload",
-        "description": "Suppress BUY_SEED / BUY_ANIMAL / BUY_PRODUCT COW on Day16.",
-    },
     "cap_hire_to_one": {
         "facet": "capacity_balance",
-        "description": "Keep at most one HIRE order on Day16.",
+        "description": "Keep at most one HIRE order on the first eligible Day16 call.",
     },
     "suppress_hire": {
         "facet": "capacity_balance",
-        "description": "Suppress all HIRE orders on Day16.",
+        "description": "Suppress all HIRE orders on the first eligible Day16 call.",
     },
     "add_one_hire": {
         "facet": "increase_capacity",
-        "description": "Append one HIRE order on Day16.",
-    },
-    "prioritize_current_harvest": {
-        "facet": "reprioritize_work",
-        "description": "If farmer is on harvestable output, force HARVEST on Day16.",
+        "description": "Append one HIRE order on the first eligible Day16 call.",
     },
 }
 
 
-def _is_workload_purchase(action):
-    if not isinstance(action, (list, tuple)) or not action:
-        return False
-    op = action[0]
-    if op in ("BUY_SEED", "BUY_ANIMAL"):
-        return True
-    return op == "BUY_PRODUCT" and len(action) > 1 and action[1] == "COW"
+def new_scope_state():
+    return {"activations": 0, "closed": False}
 
 
 def _is_hire(action):
     return isinstance(action, (list, tuple)) and action and action[0] == "HIRE"
 
 
-def _harvestable_here(obs):
-    player = obs["player"]
-    me = obs["farms"][player]
-    pos = me.get("farmer")
-    tiles = me.get("tiles", []) or []
-    if not pos or len(pos) != 2:
-        return False
-    x, y = pos
-    if not (0 <= y < len(tiles) and 0 <= x < len(tiles[y])):
-        return False
-    tile = tiles[y][x]
-    return (
-        isinstance(tile, dict)
-        and tile.get("kind") == "PLANT"
-        and float(tile.get("yield_units", 0) or 0) > 0
-    )
-
-
-def apply_candidate(obs, native_action, candidate_id):
+def apply_candidate(obs, native_action, candidate_id, scope_state):
     if candidate_id not in CANDIDATES:
         raise KeyError(candidate_id)
 
     action = copy.deepcopy(native_action)
     events = []
+
+    if scope_state.get("closed"):
+        return action, events
+
     if int(obs.get("day", 0) or 0) != TARGET_DAY or not isinstance(action, dict):
         return action, events
 
     market = list(action.get("market", []) or [])
+    changed = False
 
-    if candidate_id == "reduce_new_workload":
-        removed = [a for a in market if _is_workload_purchase(a)]
-        if removed:
-            action["market"] = [a for a in market if not _is_workload_purchase(a)]
-            events.append({"kind": candidate_id, "removed": copy.deepcopy(removed)})
-
-    elif candidate_id == "cap_hire_to_one":
+    if candidate_id == "cap_hire_to_one":
+        hires = [a for a in market if _is_hire(a)]
+        if len(hires) <= 1:
+            return action, events
         seen = 0
         kept = []
         removed = []
@@ -93,24 +70,38 @@ def apply_candidate(obs, native_action, candidate_id):
                     removed.append(order)
                     continue
             kept.append(order)
-        if removed:
-            action["market"] = kept
-            events.append({"kind": candidate_id, "removed_hire_count": len(removed)})
+        action["market"] = kept
+        events.append({
+            "kind": candidate_id,
+            "removed_hire_count": len(removed),
+        })
+        changed = True
 
     elif candidate_id == "suppress_hire":
-        kept = [a for a in market if not _is_hire(a)]
-        if len(kept) != len(market):
-            action["market"] = kept
-            events.append({"kind": candidate_id, "removed_hire_count": len(market) - len(kept)})
+        hires = [a for a in market if _is_hire(a)]
+        if not hires:
+            return action, events
+        action["market"] = [a for a in market if not _is_hire(a)]
+        events.append({
+            "kind": candidate_id,
+            "removed_hire_count": len(hires),
+        })
+        changed = True
 
     elif candidate_id == "add_one_hire":
         action["market"] = market + [["HIRE"]]
-        events.append({"kind": candidate_id, "added": ["HIRE"]})
+        events.append({
+            "kind": candidate_id,
+            "added": ["HIRE"],
+        })
+        changed = True
 
-    elif candidate_id == "prioritize_current_harvest":
-        if _harvestable_here(obs):
-            before = copy.deepcopy(action.get("farmer"))
-            action["farmer"] = ["HARVEST"]
-            events.append({"kind": candidate_id, "before": before, "after": ["HARVEST"]})
+    if changed:
+        scope_state["activations"] = scope_state.get("activations", 0) + 1
+        if scope_state["activations"] >= SCOPE_CONTRACT["max_activations"]:
+            scope_state["closed"] = True
+        for event in events:
+            event["scope"] = copy.deepcopy(SCOPE_CONTRACT)
+            event["activation_index"] = scope_state["activations"]
 
     return action, events
