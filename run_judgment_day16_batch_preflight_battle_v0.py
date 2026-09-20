@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""Batch Preflight -> minimal Battle for Day16 Judgment claim.
+"""Single-shot Day16 Judgment bridge.
 
-1. Capture one native Day16 State/action.
-2. Apply every concrete candidate offline.
-3. Hold unreachable/duplicate candidates.
-4. Battle only candidates that create a distinct action.
+Reuses the same three concrete interventions from the previous batch.
+Only intervention scope is changed to one activation.
 """
 import copy
 import json
@@ -14,7 +12,13 @@ from pathlib import Path
 from kaggle_environments import make
 
 import g17_agent as current
-from judgment_day16_intervention_batch_v0 import CANDIDATES, TARGET_DAY, apply_candidate
+from judgment_day16_intervention_batch_v0 import (
+    CANDIDATES,
+    SCOPE_CONTRACT,
+    TARGET_DAY,
+    apply_candidate,
+    new_scope_state,
+)
 
 SEED = 6301
 SEAT = 0
@@ -77,11 +81,12 @@ def classify(native_action, variant_action, events):
 def play_candidate(candidate_id):
     configure()
     env = make("kaggriculture", configuration={"seed": SEED}, debug=False)
+    scope = new_scope_state()
     applied = []
 
     def agent(obs):
         native_action = current.agent(obs)
-        revised, events = apply_candidate(obs, native_action, candidate_id)
+        revised, events = apply_candidate(obs, native_action, candidate_id, scope)
         if events:
             applied.extend(copy.deepcopy(events))
         return revised
@@ -89,7 +94,7 @@ def play_candidate(candidate_id):
     players = [OPPONENT, OPPONENT]
     players[SEAT] = agent
     env.run(players)
-    return terminal(env), applied
+    return terminal(env), applied, copy.deepcopy(scope)
 
 
 def main():
@@ -100,7 +105,8 @@ def main():
     preflight = {}
     eligible = []
     for cid, meta in CANDIDATES.items():
-        variant_action, events = apply_candidate(obs, native_action, cid)
+        scope = new_scope_state()
+        variant_action, events = apply_candidate(obs, native_action, cid, scope)
         classification = classify(native_action, variant_action, events)
         preflight[cid] = {
             "facet": meta["facet"],
@@ -108,18 +114,21 @@ def main():
             "classification": classification,
             "reachable": bool(events),
             "distinct": variant_action != native_action,
+            "scope_after_preflight": scope,
             "events": events,
-            "variant_action": variant_action,
         }
         if classification == "battle_eligible":
             eligible.append(cid)
 
     battles = {}
     for cid in eligible:
-        result, events = play_candidate(cid)
+        result, events, scope = play_candidate(cid)
         battles[cid] = {
             **result,
             "events": events,
+            "activation_count": len(events),
+            "scope_final": scope,
+            "scope_valid": len(events) == 1 and scope.get("activations") == 1,
             "self_diff_vs_current": result["self"] - baseline["self"],
             "margin_diff_vs_current": result["margin"] - baseline["margin"],
             "outcome": (
@@ -130,24 +139,25 @@ def main():
         }
 
     payload = {
-        "schema": "kaggriculture.judgment-day16-batch-preflight-battle.v0",
+        "schema": "kaggriculture.judgment-day16-single-shot.v0.1",
         "judgment_claim": (
-            "recover may have multiple realizations: reduce incoming workload, "
-            "increase work capacity, or reprioritize existing work"
+            "recover may have multiple realizations: reduce workload or increase work capacity"
         ),
+        "scope_contract": SCOPE_CONTRACT,
         "baseline": baseline,
         "preflight": preflight,
         "battle_eligible": eligible,
         "battles": battles,
         "boundary": [
-            "Preflight judges only reachability/distinctness, never action quality.",
-            "Unreachable or duplicate candidates are held, not treated as Judgment rejection.",
-            "Battle result evaluates the concrete intervention only.",
-            "One seed does not establish the abstract Judgment claim.",
+            "Only intervention scope changed from the previous run.",
+            "Preflight judges reachability/distinctness only.",
+            "Battle result evaluates the concrete intervention, not the abstract Judgment claim.",
+            "Scope must be valid before using the Battle result for Judgment analysis.",
         ],
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("JUDGMENT_DAY16_BATCH_V0 " + json.dumps({
+    print("JUDGMENT_DAY16_SINGLE_SHOT_V01 " + json.dumps({
+        "scope_contract": SCOPE_CONTRACT,
         "baseline": baseline,
         "preflight": {
             cid: {
