@@ -46,5 +46,5 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
-      - run: bash scripts/fetch_opponent.sh
+      - run: bash scripts/fetch_stratified_opponents.sh
       - run: python run_dual_closure_cross_opponent_v0.py
