@@ -1,0 +1,85 @@
+name: Battle First Parallel 50 Active Candidate
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_battle_first_parallel_active_candidate_v0.py
+      - .github/workflows/battle-first-parallel-50-active-candidate.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        include:
+          - {seed: 6393, seat: 0}
+          - {seed: 6394, seat: 1}
+          - {seed: 6395, seat: 0}
+          - {seed: 6396, seat: 1}
+          - {seed: 6397, seat: 0}
+          - {seed: 6398, seat: 1}
+          - {seed: 6399, seat: 0}
+          - {seed: 6400, seat: 1}
+          - {seed: 6401, seat: 0}
+          - {seed: 6402, seat: 1}
+          - {seed: 6403, seat: 0}
+          - {seed: 6404, seat: 1}
+          - {seed: 6405, seat: 0}
+          - {seed: 6406, seat: 1}
+          - {seed: 6407, seat: 0}
+          - {seed: 6408, seat: 1}
+          - {seed: 6409, seat: 0}
+          - {seed: 6410, seat: 1}
+          - {seed: 6411, seat: 0}
+          - {seed: 6412, seat: 1}
+          - {seed: 6413, seat: 0}
+          - {seed: 6414, seat: 1}
+          - {seed: 6415, seat: 0}
+          - {seed: 6416, seat: 1}
+          - {seed: 6417, seat: 0}
+          - {seed: 6418, seat: 1}
+          - {seed: 6419, seat: 0}
+          - {seed: 6420, seat: 1}
+          - {seed: 6421, seat: 0}
+          - {seed: 6422, seat: 1}
+          - {seed: 6423, seat: 0}
+          - {seed: 6424, seat: 1}
+          - {seed: 6425, seat: 0}
+          - {seed: 6426, seat: 1}
+          - {seed: 6427, seat: 0}
+          - {seed: 6428, seat: 1}
+          - {seed: 6429, seat: 0}
+          - {seed: 6430, seat: 1}
+          - {seed: 6431, seat: 0}
+          - {seed: 6432, seat: 1}
+          - {seed: 6433, seat: 0}
+          - {seed: 6434, seat: 1}
+          - {seed: 6435, seat: 0}
+          - {seed: 6436, seat: 1}
+          - {seed: 6437, seat: 0}
+          - {seed: 6438, seat: 1}
+          - {seed: 6439, seat: 0}
+          - {seed: 6440, seat: 1}
+          - {seed: 6441, seat: 0}
+          - {seed: 6442, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_battle_first_parallel_active_candidate_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parallel-battle-${{ matrix.seed }}
+          path: parallel_battle_${{ matrix.seed }}.json
