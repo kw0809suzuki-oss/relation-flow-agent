@@ -1,0 +1,24 @@
+name: Learning Candidate v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - learning_candidate_v0.py
+      - run_learning_candidate_v0.py
+      - .github/workflows/learning-candidate-v0.yml
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python run_learning_candidate_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: learning-candidate-v0
+          path: learning_candidate_v0.json
