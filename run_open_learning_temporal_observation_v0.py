@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Open Learning temporal observation for seed 6201, Days 19-29.
 
-Records only the action/economic series needed to test whether the unknown case
-looks like a single bad choice or an unresolved multi-day realization problem.
-No intervention is applied.
+Aggregate every agent call within each day. This is observation only:
+no intervention and no claim that temporal_realization exists.
 """
 
 import json
 import os
+from collections import defaultdict
 from pathlib import Path
 
 from kaggle_environments import make
@@ -33,57 +33,28 @@ def configure():
     combat.reset_telemetry()
 
 
-def money_changing_market(action):
-    if not isinstance(action, (list, tuple)) or not action:
-        return False
-    op = action[0]
-    return op in {
-        "BUY_SEED", "BUY_ANIMAL", "BUY_PRODUCT", "BUY_LAND",
-        "SELL_PRODUCT", "SELL_CROP", "SELL", "HIRE", "FIRE"
-    }
-
-
-def action_bucket(actions):
-    if not isinstance(actions, dict):
-        return {"market": [], "farm": [], "raw": actions}
-    market = list(actions.get("market", []) or [])
-    farm = list(actions.get("farm", []) or [])
-    return {
-        "market": market,
-        "money_changing_market": [a for a in market if money_changing_market(a)],
-        "farm": farm,
-    }
-
-
 def main():
     configure()
     env = make("kaggriculture", configuration={"seed": SEED}, debug=False)
-    rows = []
-    last_money = None
-    last_day = None
+    by_day = defaultdict(lambda: {
+        "calls": 0,
+        "first_state": None,
+        "last_state": None,
+        "actions": [],
+    })
 
     def observed_agent(obs):
-        nonlocal last_money, last_day
         day = int(obs.get("day", 0) or 0)
-        me = obs["farms"][obs["player"]]
-        before_money = float(me.get("money", 0) or 0)
         state = observe_state(obs)
         actions = combat.agent(obs)
-        if START_DAY <= day <= END_DAY and day != last_day:
-            rows.append({
-                "day": day,
-                "remaining": state["time"]["remaining_days"],
-                "money_before_action": before_money,
-                "money_delta_from_prev_day": None if last_money is None else before_money - last_money,
-                "capacity": state["capacity"],
-                "flow_inputs": state["flow_inputs"],
-                "flow_outputs": state["flow_outputs"],
-                "work_state": state["work_state"],
-                "actions": action_bucket(actions),
-            })
-            last_day = day
+
         if START_DAY <= day <= END_DAY:
-            last_money = before_money
+            rec = by_day[day]
+            rec["calls"] += 1
+            if rec["first_state"] is None:
+                rec["first_state"] = state
+            rec["last_state"] = state
+            rec["actions"].append(actions)
         return actions
 
     players = [OPPONENT, OPPONENT]
@@ -91,8 +62,50 @@ def main():
     env.run(players)
     rewards = [float(s.reward) for s in env.state]
 
+    rows = []
+    prev_last_money = None
+    for day in range(START_DAY, END_DAY + 1):
+        rec = by_day.get(day)
+        if not rec:
+            continue
+        first = rec["first_state"]
+        last = rec["last_state"]
+        first_money = first["money"]["self"]
+        last_money = last["money"]["self"]
+
+        market_actions = []
+        farm_actions = []
+        all_raw = []
+        for a in rec["actions"]:
+            all_raw.append(a)
+            if isinstance(a, dict):
+                market_actions.extend(list(a.get("market", []) or []))
+                farm_actions.extend(list(a.get("farm", []) or []))
+
+        rows.append({
+            "day": day,
+            "remaining": first["time"]["remaining_days"],
+            "calls": rec["calls"],
+            "money_first_call": first_money,
+            "money_last_call": last_money,
+            "money_change_within_observed_day": last_money - first_money,
+            "money_change_vs_prev_day_last": None if prev_last_money is None else first_money - prev_last_money,
+            "first_capacity": first["capacity"],
+            "last_capacity": last["capacity"],
+            "first_flow_inputs": first["flow_inputs"],
+            "last_flow_inputs": last["flow_inputs"],
+            "first_flow_outputs": first["flow_outputs"],
+            "last_flow_outputs": last["flow_outputs"],
+            "first_work_state": first["work_state"],
+            "last_work_state": last["work_state"],
+            "market_actions": market_actions,
+            "farm_actions": farm_actions,
+            "action_call_count": len(rec["actions"]),
+        })
+        prev_last_money = last_money
+
     payload = {
-        "schema": "kaggriculture.open-learning-temporal-observation.v0",
+        "schema": "kaggriculture.open-learning-temporal-observation.v0.1",
         "case": {"seed": SEED, "seat": SEAT},
         "window": [START_DAY, END_DAY],
         "terminal": {
@@ -103,12 +116,11 @@ def main():
         "rows": rows,
         "boundary": [
             "No intervention is applied.",
+            "All agent calls inside each day are aggregated.",
             "This observation does not establish temporal_realization.",
             "The existing taxonomy remains open.",
-            "Only Days 19-29 and the action/economic sequence needed for the next discrimination are retained.",
         ],
     }
-
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("OPEN_LEARNING_TEMPORAL_ROWS " + json.dumps(rows, ensure_ascii=False, separators=(",", ":")))
     print("OPEN_LEARNING_TEMPORAL_TERMINAL " + json.dumps(payload["terminal"], separators=(",", ":")))
