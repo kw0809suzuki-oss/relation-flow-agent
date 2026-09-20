@@ -1,4 +1,5 @@
 name: Strength Benchmark v0
+# Fixed SB-00 baseline workflow
 
 on:
   push:
