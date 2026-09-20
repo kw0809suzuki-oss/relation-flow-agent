@@ -1,11 +1,10 @@
 """Trace-only bridge from Relation Flow battle events into judgment_frame.
 
-This module does not change agent actions. It translates an already observed
-whole-flow event into the compressed five-organ judgment vocabulary so the
-mainline can inspect judgment separately from execution.
+Per-event cycles carry only local observation. Battle terminal outcomes belong
+at battle scope and must not be copied into every local Learn record.
 """
 
-from typing import Mapping, Optional, Sequence
+from typing import Mapping, Sequence
 
 from judgment_frame import (
     Act,
@@ -31,17 +30,15 @@ def _known_from_event(event: Mapping) -> tuple[str, ...]:
 def cycle_from_whole_flow_event(
     event: Mapping,
     *,
-    terminal_outcome: Optional[str] = None,
     candidate_modes: Sequence[str] = ("push", "maintain", "stop", "switch"),
 ) -> JudgmentCycle:
-    """Translate one controller event without claiming that its choice was good."""
+    """Translate one controller event without attributing battle outcome to it."""
     mode = event.get("mode")
     controlled = mode not in (None, "control_off")
+    movements = event.get("axis_movements")
 
     missing = []
-    if terminal_outcome is None:
-        missing.append("terminal_outcome")
-    if event.get("axis_movements") is None:
+    if movements is None:
         missing.append("relation_movement_baseline")
 
     observe = Observe(
@@ -71,17 +68,17 @@ def cycle_from_whole_flow_event(
         note="gate magnitude was applied by existing controller" if controlled else "no judgment-controlled execution",
     )
 
-    if terminal_outcome is None:
+    if movements is None:
         learn = Learn(
-            outcome="not_observed",
-            abstraction="terminal effect remains unknown",
-            return_signal="preserve uncertainty; do not promote controller mode",
+            outcome="local_not_observed",
+            abstraction="local relation movement remains unavailable",
+            return_signal="preserve local uncertainty; do not infer battle effect",
         )
     else:
         learn = Learn(
-            outcome=terminal_outcome,
-            abstraction="terminal outcome observed for this battle context only",
-            return_signal="return as bounded experience; re-evaluate on re-entry",
+            outcome="local_relation_movement_observed",
+            abstraction="relation movement observed for this event only",
+            return_signal="return local observation without terminal attribution",
         )
 
     return JudgmentCycle(
@@ -93,10 +90,7 @@ def cycle_from_whole_flow_event(
     )
 
 
-def cycles_from_trace(trace: Mapping, *, terminal_outcome: Optional[str] = None) -> tuple[JudgmentCycle, ...]:
+def cycles_from_trace(trace: Mapping) -> tuple[JudgmentCycle, ...]:
     """Translate all whole-flow events in an existing trace."""
     events = trace.get("whole_flow") or ()
-    return tuple(
-        cycle_from_whole_flow_event(event, terminal_outcome=terminal_outcome)
-        for event in events
-    )
+    return tuple(cycle_from_whole_flow_event(event) for event in events)
