@@ -1,0 +1,22 @@
+name: Judgment Boundary Audit v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - judgment_manufacturing_policy_v0.py
+      - judgment_boundary_audit_v0.py
+      - run_judgment_boundary_audit_v0.py
+      - judgment_capability_v1_1.py
+      - .github/workflows/judgment-boundary-audit-v0.yml
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python run_judgment_boundary_audit_v0.py
