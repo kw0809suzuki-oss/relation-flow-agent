@@ -39,6 +39,10 @@ def integrate(origin_internal, role_reading):
     role_present = bool(reading.get("role_present", False))
     field_context_present = bool(reading.get("field_context_present", False))
     field_description = dict(reading.get("field_description", {}) or {})
+    outer_meaning = dict(field_description.get("outer_meaning", {}) or {})
+    outer_phase = str(outer_meaning.get("phase", "") or "").upper()
+    outer_meaning_present = bool(outer_meaning)
+    meaning_commitment_scale = 0.70 if outer_phase == "CLOSURE" else 1.0
 
     if role_present:
         role_reliability = _clip01(familiarity * (1.0 - 0.50 * ambiguity))
@@ -102,7 +106,7 @@ def integrate(origin_internal, role_reading):
     opposed_evidence = field_evidence * max(0.0, -field_alignment)
     reinforced = 1.0 - (1.0 - role_reliability) * (1.0 - aligned_evidence)
     context_reliability = _clip01(reinforced * (1.0 - opposed_evidence))
-    commitment = _clip01(native_strength * (0.75 + 0.25 * context_reliability))
+    commitment = _clip01(native_strength * (0.75 + 0.25 * context_reliability) * meaning_commitment_scale)
 
     signed_native = max(-1.0, min(1.0, (native_strength - 0.5) * 2.0))
     magnitude = float(os.getenv("ORIGIN_GATE_MAGNITUDE", "0.04"))
@@ -131,6 +135,9 @@ def integrate(origin_internal, role_reading):
         "origin_strategy": internal.get("strategy_name"),
         "field_context_present": field_context_present,
         "field_description": field_description,
+        "outer_meaning_present": outer_meaning_present,
+        "outer_phase": outer_phase or None,
+        "meaning_commitment_scale": round(meaning_commitment_scale, 6),
         "role_direction": None,
         "action_instruction": None,
         "strategy_instruction": None,
