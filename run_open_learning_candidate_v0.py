@@ -34,6 +34,11 @@ EVIDENCE = [
         "case": "seed-6203",
         "observation": "Day24 WHEAT-seed ablation reduced terminal seed by 3 and increased self money by 30; planted/harvestable unchanged",
     },
+    {
+        "stage": "refutation",
+        "case": "seed-6204-day29-hire",
+        "observation": "Removing Day29 HIRE worsened terminal self by 36 and left more planted/harvestable/unwatered work; not all late investment fails temporal realization",
+    },
 ]
 
 
@@ -46,7 +51,7 @@ def main():
         "not_formal_taxonomy": candidate["formal_taxonomy_member"] is False,
         "taxonomy_auto_promotion_blocked": candidate["auto_promote_taxonomy"] is False,
         "guide_update_blocked": candidate["auto_update_judgment_guide"] is False,
-        "history_retained": len(candidate["evidence_history"]) == 5,
+        "history_retained": len(candidate["evidence_history"]) == 6,
     }
 
     payload = {
