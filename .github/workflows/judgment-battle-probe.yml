@@ -1,0 +1,50 @@
+name: Judgment Frame Battle Probe
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - JUDGMENT_PROBE_RUN
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Contract tests
+        run: python -m pytest -q tests/test_judgment_trace_bridge.py
+      - name: Run one battle judgment probe
+        run: python run_judgment_probe.py
+      - name: Validate judgment boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('judgment_probe_result.json').read_text())
+          assert d['schema'] == 'kaggriculture.judgment-frame-probe.v1'
+          assert d['judgment_cycle_count'] > 0
+          assert d['principle_checks']['choice_execution_separated'] is True
+          assert d['principle_checks']['experience_auto_adopted'] is False
+          print({
+              'terminal_margin_delta': d['terminal_margin_delta'],
+              'judgment_cycle_count': d['judgment_cycle_count'],
+          })
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: judgment-probe-result
+          path: judgment_probe_result.json
