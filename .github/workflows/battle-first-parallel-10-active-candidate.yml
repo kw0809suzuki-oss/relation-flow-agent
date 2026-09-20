@@ -16,16 +16,16 @@ jobs:
       max-parallel: 10
       matrix:
         include:
-          - {seed: 6353, seat: 0}
-          - {seed: 6354, seat: 1}
-          - {seed: 6355, seat: 0}
-          - {seed: 6356, seat: 1}
-          - {seed: 6357, seat: 0}
-          - {seed: 6358, seat: 1}
-          - {seed: 6359, seat: 0}
-          - {seed: 6360, seat: 1}
-          - {seed: 6361, seat: 0}
-          - {seed: 6362, seat: 1}
+          - {seed: 6363, seat: 0}
+          - {seed: 6364, seat: 1}
+          - {seed: 6365, seat: 0}
+          - {seed: 6366, seat: 1}
+          - {seed: 6367, seat: 0}
+          - {seed: 6368, seat: 1}
+          - {seed: 6369, seat: 0}
+          - {seed: 6370, seat: 1}
+          - {seed: 6371, seat: 0}
+          - {seed: 6372, seat: 1}
 
     env:
       BATTLE_SEED: ${{ matrix.seed }}
