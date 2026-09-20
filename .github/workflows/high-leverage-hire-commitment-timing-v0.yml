@@ -1,0 +1,38 @@
+name: High Leverage Hire Commitment Timing v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_high_leverage_hire_commitment_timing_v0.py
+      - .github/workflows/high-leverage-hire-commitment-timing-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7291, seat: 0}
+          - {seed: 7292, seat: 1}
+          - {seed: 7293, seat: 0}
+          - {seed: 7294, seat: 1}
+          - {seed: 7295, seat: 0}
+          - {seed: 7296, seat: 1}
+          - {seed: 7297, seat: 0}
+          - {seed: 7298, seat: 1}
+          - {seed: 7299, seat: 0}
+          - {seed: 7300, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_high_leverage_hire_commitment_timing_v0.py
