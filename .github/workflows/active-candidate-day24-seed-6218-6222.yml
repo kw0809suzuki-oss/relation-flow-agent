@@ -1,0 +1,24 @@
+name: Active Candidate Day24 Seed 6218-6222
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_active_candidate_day24_seed_6218_6222.py
+      - .github/workflows/active-candidate-day24-seed-6218-6222.yml
+  workflow_dispatch:
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_active_candidate_day24_seed_6218_6222.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: active-candidate-day24-seed-6218-6222
+          path: active_candidate_day24_seed_6218_6222.json
