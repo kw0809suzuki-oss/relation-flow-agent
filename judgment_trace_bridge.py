@@ -24,6 +24,14 @@ def _known_from_event(event: Mapping) -> tuple[str, ...]:
         known.append(f"mode={event['mode']}")
     if event.get("gate_magnitude") is not None:
         known.append(f"gate_magnitude={event['gate_magnitude']}")
+    movements = event.get("axis_movements")
+    if movements is not None:
+        for name, value in sorted(movements.items()):
+            known.append(f"movement.{name}={float(value):.6f}")
+    if event.get("relation_favorable_votes") is not None:
+        known.append(f"relation_favorable_votes={event['relation_favorable_votes']}")
+    if event.get("movement_favorable_votes") is not None:
+        known.append(f"movement_favorable_votes={event['movement_favorable_votes']}")
     return tuple(known)
 
 
