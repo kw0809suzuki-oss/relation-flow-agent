@@ -69,10 +69,11 @@ def play(seed, seat):
 
 def main():
     cases = [play(seed, seat) for seed, seat in CASES]
+    guide_data = guide()
     payload = {
         "schema": "kaggriculture.judgment-capability-v1.1-packets",
         "policy_mutated": False,
-        "guide": guide(),
+        "guide": guide_data,
         "cases": cases,
         "boundary": [
             "Triage labels are not decision weights.",
@@ -88,7 +89,7 @@ def main():
         "packet_counts": [len(c["packets"]) for c in cases],
         "triage": {
             h["name"]: h["triage"]
-            for h in JUDGMENT_GUIDE_V11["relation_hints"]
+            for h in guide_data["relation_hints"]
         },
         "hint_truth_decided_any": any(
             p["boundary"]["hint_truth_decided"] for c in cases for p in c["packets"]
