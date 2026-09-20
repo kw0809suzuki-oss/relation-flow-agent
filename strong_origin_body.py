@@ -48,7 +48,7 @@ def _crop_commitment_scale(integration):
     context = dict(integration or {})
     if not context.get("field_context_present", False):
         return 1.0
-    if float(context.get("field_evidence", 0.0) or 0.0) <= 0.0:
+    if float(context.get("field_evidence", 0.0) or 0.0) <= 0.0 and not context.get("outer_meaning_present", False):
         return 1.0
     native_strength = float(context.get("native_strength", 0.0) or 0.0)
     commitment = float(context.get("commitment", 0.0) or 0.0)
