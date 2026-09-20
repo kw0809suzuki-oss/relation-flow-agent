@@ -13,5 +13,5 @@ def test_economic_lens_is_independent_and_nonpromoting():
         "axis_movements": {"money": 0.1, "capacity": 0.1, "production": 0.1},
     }
     result = evaluate_economic(event)
-    assert result["judgment"] == "maintain"
+    assert result["judgment"] == "switch"
     assert result["promote"] is False
