@@ -8,6 +8,7 @@ The trace is an observation instrument, not a proof of causal attribution.
 import os
 import strong_origin_body as g8
 import role_reentry_bridge as role_bridge
+import outer_meaning_v0
 
 _stats = {}
 _probe_enabled = True
@@ -246,6 +247,12 @@ def agent(obs):
         "observed_relations": {"R": round(r,4), "E": round(e,4), "W": round(w,4)},
         "uncertain": opponent_cycle.get("phase") == "unclear", "action_instruction": None, "strategy_instruction": None,
     }
+    closure_day = os.getenv("OUTER_MEANING_CLOSURE_DAY")
+    if closure_day is not None:
+        meaning = outer_meaning_v0.closure_meaning(obs, int(closure_day))
+        if meaning is not None:
+            field_description["outer_meaning"] = meaning
+
     connected_context = dict(role_context)
     if os.getenv("G15_CONNECT_OPPONENT_FIELD_DESCRIPTION", "1") == "1":
         connected_context["field_description"] = field_description; connected_context["field_description_connected"] = True
