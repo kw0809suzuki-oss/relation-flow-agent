@@ -36,11 +36,13 @@ jobs:
           import json
           from pathlib import Path
           d = json.loads(Path('multi_battle_boundary_aftermath.json').read_text())
-          assert d['schema'] == 'kaggriculture.multi-battle-boundary-aftermath.v1'
+          assert d['schema'] == 'kaggriculture.multi-battle-boundary-aftermath.v2'
           assert len(d['battles']) == 3
           assert d['boundary'] == 'descriptive_only_no_causal_attribution_no_rule_promotion'
           assert all(v['causal_attribution'] is False for v in d['aggregate_contrasts'].values())
           assert all(v['promote'] is False for v in d['aggregate_contrasts'].values())
+          assert d['score_summary']['causal_attribution'] is False
+          assert d['score_summary']['promote'] is False
           print(d['aggregate_contrasts'])
           PY
       - uses: actions/upload-artifact@v4
