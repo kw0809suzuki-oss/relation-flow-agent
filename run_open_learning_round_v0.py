@@ -96,6 +96,19 @@ def main():
         "learning_boundary": packet["learning_boundary"],
     }, ensure_ascii=False, separators=(",", ":")))
 
+    print("OPEN_LEARNING_ROUND_DAILY " + json.dumps([{
+        "day": s["time"]["day"],
+        "remaining": s["time"]["remaining_days"],
+        "self_money": s["money"]["self"],
+        "opp_money": s["money"]["opponent"],
+        "hands": s["capacity"]["hands"],
+        "cows": s["capacity"]["cows"],
+        "planted": s["capacity"]["planted_tiles"],
+        "harvestable": s["flow_outputs"]["harvestable_tiles"],
+        "seed_wheat": s["flow_inputs"]["seed_inventory"]["WHEAT"],
+        "weeds": s["work_state"]["weeds"],
+    } for s in battle["daily_observed_state"]], ensure_ascii=False, separators=(",", ":")))
+
 
 if __name__ == "__main__":
     main()
