@@ -16,26 +16,26 @@ jobs:
       max-parallel: 20
       matrix:
         include:
-          - {seed: 6283, seat: 0}
-          - {seed: 6284, seat: 1}
-          - {seed: 6285, seat: 0}
-          - {seed: 6286, seat: 1}
-          - {seed: 6287, seat: 0}
-          - {seed: 6288, seat: 1}
-          - {seed: 6289, seat: 0}
-          - {seed: 6290, seat: 1}
-          - {seed: 6291, seat: 0}
-          - {seed: 6292, seat: 1}
-          - {seed: 6293, seat: 0}
-          - {seed: 6294, seat: 1}
-          - {seed: 6295, seat: 0}
-          - {seed: 6296, seat: 1}
-          - {seed: 6297, seat: 0}
-          - {seed: 6298, seat: 1}
-          - {seed: 6299, seat: 0}
-          - {seed: 6300, seat: 1}
-          - {seed: 6301, seat: 0}
-          - {seed: 6302, seat: 1}
+          - {seed: 6303, seat: 0}
+          - {seed: 6304, seat: 1}
+          - {seed: 6305, seat: 0}
+          - {seed: 6306, seat: 1}
+          - {seed: 6307, seat: 0}
+          - {seed: 6308, seat: 1}
+          - {seed: 6309, seat: 0}
+          - {seed: 6310, seat: 1}
+          - {seed: 6311, seat: 0}
+          - {seed: 6312, seat: 1}
+          - {seed: 6313, seat: 0}
+          - {seed: 6314, seat: 1}
+          - {seed: 6315, seat: 0}
+          - {seed: 6316, seat: 1}
+          - {seed: 6317, seat: 0}
+          - {seed: 6318, seat: 1}
+          - {seed: 6319, seat: 0}
+          - {seed: 6320, seat: 1}
+          - {seed: 6321, seat: 0}
+          - {seed: 6322, seat: 1}
 
     env:
       BATTLE_SEED: ${{ matrix.seed }}
