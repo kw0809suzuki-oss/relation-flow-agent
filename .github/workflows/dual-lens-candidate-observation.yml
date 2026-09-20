@@ -1,0 +1,54 @@
+name: Dual Lens Candidate Observation
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - DUAL_LENS_OBSERVATION_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install pytest
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Contract tests
+        run: python -m pytest -q tests/test_external_economic_lens.py
+      - name: Observe one battle
+        run: python observe_dual_lens_candidates.py
+      - name: Validate observation boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('dual_lens_candidate_observation.json').read_text())
+          assert d['schema'] == 'kaggriculture.dual-lens-candidate-observation.v0'
+          assert d['candidate_space_at_battle_start']['winner_only'] is False
+          assert d['boundary'] == 'observation_only_no_combat_change_no_rule_promotion'
+          assert all(p['wrong_lens'] is None for p in d['candidate_generation_points'])
+          assert all(p['promote'] is False for p in d['candidate_generation_points'])
+          print({
+              'agreement_count': d['agreement_count'],
+              'disagreement_count': d['disagreement_count'],
+              'disagreement_rate': d['disagreement_rate'],
+              'combat_mode_counts': d['combat_mode_counts'],
+          })
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dual-lens-candidate-observation
+          path: dual_lens_candidate_observation.json
