@@ -32,8 +32,15 @@ def main():
     pair_deltas = {f"{a}__vs__{b}": [] for a, b in PAIRS}
     vote_deltas = {f"{a}__vs__{b}": [] for a, b in PAIRS}
 
+    margin_deltas = []
+
     for seed, seat in CASES:
+        baseline = play(seed, seat, False)
         candidate = play(seed, seat, True)
+        margin_delta = candidate["score"]["margin"] - baseline["score"]["margin"]
+        self_delta = candidate["score"]["self"] - baseline["score"]["self"]
+        opponent_delta = candidate["score"]["opponent"] - baseline["score"]["opponent"]
+        margin_deltas.append(margin_delta)
         cycles = cycles_from_trace({"whole_flow": candidate["flow_trace"]})
         slim = [serialize_cycle(c) for c in cycles]
         aftermath = observe_aftermath(slim)
@@ -61,6 +68,15 @@ def main():
             "seed": seed,
             "seat": seat,
             "cycle_count": len(cycles),
+            "baseline_score": baseline["score"],
+            "candidate_score": candidate["score"],
+            "score_reach": {
+                "self_delta": self_delta,
+                "opponent_delta": opponent_delta,
+                "margin_delta": margin_delta,
+                "direction": "improved" if margin_delta > 0 else ("worsened" if margin_delta < 0 else "equal"),
+                "causal_attribution": False,
+            },
             "aftermath": aftermath,
             "contrasts": contrasts,
         })
@@ -79,10 +95,21 @@ def main():
         }
 
     result = {
-        "schema": "kaggriculture.multi-battle-boundary-aftermath.v1",
+        "schema": "kaggriculture.multi-battle-boundary-aftermath.v2",
         "cases": [{"seed": s, "seat": t} for s, t in CASES],
         "battles": battles,
         "aggregate_contrasts": aggregate,
+        "score_summary": result["score_summary"],
+        "score_summary": {
+            "battle_count": len(margin_deltas),
+            "mean_margin_delta": sum(margin_deltas) / len(margin_deltas),
+            "improved_count": sum(x > 0 for x in margin_deltas),
+            "worsened_count": sum(x < 0 for x in margin_deltas),
+            "equal_count": sum(x == 0 for x in margin_deltas),
+            "status": "terminal_score_reach_observed",
+            "causal_attribution": False,
+            "promote": False,
+        },
         "boundary": "descriptive_only_no_causal_attribution_no_rule_promotion",
     }
     Path("multi_battle_boundary_aftermath.json").write_text(
