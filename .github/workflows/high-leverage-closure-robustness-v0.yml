@@ -1,0 +1,82 @@
+name: High Leverage Closure Robustness v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_high_leverage_closure_robustness_v0.py
+      - .github/workflows/high-leverage-closure-robustness-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        include:
+          - {seed: 7171, seat: 0}
+          - {seed: 7172, seat: 1}
+          - {seed: 7173, seat: 0}
+          - {seed: 7174, seat: 1}
+          - {seed: 7175, seat: 0}
+          - {seed: 7176, seat: 1}
+          - {seed: 7177, seat: 0}
+          - {seed: 7178, seat: 1}
+          - {seed: 7179, seat: 0}
+          - {seed: 7180, seat: 1}
+          - {seed: 7181, seat: 0}
+          - {seed: 7182, seat: 1}
+          - {seed: 7183, seat: 0}
+          - {seed: 7184, seat: 1}
+          - {seed: 7185, seat: 0}
+          - {seed: 7186, seat: 1}
+          - {seed: 7187, seat: 0}
+          - {seed: 7188, seat: 1}
+          - {seed: 7189, seat: 0}
+          - {seed: 7190, seat: 1}
+          - {seed: 7191, seat: 0}
+          - {seed: 7192, seat: 1}
+          - {seed: 7193, seat: 0}
+          - {seed: 7194, seat: 1}
+          - {seed: 7195, seat: 0}
+          - {seed: 7196, seat: 1}
+          - {seed: 7197, seat: 0}
+          - {seed: 7198, seat: 1}
+          - {seed: 7199, seat: 0}
+          - {seed: 7200, seat: 1}
+          - {seed: 7201, seat: 0}
+          - {seed: 7202, seat: 1}
+          - {seed: 7203, seat: 0}
+          - {seed: 7204, seat: 1}
+          - {seed: 7205, seat: 0}
+          - {seed: 7206, seat: 1}
+          - {seed: 7207, seat: 0}
+          - {seed: 7208, seat: 1}
+          - {seed: 7209, seat: 0}
+          - {seed: 7210, seat: 1}
+          - {seed: 7211, seat: 0}
+          - {seed: 7212, seat: 1}
+          - {seed: 7213, seat: 0}
+          - {seed: 7214, seat: 1}
+          - {seed: 7215, seat: 0}
+          - {seed: 7216, seat: 1}
+          - {seed: 7217, seat: 0}
+          - {seed: 7218, seat: 1}
+          - {seed: 7219, seat: 0}
+          - {seed: 7220, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_high_leverage_closure_robustness_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: high-leverage-closure-robustness-v0-${{ matrix.seed }}
+          path: high_leverage_closure_robustness_v0_${{ matrix.seed }}.json
