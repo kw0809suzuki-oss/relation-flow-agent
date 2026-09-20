@@ -1,0 +1,50 @@
+name: Dual Closure Cross Opponent v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_dual_closure_cross_opponent_v0.py
+      - .github/workflows/dual-closure-cross-opponent-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7231, seat: 0}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7232, seat: 1}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7233, seat: 0}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7234, seat: 1}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7235, seat: 0}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7236, seat: 1}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7237, seat: 0}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7238, seat: 1}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7239, seat: 0}
+          - {opponent_name: "lonespear", opponent_path: "opponents/lonespear_main.py", seed: 7240, seat: 1}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7231, seat: 0}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7232, seat: 1}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7233, seat: 0}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7234, seat: 1}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7235, seat: 0}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7236, seat: 1}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7237, seat: 0}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7238, seat: 1}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7239, seat: 0}
+          - {opponent_name: "COK", opponent_path: "opponents/cok_main.py", seed: 7240, seat: 1}
+    env:
+      OPPONENT_NAME: ${{ matrix.opponent_name }}
+      OPPONENT_PATH: ${{ matrix.opponent_path }}
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_dual_closure_cross_opponent_v0.py
