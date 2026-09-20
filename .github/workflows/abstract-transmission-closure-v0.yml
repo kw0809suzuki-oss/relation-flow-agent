@@ -1,0 +1,52 @@
+name: Abstract Transmission Closure v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - outer_meaning_v0.py
+      - g15_agent.py
+      - origin_context_integrator.py
+      - strong_origin_body.py
+      - run_abstract_transmission_closure_v0.py
+      - .github/workflows/abstract-transmission-closure-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {seed: 7341, seat: 0}
+          - {seed: 7342, seat: 1}
+          - {seed: 7343, seat: 0}
+          - {seed: 7344, seat: 1}
+          - {seed: 7345, seat: 0}
+          - {seed: 7346, seat: 1}
+          - {seed: 7347, seat: 0}
+          - {seed: 7348, seat: 1}
+          - {seed: 7349, seat: 0}
+          - {seed: 7350, seat: 1}
+          - {seed: 7351, seat: 0}
+          - {seed: 7352, seat: 1}
+          - {seed: 7353, seat: 0}
+          - {seed: 7354, seat: 1}
+          - {seed: 7355, seat: 0}
+          - {seed: 7356, seat: 1}
+          - {seed: 7357, seat: 0}
+          - {seed: 7358, seat: 1}
+          - {seed: 7359, seat: 0}
+          - {seed: 7360, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_abstract_transmission_closure_v0.py
