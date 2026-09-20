@@ -99,7 +99,6 @@ def main():
         "cases": [{"seed": s, "seat": t} for s, t in CASES],
         "battles": battles,
         "aggregate_contrasts": aggregate,
-        "score_summary": result["score_summary"],
         "score_summary": {
             "battle_count": len(margin_deltas),
             "mean_margin_delta": sum(margin_deltas) / len(margin_deltas),
@@ -118,6 +117,7 @@ def main():
     print(json.dumps({
         "cases": result["cases"],
         "aggregate_contrasts": aggregate,
+        "score_summary": result["score_summary"],
     }, separators=(",", ":")))
 
 
