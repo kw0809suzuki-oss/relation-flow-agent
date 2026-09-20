@@ -1,0 +1,48 @@
+name: Conditional LAND Gate High Leverage v0
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_conditional_land_gate_high_leverage_v0.py
+      - .github/workflows/conditional-land-gate-high-leverage-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {seed: 7121, seat: 0}
+          - {seed: 7122, seat: 1}
+          - {seed: 7123, seat: 0}
+          - {seed: 7124, seat: 1}
+          - {seed: 7125, seat: 0}
+          - {seed: 7126, seat: 1}
+          - {seed: 7127, seat: 0}
+          - {seed: 7128, seat: 1}
+          - {seed: 7129, seat: 0}
+          - {seed: 7130, seat: 1}
+          - {seed: 7131, seat: 0}
+          - {seed: 7132, seat: 1}
+          - {seed: 7133, seat: 0}
+          - {seed: 7134, seat: 1}
+          - {seed: 7135, seat: 0}
+          - {seed: 7136, seat: 1}
+          - {seed: 7137, seat: 0}
+          - {seed: 7138, seat: 1}
+          - {seed: 7139, seat: 0}
+          - {seed: 7140, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_conditional_land_gate_high_leverage_v0.py
