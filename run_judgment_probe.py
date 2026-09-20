@@ -4,6 +4,7 @@
 import json
 from pathlib import Path
 
+from judgment_frame import BattleOutcome, can_auto_adopt
 from judgment_trace_bridge import cycles_from_trace
 from run_whole_flow_control_v2 import play
 
@@ -46,25 +47,43 @@ def main():
     baseline = play(SEED, SEAT, False)
     candidate = play(SEED, SEAT, True)
     margin_delta = candidate["score"]["margin"] - baseline["score"]["margin"]
-    terminal = f"margin_delta={margin_delta:+.0f}"
 
     trace = {"whole_flow": candidate["flow_trace"]}
-    cycles = cycles_from_trace(trace, terminal_outcome=terminal)
+    cycles = cycles_from_trace(trace)
+
+    battle_outcome = BattleOutcome(
+        result=f"margin_delta={margin_delta:+.0f}",
+        scope="battle_only",
+        causal_attribution=False,
+        adoption="candidate_only",
+    )
 
     result = {
-        "schema": "kaggriculture.judgment-frame-probe.v1",
+        "schema": "kaggriculture.judgment-frame-probe.v2",
         "seed": SEED,
         "seat": SEAT,
         "baseline_score": baseline["score"],
         "candidate_score": candidate["score"],
-        "terminal_margin_delta": margin_delta,
+        "battle_outcome": {
+            "result": battle_outcome.result,
+            "scope": battle_outcome.scope,
+            "causal_attribution": battle_outcome.causal_attribution,
+            "adoption": battle_outcome.adoption,
+        },
         "judgment_cycle_count": len(cycles),
         "principle_checks": {
             "choice_execution_separated": all(
                 (not c.act.executed) or (c.choose.selected == c.act.selected)
                 for c in cycles
             ),
-            "experience_auto_adopted": any(c.learn.adoption != "candidate_only" for c in cycles),
+            "terminal_not_copied_into_local_learn": all(
+                not c.learn.outcome.startswith("margin_delta=") for c in cycles
+            ),
+            "battle_outcome_has_no_causal_attribution": battle_outcome.causal_attribution is False,
+            "experience_auto_adopted": (
+                any(c.learn.adoption != "candidate_only" for c in cycles)
+                or can_auto_adopt(battle_outcome)
+            ),
         },
         "cycles": [serialize_cycle(c) for c in cycles],
     }
@@ -74,7 +93,7 @@ def main():
     print(json.dumps({
         "seed": SEED,
         "seat": SEAT,
-        "terminal_margin_delta": margin_delta,
+        "battle_outcome": battle_outcome.result,
         "judgment_cycle_count": len(cycles),
         "principle_checks": result["principle_checks"],
     }, separators=(",", ":")))
