@@ -1,0 +1,45 @@
+name: Battle First Parallel 10 Active Candidate
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_battle_first_parallel_active_candidate_v0.py
+      - .github/workflows/battle-first-parallel-10-active-candidate.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 6343, seat: 0}
+          - {seed: 6344, seat: 1}
+          - {seed: 6345, seat: 0}
+          - {seed: 6346, seat: 1}
+          - {seed: 6347, seat: 0}
+          - {seed: 6348, seat: 1}
+          - {seed: 6349, seat: 0}
+          - {seed: 6350, seat: 1}
+          - {seed: 6351, seat: 0}
+          - {seed: 6352, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_battle_first_parallel_active_candidate_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parallel-battle-${{ matrix.seed }}
+          path: parallel_battle_${{ matrix.seed }}.json
