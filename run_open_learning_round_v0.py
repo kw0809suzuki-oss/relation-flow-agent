@@ -12,8 +12,8 @@ import whole_flow_control_agent as combat
 from judgment_capability_v1 import observe_state
 from open_learning_round_v0 import build_open_learning_round
 
-SEED = 6205
-SEAT = 0
+SEED = 6206
+SEAT = 1
 OPPONENT = base.OPPONENT
 OPPONENT_LABEL = "Seyamalam v21"
 OUT = Path("open_learning_round_v0.json")
