@@ -1,0 +1,25 @@
+name: Battle First Day24 Seed Variant 6208-6212
+on:
+  push:
+    branches: [milk-low-price-hold-v1]
+    paths:
+      - run_battle_first_day24_seed_variant_6208_6212.py
+      - .github/workflows/battle-first-day24-seed-variant-6208-6212.yml
+  workflow_dispatch:
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_battle_first_day24_seed_variant_6208_6212.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: battle-first-day24-seed-variant-6208-6212
+          path: battle_first_day24_seed_variant_6208_6212.json
