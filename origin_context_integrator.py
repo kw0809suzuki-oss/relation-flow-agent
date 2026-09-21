@@ -105,9 +105,15 @@ def integrate(origin_internal, role_reading):
     commitment = _clip01(native_strength * (0.75 + 0.25 * context_reliability))
     strategy_instruction = field_description.get("strategy_instruction")
     abstraction_effect = "none"
+    abstraction_gain = None
     if strategy_instruction == "option_preserving":
+        # Experimental receiver gain. Default 0.75 preserves current behavior.
+        try:
+            abstraction_gain = _clip01(float(os.getenv("G15_OPTION_PRESERVING_GAIN", "0.75")))
+        except (TypeError, ValueError):
+            abstraction_gain = 0.75
         # Abstraction changes commitment strength only; direction remains native Origin.
-        commitment = _clip01(commitment * 0.75)
+        commitment = _clip01(commitment * abstraction_gain)
         abstraction_effect = "reduce_commitment_preserve_optional_space"
 
     signed_native = max(-1.0, min(1.0, (native_strength - 0.5) * 2.0))
@@ -141,5 +147,6 @@ def integrate(origin_internal, role_reading):
         "action_instruction": None,
         "strategy_instruction": strategy_instruction,
         "abstraction_effect": abstraction_effect,
+        "abstraction_gain": abstraction_gain,
         "applies_on": "next_reentry",
     }
