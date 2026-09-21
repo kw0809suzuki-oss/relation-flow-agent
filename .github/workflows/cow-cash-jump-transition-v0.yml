@@ -1,0 +1,59 @@
+name: COW Cash Jump Transition Observer v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - COW_CASH_JUMP_TRANSITION_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restore historical COW probe worktree
+        run: |
+          git worktree add /tmp/cow-historical 27cac110515eca257c157904984add017d5ea8bb
+          cp economic_flow_observer_v0.py /tmp/cow-historical/
+          cp economic_flow_upstream_observer_v01.py /tmp/cow-historical/
+          cp cash_jump_transition_observer_v0.py /tmp/cow-historical/
+          cp run_cow_cash_jump_transition_v0.py /tmp/cow-historical/
+      - name: Install dependencies
+        working-directory: /tmp/cow-historical
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        working-directory: /tmp/cow-historical
+        run: bash scripts/fetch_opponent.sh
+      - name: Observe cash jump transitions
+        working-directory: /tmp/cow-historical
+        run: python run_cow_cash_jump_transition_v0.py
+      - name: Validate
+        working-directory: /tmp/cow-historical
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('cow_cash_jump_transition_v0.json'))
+          assert d['summary']['improved']==6
+          assert d['summary']['worsened']==4
+          assert d['principle']['observer_only'] is True
+          assert d['promote'] is False
+          print(d['summary']['transition_money_jump_ranking'])
+          PY
+      - name: Copy result
+        run: cp /tmp/cow-historical/cow_cash_jump_transition_v0.json .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cow-cash-jump-transition-v0
+          path: cow_cash_jump_transition_v0.json
