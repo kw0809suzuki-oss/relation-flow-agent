@@ -239,7 +239,8 @@ def agent(obs):
         "self": {"money": money, "units": units, "cows": cows, "wheat": wheat, "feed_need": fed_need, "remaining": remaining},
         "opponent": dict(opponent), "self_motion": dict(self_growth), "opponent_cycle": dict(opponent_cycle),
         "observed_relations": {"R": round(r,4), "E": round(e,4), "W": round(w,4)},
-        "uncertain": opponent_cycle.get("phase") == "unclear", "action_instruction": None, "strategy_instruction": None,
+        "uncertain": opponent_cycle.get("phase") == "unclear", "action_instruction": None,
+        "strategy_instruction": (os.getenv("G15_STRATEGY_ABSTRACTION") or None),
     }
     connected_context = dict(role_context)
     if os.getenv("G15_CONNECT_OPPONENT_FIELD_DESCRIPTION", "1") == "1":
