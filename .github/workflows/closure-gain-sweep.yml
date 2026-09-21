@@ -1,0 +1,51 @@
+name: Closure Gain Sweep
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - experiment/closure-gain-sweep-20260921
+    paths:
+      - CLOSURE_GAIN_SWEEP_RUN
+  workflow_dispatch:
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Run Closure gain sweep
+        run: python run_closure_gain_sweep.py
+      - name: Validate experiment boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('closure_gain_sweep_result.json').read_text())
+          assert d['schema']=='kaggriculture.closure-abstract-transmission.gain-sweep.v0'
+          assert d['abstraction']['direct_action_instruction'] is False
+          assert d['abstraction']['direction_source']=='native_origin'
+          assert d['causal_attribution'] is False
+          assert d['promote'] is False
+          assert set(d['arms']) == {'0.75','0.60','0.45'}
+          for arm in d['arms'].values():
+              assert arm['summary']['receiver']['received_snapshots'] > 0
+              assert arm['summary']['receiver']['effect_snapshots'] > 0
+          print({k:v['summary'] for k,v in d['arms'].items()})
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: closure-gain-sweep-result
+          path: closure_gain_sweep_result.json
