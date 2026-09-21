@@ -1,0 +1,51 @@
+name: D14 Late Expansion Independent Fresh40
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/d14-late-expansion-independent-20260921]
+    paths:
+      - D14_LATE_EXPANSION_INDEPENDENT_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Compile
+        run: |
+          python -m py_compile d14_late_expansion_closure_v0.py             run_d14_late_expansion_independent_fresh40.py             g17_agent.py strong_origin_body.py strong_origin.py
+      - name: Run independent fresh40
+        run: python run_d14_late_expansion_independent_fresh40.py
+      - name: Validate result shape
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('d14_late_expansion_independent_fresh40.json').read_text())
+          assert d['schema']=='kaggriculture.d14-late-expansion-closure.independent-fresh40.v0'
+          assert d['candidate']['frozen'] is True
+          assert d['candidate']['adopted'] is False
+          assert d['candidate']['start_day']==14
+          assert d['comparison']['cases']==40
+          assert d['summary']['case_count']==40
+          assert d['summary']['seat0']==20 and d['summary']['seat1']==20
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: d14-late-expansion-independent-fresh40
+          path: d14_late_expansion_independent_fresh40.json
