@@ -1,0 +1,47 @@
+name: Maintain Stop Candidate Family Probe
+
+permissions:
+  contents: read
+
+on:
+  stop:
+    branches: [main]
+    paths:
+      - MAINTAIN_STOP_FAMILY_PROBE_RUN
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Run paired family probe
+        run: python run_maintain_stop_family_probe.py
+      - name: Validate boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('maintain_stop_family_probe_result.json').read_text())
+          assert d['schema'] == 'kaggriculture.candidate-family-probe.maintain-stop.v0'
+          assert d['family']['combat'] == 'maintain'
+          assert d['family']['economic'] == 'stop'
+          assert d['causal_attribution'] is False
+          assert d['promote'] is False
+          assert all(x['promote'] is False for x in d['cases'])
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: maintain-stop-family-probe
+          path: maintain_stop_family_probe_result.json
