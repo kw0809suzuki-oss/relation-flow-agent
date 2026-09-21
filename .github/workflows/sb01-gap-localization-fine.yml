@@ -1,0 +1,88 @@
+name: SB01 Gap Localization Fine
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-gap-localization-observer-20260922]
+    paths:
+      - SB01_GAP_FINE_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        include:
+          - {seed: 7001, seat: 0}
+          - {seed: 7002, seat: 1}
+          - {seed: 7003, seat: 0}
+          - {seed: 7004, seat: 1}
+          - {seed: 7005, seat: 0}
+          - {seed: 7006, seat: 1}
+          - {seed: 7007, seat: 0}
+          - {seed: 7008, seat: 1}
+          - {seed: 7009, seat: 0}
+          - {seed: 7010, seat: 1}
+          - {seed: 7011, seat: 0}
+          - {seed: 7012, seat: 1}
+          - {seed: 7013, seat: 0}
+          - {seed: 7014, seat: 1}
+          - {seed: 7015, seat: 0}
+          - {seed: 7016, seat: 1}
+          - {seed: 7017, seat: 0}
+          - {seed: 7018, seat: 1}
+          - {seed: 7019, seat: 0}
+          - {seed: 7020, seat: 1}
+          - {seed: 7021, seat: 0}
+          - {seed: 7022, seat: 1}
+          - {seed: 7023, seat: 0}
+          - {seed: 7024, seat: 1}
+          - {seed: 7025, seat: 0}
+          - {seed: 7026, seat: 1}
+          - {seed: 7027, seat: 0}
+          - {seed: 7028, seat: 1}
+          - {seed: 7029, seat: 0}
+          - {seed: 7030, seat: 1}
+          - {seed: 7031, seat: 0}
+          - {seed: 7032, seat: 1}
+          - {seed: 7033, seat: 0}
+          - {seed: 7034, seat: 1}
+          - {seed: 7035, seat: 0}
+          - {seed: 7036, seat: 1}
+          - {seed: 7037, seat: 0}
+          - {seed: 7038, seat: 1}
+          - {seed: 7039, seat: 0}
+          - {seed: 7040, seat: 1}
+          - {seed: 7041, seat: 0}
+          - {seed: 7042, seat: 1}
+          - {seed: 7043, seat: 0}
+          - {seed: 7044, seat: 1}
+          - {seed: 7045, seat: 0}
+          - {seed: 7046, seat: 1}
+          - {seed: 7047, seat: 0}
+          - {seed: 7048, seat: 1}
+          - {seed: 7049, seat: 0}
+          - {seed: 7050, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_sb01_gap_localization_fine.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sb01-gap-fine-${{ matrix.seed }}
+          path: sb01_gap_fine_${{ matrix.seed }}.json
