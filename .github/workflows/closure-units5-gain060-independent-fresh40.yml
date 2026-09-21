@@ -1,0 +1,59 @@
+name: Closure Units5 Gain060 Independent Fresh40
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - experiment/closure-gain-sweep-20260921
+    paths:
+      - CLOSURE_UNITS5_GAIN060_INDEPENDENT_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Run independent fresh40
+        run: python run_closure_units5_gain060_independent_fresh40_v0.py
+      - name: Validate frozen candidate boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('closure_units5_gain060_independent_fresh40_v0.json').read_text())
+          assert d['schema']=='kaggriculture.closure-units5-gain060-independent-fresh40.v0'
+          assert len(d['rows'])==40
+          assert d['candidate']['gain']==0.60
+          assert d['candidate']['min_units']==5
+          assert d['candidate']['gate']=='current_units >= 5'
+          assert d['candidate']['other_conditions'] is None
+          assert d['boundary']['independent_battle'] is True
+          assert d['boundary']['separator_frozen_before_run'] is True
+          assert d['boundary']['gain_frozen_before_run'] is True
+          assert d['boundary']['no_gain_sweep'] is True
+          assert d['boundary']['no_new_observer'] is True
+          assert d['boundary']['promote'] is False
+          assert d['boundary']['adopt'] is False
+          print({
+              'summary': d['summary'],
+              'independent_gate_pass': d['independent_gate_pass'],
+              'decision': d['decision'],
+          })
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: closure-units5-gain060-independent-fresh40-v0
+          path: closure_units5_gain060_independent_fresh40_v0.json
