@@ -1,0 +1,51 @@
+name: Closure Receiver Gain 060 Fresh20
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - experiment/closure-gain-sweep-20260921
+    paths:
+      - CLOSURE_RECEIVER_GAIN_060_FRESH20_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Run fresh20 paired Battle
+        run: python run_closure_receiver_gain_060_fresh20_v0.py
+      - name: Validate candidate boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('closure_receiver_gain_060_fresh20_v0.json').read_text())
+          assert d['schema']=='kaggriculture.closure-receiver-gain-060.fresh20.v0'
+          assert d['candidate']['gain']==0.60
+          assert d['candidate']['direction_source']=='native_origin'
+          assert d['candidate']['direct_action_instruction'] is False
+          assert d['boundary']['promote'] is False
+          assert d['boundary']['adopt'] is False
+          assert len(d['rows'])==20
+          assert d['summary']['receiver']['received_snapshots'] > 0
+          assert d['summary']['receiver']['effect_snapshots'] > 0
+          print(d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: closure-receiver-gain-060-fresh20-v0
+          path: closure_receiver_gain_060_fresh20_v0.json
