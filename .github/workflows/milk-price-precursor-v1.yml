@@ -1,0 +1,22 @@
+name: MILK Price Precursor v1
+on:
+  push:
+    branches: [scale-chassis-v1]
+    paths:
+      - observe_milk_price_precursor_v1.py
+      - .github/workflows/milk-price-precursor-v1.yml
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install kaggle-environments
+      - run: python observe_milk_price_precursor_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: milk-price-precursor-v1
+          path: milk_price_precursor_v1.json

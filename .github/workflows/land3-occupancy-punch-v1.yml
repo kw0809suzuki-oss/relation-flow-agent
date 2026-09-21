@@ -1,0 +1,24 @@
+name: Land3 Occupancy Punch v1
+on:
+  push:
+    branches: [scale-chassis-v1]
+    paths:
+      - 'land3_occupancy_punch_v1.py'
+      - 'run_land3_occupancy_punch_v1.py'
+      - '.github/workflows/land3-occupancy-punch-v1.yml'
+  workflow_dispatch:
+jobs:
+  ab:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_land3_occupancy_punch_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: land3-occupancy-punch-v1
+          path: land3_occupancy_punch_v1.json
