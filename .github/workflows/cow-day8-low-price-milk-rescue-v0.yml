@@ -1,0 +1,70 @@
+name: COW Day8 Low Price MILK Rescue v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - COW_DAY8_LOW_PRICE_MILK_RESCUE_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Restore historical COW worktree
+        run: |
+          git worktree add /tmp/cow-historical 27cac110515eca257c157904984add017d5ea8bb
+          cp cow_day8_low_price_milk_rescue_v0.py /tmp/cow-historical/
+          cp run_cow_day8_low_price_milk_rescue_v0.py /tmp/cow-historical/
+
+      - name: Install dependencies
+        working-directory: /tmp/cow-historical
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Fetch pinned opponent
+        working-directory: /tmp/cow-historical
+        run: bash scripts/fetch_opponent.sh
+
+      - name: Run paired Battle
+        working-directory: /tmp/cow-historical
+        run: python run_cow_day8_low_price_milk_rescue_v0.py
+
+      - name: Validate output
+        working-directory: /tmp/cow-historical
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('cow_day8_low_price_milk_rescue_v0.json'))
+          assert d['schema']=='kaggriculture.cow-day8-low-price-milk-rescue.v0'
+          assert len(d['bundles']['known10']['cases'])==10
+          assert len(d['bundles']['fresh20']['cases'])==20
+          assert d['candidate']['threshold']==180.0
+          assert d['candidate']['target_day']==8
+          assert d['boundary']['promote'] is False
+          print('known', d['bundles']['known10']['summary'])
+          print('fresh', d['bundles']['fresh20']['summary'])
+          print('accident3', d['known_subsets']['accident3'])
+          PY
+
+      - name: Copy result
+        run: cp /tmp/cow-historical/cow_day8_low_price_milk_rescue_v0.json .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cow-day8-low-price-milk-rescue-v0
+          path: cow_day8_low_price_milk_rescue_v0.json
