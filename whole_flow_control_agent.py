@@ -3,6 +3,11 @@
 The controller reads one live trajectory only. It never sees seed, paired
 results, terminal reward, or future State. Native Origin keeps direction;
 Relation Flow can only retain, soften, or remove the existing gate modulation.
+
+Adopted combat rule:
+- From day 14 onward, suppress new late-expansion purchases:
+  BUY_LAND, BUY_SEED, BUY_ANIMAL, BUY_PRODUCT COW.
+- HIRE, HARVEST, unit actions, and other market actions are unchanged.
 """
 
 import copy
@@ -13,6 +18,7 @@ import g17_agent as body
 
 
 DAY_CALLS = 24
+ADOPTED_D14_START_DAY = 14
 BASE_MAGNITUDE = 0.04
 MODE_MAGNITUDE = {
     "push": 0.04,
@@ -36,6 +42,32 @@ def set_probe_enabled(enabled):
 
 def set_attribution_enabled(enabled):
     body.set_attribution_enabled(enabled)
+
+
+def _is_adopted_d14_expansion(order):
+    if not isinstance(order, (list, tuple)) or not order:
+        return False
+    op = order[0]
+    if op in ("BUY_LAND", "BUY_SEED", "BUY_ANIMAL"):
+        return True
+    return op == "BUY_PRODUCT" and len(order) > 1 and order[1] == "COW"
+
+
+def _apply_adopted_d14(obs, action):
+    if not isinstance(action, dict):
+        return action, []
+    day = int(obs.get("day", 0) or 0)
+    if day < ADOPTED_D14_START_DAY:
+        return action, []
+
+    market = list(action.get("market", []) or [])
+    removed = [copy.deepcopy(order) for order in market if _is_adopted_d14_expansion(order)]
+    if not removed:
+        return action, []
+
+    revised = copy.deepcopy(action)
+    revised["market"] = [order for order in market if not _is_adopted_d14_expansion(order)]
+    return revised, removed
 
 
 def _clip(value):
@@ -104,6 +136,9 @@ def reset_telemetry():
         "mode_counts": Counter(),
         "magnitude_counts": Counter(),
         "controlled_turns": 0,
+        "adopted_d14_changed_turns": 0,
+        "adopted_d14_removed_orders": 0,
+        "adopted_d14_removed_by_op": Counter(),
         "events": [],
     }
 
@@ -127,6 +162,16 @@ def agent(obs):
         else:
             os.environ["ORIGIN_GATE_MAGNITUDE"] = old
 
+    action, d14_removed = _apply_adopted_d14(obs, action)
+
+    if d14_removed:
+        _state["adopted_d14_changed_turns"] += 1
+        _state["adopted_d14_removed_orders"] += len(d14_removed)
+        for order in d14_removed:
+            op = order[0]
+            key = "BUY_PRODUCT_COW" if op == "BUY_PRODUCT" else op
+            _state["adopted_d14_removed_by_op"][key] += 1
+
     applied = magnitude if _enabled else BASE_MAGNITUDE
     _state["mode_counts"][mode if _enabled else "control_off"] += 1
     _state["magnitude_counts"][str(applied)] += 1
@@ -140,6 +185,8 @@ def agent(obs):
         "one_day_movement": None if movement is None else round(movement, 8),
         "mode": mode if _enabled else "control_off",
         "gate_magnitude": applied,
+        "adopted_d14_applied": bool(d14_removed),
+        "adopted_d14_removed": d14_removed,
         "terminal_or_pair_input": False,
     })
     history.append(relation)
@@ -155,6 +202,11 @@ def get_telemetry():
         "whole_flow_controlled_turns": _state.get("controlled_turns", 0),
         "whole_flow_mode_counts": dict(_state.get("mode_counts", {})),
         "whole_flow_magnitude_counts": dict(_state.get("magnitude_counts", {})),
+        "adopted_d14_enabled": True,
+        "adopted_d14_start_day": ADOPTED_D14_START_DAY,
+        "adopted_d14_changed_turns": _state.get("adopted_d14_changed_turns", 0),
+        "adopted_d14_removed_orders": _state.get("adopted_d14_removed_orders", 0),
+        "adopted_d14_removed_by_op": dict(_state.get("adopted_d14_removed_by_op", {})),
     })
     return result
 
