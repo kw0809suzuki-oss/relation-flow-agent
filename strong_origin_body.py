@@ -42,7 +42,7 @@ class _CommitmentScaledTargets(dict):
         return super().__setitem__(key, adjusted)
 
 
-def _crop_commitment_scale(integration):
+def _crop_commitment_scale(integration, current_units=None):
     if os.getenv("ORIGIN_CROP_COMMITMENT", "0") != "1":
         return 1.0
     context = dict(integration or {})
@@ -54,7 +54,28 @@ def _crop_commitment_scale(integration):
     commitment = float(context.get("commitment", 0.0) or 0.0)
     if native_strength <= 0.0:
         return 1.0
-    return max(0.0, min(1.0, commitment / native_strength))
+
+    scale = max(0.0, min(1.0, commitment / native_strength))
+
+    # Optional deployment gate for the option_preserving experiment.
+    # When the current State is below the frozen units threshold, remove only
+    # the abstraction multiplier and preserve the native/context commitment.
+    min_units_raw = os.getenv("G15_OPTION_PRESERVING_MIN_UNITS")
+    if (
+        min_units_raw is not None
+        and current_units is not None
+        and context.get("abstraction_effect") == "reduce_commitment_preserve_optional_space"
+    ):
+        try:
+            min_units = float(min_units_raw)
+        except (TypeError, ValueError):
+            min_units = None
+        if min_units is not None and float(current_units) < min_units:
+            gain = float(context.get("abstraction_gain", 1.0) or 1.0)
+            if gain > 0.0:
+                scale = max(0.0, min(1.0, scale / gain))
+
+    return scale
 
 
 def reset_telemetry():
@@ -99,7 +120,8 @@ def agent(obs):
     global _LAST_TRACE, _ORIGIN_CONTEXT_RECEIVES, _ORIGIN_ROLE_READS, _ORIGIN_FIELD_CONTEXT_RECEIVES, _ORIGIN_INTEGRATION, _ORIGIN_READ_CATEGORIES
     current_context = dict(_REENTRY_CONTEXT)
     applied_integration = dict(_ORIGIN_INTEGRATION)
-    crop_commitment_scale = _crop_commitment_scale(applied_integration)
+    current_units = 1 + len(obs["farms"][obs["player"]].get("hands", []))
+    crop_commitment_scale = _crop_commitment_scale(applied_integration, current_units)
     if current_context.get("matched_count", 0) > 0:
         _ORIGIN_CONTEXT_RECEIVES += 1
     if current_context.get("field_description_connected") and current_context.get("field_description"):
@@ -183,6 +205,8 @@ def agent(obs):
             "applied_origin_integration": applied_integration,
             "crop_commitment_enabled": os.getenv("ORIGIN_CROP_COMMITMENT", "0") == "1",
             "crop_commitment_scale": round(crop_commitment_scale, 6),
+            "current_units": current_units,
+            "option_preserving_min_units": os.getenv("G15_OPTION_PRESERVING_MIN_UNITS"),
         }
         return final_action
     finally:
