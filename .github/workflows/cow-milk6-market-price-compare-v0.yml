@@ -1,0 +1,52 @@
+name: COW MILK6 Market Price Compare v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [main]
+    paths:
+      - COW_MILK6_MARKET_PRICE_RUN
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restore historical COW probe worktree
+        run: |
+          git worktree add /tmp/cow-historical 27cac110515eca257c157904984add017d5ea8bb
+          cp run_cow_milk6_market_price_compare_v0.py /tmp/cow-historical/
+      - name: Install dependencies
+        working-directory: /tmp/cow-historical
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        working-directory: /tmp/cow-historical
+        run: bash scripts/fetch_opponent.sh
+      - name: Compare market prices
+        working-directory: /tmp/cow-historical
+        run: python run_cow_milk6_market_price_compare_v0.py
+      - name: Validate
+        working-directory: /tmp/cow-historical
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('cow_milk6_market_price_compare_v0.json'))
+          assert len(d['cases'])==10
+          assert d['principle']['direct_market_price_observation'] is True
+          assert d['promote'] is False
+          print(d['summary'])
+          PY
+      - name: Copy result
+        run: cp /tmp/cow-historical/cow_milk6_market_price_compare_v0.json .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cow-milk6-market-price-compare-v0
+          path: cow_milk6_market_price_compare_v0.json
