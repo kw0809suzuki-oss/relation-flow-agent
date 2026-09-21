@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import os
 from pathlib import Path
 
 from kaggle_environments import make
@@ -17,6 +18,7 @@ FRESH20 = [(4702 + i, i % 2) for i in range(20)]
 
 def configure():
     base._configure_baseline()
+    os.environ["BUNDLE_FLOW_CONTROL_V0"] = "1"
     native.set_control_enabled(False)
     native.set_probe_enabled(True)
     native.set_attribution_enabled(True)
