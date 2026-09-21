@@ -54,7 +54,7 @@ def main():
     payload={
         "schema":"kaggriculture.strength-benchmark.v0",
         "benchmark":BENCHMARK,
-        "snapshot":"SB-00",
+        "snapshot":"SB-01",
         "run_id":os.environ.get("GITHUB_RUN_ID"),
         "commit":os.environ.get("GITHUB_SHA"),
         "seed":SEED,
@@ -65,7 +65,8 @@ def main():
             "Strength Benchmark measures absolute Current Combat Model strength, not Candidate A/B difference.",
             "Benchmark v0 uses a fixed opponent, seed set, seat pattern, game configuration, scoring path, and aggregation method.",
             "Seeds 7001-7050 are reserved as the fixed Strength Benchmark v0 set.",
-            "No Candidate suppression or Variant intervention is applied.",
+            "Current Combat Model includes the formally adopted D14 late-expansion closure rule.",
+            "No benchmark-only Candidate or Variant intervention is applied.",
             "Future snapshots must reuse this same Benchmark v0 set unless a new benchmark version is explicitly created."
         ]
     }
