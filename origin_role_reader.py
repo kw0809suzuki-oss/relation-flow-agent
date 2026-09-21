@@ -39,5 +39,5 @@ def read(role_context, origin_internal):
         "field_description": field_description,
         "flow_direction": None,
         "action_instruction": None,
-        "strategy_instruction": None,
+        "strategy_instruction": field_description.get("strategy_instruction"),
     }
