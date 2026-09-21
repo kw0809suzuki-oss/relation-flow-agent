@@ -103,6 +103,12 @@ def integrate(origin_internal, role_reading):
     reinforced = 1.0 - (1.0 - role_reliability) * (1.0 - aligned_evidence)
     context_reliability = _clip01(reinforced * (1.0 - opposed_evidence))
     commitment = _clip01(native_strength * (0.75 + 0.25 * context_reliability))
+    strategy_instruction = field_description.get("strategy_instruction")
+    abstraction_effect = "none"
+    if strategy_instruction == "option_preserving":
+        # Abstraction changes commitment strength only; direction remains native Origin.
+        commitment = _clip01(commitment * 0.75)
+        abstraction_effect = "reduce_commitment_preserve_optional_space"
 
     signed_native = max(-1.0, min(1.0, (native_strength - 0.5) * 2.0))
     magnitude = float(os.getenv("ORIGIN_GATE_MAGNITUDE", "0.04"))
@@ -133,6 +139,7 @@ def integrate(origin_internal, role_reading):
         "field_description": field_description,
         "role_direction": None,
         "action_instruction": None,
-        "strategy_instruction": None,
+        "strategy_instruction": strategy_instruction,
+        "abstraction_effect": abstraction_effect,
         "applies_on": "next_reentry",
     }
