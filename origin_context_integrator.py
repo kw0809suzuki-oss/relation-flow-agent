@@ -42,6 +42,7 @@ def integrate(origin_internal, role_reading):
     outer_meaning = dict(field_description.get("outer_meaning", {}) or {})
     outer_phase = str(outer_meaning.get("phase", "") or "").upper()
     outer_meaning_present = bool(outer_meaning)
+    evaluation_lens = reading.get("evaluation_lens")
     meaning_commitment_scale = 0.70 if outer_phase == "CLOSURE" else 1.0
 
     if role_present:
@@ -138,6 +139,10 @@ def integrate(origin_internal, role_reading):
         "outer_meaning_present": outer_meaning_present,
         "outer_phase": outer_phase or None,
         "meaning_commitment_scale": round(meaning_commitment_scale, 6),
+        "evaluation_lens": evaluation_lens,
+        "evaluation_lens_present": bool(evaluation_lens),
+        "candidate_evaluation": None,
+        "candidate_ranking": None,
         "role_direction": None,
         "action_instruction": None,
         "strategy_instruction": None,
