@@ -10,7 +10,7 @@ import sys
 import copy
 from collections import Counter
 import g8_agent as livestock
-import strong_origin_conversion_path_v0 as strong_origin
+import strong_origin_guided_autonomy_v0 as strong_origin
 import origin_role_reader
 import origin_context_integrator
 import model_selection_action_adapter_v0
@@ -194,6 +194,8 @@ def agent(obs):
                         "realizable_units": loc.get("realizable_units"),
                         "land_activation_capacity": loc.get("land_activation_capacity"),
                         "land_realizable_ok": loc.get("land_realizable_ok"),
+                        "model_guidance_choice": loc.get("model_guidance_choice"),
+                        "model_guidance_reason": loc.get("model_guidance_reason"),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
