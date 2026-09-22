@@ -155,7 +155,7 @@ def agent(obs):
             old_trace = sys.gettrace()
             internal = {}
             def tracer(frame, event, arg):
-                if event == "return" and frame.f_code.co_name == "agent" and frame.f_globals.get("__name__") == "strong_origin":
+                if event == "return" and frame.f_code.co_name == "agent" and frame.f_globals.get("__name__") == strong_origin.__name__:
                     loc = frame.f_locals
                     internal.update({
                         "strategy_name": loc.get("strategy_name"),
