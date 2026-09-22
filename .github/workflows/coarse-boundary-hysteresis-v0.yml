@@ -1,0 +1,53 @@
+name: Coarse Boundary Hysteresis v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [experiment/coarse-boundary-hysteresis-v0-20260923]
+    paths: [COARSE_BOUNDARY_HYSTERESIS_V0_RUN]
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7181, seat: 0}
+          - {seed: 7182, seat: 1}
+          - {seed: 7183, seat: 0}
+          - {seed: 7184, seat: 1}
+          - {seed: 7185, seat: 0}
+          - {seed: 7186, seat: 1}
+          - {seed: 7187, seat: 0}
+          - {seed: 7188, seat: 1}
+          - {seed: 7189, seat: 0}
+          - {seed: 7190, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_coarse_boundary_hysteresis_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coarse-boundary-hysteresis-v0-${{ matrix.seed }}
+          path: coarse_boundary_hysteresis_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: coarse-boundary-hysteresis-v0-*, path: artifacts}
+      - run: python aggregate_coarse_boundary_hysteresis_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coarse-boundary-hysteresis-v0-aggregate
+          path: coarse_boundary_hysteresis_v0_aggregate.json
