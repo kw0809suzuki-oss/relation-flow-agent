@@ -1,0 +1,48 @@
+name: Completion Workload Separator v1
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [observer/completion-workload-separator-v1-20260922]
+    paths:
+      - COMPLETION_WORKLOAD_SEPARATOR_V1_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7111, seat: 0}
+          - {seed: 7112, seat: 1}
+          - {seed: 7113, seat: 0}
+          - {seed: 7114, seat: 1}
+          - {seed: 7115, seat: 0}
+          - {seed: 7116, seat: 1}
+          - {seed: 7117, seat: 0}
+          - {seed: 7118, seat: 1}
+          - {seed: 7119, seat: 0}
+          - {seed: 7120, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_completion_workload_separator_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: completion-workload-separator-v1-${{ matrix.seed }}
+          path: completion_workload_separator_v1_${{ matrix.seed }}.json
