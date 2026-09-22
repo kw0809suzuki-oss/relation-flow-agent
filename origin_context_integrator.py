@@ -10,6 +10,7 @@ import model_candidate_evaluator_v0
 import model_candidate_comparator_v0
 import model_candidate_selector_v0
 import model_candidate_direction_v0
+import model_direction_control_v0
 
 
 def _clip01(x):
@@ -61,8 +62,16 @@ def integrate(origin_internal, role_reading):
     if os.getenv("ORIGIN_MODEL_CANDIDATE_SELECTION", "0") == "1":
         candidate_selection = model_candidate_selector_v0.select(candidate_evaluation, candidate_comparison)
     candidate_direction = None
+    candidate_alternative_frontier = None
+    candidate_alternative_direction = None
     if os.getenv("ORIGIN_MODEL_CANDIDATE_DIRECTION", "0") == "1":
         candidate_direction = model_candidate_direction_v0.build(candidate_selection, internal)
+        candidate_alternative_frontier = model_direction_control_v0.alternative_frontier_candidate(
+            candidate_evaluation, candidate_comparison, candidate_selection
+        )
+        candidate_alternative_direction = model_candidate_direction_v0.build(
+            candidate_alternative_frontier, internal
+        )
     meaning_commitment_scale = 0.70 if outer_phase == "CLOSURE" else 1.0
 
     if role_present:
@@ -169,6 +178,10 @@ def integrate(origin_internal, role_reading):
         "candidate_selection_present": bool(candidate_selection),
         "candidate_direction": candidate_direction,
         "candidate_direction_present": bool(candidate_direction),
+        "candidate_alternative_frontier": candidate_alternative_frontier,
+        "candidate_alternative_frontier_present": bool(candidate_alternative_frontier),
+        "candidate_alternative_direction": candidate_alternative_direction,
+        "candidate_alternative_direction_present": bool(candidate_alternative_direction),
         "candidate_ranking": None,
         "role_direction": None,
         "action_instruction": None,
