@@ -259,6 +259,12 @@ def agent(obs):
         if meaning is not None:
             field_description["outer_meaning"] = meaning
 
+    realizable_day = os.getenv("OUTER_MEANING_REALIZABLE_CAPACITY_DAY")
+    if realizable_day is not None:
+        meaning = outer_meaning_v0.realizable_capacity_meaning(obs, int(realizable_day))
+        if meaning is not None:
+            field_description["outer_meaning"] = meaning
+
     connected_context = dict(role_context)
     if os.getenv("G15_CONNECT_OPPONENT_FIELD_DESCRIPTION", "1") == "1":
         connected_context["field_description"] = field_description; connected_context["field_description_connected"] = True
