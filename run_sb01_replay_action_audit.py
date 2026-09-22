@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Observation-only replay action audit around SB-01 Day 7 expansion.
+"""Observation-only replay action audit around SB-01 expansion.
 
 Runs the exact fixed SB-01 matchup. After completion, reads Kaggle replay
 state (env.steps) to inspect recorded actions for both players. No action is
-modified.
+modified. Besides the existing Day 7 window, this version records the exact
+public-state transition where unlocked_quadrants changes and the replay
+actions immediately before/at that transition.
 """
 import json, os
 from pathlib import Path
@@ -39,6 +41,26 @@ def slim_obs(obs):
         } for f in farms]
     }
 
+def state_obs(states):
+    if not isinstance(states, list) or len(states)<2:
+        return {}
+    st_self=states[SEAT]
+    obs=getattr(st_self,"observation",None)
+    if obs is None and isinstance(st_self,dict):
+        obs=st_self.get("observation")
+    return dict(obs) if obs is not None else {}
+
+def state_actions(states):
+    if not isinstance(states, list) or len(states)<2:
+        return []
+    actions=[]
+    for st in states:
+        a=getattr(st,"action",None)
+        if a is None and isinstance(st,dict):
+            a=st.get("action")
+        actions.append(a)
+    return actions
+
 def main():
     configure()
     env=make("kaggriculture",configuration={"seed":SEED},debug=False)
@@ -46,37 +68,70 @@ def main():
     players[SEAT]=combat.agent
     env.run(players)
 
-    rows=[]
+    day7_rows=[]
+    snapshots=[]
     for step_idx, states in enumerate(env.steps):
-        if not isinstance(states, list) or len(states)<2: continue
-        # each state carries that player's own observation/action
-        st_self=states[SEAT]
-        obs=getattr(st_self,"observation",None)
-        if obs is None and isinstance(st_self,dict): obs=st_self.get("observation")
-        obs=dict(obs) if obs is not None else {}
-        day=obs.get("day")
-        if day!=7: continue
-        actions=[]
-        for pid,st in enumerate(states):
-            a=getattr(st,"action",None)
-            if a is None and isinstance(st,dict): a=st.get("action")
-            actions.append(a)
-        rows.append({
+        obs=state_obs(states)
+        if not obs:
+            continue
+        snap={
             "step_index":step_idx,
-            "self_observation":slim_obs(obs),
-            "actions_by_player":actions,
-        })
+            "observation":slim_obs(obs),
+            "actions_by_player":state_actions(states),
+        }
+        snapshots.append(snap)
+        if obs.get("day")==7:
+            day7_rows.append({
+                "step_index":step_idx,
+                "self_observation":slim_obs(obs),
+                "actions_by_player":snap["actions_by_player"],
+            })
+
+    quadrant_transitions=[]
+    for prev,cur in zip(snapshots,snapshots[1:]):
+        pf=prev["observation"].get("farm_public") or []
+        cf=cur["observation"].get("farm_public") or []
+        for pid in range(min(len(pf),len(cf))):
+            pqs=pf[pid].get("unlocked_quadrants") or []
+            cqs=cf[pid].get("unlocked_quadrants") or []
+            if len(cqs)!=len(pqs):
+                quadrant_transitions.append({
+                    "player_id":pid,
+                    "role":"self" if pid==SEAT else "opponent",
+                    "from_step_index":prev["step_index"],
+                    "to_step_index":cur["step_index"],
+                    "from_observation":prev["observation"],
+                    "to_observation":cur["observation"],
+                    "actions_at_from_step":prev["actions_by_player"],
+                    "actions_at_to_step":cur["actions_by_player"],
+                })
+
+    buy_land_occurrences=[]
+    for snap in snapshots:
+        for pid,action in enumerate(snap["actions_by_player"]):
+            market=(action or {}).get("market",[]) if isinstance(action,dict) else []
+            if any(isinstance(x,(list,tuple)) and x and x[0]=="BUY_LAND" for x in market):
+                buy_land_occurrences.append({
+                    "player_id":pid,
+                    "role":"self" if pid==SEAT else "opponent",
+                    "step_index":snap["step_index"],
+                    "observation":snap["observation"],
+                    "action":action,
+                })
 
     payload={
-      "schema":"kaggriculture.sb01.replay-action-audit.v0",
+      "schema":"kaggriculture.sb01.replay-action-audit.v1",
       "probe":"Remaining Strength Gap Replay Action Audit",
       "mode":"observation_only_replay",
       "seed":SEED,"seat":SEAT,"snapshot":"SB-01",
-      "day7_rows":rows,
+      "day7_rows":day7_rows,
+      "quadrant_transitions":quadrant_transitions,
+      "buy_land_occurrences":buy_land_occurrences,
       "boundary":[
         "No strategy, rule, threshold, or candidate is changed.",
-        "Recorded actions are read only after env.run from replay state.",
-        "This probe verifies whether opponent actions are directly recoverable; it does not infer missing actions."
+        "Recorded replay actions are agent-submitted actions; successful environment effect is verified separately by public-state transition.",
+        "A quadrant transition is recorded only when unlocked_quadrants changes in consecutive replay observations.",
+        "No missing action or causal relation is inferred."
       ]
     }
     OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
