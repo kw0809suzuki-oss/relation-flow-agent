@@ -15,6 +15,7 @@ from x_engine import XField, choose_x_origin, counter_crop_weights, counter_oppo
 _FLOW_ABSTRACTION = None
 _COARSE_REGIME_BY_PLAYER = {}
 _COARSE_MODE_BY_PLAYER = {}
+_FIRST_CONTINUITY_SLACK_USED = {}
 
 def set_flow_abstraction(meaning):
     global _FLOW_ABSTRACTION
@@ -57,6 +58,7 @@ _TELEMETRY = {"origins": Counter(), "distortion_trigger_turns": 0, "crop_trigger
 def reset_telemetry():
     _COARSE_REGIME_BY_PLAYER.clear()
     _COARSE_MODE_BY_PLAYER.clear()
+    _FIRST_CONTINUITY_SLACK_USED.clear()
     _TELEMETRY["origins"].clear()
     for k in ("distortion_trigger_turns","crop_trigger_turns","counter_active_turns","turns"):
         _TELEMETRY[k] = 0
@@ -170,7 +172,9 @@ def agent(obs):
     effective_guidance_mode=raw_guidance_mode
     coarse_regime=None
     coarse_boundary_changed=False
-    if str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and raw_guidance_mode=="coarse_boundary_guidance":
+    first_continuity_slack_triggered=False
+    guidance_phase=str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()
+    if guidance_phase=="OBJECTIVE_PRESSURE_GUIDANCE" and raw_guidance_mode in ("coarse_boundary_guidance","first_continuity_slack_once"):
         stores=[private.get("shed",{}) or {}] + list(private.get("inventories",[]) or [])
         total_wheat=sum(float(store.get("WHEAT",0) or 0) for store in stores if isinstance(store,dict))
         total_cows=sum(float(store.get("COW",0) or 0) for store in stores if isinstance(store,dict))
@@ -191,12 +195,22 @@ def agent(obs):
         else:
             coarse_regime="competitive"
             proposed_mode="throughput_match"
-        prior_regime=_COARSE_REGIME_BY_PLAYER.get(player)
-        if prior_regime != coarse_regime or player not in _COARSE_MODE_BY_PLAYER:
-            _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
-            _COARSE_MODE_BY_PLAYER[player]=proposed_mode
-            coarse_boundary_changed=True
-        effective_guidance_mode=_COARSE_MODE_BY_PLAYER[player]
+        if raw_guidance_mode=="first_continuity_slack_once":
+            # Reproduce only the first observed continuity/slack branch.
+            # After that single turn, return to the current objective-pressure flow.
+            if coarse_regime=="continuity" and not _FIRST_CONTINUITY_SLACK_USED.get(player,False):
+                effective_guidance_mode="throughput_with_slack"
+                _FIRST_CONTINUITY_SLACK_USED[player]=True
+                first_continuity_slack_triggered=True
+            else:
+                effective_guidance_mode="objective_pressure_guidance"
+        else:
+            prior_regime=_COARSE_REGIME_BY_PLAYER.get(player)
+            if prior_regime != coarse_regime or player not in _COARSE_MODE_BY_PLAYER:
+                _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
+                _COARSE_MODE_BY_PLAYER[player]=proposed_mode
+                coarse_boundary_changed=True
+            effective_guidance_mode=_COARSE_MODE_BY_PLAYER[player]
     if strategy_name not in ("LIQUID","ENDGAME") and land_cost and remaining_days>=9 and occupancy>=strategy["occupancy_target"] and projected_cash-land_cost>=reserve and len(market)<10:
         if not (str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and effective_guidance_mode in ("throughput_match","throughput_with_slack") and not land_realizable_ok):
             market.append(["BUY_LAND"]); projected_cash-=land_cost
