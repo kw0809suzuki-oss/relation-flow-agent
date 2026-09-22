@@ -80,3 +80,23 @@ def conversion_path_capacity_meaning(obs, start_day):
         "numeric_rule":None,
         "evidence_status":"hypothesis",
     }
+
+
+def guided_conversion_path_meaning(obs, start_day):
+    """Flow-chan guidance: a view to consider, never a command."""
+    day=int(obs.get("day",0) or 0)
+    if day < int(start_day):
+        return None
+    return {
+        "phase":"GUIDED_CONVERSION_PATH",
+        "current_thought":"One useful view may be that commitments should track downstream conversion throughput, and that useful slack may depend on competitive context.",
+        "autonomy":"Treat this as a perspective, not an instruction. Inspect the current State yourself. You may use it, reinterpret it, or ignore it if another structure fits better.",
+        "search_task":"Find the commitment structure that matters now, if any. Prefer the smallest change that can reach Battle value.",
+        "source":"flow_guidance_not_command",
+        "day":day,
+        "remaining":max(0,30-day),
+        "action_instruction":None,
+        "strategy_instruction":None,
+        "numeric_rule":None,
+        "evidence_status":"hypothesis",
+    }
