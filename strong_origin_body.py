@@ -24,6 +24,7 @@ _ORIGIN_ROLE_READS = 0
 _ORIGIN_FIELD_CONTEXT_RECEIVES = 0
 _ORIGIN_INTEGRATION = {}
 _ORIGIN_READ_CATEGORIES = Counter()
+_DIRECTION_CONTROL_USED = False
 
 
 class _CommitmentScaledTargets(dict):
@@ -96,7 +97,7 @@ def _apply_candidate_selection_priority(action, integration):
     return revised, True
 
 def reset_telemetry():
-    global _LAST_TRACE, _REENTRY_CONTEXT, _ORIGIN_CONTEXT_RECEIVES, _ORIGIN_ROLE_READS, _ORIGIN_FIELD_CONTEXT_RECEIVES, _ORIGIN_INTEGRATION, _ORIGIN_READ_CATEGORIES
+    global _LAST_TRACE, _REENTRY_CONTEXT, _ORIGIN_CONTEXT_RECEIVES, _ORIGIN_ROLE_READS, _ORIGIN_FIELD_CONTEXT_RECEIVES, _ORIGIN_INTEGRATION, _ORIGIN_READ_CATEGORIES, _DIRECTION_CONTROL_USED
     _LAST_TRACE = {}
     _REENTRY_CONTEXT = {}
     _ORIGIN_CONTEXT_RECEIVES = 0
@@ -104,6 +105,7 @@ def reset_telemetry():
     _ORIGIN_FIELD_CONTEXT_RECEIVES = 0
     _ORIGIN_INTEGRATION = {}
     _ORIGIN_READ_CATEGORIES.clear()
+    _DIRECTION_CONTROL_USED = False
     return strong_origin.reset_telemetry()
 
 
@@ -151,7 +153,7 @@ def agent(obs):
     class _ObservedBase:
         @staticmethod
         def agent(inner_obs):
-            global _ORIGIN_ROLE_READS, _ORIGIN_INTEGRATION, _ORIGIN_READ_CATEGORIES
+            global _ORIGIN_ROLE_READS, _ORIGIN_INTEGRATION, _ORIGIN_READ_CATEGORIES, _DIRECTION_CONTROL_USED
             old_trace = sys.gettrace()
             internal = {}
             def tracer(frame, event, arg):
@@ -174,6 +176,10 @@ def agent(obs):
                         "empty_tile_count": len(loc.get("empty_tiles", []) or []),
                         "seed_stock": dict((loc.get("private") or {}).get("seeds", {}) or {}) if isinstance(loc.get("private"), dict) else {},
                         "live_plants": {k: len(v) for k, v in dict(loc.get("my_plants", {}) or {}).items()},
+                        "native_targets_before_direction": dict(loc.get("native_targets", {}) or {}),
+                        "direction_targets_after": dict(loc.get("targets", {}) or {}),
+                        "direction_applied": bool(loc.get("direction_applied", False)),
+                        "direction_crop": loc.get("direction_crop"),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
@@ -187,16 +193,32 @@ def agent(obs):
             strong_origin.origin_targets = scaled_origin_targets
             guided_generation = os.getenv("ORIGIN_MODEL_SELECTION_GUIDED_GENERATION", "0") == "1"
             directional_state_read = os.getenv("ORIGIN_MODEL_DIRECTIONAL_STATE_READ", "0") == "1"
+            control_mode = os.getenv("ORIGIN_DIRECTION_CONTROL_MODE", "").strip().lower()
+            selected_direction = dict(applied_integration.get("candidate_direction", {}) or {})
+            alternative_direction = dict(applied_integration.get("candidate_alternative_direction", {}) or {})
+            comparable_entry = bool(selected_direction and alternative_direction)
+
+            direction_to_apply = None
+            if directional_state_read:
+                direction_to_apply = selected_direction
+            elif not _DIRECTION_CONTROL_USED and comparable_entry:
+                if control_mode == "selected":
+                    direction_to_apply = selected_direction
+                elif control_mode == "alternative":
+                    direction_to_apply = alternative_direction
+
             strong_origin.set_model_selection(
                 applied_integration.get("candidate_selection") if guided_generation else None
             )
-            strong_origin.set_model_direction(
-                applied_integration.get("candidate_direction") if directional_state_read else None
-            )
+            strong_origin.set_model_direction(direction_to_apply)
             captured["selection_guided_generation_enabled"] = bool(guided_generation)
             captured["selection_guided_crop"] = strong_origin.get_model_selected_crop()
-            captured["directional_state_read_enabled"] = bool(directional_state_read)
-            captured["applied_candidate_direction"] = dict(applied_integration.get("candidate_direction", {}) or {})
+            captured["directional_state_read_enabled"] = bool(directional_state_read or direction_to_apply)
+            captured["direction_control_mode"] = control_mode or "none"
+            captured["direction_control_comparable_entry"] = comparable_entry
+            captured["applied_candidate_direction"] = dict(direction_to_apply or {})
+            captured["selected_candidate_direction"] = selected_direction
+            captured["alternative_candidate_direction"] = alternative_direction
             sys.settrace(tracer)
             try:
                 action = strong_origin.agent(inner_obs)
@@ -205,6 +227,9 @@ def agent(obs):
                 strong_origin.origin_targets = original_origin_targets
                 strong_origin.set_model_selection(None)
                 strong_origin.set_model_direction(None)
+            if captured.get("internal", {}).get("direction_applied"):
+                _DIRECTION_CONTROL_USED = True
+            captured["direction_control_used"] = bool(_DIRECTION_CONTROL_USED)
             captured["native_base_action"] = copy.deepcopy(action)
             action_use = {
                 "selection_available": False,
@@ -252,6 +277,11 @@ def agent(obs):
             "selection_guided_crop": captured.get("selection_guided_crop"),
             "directional_state_read_enabled": bool(captured.get("directional_state_read_enabled", False)),
             "applied_candidate_direction": dict(captured.get("applied_candidate_direction", {})),
+            "selected_candidate_direction": dict(captured.get("selected_candidate_direction", {})),
+            "alternative_candidate_direction": dict(captured.get("alternative_candidate_direction", {})),
+            "direction_control_mode": captured.get("direction_control_mode"),
+            "direction_control_comparable_entry": bool(captured.get("direction_control_comparable_entry", False)),
+            "direction_control_used": bool(captured.get("direction_control_used", False)),
             "selection_action_use": dict(captured.get("selection_action_use", {})),
             "applied_candidate_selection": dict(captured.get("applied_candidate_selection", {})),
             "final_action": final_action,
