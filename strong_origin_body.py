@@ -10,7 +10,7 @@ import sys
 import copy
 from collections import Counter
 import g8_agent as livestock
-import strong_origin
+import strong_origin_selection_guided_v0 as strong_origin
 import origin_role_reader
 import origin_context_integrator
 import model_selection_action_adapter_v0
@@ -179,12 +179,19 @@ def agent(obs):
                 return _CommitmentScaledTargets(targets, crop_commitment_scale)
 
             strong_origin.origin_targets = scaled_origin_targets
+            guided_generation = os.getenv("ORIGIN_MODEL_SELECTION_GUIDED_GENERATION", "0") == "1"
+            strong_origin.set_model_selection(
+                applied_integration.get("candidate_selection") if guided_generation else None
+            )
+            captured["selection_guided_generation_enabled"] = bool(guided_generation)
+            captured["selection_guided_crop"] = strong_origin.get_model_selected_crop()
             sys.settrace(tracer)
             try:
                 action = strong_origin.agent(inner_obs)
             finally:
                 sys.settrace(old_trace)
                 strong_origin.origin_targets = original_origin_targets
+                strong_origin.set_model_selection(None)
             captured["native_base_action"] = copy.deepcopy(action)
             action_use = {
                 "selection_available": False,
@@ -228,6 +235,8 @@ def agent(obs):
             "base_action": base_action,
             "native_base_action": captured.get("native_base_action", {}),
             "selection_priority_applied": bool(captured.get("selection_priority_applied", False)),
+            "selection_guided_generation_enabled": bool(captured.get("selection_guided_generation_enabled", False)),
+            "selection_guided_crop": captured.get("selection_guided_crop"),
             "selection_action_use": dict(captured.get("selection_action_use", {})),
             "applied_candidate_selection": dict(captured.get("applied_candidate_selection", {})),
             "final_action": final_action,
