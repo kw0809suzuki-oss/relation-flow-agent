@@ -277,6 +277,12 @@ def agent(obs):
         if meaning is not None:
             field_description["outer_meaning"] = meaning
 
+    pressure_day = os.getenv("OUTER_MEANING_OBJECTIVE_PRESSURE_DAY")
+    if pressure_day is not None:
+        meaning = outer_meaning_v0.objective_pressure_guidance_meaning(obs, int(pressure_day))
+        if meaning is not None:
+            field_description["outer_meaning"] = meaning
+
     connected_context = dict(role_context)
     if os.getenv("G15_CONNECT_OPPONENT_FIELD_DESCRIPTION", "1") == "1":
         connected_context["field_description"] = field_description; connected_context["field_description_connected"] = True
