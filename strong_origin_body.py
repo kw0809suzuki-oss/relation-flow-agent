@@ -198,6 +198,7 @@ def agent(obs):
                         "model_guidance_reason": loc.get("model_guidance_reason"),
                         "coarse_regime": loc.get("coarse_regime"),
                         "coarse_boundary_changed": bool(loc.get("coarse_boundary_changed", False)),
+                        "first_continuity_slack_triggered": bool(loc.get("first_continuity_slack_triggered", False)),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
