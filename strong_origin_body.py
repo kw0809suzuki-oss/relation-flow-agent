@@ -10,7 +10,7 @@ import sys
 import copy
 from collections import Counter
 import g8_agent as livestock
-import strong_origin_objective_pressure_v0 as strong_origin
+import strong_origin_coarse_boundary_v0 as strong_origin
 import origin_role_reader
 import origin_context_integrator
 import model_selection_action_adapter_v0
@@ -196,6 +196,8 @@ def agent(obs):
                         "land_realizable_ok": loc.get("land_realizable_ok"),
                         "model_guidance_choice": loc.get("model_guidance_choice"),
                         "model_guidance_reason": loc.get("model_guidance_reason"),
+                        "coarse_regime": loc.get("coarse_regime"),
+                        "coarse_boundary_changed": bool(loc.get("coarse_boundary_changed", False)),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
