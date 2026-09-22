@@ -1,0 +1,48 @@
+name: Option Preservation Abstraction Probe v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [observer/option-preservation-abstraction-probe-v0-20260922]
+    paths:
+      - OPTION_PRESERVATION_ABSTRACTION_PROBE_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7141, seat: 0}
+          - {seed: 7142, seat: 1}
+          - {seed: 7143, seat: 0}
+          - {seed: 7144, seat: 1}
+          - {seed: 7145, seat: 0}
+          - {seed: 7146, seat: 1}
+          - {seed: 7147, seat: 0}
+          - {seed: 7148, seat: 1}
+          - {seed: 7149, seat: 0}
+          - {seed: 7150, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_option_preservation_abstraction_probe_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: option-preservation-abstraction-probe-v0-${{ matrix.seed }}
+          path: option_preservation_abstraction_probe_v0_${{ matrix.seed }}.json
