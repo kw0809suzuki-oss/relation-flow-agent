@@ -100,3 +100,23 @@ def guided_conversion_path_meaning(obs, start_day):
         "numeric_rule":None,
         "evidence_status":"hypothesis",
     }
+
+
+def objective_pressure_guidance_meaning(obs, start_day):
+    """Flow-chan guidance: name the tension, leave prioritization to the model."""
+    day=int(obs.get("day",0) or 0)
+    if day < int(start_day):
+        return None
+    return {
+        "phase":"OBJECTIVE_PRESSURE_GUIDANCE",
+        "current_thought":"The useful amount of slack may depend on what is currently under pressure: own resource continuity, relative position, or neither.",
+        "autonomy":"This is only a way of seeing the State. Decide for yourself which pressure matters now, whether this framing applies, and how strongly to use it.",
+        "search_task":"Inspect the current State and choose the smallest commitment adjustment that fits the pressure you infer. You may keep native behavior if no adjustment is justified.",
+        "source":"flow_guidance_from_self_margin_divergence",
+        "day":day,
+        "remaining":max(0,30-day),
+        "action_instruction":None,
+        "strategy_instruction":None,
+        "numeric_rule":None,
+        "evidence_status":"hypothesis",
+    }
