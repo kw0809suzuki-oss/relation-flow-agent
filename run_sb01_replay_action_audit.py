@@ -3,9 +3,8 @@
 
 Runs the exact fixed SB-01 matchup. After completion, reads Kaggle replay
 state (env.steps) to inspect recorded actions for both players. No action is
-modified. Besides the existing Day 7 window, this version records the exact
-public-state transition where unlocked_quadrants changes and the replay
-actions immediately before/at that transition.
+modified. This version also preserves the raw public farm observations for
+the narrow Day 7 expansion window so spatial placement can be verified.
 """
 import json, os
 from pathlib import Path
@@ -61,6 +60,12 @@ def state_actions(states):
         actions.append(a)
     return actions
 
+def jsonable(value):
+    try:
+        return json.loads(json.dumps(value, ensure_ascii=False))
+    except Exception:
+        return str(value)
+
 def main():
     configure()
     env=make("kaggriculture",configuration={"seed":SEED},debug=False)
@@ -69,22 +74,31 @@ def main():
     env.run(players)
 
     day7_rows=[]
+    expansion_window_raw=[]
     snapshots=[]
     for step_idx, states in enumerate(env.steps):
         obs=state_obs(states)
         if not obs:
             continue
+        actions=state_actions(states)
         snap={
             "step_index":step_idx,
             "observation":slim_obs(obs),
-            "actions_by_player":state_actions(states),
+            "actions_by_player":actions,
         }
         snapshots.append(snap)
         if obs.get("day")==7:
             day7_rows.append({
                 "step_index":step_idx,
                 "self_observation":slim_obs(obs),
-                "actions_by_player":snap["actions_by_player"],
+                "actions_by_player":actions,
+            })
+        if 169 <= step_idx <= 176:
+            expansion_window_raw.append({
+                "step_index":step_idx,
+                "day":obs.get("day"),
+                "farms":jsonable(obs.get("farms") or []),
+                "actions_by_player":jsonable(actions),
             })
 
     quadrant_transitions=[]
@@ -120,17 +134,19 @@ def main():
                 })
 
     payload={
-      "schema":"kaggriculture.sb01.replay-action-audit.v1",
+      "schema":"kaggriculture.sb01.replay-action-audit.v2",
       "probe":"Remaining Strength Gap Replay Action Audit",
       "mode":"observation_only_replay",
       "seed":SEED,"seat":SEAT,"snapshot":"SB-01",
       "day7_rows":day7_rows,
+      "expansion_window_raw":expansion_window_raw,
       "quadrant_transitions":quadrant_transitions,
       "buy_land_occurrences":buy_land_occurrences,
       "boundary":[
         "No strategy, rule, threshold, or candidate is changed.",
         "Recorded replay actions are agent-submitted actions; successful environment effect is verified separately by public-state transition.",
         "A quadrant transition is recorded only when unlocked_quadrants changes in consecutive replay observations.",
+        "Raw farm observations are preserved only for step 169 through 176 to verify spatial placement without broadening the observer.",
         "No missing action or causal relation is inferred."
       ]
     }
