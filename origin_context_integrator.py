@@ -6,6 +6,7 @@ how strongly Origin commits to its own already-observed direction.
 """
 
 import os
+import model_candidate_evaluator_v0
 
 
 def _clip01(x):
@@ -43,6 +44,13 @@ def integrate(origin_internal, role_reading):
     outer_phase = str(outer_meaning.get("phase", "") or "").upper()
     outer_meaning_present = bool(outer_meaning)
     evaluation_lens = reading.get("evaluation_lens")
+    candidate_evaluation = None
+    if os.getenv("ORIGIN_MODEL_CANDIDATE_EVALUATION", "0") == "1":
+        candidate_evaluation = model_candidate_evaluator_v0.evaluate(
+            evaluation_lens,
+            internal,
+            field_description,
+        )
     meaning_commitment_scale = 0.70 if outer_phase == "CLOSURE" else 1.0
 
     if role_present:
@@ -141,7 +149,8 @@ def integrate(origin_internal, role_reading):
         "meaning_commitment_scale": round(meaning_commitment_scale, 6),
         "evaluation_lens": evaluation_lens,
         "evaluation_lens_present": bool(evaluation_lens),
-        "candidate_evaluation": None,
+        "candidate_evaluation": candidate_evaluation,
+        "candidate_evaluation_present": bool(candidate_evaluation),
         "candidate_ranking": None,
         "role_direction": None,
         "action_instruction": None,
