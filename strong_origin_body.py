@@ -198,6 +198,8 @@ def agent(obs):
                         "model_guidance_reason": loc.get("model_guidance_reason"),
                         "coarse_regime": loc.get("coarse_regime"),
                         "coarse_boundary_changed": bool(loc.get("coarse_boundary_changed", False)),
+                        "coarse_pending_regime": loc.get("coarse_pending_regime"),
+                        "coarse_pending_count": int(loc.get("coarse_pending_count", 0) or 0),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
