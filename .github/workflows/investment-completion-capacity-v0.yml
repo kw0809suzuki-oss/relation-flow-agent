@@ -1,0 +1,48 @@
+name: Investment Completion Capacity v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/investment-completion-capacity-v0-20260922]
+    paths:
+      - INVESTMENT_COMPLETION_CAPACITY_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7121, seat: 0}
+          - {seed: 7122, seat: 1}
+          - {seed: 7123, seat: 0}
+          - {seed: 7124, seat: 1}
+          - {seed: 7125, seat: 0}
+          - {seed: 7126, seat: 1}
+          - {seed: 7127, seat: 0}
+          - {seed: 7128, seat: 1}
+          - {seed: 7129, seat: 0}
+          - {seed: 7130, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_investment_completion_capacity_fresh10_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: investment-completion-capacity-v0-${{ matrix.seed }}
+          path: investment_completion_capacity_v0_${{ matrix.seed }}.json
