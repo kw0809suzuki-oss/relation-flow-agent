@@ -1,0 +1,53 @@
+name: First Continuity Slack Once v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [experiment/first-continuity-slack-once-v0-20260923]
+    paths: [FIRST_CONTINUITY_SLACK_ONCE_V0_RUN]
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7191, seat: 0}
+          - {seed: 7192, seat: 1}
+          - {seed: 7193, seat: 0}
+          - {seed: 7194, seat: 1}
+          - {seed: 7195, seat: 0}
+          - {seed: 7196, seat: 1}
+          - {seed: 7197, seat: 0}
+          - {seed: 7198, seat: 1}
+          - {seed: 7199, seat: 0}
+          - {seed: 7200, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_first_continuity_slack_once_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-continuity-slack-once-v0-${{ matrix.seed }}
+          path: first_continuity_slack_once_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: first-continuity-slack-once-v0-*, path: artifacts}
+      - run: python aggregate_first_continuity_slack_once_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-continuity-slack-once-v0-aggregate
+          path: first_continuity_slack_once_v0_aggregate.json
