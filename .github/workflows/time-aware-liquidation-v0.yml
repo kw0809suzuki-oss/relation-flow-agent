@@ -1,0 +1,48 @@
+name: Time-aware Liquidation v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/time-aware-liquidation-v0-20260922]
+    paths:
+      - TIME_AWARE_LIQUIDATION_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7071, seat: 0}
+          - {seed: 7072, seat: 1}
+          - {seed: 7073, seat: 0}
+          - {seed: 7074, seat: 1}
+          - {seed: 7075, seat: 0}
+          - {seed: 7076, seat: 1}
+          - {seed: 7077, seat: 0}
+          - {seed: 7078, seat: 1}
+          - {seed: 7079, seat: 0}
+          - {seed: 7080, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_time_aware_liquidation_fresh10_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: time-aware-liquidation-v0-${{ matrix.seed }}
+          path: time_aware_liquidation_v0_${{ matrix.seed }}.json
