@@ -1,0 +1,48 @@
+name: Expansion Cycle Candidate v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/expansion-cycle-candidate-v0-20260922]
+    paths:
+      - EXPANSION_CYCLE_CANDIDATE_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7051, seat: 0}
+          - {seed: 7052, seat: 1}
+          - {seed: 7053, seat: 0}
+          - {seed: 7054, seat: 1}
+          - {seed: 7055, seat: 0}
+          - {seed: 7056, seat: 1}
+          - {seed: 7057, seat: 0}
+          - {seed: 7058, seat: 1}
+          - {seed: 7059, seat: 0}
+          - {seed: 7060, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_expansion_cycle_candidate_fresh10_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: expansion-cycle-candidate-v0-${{ matrix.seed }}
+          path: expansion_cycle_candidate_v0_${{ matrix.seed }}.json
