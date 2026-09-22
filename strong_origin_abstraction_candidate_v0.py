@@ -24,6 +24,20 @@ def set_flow_abstraction(meaning):
 def get_flow_abstraction():
     return dict(_FLOW_ABSTRACTION or {})
 
+
+# Compatibility no-ops for the shared observation adapter. The experimental
+# candidate intentionally does not consume Selection or Direction machinery.
+def set_model_selection(selection):
+    del selection
+
+
+def get_model_selected_crop():
+    return None
+
+
+def set_model_direction(direction):
+    del direction
+
 BASE_PRICE = {"WHEAT": 25, "STRAWBERRY": 120, "MELON": 250}
 SEED_COST = {"WHEAT": 10, "STRAWBERRY": 100, "MELON": 80}
 FIRST_YIELD = {"WHEAT": 2, "STRAWBERRY": 10, "MELON": 10}
