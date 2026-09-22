@@ -1,0 +1,63 @@
+name: State Interpretation Shadow Interview v1
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/state-interpretation-shadow-interview-v1-20260923]
+    paths: [STATE_INTERPRETATION_SHADOW_INTERVIEW_V1_RUN]
+  workflow_dispatch:
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7161, seat: 0}
+          - {seed: 7162, seat: 1}
+          - {seed: 7163, seat: 0}
+          - {seed: 7164, seat: 1}
+          - {seed: 7165, seat: 0}
+          - {seed: 7166, seat: 1}
+          - {seed: 7167, seat: 0}
+          - {seed: 7168, seat: 1}
+          - {seed: 7169, seat: 0}
+          - {seed: 7170, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_state_interpretation_shadow_interview_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shadow-interview-blind-v1-${{ matrix.seed }}
+          path: shadow_interview_blind_${{ matrix.seed }}.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shadow-interview-sealed-v1-${{ matrix.seed }}
+          path: shadow_interview_sealed_${{ matrix.seed }}.json
+  aggregate:
+    needs: capture
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: shadow-interview-blind-v1-*, path: blind}
+      - uses: actions/download-artifact@v4
+        with: {pattern: shadow-interview-sealed-v1-*, path: sealed}
+      - run: python aggregate_state_interpretation_shadow_interview_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shadow-interview-blind-aggregate-v1
+          path: shadow_interview_blind_aggregate_v1.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shadow-interview-sealed-aggregate-v1
+          path: shadow_interview_sealed_aggregate_v1.json
