@@ -61,3 +61,22 @@ def realizable_capacity_meaning(obs, start_day):
         "numeric_rule":None,
         "evidence_status":"hypothesis",
     }
+
+
+def conversion_path_capacity_meaning(obs, start_day):
+    """Abstract re-entry candidate only. No domain or action is prescribed."""
+    day=int(obs.get("day",0) or 0)
+    if day < int(start_day):
+        return None
+    return {
+        "phase":"CONVERSION_PATH_CAPACITY",
+        "principle":"Commitment should follow the effective capacity of the path that converts resources into value, not merely the amount we want to acquire or expand.",
+        "search_task":"Inspect the current State. Find commitment structures where input commitment can outrun a downstream conversion path. Generate multiple structural hypotheses without assuming a predefined domain.",
+        "source":"flow_reabstraction_from_battle_difference",
+        "day":day,
+        "remaining":max(0,30-day),
+        "action_instruction":None,
+        "strategy_instruction":None,
+        "numeric_rule":None,
+        "evidence_status":"hypothesis",
+    }
