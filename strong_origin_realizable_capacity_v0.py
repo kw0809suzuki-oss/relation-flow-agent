@@ -155,7 +155,7 @@ def agent(obs):
     land_activation_capacity=current_units*max(1,remaining_days)
     land_realizable_ok=len(empty_tiles) < land_activation_capacity
     if strategy_name not in ("LIQUID","ENDGAME") and land_cost and remaining_days>=9 and occupancy>=strategy["occupancy_target"] and projected_cash-land_cost>=reserve and len(market)<10:
-        if not (str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OPTION_PRESERVATION" and os.getenv("ORIGIN_COMMITMENT_HYPOTHESIS","none").strip().lower()=="land_activation" and not land_realizable_ok):
+        if not (str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="REALIZABLE_CAPACITY" and os.getenv("ORIGIN_COMMITMENT_HYPOTHESIS","none").strip().lower()=="land_activation" and not land_realizable_ok):
             market.append(["BUY_LAND"]); projected_cash-=land_cost
     seed_plan=[]
     for crop in BASE_PRICE:
@@ -164,7 +164,7 @@ def agent(obs):
         affordable=max(0,int((projected_cash-reserve)//SEED_COST[crop])); buy=min(need,affordable,8)
         if buy>0: seed_plan.append((scores[crop],crop,buy))
     abstraction_phase=str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()
-    realizable_received=abstraction_phase=="OPTION_PRESERVATION"
+    realizable_received=abstraction_phase=="REALIZABLE_CAPACITY"
     hypothesis_mode=os.getenv("ORIGIN_COMMITMENT_HYPOTHESIS","none").strip().lower()
 
     immediate_planting_surface=min(len(empty_tiles),1+len(me.get("hands",[])))
