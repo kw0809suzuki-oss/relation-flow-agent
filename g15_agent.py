@@ -253,6 +253,12 @@ def agent(obs):
         if meaning is not None:
             field_description["outer_meaning"] = meaning
 
+    option_day = os.getenv("OUTER_MEANING_OPTION_PRESERVATION_DAY")
+    if option_day is not None:
+        meaning = outer_meaning_v0.option_preservation_meaning(obs, int(option_day))
+        if meaning is not None:
+            field_description["outer_meaning"] = meaning
+
     connected_context = dict(role_context)
     if os.getenv("G15_CONNECT_OPPONENT_FIELD_DESCRIPTION", "1") == "1":
         connected_context["field_description"] = field_description; connected_context["field_description_connected"] = True
