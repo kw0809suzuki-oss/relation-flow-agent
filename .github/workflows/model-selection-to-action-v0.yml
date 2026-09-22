@@ -1,0 +1,48 @@
+name: Model Selection to Action v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/model-selection-to-action-v0-20260922]
+    paths:
+      - MODEL_SELECTION_TO_ACTION_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7151, seat: 0}
+          - {seed: 7152, seat: 1}
+          - {seed: 7153, seat: 0}
+          - {seed: 7154, seat: 1}
+          - {seed: 7155, seat: 0}
+          - {seed: 7156, seat: 1}
+          - {seed: 7157, seat: 0}
+          - {seed: 7158, seat: 1}
+          - {seed: 7159, seat: 0}
+          - {seed: 7160, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_model_selection_to_action_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-selection-to-action-v0-${{ matrix.seed }}
+          path: model_selection_to_action_v0_${{ matrix.seed }}.json
