@@ -180,6 +180,10 @@ def agent(obs):
                         "direction_targets_after": dict(loc.get("targets", {}) or {}),
                         "direction_applied": bool(loc.get("direction_applied", False)),
                         "direction_crop": loc.get("direction_crop"),
+                        "option_preservation_received": bool(loc.get("option_preservation_received", False)),
+                        "immediate_planting_surface": loc.get("immediate_planting_surface"),
+                        "existing_seed_commitment": loc.get("existing_seed_commitment"),
+                        "new_seed_commitment_budget_remaining": loc.get("new_seed_commitment_budget"),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
