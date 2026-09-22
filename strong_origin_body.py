@@ -13,6 +13,7 @@ import g8_agent as livestock
 import strong_origin
 import origin_role_reader
 import origin_context_integrator
+import model_selection_action_adapter_v0
 
 COW_TARGETS = livestock.COW_TARGETS
 FEED_CARRY = livestock.FEED_CARRY
@@ -185,8 +186,19 @@ def agent(obs):
                 sys.settrace(old_trace)
                 strong_origin.origin_targets = original_origin_targets
             captured["native_base_action"] = copy.deepcopy(action)
-            action, selection_priority_applied = _apply_candidate_selection_priority(action, applied_integration)
-            captured["selection_priority_applied"] = bool(selection_priority_applied)
+            action_use = {
+                "selection_available": False,
+                "market_priority_changed": False,
+                "plant_priority_changed": False,
+            }
+            if os.getenv("ORIGIN_MODEL_SELECTION_TO_ACTION", "0") == "1":
+                action, action_use = model_selection_action_adapter_v0.apply(
+                    inner_obs, action, applied_integration
+                )
+            captured["selection_priority_applied"] = bool(
+                action_use.get("market_priority_changed") or action_use.get("plant_priority_changed")
+            )
+            captured["selection_action_use"] = dict(action_use)
             captured["applied_candidate_selection"] = dict(applied_integration.get("candidate_selection", {}) or {})
             captured["base_action"] = action
             captured["internal"] = internal
@@ -216,6 +228,7 @@ def agent(obs):
             "base_action": base_action,
             "native_base_action": captured.get("native_base_action", {}),
             "selection_priority_applied": bool(captured.get("selection_priority_applied", False)),
+            "selection_action_use": dict(captured.get("selection_action_use", {})),
             "applied_candidate_selection": dict(captured.get("applied_candidate_selection", {})),
             "final_action": final_action,
             "overlay_changed_farmer": base_action.get("farmer") != final_action.get("farmer"),
