@@ -10,7 +10,7 @@ import sys
 import copy
 from collections import Counter
 import g8_agent as livestock
-import strong_origin_abstraction_candidate_v0 as strong_origin
+import strong_origin_abstraction_bundle_v0 as strong_origin
 import origin_role_reader
 import origin_context_integrator
 import model_selection_action_adapter_v0
@@ -184,6 +184,9 @@ def agent(obs):
                         "immediate_planting_surface": loc.get("immediate_planting_surface"),
                         "existing_seed_commitment": loc.get("existing_seed_commitment"),
                         "new_seed_commitment_budget_remaining": loc.get("new_seed_commitment_budget"),
+                        "interpretation_mode": loc.get("interpretation_mode"),
+                        "alternative_cash_floor": loc.get("alternative_cash_floor"),
+                        "staged_commitment_cap": loc.get("staged_commitment_cap"),
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
