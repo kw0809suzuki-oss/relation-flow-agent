@@ -227,7 +227,8 @@ def agent(obs):
                 strong_origin.origin_targets = original_origin_targets
                 strong_origin.set_model_selection(None)
                 strong_origin.set_model_direction(None)
-            if internal.get("direction_applied"):
+            captured["direction_state_delta_applied"] = bool(internal.get("direction_applied"))
+            if direction_to_apply is not None:
                 _DIRECTION_CONTROL_USED = True
             captured["direction_control_used"] = bool(_DIRECTION_CONTROL_USED)
             captured["native_base_action"] = copy.deepcopy(action)
@@ -282,6 +283,7 @@ def agent(obs):
             "direction_control_mode": captured.get("direction_control_mode"),
             "direction_control_comparable_entry": bool(captured.get("direction_control_comparable_entry", False)),
             "direction_control_used": bool(captured.get("direction_control_used", False)),
+            "direction_state_delta_applied": bool(captured.get("direction_state_delta_applied", False)),
             "selection_action_use": dict(captured.get("selection_action_use", {})),
             "applied_candidate_selection": dict(captured.get("applied_candidate_selection", {})),
             "final_action": final_action,
