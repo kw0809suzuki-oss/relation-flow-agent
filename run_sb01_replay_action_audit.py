@@ -134,7 +134,7 @@ def main():
                 })
 
     payload={
-      "schema":"kaggriculture.sb01.replay-action-audit.v2",
+      "schema":"kaggriculture.sb01.replay-action-audit.v3",
       "probe":"Remaining Strength Gap Replay Action Audit",
       "mode":"observation_only_replay",
       "seed":SEED,"seat":SEAT,"snapshot":"SB-01",
@@ -142,11 +142,27 @@ def main():
       "expansion_window_raw":expansion_window_raw,
       "quadrant_transitions":quadrant_transitions,
       "buy_land_occurrences":buy_land_occurrences,
+      "tracked_ne_melon":{
+        "coordinate":[1,5],
+        "rows":[
+          {
+            "step_index":snap["step_index"],
+            "observation":snap["observation"],
+            "actions_by_player":snap["actions_by_player"],
+          }
+          for snap in snapshots
+          if (
+            snap["step_index"] >= 176
+            and snap["step_index"] <= 320
+          )
+        ],
+      },
       "boundary":[
         "No strategy, rule, threshold, or candidate is changed.",
         "Recorded replay actions are agent-submitted actions; successful environment effect is verified separately by public-state transition.",
         "A quadrant transition is recorded only when unlocked_quadrants changes in consecutive replay observations.",
         "Raw farm observations are preserved only for step 169 through 176 to verify spatial placement without broadening the observer.",
+        "The tracked NE MELON window follows only coordinate row 1, col 5 from step 176 through 320 using existing slim observations/actions; no causal attribution is added.",
         "No missing action or causal relation is inferred."
       ]
     }
