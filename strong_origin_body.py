@@ -227,7 +227,7 @@ def agent(obs):
                 strong_origin.origin_targets = original_origin_targets
                 strong_origin.set_model_selection(None)
                 strong_origin.set_model_direction(None)
-            if captured.get("internal", {}).get("direction_applied"):
+            if internal.get("direction_applied"):
                 _DIRECTION_CONTROL_USED = True
             captured["direction_control_used"] = bool(_DIRECTION_CONTROL_USED)
             captured["native_base_action"] = copy.deepcopy(action)
