@@ -8,6 +8,7 @@ how strongly Origin commits to its own already-observed direction.
 import os
 import model_candidate_evaluator_v0
 import model_candidate_comparator_v0
+import model_candidate_selector_v0
 
 
 def _clip01(x):
@@ -55,6 +56,9 @@ def integrate(origin_internal, role_reading):
     candidate_comparison = None
     if os.getenv("ORIGIN_MODEL_CANDIDATE_COMPARISON", "0") == "1":
         candidate_comparison = model_candidate_comparator_v0.compare(candidate_evaluation)
+    candidate_selection = None
+    if os.getenv("ORIGIN_MODEL_CANDIDATE_SELECTION", "0") == "1":
+        candidate_selection = model_candidate_selector_v0.select(candidate_evaluation, candidate_comparison)
     meaning_commitment_scale = 0.70 if outer_phase == "CLOSURE" else 1.0
 
     if role_present:
@@ -157,6 +161,8 @@ def integrate(origin_internal, role_reading):
         "candidate_evaluation_present": bool(candidate_evaluation),
         "candidate_comparison": candidate_comparison,
         "candidate_comparison_present": bool(candidate_comparison),
+        "candidate_selection": candidate_selection,
+        "candidate_selection_present": bool(candidate_selection),
         "candidate_ranking": None,
         "role_direction": None,
         "action_instruction": None,
