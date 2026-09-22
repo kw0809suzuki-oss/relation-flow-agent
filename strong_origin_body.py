@@ -7,6 +7,7 @@ G15 may vary COW_TARGETS and FEED_CARRY through this adapter.
 
 import os
 import sys
+import copy
 from collections import Counter
 import g8_agent as livestock
 import strong_origin
@@ -56,6 +57,42 @@ def _crop_commitment_scale(integration):
         return 1.0
     return max(0.0, min(1.0, commitment / native_strength))
 
+
+
+def _apply_candidate_selection_priority(action, integration):
+    """Prioritize a selected BUY_SEED order without deleting or resizing orders."""
+    context = dict(integration or {})
+    selection = dict(context.get("candidate_selection", {}) or {})
+    chosen = selection.get("selected_candidate")
+    if not isinstance(action, dict) or not isinstance(chosen, (list, tuple)):
+        return action, False
+
+    market = list(action.get("market", []) or [])
+    seed_indices = [
+        i for i, order in enumerate(market)
+        if isinstance(order, (list, tuple)) and order and order[0] == "BUY_SEED"
+    ]
+    if not seed_indices:
+        return action, False
+
+    selected_index = None
+    for i in seed_indices:
+        if list(market[i]) == list(chosen):
+            selected_index = i
+            break
+    if selected_index is None:
+        return action, False
+
+    first_seed = seed_indices[0]
+    if selected_index == first_seed:
+        return action, False
+
+    revised = copy.deepcopy(action)
+    revised_market = list(revised.get("market", []) or [])
+    selected_order = revised_market.pop(selected_index)
+    revised_market.insert(first_seed, selected_order)
+    revised["market"] = revised_market
+    return revised, True
 
 def reset_telemetry():
     global _LAST_TRACE, _REENTRY_CONTEXT, _ORIGIN_CONTEXT_RECEIVES, _ORIGIN_ROLE_READS, _ORIGIN_FIELD_CONTEXT_RECEIVES, _ORIGIN_INTEGRATION, _ORIGIN_READ_CATEGORIES
@@ -147,6 +184,10 @@ def agent(obs):
             finally:
                 sys.settrace(old_trace)
                 strong_origin.origin_targets = original_origin_targets
+            captured["native_base_action"] = copy.deepcopy(action)
+            action, selection_priority_applied = _apply_candidate_selection_priority(action, applied_integration)
+            captured["selection_priority_applied"] = bool(selection_priority_applied)
+            captured["applied_candidate_selection"] = dict(applied_integration.get("candidate_selection", {}) or {})
             captured["base_action"] = action
             captured["internal"] = internal
             captured["origin_reading"] = origin_role_reader.read(current_context, internal)
@@ -173,6 +214,9 @@ def agent(obs):
         _LAST_TRACE = {
             "reentry_context": current_context,
             "base_action": base_action,
+            "native_base_action": captured.get("native_base_action", {}),
+            "selection_priority_applied": bool(captured.get("selection_priority_applied", False)),
+            "applied_candidate_selection": dict(captured.get("applied_candidate_selection", {})),
             "final_action": final_action,
             "overlay_changed_farmer": base_action.get("farmer") != final_action.get("farmer"),
             "overlay_changed_hands": base_action.get("hands") != final_action.get("hands"),
