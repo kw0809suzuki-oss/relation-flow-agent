@@ -10,7 +10,7 @@ import sys
 import copy
 from collections import Counter
 import g8_agent as livestock
-import strong_origin_selection_guided_v0 as strong_origin
+import strong_origin_direction_v0 as strong_origin
 import origin_role_reader
 import origin_context_integrator
 import model_selection_action_adapter_v0
@@ -168,6 +168,12 @@ def agent(obs):
                         "distortion": getattr(loc.get("xdecision"), "distortion", 0.0),
                         "counter_opportunity": loc.get("opportunity", 0.0),
                         "counter_weight": loc.get("cweight", 0.0),
+                        "money": (loc.get("me") or {}).get("money") if isinstance(loc.get("me"), dict) else None,
+                        "reserve": loc.get("reserve"),
+                        "remaining_days": loc.get("remaining_days"),
+                        "empty_tile_count": len(loc.get("empty_tiles", []) or []),
+                        "seed_stock": dict((loc.get("private") or {}).get("seeds", {}) or {}) if isinstance(loc.get("private"), dict) else {},
+                        "live_plants": {k: len(v) for k, v in dict(loc.get("my_plants", {}) or {}).items()},
                     })
                 return tracer
             original_origin_targets = strong_origin.origin_targets
@@ -180,11 +186,17 @@ def agent(obs):
 
             strong_origin.origin_targets = scaled_origin_targets
             guided_generation = os.getenv("ORIGIN_MODEL_SELECTION_GUIDED_GENERATION", "0") == "1"
+            directional_state_read = os.getenv("ORIGIN_MODEL_DIRECTIONAL_STATE_READ", "0") == "1"
             strong_origin.set_model_selection(
                 applied_integration.get("candidate_selection") if guided_generation else None
             )
+            strong_origin.set_model_direction(
+                applied_integration.get("candidate_direction") if directional_state_read else None
+            )
             captured["selection_guided_generation_enabled"] = bool(guided_generation)
             captured["selection_guided_crop"] = strong_origin.get_model_selected_crop()
+            captured["directional_state_read_enabled"] = bool(directional_state_read)
+            captured["applied_candidate_direction"] = dict(applied_integration.get("candidate_direction", {}) or {})
             sys.settrace(tracer)
             try:
                 action = strong_origin.agent(inner_obs)
@@ -192,6 +204,7 @@ def agent(obs):
                 sys.settrace(old_trace)
                 strong_origin.origin_targets = original_origin_targets
                 strong_origin.set_model_selection(None)
+                strong_origin.set_model_direction(None)
             captured["native_base_action"] = copy.deepcopy(action)
             action_use = {
                 "selection_available": False,
@@ -237,6 +250,8 @@ def agent(obs):
             "selection_priority_applied": bool(captured.get("selection_priority_applied", False)),
             "selection_guided_generation_enabled": bool(captured.get("selection_guided_generation_enabled", False)),
             "selection_guided_crop": captured.get("selection_guided_crop"),
+            "directional_state_read_enabled": bool(captured.get("directional_state_read_enabled", False)),
+            "applied_candidate_direction": dict(captured.get("applied_candidate_direction", {})),
             "selection_action_use": dict(captured.get("selection_action_use", {})),
             "applied_candidate_selection": dict(captured.get("applied_candidate_selection", {})),
             "final_action": final_action,
