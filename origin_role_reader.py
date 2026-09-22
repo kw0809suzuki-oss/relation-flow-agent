@@ -7,6 +7,9 @@ Constitution:
 - Flow direction remains outside this module.
 """
 
+import os
+import evaluation_lens_v0
+
 def read(role_context, origin_internal):
     ctx = dict(role_context or {})
     supports = list(ctx.get("maximal_support", []) or [])
@@ -25,6 +28,10 @@ def read(role_context, origin_internal):
     ambiguity = 0.0 if maximal_count <= 1 else min(1.0, (maximal_count - 1) / 3.0)
     field_description = dict(ctx.get("field_description", {}) or {})
     field_context_present = bool(ctx.get("field_description_connected", False) and field_description)
+    outer_meaning = dict(field_description.get("outer_meaning", {}) or {})
+    evaluation_lens = None
+    if os.getenv("ORIGIN_EVALUATION_LENS", "0") == "1":
+        evaluation_lens = evaluation_lens_v0.build(outer_meaning, origin_internal)
 
     return {
         "role_present": maximal_count > 0,
@@ -37,6 +44,7 @@ def read(role_context, origin_internal):
         "origin_strategy_observed": origin_internal.get("strategy_name"),
         "field_context_present": field_context_present,
         "field_description": field_description,
+        "evaluation_lens": evaluation_lens,
         "flow_direction": None,
         "action_instruction": None,
         "strategy_instruction": None,
