@@ -15,6 +15,8 @@ from x_engine import XField, choose_x_origin, counter_crop_weights, counter_oppo
 _FLOW_ABSTRACTION = None
 _COARSE_REGIME_BY_PLAYER = {}
 _COARSE_MODE_BY_PLAYER = {}
+_COARSE_PENDING_REGIME_BY_PLAYER = {}
+_COARSE_PENDING_COUNT_BY_PLAYER = {}
 
 def set_flow_abstraction(meaning):
     global _FLOW_ABSTRACTION
@@ -57,6 +59,8 @@ _TELEMETRY = {"origins": Counter(), "distortion_trigger_turns": 0, "crop_trigger
 def reset_telemetry():
     _COARSE_REGIME_BY_PLAYER.clear()
     _COARSE_MODE_BY_PLAYER.clear()
+    _COARSE_PENDING_REGIME_BY_PLAYER.clear()
+    _COARSE_PENDING_COUNT_BY_PLAYER.clear()
     _TELEMETRY["origins"].clear()
     for k in ("distortion_trigger_turns","crop_trigger_turns","counter_active_turns","turns"):
         _TELEMETRY[k] = 0
@@ -170,7 +174,7 @@ def agent(obs):
     effective_guidance_mode=raw_guidance_mode
     coarse_regime=None
     coarse_boundary_changed=False
-    if str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and raw_guidance_mode=="coarse_boundary_guidance":
+    if str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and raw_guidance_mode in ("coarse_boundary_guidance","coarse_boundary_hysteresis"):
         stores=[private.get("shed",{}) or {}] + list(private.get("inventories",[]) or [])
         total_wheat=sum(float(store.get("WHEAT",0) or 0) for store in stores if isinstance(store,dict))
         total_cows=sum(float(store.get("COW",0) or 0) for store in stores if isinstance(store,dict))
@@ -192,11 +196,45 @@ def agent(obs):
             coarse_regime="competitive"
             proposed_mode="throughput_match"
         prior_regime=_COARSE_REGIME_BY_PLAYER.get(player)
-        if prior_regime != coarse_regime or player not in _COARSE_MODE_BY_PLAYER:
-            _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
-            _COARSE_MODE_BY_PLAYER[player]=proposed_mode
-            coarse_boundary_changed=True
+        if raw_guidance_mode=="coarse_boundary_hysteresis":
+            # Minimal anti-chatter intervention: require a proposed non-endgame
+            # regime to persist for 3 consecutive turns before switching.
+            # Endgame remains immediate.
+            if player not in _COARSE_MODE_BY_PLAYER:
+                _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
+                _COARSE_MODE_BY_PLAYER[player]=proposed_mode
+                _COARSE_PENDING_REGIME_BY_PLAYER[player]=None
+                _COARSE_PENDING_COUNT_BY_PLAYER[player]=0
+                coarse_boundary_changed=True
+            elif coarse_regime=="endgame" and prior_regime!="endgame":
+                _COARSE_REGIME_BY_PLAYER[player]="endgame"
+                _COARSE_MODE_BY_PLAYER[player]="native"
+                _COARSE_PENDING_REGIME_BY_PLAYER[player]=None
+                _COARSE_PENDING_COUNT_BY_PLAYER[player]=0
+                coarse_boundary_changed=True
+            elif prior_regime != coarse_regime:
+                if _COARSE_PENDING_REGIME_BY_PLAYER.get(player)==coarse_regime:
+                    _COARSE_PENDING_COUNT_BY_PLAYER[player]=_COARSE_PENDING_COUNT_BY_PLAYER.get(player,0)+1
+                else:
+                    _COARSE_PENDING_REGIME_BY_PLAYER[player]=coarse_regime
+                    _COARSE_PENDING_COUNT_BY_PLAYER[player]=1
+                if _COARSE_PENDING_COUNT_BY_PLAYER[player] >= 3:
+                    _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
+                    _COARSE_MODE_BY_PLAYER[player]=proposed_mode
+                    _COARSE_PENDING_REGIME_BY_PLAYER[player]=None
+                    _COARSE_PENDING_COUNT_BY_PLAYER[player]=0
+                    coarse_boundary_changed=True
+            else:
+                _COARSE_PENDING_REGIME_BY_PLAYER[player]=None
+                _COARSE_PENDING_COUNT_BY_PLAYER[player]=0
+        else:
+            if prior_regime != coarse_regime or player not in _COARSE_MODE_BY_PLAYER:
+                _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
+                _COARSE_MODE_BY_PLAYER[player]=proposed_mode
+                coarse_boundary_changed=True
         effective_guidance_mode=_COARSE_MODE_BY_PLAYER[player]
+        coarse_pending_regime=_COARSE_PENDING_REGIME_BY_PLAYER.get(player)
+        coarse_pending_count=_COARSE_PENDING_COUNT_BY_PLAYER.get(player,0)
     if strategy_name not in ("LIQUID","ENDGAME") and land_cost and remaining_days>=9 and occupancy>=strategy["occupancy_target"] and projected_cash-land_cost>=reserve and len(market)<10:
         if not (str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and effective_guidance_mode in ("throughput_match","throughput_with_slack") and not land_realizable_ok):
             market.append(["BUY_LAND"]); projected_cash-=land_cost
