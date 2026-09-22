@@ -134,7 +134,7 @@ def main():
                 })
 
     payload={
-      "schema":"kaggriculture.sb01.replay-action-audit.v3",
+      "schema":"kaggriculture.sb01.replay-action-audit.v4",
       "probe":"Remaining Strength Gap Replay Action Audit",
       "mode":"observation_only_replay",
       "seed":SEED,"seat":SEAT,"snapshot":"SB-01",
@@ -149,6 +149,8 @@ def main():
             "step_index":step_idx,
             "day":obs.get("day"),
             "money":[f.get("money") for f in (obs.get("farms") or [])],
+            "farmer_positions":[jsonable(f.get("farmer")) for f in (obs.get("farms") or [])],
+            "hand_positions":[jsonable(f.get("hands") or []) for f in (obs.get("farms") or [])],
             "tile_row1_col5":[
               jsonable((f.get("tiles") or [])[1][5])
               if len(f.get("tiles") or []) > 1 and len((f.get("tiles") or [])[1]) > 5
@@ -167,7 +169,7 @@ def main():
         "Recorded replay actions are agent-submitted actions; successful environment effect is verified separately by public-state transition.",
         "A quadrant transition is recorded only when unlocked_quadrants changes in consecutive replay observations.",
         "Raw farm observations are preserved only for step 169 through 176 to verify spatial placement without broadening the observer.",
-        "The tracked NE MELON window preserves only coordinate row 1, col 5, player money, and actions from step 176 through 320; no causal attribution is added.",
+        "The tracked NE MELON window preserves coordinate row 1, col 5, player money, farmer/hand positions, and actions from step 176 through 320; no causal attribution is added.",
         "No missing action or causal relation is inferred."
       ]
     }
