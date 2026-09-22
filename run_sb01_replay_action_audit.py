@@ -146,15 +146,20 @@ def main():
         "coordinate":[1,5],
         "rows":[
           {
-            "step_index":snap["step_index"],
-            "observation":snap["observation"],
-            "actions_by_player":snap["actions_by_player"],
+            "step_index":step_idx,
+            "day":obs.get("day"),
+            "money":[f.get("money") for f in (obs.get("farms") or [])],
+            "tile_row1_col5":[
+              jsonable((f.get("tiles") or [])[1][5])
+              if len(f.get("tiles") or []) > 1 and len((f.get("tiles") or [])[1]) > 5
+              else None
+              for f in (obs.get("farms") or [])
+            ],
+            "actions_by_player":jsonable(state_actions(states)),
           }
-          for snap in snapshots
-          if (
-            snap["step_index"] >= 176
-            and snap["step_index"] <= 320
-          )
+          for step_idx, states in enumerate(env.steps)
+          for obs in [state_obs(states)]
+          if obs and 176 <= step_idx <= 320
         ],
       },
       "boundary":[
@@ -162,7 +167,7 @@ def main():
         "Recorded replay actions are agent-submitted actions; successful environment effect is verified separately by public-state transition.",
         "A quadrant transition is recorded only when unlocked_quadrants changes in consecutive replay observations.",
         "Raw farm observations are preserved only for step 169 through 176 to verify spatial placement without broadening the observer.",
-        "The tracked NE MELON window follows only coordinate row 1, col 5 from step 176 through 320 using existing slim observations/actions; no causal attribution is added.",
+        "The tracked NE MELON window preserves only coordinate row 1, col 5, player money, and actions from step 176 through 320; no causal attribution is added.",
         "No missing action or causal relation is inferred."
       ]
     }
