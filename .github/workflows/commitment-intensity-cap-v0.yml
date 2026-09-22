@@ -1,0 +1,48 @@
+name: Commitment Intensity Cap v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/commitment-intensity-cap-v0-20260922]
+    paths:
+      - COMMITMENT_INTENSITY_CAP_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7161, seat: 0}
+          - {seed: 7162, seat: 1}
+          - {seed: 7163, seat: 0}
+          - {seed: 7164, seat: 1}
+          - {seed: 7165, seat: 0}
+          - {seed: 7166, seat: 1}
+          - {seed: 7167, seat: 0}
+          - {seed: 7168, seat: 1}
+          - {seed: 7169, seat: 0}
+          - {seed: 7170, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_commitment_intensity_cap_fresh10_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: commitment-intensity-cap-v0-${{ matrix.seed }}
+          path: commitment_intensity_cap_v0_${{ matrix.seed }}.json
