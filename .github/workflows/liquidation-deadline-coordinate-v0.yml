@@ -1,0 +1,48 @@
+name: Liquidation Deadline Coordinate v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/liquidation-deadline-coordinate-v0-20260922]
+    paths:
+      - LIQUIDATION_DEADLINE_COORDINATE_V0_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7091, seat: 0}
+          - {seed: 7092, seat: 1}
+          - {seed: 7093, seat: 0}
+          - {seed: 7094, seat: 1}
+          - {seed: 7095, seat: 0}
+          - {seed: 7096, seat: 1}
+          - {seed: 7097, seat: 0}
+          - {seed: 7098, seat: 1}
+          - {seed: 7099, seat: 0}
+          - {seed: 7100, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_liquidation_deadline_coordinate_fresh10_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: liquidation-deadline-coordinate-v0-${{ matrix.seed }}
+          path: liquidation_deadline_coordinate_v0_${{ matrix.seed }}.json
