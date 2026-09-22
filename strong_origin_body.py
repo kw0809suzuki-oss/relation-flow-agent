@@ -10,7 +10,7 @@ import sys
 import copy
 from collections import Counter
 import g8_agent as livestock
-import strong_origin_direction_v0 as strong_origin
+import strong_origin_abstraction_candidate_v0 as strong_origin
 import origin_role_reader
 import origin_context_integrator
 import model_selection_action_adapter_v0
@@ -194,6 +194,12 @@ def agent(obs):
             guided_generation = os.getenv("ORIGIN_MODEL_SELECTION_GUIDED_GENERATION", "0") == "1"
             directional_state_read = os.getenv("ORIGIN_MODEL_DIRECTIONAL_STATE_READ", "0") == "1"
             control_mode = os.getenv("ORIGIN_DIRECTION_CONTROL_MODE", "").strip().lower()
+            abstraction_transmission = os.getenv("ORIGIN_ABSTRACTION_TRANSMISSION", "0") == "1"
+            applied_field_description = dict(applied_integration.get("field_description", {}) or {})
+            applied_outer_meaning = dict(applied_field_description.get("outer_meaning", {}) or {})
+            strong_origin.set_flow_abstraction(applied_outer_meaning if abstraction_transmission else None)
+            captured["abstraction_transmission_enabled"] = bool(abstraction_transmission)
+            captured["applied_flow_abstraction"] = dict(applied_outer_meaning if abstraction_transmission else {})
             selected_direction = dict(applied_integration.get("candidate_direction", {}) or {})
             alternative_direction = dict(applied_integration.get("candidate_alternative_direction", {}) or {})
             comparable_entry = bool(selected_direction and alternative_direction)
@@ -227,6 +233,7 @@ def agent(obs):
                 strong_origin.origin_targets = original_origin_targets
                 strong_origin.set_model_selection(None)
                 strong_origin.set_model_direction(None)
+                strong_origin.set_flow_abstraction(None)
             captured["direction_state_delta_applied"] = bool(internal.get("direction_applied"))
             if direction_to_apply is not None:
                 _DIRECTION_CONTROL_USED = True
@@ -274,6 +281,8 @@ def agent(obs):
             "base_action": base_action,
             "native_base_action": captured.get("native_base_action", {}),
             "selection_priority_applied": bool(captured.get("selection_priority_applied", False)),
+            "abstraction_transmission_enabled": bool(captured.get("abstraction_transmission_enabled", False)),
+            "applied_flow_abstraction": dict(captured.get("applied_flow_abstraction", {})),
             "selection_guided_generation_enabled": bool(captured.get("selection_guided_generation_enabled", False)),
             "selection_guided_crop": captured.get("selection_guided_crop"),
             "directional_state_read_enabled": bool(captured.get("directional_state_read_enabled", False)),
