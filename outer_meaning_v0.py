@@ -42,3 +42,22 @@ def option_preservation_meaning(obs, start_day):
         "strategy_instruction":None,
         "numeric_rule":None,
     }
+
+
+def realizable_capacity_meaning(obs, start_day):
+    """Abstract search direction only. No domain, action, threshold, or winner."""
+    day=int(obs.get("day",0) or 0)
+    if day < int(start_day):
+        return None
+    return {
+        "phase":"REALIZABLE_CAPACITY",
+        "principle":"Commitment should track realizable capacity, not merely desired capacity. Consider what can realistically be converted into value within the remaining time, resources, and execution capacity.",
+        "search_task":"Inspect the current State and discover commitment structures where desired capacity may exceed realizable capacity. Do not assume a predefined domain.",
+        "source":"flow_abstraction_reentry",
+        "day":day,
+        "remaining":max(0,30-day),
+        "action_instruction":None,
+        "strategy_instruction":None,
+        "numeric_rule":None,
+        "evidence_status":"hypothesis",
+    }
