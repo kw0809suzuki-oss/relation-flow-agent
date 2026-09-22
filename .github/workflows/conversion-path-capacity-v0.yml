@@ -1,0 +1,53 @@
+name: Conversion Path Capacity v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [experiment/conversion-path-capacity-v0-20260922]
+    paths: [CONVERSION_PATH_CAPACITY_V0_RUN]
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7151, seat: 0}
+          - {seed: 7152, seat: 1}
+          - {seed: 7153, seat: 0}
+          - {seed: 7154, seat: 1}
+          - {seed: 7155, seat: 0}
+          - {seed: 7156, seat: 1}
+          - {seed: 7157, seat: 0}
+          - {seed: 7158, seat: 1}
+          - {seed: 7159, seat: 0}
+          - {seed: 7160, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_conversion_path_capacity_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: conversion-path-capacity-v0-${{ matrix.seed }}
+          path: conversion_path_capacity_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: conversion-path-capacity-v0-*, path: artifacts}
+      - run: python aggregate_conversion_path_capacity_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: conversion-path-capacity-v0-aggregate
+          path: conversion_path_capacity_v0_aggregate.json
