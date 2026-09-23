@@ -1,0 +1,103 @@
+name: Expansion Conversion Model v0 Fresh50
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/expansion-conversion-v0-fresh50.yml
+  workflow_dispatch:
+
+jobs:
+  pair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        include:
+          - {seed: 7151, seat: 0}
+          - {seed: 7152, seat: 1}
+          - {seed: 7153, seat: 0}
+          - {seed: 7154, seat: 1}
+          - {seed: 7155, seat: 0}
+          - {seed: 7156, seat: 1}
+          - {seed: 7157, seat: 0}
+          - {seed: 7158, seat: 1}
+          - {seed: 7159, seat: 0}
+          - {seed: 7160, seat: 1}
+          - {seed: 7161, seat: 0}
+          - {seed: 7162, seat: 1}
+          - {seed: 7163, seat: 0}
+          - {seed: 7164, seat: 1}
+          - {seed: 7165, seat: 0}
+          - {seed: 7166, seat: 1}
+          - {seed: 7167, seat: 0}
+          - {seed: 7168, seat: 1}
+          - {seed: 7169, seat: 0}
+          - {seed: 7170, seat: 1}
+          - {seed: 7171, seat: 0}
+          - {seed: 7172, seat: 1}
+          - {seed: 7173, seat: 0}
+          - {seed: 7174, seat: 1}
+          - {seed: 7175, seat: 0}
+          - {seed: 7176, seat: 1}
+          - {seed: 7177, seat: 0}
+          - {seed: 7178, seat: 1}
+          - {seed: 7179, seat: 0}
+          - {seed: 7180, seat: 1}
+          - {seed: 7181, seat: 0}
+          - {seed: 7182, seat: 1}
+          - {seed: 7183, seat: 0}
+          - {seed: 7184, seat: 1}
+          - {seed: 7185, seat: 0}
+          - {seed: 7186, seat: 1}
+          - {seed: 7187, seat: 0}
+          - {seed: 7188, seat: 1}
+          - {seed: 7189, seat: 0}
+          - {seed: 7190, seat: 1}
+          - {seed: 7191, seat: 0}
+          - {seed: 7192, seat: 1}
+          - {seed: 7193, seat: 0}
+          - {seed: 7194, seat: 1}
+          - {seed: 7195, seat: 0}
+          - {seed: 7196, seat: 1}
+          - {seed: 7197, seat: 0}
+          - {seed: 7198, seat: 1}
+          - {seed: 7199, seat: 0}
+          - {seed: 7200, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_expansion_conversion_pair_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: expansion-conversion-v0-pair-${{ matrix.seed }}
+          path: expansion_conversion_pair_v0_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: pair
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: expansion-conversion-v0-pair-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_expansion_conversion_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: expansion-conversion-v0-fresh50
+          path: expansion_conversion_v0_aggregate.json
