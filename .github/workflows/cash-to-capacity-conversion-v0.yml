@@ -1,0 +1,53 @@
+name: Cash to Capacity Conversion v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/cash-to-capacity-conversion-v0-20260923]
+    paths: [CASH_TO_CAPACITY_CONVERSION_V0_RUN]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7211, seat: 0}
+          - {seed: 7212, seat: 1}
+          - {seed: 7213, seat: 0}
+          - {seed: 7214, seat: 1}
+          - {seed: 7215, seat: 0}
+          - {seed: 7216, seat: 1}
+          - {seed: 7217, seat: 0}
+          - {seed: 7218, seat: 1}
+          - {seed: 7219, seat: 0}
+          - {seed: 7220, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_cash_to_capacity_conversion_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cash-to-capacity-conversion-v0-${{ matrix.seed }}
+          path: cash_to_capacity_conversion_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: observe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: cash-to-capacity-conversion-v0-*, path: artifacts}
+      - run: python aggregate_cash_to_capacity_conversion_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cash-to-capacity-conversion-v0-aggregate
+          path: cash_to_capacity_conversion_v0_aggregate.json
