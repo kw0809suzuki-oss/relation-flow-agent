@@ -15,6 +15,7 @@ from x_engine import XField, choose_x_origin, counter_crop_weights, counter_oppo
 _FLOW_ABSTRACTION = None
 _COARSE_REGIME_BY_PLAYER = {}
 _COARSE_MODE_BY_PLAYER = {}
+_FIRST_EFFECTIVE_HIRE_SUPPRESSED = {}
 
 def set_flow_abstraction(meaning):
     global _FLOW_ABSTRACTION
@@ -57,6 +58,7 @@ _TELEMETRY = {"origins": Counter(), "distortion_trigger_turns": 0, "crop_trigger
 def reset_telemetry():
     _COARSE_REGIME_BY_PLAYER.clear()
     _COARSE_MODE_BY_PLAYER.clear()
+    _FIRST_EFFECTIVE_HIRE_SUPPRESSED.clear()
     _TELEMETRY["origins"].clear()
     for k in ("distortion_trigger_turns","crop_trigger_turns","counter_active_turns","turns"):
         _TELEMETRY[k] = 0
@@ -170,7 +172,9 @@ def agent(obs):
     effective_guidance_mode=raw_guidance_mode
     coarse_regime=None
     coarse_boundary_changed=False
-    if str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and raw_guidance_mode=="coarse_boundary_guidance":
+    first_effective_hire_minus_one_triggered=False
+    guidance_phase=str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()
+    if guidance_phase=="OBJECTIVE_PRESSURE_GUIDANCE" and raw_guidance_mode in ("coarse_boundary_guidance","first_effective_hire_minus_one"):
         stores=[private.get("shed",{}) or {}] + list(private.get("inventories",[]) or [])
         total_wheat=sum(float(store.get("WHEAT",0) or 0) for store in stores if isinstance(store,dict))
         total_cows=sum(float(store.get("COW",0) or 0) for store in stores if isinstance(store,dict))
@@ -191,12 +195,18 @@ def agent(obs):
         else:
             coarse_regime="competitive"
             proposed_mode="throughput_match"
-        prior_regime=_COARSE_REGIME_BY_PLAYER.get(player)
-        if prior_regime != coarse_regime or player not in _COARSE_MODE_BY_PLAYER:
-            _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
-            _COARSE_MODE_BY_PLAYER[player]=proposed_mode
-            coarse_boundary_changed=True
-        effective_guidance_mode=_COARSE_MODE_BY_PLAYER[player]
+        if raw_guidance_mode=="coarse_boundary_guidance":
+            prior_regime=_COARSE_REGIME_BY_PLAYER.get(player)
+            if prior_regime != coarse_regime or player not in _COARSE_MODE_BY_PLAYER:
+                _COARSE_REGIME_BY_PLAYER[player]=coarse_regime
+                _COARSE_MODE_BY_PLAYER[player]=proposed_mode
+                coarse_boundary_changed=True
+            effective_guidance_mode=_COARSE_MODE_BY_PLAYER[player]
+        else:
+            # Keep the current objective-pressure flow. The candidate only
+            # uses the coarse continuity reading as a marker for the first
+            # effective HIRE suppression below.
+            effective_guidance_mode="objective_pressure_guidance"
     if strategy_name not in ("LIQUID","ENDGAME") and land_cost and remaining_days>=9 and occupancy>=strategy["occupancy_target"] and projected_cash-land_cost>=reserve and len(market)<10:
         if not (str((_FLOW_ABSTRACTION or {}).get("phase","") or "").upper()=="OBJECTIVE_PRESSURE_GUIDANCE" and effective_guidance_mode in ("throughput_match","throughput_with_slack") and not land_realizable_ok):
             market.append(["BUY_LAND"]); projected_cash-=land_cost
@@ -267,6 +277,23 @@ def agent(obs):
     elif realizable_received and hypothesis_mode=="conversion_window_fit":
         if remaining_days < 4 or work < 8:
             desired=current
+
+    if raw_guidance_mode=="first_effective_hire_minus_one" and not _FIRST_EFFECTIVE_HIRE_SUPPRESSED.get(player,False):
+        # Reproduce only the first observed effective coarse-vs-current Action
+        # difference: when current would HIRE under throughput_match while the
+        # coarse reading is continuity/slack, suppress exactly one executable HIRE.
+        first_hire_cost=fib_hire_cost(hires)
+        first_hire_value=60 if strategy_name=="CROP_RUSH" else 50
+        first_hire_executable=(
+            current < desired and len(market) < 10
+            and first_hire_cost <= first_hire_value
+            and projected_cash-first_hire_cost >= reserve
+        )
+        if coarse_regime=="continuity" and hypothesis_mode=="throughput_match" and first_hire_executable:
+            desired=max(current,desired-1)
+            _FIRST_EFFECTIVE_HIRE_SUPPRESSED[player]=True
+            first_effective_hire_minus_one_triggered=True
+
     while current<desired and len(market)<10:
         cost=fib_hire_cost(hires); value=60 if strategy_name=="CROP_RUSH" else 50
         if cost>value or projected_cash-cost<reserve: break
