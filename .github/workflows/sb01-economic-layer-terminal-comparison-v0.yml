@@ -1,0 +1,36 @@
+name: SB01 Economic Layer Terminal Comparison v0
+
+permissions:
+  contents: read
+  actions: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - SB01_ECONOMIC_LAYER_TERMINAL_RUN
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 35828987317
+          github-token: ${{ github.token }}
+          pattern: sb01-early-daily-economic-localization-v0
+          path: inputs/early
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 35825772394
+          github-token: ${{ github.token }}
+          pattern: sb01-economic-layers-v0
+          path: inputs/later
+      - run: python analyze_sb01_economic_layer_terminal_comparison_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sb01-economic-layer-terminal-comparison-v0
+          path: sb01_economic_layer_terminal_comparison_v0.json
