@@ -1,0 +1,53 @@
+name: First Effective HIRE Minus One v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [experiment/first-effective-hire-minus-one-v0-20260923]
+    paths: [FIRST_EFFECTIVE_HIRE_MINUS_ONE_V0_RUN]
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7201, seat: 0}
+          - {seed: 7202, seat: 1}
+          - {seed: 7203, seat: 0}
+          - {seed: 7204, seat: 1}
+          - {seed: 7205, seat: 0}
+          - {seed: 7206, seat: 1}
+          - {seed: 7207, seat: 0}
+          - {seed: 7208, seat: 1}
+          - {seed: 7209, seat: 0}
+          - {seed: 7210, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_first_effective_hire_minus_one_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-effective-hire-minus-one-v0-${{ matrix.seed }}
+          path: first_effective_hire_minus_one_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: first-effective-hire-minus-one-v0-*, path: artifacts}
+      - run: python aggregate_first_effective_hire_minus_one_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-effective-hire-minus-one-v0-aggregate
+          path: first_effective_hire_minus_one_v0_aggregate.json
