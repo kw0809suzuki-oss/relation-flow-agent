@@ -1,0 +1,31 @@
+name: SB01 Day0 Occupied PLANT Decomposition v0
+
+permissions:
+  contents: read
+  actions: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - SB01_DAY0_OCCUPIED_PLANT_RUN
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 35836285226
+          github-token: ${{ github.token }}
+          pattern: sb01-day0-aligned-input-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_sb01_day0_occupied_plant_decomposition_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sb01-day0-occupied-plant-decomposition-v0
+          path: sb01_day0_occupied_plant_decomposition_v0.json
