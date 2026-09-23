@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SB-01 structural spend emergence v0.
+"""SB-01 structural spend emergence v0.\n\nRun marker: first emergence pass.
 
 Existing exact daily Cash-flow artifacts only.
 Observe when the Day8 prior structural-spend gap emerges and which category
