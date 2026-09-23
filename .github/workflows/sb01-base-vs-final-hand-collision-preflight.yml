@@ -1,0 +1,28 @@
+name: SB01 Base vs Final Hand Collision Preflight
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - SB01_BASE_VS_FINAL_COLLISION_RUN
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_sb01_base_vs_final_hand_collision_preflight.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sb01-base-vs-final-hand-collision-7001
+          path: sb01_base_vs_final_hand_collision_7001.json
