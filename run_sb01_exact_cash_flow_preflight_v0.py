@@ -20,7 +20,7 @@ import whole_flow_control_agent as combat
 
 SEED=7001
 SEAT=0
-ledger=[defaultdict(float),defaultdict(float)]
+def cfgget(obj,key,default):\n    if isinstance(obj,dict): return obj.get(key,default)\n    return getattr(obj,key,default)\n\nledger=[defaultdict(float),defaultdict(float)]
 units=[defaultdict(int),defaultdict(int)]
 events=[]
 
