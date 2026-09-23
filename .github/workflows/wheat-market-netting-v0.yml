@@ -1,0 +1,46 @@
+name: WHEAT Market Netting v0
+permissions: {contents: read}
+on:
+  push:
+    branches: [experiment/wheat-market-netting-v0-20260923]
+    paths: [WHEAT_MARKET_NETTING_V0_RUN]
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7311, seat: 0}
+          - {seed: 7312, seat: 1}
+          - {seed: 7313, seat: 0}
+          - {seed: 7314, seat: 1}
+          - {seed: 7315, seat: 0}
+          - {seed: 7316, seat: 1}
+          - {seed: 7317, seat: 0}
+          - {seed: 7318, seat: 1}
+          - {seed: 7319, seat: 0}
+          - {seed: 7320, seat: 1}
+    env: {BATTLE_SEED: "${{ matrix.seed }}", BATTLE_SEAT: "${{ matrix.seat }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_wheat_market_netting_v0.py
+      - uses: actions/upload-artifact@v4
+        with: {name: "wheat-market-netting-v0-${{ matrix.seed }}", path: "wheat_market_netting_v0_${{ matrix.seed }}.json"}
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: "wheat-market-netting-v0-*", path: artifacts}
+      - run: python aggregate_wheat_market_netting_v0.py
+      - uses: actions/upload-artifact@v4
+        with: {name: wheat-market-netting-v0-aggregate, path: wheat_market_netting_v0_aggregate.json}
