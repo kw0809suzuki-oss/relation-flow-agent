@@ -1,0 +1,31 @@
+name: LAND Post-Expansion Action-State Flow v0 Preflight
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/land-post-expansion-action-state-flow-v0-preflight.yml
+  workflow_dispatch:
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      BATTLE_SEED: 7001
+      BATTLE_SEAT: 0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_land_post_expansion_action_state_flow_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: land-post-expansion-action-state-flow-v0-preflight
+          path: land_post_expansion_action_state_flow_v0_7001.json
