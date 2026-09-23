@@ -1,0 +1,46 @@
+name: Value Source Re-entry v0
+permissions: {contents: read}
+on:
+  push:
+    branches: [observer/value-source-reentry-v0-20260923]
+    paths: [VALUE_SOURCE_REENTRY_V0_RUN]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7281, seat: 0}
+          - {seed: 7282, seat: 1}
+          - {seed: 7283, seat: 0}
+          - {seed: 7284, seat: 1}
+          - {seed: 7285, seat: 0}
+          - {seed: 7286, seat: 1}
+          - {seed: 7287, seat: 0}
+          - {seed: 7288, seat: 1}
+          - {seed: 7289, seat: 0}
+          - {seed: 7290, seat: 1}
+    env: {BATTLE_SEED: "${{ matrix.seed }}", BATTLE_SEAT: "${{ matrix.seat }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_value_source_reentry_v0.py
+      - uses: actions/upload-artifact@v4
+        with: {name: "value-source-reentry-v0-${{ matrix.seed }}", path: "value_source_reentry_v0_${{ matrix.seed }}.json"}
+  aggregate:
+    needs: observe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: "value-source-reentry-v0-*", path: artifacts}
+      - run: python aggregate_value_source_reentry_v0.py
+      - uses: actions/upload-artifact@v4
+        with: {name: value-source-reentry-v0-aggregate, path: value_source_reentry_v0_aggregate.json}
