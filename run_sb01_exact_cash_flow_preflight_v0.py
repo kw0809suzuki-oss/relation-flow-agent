@@ -12,7 +12,6 @@ for both players.
 import json, os
 from collections import defaultdict
 from kaggle_environments import make
-from kaggle_environments.helpers import get
 from kaggle_environments.envs.kaggriculture import kaggriculture as kg
 
 import export_scale_baseline_v1 as base
@@ -20,7 +19,13 @@ import whole_flow_control_agent as combat
 
 SEED=7001
 SEAT=0
-def cfgget(obj,key,default):\n    if isinstance(obj,dict): return obj.get(key,default)\n    return getattr(obj,key,default)\n\nledger=[defaultdict(float),defaultdict(float)]
+
+def cfgget(obj,key,default):
+    if isinstance(obj,dict):
+        return obj.get(key,default)
+    return getattr(obj,key,default)
+
+ledger=[defaultdict(float),defaultdict(float)]
 units=[defaultdict(int),defaultdict(int)]
 events=[]
 
@@ -40,10 +45,10 @@ def measured_process_market(state, env):
     market=obs0.market
     farms=obs0.farms
     privates=[s.observation.private for s in state]
-    board_size=int(get(env.configuration,"boardSize",10))
-    max_orders=max(1,int(get(env.configuration,"maxMarketOrdersPerTurn",10)))
-    hire_mult=int(get(env.configuration,"farmHandCostMult",kg.FARM_HAND_COST_MULT))
-    shed_capacity=int(get(env.configuration,"shedCapacity",100))
+    board_size=int(cfgget(env.configuration,"boardSize",10))
+    max_orders=max(1,int(cfgget(env.configuration,"maxMarketOrdersPerTurn",10)))
+    hire_mult=int(cfgget(env.configuration,"farmHandCostMult",kg.FARM_HAND_COST_MULT))
+    shed_capacity=int(cfgget(env.configuration,"shedCapacity",100))
 
     queues=[]
     for s in state:
