@@ -1,0 +1,103 @@
+name: Strong Origin v2 Body-only v0 Fresh50
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/strong-origin-v2-body-only-v0-fresh50.yml
+  workflow_dispatch:
+
+jobs:
+  pair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        include:
+          - {seed: 7351, seat: 0}
+          - {seed: 7352, seat: 1}
+          - {seed: 7353, seat: 0}
+          - {seed: 7354, seat: 1}
+          - {seed: 7355, seat: 0}
+          - {seed: 7356, seat: 1}
+          - {seed: 7357, seat: 0}
+          - {seed: 7358, seat: 1}
+          - {seed: 7359, seat: 0}
+          - {seed: 7360, seat: 1}
+          - {seed: 7361, seat: 0}
+          - {seed: 7362, seat: 1}
+          - {seed: 7363, seat: 0}
+          - {seed: 7364, seat: 1}
+          - {seed: 7365, seat: 0}
+          - {seed: 7366, seat: 1}
+          - {seed: 7367, seat: 0}
+          - {seed: 7368, seat: 1}
+          - {seed: 7369, seat: 0}
+          - {seed: 7370, seat: 1}
+          - {seed: 7371, seat: 0}
+          - {seed: 7372, seat: 1}
+          - {seed: 7373, seat: 0}
+          - {seed: 7374, seat: 1}
+          - {seed: 7375, seat: 0}
+          - {seed: 7376, seat: 1}
+          - {seed: 7377, seat: 0}
+          - {seed: 7378, seat: 1}
+          - {seed: 7379, seat: 0}
+          - {seed: 7380, seat: 1}
+          - {seed: 7381, seat: 0}
+          - {seed: 7382, seat: 1}
+          - {seed: 7383, seat: 0}
+          - {seed: 7384, seat: 1}
+          - {seed: 7385, seat: 0}
+          - {seed: 7386, seat: 1}
+          - {seed: 7387, seat: 0}
+          - {seed: 7388, seat: 1}
+          - {seed: 7389, seat: 0}
+          - {seed: 7390, seat: 1}
+          - {seed: 7391, seat: 0}
+          - {seed: 7392, seat: 1}
+          - {seed: 7393, seat: 0}
+          - {seed: 7394, seat: 1}
+          - {seed: 7395, seat: 0}
+          - {seed: 7396, seat: 1}
+          - {seed: 7397, seat: 0}
+          - {seed: 7398, seat: 1}
+          - {seed: 7399, seat: 0}
+          - {seed: 7400, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_strong_origin_v2_body_only_pair_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: strong-origin-v2-body-only-v0-pair-${{ matrix.seed }}
+          path: strong_origin_v2_body_only_pair_v0_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: pair
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: strong-origin-v2-body-only-v0-pair-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_strong_origin_v2_body_only_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: strong-origin-v2-body-only-v0-fresh50
+          path: strong_origin_v2_body_only_v0_aggregate.json
