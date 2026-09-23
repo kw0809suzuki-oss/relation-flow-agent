@@ -1,0 +1,43 @@
+name: SB01 LAND Transition Boundary v0
+
+permissions:
+  contents: read
+  actions: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - analyze_sb01_land_transition_boundary_v0.py
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 35828987317
+          github-token: ${{ github.token }}
+          name: sb01-early-daily-economic-localization-v0
+          path: inputs/early
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 35825772394
+          github-token: ${{ github.token }}
+          name: sb01-economic-layers-v0
+          path: inputs/later
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 35847685995
+          github-token: ${{ github.token }}
+          pattern: sb01-exact-cash-flow-daily-7*
+          path: inputs/cash
+          merge-multiple: true
+      - run: python analyze_sb01_land_transition_boundary_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sb01-land-transition-boundary-v0
+          path: sb01_land_transition_boundary_v0.json
