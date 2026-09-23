@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SB-01 WHEAT flow path observer v0.
+"""SB-01 WHEAT flow path observer v0.\n\nRun marker: preflight 7001.
 
 Policy/action generation is unchanged.
 The public market processor is replaced with a logging-equivalent copy, as in
