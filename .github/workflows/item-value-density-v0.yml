@@ -1,0 +1,46 @@
+name: Item Value Density v0
+permissions: {contents: read}
+on:
+  push:
+    branches: [observer/item-value-density-v0-20260923]
+    paths: [ITEM_VALUE_DENSITY_V0_RUN]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7291, seat: 0}
+          - {seed: 7292, seat: 1}
+          - {seed: 7293, seat: 0}
+          - {seed: 7294, seat: 1}
+          - {seed: 7295, seat: 0}
+          - {seed: 7296, seat: 1}
+          - {seed: 7297, seat: 0}
+          - {seed: 7298, seat: 1}
+          - {seed: 7299, seat: 0}
+          - {seed: 7300, seat: 1}
+    env: {BATTLE_SEED: "${{ matrix.seed }}", BATTLE_SEAT: "${{ matrix.seat }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_item_value_density_v0.py
+      - uses: actions/upload-artifact@v4
+        with: {name: "item-value-density-v0-${{ matrix.seed }}", path: "item_value_density_v0_${{ matrix.seed }}.json"}
+  aggregate:
+    needs: observe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: "item-value-density-v0-*", path: artifacts}
+      - run: python aggregate_item_value_density_v0.py
+      - uses: actions/upload-artifact@v4
+        with: {name: item-value-density-v0-aggregate, path: item_value_density_v0_aggregate.json}
