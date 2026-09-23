@@ -1,0 +1,53 @@
+name: Day Boundary Cash Drain v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/day-boundary-cash-drain-v0-20260923]
+    paths: [DAY_BOUNDARY_CASH_DRAIN_V0_RUN]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7261, seat: 0}
+          - {seed: 7262, seat: 1}
+          - {seed: 7263, seat: 0}
+          - {seed: 7264, seat: 1}
+          - {seed: 7265, seat: 0}
+          - {seed: 7266, seat: 1}
+          - {seed: 7267, seat: 0}
+          - {seed: 7268, seat: 1}
+          - {seed: 7269, seat: 0}
+          - {seed: 7270, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_day_boundary_cash_drain_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: day-boundary-cash-drain-v0-${{ matrix.seed }}
+          path: day_boundary_cash_drain_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: observe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: day-boundary-cash-drain-v0-*, path: artifacts}
+      - run: python aggregate_day_boundary_cash_drain_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: day-boundary-cash-drain-v0-aggregate
+          path: day_boundary_cash_drain_v0_aggregate.json
