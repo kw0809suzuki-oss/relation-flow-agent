@@ -1,0 +1,53 @@
+name: Crop Maintenance Protection v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [experiment/crop-maintenance-protection-v0-20260923]
+    paths: [CROP_MAINTENANCE_PROTECTION_V0_RUN]
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7221, seat: 0}
+          - {seed: 7222, seat: 1}
+          - {seed: 7223, seat: 0}
+          - {seed: 7224, seat: 1}
+          - {seed: 7225, seat: 0}
+          - {seed: 7226, seat: 1}
+          - {seed: 7227, seat: 0}
+          - {seed: 7228, seat: 1}
+          - {seed: 7229, seat: 0}
+          - {seed: 7230, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_crop_maintenance_protection_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: crop-maintenance-protection-v0-${{ matrix.seed }}
+          path: crop_maintenance_protection_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: crop-maintenance-protection-v0-*, path: artifacts}
+      - run: python aggregate_crop_maintenance_protection_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: crop-maintenance-protection-v0-aggregate
+          path: crop_maintenance_protection_v0_aggregate.json
