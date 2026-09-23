@@ -136,6 +136,19 @@ def summarize_events(rows):
     for key in ("cash","empty_tiles","occupied_tiles","occupancy_ratio","crop_count",
                 "animal_count","seed_inventory_total","committed_mark"):
         out["post_minus_pre"][key]=summ([x[key] for x in diffs])
+
+    rate_rows=[]
+    for r in present:
+        if r.get("post_minus_pre") is None or r.get("post_sample_day") is None:
+            continue
+        span=r["post_sample_day"]-r["pre_sample_day"]
+        if span<=0: continue
+        rate_rows.append((span,r["post_minus_pre"]))
+    out["sample_span_days"]=summ([span for span,_ in rate_rows])
+    out["post_minus_pre_per_sample_day"]={}
+    for key in ("cash","empty_tiles","occupied_tiles","occupancy_ratio","crop_count",
+                "animal_count","seed_inventory_total","committed_mark"):
+        out["post_minus_pre_per_sample_day"][key]=summ([x[key]/span for span,x in rate_rows])
     return out
 
 def main():
@@ -186,11 +199,36 @@ def main():
         }
         by_transition[f"{from_tiles}_to_{to_tiles}"]=entry
 
+    # Outer-objective check: does earlier self Expansion correspond to higher/lower terminal self?
+    first_self_rows=[r for r in raw if r["side"]=="self" and r["transition_ordinal"]==1]
+    terminal_by_seed={int(s):float(early[s]["terminal"]["self"]) for s in seeds}
+    margin_by_seed={int(s):float(early[s]["terminal"]["margin"]) for s in seeds}
+    early5=[r for r in first_self_rows if r["event_day"]==5]
+    late89=[r for r in first_self_rows if r["event_day"]>=8]
+    def cohort(rows):
+        return {
+          "n":len(rows),
+          "terminal_self":summ([terminal_by_seed[r["seed"]] for r in rows]),
+          "terminal_margin":summ([margin_by_seed[r["seed"]] for r in rows]),
+        }
+    xs=[float(r["event_day"]) for r in first_self_rows]
+    ys=[terminal_by_seed[r["seed"]] for r in first_self_rows]
+    mx=mean(xs); my=mean(ys)
+    num=sum((x-mx)*(y-my) for x,y in zip(xs,ys))
+    den=(sum((x-mx)**2 for x in xs)*sum((y-my)**2 for y in ys))**0.5
+    timing_terminal_check={
+      "self_first_land_day5":cohort(early5),
+      "self_first_land_day8_or_9":cohort(late89),
+      "pearson_event_day_vs_terminal_self":(num/den if den else None),
+      "boundary":"Descriptive cohort check only; seed composition differs and this is not causal evidence."
+    }
+
     payload={
       "schema":"kaggriculture.sb01.land-transition-boundary.v0",
       "battle_count":50,
       "sampled_days":list(SAMPLED_DAYS),
       "transitions":by_transition,
+      "timing_terminal_check":timing_terminal_check,
       "rows":raw,
       "boundary":[
         "Existing artifacts only; no new Battle and no policy mutation.",
@@ -222,13 +260,24 @@ def main():
           "opp_pre_cash_mean":e["opponent"]["pre"]["cash"]["mean"],
           "self_post_occupied_gain_mean":e["self"]["post_minus_pre"]["occupied_tiles"]["mean"],
           "opp_post_occupied_gain_mean":e["opponent"]["post_minus_pre"]["occupied_tiles"]["mean"],
+          "self_post_occupied_gain_per_sample_day_mean":e["self"]["post_minus_pre_per_sample_day"]["occupied_tiles"]["mean"],
+          "opp_post_occupied_gain_per_sample_day_mean":e["opponent"]["post_minus_pre_per_sample_day"]["occupied_tiles"]["mean"],
           "self_post_committed_mark_gain_mean":e["self"]["post_minus_pre"]["committed_mark"]["mean"],
           "opp_post_committed_mark_gain_mean":e["opponent"]["post_minus_pre"]["committed_mark"]["mean"],
+          "self_post_committed_mark_gain_per_sample_day_mean":e["self"]["post_minus_pre_per_sample_day"]["committed_mark"]["mean"],
+          "opp_post_committed_mark_gain_per_sample_day_mean":e["opponent"]["post_minus_pre_per_sample_day"]["committed_mark"]["mean"],
           "self_pre_lag_mean":e["self"]["pre_sample_lag_days"]["mean"],
           "opp_pre_lag_mean":e["opponent"]["pre_sample_lag_days"]["mean"],
           "self_post_lag_mean":e["self"]["post_sample_lag_days"]["mean"],
           "opp_post_lag_mean":e["opponent"]["post_sample_lag_days"]["mean"],
         }
+    compact["timing_terminal_check"]={
+      "day5_n":timing_terminal_check["self_first_land_day5"]["n"],
+      "day5_terminal_self_mean":timing_terminal_check["self_first_land_day5"]["terminal_self"]["mean"],
+      "late_n":timing_terminal_check["self_first_land_day8_or_9"]["n"],
+      "late_terminal_self_mean":timing_terminal_check["self_first_land_day8_or_9"]["terminal_self"]["mean"],
+      "pearson_event_day_vs_terminal_self":timing_terminal_check["pearson_event_day_vs_terminal_self"],
+    }
     print("SB01_LAND_TRANSITION_BOUNDARY "+json.dumps(compact,ensure_ascii=False,separators=(",",":")))
 
 if __name__=="__main__":
