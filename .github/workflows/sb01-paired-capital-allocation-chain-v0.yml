@@ -8,7 +8,7 @@ on:
   push:
     branches: [experiment/sb01-economic-layer-export-v0-20260923]
     paths:
-      - SB01_PAIRED_CHAIN_RUN
+      - SB01_CHAIN_CHECK_RUN
   workflow_dispatch:
 
 jobs:
