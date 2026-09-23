@@ -1,0 +1,63 @@
+name: Day0 Target Reservation v0 Fresh10
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - DAY0_TARGET_RESERVATION_FRESH10_RUN
+  workflow_dispatch:
+
+jobs:
+  pair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7051, seat: 0}
+          - {seed: 7052, seat: 1}
+          - {seed: 7053, seat: 0}
+          - {seed: 7054, seat: 1}
+          - {seed: 7055, seat: 0}
+          - {seed: 7056, seat: 1}
+          - {seed: 7057, seat: 0}
+          - {seed: 7058, seat: 1}
+          - {seed: 7059, seat: 0}
+          - {seed: 7060, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_day0_target_reservation_pair_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: day0-target-reservation-pair-${{ matrix.seed }}
+          path: day0_target_reservation_pair_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: pair
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: day0-target-reservation-pair-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_day0_target_reservation_fresh10_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: day0-target-reservation-fresh10-v0
+          path: day0_target_reservation_fresh10_v0.json
