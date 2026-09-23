@@ -1,0 +1,53 @@
+name: Output Revenue Monetization v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/output-revenue-monetization-v0-20260923]
+    paths: [OUTPUT_REVENUE_MONETIZATION_V0_RUN]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7231, seat: 0}
+          - {seed: 7232, seat: 1}
+          - {seed: 7233, seat: 0}
+          - {seed: 7234, seat: 1}
+          - {seed: 7235, seat: 0}
+          - {seed: 7236, seat: 1}
+          - {seed: 7237, seat: 0}
+          - {seed: 7238, seat: 1}
+          - {seed: 7239, seat: 0}
+          - {seed: 7240, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_output_revenue_monetization_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: output-revenue-monetization-v0-${{ matrix.seed }}
+          path: output_revenue_monetization_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: observe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: output-revenue-monetization-v0-*, path: artifacts}
+      - run: python aggregate_output_revenue_monetization_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: output-revenue-monetization-v0-aggregate
+          path: output_revenue_monetization_v0_aggregate.json
