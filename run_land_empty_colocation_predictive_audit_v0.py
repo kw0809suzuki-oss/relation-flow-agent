@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""LAND Empty Co-location Predictive Audit v0.
+"""LAND Empty Co-location Predictive Audit v0.1.
 
 Exact SB-01 baseline replay. No policy mutation.
 
@@ -146,12 +146,15 @@ def build(rows):
         for target in sorted(onsets):
             ids=current[target]
             outcome=None
+            observed_action_count=0
             for delay in range(LOOKAHEAD_ACTIONS):
                 action_i=state_i+1+delay
-                if action_i>=len(rows):break
+                if action_i>end or action_i>=len(rows):
+                    break
                 pre_i=action_i-1
                 if int(rows[pre_i]["obs"].get("day",0) or 0)!=day:
                     break
+                observed_action_count+=1
                 d=valid_duplicate_at(rows,action_i,target)
                 if d:
                     outcome={"delay_actions":delay,"duplicate":d}
@@ -163,6 +166,8 @@ def build(rows):
               "target":list(target),
               "member_indices":ids,
               "group_size_at_onset":len(ids),
+              "observed_action_count_within_window":observed_action_count,
+              "censored":observed_action_count==0,
               "duplicate_within_2_actions":outcome is not None,
               "outcome":outcome,
             })
@@ -178,11 +183,14 @@ def build(rows):
 
 def compact(side):
     es=side.get("episodes",[])
-    hit=[e for e in es if e["duplicate_within_2_actions"]]
+    eligible=[e for e in es if not e.get("censored",False)]
+    hit=[e for e in eligible if e["duplicate_within_2_actions"]]
     return {
       "episodes":len(es),
+      "eligible_episodes":len(eligible),
+      "censored_episodes":len(es)-len(eligible),
       "hit_episodes":len(hit),
-      "hit_rate":(len(hit)/len(es) if es else None),
+      "hit_rate":(len(hit)/len(eligible) if eligible else None),
       "delay_actions":dict(Counter(str(e["outcome"]["delay_actions"]) for e in hit)),
       "failed_plants_from_hits":sum(e["outcome"]["duplicate"]["failed_count"] for e in hit),
     }
@@ -196,7 +204,7 @@ def main():
     s=build(side_rows(steps,SEAT)); o=build(side_rows(steps,1-SEAT))
     rewards=[float(x.reward) for x in env.state]
     payload={
-      "schema":"kaggriculture.land-empty-colocation-predictive-audit.v0",
+      "schema":"kaggriculture.land-empty-colocation-predictive-audit.v0.1",
       "seed":SEED,"seat":SEAT,"policy_mutated":False,
       "terminal":{"self":rewards[SEAT],"opponent":rewards[1-SEAT],"margin":rewards[SEAT]-rewards[1-SEAT]},
       "self":s,"opponent":o,
@@ -204,7 +212,8 @@ def main():
         "Exact SB-01 baseline policy/runtime; no Candidate or Action mutation.",
         "Denominator is onset episodes with >=2 units co-located on the same empty tile.",
         "Episode continuity resets at day boundary because hand identities reset.",
-        "Outcome asks only whether a valid duplicate PLANT group occurs on that tile within the next two same-day actions.",
+        "Outcome asks only whether a valid duplicate PLANT group occurs on that tile within the next two same-day actions AND within the same +72-turn observation window.",
+        "Episodes with no observable next action inside the window are censored and excluded from the hit-rate denominator.",
         "No target-selection intent, cause, or terminal benefit is inferred."
       ]
     }
