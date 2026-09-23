@@ -11,9 +11,12 @@ def summ(xs):
 
 def sc(side):
     es=side.get("episodes",[])
-    hit=[e for e in es if e.get("duplicate_within_2_actions")]
+    eligible=[e for e in es if not e.get("censored",False)]
+    hit=[e for e in eligible if e.get("duplicate_within_2_actions")]
     return {
       "episodes":len(es),
+      "eligible":len(eligible),
+      "censored":len(es)-len(eligible),
       "hits":len(hit),
       "failed_plants":sum(e["outcome"]["duplicate"]["failed_count"] for e in hit),
       "delay0":sum(e["outcome"]["delay_actions"]==0 for e in hit),
@@ -33,13 +36,17 @@ def main():
     agg={}
     for side in ("self","opponent"):
         ep=sum(c[side]["episodes"] for c in cases)
+        eligible=sum(c[side]["eligible"] for c in cases)
+        censored=sum(c[side]["censored"] for c in cases)
         hits=sum(c[side]["hits"] for c in cases)
         agg[side]={
           "episodes_total":ep,
+          "eligible_episodes_total":eligible,
+          "censored_episodes_total":censored,
           "episodes_per_battle":summ([c[side]["episodes"] for c in cases]),
           "hit_episodes_total":hits,
           "hit_episodes_per_battle":summ([c[side]["hits"] for c in cases]),
-          "hit_rate":hits/ep if ep else None,
+          "hit_rate":hits/eligible if eligible else None,
           "cases_with_any_episode":sum(c[side]["episodes"]>0 for c in cases),
           "cases_with_any_hit":sum(c[side]["hits"]>0 for c in cases),
           "delay0_total":sum(c[side]["delay0"] for c in cases),
@@ -57,7 +64,8 @@ def main():
       "battle_count":len(rows),"terminal_absolute":terminal,
       "self":agg["self"],"opponent":agg["opponent"],"cases":cases,
       "boundary":[
-        "Hit rate is predictive association from empty-tile co-location onset to valid duplicate PLANT within two same-day actions.",
+        "Hit rate is predictive association from empty-tile co-location onset to valid duplicate PLANT within two same-day actions and within the same +72-turn observation window.",
+        "Censored episodes with no observable next action inside the window are excluded from the hit-rate denominator.",
         "It is not a causal effect or terminal-value estimate."
       ]
     }
