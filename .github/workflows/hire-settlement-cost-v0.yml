@@ -1,0 +1,53 @@
+name: HIRE Settlement Cost v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/hire-settlement-cost-v0-20260923]
+    paths: [HIRE_SETTLEMENT_COST_V0_RUN]
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7251, seat: 0}
+          - {seed: 7252, seat: 1}
+          - {seed: 7253, seat: 0}
+          - {seed: 7254, seat: 1}
+          - {seed: 7255, seat: 0}
+          - {seed: 7256, seat: 1}
+          - {seed: 7257, seat: 0}
+          - {seed: 7258, seat: 1}
+          - {seed: 7259, seat: 0}
+          - {seed: 7260, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_hire_settlement_cost_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hire-settlement-cost-v0-${{ matrix.seed }}
+          path: hire_settlement_cost_v0_${{ matrix.seed }}.json
+  aggregate:
+    needs: observe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {pattern: hire-settlement-cost-v0-*, path: artifacts}
+      - run: python aggregate_hire_settlement_cost_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hire-settlement-cost-v0-aggregate
+          path: hire_settlement_cost_v0_aggregate.json
