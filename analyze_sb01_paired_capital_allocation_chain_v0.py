@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SB-01 paired capital-allocation chain validation v0.
+"""SB-01 paired capital-allocation chain validation v0.\n\nRun marker: paired 50-seed validation.
 
 Existing 50-battle artifacts only. No new Battle / Observer.
 
