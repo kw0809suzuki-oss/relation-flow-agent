@@ -1,0 +1,31 @@
+name: LAND Co-location Onset Duplicate PLANT v1 Preflight
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/land-colocation-onset-duplicate-plant-v1-preflight.yml
+  workflow_dispatch:
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      BATTLE_SEED: 7001
+      BATTLE_SEAT: 0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_land_colocation_onset_duplicate_plant_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: land-colocation-onset-duplicate-plant-v1-preflight
+          path: land_colocation_onset_duplicate_plant_v1_7001.json
