@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SB-01 Day0-7 BUY_PRODUCT decomposition v0.
+"""SB-01 Day0-7 BUY_PRODUCT decomposition v0.\n\nRun marker: first paired decomposition.
 
 Existing exact Cash-flow artifacts only.
 Pair unit: opponent - self by seed.
