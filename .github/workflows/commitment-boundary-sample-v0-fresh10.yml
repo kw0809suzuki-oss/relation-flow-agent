@@ -1,4 +1,5 @@
 name: Commitment Boundary Sample v0 Fresh10
+# rerun: exclude-same-turn-buy-1
 
 permissions:
   contents: read
