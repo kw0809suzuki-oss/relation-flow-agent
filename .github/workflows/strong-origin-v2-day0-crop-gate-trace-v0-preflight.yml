@@ -1,0 +1,32 @@
+name: Strong Origin v2 Day0 Crop Gate Trace v0 Preflight
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - run_strong_origin_v2_day0_crop_gate_trace_v0.py
+      - .github/workflows/strong-origin-v2-day0-crop-gate-trace-v0-preflight.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      BATTLE_SEED: 7351
+      BATTLE_SEAT: 0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_strong_origin_v2_day0_crop_gate_trace_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: strong-origin-v2-day0-crop-gate-trace-v0-7351
+          path: strong_origin_v2_day0_crop_gate_trace_v0_7351.json
