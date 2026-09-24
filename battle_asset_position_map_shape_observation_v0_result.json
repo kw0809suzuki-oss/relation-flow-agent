@@ -1,0 +1,358 @@
+{
+  "schema": "kaggriculture.battle-asset-position-map.shape-observation.v0",
+  "source_run_id": 35999407725,
+  "schedule_id": "ASS-0001",
+  "battle_count": 5,
+  "observed": {
+    "pulse_A_day13_to_14": {
+      "lead_day13": {
+        "MELON": {
+          "self_within_24": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent_within_24": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "boundary_note": "For nonongoing MELON, within_24 means the public output-formation WATER window is open or begins within 24 turns; it is not a guaranteed automatic output event."
+        },
+        "STRAWBERRY": {
+          "self_within_24": [
+            2,
+            2,
+            1,
+            2,
+            2
+          ],
+          "opponent_within_24": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "COW": {
+          "self_within_24": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "opponent_within_24": [
+            4,
+            4,
+            3,
+            4,
+            4
+          ]
+        },
+        "SHEEP": {
+          "self_within_24": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent_within_24": [
+            5,
+            5,
+            4,
+            5,
+            5
+          ]
+        },
+        "WHEAT": {
+          "self_within_24": [
+            5,
+            7,
+            8,
+            8,
+            7
+          ],
+          "opponent_within_24": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        }
+      },
+      "after_day14_held_output": {
+        "MELON": {
+          "self": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "opponent": [
+            18,
+            18,
+            18,
+            18,
+            18
+          ]
+        },
+        "STRAWBERRY": {
+          "self": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "opponent": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "COW": {
+          "self": [
+            18,
+            18,
+            18,
+            13,
+            18
+          ],
+          "opponent": [
+            9,
+            9,
+            9,
+            9,
+            9
+          ]
+        },
+        "SHEEP": {
+          "self": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent": [
+            28,
+            28,
+            22,
+            28,
+            27
+          ]
+        },
+        "WHEAT": {
+          "self": [
+            8,
+            7,
+            10,
+            10,
+            7
+          ],
+          "opponent": [
+            12,
+            12,
+            11,
+            12,
+            12
+          ]
+        }
+      }
+    },
+    "pulse_B_day16_to_17": {
+      "lead_day16": {
+        "MELON": {
+          "self_within_24": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent_within_24": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "STRAWBERRY": {
+          "self_within_24": [
+            3,
+            3,
+            2,
+            3,
+            3
+          ],
+          "opponent_within_24": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "COW": {
+          "self_within_24": [
+            4,
+            4,
+            4,
+            3,
+            4
+          ],
+          "opponent_within_24": [
+            6,
+            6,
+            5,
+            6,
+            6
+          ]
+        },
+        "SHEEP": {
+          "self_within_24": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent_within_24": [
+            5,
+            5,
+            4,
+            5,
+            5
+          ]
+        },
+        "WHEAT": {
+          "self_within_24": [
+            6,
+            8,
+            10,
+            10,
+            8
+          ],
+          "opponent_within_24": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      },
+      "after_day17_held_output": {
+        "MELON": {
+          "self": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent": [
+            14,
+            14,
+            14,
+            14,
+            14
+          ]
+        },
+        "STRAWBERRY": {
+          "self": [
+            2,
+            3,
+            2,
+            2,
+            3
+          ],
+          "opponent": [
+            8,
+            8,
+            7,
+            8,
+            8
+          ]
+        },
+        "COW": {
+          "self": [
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          "opponent": [
+            12,
+            12,
+            9,
+            12,
+            12
+          ]
+        },
+        "SHEEP": {
+          "self": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "opponent": [
+            20,
+            20,
+            16,
+            20,
+            20
+          ]
+        },
+        "WHEAT": {
+          "self": [
+            9,
+            13,
+            10,
+            12,
+            12
+          ],
+          "opponent": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      }
+    }
+  },
+  "observations": [
+    "The fixed Asset State Schedule can place Battle assets on public time/state coordinates without inventing a causal model.",
+    "Before Pulse A, opponent has SHEEP scheduled near the next output boundary in all five Battles while self has none; opponent also has MELON already in or near its output-formation window while self has none.",
+    "At the next recorded day boundary, opponent held output is larger for MELON, STRAWBERRY, SHEEP, and WHEAT in all five; self held COW output is larger in all five. Pulse A is therefore not one uniform opponent-ahead asset story.",
+    "Before Pulse B, opponent has more near-boundary STRAWBERRY, COW, and SHEEP in all five Battles, while self has more near-boundary WHEAT in all five; MELON is again opponent-only in the observed output-formation-window proximity.",
+    "At Day17 h0, opponent held output is larger for MELON, STRAWBERRY, COW, and SHEEP in all five, while self remains larger in WHEAT.",
+    "This map exposes a repeated cross-asset timing pattern while preserving that the actual asset mix differs."
+  ],
+  "boundary": [
+    "No values are summed across unlike asset types.",
+    "Held output units are physical units and are not directly comparable across products.",
+    "within_24_turns_count is a public State/time coordinate, not an efficiency or value score.",
+    "For ongoing crops/animals, h0 zero-turn boundaries are the day boundary just reached in the post-refresh State.",
+    "For nonongoing crops, output-formation windows require WATER actions; proximity does not guarantee output.",
+    "No Action diagnosis, causal attribution, Candidate rule, or policy conclusion."
+  ],
+  "next_coordinate": "Extend the same fixed schedule projection to all relevant asset types or add the separate Market Map before using this terrain for Candidate selection."
+}
