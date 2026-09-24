@@ -1,0 +1,245 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.commitment-sequence-audit.result.v0",
+  "source_run_id": 35957844930,
+  "battle_count": 10,
+  "observations": {
+    "first_commit_timing": {
+      "self": {
+        "WHEAT": {
+          "day": 0,
+          "hour": 4,
+          "coverage": 10
+        },
+        "MELON": {
+          "day": 0,
+          "hour": 20,
+          "coverage": 10
+        },
+        "STRAWBERRY": {
+          "day": 1,
+          "hour": 22,
+          "coverage": 10
+        }
+      },
+      "opponent": {
+        "MELON": {
+          "day": 0,
+          "hour": 7,
+          "coverage": 10
+        },
+        "WHEAT": {
+          "day": 0,
+          "hour": 13,
+          "coverage": 10
+        },
+        "STRAWBERRY": {
+          "day": 4,
+          "hour": 11,
+          "coverage": 10
+        }
+      }
+    },
+    "day0_commit_mean": {
+      "self": {
+        "WHEAT": 9,
+        "MELON": 4
+      },
+      "opponent": {
+        "WHEAT": 10,
+        "MELON": 7
+      }
+    },
+    "later_commit_waves_mean": {
+      "self": {
+        "day1": {
+          "STRAWBERRY": 1
+        },
+        "day2": {
+          "STRAWBERRY": 1.9
+        },
+        "day4": {
+          "STRAWBERRY": 1.1,
+          "WHEAT": 7.9
+        },
+        "day6": {
+          "STRAWBERRY": 0.6,
+          "WHEAT": 1.5
+        },
+        "day7": {
+          "STRAWBERRY": 0.9
+        }
+      },
+      "opponent": {
+        "day1": {
+          "WHEAT": 1
+        },
+        "day2": {
+          "MELON": 1
+        },
+        "day4": {
+          "MELON": 2,
+          "STRAWBERRY": 2,
+          "WHEAT": 6
+        },
+        "day7": {
+          "MELON": 1,
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        }
+      }
+    },
+    "productive_spend_mean": {
+      "self": {
+        "day0": {
+          "BUY_ANIMAL": 800,
+          "BUY_SEED": 760,
+          "HIRE": 4
+        },
+        "day1": {
+          "BUY_SEED": 460,
+          "HIRE": 4
+        },
+        "day2": {
+          "HIRE": 4
+        },
+        "day3": {
+          "BUY_SEED": 100,
+          "HIRE": 4
+        },
+        "day4": {
+          "BUY_SEED": 70,
+          "HIRE": 7
+        },
+        "day5": {
+          "BUY_SEED": 10,
+          "HIRE": 4
+        },
+        "day6": {
+          "BUY_ANIMAL": 800,
+          "BUY_SEED": 63,
+          "HIRE": 4
+        },
+        "day7": {
+          "BUY_SEED": 590,
+          "HIRE": 4
+        }
+      },
+      "opponent": {
+        "day0": {
+          "BUY_ANIMAL": 1700,
+          "BUY_SEED": 670,
+          "HIRE": 7
+        },
+        "day1": {
+          "HIRE": 20
+        },
+        "day2": {
+          "BUY_SEED": 80,
+          "HIRE": 7
+        },
+        "day3": {
+          "HIRE": 12
+        },
+        "day4": {
+          "BUY_SEED": 500,
+          "HIRE": 20
+        },
+        "day5": {
+          "BUY_ANIMAL": 900,
+          "HIRE": 20
+        },
+        "day6": {
+          "BUY_ANIMAL": 400,
+          "HIRE": 20
+        },
+        "day7": {
+          "BUY_LAND": 1000,
+          "BUY_SEED": 450,
+          "HIRE": 54
+        }
+      }
+    },
+    "realized_sell_mean": {
+      "self": {
+        "day0": {
+          "WHEAT": 562
+        },
+        "day1": {
+          "FERTILIZER": 199,
+          "WHEAT": 306
+        },
+        "day2": {
+          "FERTILIZER": 198,
+          "WHEAT": 531
+        },
+        "day3": {
+          "FERTILIZER": 195,
+          "WHEAT": 316.8
+        },
+        "day4": {
+          "FERTILIZER": 192,
+          "WHEAT": 127.1
+        },
+        "day5": {
+          "FERTILIZER": 190,
+          "WHEAT": 1211.2
+        },
+        "day6": {
+          "FERTILIZER": 187,
+          "WHEAT": 1580.2
+        },
+        "day7": {
+          "FERTILIZER": 367.2,
+          "WHEAT": 1954
+        }
+      },
+      "opponent": {
+        "day0": {
+          "WHEAT": 479
+        },
+        "day1": {
+          "FERTILIZER": 200,
+          "WHEAT": 180
+        },
+        "day2": {
+          "FERTILIZER": 198,
+          "WHEAT": 280
+        },
+        "day3": {
+          "FERTILIZER": 683,
+          "WHEAT": 252.1
+        },
+        "day4": {
+          "FERTILIZER": 289,
+          "WHEAT": 286.5
+        },
+        "day5": {
+          "FERTILIZER": 381,
+          "WHEAT": 863.8
+        },
+        "day6": {
+          "FERTILIZER": 469,
+          "WHEAT": 444.9,
+          "WOOL": 1317
+        },
+        "day7": {
+          "FERTILIZER": 535.6,
+          "WHEAT": 858.6
+        }
+      }
+    }
+  },
+  "derived_observations": [
+    "Seyamalam is not uniformly faster at all crop commitment. Self commits WHEAT earlier (Day0 hour4 vs hour13), while Seyamalam commits MELON much earlier (hour7 vs hour20).",
+    "By Day0, Seyamalam commits more total crop units (17 vs 13) while also spending more on animals and HIRE.",
+    "Seyamalam places long-maturity MELON earlier while maintaining realized WHEAT/FERTILIZER cash lanes; WOOL realization appears on Day6 in all 10 cases.",
+    "Seyamalam then adds later commitment waves on Day4 and Day7 and expands LAND on Day7; self's later crop commitment is more WHEAT-heavy and no comparable LAND spend appears by Day7.",
+    "These facts support a sequence difference, not yet a Direction rule or causal claim that early MELON itself is optimal."
+  ],
+  "boundary": [
+    "No Candidate or Direction model was introduced.",
+    "SELL timing is not attributed to specific prior committed units because inventory/cash are fungible.",
+    "Early WHEAT SELL can include non-crop inventory flows and is not treated as payoff from a specific WHEAT plant.",
+    "The observed sequence is descriptive; Seyamalam action order is not a template to copy."
+  ]
+}
