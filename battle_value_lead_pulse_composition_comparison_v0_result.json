@@ -1,0 +1,75 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.lead-pulse-composition-comparison.result.v0",
+  "source_run_id": 35992655494,
+  "battle_count": 5,
+  "question": "Do Day13->14 and Day16->17 production-led pulses have the same public productive-State composition?",
+  "answer": "NO",
+  "pulse_A_day13_to_14": {
+    "mean_total_mark_change": 14152.8,
+    "mean_crop_mark_change": 10615,
+    "mean_animal_mark_change": 3537.8,
+    "mean_by_type": {
+      "WHEAT": -64,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 5701.4,
+      "MELON": 4977.6,
+      "GOOSE": 0,
+      "COW": -1410,
+      "SHEEP": 4947.8
+    },
+    "repeated_shape": [
+      "STRAWBERRY mark residual increases in all 5.",
+      "MELON mark residual increases in all 5.",
+      "SHEEP mark residual increases in all 5.",
+      "COW mark residual decreases in all 5.",
+      "Crop-side growth dominates the pulse."
+    ]
+  },
+  "pulse_B_day16_to_17": {
+    "mean_total_mark_change": 5011.8,
+    "mean_crop_mark_change": 1341,
+    "mean_animal_mark_change": 3670.8,
+    "mean_by_type": {
+      "WHEAT": 321.8,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 683.2,
+      "MELON": 336,
+      "GOOSE": 0,
+      "COW": 856.4,
+      "SHEEP": 2814.4
+    },
+    "repeated_shape": [
+      "SHEEP mark residual increases in all 5.",
+      "COW mark residual increases in all 5.",
+      "WHEAT mark residual increases in all 5.",
+      "STRAWBERRY and MELON contributions are smaller and not compositionally identical across all 5.",
+      "Animal-side growth dominates the pulse."
+    ]
+  },
+  "shared_and_different": {
+    "shared": [
+      "Both pulses increase total committed-production residual in all 5 Battles.",
+      "SHEEP mark residual increases in all 5 Battles in both pulses.",
+      "Neither pulse adds an opponent-minus-self animal-count difference; animal mark changes occur without animal-count residual change."
+    ],
+    "different": [
+      "Pulse A is crop-dominant; Pulse B is animal-dominant.",
+      "Pulse A is characterized by large STRAWBERRY + MELON residual growth; Pulse B is not.",
+      "COW residual moves in opposite directions: negative in Pulse A, positive in Pulse B.",
+      "The two pulses therefore do not share one specific crop/animal composition."
+    ]
+  },
+  "interpretation_boundary": [
+    "The repeated temporal ordering is stronger than any single crop/animal explanation.",
+    "SHEEP is a repeated component but is not sufficient to identify a unique mechanism or policy target.",
+    "Different productive-State compositions can precede the same output/SELL/Cash response-shaped sequence.",
+    "No Action, causal mechanism, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred."
+  ],
+  "reentry": {
+    "purpose": "Explain the large terminal self residual from public-world trajectory before internal diagnosis.",
+    "current_position": "The two repeated lead pulses share temporal form but not specific productive-State composition.",
+    "next_question": "What public quantity is common to both pulses at a higher level than crop/animal identity and is large enough to explain repeated amplification?"
+  }
+}
