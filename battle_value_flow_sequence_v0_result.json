@@ -1,0 +1,179 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-flow-sequence.result.v0",
+  "source_run_id": 35991482327,
+  "battle_count": 5,
+  "pulses": {
+    "pulse_A": {
+      "lead_interval": "Day13->14",
+      "lead": {
+        "committed_residual_change": [
+          14608,
+          15696,
+          10963,
+          14398,
+          15099
+        ],
+        "cash_residual_change": [
+          -5272,
+          -4078,
+          -2738,
+          -1514,
+          -4016
+        ],
+        "output_mark_residual": [
+          1064,
+          1242,
+          703,
+          1940,
+          1219
+        ],
+        "sell_cash_residual": [
+          -2612,
+          -1801,
+          -548,
+          819,
+          -1337
+        ]
+      },
+      "response_interval": "Day14->15",
+      "response": {
+        "committed_residual_change": [
+          -5837,
+          -5607,
+          -2383,
+          -1748,
+          -5782
+        ],
+        "cash_residual_change": [
+          6921,
+          6956,
+          3597,
+          6233,
+          5335
+        ],
+        "output_mark_residual": [
+          7932,
+          7519,
+          3585,
+          7176,
+          6268
+        ],
+        "sell_cash_residual": [
+          6366,
+          5720,
+          2267,
+          4996,
+          4102
+        ]
+      }
+    },
+    "pulse_B": {
+      "lead_interval": "Day16->17",
+      "lead": {
+        "committed_residual_change": [
+          4874,
+          5173,
+          5303,
+          6573,
+          3136
+        ],
+        "cash_residual_change": [
+          369,
+          379,
+          -1139,
+          339,
+          -10
+        ],
+        "output_mark_residual": [
+          873,
+          683,
+          554,
+          904,
+          830
+        ],
+        "sell_cash_residual": [
+          66,
+          1213,
+          -242,
+          960,
+          653
+        ]
+      },
+      "response_interval": "Day17->18",
+      "response": {
+        "committed_residual_change": [
+          -4271,
+          -4994,
+          -7633,
+          -9787,
+          -2842
+        ],
+        "cash_residual_change": [
+          5502,
+          5863,
+          6446,
+          8516,
+          2681
+        ],
+        "output_mark_residual": [
+          6965,
+          7435,
+          6532,
+          9350,
+          5187
+        ],
+        "sell_cash_residual": [
+          5239,
+          5905,
+          6165,
+          9070,
+          2674
+        ]
+      }
+    }
+  },
+  "mean_summary": {
+    "pulse_A_lead": {
+      "committed_residual_change": 14152.8,
+      "cash_residual_change": -3523.6,
+      "output_mark_residual": 1233.6,
+      "sell_cash_residual": -1095.8
+    },
+    "pulse_A_response": {
+      "committed_residual_change": -4271.4,
+      "cash_residual_change": 5808.4,
+      "output_mark_residual": 6496,
+      "sell_cash_residual": 4690.2
+    },
+    "pulse_B_lead": {
+      "committed_residual_change": 5011.8,
+      "cash_residual_change": -12.4,
+      "output_mark_residual": 768.8,
+      "sell_cash_residual": 530
+    },
+    "pulse_B_response": {
+      "committed_residual_change": -5905.4,
+      "cash_residual_change": 5801.6,
+      "output_mark_residual": 7093.8,
+      "sell_cash_residual": 5810.6
+    }
+  },
+  "observed_sequence": [
+    "Pulse A lead (Day13->14): committed-production residual rises strongly in all five, while cash residual contracts in all five; actual-output residual is still small and SELL residual is not consistently opponent-positive.",
+    "Pulse A response (Day14->15): actual-output residual becomes much larger, SELL residual is opponent-positive in all five, cash residual rises in all five, and committed-production residual contracts in all five.",
+    "Pulse B lead (Day16->17): committed-production residual rises in all five while cash is approximately flat; output residual remains small and SELL residual is small/mixed.",
+    "Pulse B response (Day17->18): actual-output residual becomes much larger, SELL residual is opponent-positive in all five, cash residual rises in all five, and committed-production residual contracts in all five.",
+    "The same public-world ordering is therefore observed twice: productive-State residual expansion first, followed in the next interval by larger output residual, realized SELL residual, and Cash residual growth."
+  ],
+  "interpretation_boundary": [
+    "This supports a repeated temporal correspondence in the world trajectory.",
+    "It does not establish that identical units of committed-production value were converted into the later output/SELL/Cash values.",
+    "Production contraction during the response interval is not itself proof of causal conversion.",
+    "No Action, mechanism, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred."
+  ],
+  "reentry": {
+    "purpose": "Explain where the large terminal self residual is amplified using public-world facts before internal diagnosis.",
+    "current_position": "A repeated Day12->18 value-formation / realization ordering is now observed twice across all five Battles.",
+    "next_open": "Within the two lead intervals, identify which public productive-State composition accounts for the committed-production residual expansion before asking what created that State."
+  }
+}
