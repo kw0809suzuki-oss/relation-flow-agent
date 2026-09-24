@@ -158,7 +158,10 @@ def side_case(raw,p):
 def pair_scalar(cases,path):
     def get(c,side):
         x=c[side]
-        for k in path:x=x[k]
+        for k in path:
+            if isinstance(x,dict) and k not in x:
+                return 0.0
+            x=x[k]
         return float(x)
     s=[get(c,"self") for c in cases]
     o=[get(c,"opponent") for c in cases]
