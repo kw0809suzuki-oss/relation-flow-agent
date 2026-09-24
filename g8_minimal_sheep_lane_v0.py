@@ -175,8 +175,18 @@ def agent(obs):
             if tile.get("fertilizer_available", False):
                 reserved_animals.add((x, y)); return ["COLLECT_FERTILIZER"]
         if inv.get("WHEAT", 0) > 0:
-            needs_feed = [(ax, ay) for ax, ay, t in animal_tiles if not t.get("fed_today", False) and (ax, ay) not in reserved_animals]
-            target = _nearest((x, y), needs_feed)
+            sheep_needs_feed = [
+                (ax, ay) for ax, ay, t in animal_tiles
+                if t.get("animal") == "SHEEP"
+                and not t.get("fed_today", False)
+                and (ax, ay) not in reserved_animals
+            ]
+            needs_feed = [
+                (ax, ay) for ax, ay, t in animal_tiles
+                if not t.get("fed_today", False)
+                and (ax, ay) not in reserved_animals
+            ]
+            target = _nearest((x, y), sheep_needs_feed) or _nearest((x, y), needs_feed)
             if target is not None:
                 reserved_animals.add(target); return _move_toward((x, y), target)
         if _adjacent_shed(x, y, board_size):
@@ -189,12 +199,15 @@ def agent(obs):
             needs_feed_count = sum(1 for _, _, t in animal_tiles if not t.get("fed_today", False))
             if needs_feed_count and shed.get("WHEAT", 0) > 0:
                 return ["PICKUP", "WHEAT", min(FEED_CARRY, shed.get("WHEAT", 0))]
+        sheep_task_tiles = []
         task_tiles = []
         for ax, ay, t in animal_tiles:
             if (ax, ay) in reserved_animals: continue
             if t.get("yield_units", 0) > 0 or not t.get("fed_today", False) or not t.get("cared_today", False) or t.get("fertilizer_available", False):
                 task_tiles.append((ax, ay))
-        target = _nearest((x, y), task_tiles)
+                if t.get("animal") == "SHEEP" and not t.get("fed_today", False):
+                    sheep_task_tiles.append((ax, ay))
+        target = _nearest((x, y), sheep_task_tiles) or _nearest((x, y), task_tiles)
         if target is not None:
             reserved_animals.add(target)
             tt = tiles[target[1]][target[0]]
