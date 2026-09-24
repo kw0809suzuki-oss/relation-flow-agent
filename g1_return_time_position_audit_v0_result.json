@@ -1,0 +1,283 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.g1-return-time-position-audit.result.v0",
+  "battle_count": 10,
+  "source_raw_run_id": 35963016456,
+  "rule_provenance": "Kaggle/kaggle-environments kaggriculture.py @ b2405492c8403f6649f9317290f215e0290a2425",
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day8_g1_total": {
+    "self": {
+      "asset_count": 4.6,
+      "future_units": 28.4,
+      "held_yield": 0
+    },
+    "opponent": {
+      "asset_count": 11.9,
+      "future_units": 65.1,
+      "held_yield": 3
+    }
+  },
+  "next_production_time_position": {
+    "self": {
+      "within_0_1_days": {
+        "asset_count": 0,
+        "future_units": 0
+      },
+      "within_2_3_days": {
+        "asset_count": 0,
+        "future_units": 0
+      },
+      "day12": {
+        "asset_count": 0,
+        "future_units": 0
+      },
+      "after_day12": {
+        "asset_count": 4.6,
+        "future_units": 28.4,
+        "positive_cases": 10
+      }
+    },
+    "opponent": {
+      "within_0_1_days": {
+        "asset_count": 0,
+        "future_units": 0
+      },
+      "within_2_3_days": {
+        "asset_count": 3,
+        "future_units": 19,
+        "actual_production_previous_basis": 12,
+        "actual_production_before_day12_snapshot": 10,
+        "actual_harvest_before_day12_snapshot": 6,
+        "positive_cases": 10
+      },
+      "day12": {
+        "asset_count": 0,
+        "future_units": 0
+      },
+      "after_day12": {
+        "asset_count": 8.9,
+        "future_units": 46.1,
+        "actual_production_previous_basis": 0,
+        "actual_production_before_day12_snapshot": 0,
+        "positive_cases": 10
+      }
+    }
+  },
+  "harvest_time_position": {
+    "self": {
+      "by_day12": {
+        "asset_count": 0,
+        "future_units": 0,
+        "actual_harvest": 0
+      },
+      "after_day12": {
+        "asset_count": 4.6,
+        "future_units": 28.4,
+        "positive_cases": 10
+      }
+    },
+    "opponent": {
+      "within_2_3_days": {
+        "asset_count": 1,
+        "future_units": 7,
+        "actual_production_before_day12_snapshot": 6,
+        "actual_harvest_before_day12_snapshot": 6,
+        "positive_cases": 10
+      },
+      "after_day12": {
+        "asset_count": 10.9,
+        "future_units": 58.1,
+        "actual_production_before_day12_snapshot": 4,
+        "actual_harvest_before_day12_snapshot": 0,
+        "positive_cases": 10
+      }
+    }
+  },
+  "groups": {
+    "self": [
+      {
+        "asset": "COW",
+        "return_item": "MILK",
+        "origin_day": 6,
+        "age_day8": 2,
+        "asset_count_mean": 2,
+        "future_units_mean": 18,
+        "next_production_day": 14,
+        "harvest_eligible_day": 14,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "STRAWBERRY",
+        "return_item": "STRAWBERRY",
+        "origin_day": 4,
+        "age_day8": 4,
+        "asset_count_mean": 1.1,
+        "future_units_mean": 4.4,
+        "next_production_day": 14,
+        "harvest_eligible_day": 14,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "STRAWBERRY",
+        "return_item": "STRAWBERRY",
+        "origin_day": 6,
+        "age_day8": 2,
+        "asset_count_mean": 0.6,
+        "future_units_mean": 2.4,
+        "next_production_day": 16,
+        "harvest_eligible_day": 16,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 6
+      },
+      {
+        "asset": "STRAWBERRY",
+        "return_item": "STRAWBERRY",
+        "origin_day": 7,
+        "age_day8": 1,
+        "asset_count_mean": 0.9,
+        "future_units_mean": 3.6,
+        "next_production_day": 17,
+        "harvest_eligible_day": 17,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 9
+      }
+    ],
+    "opponent": [
+      {
+        "asset": "MELON",
+        "return_item": "MELON",
+        "origin_day": 4,
+        "age_day8": 4,
+        "asset_count_mean": 2,
+        "future_units_mean": 12,
+        "held_yield_mean": 2,
+        "next_production_day": 10,
+        "harvest_eligible_day": 14,
+        "actual_production_previous_basis": 6,
+        "actual_production_before_day12_snapshot": 4,
+        "actual_harvest_before_day12_snapshot": 0,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "SHEEP",
+        "return_item": "WOOL",
+        "origin_day": 5,
+        "age_day8": 3,
+        "asset_count_mean": 1,
+        "future_units_mean": 7,
+        "next_production_day": 11,
+        "harvest_eligible_day": 11,
+        "actual_production_previous_basis": 6,
+        "actual_production_before_day12_snapshot": 6,
+        "actual_harvest_before_day12_snapshot": 6,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "MELON",
+        "return_item": "MELON",
+        "origin_day": 7,
+        "age_day8": 1,
+        "asset_count_mean": 1,
+        "future_units_mean": 6,
+        "next_production_day": 13,
+        "harvest_eligible_day": 17,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "COW",
+        "return_item": "MILK",
+        "origin_day": 5,
+        "age_day8": 3,
+        "asset_count_mean": 0.9,
+        "future_units_mean": 8.1,
+        "next_production_day": 13,
+        "harvest_eligible_day": 13,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 9
+      },
+      {
+        "asset": "COW",
+        "return_item": "MILK",
+        "origin_day": 7,
+        "age_day8": 1,
+        "asset_count_mean": 1,
+        "future_units_mean": 8,
+        "next_production_day": 15,
+        "harvest_eligible_day": 15,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "STRAWBERRY",
+        "return_item": "STRAWBERRY",
+        "origin_day": 4,
+        "age_day8": 4,
+        "asset_count_mean": 2,
+        "future_units_mean": 8,
+        "next_production_day": 14,
+        "harvest_eligible_day": 14,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 10
+      },
+      {
+        "asset": "STRAWBERRY",
+        "return_item": "STRAWBERRY",
+        "origin_day": 7,
+        "age_day8": 1,
+        "asset_count_mean": 4,
+        "future_units_mean": 16,
+        "next_production_day": 17,
+        "harvest_eligible_day": 17,
+        "actual_production": 0,
+        "actual_harvest": 0,
+        "asset_present_cases": 10
+      }
+    ]
+  },
+  "robustness": {
+    "previous_project_g1_production_basis": {
+      "self": 0,
+      "opponent": 12,
+      "opponent_ahead_cases": 10
+    },
+    "strict_before_saved_day12_hour0_snapshot": {
+      "self": 0,
+      "opponent": 10,
+      "opponent_ahead_cases": 10
+    },
+    "note": "The earlier 12.0 includes Day12 WATER production after the saved Day12 hour-0 snapshot. Excluding those events changes 12.0 to 10.0 but leaves the separator unchanged."
+  },
+  "derived_observations": [
+    "All self Day8 G1 non-WHEAT assets have their next public-rule production opportunity after Day12; zero G1 production over the next cycle is therefore mechanically consistent with maturity timing and does not require a post-maturity execution-failure explanation.",
+    "Opponent has exactly 3.0 mean G1 assets, carrying 19.0 future units, with a next production opportunity 2-3 days after Day8; this occurs in all 10 cases.",
+    "Those near-production assets are 2.0 Day4 MELON and 1.0 Day5 SHEEP in every case. They account for all observed opponent G1 production in the window.",
+    "Production readiness and realization readiness are not the same. Day4 MELON can gain yield from WATER starting Day10 but cannot be HARVESTed until Day14; it contributes production but not Day8-12 harvest.",
+    "The Day5 SHEEP reaches both production and harvest eligibility on Day11 and produces/harvests 6.0 WOOL units in all 10 cases.",
+    "Therefore the earlier phrase 'G1 becomes a Return generation' should be split: opponent G1 partly becomes production-active by Day10-11, while only the SHEEP component becomes harvest-realizable inside the Day8-12 window.",
+    "The first Day8 G1 production separator is explained by origin-time/composition placement under public maturity rules, before worker availability, action competition, stock constraints, or execution ordering need to be invoked."
+  ],
+  "boundary": [
+    "No Candidate, Direction, readiness score, or policy mutation is introduced.",
+    "G1 means non-WHEAT assets with public origin day in [4,8), observed at Day8 hour 0.",
+    "Production opportunity and harvest eligibility are kept separate.",
+    "For non-ongoing crops, WATER may increase held yield before HARVEST becomes legal.",
+    "Production opportunity is not guaranteed production; actual events are separately observed.",
+    "HARVEST eligibility is not SELL; no cohort-level Cash attribution is made.",
+    "No individual asset is declared independently optimal."
+  ]
+}
