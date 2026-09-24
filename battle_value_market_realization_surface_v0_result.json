@@ -1,0 +1,114 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-market-realization-surface.result.v0",
+  "source_run_id": 36015500650,
+  "battle_count": 5,
+  "window": "Day20 h0 inclusive -> Day24 h0 exclusive for SELL; Day24 h0 retained as endpoint snapshot",
+  "cases": [
+    {
+      "seed": 7351,
+      "cash_residual_growth": 26620,
+      "sell_cash_residual": 24382,
+      "sell_unit_residual": 49,
+      "inventory_mark_residual_start": 4663,
+      "inventory_mark_residual_end": 10413
+    },
+    {
+      "seed": 7352,
+      "cash_residual_growth": 24847,
+      "sell_cash_residual": 24853,
+      "sell_unit_residual": 103,
+      "inventory_mark_residual_start": 4469,
+      "inventory_mark_residual_end": 9284
+    },
+    {
+      "seed": 7353,
+      "cash_residual_growth": 23415,
+      "sell_cash_residual": 21876,
+      "sell_unit_residual": 67,
+      "inventory_mark_residual_start": 7129,
+      "inventory_mark_residual_end": 10003
+    },
+    {
+      "seed": 7354,
+      "cash_residual_growth": 32607,
+      "sell_cash_residual": 34040,
+      "sell_unit_residual": 147,
+      "inventory_mark_residual_start": 7079,
+      "inventory_mark_residual_end": 11801
+    },
+    {
+      "seed": 7355,
+      "cash_residual_growth": 20905,
+      "sell_cash_residual": 18609,
+      "sell_unit_residual": 47,
+      "inventory_mark_residual_start": 4873,
+      "inventory_mark_residual_end": 9505
+    }
+  ],
+  "mean_summary": {
+    "cash_residual_growth": 25678.8,
+    "sell_cash_residual": 24752,
+    "sell_unit_residual": 82.6,
+    "inventory_mark_residual_start": 5642.6,
+    "inventory_mark_residual_end": 10201.2
+  },
+  "mean_by_item": {
+    "WHEAT": {
+      "start_qty_residual": 32.2,
+      "end_qty_residual": 16.6,
+      "sell_unit_residual": -69.8,
+      "sell_cash_residual": -3168.6
+    },
+    "STRAWBERRY": {
+      "start_qty_residual": 10.8,
+      "end_qty_residual": 27.2,
+      "sell_unit_residual": 78.4,
+      "sell_cash_residual": 17323.2
+    },
+    "MELON": {
+      "start_qty_residual": 0,
+      "end_qty_residual": 6,
+      "sell_unit_residual": 12,
+      "sell_cash_residual": 2659.8
+    },
+    "MILK": {
+      "start_qty_residual": 10.6,
+      "end_qty_residual": 7.2,
+      "sell_unit_residual": 17,
+      "sell_cash_residual": 1724.2
+    },
+    "WOOL": {
+      "start_qty_residual": 0,
+      "end_qty_residual": 11.4,
+      "sell_unit_residual": 31,
+      "sell_cash_residual": 5441.4
+    },
+    "FERTILIZER": {
+      "start_qty_residual": 13.6,
+      "end_qty_residual": 5.2,
+      "sell_unit_residual": 14,
+      "sell_cash_residual": 772
+    }
+  },
+  "observed_shape": [
+    "Across all five Battles, Day20->24 realized SELL cash residual is strongly opponent-positive (+18,609 to +34,040) and closely matches the scale of Cash-residual growth (+20,905 to +32,607), without asserting identity because other cash flows also occur.",
+    "Mean realized-SELL residual is +24,752 while mean Cash-residual growth is +25,678.8.",
+    "The Day20 starting stockpile does not explain the late SELL/Cash difference by itself: mean starting liquidatable-inventory mark residual is +5,642.6, far smaller than the realized SELL residual.",
+    "STRAWBERRY is the largest robust positive SELL-cash component: mean opponent-minus-self SELL units +78.4 and SELL cash +17,323.2. The opponent begins only +10.8 STRAWBERRY units ahead on average and ends +27.2 ahead.",
+    "MELON and WOOL start with zero quantity residual in all five Battles, yet opponent-minus-self SELL units become +12 MELON in every Battle and +20 to +36 WOOL; both end with opponent-positive inventory. These sellable units therefore arrive during Day20->24 rather than merely being liquidated from the Day20 stockpile.",
+    "WHEAT moves in the opposite direction: self sells more WHEAT in all five Battles (mean residual -69.8 units, -3,168.6 Cash), partially offsetting the opponent advantage elsewhere.",
+    "For products sold by both sides, realized-price means are generally close relative to the unit/composition gaps; the robust late residual is observed primarily in what and how many units reach SELL rather than as a broad opponent price premium."
+  ],
+  "boundary": [
+    "No item-level lineage from earlier committed production to later SELL is proven; identical value units were not tracked across State transformations.",
+    "Starting inventory and later SELL are not equated because inventory can be replenished by harvest/drop during the window.",
+    "Realized SELL residual and Cash-residual growth are close in scale but are not identical because purchases, HIRE, LAND and other cash flows also occur.",
+    "No SELL policy, BUY policy, Action diagnosis, profitability conclusion, Representation, Evaluation, Direction or Candidate is inferred.",
+    "The observation weakens a separate-surface reading: Day20->24 contains sellable units created during the same interval, so Market/Cash realization remains visibly connected to ongoing asset/output flow."
+  ],
+  "reentry": {
+    "purpose": "Explain the large terminal self residual using the public world map before internal diagnosis.",
+    "current_position": "Day20->24 is not merely liquidation of a fixed inventory stock. The opponent-positive Cash pulse is accompanied by large in-window SELL-unit arrival, especially STRAWBERRY plus newly appearing MELON/WOOL, while self WHEAT sales partially offset it.",
+    "next_question": "On the world asset-formation map, what public State/time positions feed the Day20->24 STRAWBERRY/MELON/WOOL sellable-unit arrivals, without yet diagnosing Action or policy?"
+  }
+}
