@@ -39,6 +39,7 @@ OUT=Path(f"state_transition_growth_audit_v0_{SEED}.json")
 
 production_events=[]
 harvest_events=[]
+plant_events=[]
 farm_player={}
 live_farms=[]
 _current_day=0
@@ -140,6 +141,29 @@ def observed_apply_unit_action(original):
         after_tile=tile_copy(farm,pos)
         invs2=private.get("inventories",[]) or []
         after_inv=copy.deepcopy(invs2[idx] if 0<=idx<len(invs2) else {})
+
+        if op=="PLANT" and isinstance(action,list) and len(action)>=2:
+            crop=action[1]
+            before_seed=int(before_inv.get(crop,0) or 0)
+            after_seed=int(after_inv.get(crop,0) or 0)
+            if (
+                before_tile is None
+                and isinstance(after_tile,dict)
+                and after_tile.get("kind")=="PLANT"
+                and after_tile.get("crop")==crop
+                and after_seed==before_seed-1
+            ):
+                if p is None:
+                    global unmapped_relevant_events
+                    unmapped_relevant_events+=1
+                else:
+                    plant_events.append({
+                        "player":p,
+                        "day":int(day),
+                        "hour":int(_current_hour),
+                        "crop":crop,
+                        "units":1,
+                    })
 
         if op=="WATER" and isinstance(before_tile,dict) and isinstance(after_tile,dict):
             crop=before_tile.get("crop")
@@ -279,6 +303,7 @@ def main():
     configure()
     production_events.clear()
     harvest_events.clear()
+    plant_events.clear()
     farm_player.clear()
     live_farms.clear()
     unmapped_relevant_events=0
@@ -314,6 +339,31 @@ def main():
     terminal=[float(x.reward) for x in env.state]
     snapshots=export_states(env)
 
+    commitment_trace={"0":[],"1":[]}
+    for step_index,step in enumerate(getattr(env,"steps",[]) or []):
+        if not isinstance(step,(list,tuple)) or len(step)<2:
+            continue
+        for p in (0,1):
+            obs=plain(getv(step[p],"observation"))
+            if not isinstance(obs,dict):
+                continue
+            day=int(obs.get("day",0) or 0)
+            if day>=4:
+                continue
+            private=obs.get("private",{}) or {}
+            farm=(obs.get("farms",[]) or [{},{}])[p]
+            tiles=farm.get("tiles",[]) or []
+            empty=sum(1 for row in tiles for t in (row or []) if t is None)
+            seeds=private.get("seeds",{}) or {}
+            commitment_trace[str(p)].append({
+                "step_index":step_index,
+                "day":day,
+                "hour":int(obs.get("hour",0) or 0),
+                "seed_stock":{k:int(v or 0) for k,v in seeds.items()},
+                "empty_tiles":empty,
+                "workers":1+len(farm.get("hands",[]) or []),
+            })
+
     cash_validation=[]
     for p in (0,1):
         net=sum(float(v) for v in exact.ledger[p].values())
@@ -347,12 +397,15 @@ def main():
         "market_events":plain(exact.events),
         "production_events":plain(production_events),
         "harvest_events":plain(harvest_events),
+        "plant_events":plain(plant_events),
+        "commitment_trace":plain(commitment_trace),
         "cash_validation":cash_validation,
         "audit":{
             "missing_target_states":missing,
             "unmapped_relevant_events":unmapped_relevant_events,
             "production_event_count":len(production_events),
             "harvest_event_count":len(harvest_events),
+            "plant_event_count":len(plant_events),
             "market_event_count":len(exact.events),
         },
         "boundary":[
@@ -360,7 +413,7 @@ def main():
             "Self policy is Strong Origin v2 Body-only v0; opponent is the fixed Seyamalam path used by the benchmark.",
             "Market Cash events use the already-validated logging-equivalent public-rule processor.",
             "Production increments are observed by wrapping the public-rule WATER and daily refresh functions without changing their return/state behavior.",
-            "HARVEST is observed by inventory delta around the public-rule unit executor.",
+            "HARVEST and successful PLANT are observed by public-rule unit execution state/inventory deltas.",
             "Cash validation must be exactly zero for both players and all Day4/8/12 State snapshots must exist.",
             "No causal link from a specific SELL to a specific later investment is asserted."
         ]
