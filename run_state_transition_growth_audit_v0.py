@@ -129,6 +129,7 @@ def tile_copy(farm,pos):
 
 def observed_apply_unit_action(original):
     def wrapped(farm,private,idx,action,board_size,day,turns_per_day,shed_capacity=100):
+        global unmapped_relevant_events
         p=player_for_farm(farm)
         pos=kg._farmer_position(farm,idx)
         before_tile=tile_copy(farm,pos)
@@ -154,7 +155,6 @@ def observed_apply_unit_action(original):
                 and after_seed==before_seed-1
             ):
                 if p is None:
-                    global unmapped_relevant_events
                     unmapped_relevant_events+=1
                 else:
                     plant_events.append({
@@ -172,8 +172,7 @@ def observed_apply_unit_action(original):
                 after_y=int(after_tile.get("yield_units",0) or 0)
                 if after_y>before_y:
                     if p is None:
-                        global unmapped_relevant_events
-                        unmapped_relevant_events+=1
+                            unmapped_relevant_events+=1
                     else:
                         production_events.append({
                         "player":p,
@@ -231,7 +230,6 @@ def observed_daily_plants(original):
             ay=int(at.get("yield_units",0) or 0)
             if ay>by:
                 if p is None:
-                    global unmapped_relevant_events
                     unmapped_relevant_events+=1
                 else:
                     production_events.append({
@@ -266,7 +264,6 @@ def observed_daily_animals(original):
             if ay>by:
                 animal=bt.get("animal")
                 if p is None:
-                    global unmapped_relevant_events
                     unmapped_relevant_events+=1
                 else:
                     production_events.append({
