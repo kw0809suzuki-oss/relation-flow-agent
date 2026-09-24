@@ -1,5 +1,5 @@
 name: Projected Action State Transformation Audit v0 Fresh10
-# rerun after self-farm observer fix
+# rerun after same-turn hand tracking fix
 
 permissions:
   contents: read
