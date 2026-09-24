@@ -10,7 +10,10 @@ wrapper; g8_agent.py remains unchanged.
 
 import g7_agent as g7
 
-ANIMAL_COST = {"COW": 400, "SHEEP": 500}\nSHEEP_TARGET = 1\nSHEEP_ENTRY_END_DAY = 4\nPOST_ANIMAL_CASH_FLOOR = 700
+ANIMAL_COST = {"COW": 400, "SHEEP": 500}
+SHEEP_TARGET = 1
+SHEEP_ENTRY_END_DAY = 4
+POST_ANIMAL_CASH_FLOOR = 700
 FEED_CARRY = 3
 COW_TARGETS = ((6, 2), (10, 4), (16, 6))
 
