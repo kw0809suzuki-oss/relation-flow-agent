@@ -1,0 +1,179 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.day4-nonwheat-cohort-return-audit.result.v0",
+  "source_run_id": 35960489792,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day4_non_wheat_composition": {
+    "self": {
+      "crops": {
+        "MELON": 2,
+        "STRAWBERRY": 1.9
+      },
+      "animals": {
+        "COW": 2
+      },
+      "potential_mark": 8557.2
+    },
+    "opponent": {
+      "crops": {
+        "MELON": 8
+      },
+      "animals": {
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "potential_mark": 21087
+    }
+  },
+  "current_return_day4_to_8": {
+    "existing_cohort": {
+      "production_units": {
+        "self": 16.3,
+        "opponent": 46,
+        "gap": 29.7,
+        "opponent_ahead_cases": 10
+      },
+      "by_item": {
+        "self": {
+          "MELON": 4.3,
+          "MILK": 12,
+          "WOOL": 0
+        },
+        "opponent": {
+          "MELON": 22,
+          "MILK": 18,
+          "WOOL": 6
+        }
+      },
+      "harvest_units": {
+        "self": 0,
+        "opponent": 6,
+        "gap": 6,
+        "opponent_ahead_cases": 10
+      },
+      "harvest_by_item": {
+        "self": {
+          "WOOL": 0
+        },
+        "opponent": {
+          "WOOL": 6
+        }
+      }
+    },
+    "new_cohort": {
+      "production_units": {
+        "self": 0,
+        "opponent": 0
+      },
+      "harvest_units": {
+        "self": 0,
+        "opponent": 0
+      }
+    },
+    "period_non_wheat_sell_cash": {
+      "self": {
+        "FERTILIZER": 936.2,
+        "WOOL": 0,
+        "total": 936.2
+      },
+      "opponent": {
+        "FERTILIZER": 1674.6,
+        "WOOL": 1317,
+        "total": 2991.6
+      },
+      "gap_total": 2055.4,
+      "opponent_ahead_cases": 10
+    }
+  },
+  "future_return_at_day8": {
+    "existing_cohort": {
+      "potential_mark": {
+        "self": 10517.2,
+        "opponent": 24653.8,
+        "gap": 14136.6,
+        "opponent_ahead_cases": 10
+      },
+      "potential_units": {
+        "self": 50,
+        "opponent": 107,
+        "gap": 57,
+        "opponent_ahead_cases": 10
+      },
+      "asset_count": {
+        "self": 5,
+        "opponent": 12,
+        "gap": 7,
+        "opponent_ahead_cases": 10
+      },
+      "by_item_mark": {
+        "self": {
+          "MELON": 3228,
+          "MILK": 6657.2,
+          "STRAWBERRY": 632,
+          "WOOL": 0
+        },
+        "opponent": {
+          "MELON": 12912,
+          "MILK": 9985.8,
+          "STRAWBERRY": 0,
+          "WOOL": 1756
+        }
+      }
+    },
+    "new_cohort": {
+      "potential_mark": {
+        "self": 5178.8,
+        "opponent": 13300.2,
+        "gap": 8121.4,
+        "opponent_ahead_cases": 10
+      },
+      "potential_units": {
+        "self": 28.4,
+        "opponent": 65.1,
+        "gap": 36.7,
+        "opponent_ahead_cases": 10
+      },
+      "asset_count": {
+        "self": 4.6,
+        "opponent": 11.9,
+        "gap": 7.3,
+        "opponent_ahead_cases": 10
+      },
+      "by_item_mark": {
+        "self": {
+          "MELON": 0,
+          "MILK": 3524.4,
+          "STRAWBERRY": 1654.4,
+          "WOOL": 0
+        },
+        "opponent": {
+          "MELON": 4842,
+          "MILK": 3129.7,
+          "STRAWBERRY": 3792,
+          "WOOL": 1536.5
+        }
+      }
+    }
+  },
+  "derived_observations": [
+    "Observed Day4-8 non-WHEAT production comes entirely from assets whose public origin day is before Day4; new Day4-8 cohorts contribute zero observed production during the interval in all 10 cases.",
+    "Opponent existing cohort produces 46.0 non-WHEAT units versus self 16.3 during Day4-8, with opponent ahead in all 10 cases.",
+    "At Day8 the same existing cohort still retains far more future production potential: current-price mark 24653.8 versus 10517.2, with opponent ahead in all 10 cases.",
+    "The new Day4-8 cohort behaves as future-value build rather than current-return source over this window: zero production by Day8 but Day8 remaining potential mark 13300.2 opponent versus 5178.8 self.",
+    "Thus opponent simultaneously has a larger mature/returning cohort and builds a larger next cohort while the first cohort is still returning value.",
+    "Period non-WHEAT SELL remains unassigned to cohorts because inventory is fungible; only production/harvest and Day8 future potential are cohort-attributed by public asset origin time.",
+    "The result supports an overlapping-cohort State structure, not a claim that a specific asset is independently optimal."
+  ],
+  "boundary": [
+    "No Candidate, Direction, score, or policy mutation was introduced.",
+    "Existing cohort means asset_origin_day < 4; new cohort means 4 <= asset_origin_day < 8.",
+    "SELL is not attributed to cohort.",
+    "Future potential is current-price remaining production potential, not guaranteed realized profit.",
+    "No asset is ranked or assigned causal status."
+  ]
+}
