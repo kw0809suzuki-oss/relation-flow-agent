@@ -73,6 +73,14 @@ def state_summary(obs):
         "production_potential_mark":float(side["committed_production"]["same_basis_subtotal"]),
         "crop_count":dict(crops),
         "animal_count":dict(animals),
+        "shed_animals":{
+            a:int((obs.get("private",{}).get("shed",{}) or {}).get(a,0) or 0)
+            for a in ("COW","SHEEP","GOOSE")
+        },
+        "carried_animals":{
+            a:sum(int((inv or {}).get(a,0) or 0) for inv in (obs.get("private",{}).get("inventories",[]) or []))
+            for a in ("COW","SHEEP","GOOSE")
+        },
     }
 
 
@@ -113,7 +121,8 @@ def run(agent):
     net=sum(float(v) for v in exact.ledger[SEAT].values())
     err=initial[SEAT]+net-terminal[SEAT]
 
-    day4=state_summary(first_obs_for_day(env,SEAT,4))
+    early_days={str(d):state_summary(first_obs_for_day(env,SEAT,d)) for d in (0,1,2,3,4)}
+    day4=early_days["4"]
     day8=state_summary(first_obs_for_day(env,SEAT,8))
 
     ev=[e for e in exact.events if int(e.get("player",-1))==SEAT and 4<=int(e.get("day",-1))<8]
@@ -137,10 +146,31 @@ def run(agent):
     productive_spend=sum(productive.values())
     cash_growth=day8["cash"]-day4["cash"]
 
-    sheep_buys=sum(
-        1 for e in exact.events
+    sheep_buy_events=[
+        {"day":int(e.get("day",-1)),"hour":int(e.get("hour",-1)),"cash_delta":float(e.get("cash_delta",0) or 0)}
+        for e in exact.events
         if int(e.get("player",-1))==SEAT and e.get("op")=="BUY_ANIMAL" and e.get("item")=="SHEEP"
-    )
+    ]
+    sheep_buys=len(sheep_buy_events)
+
+    sheep_tile_history=[]
+    for step_index,step in enumerate(getattr(env,"steps",[]) or []):
+        if not isinstance(step,(list,tuple)) or len(step)<2: continue
+        obs=plain(getv(step[SEAT],"observation"))
+        if not isinstance(obs,dict): continue
+        farm=obs.get("farms",[{}])[SEAT]
+        n=0
+        for row in farm.get("tiles",[]) or []:
+            for t in row or []:
+                if isinstance(t,dict) and t.get("animal")=="SHEEP":
+                    n+=1
+        if n:
+            sheep_tile_history.append({
+                "step":step_index,
+                "day":int(obs.get("day",0) or 0),
+                "hour":int(obs.get("hour",0) or 0),
+                "count":n,
+            })
     cow_buys=sum(
         1 for e in exact.events
         if int(e.get("player",-1))==SEAT and e.get("op")=="BUY_ANIMAL" and e.get("item")=="COW"
@@ -156,10 +186,15 @@ def run(agent):
         "cash_reconstruction_error":err,
         "direct_reachability":{
             "executed_sheep_buys":sheep_buys,
+            "sheep_buy_events":sheep_buy_events,
+            "sheep_first_tile_state":sheep_tile_history[0] if sheep_tile_history else None,
+            "sheep_last_tile_state":sheep_tile_history[-1] if sheep_tile_history else None,
+            "sheep_tile_observed_steps":len(sheep_tile_history),
             "executed_cow_buys":cow_buys,
             "day4_cows":day4["animal_count"].get("COW",0),
             "day4_sheep":day4["animal_count"].get("SHEEP",0),
         },
+        "early_days":early_days,
         "day4":day4,
         "day4_to_day8":{
             "sell_by_item":dict(sorted(sell.items())),
