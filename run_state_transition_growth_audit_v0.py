@@ -159,7 +159,7 @@ def observed_apply_unit_action(original):
                         "source":"WATER",
                         "item":crop,
                         "units":after_y-before_y,
-                            "asset_origin_day":int(before_tile.get("planted_day",day) or day),
+                            "asset_origin_day":int(day if before_tile.get("planted_day") is None else before_tile.get("planted_day")),
                         })
 
         if op=="HARVEST" and isinstance(before_tile,dict):
@@ -167,11 +167,11 @@ def observed_apply_unit_action(original):
             origin_day=None
             if before_tile.get("kind")=="PLANT" and before_tile.get("crop"):
                 item=before_tile.get("crop")
-                origin_day=int(before_tile.get("planted_day",day) or day)
+                origin_day=int(day if before_tile.get("planted_day") is None else before_tile.get("planted_day"))
             elif before_tile.get("animal"):
                 animal=before_tile.get("animal")
                 item=kg.ANIMALS[animal]["product"]
-                origin_day=int(before_tile.get("placed_day",day) or day)
+                origin_day=int(day if before_tile.get("placed_day") is None else before_tile.get("placed_day"))
             if item:
                 gained=int(after_inv.get(item,0) or 0)-int(before_inv.get(item,0) or 0)
                 if gained>0:
@@ -218,7 +218,7 @@ def observed_daily_plants(original):
                     "source":"DAILY_CROP",
                     "item":bt.get("crop"),
                     "units":ay-by,
-                        "asset_origin_day":int(bt.get("planted_day",current_day) or current_day),
+                        "asset_origin_day":int(current_day if bt.get("planted_day") is None else bt.get("planted_day")),
                     })
     return wrapped
 
@@ -254,7 +254,7 @@ def observed_daily_animals(original):
                     "item":kg.ANIMALS[animal]["product"],
                     "units":ay-by,
                     "animal":animal,
-                        "asset_origin_day":int(bt.get("placed_day",day) or day),
+                        "asset_origin_day":int(day if bt.get("placed_day") is None else bt.get("placed_day")),
                     })
     return wrapped
 
