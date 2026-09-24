@@ -1,11 +1,11 @@
 """Formation Position Candidate v0.
 
 Single intervention:
-- Day0 h13 only
+- Day0 h12 only
 - move up to three units onto distinct adjacent empty unlocked tiles
 - do not change market orders
 - do not force crop/animal choice
-- from h14 onward, return completely to Body-only native behavior
+- from h13 onward, return completely to Body-only native behavior
 """
 import copy
 import strong_origin_v2_body_only_v0 as baseline
@@ -49,7 +49,7 @@ def agent(obs):
         reset_telemetry()
 
     action=baseline.agent(obs)
-    if int(obs.get("day",0) or 0)!=0 or int(obs.get("hour",0) or 0)!=13:
+    if int(obs.get("day",0) or 0)!=0 or int(obs.get("hour",0) or 0)!=12:
         return action
     if not isinstance(action,dict):
         return action
