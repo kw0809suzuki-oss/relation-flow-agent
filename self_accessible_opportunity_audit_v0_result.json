@@ -1,0 +1,102 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.self-accessible-opportunity-audit.result.v0",
+  "reference_world_probe": "day4_h10_reachable_entry_feasibility_v0_result.json",
+  "reference_timeline_audit": "g1_formation_timeline_audit_v0_result.json",
+  "fixed_point": {
+    "day": 4,
+    "hour": 10
+  },
+  "world_available_opportunity": {
+    "certified_cases": 10,
+    "description": "An existing MELON seed could be moved/planted into productive State before Day5, yielding a public-rule Day10 production opportunity.",
+    "no_market_purchase_required": true,
+    "movement_plus_plant_actions_max": 3,
+    "public_next_production_day": 10,
+    "public_harvest_eligible_day": 14
+  },
+  "self_input_access": {
+    "dynamic_prerequisites": {
+      "current_day": {
+        "available_in_obs": true,
+        "read_by_current_body": true,
+        "source": "obs['day']"
+      },
+      "current_hour": {
+        "available_in_obs": true,
+        "read_by_current_body": false,
+        "source": "obs['hour']",
+        "note": "Available in observation; current Strong Origin does not use hour."
+      },
+      "cash": {
+        "available_in_obs": true,
+        "read_by_current_body": true,
+        "source": "obs['farms'][player]['money']"
+      },
+      "melon_seed_stock": {
+        "available_in_obs": true,
+        "read_by_current_body": true,
+        "source": "obs['private']['seeds']['MELON']"
+      },
+      "tile_occupancy": {
+        "available_in_obs": true,
+        "read_by_current_body": true,
+        "source": "obs['farms'][player]['tiles']"
+      },
+      "empty_unlocked_tiles": {
+        "available_in_obs": true,
+        "derived_and_read_by_current_body": true
+      },
+      "farmer_position": {
+        "available_in_obs": true,
+        "read_by_current_body": true,
+        "source": "obs['farms'][player]['farmer']"
+      },
+      "hand_positions": {
+        "available_in_obs": true,
+        "read_by_current_body": true,
+        "source": "obs['farms'][player]['hands']"
+      }
+    },
+    "conclusion": "No dynamic observation/input gap was found for the certified Day4 h10 existing-seed entry."
+  },
+  "public_rule_access": {
+    "current_body_static_constants": {
+      "MELON_FIRST_YIELD": 10,
+      "MELON_MAX_YIELD_DAY": 12,
+      "MELON_SEED_COST": 80
+    },
+    "currently_used_semantics": [
+      "remaining_days is compared with FIRST_YIELD to suppress very-late crop scoring",
+      "MAX_YIELD_DAY is used in harvest timing checks"
+    ],
+    "missing_explicit_mapping": [
+      "No explicit current-body representation maps a contemplated Day4 MELON entry to its next production opportunity Day10.",
+      "The public non-ongoing crop WATER production window formula is not represented as a reachable-future horizon in Strong Origin's decision state."
+    ]
+  },
+  "current_body_internal_fields_observed_by_adapter": [
+    "strategy_name",
+    "targets",
+    "best_crop",
+    "scores",
+    "market",
+    "farmer_action",
+    "hand_actions",
+    "distortion",
+    "counter_opportunity",
+    "counter_weight"
+  ],
+  "derived_observations": [
+    "The certified opportunity was not hidden by missing dynamic input: day, money, seed stock, tiles, empty space, and unit positions were all available to the self input.",
+    "Most of those dynamic facts are already directly read by the current Body.",
+    "Therefore World-available -> Self-input-accessible is not the observed gap at Day4 h10.",
+    "The current Body has some crop maturity constants but no explicit reachable-future representation that projects a contemplated entry onto the next production window.",
+    "The next layer to test is Self-accessible facts -> Internal Representation, not resource feasibility or observation acquisition."
+  ],
+  "boundary": [
+    "This audit does not claim the opportunity was internally understood, valued, selected, or executable under the policy.",
+    "Current-hour availability is distinguished from current-hour use.",
+    "Public-rule availability at environment/codebase level is not treated as equivalent to internal representation.",
+    "No Candidate, Direction, or policy mutation is introduced."
+  ]
+}
