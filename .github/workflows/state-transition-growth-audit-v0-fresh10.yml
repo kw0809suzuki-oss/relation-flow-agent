@@ -1,5 +1,5 @@
 name: State Transition Growth Audit v0 Fresh10
-# rerun: player-mapping-fix-1
+# rerun: day0-origin-fix-2
 
 permissions:
   contents: read
