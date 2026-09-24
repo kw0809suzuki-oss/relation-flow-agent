@@ -1,0 +1,174 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.temporal-stack-audit.result.v0",
+  "source_run_id": 35958508325,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "summary": {
+    "days_near_and_far_coexist": {
+      "self": 11,
+      "opponent": 11
+    },
+    "productive_spend_days": {
+      "self": 12,
+      "opponent": 12
+    },
+    "sell_days": {
+      "self": 12,
+      "opponent": 12
+    },
+    "productive_spend_total": {
+      "self": 7182.9,
+      "opponent": 15182.6,
+      "gap": 7999.7
+    },
+    "productive_spend_while_future_maturity_in_flight": {
+      "self": 5648.9,
+      "opponent": 12888.6,
+      "gap": 7239.7
+    },
+    "productive_spend_while_near_and_far_coexist": {
+      "self": 5648.9,
+      "opponent": 12805.6,
+      "gap": 7156.7
+    },
+    "share_productive_spend_with_near_and_far": {
+      "self": 0.7862845403633048,
+      "opponent": 0.8434352355155216,
+      "gap": 0.0571506951522169
+    },
+    "sell_cash_total": {
+      "self": 19797.5,
+      "opponent": 27262.6,
+      "gap": 7465.1
+    },
+    "share_sell_cash_while_far_maturity_in_flight": {
+      "self": 0.9943217529822206,
+      "opponent": 1
+    },
+    "cumulative_surplus_day0_to_11": {
+      "self": 5737.7,
+      "opponent": 18861,
+      "gap": 13123.3
+    }
+  },
+  "selected_day_means": {
+    "day1": {
+      "near_maturity_assets": {
+        "self": 9,
+        "opponent": 10
+      },
+      "far_maturity_assets": {
+        "self": 4,
+        "opponent": 11
+      }
+    },
+    "day5": {
+      "near_maturity_assets": {
+        "self": 6.9,
+        "opponent": 7
+      },
+      "far_maturity_assets": {
+        "self": 7,
+        "opponent": 16
+      },
+      "surplus": {
+        "self": 909.4,
+        "opponent": 902.3
+      },
+      "productive_spend": {
+        "self": 14,
+        "opponent": 920
+      }
+    },
+    "day8": {
+      "near_maturity_assets": {
+        "self": 10.4,
+        "opponent": 13
+      },
+      "far_maturity_assets": {
+        "self": 7.6,
+        "opponent": 20.9
+      },
+      "surplus": {
+        "self": 2355.5,
+        "opponent": 2996.3
+      },
+      "productive_spend": {
+        "self": 2240.9,
+        "opponent": 3253
+      }
+    },
+    "day10": {
+      "near_maturity_assets": {
+        "self": 8.6,
+        "opponent": 12
+      },
+      "far_maturity_assets": {
+        "self": 10.5,
+        "opponent": 34.8
+      },
+      "sell_cash": {
+        "self": 3798.9,
+        "opponent": 7263
+      },
+      "surplus": {
+        "self": 708.1,
+        "opponent": 5904.4
+      },
+      "productive_spend": {
+        "self": 947,
+        "opponent": 3861.6
+      },
+      "actual_production_units": {
+        "self": 10.6,
+        "opponent": 30.4
+      }
+    },
+    "day11": {
+      "near_maturity_assets": {
+        "self": 6.8,
+        "opponent": 10.9
+      },
+      "far_maturity_assets": {
+        "self": 14.5,
+        "opponent": 33.4
+      },
+      "sell_cash": {
+        "self": 2309.2,
+        "opponent": 6483.1
+      },
+      "surplus": {
+        "self": 179.6,
+        "opponent": 5262.5
+      },
+      "productive_spend": {
+        "self": 41,
+        "opponent": 1176
+      },
+      "actual_production_units": {
+        "self": 6.2,
+        "opponent": 14.9
+      }
+    }
+  },
+  "derived_observations": [
+    "Temporal stacking as a binary pattern is not a separator: both sides have near and far maturity opportunities coexisting on 11 of 12 observed days, productive spend on all 12 days, and SELL on all 12 days.",
+    "Nearly all SELL cash on both sides occurs while far maturity is already in flight (self 99.4%, opponent 100%).",
+    "The large separator is stack depth and economic wave size: opponent carries substantially more far-maturity assets and performs much more productive spending while future maturity is in flight.",
+    "Across Day0-11, opponent realized 27262.6 SELL cash vs self 19797.5, retained 18861.0 surplus after operating vs self 5737.7, and made 15182.6 productive spend vs self 7182.9.",
+    "The gap becomes especially large by Day10: far-maturity assets are 34.8 vs 10.5, actual production 30.4 vs 10.6, surplus 5904.4 vs 708.1, and productive spend 3861.6 vs 947.0.",
+    "Therefore the world does not support a simple rule 'have overlapping maturities'; both already do. The unresolved question is what transitions build and sustain a deeper future-maturity stack while producing enough surplus to fund the next wave."
+  ],
+  "boundary": [
+    "No Candidate, Direction, pressure variable, or policy mutation was introduced.",
+    "Near maturity means a public-rule next-output opportunity within 0-2 days; far maturity means 3+ days.",
+    "Maturity is an opportunity, not guaranteed realization or profit.",
+    "SELL and productive spend are not causally linked by cash lineage.",
+    "No composite temporal-stack score is adopted."
+  ]
+}
