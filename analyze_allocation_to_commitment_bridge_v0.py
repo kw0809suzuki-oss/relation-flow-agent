@@ -46,12 +46,53 @@ def buys(raw,p):
         cash[crop]+=max(0.0,-float(e.get("cash_delta",0) or 0))
     return dict(units),dict(cash)
 
-def plants(raw,p):
+def buy_events_by_turn(raw,p):
+    out=defaultdict(lambda: defaultdict(int))
+    for e in raw.get("market_events",[]):
+        if int(e.get("player",-1))!=p or not (0<=int(e.get("day",-1))<4):
+            continue
+        if e.get("op")!="BUY_SEED":
+            continue
+        crop=str(e.get("item"))
+        if crop not in SEED_COST:
+            continue
+        qty=int(e.get("qty",e.get("units",0)) or 0)
+        if qty<=0:
+            qty=int(round(max(0.0,-float(e.get("cash_delta",0) or 0))/SEED_COST[crop]))
+        out[(int(e.get("day",0)),int(e.get("hour",0)))][crop]+=qty
+    return out
+
+
+def inferred_plants(raw,p):
+    trace=raw["commitment_trace"][str(p)]
+    buys_by_turn=buy_events_by_turn(raw,p)
+    closing=closing_seed_stock(raw,p)
     out=defaultdict(int)
-    for e in raw.get("plant_events",[]):
-        if int(e.get("player",-1))==p and 0<=int(e.get("day",-1))<4:
-            out[str(e.get("crop"))]+=int(e.get("units",0) or 0)
-    return dict(out)
+    by_turn=[]
+    for i,row in enumerate(trace):
+        before=row.get("seed_stock",{}) or {}
+        if i+1<len(trace):
+            after=trace[i+1].get("seed_stock",{}) or {}
+        else:
+            after=closing
+        key=(int(row.get("day",0)),int(row.get("hour",0)))
+        turn_buys=buys_by_turn.get(key,{})
+        turn_plants={}
+        for crop in CROPS:
+            q0=int(before.get(crop,0) or 0)
+            qb=int(turn_buys.get(crop,0) or 0)
+            q1=int(after.get(crop,0) or 0)
+            n=q0+qb-q1
+            if n<0:
+                raise ValueError(f"negative inferred PLANT p={p} turn={key} crop={crop}: {n}")
+            if n:
+                out[crop]+=n
+                turn_plants[crop]=n
+        if turn_plants:
+            by_turn.append({
+                "day":key[0],"hour":key[1],"plants":turn_plants
+            })
+    return dict(out),by_turn
 
 def queue_area(raw,p):
     area=defaultdict(float)
@@ -86,7 +127,7 @@ def side(raw,p):
     opening=initial_seed_stock(raw,p)
     closing=closing_seed_stock(raw,p)
     bu,bc=buys(raw,p)
-    pl=plants(raw,p)
+    pl,plant_turns=inferred_plants(raw,p)
     qa=queue_area(raw,p)
     per={}
     for c in CROPS:
@@ -108,6 +149,7 @@ def side(raw,p):
     total_plants=sum(int(pl.get(c,0) or 0) for c in CROPS)
     total_close=sum(closing.values())
     return {
+      "plant_turns":plant_turns,
       "per_crop":per,
       "total":{
         "available_seed_units":total_available,
@@ -179,7 +221,8 @@ def main():
         "No Candidate or policy mutation is introduced.",
         "Seeds are treated as fungible stock; no purchased seed is individually matched to a PLANT.",
         "Queue unit-turns is the observed area under seed-stock-over-time, not literal per-seed waiting time.",
-        "Commitment Rate uses opening seed stock plus executed BUY_SEED as available units and successful PLANT as commitment.",
+        "Successful PLANT is derived by public stock conservation each turn: seed_before + executed BUY_SEED - seed_after.",
+        "Commitment Rate uses opening seed stock plus executed BUY_SEED as available units and derived successful PLANT as commitment."
         "Idle Capital is Day4 seed stock marked at public seed purchase cost.",
         "Worker and empty-tile values are context while queue is positive, not causal attribution.",
         "Action-level diagnosis is deferred unless a stable queue separator appears."
