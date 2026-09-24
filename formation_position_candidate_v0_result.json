@@ -1,0 +1,1033 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.formation-position-candidate.result.v0",
+  "battle_count": 5,
+  "baseline_absolute_mean_self": 24042.8,
+  "candidate_absolute_mean_self": 18346.0,
+  "delta_mean_self": -5696.8,
+  "baseline_absolute_mean_opponent": 128454.4,
+  "candidate_absolute_mean_opponent": 104183.8,
+  "baseline_absolute_mean_margin": -104411.6,
+  "candidate_absolute_mean_margin": -85837.8,
+  "delta_mean_margin": 18573.8,
+  "improved_cases": 2,
+  "worsened_cases": 3,
+  "equal_cases": 0,
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "baseline_terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "candidate_terminal": {
+        "self": 12239.0,
+        "opponent": 95447.0,
+        "margin": -83208.0
+      },
+      "terminal_delta": {
+        "self": -1927.0,
+        "opponent": -26079.0,
+        "margin": 24152.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "modified_unit_actions": 3,
+        "targets": [
+          {
+            "unit_kind": "farmer",
+            "unit_index": 0,
+            "from": [
+              4,
+              2
+            ],
+            "to": [
+              3,
+              2
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 0,
+            "from": [
+              4,
+              0
+            ],
+            "to": [
+              3,
+              0
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 1,
+            "from": [
+              3,
+              3
+            ],
+            "to": [
+              2,
+              3
+            ],
+            "action": [
+              "WEST"
+            ]
+          }
+        ]
+      },
+      "baseline_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 4,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 3,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "baseline_terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "candidate_terminal": {
+        "self": 22951.0,
+        "opponent": 117646.0,
+        "margin": -94695.0
+      },
+      "terminal_delta": {
+        "self": 11187.0,
+        "opponent": 9418.0,
+        "margin": 1769.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "modified_unit_actions": 3,
+        "targets": [
+          {
+            "unit_kind": "farmer",
+            "unit_index": 0,
+            "from": [
+              4,
+              2
+            ],
+            "to": [
+              3,
+              2
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 0,
+            "from": [
+              4,
+              0
+            ],
+            "to": [
+              3,
+              0
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 1,
+            "from": [
+              3,
+              3
+            ],
+            "to": [
+              2,
+              3
+            ],
+            "action": [
+              "WEST"
+            ]
+          }
+        ]
+      },
+      "baseline_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 4,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 3,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "baseline_terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "candidate_terminal": {
+        "self": 16352.0,
+        "opponent": 69304.0,
+        "margin": -52952.0
+      },
+      "terminal_delta": {
+        "self": -29504.0,
+        "opponent": -73394.0,
+        "margin": 43890.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "modified_unit_actions": 3,
+        "targets": [
+          {
+            "unit_kind": "farmer",
+            "unit_index": 0,
+            "from": [
+              4,
+              2
+            ],
+            "to": [
+              3,
+              2
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 0,
+            "from": [
+              4,
+              0
+            ],
+            "to": [
+              3,
+              0
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 1,
+            "from": [
+              3,
+              3
+            ],
+            "to": [
+              2,
+              3
+            ],
+            "action": [
+              "WEST"
+            ]
+          }
+        ]
+      },
+      "baseline_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 4,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 3,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "baseline_terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "candidate_terminal": {
+        "self": 13635.0,
+        "opponent": 101225.0,
+        "margin": -87590.0
+      },
+      "terminal_delta": {
+        "self": -21250.0,
+        "opponent": -63824.0,
+        "margin": 42574.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "modified_unit_actions": 3,
+        "targets": [
+          {
+            "unit_kind": "farmer",
+            "unit_index": 0,
+            "from": [
+              4,
+              2
+            ],
+            "to": [
+              3,
+              2
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 0,
+            "from": [
+              4,
+              0
+            ],
+            "to": [
+              3,
+              0
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 1,
+            "from": [
+              3,
+              3
+            ],
+            "to": [
+              2,
+              3
+            ],
+            "action": [
+              "WEST"
+            ]
+          }
+        ]
+      },
+      "baseline_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 4,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 3,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "baseline_terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "candidate_terminal": {
+        "self": 26553.0,
+        "opponent": 137297.0,
+        "margin": -110744.0
+      },
+      "terminal_delta": {
+        "self": 13010.0,
+        "opponent": 32526.0,
+        "margin": -19516.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "modified_unit_actions": 3,
+        "targets": [
+          {
+            "unit_kind": "farmer",
+            "unit_index": 0,
+            "from": [
+              4,
+              2
+            ],
+            "to": [
+              3,
+              2
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 0,
+            "from": [
+              4,
+              0
+            ],
+            "to": [
+              3,
+              0
+            ],
+            "action": [
+              "WEST"
+            ]
+          },
+          {
+            "unit_kind": "hand",
+            "unit_index": 1,
+            "from": [
+              3,
+              3
+            ],
+            "to": [
+              2,
+              3
+            ],
+            "action": [
+              "WEST"
+            ]
+          }
+        ]
+      },
+      "baseline_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 4,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "h12": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h13": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 3,
+          "productive_occupied_tile_count": 7,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h14": {
+          "money": 1322.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        },
+        "h15": {
+          "money": 1262.0,
+          "hands_count": 3,
+          "units_on_empty_tile_count": 0,
+          "productive_occupied_tile_count": 9,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          }
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "This is a terminal Battle A/B result, not a local proxy score.",
+    "Candidate only changes Day0 h12 positioning toward distinct adjacent empty tiles; composition remains native.",
+    "Local h13/h14 State is retained only to confirm reachability/local behavior change.",
+    "Adoption decision must be made from terminal self in relation to the large objective residual."
+  ]
+}
