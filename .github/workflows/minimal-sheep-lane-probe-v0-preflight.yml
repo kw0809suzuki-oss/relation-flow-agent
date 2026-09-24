@@ -1,5 +1,5 @@
 name: Minimal SHEEP Lane Probe v0 Preflight
-# rerun: syntax-fix-1
+# rerun: literal-newline-fix-2
 
 permissions:
   contents: read
