@@ -26,7 +26,7 @@ import strong_origin_v2_body_only_v0 as body_only
 SEED=int(os.environ["BATTLE_SEED"])
 SEAT=int(os.environ["BATTLE_SEAT"])
 OUT=Path(f"battle_market_position_map_v0_{SEED}_seat{SEAT}.json")
-PRODUCTS=("WHEAT","MELON","STRAWBERRY","MILK","WOOL")
+PRODUCTS=tuple(kg.PRODUCTS)
 _current_day=0
 _current_hour=0
 
@@ -147,6 +147,7 @@ def main():
       "cash_validation":validation,
       "boundary":[
         "SELL-able inventory means shed inventory only. Carried inventory is kept separate.",
+        "All public SELL-able PRODUCTS are retained in the map; no product subset is used for total SELL accounting.",
         "Displayed market price is shared public State. Realized SELL price is taken from exact successful unit execution.",
         "Timeline State is post-interpreter recorded State; market/town transitions within the preceding turn have already occurred.",
         "No claim links a specific produced unit to a specific sold unit or later Cash use.",
