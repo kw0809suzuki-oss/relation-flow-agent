@@ -1,0 +1,222 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.g1-formation-timeline-audit.result.v0",
+  "source_raw_run_id": 35963016456,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day8_g1": {
+    "self": {
+      "asset_count": 4.6,
+      "future_units": 28.4,
+      "next_cycle_production_asset_count": 0,
+      "next_cycle_production_future_units": 0,
+      "next_cycle_harvest_asset_count": 0,
+      "next_cycle_harvest_future_units": 0,
+      "actual_production_before_day12_snapshot": 0,
+      "actual_harvest_day8_to_11": 0
+    },
+    "opponent": {
+      "asset_count": 11.9,
+      "future_units": 65.1,
+      "next_cycle_production_asset_count": 3,
+      "next_cycle_production_future_units": 19,
+      "next_cycle_harvest_asset_count": 1,
+      "next_cycle_harvest_future_units": 7,
+      "actual_production_before_day12_snapshot": 10,
+      "actual_harvest_day8_to_11": 6
+    }
+  },
+  "first_observed_state_entry": {
+    "self": {
+      "day": 4,
+      "hour": 4,
+      "asset": "STRAWBERRY",
+      "origin_day": 4,
+      "next_production_day": 14,
+      "harvest_eligible_day": 14,
+      "cases": 10
+    },
+    "opponent": {
+      "day": 4,
+      "hour": 11,
+      "asset": "MELON",
+      "origin_day": 4,
+      "next_production_day": 10,
+      "harvest_eligible_day": 14,
+      "cases": 10
+    }
+  },
+  "first_next_cycle_production_position": {
+    "self": null,
+    "opponent": {
+      "day": 4,
+      "hour": 11,
+      "asset": "MELON",
+      "origin_day": 4,
+      "cases": 10,
+      "next_production_day": 10,
+      "harvest_eligible_day": 14
+    }
+  },
+  "first_next_cycle_harvest_position": {
+    "self": null,
+    "opponent": {
+      "day": 5,
+      "hour": 16,
+      "asset": "SHEEP",
+      "origin_day": 5,
+      "cases": 10,
+      "next_production_day": 11,
+      "harvest_eligible_day": 11
+    }
+  },
+  "formation_groups": {
+    "self": [
+      {
+        "asset": "STRAWBERRY",
+        "origin_day": 4,
+        "state_entry_pattern": "Day4 h4 in 10/10; one extra Day4 h6 in 1/10",
+        "asset_count_mean": 1.1,
+        "future_units_day8_mean": 4.4,
+        "next_production_day": 14,
+        "harvest_eligible_day": 14,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "COW",
+        "origin_day": 6,
+        "state_entry_pattern": "Day6 h7 and h10 in 10/10",
+        "asset_count_mean": 2,
+        "future_units_day8_mean": 18,
+        "next_production_day": 14,
+        "harvest_eligible_day": 14,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "STRAWBERRY",
+        "origin_day": 6,
+        "state_entry_pattern": "Day6 h19-20 in 6/10",
+        "asset_count_mean": 0.6,
+        "future_units_day8_mean": 2.4,
+        "next_production_day": 16,
+        "harvest_eligible_day": 16,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "STRAWBERRY",
+        "origin_day": 7,
+        "state_entry_pattern": "Day7 h22 in 9/10",
+        "asset_count_mean": 0.9,
+        "future_units_day8_mean": 3.6,
+        "next_production_day": 17,
+        "harvest_eligible_day": 17,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      }
+    ],
+    "opponent": [
+      {
+        "asset": "MELON",
+        "origin_day": 4,
+        "state_entry_pattern": "Day4 h11 and h17 in 10/10",
+        "asset_count_mean": 2,
+        "future_units_day8_mean": 12,
+        "next_production_day": 10,
+        "harvest_eligible_day": 14,
+        "actual_production_before_day12_snapshot": 4,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "STRAWBERRY",
+        "origin_day": 4,
+        "state_entry_pattern": "2 assets at Day4 h12 in 10/10",
+        "asset_count_mean": 2,
+        "future_units_day8_mean": 8,
+        "next_production_day": 14,
+        "harvest_eligible_day": 14,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "COW",
+        "origin_day": 5,
+        "state_entry_pattern": "Day5 h12 in 9/10",
+        "asset_count_mean": 0.9,
+        "future_units_day8_mean": 8.1,
+        "next_production_day": 13,
+        "harvest_eligible_day": 13,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "SHEEP",
+        "origin_day": 5,
+        "state_entry_pattern": "Day5 h16 in 10/10",
+        "asset_count_mean": 1,
+        "future_units_day8_mean": 7,
+        "next_production_day": 11,
+        "harvest_eligible_day": 11,
+        "actual_production_before_day12_snapshot": 6,
+        "actual_harvest_day8_to_11": 6
+      },
+      {
+        "asset": "MELON",
+        "origin_day": 7,
+        "state_entry_pattern": "Day7 h8 in 10/10",
+        "asset_count_mean": 1,
+        "future_units_day8_mean": 6,
+        "next_production_day": 13,
+        "harvest_eligible_day": 17,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "COW",
+        "origin_day": 7,
+        "state_entry_pattern": "Day7 h14 in 10/10",
+        "asset_count_mean": 1,
+        "future_units_day8_mean": 8,
+        "next_production_day": 15,
+        "harvest_eligible_day": 15,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      },
+      {
+        "asset": "STRAWBERRY",
+        "origin_day": 7,
+        "state_entry_pattern": "Day7 h11, h13, h15, h17 in 10/10",
+        "asset_count_mean": 4,
+        "future_units_day8_mean": 16,
+        "next_production_day": 17,
+        "harvest_eligible_day": 17,
+        "actual_production_before_day12_snapshot": 0,
+        "actual_harvest_day8_to_11": 0
+      }
+    ]
+  },
+  "derived_observations": [
+    "A simple 'self commits G1 too late' explanation is rejected: self's first observed G1 productive-State entry is Day4 hour4, seven hours before opponent's first G1 entry at Day4 hour11.",
+    "The first next-cycle production-positioned G1 appears for opponent at Day4 hour11 as a Day4 MELON. Self never forms any G1 whose next public production opportunity falls before Day12.",
+    "The first next-cycle harvest-positioned G1 appears for opponent at Day5 hour16 as a Day5 SHEEP. Self forms no G1 harvest-eligible before Day12.",
+    "Thus the relevant time placement is created jointly by origin time and the asset's public maturity schedule, not by commitment timing alone.",
+    "Opponent Day4 MELON produces before Day12 but is not harvest-eligible until Day14, while Day5 SHEEP reaches both production and harvest eligibility on Day11. Production-positioned and realization-positioned capacity are distinct.",
+    "By Day8, opponent carries 3.0 G1 assets / 19.0 future units in the next-cycle production window and 1.0 asset / 7.0 units in the next-cycle harvest window; self carries zero in both windows.",
+    "The observed Day8->12 G1 production/harvest follows those public-rule positions: strict pre-Day12-snapshot production is 10.0 vs 0, and harvest is 6.0 vs 0.",
+    "The time-configuration separator is already visible by Day4 hour11 for next-cycle production capacity and by Day5 hour16 for next-cycle harvest capacity, before later Day6-7 G1 additions."
+  ],
+  "boundary": [
+    "No Candidate, Direction, readiness score, or policy mutation is introduced.",
+    "State-entry time is the first hourly trace in which the asset appears in productive State; it is not asserted to equal purchase time.",
+    "G1 means non-WHEAT productive assets with origin day in [4,8).",
+    "Asset identity is not treated as an optimization target; it matters here only through the public maturity schedule attached to that asset.",
+    "Production opportunity and HARVEST eligibility are kept separate.",
+    "No single state-entry event is claimed to explain the terminal ~100k residual."
+  ]
+}
