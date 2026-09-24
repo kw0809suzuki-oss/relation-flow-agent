@@ -1,0 +1,109 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-map.anchor-result.v0",
+  "source_run_id": 35982257466,
+  "seed": 7351,
+  "seat": 0,
+  "terminal": {
+    "self": 14166,
+    "opponent": 121526,
+    "margin": -107360
+  },
+  "map_definition": {
+    "observable_economic_mark": "cash + liquidatable inventory current-price mark + committed production current-price potential mark",
+    "note": "Visualization mark only; not profit, wealth, objective, or adoption score."
+  },
+  "landmarks": [
+    {
+      "day": 0,
+      "hour": 0,
+      "residual": 0,
+      "cash_residual": 0,
+      "committed_production_residual": 0,
+      "inventory_residual": 0
+    },
+    {
+      "day": 0,
+      "hour": 10,
+      "residual": 2241,
+      "cash_residual": -1299,
+      "committed_production_residual": 3030,
+      "inventory_residual": 510
+    },
+    {
+      "day": 0,
+      "hour": 14,
+      "residual": 6699,
+      "cash_residual": -1269,
+      "committed_production_residual": 7518,
+      "inventory_residual": 450
+    },
+    {
+      "day": 0,
+      "hour": 17,
+      "residual": 11799,
+      "cash_residual": -1179,
+      "committed_production_residual": 12618,
+      "inventory_residual": 360
+    },
+    {
+      "day": 1,
+      "hour": 0,
+      "residual": 10833,
+      "cash_residual": -1269,
+      "committed_production_residual": 11682,
+      "inventory_residual": 420
+    },
+    {
+      "day": 4,
+      "hour": 0,
+      "residual": 12562,
+      "cash_residual": -329,
+      "committed_production_residual": 12538,
+      "inventory_residual": 353
+    },
+    {
+      "day": 8,
+      "hour": 0,
+      "residual": 22840,
+      "cash_residual": -35,
+      "committed_production_residual": 22538,
+      "inventory_residual": 337
+    },
+    {
+      "day": 12,
+      "hour": 0,
+      "residual": 41180,
+      "cash_residual": 5160,
+      "committed_production_residual": 31794,
+      "inventory_residual": 4226
+    },
+    {
+      "day": 20,
+      "hour": 0,
+      "residual": 80930,
+      "cash_residual": 27663,
+      "committed_production_residual": 48601,
+      "inventory_residual": 4666
+    },
+    {
+      "day": 29,
+      "hour": 23,
+      "residual": 107375,
+      "cash_residual": 107360,
+      "committed_production_residual": 565,
+      "inventory_residual": -550
+    }
+  ],
+  "observation": [
+    "In this fixed anchor Battle, the observable economic mark separates materially during Day0, before the previously emphasized Day4/Day8 windows.",
+    "At Day0 h17, self still has more Cash, while opponent already has +12618 current-price committed-production mark; the visible residual is therefore primarily outside Cash at that point.",
+    "By terminal, almost all remaining observable-mark residual is Cash because committed production has largely run off.",
+    "This is a one-Battle map and does not establish cross-seed timing or cause."
+  ],
+  "boundary": [
+    "No Action, Representation, Evaluation, Direction, Candidate, or policy mutation.",
+    "Do not infer that Day0 h17 is the causal separator from this map alone.",
+    "Do not average across seeds until individual trajectory shape is understood.",
+    "Use component layers only after the whole-map shape identifies a region worth opening."
+  ]
+}
