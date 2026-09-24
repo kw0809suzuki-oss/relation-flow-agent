@@ -34,7 +34,7 @@ import strong_origin_v2_body_only_v0 as body_only
 
 SEED=int(os.environ["BATTLE_SEED"])
 SEAT=int(os.environ["BATTLE_SEAT"])
-TARGET_DAYS=(4,8,12)
+TARGET_DAYS=(0,4,8,12)
 OUT=Path(f"state_transition_growth_audit_v0_{SEED}.json")
 
 production_events=[]
