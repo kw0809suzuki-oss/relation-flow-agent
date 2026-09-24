@@ -1,0 +1,222 @@
+{
+  "schema": "kaggriculture.battle-economic-path-map.later-amplification-observation.v0",
+  "battle_count": 5,
+  "cases": {
+    "7351": {
+      "residual_map": {
+        "D18": 73434,
+        "D20": 80930,
+        "D24": 94029,
+        "D28": 103497,
+        "terminal": 107375
+      },
+      "growth": {
+        "D18_to_D20": {
+          "observable": 7496,
+          "cash": 6759,
+          "inventory": 69,
+          "committed_production": 668,
+          "realized_sell": 4652
+        },
+        "D20_to_D24": {
+          "observable": 13099,
+          "cash": 26620,
+          "inventory": 5750,
+          "committed_production": -19271,
+          "realized_sell": 24382
+        },
+        "D24_to_D28": {
+          "observable": 9468,
+          "cash": 27841,
+          "inventory": 660,
+          "committed_production": -19033,
+          "realized_sell": 21052
+        },
+        "D28_to_terminal": {
+          "observable": 3878,
+          "cash": 25236,
+          "inventory": -11626,
+          "committed_production": -9732,
+          "realized_sell": 19933
+        }
+      }
+    },
+    "7352": {
+      "residual_map": {
+        "D18": 74380,
+        "D20": 80013,
+        "D24": 89339,
+        "D28": 92915,
+        "terminal": 96088
+      },
+      "growth": {
+        "D18_to_D20": {
+          "observable": 5633,
+          "cash": 6558,
+          "inventory": 3,
+          "committed_production": -928,
+          "realized_sell": 4517
+        },
+        "D20_to_D24": {
+          "observable": 9326,
+          "cash": 24847,
+          "inventory": 4821,
+          "committed_production": -20342,
+          "realized_sell": 24853
+        },
+        "D24_to_D28": {
+          "observable": 3576,
+          "cash": 21811,
+          "inventory": 690,
+          "committed_production": -18925,
+          "realized_sell": 14588
+        },
+        "D28_to_terminal": {
+          "observable": 3173,
+          "cash": 20868,
+          "inventory": -10531,
+          "committed_production": -7164,
+          "realized_sell": 15051
+        }
+      }
+    },
+    "7353": {
+      "residual_map": {
+        "D18": 66886,
+        "D20": 72811,
+        "D24": 82704,
+        "D28": 92150,
+        "terminal": 95164
+      },
+      "growth": {
+        "D18_to_D20": {
+          "observable": 5925,
+          "cash": 4364,
+          "inventory": 2823,
+          "committed_production": -1262,
+          "realized_sell": 2109
+        },
+        "D20_to_D24": {
+          "observable": 9893,
+          "cash": 23415,
+          "inventory": 2937,
+          "committed_production": -16459,
+          "realized_sell": 21876
+        },
+        "D24_to_D28": {
+          "observable": 9446,
+          "cash": 28625,
+          "inventory": -126,
+          "committed_production": -19053,
+          "realized_sell": 22663
+        },
+        "D28_to_terminal": {
+          "observable": 3014,
+          "cash": 22042,
+          "inventory": -11710,
+          "committed_production": -7318,
+          "realized_sell": 15772
+        }
+      }
+    },
+    "7354": {
+      "residual_map": {
+        "D18": 82138,
+        "D20": 93131,
+        "D24": 109793,
+        "D28": 123199,
+        "terminal": 128986
+      },
+      "growth": {
+        "D18_to_D20": {
+          "observable": 10993,
+          "cash": 6742,
+          "inventory": 1869,
+          "committed_production": 2382,
+          "realized_sell": 6528
+        },
+        "D20_to_D24": {
+          "observable": 16662,
+          "cash": 32607,
+          "inventory": 4716,
+          "committed_production": -20661,
+          "realized_sell": 34040
+        },
+        "D24_to_D28": {
+          "observable": 13406,
+          "cash": 33305,
+          "inventory": 1796,
+          "committed_production": -21695,
+          "realized_sell": 25952
+        },
+        "D28_to_terminal": {
+          "observable": 5787,
+          "cash": 29584,
+          "inventory": -15397,
+          "committed_production": -8400,
+          "realized_sell": 23660
+        }
+      }
+    },
+    "7355": {
+      "residual_map": {
+        "D18": 68667,
+        "D20": 71207,
+        "D24": 81928,
+        "D28": 90038,
+        "terminal": 90653
+      },
+      "growth": {
+        "D18_to_D20": {
+          "observable": 2540,
+          "cash": 6703,
+          "inventory": 51,
+          "committed_production": -4214,
+          "realized_sell": 4579
+        },
+        "D20_to_D24": {
+          "observable": 10721,
+          "cash": 20905,
+          "inventory": 4650,
+          "committed_production": -14834,
+          "realized_sell": 18609
+        },
+        "D24_to_D28": {
+          "observable": 8110,
+          "cash": 30330,
+          "inventory": -2234,
+          "committed_production": -19986,
+          "realized_sell": 24813
+        },
+        "D28_to_terminal": {
+          "observable": 615,
+          "cash": 16973,
+          "inventory": -8015,
+          "committed_production": -8343,
+          "realized_sell": 11121
+        }
+      }
+    }
+  },
+  "mean_observable_growth": {
+    "D18_to_D20": 6517.4,
+    "D20_to_D24": 11940.2,
+    "D24_to_D28": 8801.2,
+    "D28_to_terminal": 3293.4
+  },
+  "observed_shape": [
+    "After Day18, D20->D24 is the largest observable-economic residual growth interval in all five sampled Battles when compared with D18->20, D24->28, and D28->terminal.",
+    "D20->D24 observable residual grows by +9,326 to +16,662 across the five Battles.",
+    "In D20->D24, Cash residual grows strongly in all five (+20,905 to +32,607) while Committed Production residual contracts strongly in all five (-14,834 to -20,661).",
+    "The cumulative realized-SELL residual also grows strongly in D20->D24 (+18,609 to +34,040), close in scale to the Cash-residual growth.",
+    "The late path therefore differs from the earlier production-led pulses: this interval is descriptively Cash-realization-led while productive marks unwind."
+  ],
+  "boundary": [
+    "This does not prove that the declining committed-production mark is the same value later realized as Cash.",
+    "No specific product, asset, SELL policy, liquidation rule, or Candidate is selected.",
+    "Observable-economic mark is the existing visualization sum and not the Battle objective.",
+    "The Battle objective remains terminal self.",
+    "This observation only locates the next remaining high-magnitude surface on the fixed map."
+  ],
+  "next_coordinate": "Open D20->D24 as a fixed Market/Cash realization surface: product composition of realized SELL, available inventory before SELL, and realized price, without Action or policy diagnosis."
+}
