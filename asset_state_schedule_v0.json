@@ -1,0 +1,320 @@
+{
+  "schema": "kaggriculture.asset-state-schedule.v0",
+  "schedule_id": "ASS-0001",
+  "world": {
+    "environment": "kaggriculture",
+    "environment_version": "0.1.0",
+    "public_rule_repository": "Kaggle/kaggle-environments",
+    "public_rule_commit": "b2405492c8403f6649f9317290f215e0290a2425",
+    "public_rule_file": "kaggle_environments/envs/kaggriculture/kaggriculture.py",
+    "configuration_file": "kaggle_environments/envs/kaggriculture/kaggriculture.json",
+    "default_turns_per_day": 24,
+    "default_episode_steps": 720,
+    "season_days": 30
+  },
+  "purpose": "Fixed public-rule terrain for asset State progression. Battle traces are later joined to this schedule; no Battle explanation or policy preference is encoded here.",
+  "time_coordinate": {
+    "origin": "productive State-entry day recorded by the public world (planted_day or placed_day)",
+    "day_boundary_rule": "Yield schedules are keyed to origin calendar day, not elapsed wall-clock hours from the entry turn.",
+    "turns_until_day_offset_formula": "offset_days * turns_per_day - entry_hour",
+    "default_turn_range_note": "With 24 turns/day and entry_hour in 0..23, an offset N boundary is N*24 down to N*24-23 turns away."
+  },
+  "common_transitions": {
+    "harvest_to_carried_inventory": {
+      "trigger": "successful HARVEST on an eligible tile with yield_units > 0",
+      "result": "all held yield_units move to that unit's private carried inventory",
+      "crop_nonongoing_tile_after": "tile becomes empty",
+      "crop_ongoing_tile_after": "plant remains with yield_units reset to 0",
+      "animal_tile_after": "animal remains with yield_units reset to 0"
+    },
+    "carried_inventory_to_sellable_shed": {
+      "conditions": [
+        "DROP while standing on a shed-adjacent access tile moves carried inventory into shed up to shed capacity.",
+        "PLACE <item> [n] while shed-adjacent can deposit that item into shed up to shed capacity.",
+        "End-of-day automatically drops all per-unit carried inventories into shed up to shed capacity; overflow is discarded."
+      ],
+      "fixed_time_offset": null,
+      "reason_no_fixed_offset": "Movement / shed-adjacency and chosen unit actions are Battle-path dependent."
+    },
+    "sellable_shed_to_cash": {
+      "status": "DEFERRED_TO_MARKET_MAP",
+      "condition": "SELL consumes units from private shed only.",
+      "note": "Dynamic market price and realized Cash are intentionally excluded from Asset State Schedule v0."
+    }
+  },
+  "assets": {
+    "WHEAT": {
+      "asset_class": "crop",
+      "acquisition": {
+        "market_action": "BUY_SEED",
+        "fixed_seed_cost_rule": 10,
+        "post_acquisition_state": "seed_stock",
+        "note": "Seed cost is a public rule parameter, not a valuation score."
+      },
+      "productive_entry": {
+        "action": "PLANT WHEAT",
+        "requirements": [
+          "owned unlocked empty tile",
+          "WHEAT seed stock >= 1"
+        ],
+        "consumes": {
+          "seed_units": 1
+        },
+        "tile_occupancy": 1,
+        "entry_state": {
+          "held_yield_units": 1,
+          "harvest_eligible": false,
+          "consecutive_unwatered": 1
+        }
+      },
+      "survival": {
+        "rule": "At each end-of-day: watered_today resets consecutive_unwatered to 0; otherwise it increments by 1; plant becomes WEED at >=2.",
+        "planting_day_implication": "Because entry initializes consecutive_unwatered=1, a newly planted crop must be watered before its first end-of-day refresh to survive that refresh."
+      },
+      "production": {
+        "mode": "nonongoing_action_mediated",
+        "first_harvest_eligible_day_offset": 2,
+        "first_harvest_boundary_turn_formula": "2 * turns_per_day - entry_hour",
+        "water_yield_window_day_offsets": [
+          2,
+          3,
+          4
+        ],
+        "base_held_units_on_entry": 1,
+        "yield_added_per_eligible_water_without_fertilizer": 1,
+        "yield_added_per_eligible_water_with_active_fertilizer": 2,
+        "held_yield_cap": 6,
+        "no_fertilizer_max_held_if_all_window_waters": 4,
+        "fertilized_cap": 6,
+        "automatic_repeat_interval_days": null,
+        "nonongoing": true
+      },
+      "end_of_life": {
+        "decay_start_day_offset": 5,
+        "decay_rule": "From max_lifespan_step, every 2 turns yield_units decreases by 1; tile becomes WEED when yield_units <= 0.",
+        "successful_harvest_effect": "Nonongoing crop tile becomes empty immediately."
+      },
+      "output_item": "WHEAT"
+    },
+    "MELON": {
+      "asset_class": "crop",
+      "acquisition": {
+        "market_action": "BUY_SEED",
+        "fixed_seed_cost_rule": 80,
+        "post_acquisition_state": "seed_stock",
+        "note": "Seed cost is a public rule parameter, not a valuation score."
+      },
+      "productive_entry": {
+        "action": "PLANT MELON",
+        "requirements": [
+          "owned unlocked empty tile",
+          "MELON seed stock >= 1"
+        ],
+        "consumes": {
+          "seed_units": 1
+        },
+        "tile_occupancy": 1,
+        "entry_state": {
+          "held_yield_units": 1,
+          "harvest_eligible": false,
+          "consecutive_unwatered": 1
+        }
+      },
+      "survival": {
+        "rule": "Same crop survival rule: plant becomes WEED after reaching 2 consecutive end-of-day unwatered counts.",
+        "planting_day_implication": "Newly planted MELON must be watered before its first end-of-day refresh to survive that refresh."
+      },
+      "production": {
+        "mode": "nonongoing_action_mediated",
+        "first_harvest_eligible_day_offset": 10,
+        "first_harvest_boundary_turn_formula": "10 * turns_per_day - entry_hour",
+        "water_yield_window_day_offsets": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "base_held_units_on_entry": 1,
+        "yield_added_per_eligible_water_without_fertilizer": 1,
+        "yield_added_per_eligible_water_with_active_fertilizer": 2,
+        "held_yield_cap": 6,
+        "no_fertilizer_max_held_if_all_window_waters": 6,
+        "fertilized_cap": 6,
+        "automatic_repeat_interval_days": null,
+        "nonongoing": true
+      },
+      "end_of_life": {
+        "decay_start_day_offset": 13,
+        "decay_rule": "From max_lifespan_step, every 2 turns yield_units decreases by 1; tile becomes WEED when yield_units <= 0.",
+        "successful_harvest_effect": "Nonongoing crop tile becomes empty immediately."
+      },
+      "output_item": "MELON"
+    },
+    "STRAWBERRY": {
+      "asset_class": "crop",
+      "acquisition": {
+        "market_action": "BUY_SEED",
+        "fixed_seed_cost_rule": 100,
+        "post_acquisition_state": "seed_stock",
+        "note": "Seed cost is a public rule parameter, not a valuation score."
+      },
+      "productive_entry": {
+        "action": "PLANT STRAWBERRY",
+        "requirements": [
+          "owned unlocked empty tile",
+          "STRAWBERRY seed stock >= 1"
+        ],
+        "consumes": {
+          "seed_units": 1
+        },
+        "tile_occupancy": 1,
+        "entry_state": {
+          "held_yield_units": 0,
+          "harvest_eligible": false,
+          "consecutive_unwatered": 1
+        }
+      },
+      "survival": {
+        "rule": "Same crop survival rule: plant becomes WEED after reaching 2 consecutive end-of-day unwatered counts.",
+        "planting_day_implication": "Newly planted STRAWBERRY must be watered before its first end-of-day refresh to survive that refresh."
+      },
+      "production": {
+        "mode": "ongoing_automatic_day_boundary",
+        "base_output_event_day_offsets": [
+          10,
+          12,
+          14,
+          16
+        ],
+        "first_output_day_offset": 10,
+        "first_output_boundary_turn_formula": "10 * turns_per_day - entry_hour",
+        "base_units_per_event": 1,
+        "fertilized_units_per_event_when_prior_day_was_watered_and_fertilizer_active": 2,
+        "production_event_count_cap": 4,
+        "held_yield_cap": 4,
+        "harvest_eligible_from_day_offset": 10,
+        "successful_harvest_effect": "Plant remains; held yield resets to 0; later scheduled production events can still occur.",
+        "nonongoing": false
+      },
+      "end_of_life": {
+        "max_lifespan_set_after_final_base_event_visible_day_offset": 16,
+        "decay_start_day_offset": 17,
+        "decay_rule": "After final scheduled production event, decay begins at the next day boundary; every 2 turns held yield drops by 1 and tile becomes WEED at <=0."
+      },
+      "output_item": "STRAWBERRY"
+    },
+    "COW": {
+      "asset_class": "animal",
+      "acquisition": {
+        "market_action": "BUY_ANIMAL",
+        "fixed_animal_cost_rule": 400,
+        "post_acquisition_state": "animal_in_shed",
+        "pre_entry_path": [
+          "BUY_ANIMAL -> shed",
+          "PICKUP COW -> carried inventory",
+          "PLACE COW on matching unoccupied PASTURE"
+        ]
+      },
+      "productive_entry": {
+        "action": "PLACE COW",
+        "requirements": [
+          "unit carries COW",
+          "current tile is unoccupied PASTURE"
+        ],
+        "structure": "PASTURE",
+        "tile_occupancy": 1,
+        "entry_state": {
+          "held_yield_units": 0,
+          "consecutive_unfed": 0,
+          "pending_care_bonus": 0
+        }
+      },
+      "survival": {
+        "feed_action": "FEED",
+        "feed_input": {
+          "WHEAT": 1
+        },
+        "rule": "At each end-of-day: fed_today resets consecutive_unfed to 0; otherwise it increments by 1; animal escapes at >=2 and the PASTURE remains.",
+        "minimum_survival_statement": "One unfed end-of-day can be survived; two consecutive unfed end-of-day refreshes cause escape.",
+        "care": "CARE is optional for bonus production and is not required for survival."
+      },
+      "production": {
+        "mode": "automatic_day_boundary",
+        "first_output_day_offset": 8,
+        "first_output_boundary_turn_formula": "8 * turns_per_day - entry_hour",
+        "repeat_interval_days": 2,
+        "base_units_per_event": 1,
+        "held_yield_cap": 6,
+        "care_bonus_rule": "A day with both CARE and FEED adds one pending_care_bonus after that day's production processing. On a later fed production day, pending bonus is consumed and added to the base unit.",
+        "output_event_day_formula": "placed_day + 8 + n*2 for n >= 0 while the animal survives"
+      },
+      "output_item": "MILK"
+    },
+    "SHEEP": {
+      "asset_class": "animal",
+      "acquisition": {
+        "market_action": "BUY_ANIMAL",
+        "fixed_animal_cost_rule": 500,
+        "post_acquisition_state": "animal_in_shed",
+        "pre_entry_path": [
+          "BUY_ANIMAL -> shed",
+          "PICKUP SHEEP -> carried inventory",
+          "PLACE SHEEP on matching unoccupied PASTURE"
+        ]
+      },
+      "productive_entry": {
+        "action": "PLACE SHEEP",
+        "requirements": [
+          "unit carries SHEEP",
+          "current tile is unoccupied PASTURE"
+        ],
+        "structure": "PASTURE",
+        "tile_occupancy": 1,
+        "entry_state": {
+          "held_yield_units": 0,
+          "consecutive_unfed": 0,
+          "pending_care_bonus": 0
+        }
+      },
+      "survival": {
+        "feed_action": "FEED",
+        "feed_input": {
+          "WHEAT": 1
+        },
+        "rule": "At each end-of-day: fed_today resets consecutive_unfed to 0; otherwise it increments by 1; animal escapes at >=2 and the PASTURE remains.",
+        "minimum_survival_statement": "One unfed end-of-day can be survived; two consecutive unfed end-of-day refreshes cause escape.",
+        "care": "CARE is optional for bonus production and is not required for survival."
+      },
+      "production": {
+        "mode": "automatic_day_boundary",
+        "first_output_day_offset": 6,
+        "first_output_boundary_turn_formula": "6 * turns_per_day - entry_hour",
+        "repeat_interval_days": 3,
+        "base_units_per_event": 1,
+        "held_yield_cap": 6,
+        "care_bonus_rule": "A day with both CARE and FEED adds one pending_care_bonus after that day's production processing. On a later fed production day, pending bonus is consumed and added to the base unit.",
+        "output_event_day_formula": "placed_day + 6 + n*3 for n >= 0 while the animal survives"
+      },
+      "output_item": "WOOL"
+    }
+  },
+  "excluded_from_v0": [
+    "Dynamic market price and realized Cash value",
+    "Expected score / asset ranking",
+    "Movement distance and worker routing",
+    "Battle-specific reachability",
+    "Candidate policy logic",
+    "Causal interpretation",
+    "CARROT, TOMATO, GOOSE until needed by Battle evidence"
+  ],
+  "boundary": [
+    "This file is World-side master data derived only from public rules.",
+    "It describes legal State progression; it does not claim that a Battle will execute required WATER/FEED/HARVEST/DROP actions.",
+    "Fixed acquisition costs are raw public rule parameters and are not combined into an asset value score.",
+    "Price and SELL behavior belong to a separate Market Map.",
+    "Battle traces must be joined later as Asset Instances; they do not mutate this schedule."
+  ]
+}
