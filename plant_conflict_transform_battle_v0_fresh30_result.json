@@ -1,0 +1,56 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.plant-conflict-transform-battle.fresh30.result.v0",
+  "source_run_id": 35979780213,
+  "seeds": "7501-7530",
+  "battle_count": 30,
+  "candidate": "Day4 same-empty-tile PLANT conflict transformation; highest unit index existing request wins; no new action/target/crop preference",
+  "terminal": {
+    "baseline_absolute_mean_self": 30516.666666666668,
+    "candidate_absolute_mean_self": 30378.133333333335,
+    "paired_delta_self": -138.53333333333333,
+    "baseline_absolute_mean_opponent": 126728,
+    "candidate_absolute_mean_opponent": 124034.56666666667,
+    "paired_delta_opponent": -2693.4333333333334,
+    "baseline_mean_margin": -96211.33333333333,
+    "candidate_mean_margin": -93656.43333333333,
+    "paired_delta_margin": 2554.9,
+    "improved_cases": 16,
+    "worsened_cases": 14,
+    "equal_cases": 0,
+    "median_delta_self": 98.5,
+    "min_delta_self": -22549,
+    "max_delta_self": 12317,
+    "baseline_wins": 0,
+    "candidate_wins": 0
+  },
+  "diagnostic": {
+    "modified_turns_mean": 4,
+    "conflict_groups_mean": 4,
+    "projected_conflict_requests_mean": 16,
+    "suppressed_requests_mean": 12,
+    "day5_origin4_melon_delta_mean": 1.5,
+    "day5_origin4_wheat_delta_mean": -1.5,
+    "day5_origin4_strawberry_delta_mean": 0
+  },
+  "decision": {
+    "classification": "terminal-neutral",
+    "adoption": "CLOSE",
+    "reason": [
+      "Transformation behavior changed consistently.",
+      "Fresh10 positive terminal signal did not reproduce on fresh30.",
+      "Fresh30 paired mean self delta is -138.53 with 16 improvements and 14 worsenings.",
+      "Effect is negligible relative to the approximately 99k terminal residual.",
+      "Transformation Gap evidence is retained, but this intervention is not promoted as the main battlefield."
+    ]
+  },
+  "origin_reentry": {
+    "purpose": "Raise Strong Origin terminal self and reduce the large residual to Seyamalam.",
+    "next_rule": "Do not continue local Transformation repair. Return to unresolved World->Self connection layers and choose the next surface by expected impact on the whole terminal residual."
+  },
+  "boundary": [
+    "Projected Body action is preserved before the transformation adapter.",
+    "No Representation, Evaluation, Direction, crop score, target generation, movement target, or market logic is changed.",
+    "No new PLANT request or target tile is created.",
+    "Diagnostic improvement is not an adoption criterion."
+  ]
+}
