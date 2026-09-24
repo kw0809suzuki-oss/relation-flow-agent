@@ -1,0 +1,2094 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.day0-hourly-asset-formation.result.v0",
+  "battle_count": 5,
+  "terminal_absolute": {
+    "mean_self": 24042.8,
+    "mean_opponent": 128454.4,
+    "mean_margin": -104411.6
+  },
+  "first_nonzero_mean_productive_residual": "0:05",
+  "first_opponent_more_productive_5_of_5": "0:14",
+  "map_by_time": {
+    "0:00": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:01": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:02": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 24.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:03": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 24.0,
+          "opponent_absolute_mean": 24.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:04": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 24.0,
+          "opponent_absolute_mean": 23.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:05": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 23.0,
+          "opponent_absolute_mean": 21.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:06": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 23.0,
+          "opponent_absolute_mean": 21.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:07": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 22.0,
+          "opponent_absolute_mean": 21.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:08": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 22.0,
+          "opponent_absolute_mean": 20.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 3.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 1.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:09": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 20.0,
+          "opponent_absolute_mean": 20.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 5.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 3.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -3.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:10": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 20.0,
+          "opponent_absolute_mean": 20.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 5.0,
+          "opponent_absolute_mean": 4.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 3.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -3.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:11": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 20.0,
+          "opponent_absolute_mean": 19.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 5.0,
+          "opponent_absolute_mean": 5.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 3.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -3.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 2.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:12": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 18.0,
+          "opponent_absolute_mean": 19.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 7.0,
+          "opponent_absolute_mean": 5.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 5.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -5.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 2.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:13": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 18.0,
+          "opponent_absolute_mean": 19.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 7.0,
+          "opponent_absolute_mean": 5.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 5.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": -5.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 2.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:14": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 18.0,
+          "opponent_absolute_mean": 16.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 7.0,
+          "opponent_absolute_mean": 8.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 5.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -4.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 4.0,
+          "mean_residual_opponent_minus_self": 4.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:15": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 16.0,
+          "opponent_absolute_mean": 16.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 8.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 7.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -6.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 4.0,
+          "mean_residual_opponent_minus_self": 4.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:16": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 16.0,
+          "opponent_absolute_mean": 16.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 8.0,
+          "mean_residual_opponent_minus_self": -1.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 7.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": -6.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 4.0,
+          "mean_residual_opponent_minus_self": 4.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 2.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:17": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 16.0,
+          "opponent_absolute_mean": 12.0,
+          "mean_residual_opponent_minus_self": -4.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 13.0,
+          "mean_residual_opponent_minus_self": 4.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 7.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": -4.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 6.0,
+          "mean_residual_opponent_minus_self": 6.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:18": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 14.0,
+          "opponent_absolute_mean": 12.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 11.0,
+          "opponent_absolute_mean": 13.0,
+          "mean_residual_opponent_minus_self": 2.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": -6.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 6.0,
+          "mean_residual_opponent_minus_self": 6.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:19": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 14.0,
+          "opponent_absolute_mean": 12.0,
+          "mean_residual_opponent_minus_self": -2.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 11.0,
+          "opponent_absolute_mean": 13.0,
+          "mean_residual_opponent_minus_self": 2.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": -6.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 6.0,
+          "mean_residual_opponent_minus_self": 6.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:20": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 14.0,
+          "opponent_absolute_mean": 9.0,
+          "mean_residual_opponent_minus_self": -5.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 11.0,
+          "opponent_absolute_mean": 16.0,
+          "mean_residual_opponent_minus_self": 5.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 5.0,
+          "mean_residual_opponent_minus_self": -4.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 7.0,
+          "mean_residual_opponent_minus_self": 7.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:21": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 12.0,
+          "opponent_absolute_mean": 8.0,
+          "mean_residual_opponent_minus_self": -4.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 13.0,
+          "opponent_absolute_mean": 17.0,
+          "mean_residual_opponent_minus_self": 4.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 6.0,
+          "mean_residual_opponent_minus_self": -3.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 7.0,
+          "mean_residual_opponent_minus_self": 5.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:22": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 12.0,
+          "opponent_absolute_mean": 8.0,
+          "mean_residual_opponent_minus_self": -4.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 13.0,
+          "opponent_absolute_mean": 17.0,
+          "mean_residual_opponent_minus_self": 4.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 6.0,
+          "mean_residual_opponent_minus_self": -3.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 7.0,
+          "mean_residual_opponent_minus_self": 5.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "0:23": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 12.0,
+          "opponent_absolute_mean": 4.0,
+          "mean_residual_opponent_minus_self": -8.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 13.0,
+          "opponent_absolute_mean": 21.0,
+          "mean_residual_opponent_minus_self": 8.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 10.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 7.0,
+          "mean_residual_opponent_minus_self": 5.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    },
+    "1:00": {
+      "land": {
+        "unlocked_tile_count": {
+          "self_absolute_mean": 25.0,
+          "opponent_absolute_mean": 25.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "empty_unlocked_tile_count": {
+          "self_absolute_mean": 10.0,
+          "opponent_absolute_mean": 4.0,
+          "mean_residual_opponent_minus_self": -6.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 5
+        },
+        "productive_occupied_tile_count": {
+          "self_absolute_mean": 13.0,
+          "opponent_absolute_mean": 21.0,
+          "mean_residual_opponent_minus_self": 8.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      },
+      "present": {
+        "WHEAT": {
+          "self_absolute_mean": 9.0,
+          "opponent_absolute_mean": 10.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "CARROT": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "TOMATO": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "STRAWBERRY": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "MELON": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 7.0,
+          "mean_residual_opponent_minus_self": 5.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "GOOSE": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 0.0,
+          "mean_residual_opponent_minus_self": 0.0,
+          "opponent_more_cases": 0,
+          "self_more_cases": 0
+        },
+        "COW": {
+          "self_absolute_mean": 2.0,
+          "opponent_absolute_mean": 3.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        },
+        "SHEEP": {
+          "self_absolute_mean": 0.0,
+          "opponent_absolute_mean": 1.0,
+          "mean_residual_opponent_minus_self": 1.0,
+          "opponent_more_cases": 5,
+          "self_more_cases": 0
+        }
+      }
+    }
+  },
+  "boundary": [
+    "The first-time markers refer only to productive occupied World tiles.",
+    "No Action or causal mechanism is inferred from the timing marker.",
+    "Unlike asset types remain separate and are not value-weighted.",
+    "No Candidate or adoption decision is introduced."
+  ]
+}
