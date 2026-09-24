@@ -1,0 +1,63 @@
+name: State Transition Growth Audit v0 Fresh10
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/state-transition-growth-audit-v0-fresh10.yml
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7351, seat: 0}
+          - {seed: 7352, seat: 1}
+          - {seed: 7353, seat: 0}
+          - {seed: 7354, seat: 1}
+          - {seed: 7355, seat: 0}
+          - {seed: 7356, seat: 1}
+          - {seed: 7357, seat: 0}
+          - {seed: 7358, seat: 1}
+          - {seed: 7359, seat: 0}
+          - {seed: 7360, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_state_transition_growth_audit_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: state-transition-growth-audit-v0-${{ matrix.seed }}
+          path: state_transition_growth_audit_v0_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: state-transition-growth-audit-v0-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_state_transition_growth_audit_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: state-transition-growth-audit-v0-fresh10
+          path: state_transition_growth_audit_v0_aggregate.json
