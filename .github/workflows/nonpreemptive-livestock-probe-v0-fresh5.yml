@@ -1,0 +1,58 @@
+name: Non-preemptive Livestock Probe v0 Fresh5
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/nonpreemptive-livestock-probe-v0-fresh5.yml
+  workflow_dispatch:
+
+jobs:
+  pair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        include:
+          - {seed: 7461, seat: 0}
+          - {seed: 7462, seat: 1}
+          - {seed: 7463, seat: 0}
+          - {seed: 7464, seat: 1}
+          - {seed: 7465, seat: 0}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_nonpreemptive_livestock_probe_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nonpreemptive-livestock-probe-${{ matrix.seed }}
+          path: nonpreemptive_livestock_probe_v0_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: pair
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: nonpreemptive-livestock-probe-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_nonpreemptive_livestock_probe_v0_fresh5.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nonpreemptive-livestock-probe-v0-fresh5
+          path: nonpreemptive_livestock_probe_v0_fresh5.json
