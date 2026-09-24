@@ -25,6 +25,7 @@ OUT=Path(f"projected_action_state_transformation_audit_v0_{SEED}.json")
 _current_day=-1
 _current_hour=-1
 _self_farm_id=None
+_self_farm_obj=None
 _projected={}
 _execution=defaultdict(list)
 
@@ -80,10 +81,21 @@ def reason_for_noop(before_tile,before_inv,before_seeds,effective_action,project
     return "NO_STATE_CHANGE"
 
 
+def _is_self_farm(farm):
+    if id(farm)==_self_farm_id:
+        return True
+    if _self_farm_obj is not None:
+        try:
+            return farm == _self_farm_obj
+        except Exception:
+            return False
+    return False
+
+
 def wrapped_apply(original):
     def inner(farm,private,idx,action,board_size,day,turns_per_day,shed_capacity=100):
-        global _current_day,_current_hour,_self_farm_id
-        is_self=(id(farm)==_self_farm_id)
+        global _current_day,_current_hour,_self_farm_id,_self_farm_obj
+        is_self=_is_self_farm(farm)
         pos=kg._farmer_position(farm,idx)
         before_tile=tile_at(farm,pos)
         before_seeds=copy.deepcopy(private.get("seeds",{}) or {})
@@ -151,19 +163,21 @@ def wrapped_apply(original):
 
 
 def main():
-    global _current_day,_current_hour,_self_farm_id
+    global _current_day,_current_hour,_self_farm_id,_self_farm_obj
     basecfg._configure_baseline()
     os.environ["BUNDLE_FLOW_CONTROL_V0"]="0"
     os.environ["ORIGIN_CROP_COMMITMENT"]="0"
     body_only.reset_telemetry()
 
     env=make("kaggriculture",configuration={"seed":SEED},debug=False)
-    _self_farm_id=id(env.state[0].observation.farms[SEAT])
+    _self_farm_obj=env.state[0].observation.farms[SEAT]
+    _self_farm_id=id(_self_farm_obj)
 
     def observed(obs):
-        global _current_day,_current_hour,_self_farm_id
+        global _current_day,_current_hour,_self_farm_id,_self_farm_obj
         _current_day=int(obs.get("day",-1)); _current_hour=int(obs.get("hour",-1))
         me=obs["farms"][obs["player"]]
+        _self_farm_obj=me
         _self_farm_id=id(me)
         action=body_only.agent(obs)
         if _current_day==4 and _current_hour in TARGET_HOURS:
