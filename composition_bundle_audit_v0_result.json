@@ -1,0 +1,174 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.composition-bundle-audit.result.v0",
+  "source_run_id": 35949647887,
+  "battle_count": 10,
+  "terminal": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day0": {
+    "cash": {
+      "self": 3000,
+      "opponent": 3000
+    },
+    "land_quadrants": {
+      "self": 1,
+      "opponent": 1
+    },
+    "productive_assets": {
+      "self": 0,
+      "opponent": 0
+    }
+  },
+  "day0_to_day4_allocation": {
+    "self": {
+      "crop_seed_spend": 1320,
+      "animal_spend": 800,
+      "hire_spend": 16,
+      "hire_count": 12,
+      "operating_spend": 2044.8,
+      "total_spend": 4180.8,
+      "realized_sell_cash": 2307.8,
+      "crop_seed_purchase_units": {
+        "WHEAT": 12,
+        "MELON": 10,
+        "STRAWBERRY": 4
+      }
+    },
+    "opponent": {
+      "crop_seed_spend": 750,
+      "animal_spend": 1700,
+      "hire_spend": 46,
+      "hire_count": 19,
+      "operating_spend": 1977.5,
+      "total_spend": 4473.5,
+      "realized_sell_cash": 2272.1,
+      "crop_seed_purchase_units": {
+        "WHEAT": 11,
+        "MELON": 8,
+        "STRAWBERRY": 0
+      }
+    },
+    "hire_count_by_day": {
+      "self": {
+        "day0": 3,
+        "day1": 3,
+        "day2": 3,
+        "day3": 3
+      },
+      "opponent": {
+        "day0": 4,
+        "day1": 6,
+        "day2": 4,
+        "day3": 5
+      }
+    }
+  },
+  "day4": {
+    "self": {
+      "cash": 1127,
+      "productive_assets": 14.9,
+      "production_potential_mark": 9698.4,
+      "crop": {
+        "WHEAT": 9,
+        "MELON": 2,
+        "STRAWBERRY": 1.9
+      },
+      "animal": {
+        "COW": 2,
+        "SHEEP": 0
+      },
+      "mean_empty_tiles": 8.9,
+      "seed_inventory_mean": {
+        "WHEAT": 3,
+        "MELON": 6,
+        "STRAWBERRY": 1.1
+      },
+      "seed_inventory_purchase_cost_mark": 620
+    },
+    "opponent": {
+      "cash": 798.6,
+      "productive_assets": 23,
+      "production_potential_mark": 22386.7,
+      "crop": {
+        "WHEAT": 11,
+        "MELON": 8,
+        "STRAWBERRY": 0
+      },
+      "animal": {
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "mean_empty_tiles": 1.9,
+      "seed_inventory_mean": {
+        "WHEAT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0
+      },
+      "seed_inventory_purchase_cost_mark": 0
+    },
+    "maturity_schedule": {
+      "self_by_day": {
+        "day4": 9,
+        "day8": 2,
+        "day10": 2,
+        "day11": 1,
+        "day12": 0.9
+      },
+      "opponent_by_day": {
+        "day4": 11,
+        "day6": 1,
+        "day8": 3,
+        "day10": 7,
+        "day12": 1
+      }
+    }
+  },
+  "day4_to_day8": {
+    "self": {
+      "realized_sell": 5808.7,
+      "operating_spend": 4433.4,
+      "surplus": 1375.3,
+      "productive_spend": 1552,
+      "asset_growth": 3.1,
+      "potential_growth": 7051.6
+    },
+    "opponent": {
+      "realized_sell": 5445.4,
+      "operating_spend": 2029.8,
+      "surplus": 3415.6,
+      "productive_spend": 3364,
+      "asset_growth": 10.9,
+      "potential_growth": 16823.3
+    }
+  },
+  "day8": {
+    "self": {
+      "productive_assets": 18,
+      "production_potential_mark": 16750,
+      "land_quadrants": 1
+    },
+    "opponent": {
+      "productive_assets": 33.9,
+      "production_potential_mark": 39210,
+      "land_quadrants": 2
+    }
+  },
+  "derived_observations": [
+    "Day0 resources are equal in all 10 cases; the first stable difference is allocation, not starting wealth or land.",
+    "Opponent total Day0-4 spend exceeds self by only 292.7 on average, while Day4 production-potential gap is 12688.3.",
+    "Self spends 570 more on crop seeds but 900 less on animals and hires 7 fewer workers over Day0-3.",
+    "At Day4 self still holds 3 WHEAT, 6 MELON and mean 1.1 STRAWBERRY seeds; opponent holds zero seeds of these types in all 10 cases.",
+    "Opponent therefore converts a larger share of early purchased inputs into placed productive State before Day4; this is an allocation-to-commitment observation, not yet a causal claim about HIRE or any single asset.",
+    "The Day4 bundle then precedes a 2040.3 surplus gap, 1812 productive-spend gap, 7.8 productive-asset-growth gap and 9771.7 production-potential-growth gap over Day4-8."
+  ],
+  "boundary": [
+    "No Candidate or policy mutation was used.",
+    "Seed inventory cost mark uses public seed purchase cost, not liquidation value.",
+    "Purchase-to-State conversion is observed as a relation; no single cause such as HIRE, animal mix, or crop choice is asserted.",
+    "Cash is fungible and individual sale dollars are not assigned to individual investments.",
+    "No composition score or copied Seyamalam template is adopted."
+  ]
+}
