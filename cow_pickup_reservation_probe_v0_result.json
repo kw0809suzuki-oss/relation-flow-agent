@@ -1,0 +1,46 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.cow-pickup-reservation-probe.result.v0",
+  "battle_count": 5,
+  "baseline_absolute_mean_self": 32662.2,
+  "candidate_absolute_mean_self": 28431.6,
+  "delta_mean_self": -4230.6,
+  "baseline_mean_margin": -98737.2,
+  "candidate_mean_margin": -92183.8,
+  "delta_mean_margin": 6553.4,
+  "self_improved": 1,
+  "self_worsened": 4,
+  "median_delta_self": -6402,
+  "min_delta_self": -8501,
+  "max_delta_self": 3143,
+  "commitment": {
+    "baseline_rate": 0.6203076923076923,
+    "candidate_rate": 0.8461538461538461,
+    "baseline_idle_capital": 590,
+    "candidate_idle_capital": 180
+  },
+  "day4": {
+    "baseline_assets": 15,
+    "candidate_assets": 21,
+    "baseline_potential": 9809.6,
+    "candidate_potential": 16812
+  },
+  "day8": {
+    "baseline_assets": 17.8,
+    "candidate_assets": 18.4,
+    "baseline_potential": 17463.2,
+    "candidate_potential": 20146.8
+  },
+  "conclusion": [
+    "Duplicate shed COW pickup work is a real upstream cause of seed commitment delay.",
+    "Removing only impossible duplicate pickup work substantially improves Day4 commitment and productive State.",
+    "The local improvement does not improve terminal self; mean terminal self worsens by 4230.6 over fresh5.",
+    "Therefore faster seed commitment is not sufficient evidence of a stronger economy and this candidate is rejected without rescue.",
+    "The main question returns to which composition/timing of commitment produces durable surplus and terminal value, not how to maximize commitment rate."
+  ],
+  "boundary": [
+    "No PLANT or crop action was forced.",
+    "Only shed COW pickup requests exceeding observed shed COW stock were suppressed.",
+    "No post-hoc rescue condition is added.",
+    "Terminal self remains the primary adoption authority."
+  ]
+}
