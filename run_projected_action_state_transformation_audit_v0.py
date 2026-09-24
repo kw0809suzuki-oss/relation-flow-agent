@@ -26,6 +26,7 @@ _current_day=-1
 _current_hour=-1
 _self_farm_id=None
 _self_farm_obj=None
+_active_exec_self_farm_id=None
 _projected={}
 _execution=defaultdict(list)
 
@@ -94,14 +95,18 @@ def _is_self_farm(farm):
 
 def wrapped_apply(original):
     def inner(farm,private,idx,action,board_size,day,turns_per_day,shed_capacity=100):
-        global _current_day,_current_hour,_self_farm_id,_self_farm_obj
-        is_self=_is_self_farm(farm)
+        global _current_day,_current_hour,_self_farm_id,_self_farm_obj,_active_exec_self_farm_id
+        key=(_current_day,_current_hour)
+        if idx==0:
+            _active_exec_self_farm_id = (
+                id(farm) if key in _projected and _is_self_farm(farm) else None
+            )
+        is_self=(id(farm)==_active_exec_self_farm_id)
         pos=kg._farmer_position(farm,idx)
         before_tile=tile_at(farm,pos)
         before_seeds=copy.deepcopy(private.get("seeds",{}) or {})
         invs=private.get("inventories",[]) or []
         before_inv=copy.deepcopy(invs[idx] if 0<=idx<len(invs) else {})
-        key=(_current_day,_current_hour)
         projected_action=None
         if is_self and key in _projected:
             units=_projected[key]["unit_actions"]
