@@ -1,0 +1,101 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.internal-representation-audit.result.v0",
+  "source_run_id": 35970214835,
+  "battle_count": 10,
+  "fixed_point": {
+    "day": 4,
+    "hour": 10
+  },
+  "world_reference": {
+    "certified_reachable_entry": "Existing MELON seed -> Day4 productive-State entry -> Day10 production opportunity",
+    "reachable_cases": 10
+  },
+  "observed_internal": {
+    "strategy_counts": {
+      "CROP_RUSH": 10
+    },
+    "best_crop_counts": {
+      "STRAWBERRY": 10
+    },
+    "mean_scores": {
+      "WHEAT": 1.007058823529412,
+      "MELON": 0.7189189189189189,
+      "STRAWBERRY": 1.2486666666666668
+    },
+    "mean_targets": {
+      "WHEAT": 10,
+      "MELON": 6,
+      "STRAWBERRY": 3
+    },
+    "existing_melon_seed_mean": 6,
+    "base_action_pattern": {
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ]
+      ],
+      "cases": 10
+    },
+    "final_action_pattern": {
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ],
+        [
+          "HARVEST"
+        ]
+      ],
+      "cases": 10
+    },
+    "overlay_changed_farmer_cases": 10,
+    "overlay_changed_hands_cases": 0,
+    "overlay_changed_market_cases": 0
+  },
+  "representation_classification": {
+    "explicit": "ABSENT",
+    "implicit_at_day4_h10": "ABSENT",
+    "scope": "Next-cycle reachability of the certified Day4 h10 G1 crop-entry opportunity."
+  },
+  "code_path_evidence": [
+    "strong_origin does not compute candidate-entry production_day or harvest_day.",
+    "FIRST_YIELD affects candidate crop scores only through remaining_days <= FIRST_YIELD[crop] + 1; at Day4 remaining_days=26, so this branch is false for WHEAT, STRAWBERRY, and MELON.",
+    "MAX_YIELD_DAY is used for HARVEST timing of existing plants, not evaluation of a contemplated new entry.",
+    "counter_crop_weights has no crop maturity schedule input; its horizon factor is common across crops.",
+    "origin_targets uses strategy/day/capacity and a hard-coded early mix, without computing whether a contemplated entry reaches the next-cycle production window.",
+    "g8 livestock overlay does not read crop maturity schedule or compute crop future reachability."
+  ],
+  "derived_observations": [
+    "The reachable future was not lost at observation/input: the dynamic facts were accessible.",
+    "The current Body is time-aware in limited ways, but candidate-entry next-cycle reachability does not feed the Day4 h10 action-generation path.",
+    "MELON is already present in the target structure (mean target 6.0) and seed stock (mean 6.0), so the gap is not equivalent to MELON being absent from the Body's crop set.",
+    "The hard-coded early crop mix is not treated as evidence of implicit maturity representation because there is no dataflow connection from public maturity schedule to the Day4 h10 candidate decision.",
+    "At the fixed point, the base crop body and livestock overlay both act without using candidate-entry next-cycle reachability."
+  ],
+  "boundary": [
+    "ABSENT is narrow: it applies to next-cycle reachability for contemplated Day4 h10 crop entry, not to all temporal reasoning.",
+    "No claim is made yet that adding this representation would change selection or improve terminal self.",
+    "Shadow reachable future was logged only; Action was unchanged.",
+    "No Candidate, Direction, or policy mutation was introduced."
+  ]
+}
