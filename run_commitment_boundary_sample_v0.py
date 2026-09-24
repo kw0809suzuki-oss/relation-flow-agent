@@ -148,6 +148,11 @@ def build_boundaries(player,events):
             after=int(next_stock.get(crop,0) or 0)
             planted=max(0,before+bought-after)
             queue_after=after
+            # A real commitment stall must begin the turn with usable seed
+            # already in stock. Same-turn BUY_SEED happens after unit actions
+            # under public execution order and is therefore not plantable yet.
+            if before<=0:
+                continue
             if queue_after<=0 or st["empty_tiles"]<=0:
                 continue
             if planted>0:
@@ -219,8 +224,9 @@ def main():
         },
         "boundary":[
             "No action is changed; agents are wrapped only to record returned actions.",
-            "A stall sample requires seed stock remaining after the turn, at least one empty tile, and no successful PLANT of that crop in the turn.",
+            "A stall sample requires seed stock already present at turn start, at least one empty tile, no successful PLANT of that crop, and seed stock still remaining after the turn.",
             "Only first overall/MELON/WHEAT samples are retained; this is not exhaustive turn classification.",
+            "Public execution order applies unit actions before market orders, so same-turn BUY_SEED is explicitly excluded as a commitment opportunity.",
             "PLANT success is derived from public seed-stock conservation plus executed BUY_SEED.",
             "Observed worker/action differences are descriptive and not yet causal."
         ]
