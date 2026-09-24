@@ -1,0 +1,239 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.cohort-generation-amplification-audit.result.v0",
+  "source_run_id": 35960906809,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "boundary_future_state": {
+    "day4": {
+      "self": {
+        "asset_count": 5.9,
+        "potential_units": 43.6,
+        "potential_mark": 8557.2
+      },
+      "opponent": {
+        "asset_count": 12,
+        "potential_units": 93,
+        "potential_mark": 21087
+      }
+    },
+    "day8": {
+      "self": {
+        "G0": {
+          "asset_count": 5,
+          "potential_units": 50,
+          "potential_mark": 10517.2
+        },
+        "G1": {
+          "asset_count": 4.6,
+          "potential_units": 28.4,
+          "potential_mark": 5178.8
+        },
+        "total": {
+          "asset_count": 9.6,
+          "potential_units": 78.4,
+          "potential_mark": 15696
+        }
+      },
+      "opponent": {
+        "G0": {
+          "asset_count": 12,
+          "potential_units": 107,
+          "potential_mark": 24653.8
+        },
+        "G1": {
+          "asset_count": 11.9,
+          "potential_units": 65.1,
+          "potential_mark": 13300.2
+        },
+        "total": {
+          "asset_count": 23.9,
+          "potential_units": 172.1,
+          "potential_mark": 37954
+        }
+      }
+    },
+    "day12": {
+      "self": {
+        "G0": {
+          "asset_count": 4.9,
+          "potential_units": 38.4,
+          "potential_mark": 6988.5
+        },
+        "G1": {
+          "asset_count": 4.2,
+          "potential_units": 26.8,
+          "potential_mark": 4375.4
+        },
+        "G2": {
+          "asset_count": 5.5,
+          "potential_units": 28.4,
+          "potential_mark": 4903.8
+        },
+        "total": {
+          "asset_count": 14.6,
+          "potential_units": 93.6,
+          "potential_mark": 16267.7
+        }
+      },
+      "opponent": {
+        "G0": {
+          "asset_count": 5,
+          "potential_units": 52,
+          "potential_mark": 9185.8
+        },
+        "G1": {
+          "asset_count": 11.9,
+          "potential_units": 64.1,
+          "potential_mark": 12359.3
+        },
+        "G2": {
+          "asset_count": 29.3,
+          "potential_units": 136,
+          "potential_mark": 25587.9
+        },
+        "total": {
+          "asset_count": 46.2,
+          "potential_units": 252.1,
+          "potential_mark": 47133
+        }
+      }
+    }
+  },
+  "generation_transition": {
+    "G0_to_G1_birth": {
+      "self": {
+        "G0_day4_future_units": 43.6,
+        "G1_day8_future_units": 28.4
+      },
+      "opponent": {
+        "G0_day4_future_units": 93,
+        "G1_day8_future_units": 65.1
+      }
+    },
+    "G1_to_G2_birth": {
+      "self": {
+        "G1_day8_future_units": 28.4,
+        "G2_day12_future_units": 28.4,
+        "seed_direction": {
+          "increase": 4,
+          "equal": 1,
+          "decrease": 5
+        },
+        "asset_count": {
+          "from": 4.6,
+          "to": 5.5,
+          "seed_direction": {
+            "increase": 5,
+            "equal": 2,
+            "decrease": 3
+          }
+        }
+      },
+      "opponent": {
+        "G1_day8_future_units": 65.1,
+        "G2_day12_future_units": 136,
+        "seed_direction": {
+          "increase": 10,
+          "equal": 0,
+          "decrease": 0
+        },
+        "asset_count": {
+          "from": 11.9,
+          "to": 29.3,
+          "seed_direction": {
+            "increase": 10,
+            "equal": 0,
+            "decrease": 0
+          }
+        }
+      }
+    }
+  },
+  "next_cycle_return": {
+    "day4_to_8": {
+      "G0_non_wheat_production_units": {
+        "self": 16.3,
+        "opponent": 46,
+        "opponent_ahead_cases": 10
+      },
+      "period_non_wheat_sell_cash": {
+        "self": 936.2,
+        "opponent": 2991.6,
+        "gap": 2055.4
+      }
+    },
+    "day8_to_12": {
+      "G0_non_wheat_production_units": {
+        "self": 18.3,
+        "opponent": 44,
+        "opponent_ahead_cases": 10
+      },
+      "G1_non_wheat_production_units": {
+        "self": 0,
+        "opponent": 12,
+        "opponent_ahead_cases": 10
+      },
+      "period_non_wheat_sell_cash": {
+        "self": 4379.4,
+        "opponent": 18267.4,
+        "gap": 13888
+      }
+    }
+  },
+  "physical_stack_growth": {
+    "self": {
+      "future_potential_units_by_boundary": {
+        "day4": 43.6,
+        "day8": 78.4,
+        "day12": 93.6
+      },
+      "increments": {
+        "day4_to_8": 34.8,
+        "day8_to_12": 15.2
+      },
+      "asset_count_by_boundary": {
+        "day4": 5.9,
+        "day8": 9.6,
+        "day12": 14.6
+      }
+    },
+    "opponent": {
+      "future_potential_units_by_boundary": {
+        "day4": 93,
+        "day8": 172.1,
+        "day12": 252.1
+      },
+      "increments": {
+        "day4_to_8": 79.1,
+        "day8_to_12": 80
+      },
+      "asset_count_by_boundary": {
+        "day4": 12,
+        "day8": 23.9,
+        "day12": 46.2
+      }
+    }
+  },
+  "derived_observations": [
+    "The generational structure exists on both sides, but only opponent shows a stable G1-to-G2 increase in physical future potential: G2 potential units exceed G1 in all 10 cases, while self increases in 4, is equal in 1, and decreases in 5.",
+    "Opponent G1 becomes an observed returning cohort in the next cycle: Day8-12 G1 non-WHEAT production averages 12.0 units and is greater than self in all 10 cases; self G1 produces 0 over the same window.",
+    "While G0 continues to return value, opponent creates a much larger G2: 29.3 assets and 136.0 future potential units at Day12 versus 11.9 assets and 65.1 units for G1 at Day8.",
+    "Self's new-generation physical future potential is flat on average from G1 to G2: 28.4 to 28.4 units.",
+    "Across all non-WHEAT cohorts, opponent future-potential units grow 93.0 -> 172.1 -> 252.1, with roughly 80 units added in each observed 4-day cycle; self grows 43.6 -> 78.4 -> 93.6, and the second increment shrinks to 15.2.",
+    "Non-WHEAT period realization also expands sharply by Day8-12: opponent SELL cash 18267.4 versus self 4379.4, while a new G2 future-value cohort is being built.",
+    "These observations support a generational amplification structure for opponent, but do not establish that any specific asset mix, intention, or single causal mechanism produces it."
+  ],
+  "boundary": [
+    "No Candidate, Direction, amplification score, or policy mutation is introduced.",
+    "Generation windows are public origin-day cohorts G0=[0,4), G1=[4,8), G2=[8,12).",
+    "Physical potential units and asset counts are preferred for cross-generation growth because current-price marks can move with prices.",
+    "SELL remains period-level and is not cohort-attributed.",
+    "Future potential is opportunity, not guaranteed realized profit.",
+    "No asset is ranked or declared independently causal."
+  ]
+}
