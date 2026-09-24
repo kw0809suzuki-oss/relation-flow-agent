@@ -1,0 +1,132 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-map.shape-sample.v0",
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal_self": 14166,
+      "terminal_opponent": 121526,
+      "terminal_map_residual": 107375,
+      "day4_residual": 12562,
+      "day8_residual": 22840,
+      "day12_residual": 41180,
+      "day20_residual": 80930
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal_self": 11764,
+      "terminal_opponent": 108228,
+      "terminal_map_residual": 96088,
+      "day4_residual": 12642,
+      "day8_residual": 22616,
+      "day12_residual": 40183,
+      "day20_residual": 80013
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal_self": 45856,
+      "terminal_opponent": null,
+      "terminal_map_residual": 95164,
+      "day4_residual": 12762,
+      "day8_residual": 21266,
+      "day12_residual": 40026,
+      "day20_residual": 72811
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal_self": 34885,
+      "terminal_opponent": null,
+      "terminal_map_residual": 128986,
+      "day4_residual": 12762,
+      "day8_residual": 23080,
+      "day12_residual": 42772,
+      "day20_residual": 93131
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal_self": 13543,
+      "terminal_opponent": null,
+      "terminal_map_residual": 90653,
+      "day4_residual": 12631,
+      "day8_residual": 22413,
+      "day12_residual": 39311,
+      "day20_residual": 71207
+    }
+  ],
+  "common_early_shape": {
+    "day0_core_exactly_identical_across_5": true,
+    "first_residual_over_1000": {
+      "day": 0,
+      "hour": 10
+    },
+    "first_residual_over_5000": {
+      "day": 0,
+      "hour": 14
+    },
+    "first_residual_over_10000": {
+      "day": 0,
+      "hour": 17
+    },
+    "day1_h0_residual": 10833,
+    "day0_h10": {
+      "total_residual": 2241,
+      "cash_residual": -1299,
+      "inventory_residual": 510,
+      "committed_production_residual": 3030
+    },
+    "day0_h14": {
+      "total_residual": 6699,
+      "cash_residual": -1269,
+      "inventory_residual": 450,
+      "committed_production_residual": 7518
+    },
+    "day0_h17": {
+      "total_residual": 11799,
+      "cash_residual": -1179,
+      "inventory_residual": 360,
+      "committed_production_residual": 12618
+    }
+  },
+  "first_map_divergence": {
+    "from_seed7351": {
+      "seed7352": {
+        "day": 3,
+        "hour": 1,
+        "residual_difference": 16
+      },
+      "seed7353": {
+        "day": 3,
+        "hour": 1,
+        "residual_difference": 40
+      },
+      "seed7354": {
+        "day": 3,
+        "hour": 1,
+        "residual_difference": 40
+      },
+      "seed7355": {
+        "day": 3,
+        "hour": 1,
+        "residual_difference": 16
+      }
+    }
+  },
+  "observed_shape": [
+    "Across all five fixed Battles, the first >1k, >5k, and >10k observable-economic residual thresholds occur at the same Day0 hours.",
+    "The complete Day0 Cash / liquidatable inventory / committed-production map is identical across all five cases.",
+    "At Day0 h10/h14/h17, self still has more Cash than opponent, while opponent's committed-production mark is already ahead by 3,030 / 7,518 / 12,618 respectively.",
+    "The five maps remain identical through Day2 h23 and first diverge at Day3 h1 by only 16-40 mark units relative to seed7351.",
+    "After Day3 the trajectories spread, but the early production-dominant separation shape is shared by all five sampled Battles."
+  ],
+  "boundary": [
+    "This is a shape comparison of five individual Battle maps, not an averaged trajectory.",
+    "No cause, Action diagnosis, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred.",
+    "Observable Economic Mark remains a visualization mark with its components preserved separately.",
+    "Five cases establish a repeated sampled shape, not universal behavior over all seeds."
+  ],
+  "next_question": "Within the shared Day0 h10-h17 separation region, what public productive-State composition accounts for the committed-production residual?"
+}
