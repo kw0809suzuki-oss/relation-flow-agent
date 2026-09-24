@@ -326,8 +326,8 @@ def main():
         errors=[abs(float(x.get("error",0) or 0)) for x in raw["cash_validation"]]
         if any(e>1e-9 for e in errors):
             raise SystemExit(f"Cash reconstruction failed seed {raw['seed']}: {errors}")
-        if int(raw["audit"].get("unmapped_farm_events",0) or 0)>0:
-            raise SystemExit(f"Unmapped farm events seed {raw['seed']}: {raw['audit']['unmapped_farm_events']}")
+        if int(raw["audit"].get("unmapped_relevant_events",0) or 0)>0:
+            raise SystemExit(f"Unmapped relevant events seed {raw['seed']}: {raw['audit']['unmapped_relevant_events']}")
 
     cases=[]
     for raw in raws:
