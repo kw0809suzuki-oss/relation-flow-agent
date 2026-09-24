@@ -1,0 +1,190 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-map.day0-common-productive-shape.v0",
+  "battle_sample": [
+    {
+      "seed": 7351,
+      "seat": 0
+    },
+    {
+      "seed": 7352,
+      "seat": 1
+    },
+    {
+      "seed": 7353,
+      "seat": 0
+    },
+    {
+      "seed": 7354,
+      "seat": 1
+    },
+    {
+      "seed": 7355,
+      "seat": 0
+    }
+  ],
+  "all_values_identical_across_5": true,
+  "checkpoints": {
+    "day0_h10": {
+      "committed_production_residual": 3030,
+      "crop_residual": {
+        "total_mark": 1176,
+        "WHEAT": {
+          "count": -3,
+          "potential_units": -12,
+          "mark": -360
+        },
+        "CARROT": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "TOMATO": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "STRAWBERRY": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "MELON": {
+          "count": 1,
+          "potential_units": 6,
+          "mark": 1536
+        }
+      },
+      "animal_residual": {
+        "total_mark": 1854,
+        "GOOSE": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "COW": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "SHEEP": {
+          "count": 1,
+          "potential_units": 9,
+          "mark": 1854
+        }
+      }
+    },
+    "day0_h14": {
+      "committed_production_residual": 7518,
+      "crop_residual": {
+        "total_mark": 5664,
+        "WHEAT": {
+          "count": -4,
+          "potential_units": -16,
+          "mark": -480
+        },
+        "CARROT": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "TOMATO": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "STRAWBERRY": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "MELON": {
+          "count": 4,
+          "potential_units": 24,
+          "mark": 6144
+        }
+      },
+      "animal_residual": {
+        "total_mark": 1854,
+        "GOOSE": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "COW": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "SHEEP": {
+          "count": 1,
+          "potential_units": 9,
+          "mark": 1854
+        }
+      }
+    },
+    "day0_h17": {
+      "committed_production_residual": 12618,
+      "crop_residual": {
+        "total_mark": 8736,
+        "WHEAT": {
+          "count": -4,
+          "potential_units": -16,
+          "mark": -480
+        },
+        "CARROT": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "TOMATO": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "STRAWBERRY": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "MELON": {
+          "count": 6,
+          "potential_units": 36,
+          "mark": 9216
+        }
+      },
+      "animal_residual": {
+        "total_mark": 3882,
+        "GOOSE": {
+          "count": 0,
+          "potential_units": 0,
+          "mark": 0
+        },
+        "COW": {
+          "count": 1,
+          "potential_units": 12,
+          "mark": 2028
+        },
+        "SHEEP": {
+          "count": 1,
+          "potential_units": 9,
+          "mark": 1854
+        }
+      }
+    }
+  },
+  "observed_shape": [
+    "The five sampled Battles share exactly the same Day0 productive-State residual at h10, h14, and h17.",
+    "The crop-side residual is entirely MELON ahead for opponent offset by WHEAT ahead for self; CARROT, TOMATO, and STRAWBERRY contribute zero residual at these checkpoints.",
+    "The animal-side residual is SHEEP +1 from h10 onward, with COW +1 added by h17; GOOSE contributes zero residual.",
+    "The h10->h17 committed-production residual grows by 9,588 mark units: 7,560 from crop-side growth and 2,028 from animal-side growth.",
+    "The shared early shape is therefore a concrete public World-State composition, not yet a causal explanation."
+  ],
+  "boundary": [
+    "Residual signs are opponent minus self.",
+    "Current-price productive marks are valuations under the existing WB-0001 assumptions, not realized Cash or guaranteed profit.",
+    "No claim is made that MELON, SHEEP, or COW should be selected.",
+    "No Action, mechanism, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred.",
+    "This closes one composition layer and returns to the whole Battle Value Map before any deeper probe."
+  ],
+  "reentry_question": "Given that the common Day0 separation is already concretely MELON/SHEEP/COW versus self's additional WHEAT, how much of the later terminal residual is visibly carried forward from this early State shape versus created by later amplification?"
+}
