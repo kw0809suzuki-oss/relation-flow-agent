@@ -1,4 +1,5 @@
 name: Allocation-to-Commitment Bridge v0 Fresh10
+# rerun: observer-global-fix-1
 
 permissions:
   contents: read
