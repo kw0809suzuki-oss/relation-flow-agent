@@ -321,7 +321,7 @@ def main():
             if not isinstance(obs,dict):
                 continue
             day=int(obs.get("day",0) or 0)
-            if day>=4:
+            if day>=8:
                 continue
             private=obs.get("private",{}) or {}
             farm=(obs.get("farms",[]) or [{},{}])[p]
