@@ -1,0 +1,63 @@
+name: Strong Origin v2 Initial Cycle Archetypes Fresh10
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/strong-origin-v2-initial-cycle-archetypes-fresh10.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7421, seat: 0}
+          - {seed: 7422, seat: 1}
+          - {seed: 7423, seat: 0}
+          - {seed: 7424, seat: 1}
+          - {seed: 7425, seat: 0}
+          - {seed: 7426, seat: 1}
+          - {seed: 7427, seat: 0}
+          - {seed: 7428, seat: 1}
+          - {seed: 7429, seat: 0}
+          - {seed: 7430, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_strong_origin_v2_initial_cycle_archetypes_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: initial-cycle-archetypes-${{ matrix.seed }}
+          path: strong_origin_v2_initial_cycle_archetypes_v0_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: battle
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: initial-cycle-archetypes-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_strong_origin_v2_initial_cycle_archetypes_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: strong-origin-v2-initial-cycle-archetypes-fresh10
+          path: strong_origin_v2_initial_cycle_archetypes_v0_aggregate.json
