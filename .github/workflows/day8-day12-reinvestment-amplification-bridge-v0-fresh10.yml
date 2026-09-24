@@ -1,4 +1,5 @@
 name: Day8-Day12 Reinvestment Amplification Bridge v0 Fresh10
+# rerun after zero-generation aggregation fix
 
 permissions:
   contents: read
