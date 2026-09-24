@@ -1,0 +1,162 @@
+{
+  "schema": "kaggriculture.market-state-schedule.v0",
+  "schedule_id": "MSS-0001",
+  "world": {
+    "environment": "kaggriculture",
+    "environment_version": "0.1.0",
+    "public_rule_repository": "Kaggle/kaggle-environments",
+    "public_rule_commit": "b2405492c8403f6649f9317290f215e0290a2425",
+    "public_rule_file": "kaggle_environments/envs/kaggriculture/kaggriculture.py",
+    "configuration_file": "kaggle_environments/envs/kaggriculture/kaggriculture.json"
+  },
+  "purpose": "Fixed public-rule terrain from sellable shed inventory and shared market state to realized SELL Cash. Battle traces are later projected onto this terrain.",
+  "market_initial_state": {
+    "inventory_per_product": 10000,
+    "price_per_product": "base price from MARKET_PARAMS",
+    "price_floor": 1
+  },
+  "price_rule": {
+    "coordinate": "shared market inventory for the item",
+    "formula": "price(inv)=base + sign*amp*f(|inv-I0|), floored at PRICE_FLOOR",
+    "below_I0": "sign=+1, use below_func and below_target",
+    "above_or_equal_I0": "sign=-1, use above_func and above_target",
+    "amplitude": "target * base / f(T)",
+    "note": "Price is a state function of market inventory, not a fixed function of day or Battle time."
+  },
+  "shapes": {
+    "linear": "f(x)=x",
+    "sq": "f(x)=x^2",
+    "sqrt": "f(x)=sqrt(x)",
+    "log": "f(x)=ln(1+x)",
+    "log10": "f(x)=log10(1+x)",
+    "hinge": "u=x/T; f=u + 8*max(0,u-1)^2"
+  },
+  "products": {
+    "WHEAT": {
+      "base": 25,
+      "I0": 10000,
+      "T": 400,
+      "below_func": "sqrt",
+      "below_target": 0.8,
+      "above_func": "log",
+      "above_target": 0.2
+    },
+    "CARROT": {
+      "base": 35,
+      "I0": 10000,
+      "T": 450,
+      "below_func": "hinge",
+      "below_target": 1,
+      "above_func": "sqrt",
+      "above_target": 0.7
+    },
+    "TOMATO": {
+      "base": 60,
+      "I0": 10000,
+      "T": 200,
+      "below_func": "hinge",
+      "below_target": 0.4,
+      "above_func": "sqrt",
+      "above_target": 0.6
+    },
+    "STRAWBERRY": {
+      "base": 120,
+      "I0": 10000,
+      "T": 100,
+      "below_func": "sqrt",
+      "below_target": 0.7,
+      "above_func": "linear",
+      "above_target": 1.6
+    },
+    "MELON": {
+      "base": 250,
+      "I0": 10000,
+      "T": 300,
+      "below_func": "log",
+      "below_target": 0.2,
+      "above_func": "sq",
+      "above_target": 3.6
+    },
+    "EGG": {
+      "base": 50,
+      "I0": 10000,
+      "T": 332,
+      "below_func": "hinge",
+      "below_target": 0.4,
+      "above_func": "log",
+      "above_target": 0.2
+    },
+    "MILK": {
+      "base": 160,
+      "I0": 10000,
+      "T": 122,
+      "below_func": "sqrt",
+      "below_target": 0.6,
+      "above_func": "linear",
+      "above_target": 1.6
+    },
+    "WOOL": {
+      "base": 200,
+      "I0": 10000,
+      "T": 105,
+      "below_func": "log",
+      "below_target": 0.2,
+      "above_func": "sq",
+      "above_target": 3.2
+    },
+    "FERTILIZER": {
+      "base": 100,
+      "I0": 10000,
+      "T": 200,
+      "below_func": "linear",
+      "below_target": 0.4,
+      "above_func": "linear",
+      "above_target": 0.4
+    }
+  },
+  "sell_transition": {
+    "source_state": "private shed inventory",
+    "carried_inventory_sellable": false,
+    "condition": "shed[item] > 0 and valid SELL order unit",
+    "quote": "market_price(item, current market inventory[item])",
+    "on_success": [
+      "shed[item] decreases by 1",
+      "farm Cash increases by quoted price",
+      "if quoted price > 1, shared market inventory[item] increases by 1",
+      "if quoted price == 1, market inventory does not increase"
+    ],
+    "unit_processing": "SELL / BUY_* are processed per unit in lockstep. At each unit, both players are quoted from the same pre-commit market inventory for that unit.",
+    "price_refresh": "After each market order queue slot finishes its per-unit loop, prices for all products are refreshed."
+  },
+  "order_surface": {
+    "max_market_orders_per_turn_default": 10,
+    "note": "This limits order-list entries, not the quantity field inside one valid SELL/BUY order.",
+    "sell_quantity_limit": "actual successful units are bounded by shed stock; malformed/failed order stops that order",
+    "buy_product_shed_capacity_default": 100
+  },
+  "exogenous_market_demand": {
+    "processing_order": "after player market processing each turn",
+    "town_shop_sell_interval_default_turns": 4,
+    "town_center_sell_interval_default_turns": 24,
+    "town_center_rule": "on matching steps, market inventory decreases by 1 for every non-FERTILIZER product",
+    "shop_rule": "on matching steps, each unlocked shop instance decreases market inventory by 1 for each listed product; single-product shops decrease by 2",
+    "shop_unlock_interval_days_default": 3,
+    "shop_unlock_rule": "at end-of-day, if next_day is a positive multiple of interval and fewer than 8 shop instances exist, one shop is drawn with replacement using deterministic environment RNG keyed by seed and day",
+    "max_shop_instances": 8,
+    "note": "The rule is fixed. The realized unlocked-shop path is Battle-seed/state data and belongs to the Battle overlay, not this fixed schedule."
+  },
+  "relevant_asset_outputs": {
+    "WHEAT": "WHEAT",
+    "MELON": "MELON",
+    "STRAWBERRY": "STRAWBERRY",
+    "COW": "MILK",
+    "SHEEP": "WOOL"
+  },
+  "boundaries": [
+    "No time-only price curve is asserted; price depends on shared market inventory.",
+    "No profitability, expected score, asset ranking, or causal interpretation is encoded.",
+    "The schedule describes legal market transformation only.",
+    "Battle-specific market inventory, unlocked shops, SELL choices and realized prices are overlay data.",
+    "Asset State Schedule and Market State Schedule remain separate."
+  ]
+}
