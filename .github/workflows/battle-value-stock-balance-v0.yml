@@ -39,3 +39,31 @@ jobs:
         with:
           name: battle-value-stock-balance-${{ matrix.seed }}
           path: battle_value_stock_balance_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+
+  aggregate:
+    needs: observe
+    if: ${{ needs.observe.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: battle-value-stock-balance-*
+          path: stock-balance-artifacts
+          merge-multiple: true
+      - run: python analyze_battle_value_stock_balance_v0.py
+      - name: Record compact stock-balance result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add battle_value_stock_balance_v0_result.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Record Day20-24 stock balance observation"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
