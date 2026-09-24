@@ -1,0 +1,211 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.composition-operating-return-bridge.result.v0",
+  "source_run_id": 35959742461,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day4_composition": {
+    "self": {
+      "cash": 1127,
+      "land_quadrants": 1,
+      "empty_unlocked_tiles": 8.9,
+      "productive_assets": 14.9,
+      "production_potential_mark": 9698.4,
+      "crops": {
+        "WHEAT": 9,
+        "MELON": 2,
+        "STRAWBERRY": 1.9
+      },
+      "animals": {
+        "COW": 2,
+        "SHEEP": 0
+      },
+      "seed_stock": {
+        "WHEAT": 3,
+        "MELON": 6,
+        "STRAWBERRY": 1.1
+      }
+    },
+    "opponent": {
+      "cash": 798.6,
+      "land_quadrants": 1,
+      "empty_unlocked_tiles": 1.9,
+      "productive_assets": 23,
+      "production_potential_mark": 22386.7,
+      "crops": {
+        "WHEAT": 11,
+        "MELON": 8,
+        "STRAWBERRY": 0
+      },
+      "animals": {
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "seed_stock": {
+        "WHEAT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0
+      }
+    }
+  },
+  "day4_to_8": {
+    "operating_spend": {
+      "self": {
+        "WHEAT": 4433.4,
+        "total": 4433.4
+      },
+      "opponent": {
+        "WHEAT": 2029.8,
+        "total": 2029.8
+      }
+    },
+    "observed_production_units": {
+      "self": {
+        "WHEAT": 14,
+        "MELON": 4.3,
+        "MILK": 12,
+        "WOOL": 0
+      },
+      "opponent": {
+        "WHEAT": 12,
+        "MELON": 22,
+        "MILK": 18,
+        "WOOL": 6
+      }
+    },
+    "observed_harvest_units": {
+      "self": {
+        "WHEAT": 27,
+        "WOOL": 0
+      },
+      "opponent": {
+        "WHEAT": 30,
+        "WOOL": 6
+      }
+    },
+    "sell_cash": {
+      "self": {
+        "WHEAT": 4872.5,
+        "FERTILIZER": 936.2,
+        "WOOL": 0,
+        "total": 5808.7
+      },
+      "opponent": {
+        "WHEAT": 2453.8,
+        "FERTILIZER": 1674.6,
+        "WOOL": 1317,
+        "total": 5445.4
+      }
+    },
+    "wheat_lane_after_operating": {
+      "self": 439.1,
+      "opponent": 424,
+      "opponent_minus_self": -15.1
+    },
+    "non_wheat_sell_cash": {
+      "self": 936.2,
+      "opponent": 2991.6,
+      "opponent_minus_self": 2055.4
+    },
+    "surplus_after_operating": {
+      "self": 1375.3,
+      "opponent": 3415.6,
+      "opponent_minus_self": 2040.3
+    },
+    "productive_spend": {
+      "self": {
+        "BUY_ANIMAL": 800,
+        "BUY_LAND": 0,
+        "BUY_SEED": 733,
+        "HIRE": 19,
+        "total": 1552
+      },
+      "opponent": {
+        "BUY_ANIMAL": 1300,
+        "BUY_LAND": 1000,
+        "BUY_SEED": 950,
+        "HIRE": 114,
+        "total": 3364
+      }
+    }
+  },
+  "day8_composition": {
+    "self": {
+      "cash": 950.3,
+      "land_quadrants": 1,
+      "empty_unlocked_tiles": 4.8,
+      "productive_assets": 18,
+      "production_potential_mark": 16750,
+      "crops": {
+        "WHEAT": 8.4,
+        "MELON": 2,
+        "STRAWBERRY": 3.6
+      },
+      "animals": {
+        "COW": 4,
+        "SHEEP": 0
+      },
+      "seed_stock": {
+        "WHEAT": 1.9,
+        "MELON": 6,
+        "STRAWBERRY": 5
+      }
+    },
+    "opponent": {
+      "cash": 850.2,
+      "land_quadrants": 2,
+      "empty_unlocked_tiles": 15.9,
+      "productive_assets": 33.9,
+      "production_potential_mark": 39210,
+      "crops": {
+        "WHEAT": 10,
+        "MELON": 11,
+        "STRAWBERRY": 6
+      },
+      "animals": {
+        "COW": 4.9,
+        "SHEEP": 2
+      },
+      "seed_stock": {
+        "WHEAT": 1,
+        "MELON": 0,
+        "STRAWBERRY": 0
+      }
+    }
+  },
+  "growth_day4_to_8": {
+    "self": {
+      "productive_assets": 3.1,
+      "production_potential_mark": 7051.6,
+      "cash": -176.7,
+      "land_quadrants": 0
+    },
+    "opponent": {
+      "productive_assets": 10.9,
+      "production_potential_mark": 16823.3,
+      "cash": 51.6,
+      "land_quadrants": 1
+    }
+  },
+  "derived_observations": [
+    "All observed Day4-8 operating BUY_PRODUCT spend is WHEAT for both sides.",
+    "After subtracting WHEAT operating spend from WHEAT SELL cash, the WHEAT lane is nearly equal: self +439.1, opponent +424.0.",
+    "The surplus gap is therefore almost entirely the non-WHEAT realization gap: opponent non-WHEAT SELL cash exceeds self by 2055.4, while the total surplus gap is 2040.3.",
+    "The Day4 State differs strongly in non-WHEAT productive composition: opponent begins with 8 MELON, 3 COW and 1 SHEEP versus self 2 MELON, 2 COW and no SHEEP.",
+    "During Day4-8, opponent also produces much more non-WHEAT output opportunity: MELON 22 vs 4.3, MILK 18 vs 12, WOOL 6 vs 0, while WHEAT production is similar or slightly lower (12 vs 14).",
+    "Current non-WHEAT realization and future-value accumulation coexist: opponent realizes more FERTILIZER and WOOL while also accumulating substantially more MELON/MILK production opportunity and Day8 production potential.",
+    "This supports a composition-level Return Profile difference, but does not establish that any single asset such as SHEEP or MELON is independently causal or optimal."
+  ],
+  "boundary": [
+    "No Candidate, Direction, score, or policy mutation was introduced.",
+    "Item-level spend and item-level return are not causally paired.",
+    "BUY_PRODUCT WHEAT is observed operating spend; its exact downstream use is not assumed here.",
+    "Cash is fungible and no SELL-to-spend lineage is claimed.",
+    "Day4 composition is starting context, not a proven sole cause.",
+    "No asset is ranked or assigned causal status."
+  ]
+}
