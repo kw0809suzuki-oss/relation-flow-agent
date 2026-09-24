@@ -40,9 +40,10 @@ OUT=Path(f"state_transition_growth_audit_v0_{SEED}.json")
 production_events=[]
 harvest_events=[]
 farm_player={}
+live_farms=[]
 _current_day=0
 _current_hour=0
-unmapped_farm_events=0
+unmapped_relevant_events=0
 
 
 def plain(v):
@@ -98,11 +99,21 @@ def export_states(env):
 
 
 def player_for_farm(farm):
-    global unmapped_farm_events
     p=farm_player.get(id(farm))
-    if p is None:
-        unmapped_farm_events+=1
-    return p
+    if p is not None:
+        return p
+    matches=[]
+    for i,known in enumerate(live_farms):
+        try:
+            if farm==known:
+                matches.append(i)
+        except Exception:
+            pass
+    if len(matches)==1:
+        p=matches[0]
+        farm_player[id(farm)]=p
+        return p
+    return None
 
 
 def tile_copy(farm,pos):
@@ -130,16 +141,17 @@ def observed_apply_unit_action(original):
         invs2=private.get("inventories",[]) or []
         after_inv=copy.deepcopy(invs2[idx] if 0<=idx<len(invs2) else {})
 
-        if p is None:
-            return
-
         if op=="WATER" and isinstance(before_tile,dict) and isinstance(after_tile,dict):
             crop=before_tile.get("crop")
             if crop and crop==after_tile.get("crop"):
                 before_y=int(before_tile.get("yield_units",0) or 0)
                 after_y=int(after_tile.get("yield_units",0) or 0)
                 if after_y>before_y:
-                    production_events.append({
+                    if p is None:
+                        global unmapped_relevant_events
+                        unmapped_relevant_events+=1
+                    else:
+                        production_events.append({
                         "player":p,
                         "transition_day":int(day),
                         "hour":int(_current_hour),
@@ -147,8 +159,8 @@ def observed_apply_unit_action(original):
                         "source":"WATER",
                         "item":crop,
                         "units":after_y-before_y,
-                        "asset_origin_day":int(before_tile.get("planted_day",day) or day),
-                    })
+                            "asset_origin_day":int(before_tile.get("planted_day",day) or day),
+                        })
 
         if op=="HARVEST" and isinstance(before_tile,dict):
             item=None
@@ -163,14 +175,17 @@ def observed_apply_unit_action(original):
             if item:
                 gained=int(after_inv.get(item,0) or 0)-int(before_inv.get(item,0) or 0)
                 if gained>0:
-                    harvest_events.append({
+                    if p is None:
+                        unmapped_relevant_events+=1
+                    else:
+                        harvest_events.append({
                         "player":p,
                         "day":int(day),
                         "hour":int(_current_hour),
                         "item":item,
                         "units":gained,
-                        "asset_origin_day":origin_day,
-                    })
+                            "asset_origin_day":origin_day,
+                        })
     return wrapped
 
 
@@ -183,8 +198,6 @@ def observed_daily_plants(original):
                 if isinstance(t,dict) and t.get("kind")=="PLANT":
                     before[(x,y)]=copy.deepcopy(t)
         original(farm,current_day,turns_per_day)
-        if p is None:
-            return
         for (x,y),bt in before.items():
             try:at=farm["tiles"][y][x]
             except Exception:continue
@@ -193,7 +206,11 @@ def observed_daily_plants(original):
             by=int(bt.get("yield_units",0) or 0)
             ay=int(at.get("yield_units",0) or 0)
             if ay>by:
-                production_events.append({
+                if p is None:
+                    global unmapped_relevant_events
+                    unmapped_relevant_events+=1
+                else:
+                    production_events.append({
                     "player":p,
                     "transition_day":int(current_day),
                     "hour":24,
@@ -201,8 +218,8 @@ def observed_daily_plants(original):
                     "source":"DAILY_CROP",
                     "item":bt.get("crop"),
                     "units":ay-by,
-                    "asset_origin_day":int(bt.get("planted_day",current_day) or current_day),
-                })
+                        "asset_origin_day":int(bt.get("planted_day",current_day) or current_day),
+                    })
     return wrapped
 
 
@@ -215,8 +232,6 @@ def observed_daily_animals(original):
                 if isinstance(t,dict) and t.get("animal"):
                     before[(x,y)]=copy.deepcopy(t)
         original(farm,day)
-        if p is None:
-            return
         for (x,y),bt in before.items():
             try:at=farm["tiles"][y][x]
             except Exception:continue
@@ -226,7 +241,11 @@ def observed_daily_animals(original):
             ay=int(at.get("yield_units",0) or 0)
             if ay>by:
                 animal=bt.get("animal")
-                production_events.append({
+                if p is None:
+                    global unmapped_relevant_events
+                    unmapped_relevant_events+=1
+                else:
+                    production_events.append({
                     "player":p,
                     "transition_day":int(day),
                     "hour":24,
@@ -235,8 +254,8 @@ def observed_daily_animals(original):
                     "item":kg.ANIMALS[animal]["product"],
                     "units":ay-by,
                     "animal":animal,
-                    "asset_origin_day":int(bt.get("placed_day",day) or day),
-                })
+                        "asset_origin_day":int(bt.get("placed_day",day) or day),
+                    })
     return wrapped
 
 
@@ -245,6 +264,7 @@ def measured_market_with_time(state,env):
     obs0=state[0].observation
     _current_day=int(getv(obs0,"day",0) or 0)
     _current_hour=int(getv(obs0,"hour",0) or 0)
+    live_farms[:] = list(obs0.farms)
     for p,farm in enumerate(obs0.farms):
         farm_player[id(farm)]=p
     before=len(exact.events)
@@ -255,19 +275,21 @@ def measured_market_with_time(state,env):
 
 
 def main():
-    global _current_day,_current_hour,unmapped_farm_events
+    global _current_day,_current_hour,unmapped_relevant_events
     configure()
     production_events.clear()
     harvest_events.clear()
     farm_player.clear()
-    unmapped_farm_events=0
+    live_farms.clear()
+    unmapped_relevant_events=0
     exact.ledger=[defaultdict(float),defaultdict(float)]
     exact.units=[defaultdict(int),defaultdict(int)]
     exact.events=[]
 
     env=make("kaggriculture",configuration={"seed":SEED},debug=False)
     initial=[float(env.state[p].observation.farms[p].money) for p in (0,1)]
-    for p,farm in enumerate(env.state[0].observation.farms):
+    live_farms[:] = list(env.state[0].observation.farms)
+    for p,farm in enumerate(live_farms):
         farm_player[id(farm)]=p
 
     original_market=kg._process_market
@@ -328,7 +350,7 @@ def main():
         "cash_validation":cash_validation,
         "audit":{
             "missing_target_states":missing,
-            "unmapped_farm_events":unmapped_farm_events,
+            "unmapped_relevant_events":unmapped_relevant_events,
             "production_event_count":len(production_events),
             "harvest_event_count":len(harvest_events),
             "market_event_count":len(exact.events),
