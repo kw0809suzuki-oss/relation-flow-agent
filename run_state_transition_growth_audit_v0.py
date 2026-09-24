@@ -321,20 +321,41 @@ def main():
             if not isinstance(obs,dict):
                 continue
             day=int(obs.get("day",0) or 0)
-            if day>=8:
+            if day>=12:
                 continue
             private=obs.get("private",{}) or {}
             farm=(obs.get("farms",[]) or [{},{}])[p]
             tiles=farm.get("tiles",[]) or []
             empty=sum(1 for row in tiles for t in (row or []) if t is None)
             seeds=private.get("seeds",{}) or {}
+            maturity_assets=[]
+            for row in tiles:
+                for t in row or []:
+                    if not isinstance(t,dict):
+                        continue
+                    if t.get("kind")=="PLANT" and t.get("crop"):
+                        maturity_assets.append({
+                            "asset_type":"crop",
+                            "asset":str(t.get("crop")),
+                            "origin_day":int(day if t.get("planted_day") is None else t.get("planted_day")),
+                            "yield_units":int(t.get("yield_units",0) or 0),
+                        })
+                    elif t.get("animal"):
+                        maturity_assets.append({
+                            "asset_type":"animal",
+                            "asset":str(t.get("animal")),
+                            "origin_day":int(day if t.get("placed_day") is None else t.get("placed_day")),
+                            "yield_units":int(t.get("yield_units",0) or 0),
+                        })
             commitment_trace[str(p)].append({
                 "step_index":step_index,
                 "day":day,
                 "hour":int(obs.get("hour",0) or 0),
+                "cash":float(farm.get("money",0) or 0),
                 "seed_stock":{k:int(v or 0) for k,v in seeds.items()},
                 "empty_tiles":empty,
                 "workers":1+len(farm.get("hands",[]) or []),
+                "maturity_assets":maturity_assets,
             })
 
     cash_validation=[]
