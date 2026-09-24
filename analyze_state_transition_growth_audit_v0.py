@@ -58,7 +58,7 @@ def next_output_schedule(obs):
             crop=t.get("crop")
             if crop in econ.CROPS:
                 rule=econ.CROPS[crop]
-                planted=int(t.get("planted_day",day) or day)
+                planted=int(day if t.get("planted_day") is None else t.get("planted_day"))
                 held=int(t.get("yield_units",0) or 0)
                 age=day-planted
                 next_day=None
@@ -98,7 +98,7 @@ def next_output_schedule(obs):
             animal=t.get("animal")
             if animal in econ.ANIMALS:
                 rule=econ.ANIMALS[animal]
-                placed=int(t.get("placed_day",day) or day)
+                placed=int(day if t.get("placed_day") is None else t.get("placed_day"))
                 held=int(t.get("yield_units",0) or 0)
                 next_day=None
                 reason=None
