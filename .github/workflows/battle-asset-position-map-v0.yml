@@ -1,0 +1,34 @@
+name: Battle Asset Position Map v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/battle-asset-position-map-v0.yml
+  workflow_dispatch:
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      BATTLE_SEED: 7351
+      BATTLE_SEAT: 0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_battle_asset_position_map_v0.py
+      - run: python analyze_battle_asset_position_map_v0.py battle_asset_position_map_v0_7351_seat0.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: battle-asset-position-map-v0-7351
+          path: |
+            battle_asset_position_map_v0_7351_seat0.json
+            battle_asset_position_map_v0_summary.json
