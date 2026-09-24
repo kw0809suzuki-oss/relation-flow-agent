@@ -7,6 +7,9 @@ on:
   push:
     branches: [experiment/sb01-economic-layer-export-v0-20260923]
     paths:
+      - market_state_schedule_v0.json
+      - run_battle_market_position_map_v0.py
+      - analyze_battle_market_position_map_pulse_sample_v0.py
       - .github/workflows/battle-market-position-map-pulse-sample-v0.yml
   workflow_dispatch:
 
