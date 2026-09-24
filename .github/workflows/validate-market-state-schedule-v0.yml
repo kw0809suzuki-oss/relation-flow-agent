@@ -1,0 +1,25 @@
+name: Validate Market State Schedule v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - market_state_schedule_v0.json
+      - validate_market_state_schedule_v0.py
+      - .github/workflows/validate-market-state-schedule-v0.yml
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python validate_market_state_schedule_v0.py
