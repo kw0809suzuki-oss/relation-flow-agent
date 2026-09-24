@@ -1,0 +1,106 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-map.day0-production-composition.v0",
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0
+    },
+    {
+      "seed": 7352,
+      "seat": 1
+    },
+    {
+      "seed": 7353,
+      "seat": 0
+    },
+    {
+      "seed": 7354,
+      "seat": 1
+    },
+    {
+      "seed": 7355,
+      "seat": 0
+    }
+  ],
+  "common_across_all_5": true,
+  "checkpoints": {
+    "day0_h10": {
+      "self": {
+        "crop_mark": 360,
+        "animal_mark": 4056,
+        "committed_production_mark": 4416,
+        "productive_assets": 5
+      },
+      "opponent": {
+        "crop_mark": 1536,
+        "animal_mark": 5910,
+        "committed_production_mark": 7446,
+        "productive_assets": 4
+      },
+      "residual": {
+        "crop_mark": 1176,
+        "animal_mark": 1854,
+        "committed_production_mark": 3030
+      }
+    },
+    "day0_h14": {
+      "self": {
+        "crop_mark": 600,
+        "animal_mark": 4056,
+        "committed_production_mark": 4656,
+        "productive_assets": 7
+      },
+      "opponent": {
+        "crop_mark": 6264,
+        "animal_mark": 5910,
+        "committed_production_mark": 12174,
+        "productive_assets": 8
+      },
+      "residual": {
+        "crop_mark": 5664,
+        "animal_mark": 1854,
+        "committed_production_mark": 7518
+      }
+    },
+    "day0_h17": {
+      "self": {
+        "crop_mark": 840,
+        "animal_mark": 4056,
+        "committed_production_mark": 4896,
+        "productive_assets": 9
+      },
+      "opponent": {
+        "crop_mark": 9576,
+        "animal_mark": 7938,
+        "committed_production_mark": 17514,
+        "productive_assets": 13
+      },
+      "residual": {
+        "crop_mark": 8736,
+        "animal_mark": 3882,
+        "committed_production_mark": 12618
+      }
+    }
+  },
+  "growth_h10_to_h17": {
+    "committed_production_residual_growth": 9588,
+    "crop_residual_growth": 7560,
+    "animal_residual_growth": 2028,
+    "crop_share_of_growth": 0.7884856070087609,
+    "animal_share_of_growth": 0.21151439299123906
+  },
+  "observed_shape": [
+    "The Day0 committed-production residual is composed entirely of crop and animal production marks in Battle Value Map v0.",
+    "At h10 the residual is mixed: crop +1,176 and animal +1,854.",
+    "From h10 to h14, all additional committed-production residual growth comes from crop mark: crop residual rises by +4,488 while animal residual remains +1,854.",
+    "From h14 to h17 both components grow: crop residual +3,072 and animal residual +2,028.",
+    "Across h10->h17, 7,560 of the 9,588 increase in committed-production residual is crop-side (~78.8%), with 2,028 animal-side (~21.2%).",
+    "All five sampled Battles have the same values at all three checkpoints."
+  ],
+  "boundary": [
+    "This opens only one public-State composition layer beneath committed-production mark.",
+    "No crop type, animal type, Action, cause, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred.",
+    "Current-price marks are valuations under the existing Battle Value Map assumptions, not realized Cash or guaranteed future profit."
+  ],
+  "next_question": "Within the crop-side residual that expands from +1,176 to +8,736 during Day0 h10-h17, which public crop productive states account for the growth?"
+}
