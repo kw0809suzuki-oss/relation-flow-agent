@@ -1,0 +1,31 @@
+name: Battle Value Map v0 Anchor
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/battle-value-map-v0-anchor.yml
+  workflow_dispatch:
+
+jobs:
+  map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      BATTLE_SEED: 7351
+      BATTLE_SEAT: 0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_battle_value_map_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: battle-value-map-v0-seed7351-seat0
+          path: battle_value_map_v0_7351_seat0.json
