@@ -1,0 +1,188 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-map.day12-day20-value-form-sequence.v0",
+  "battle_sample": [
+    {
+      "seed": 7351,
+      "seat": 0
+    },
+    {
+      "seed": 7352,
+      "seat": 1
+    },
+    {
+      "seed": 7353,
+      "seat": 0
+    },
+    {
+      "seed": 7354,
+      "seat": 1
+    },
+    {
+      "seed": 7355,
+      "seat": 0
+    }
+  ],
+  "day12_to_day20_growth": {
+    "7351": {
+      "cash": 22503,
+      "committed_production": 16807,
+      "inventory": 440,
+      "total": 39750
+    },
+    "7352": {
+      "cash": 23520,
+      "committed_production": 16071,
+      "inventory": 239,
+      "total": 39830
+    },
+    "7353": {
+      "cash": 18441,
+      "committed_production": 11746,
+      "inventory": 2598,
+      "total": 32785
+    },
+    "7354": {
+      "cash": 29541,
+      "committed_production": 18236,
+      "inventory": 2582,
+      "total": 50359
+    },
+    "7355": {
+      "cash": 17933,
+      "committed_production": 13103,
+      "inventory": 860,
+      "total": 31896
+    }
+  },
+  "common_daily_sequence": {
+    "day12_to_day13": {
+      "cash_growth_range": [
+        4459,
+        5910
+      ],
+      "production_growth_range": [
+        4103,
+        5269
+      ],
+      "inventory_growth_range": [
+        -5541,
+        -3709
+      ],
+      "shape": "Cash residual and Committed Production residual both rise; inventory residual falls."
+    },
+    "day13_to_day14": {
+      "cash_growth_range": [
+        -5272,
+        -1514
+      ],
+      "production_growth_range": [
+        10963,
+        15696
+      ],
+      "inventory_growth_range": [
+        1825,
+        4582
+      ],
+      "shape": "Committed Production residual surges in all 5 while Cash residual contracts in all 5."
+    },
+    "day14_to_day15": {
+      "cash_growth_range": [
+        3597,
+        6956
+      ],
+      "production_growth_range": [
+        -5837,
+        -1748
+      ],
+      "inventory_growth_range": [
+        2749,
+        3127
+      ],
+      "shape": "Cash residual rises in all 5 while Committed Production residual contracts in all 5."
+    },
+    "day15_to_day16": {
+      "cash_growth_range": [
+        2001,
+        3468
+      ],
+      "production_growth_range": [
+        1149,
+        2669
+      ],
+      "inventory_growth_range": [
+        -2490,
+        -718
+      ],
+      "shape": "Cash and Committed Production residual both rise again."
+    },
+    "day16_to_day17": {
+      "cash_growth_range": [
+        -1139,
+        379
+      ],
+      "production_growth_range": [
+        3136,
+        6573
+      ],
+      "inventory_growth_range": [
+        -510,
+        956
+      ],
+      "shape": "A second Production-led pulse: production rises strongly while cash is roughly flat or slightly negative."
+    },
+    "day17_to_day18": {
+      "cash_growth_range": [
+        2681,
+        8516
+      ],
+      "production_growth_range": [
+        -9787,
+        -2842
+      ],
+      "inventory_growth_range": [
+        -871,
+        1193
+      ],
+      "shape": "A second Cash-led pulse: cash rises strongly while production contracts in all 5."
+    },
+    "day18_to_day19": {
+      "shape": "Mixed across Battles; this is where the five trajectories cease sharing one simple component pattern."
+    },
+    "day19_to_day20": {
+      "cash_growth_range": [
+        2594,
+        6380
+      ],
+      "shape": "Cash residual rises in all 5; production behavior is mixed."
+    }
+  },
+  "value_form_order": [
+    "Day12->13: Cash + Production together",
+    "Day13->14: Production-led expansion",
+    "Day14->15: Cash-led expansion while Production contracts",
+    "Day15->16: Cash + Production together",
+    "Day16->17: second Production-led expansion",
+    "Day17->18: second Cash-led expansion while Production contracts",
+    "Day18->20: trajectories become more mixed, but Cash growth remains prominent"
+  ],
+  "endpoint_observation": {
+    "day20_incremental_growth_cash_exceeds_production_in_all_5": true,
+    "note": "This refers to growth accumulated from Day12 to Day20. Absolute Committed Production residual at Day20 is still larger than absolute Cash residual in all five maps."
+  },
+  "observed_shape": [
+    "The largest Day12->20 amplification phase is not a single monotonic Cash or Production process.",
+    "Across all five Battles, residual growth alternates between Production-led and Cash-led phases.",
+    "The strongest common Production-led jump is Day13->14.",
+    "The clearest common Cash-led response-shaped interval is Day14->15, where Cash residual rises while Production residual falls in all five.",
+    "A similar Production-led then Cash-led sequence repeats around Day16->18.",
+    "By Day20, cumulative Cash-residual growth since Day12 exceeds cumulative Production-residual growth in all five cases, although the absolute Production residual remains larger.",
+    "This establishes a repeated value-form sequence, not a causal conversion from Production to Cash."
+  ],
+  "boundary": [
+    "All statements are descriptive of residual value forms.",
+    "Production contraction concurrent with Cash growth is not asserted to be causal conversion.",
+    "No Action, mechanism, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred.",
+    "The next layer should remain public-world-side and ask which realized-output / productive-State changes coincide with the repeated Production-led and Cash-led intervals."
+  ],
+  "next_open": "Open one public layer around the repeated Day13->15 and Day16->18 sequences: actual output / realized SELL / productive-State mark, without Action or internal interpretation."
+}
