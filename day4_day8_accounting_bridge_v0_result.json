@@ -1,0 +1,155 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.day4-day8-accounting-bridge.v0",
+  "source_run_id": 35944495476,
+  "source_artifact_id": 10785643697,
+  "battle_count": 10,
+  "terminal": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day4": {
+    "self": {
+      "cash": 1127,
+      "productive_assets": 14.9,
+      "production_potential": 9698.4,
+      "crop": {
+        "WHEAT": 9,
+        "MELON": 2,
+        "STRAWBERRY": 1.9
+      },
+      "animal": {
+        "COW": 2,
+        "SHEEP": 0
+      },
+      "due_by_day8": {
+        "WHEAT": 9,
+        "MILK": 2
+      }
+    },
+    "opponent": {
+      "cash": 798.6,
+      "productive_assets": 23,
+      "production_potential": 22386.7,
+      "crop": {
+        "WHEAT": 11,
+        "MELON": 8,
+        "STRAWBERRY": 0
+      },
+      "animal": {
+        "COW": 3,
+        "SHEEP": 1
+      },
+      "due_by_day8": {
+        "WHEAT": 11,
+        "MILK": 3,
+        "WOOL": 1
+      }
+    }
+  },
+  "day4_to_day8": {
+    "self": {
+      "sell": 5808.7,
+      "wheat_sell": 4872.5,
+      "non_wheat_sell": 936.2,
+      "operating_spend": 4433.4,
+      "net_wheat_after_operating": 439.1,
+      "surplus_after_operating": 1375.3,
+      "productive_spend": 1552,
+      "cash_growth": -176.7,
+      "bridge_error": 0,
+      "productive_assets_growth": 3.1,
+      "production_potential_growth": 7051.6,
+      "land_growth": 0,
+      "sell_by_item": {
+        "WHEAT": 4872.5,
+        "FERTILIZER": 936.2
+      },
+      "productive_spend_by_op": {
+        "BUY_ANIMAL": 800,
+        "BUY_SEED": 733,
+        "HIRE": 19
+      }
+    },
+    "opponent": {
+      "sell": 5445.4,
+      "wheat_sell": 2453.8,
+      "non_wheat_sell": 2991.6,
+      "operating_spend": 2029.8,
+      "net_wheat_after_operating": 424,
+      "surplus_after_operating": 3415.6,
+      "productive_spend": 3364,
+      "cash_growth": 51.6,
+      "bridge_error": 0,
+      "productive_assets_growth": 10.9,
+      "production_potential_growth": 16823.3,
+      "land_growth": 1,
+      "sell_by_item": {
+        "WHEAT": 2453.8,
+        "FERTILIZER": 1674.6,
+        "WOOL": 1317
+      },
+      "productive_spend_by_op": {
+        "BUY_ANIMAL": 1300,
+        "BUY_LAND": 1000,
+        "BUY_SEED": 950,
+        "HIRE": 114
+      }
+    },
+    "gap_opponent_minus_self": {
+      "gross_sell": -363.3,
+      "non_wheat_sell": 2055.4,
+      "net_wheat_after_operating": -15.1,
+      "surplus_after_operating": 2040.3,
+      "productive_spend": 1812,
+      "cash_growth": 228.3,
+      "productive_assets_growth": 7.8,
+      "production_potential_growth": 9771.7,
+      "land_growth": 1,
+      "surplus_decomposition_error": 0,
+      "use_decomposition_error": 0
+    }
+  },
+  "day8": {
+    "self": {
+      "cash": 950.3,
+      "productive_assets": 18,
+      "production_potential": 16750,
+      "crop": {
+        "WHEAT": 8.4,
+        "MELON": 2,
+        "STRAWBERRY": 3.6
+      },
+      "animal": {
+        "COW": 4,
+        "SHEEP": 0
+      }
+    },
+    "opponent": {
+      "cash": 850.2,
+      "productive_assets": 33.9,
+      "production_potential": 39210,
+      "crop": {
+        "WHEAT": 10,
+        "MELON": 11,
+        "STRAWBERRY": 6
+      },
+      "animal": {
+        "COW": 4.9,
+        "SHEEP": 2
+      }
+    }
+  },
+  "observed_day0_animal_origin": {
+    "self": "2 COW in all 10 cases",
+    "opponent": "3 COW + 1 SHEEP in all 10 cases"
+  },
+  "boundary": [
+    "Accounting bridge only; no attribution of a specific SELL dollar to a specific investment.",
+    "WHEAT SELL minus BUY_PRODUCT WHEAT is an accounting net, not physical unit lineage.",
+    "The corrected source run preserves Day0 asset origins.",
+    "SELL - operating spend = productive spend + Cash growth closes exactly in every case.",
+    "No Candidate or adoption decision is generated."
+  ]
+}
