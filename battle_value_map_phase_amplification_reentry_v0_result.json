@@ -1,0 +1,143 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.battle-value-map.phase-amplification-reentry.v0",
+  "cases": {
+    "7351": {
+      "seat": 0,
+      "h17": 11799,
+      "day4": 12562,
+      "day8": 22840,
+      "day12": 41180,
+      "day20": 80930,
+      "terminal_map_residual": 107375
+    },
+    "7352": {
+      "seat": 1,
+      "h17": 11799,
+      "day4": 12642,
+      "day8": 22616,
+      "day12": 40183,
+      "day20": 80013,
+      "terminal_map_residual": 96088
+    },
+    "7353": {
+      "seat": 0,
+      "h17": 11799,
+      "day4": 12762,
+      "day8": 21266,
+      "day12": 40026,
+      "day20": 72811,
+      "terminal_map_residual": 95164
+    },
+    "7354": {
+      "seat": 1,
+      "h17": 11799,
+      "day4": 12762,
+      "day8": 23080,
+      "day12": 42772,
+      "day20": 93131,
+      "terminal_map_residual": 128986
+    },
+    "7355": {
+      "seat": 0,
+      "h17": 11799,
+      "day4": 12631,
+      "day8": 22413,
+      "day12": 39311,
+      "day20": 71207,
+      "terminal_map_residual": 90653
+    }
+  },
+  "phase_growth": {
+    "7351": {
+      "h17_to_day4": 763,
+      "day4_to_day8": 10278,
+      "day8_to_day12": 18340,
+      "day12_to_day20": 39750,
+      "day20_to_terminal": 26445
+    },
+    "7352": {
+      "h17_to_day4": 843,
+      "day4_to_day8": 9974,
+      "day8_to_day12": 17567,
+      "day12_to_day20": 39830,
+      "day20_to_terminal": 16075
+    },
+    "7353": {
+      "h17_to_day4": 963,
+      "day4_to_day8": 8504,
+      "day8_to_day12": 18760,
+      "day12_to_day20": 32785,
+      "day20_to_terminal": 22353
+    },
+    "7354": {
+      "h17_to_day4": 963,
+      "day4_to_day8": 10318,
+      "day8_to_day12": 19692,
+      "day12_to_day20": 50359,
+      "day20_to_terminal": 35855
+    },
+    "7355": {
+      "h17_to_day4": 832,
+      "day4_to_day8": 9782,
+      "day8_to_day12": 16898,
+      "day12_to_day20": 31896,
+      "day20_to_terminal": 19446
+    }
+  },
+  "early_shape_magnitude": {
+    "h17_residual": 11799,
+    "h17_as_fraction_of_terminal_map_residual": {
+      "7351": 0.10988591385331781,
+      "7352": 0.12279368911830822,
+      "7353": 0.12398596107771846,
+      "7354": 0.09147504380320345,
+      "7355": 0.13015564846171665
+    }
+  },
+  "day12_to_day20_value_form_growth": {
+    "7351": {
+      "total": 39750,
+      "cash": 22503,
+      "committed_production": 16807,
+      "inventory": 440
+    },
+    "7352": {
+      "total": 39830,
+      "cash": 23520,
+      "committed_production": 16071,
+      "inventory": 239
+    },
+    "7353": {
+      "total": 32785,
+      "cash": 18441,
+      "committed_production": 11746,
+      "inventory": 2598
+    },
+    "7354": {
+      "total": 50359,
+      "cash": 29541,
+      "committed_production": 18236,
+      "inventory": 2582
+    },
+    "7355": {
+      "total": 31896,
+      "cash": 17933,
+      "committed_production": 13103,
+      "inventory": 860
+    }
+  },
+  "observed_shape": [
+    "The shared Day0 h17 residual is 11,799 mark units, only about 9.1%-13.0% of the terminal observable-economic residual magnitude in these five maps.",
+    "For all five maps, Day12->Day20 is the largest residual-growth phase among h17->Day4, Day4->Day8, Day8->Day12, Day12->Day20, and Day20->terminal.",
+    "Day12->Day20 residual growth ranges from +31,896 to +50,359 mark units.",
+    "That Day12->Day20 growth is dominated by Cash residual growth plus Committed Production residual growth; Inventory residual growth is much smaller in all five cases.",
+    "Therefore the Day0 productive-State composition is a repeated early shape but is not, by magnitude alone, sufficient reason to make Day0 the main battlefield."
+  ],
+  "boundary": [
+    "This is descriptive residual growth, not causal attribution.",
+    "The fraction of terminal residual does not mean the Day0 residual caused that fraction of terminal value.",
+    "No mechanism, Action, Representation, Evaluation, Direction, Candidate, or policy mutation is inferred.",
+    "The purpose residual remains terminal self; this re-entry prevents a small early difference from becoming the main battlefield merely because it is clean."
+  ],
+  "next_open": "Open Day12->Day20 one public value layer: distinguish how Cash residual and Committed Production residual evolve through that interval before considering any internal explanation."
+}
