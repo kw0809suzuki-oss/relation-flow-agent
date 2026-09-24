@@ -1,0 +1,235 @@
+{
+  "schema": "kaggriculture.market-map.shape-observation.v0",
+  "market_schedule_id": "MSS-0001",
+  "source_run_id": 36008135353,
+  "battle_count": 5,
+  "rule_validation_run_id": 36007536774,
+  "fixed_market_terrain": {
+    "validation": "PASS",
+    "price_coordinate": "shared market inventory, not day/time",
+    "public_rule_commit": "b2405492c8403f6649f9317290f215e0290a2425",
+    "price_anchor_examples": {
+      "WHEAT": {
+        "I0_minus_T": 45,
+        "I0": 25,
+        "I0_plus_T": 20
+      },
+      "STRAWBERRY": {
+        "I0_minus_T": 204,
+        "I0": 120,
+        "I0_plus_T": 1
+      },
+      "MELON": {
+        "I0_minus_T": 300,
+        "I0": 250,
+        "I0_plus_T": 1
+      },
+      "MILK": {
+        "I0_minus_T": 256,
+        "I0": 160,
+        "I0_plus_T": 1
+      },
+      "WOOL": {
+        "I0_minus_T": 240,
+        "I0": 200,
+        "I0_plus_T": 1
+      }
+    }
+  },
+  "pulse_windows": {
+    "A_lead_day13_to14": {
+      "sell_cash_residual_opponent_minus_self": [
+        -2612,
+        -1801,
+        -548,
+        819,
+        -1337
+      ],
+      "cash_state_change_residual": [
+        -5272,
+        -4078,
+        -2738,
+        -1514,
+        -4016
+      ],
+      "observation": "No common opponent-positive SELL-Cash pulse. Cash residual contracts in all five while productive-State residual was expanding."
+    },
+    "A_response_day14_to15": {
+      "sell_cash_residual_opponent_minus_self": [
+        6366,
+        5720,
+        2267,
+        4996,
+        4102
+      ],
+      "cash_state_change_residual": [
+        6921,
+        6956,
+        3597,
+        6233,
+        5335
+      ],
+      "self_sell_units": [
+        79,
+        98,
+        98,
+        97,
+        100
+      ],
+      "opponent_sell_units": [
+        90,
+        96,
+        90,
+        96,
+        95
+      ],
+      "opponent_common_sales": {
+        "WHEAT_units": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "MELON_units": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "WOOL_units": [
+          24,
+          24,
+          18,
+          24,
+          23
+        ],
+        "FERTILIZER_units": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "MILK_units": [
+          0,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      "observation": "Opponent SELL Cash exceeds self in all five. Total unit count alone does not explain the Cash gap: self sells at least as many total units in four of five Battles, yet opponent realizes more SELL Cash in all five."
+    },
+    "B_lead_day16_to17": {
+      "sell_cash_residual_opponent_minus_self": [
+        66,
+        1213,
+        -242,
+        960,
+        653
+      ],
+      "cash_state_change_residual": [
+        369,
+        379,
+        -1139,
+        339,
+        -10
+      ],
+      "observation": "SELL-Cash residual is small/mixed and Cash residual is near-flat/mixed while productive-State residual expands."
+    },
+    "B_response_day17_to18": {
+      "sell_cash_residual_opponent_minus_self": [
+        5239,
+        5905,
+        6165,
+        9070,
+        2674
+      ],
+      "cash_state_change_residual": [
+        5502,
+        5863,
+        6446,
+        8516,
+        2681
+      ],
+      "self_sell_units": [
+        60,
+        61,
+        63,
+        43,
+        61
+      ],
+      "opponent_sell_units": [
+        84,
+        90,
+        80,
+        90,
+        81
+      ],
+      "opponent_common_sales": {
+        "WHEAT_units": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "MELON_units": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "STRAWBERRY_units": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "MILK_units": [
+          9,
+          15,
+          15,
+          15,
+          15
+        ],
+        "WOOL_units": [
+          16,
+          16,
+          7,
+          16,
+          7
+        ],
+        "FERTILIZER_units": [
+          11,
+          11,
+          10,
+          11,
+          11
+        ]
+      },
+      "observation": "Opponent SELL Cash exceeds self in all five, and the SELL-Cash residual is numerically very close to the total Cash-state residual change in every Battle."
+    }
+  },
+  "cross_map_observation": [
+    "The fixed Market terrain is a state surface: price is determined by shared market inventory, not by time alone.",
+    "In both Production-led intervals, opponent SELL-Cash advantage is absent or small/mixed.",
+    "In both following response intervals, opponent SELL-Cash advantage becomes positive in all five Battles.",
+    "A-response shows that sale quantity alone is insufficient: self sells at least as many units in four of five Battles but realizes less Cash in all five.",
+    "B-response shows an even tighter accounting correspondence between SELL-Cash residual and Cash-state residual growth.",
+    "The observed Market shape therefore complements the Asset Map: assets near output boundaries are followed by a later interval in which different product composition reaches the market and realizes Cash."
+  ],
+  "boundary": [
+    "This is an accounting/time-position observation, not proof that a particular produced unit is the same unit later sold.",
+    "No claim is made that MELON, WOOL, MILK, or any asset should be selected.",
+    "No profitability ranking is formed from realized prices.",
+    "Cash-state change includes BUY/HIRE/LAND and other market cash flows; it is not equated to SELL Cash.",
+    "The Asset Map, Market Map, and Battle Path remain separate surfaces.",
+    "Candidate selection still requires return to Battle and terminal self."
+  ],
+  "current_position": "Asset Map and Market Map now jointly show the repeated public-world sequence without requiring an internal causal model: near-output productive State -> later realized output/sellable inventory -> exact SELL Cash -> Cash-state residual."
+}
