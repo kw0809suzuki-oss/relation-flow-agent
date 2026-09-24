@@ -1,0 +1,47 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.day4-h10-next-cycle-entry-feasibility.result.v0",
+  "source_run_id": 35968779739,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day4_h10_self": {
+    "cash_mean": 1173.7,
+    "melon_seed_mean": 6,
+    "empty_unlocked_tiles_mean": 8.9,
+    "workers_mean": 5,
+    "closest_empty_path_moves_mean": 1.9,
+    "closest_empty_path_moves_max": 2,
+    "movement_plus_plant_actions_max": 3,
+    "remaining_action_turns_in_day": 14,
+    "reachable_cases": 10
+  },
+  "certified_existing_seed_entry": {
+    "asset": "MELON",
+    "market_purchase_required": false,
+    "origin_day_if_planted": 4,
+    "public_next_production_day": 10,
+    "public_harvest_eligible_day": 14,
+    "enters_day8_to_day12_production_window": true,
+    "enters_day8_to_day12_harvest_window": false
+  },
+  "derived_observations": [
+    "In all 10 cases, self already held six MELON seeds at Day4 hour10 and had at least one empty unlocked tile.",
+    "Using actual hourly unit positions from deterministic replay, an empty unlocked tile was at most two public MOVE actions from the nearest self unit in every case.",
+    "Therefore a Day4 MELON productive-State entry required at most three unit actions (MOVE <=2 plus PLANT) from the observed Day4 hour10 State, with 14 action turns remaining in the day.",
+    "A Day4 MELON origin maps by public rules to a Day10 production opportunity and Day14 harvest eligibility.",
+    "Thus absence of any feasible next-cycle-production-positioned G1 entry is rejected as an explanation for self's Day8 time placement.",
+    "This does not show that choosing MELON would improve terminal self, nor that MELON is an optimal asset. It only establishes that at least one next-cycle-production-positioned G1 State-entry was physically available.",
+    "Because a feasible entry existed but was not realized in the observed self State, the next unresolved layer is the projection from feasible entries to actual unit/action allocation, not upstream resource impossibility."
+  ],
+  "boundary": [
+    "No Candidate, Direction, or policy mutation is introduced.",
+    "The replay was required only because prior raw logs omitted hourly unit positions.",
+    "Existing MELON seed path requires no market purchase.",
+    "Entry feasibility is not equivalent to eventual production, realization, or terminal benefit; later crop survival/care actions remain separate.",
+    "No asset is declared optimal."
+  ]
+}
