@@ -1,0 +1,102 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.projected-action-state-transformation-audit.result.v0",
+  "source_run_id": 35976032696,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "sampled_hours": [
+    11,
+    15,
+    19,
+    23
+  ],
+  "hourly": {
+    "11": {
+      "plant_requests": 40,
+      "plant_successes": 10,
+      "melon_requests": 19,
+      "melon_successes": 0,
+      "melon_noops": 19,
+      "wheat_requests": 21,
+      "wheat_successes": 10,
+      "noop_reasons": {
+        "TARGET_TILE_NOT_EMPTY": 30
+      },
+      "cases_with_melon_request": 10,
+      "cases_with_melon_success": 0
+    },
+    "15": {
+      "plant_requests": 40,
+      "plant_successes": 10,
+      "melon_requests": 13,
+      "melon_successes": 0,
+      "melon_noops": 13,
+      "wheat_requests": 27,
+      "wheat_successes": 10,
+      "noop_reasons": {
+        "TARGET_TILE_NOT_EMPTY": 30
+      },
+      "cases_with_melon_request": 7,
+      "cases_with_melon_success": 0
+    },
+    "19": {
+      "plant_requests": 40,
+      "plant_successes": 10,
+      "melon_requests": 13,
+      "melon_successes": 0,
+      "melon_noops": 13,
+      "wheat_requests": 27,
+      "wheat_successes": 10,
+      "noop_reasons": {
+        "TARGET_TILE_NOT_EMPTY": 30
+      },
+      "cases_with_melon_request": 7,
+      "cases_with_melon_success": 0
+    },
+    "23": {
+      "plant_requests": 40,
+      "plant_successes": 10,
+      "melon_requests": 19,
+      "melon_successes": 0,
+      "melon_noops": 19,
+      "wheat_requests": 21,
+      "wheat_successes": 10,
+      "noop_reasons": {
+        "TARGET_TILE_NOT_EMPTY": 30
+      },
+      "cases_with_melon_request": 10,
+      "cases_with_melon_success": 0
+    }
+  },
+  "totals": {
+    "plant_requests": 160,
+    "plant_successes": 40,
+    "plant_noops": 120,
+    "melon_requests": 64,
+    "melon_successes": 0,
+    "melon_noops": 64
+  },
+  "derived_observations": [
+    "At each sampled hour and case, four PLANT requests are projected but only one PLANT changes World State.",
+    "All 64 sampled MELON PLANT requests fail to become MELON State-entry.",
+    "All sampled PLANT no-ops are explained by the public-rule target tile already being non-empty when the later unit executes.",
+    "The observed failure is therefore a repeated Action -> World Transformation boundary at the sampled Day4 planting turns, not merely absence of MELON from Action Projection.",
+    "The repeated no-ops do not imply 64 independently lost productive assets: multiple requests target the same tile, so request count must not be interpreted as unique lost capacity.",
+    "The audit establishes persistence of the transformation failure but does not establish its terminal value or that changing execution/projection would improve terminal self."
+  ],
+  "origin_reentry": {
+    "purpose": "Raise Strong Origin terminal self and reduce the ~99k mean residual to Seyamalam.",
+    "status": "Transformation failure is confirmed and repeated locally, but its contribution to the terminal residual is still unknown.",
+    "decision": "Do not adopt a repair from this audit alone. Return to Battle-scale value before treating this connection as the main battlefield."
+  },
+  "boundary": [
+    "No Candidate, Direction, or policy mutation was introduced.",
+    "MELON is an observation tag, not a recommended crop.",
+    "Request count is not unique reachable-capacity loss.",
+    "No terminal causality is inferred from local no-ops."
+  ]
+}
