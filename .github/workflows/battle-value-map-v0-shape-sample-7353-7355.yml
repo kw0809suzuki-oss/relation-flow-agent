@@ -1,0 +1,39 @@
+name: Battle Value Map v0 Shape Sample 7353-7355
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/battle-value-map-v0-shape-sample-7353-7355.yml
+  workflow_dispatch:
+
+jobs:
+  map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        include:
+          - {seed: 7353, seat: 0}
+          - {seed: 7354, seat: 1}
+          - {seed: 7355, seat: 0}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_battle_value_map_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: battle-value-map-v0-${{ matrix.seed }}-seat${{ matrix.seat }}
+          path: battle_value_map_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
