@@ -181,14 +181,22 @@ def pair_map(cases,path):
     for c in cases:
         for side in ("self","opponent"):
             x=c[side]
-            for k in path:x=x[k]
-            keys.update(x.keys())
+            missing=False
+            for k in path:
+                if isinstance(x,dict) and k not in x:
+                    missing=True
+                    break
+                x=x[k]
+            if not missing:
+                keys.update(x.keys())
     out={}
     for key in sorted(keys):
         s=[];o=[]
         for c in cases:
             xs=c["self"];xo=c["opponent"]
-            for k in path:xs=xs[k];xo=xo[k]
+            for k in path:
+                xs=xs.get(k,{}) if isinstance(xs,dict) else {}
+                xo=xo.get(k,{}) if isinstance(xo,dict) else {}
             s.append(float(xs.get(key,0) or 0));o.append(float(xo.get(key,0) or 0))
         g=[b-a for a,b in zip(s,o)]
         out[key]={
