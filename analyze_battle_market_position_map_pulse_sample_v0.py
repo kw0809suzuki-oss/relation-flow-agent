@@ -9,7 +9,7 @@ if len(rows)!=5:raise SystemExit(f"expected 5 inputs, got {len(rows)}")
 if any(any(abs(float(v["error"]))>1e-9 for v in r["cash_validation"]) for r in rows):
     raise SystemExit("cash validation failed")
 
-PRODUCTS=("WHEAT","MELON","STRAWBERRY","MILK","WOOL")
+PRODUCTS=("WHEAT","CARROT","TOMATO","STRAWBERRY","MELON","EGG","MILK","WOOL","FERTILIZER")
 WINDOWS={
  "A_lead":(13,14),
  "A_response":(14,15),
@@ -74,11 +74,7 @@ def vec(window,side,item,key):
     return [c["windows"][window][side][item][key] for c in cases]
 
 def sum_products(c,window,side,key):
-    vals=[]
-    for item in PRODUCTS:
-        v=c["windows"][window][side][item][key]
-        vals.append(float(v or 0))
-    return sum(vals)
+    return sum(float(c["windows"][window][side][item][key] or 0) for item in PRODUCTS)
 
 summary={}
 for win in WINDOWS:
@@ -89,8 +85,10 @@ for win in WINDOWS:
         "opponent_sell_units":int(sum_products(c,win,"opponent","sell_units")),
         "self_sell_cash":sum_products(c,win,"self","sell_cash"),
         "opponent_sell_cash":sum_products(c,win,"opponent","sell_cash"),
+        "sell_cash_residual":sum_products(c,win,"opponent","sell_cash")-sum_products(c,win,"self","sell_cash"),
         "self_cash_state_change":c["windows"][win]["cash_state_change"]["self"],
-        "opponent_cash_state_change":c["windows"][win]["cash_state_change"]["opponent"]
+        "opponent_cash_state_change":c["windows"][win]["cash_state_change"]["opponent"],
+        "cash_state_change_residual":c["windows"][win]["cash_state_change"]["opponent"]-c["windows"][win]["cash_state_change"]["self"]
       } for c in cases],
       "by_item":{
         item:{
@@ -115,6 +113,7 @@ out={
  "summary":summary,
  "boundary":[
    "All five Battles use the same fixed Market State Schedule.",
+   "All public SELL-able PRODUCTS are included in total SELL units and Cash.",
    "SELL cash is exact realized Cash from successful unit executions.",
    "Cash state change also includes purchases/HIRE/LAND in the interval and is therefore not equated to SELL cash.",
    "No item-level output-to-sale identity is asserted.",
