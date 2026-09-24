@@ -1,0 +1,136 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.day4-day8-amplification-cycle-audit.result.v0",
+  "source_temporal_stack_run_id": 35958508325,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "day4_state": {
+    "self": {
+      "near_maturity_assets": 9,
+      "far_maturity_assets": 5.9,
+      "future_maturity_assets": 14.9,
+      "cash": 1127
+    },
+    "opponent": {
+      "near_maturity_assets": 11,
+      "far_maturity_assets": 12,
+      "future_maturity_assets": 23,
+      "cash": 798.6
+    }
+  },
+  "day4_to_day8_flow": {
+    "self": {
+      "sell_cash": 5808.7,
+      "operating_spend": 4433.4,
+      "operating_share_of_sell": 0.7632344586568423,
+      "surplus_after_operating": 1375.3,
+      "surplus_share_of_sell": 0.23676554134315766,
+      "productive_spend": 1552,
+      "actual_production_units": 17.8,
+      "productive_spend_by_op": {
+        "BUY_SEED": 733,
+        "BUY_ANIMAL": 800,
+        "HIRE": 19,
+        "BUY_LAND": 0
+      }
+    },
+    "opponent": {
+      "sell_cash": 5445.4,
+      "operating_spend": 2029.8,
+      "operating_share_of_sell": 0.37275498585962463,
+      "surplus_after_operating": 3415.6,
+      "surplus_share_of_sell": 0.6272450141403754,
+      "productive_spend": 3364,
+      "actual_production_units": 33,
+      "productive_spend_by_op": {
+        "BUY_SEED": 950,
+        "BUY_ANIMAL": 1300,
+        "HIRE": 114,
+        "BUY_LAND": 1000
+      }
+    },
+    "mean_gaps_opponent_minus_self": {
+      "sell_cash": -363.3,
+      "operating_spend": -2403.6,
+      "surplus_after_operating": 2040.3,
+      "productive_spend": 1812,
+      "actual_production_units": 15.2
+    },
+    "consistency": {
+      "opponent_more_surplus_cases": 10,
+      "opponent_more_productive_spend_cases": 10,
+      "opponent_more_actual_production_cases": 10,
+      "opponent_more_gross_sell_cases": 0
+    }
+  },
+  "day8_state": {
+    "self": {
+      "near_maturity_assets": 10.4,
+      "far_maturity_assets": 7.6,
+      "future_maturity_assets": 18,
+      "cash": 950.3
+    },
+    "opponent": {
+      "near_maturity_assets": 13,
+      "far_maturity_assets": 20.9,
+      "future_maturity_assets": 33.9,
+      "cash": 850.2
+    }
+  },
+  "state_growth_day4_to_day8": {
+    "self": {
+      "near_maturity_assets_growth": 1.4,
+      "far_maturity_assets_growth": 1.7,
+      "future_maturity_assets_growth": 3.1,
+      "cash_growth": -176.7
+    },
+    "opponent": {
+      "near_maturity_assets_growth": 2,
+      "far_maturity_assets_growth": 8.9,
+      "future_maturity_assets_growth": 10.9,
+      "cash_growth": 51.6
+    },
+    "mean_gaps_opponent_minus_self": {
+      "far_maturity_assets_growth": 7.2,
+      "future_maturity_assets_growth": 7.8,
+      "cash_growth": 228.3
+    },
+    "consistency": {
+      "opponent_more_far_maturity_growth_cases": 10,
+      "opponent_more_future_maturity_growth_cases": 10,
+      "opponent_more_cash_growth_cases": 10
+    }
+  },
+  "commitment_additions_day4_to_day8_mean": {
+    "self": {
+      "WHEAT": 9.4,
+      "MELON": 0,
+      "STRAWBERRY": 2.6
+    },
+    "opponent": {
+      "WHEAT": 10,
+      "MELON": 3,
+      "STRAWBERRY": 6
+    }
+  },
+  "derived_observations": [
+    "The first clear amplification round is not explained by higher gross SELL: self sells 363.3 more on average over Day4-8.",
+    "Opponent operating spend is 2403.6 lower, leaving 2040.3 more surplus in all 10 cases.",
+    "That same interval contains 1812.0 more productive spend and 7.8 more future-maturity asset growth for opponent in all 10 cases.",
+    "Opponent operating burden consumes about 37.3% of gross SELL versus about 76.3% for self over Day4-8.",
+    "Opponent grows far-maturity assets by 8.9 versus self 1.7 while also preserving slightly positive cash growth; self cash declines.",
+    "This supports a State-transition separator around surplus retention and conversion into a larger future-value State, not a simple revenue-volume separator.",
+    "Asset mix differences are observed, including opponent adding MELON/STRAWBERRY and LAND during the interval, but no single asset is assigned causal status."
+  ],
+  "boundary": [
+    "No Candidate, Direction, pressure variable, or policy mutation is introduced.",
+    "Operating-share and surplus-share are descriptive ratios, not adopted optimization objectives.",
+    "SELL and productive spend are temporally related but no cash lineage is asserted.",
+    "Future-maturity asset count is an opportunity structure, not guaranteed realized profit.",
+    "No composite amplification score is created."
+  ]
+}
