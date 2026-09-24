@@ -1,0 +1,229 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.harvestable-strawberry-gate.result.v0",
+  "battle_count": 5,
+  "terminal_absolute": {
+    "mean_self": 24042.8,
+    "mean_opponent": 128454.4,
+    "mean_margin": -104411.6
+  },
+  "means": {
+    "day20_h0_harvestable_stock": {
+      "self_absolute_mean": 2.8,
+      "opponent_absolute_mean": 22.4,
+      "mean_residual_opponent_minus_self": 19.6
+    },
+    "refresh_added_available_before_day24": {
+      "self_absolute_mean": 4.6,
+      "opponent_absolute_mean": 87.4,
+      "mean_residual_opponent_minus_self": 82.8
+    },
+    "harvestable_supply_available_in_window": {
+      "self_absolute_mean": 7.4,
+      "opponent_absolute_mean": 109.8,
+      "mean_residual_opponent_minus_self": 102.4
+    },
+    "harvest_to_carried_units": {
+      "self_absolute_mean": 7.4,
+      "opponent_absolute_mean": 102.2,
+      "mean_residual_opponent_minus_self": 94.8
+    },
+    "refresh_harvestable_losses_inside_window": {
+      "self_absolute_mean": 0.0,
+      "opponent_absolute_mean": 0.0,
+      "mean_residual_opponent_minus_self": 0.0
+    },
+    "other_harvestable_losses_inside_window": {
+      "self_absolute_mean": 0.0,
+      "opponent_absolute_mean": 0.0,
+      "mean_residual_opponent_minus_self": 0.0
+    },
+    "day24_h0_endpoint_refresh_addition_excluded": {
+      "self_absolute_mean": 2.4,
+      "opponent_absolute_mean": 29.4,
+      "mean_residual_opponent_minus_self": 27.0
+    },
+    "max_turn_start_harvestable_stock": {
+      "self_absolute_mean": 2.8,
+      "opponent_absolute_mean": 45.6,
+      "mean_residual_opponent_minus_self": 42.8
+    },
+    "mean_turn_start_harvestable_stock": {
+      "self_absolute_mean": 0.375,
+      "opponent_absolute_mean": 25.060416666666665,
+      "mean_residual_opponent_minus_self": 24.685416666666665
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "self": {
+        "day20_h0_harvestable_stock": 5,
+        "refresh_added_available_before_day24": 7,
+        "harvestable_supply_available_in_window": 12,
+        "harvest_to_carried_units": 12,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 4,
+        "max_turn_start_harvestable_stock": 5,
+        "mean_turn_start_harvestable_stock": 0.8541666666666666,
+        "harvest_fraction_of_observed_supply": 1.0
+      },
+      "opponent": {
+        "day20_h0_harvestable_stock": 22,
+        "refresh_added_available_before_day24": 89,
+        "harvestable_supply_available_in_window": 111,
+        "harvest_to_carried_units": 103,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 29,
+        "max_turn_start_harvestable_stock": 47,
+        "mean_turn_start_harvestable_stock": 25.46875,
+        "harvest_fraction_of_observed_supply": 0.9279279279279279
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "self": {
+        "day20_h0_harvestable_stock": 2,
+        "refresh_added_available_before_day24": 4,
+        "harvestable_supply_available_in_window": 6,
+        "harvest_to_carried_units": 6,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 2,
+        "max_turn_start_harvestable_stock": 2,
+        "mean_turn_start_harvestable_stock": 0.22916666666666666,
+        "harvest_fraction_of_observed_supply": 1.0
+      },
+      "opponent": {
+        "day20_h0_harvestable_stock": 22,
+        "refresh_added_available_before_day24": 89,
+        "harvestable_supply_available_in_window": 111,
+        "harvest_to_carried_units": 103,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 29,
+        "max_turn_start_harvestable_stock": 47,
+        "mean_turn_start_harvestable_stock": 25.46875,
+        "harvest_fraction_of_observed_supply": 0.9279279279279279
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "self": {
+        "day20_h0_harvestable_stock": 1,
+        "refresh_added_available_before_day24": 3,
+        "harvestable_supply_available_in_window": 4,
+        "harvest_to_carried_units": 4,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 1,
+        "max_turn_start_harvestable_stock": 1,
+        "mean_turn_start_harvestable_stock": 0.14583333333333334,
+        "harvest_fraction_of_observed_supply": 1.0
+      },
+      "opponent": {
+        "day20_h0_harvestable_stock": 22,
+        "refresh_added_available_before_day24": 83,
+        "harvestable_supply_available_in_window": 105,
+        "harvest_to_carried_units": 99,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 30,
+        "max_turn_start_harvestable_stock": 43,
+        "mean_turn_start_harvestable_stock": 23.9375,
+        "harvest_fraction_of_observed_supply": 0.9428571428571428
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "self": {
+        "day20_h0_harvestable_stock": 3,
+        "refresh_added_available_before_day24": 4,
+        "harvestable_supply_available_in_window": 7,
+        "harvest_to_carried_units": 7,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 2,
+        "max_turn_start_harvestable_stock": 3,
+        "mean_turn_start_harvestable_stock": 0.2916666666666667,
+        "harvest_fraction_of_observed_supply": 1.0
+      },
+      "opponent": {
+        "day20_h0_harvestable_stock": 24,
+        "refresh_added_available_before_day24": 87,
+        "harvestable_supply_available_in_window": 111,
+        "harvest_to_carried_units": 103,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 30,
+        "max_turn_start_harvestable_stock": 44,
+        "mean_turn_start_harvestable_stock": 24.958333333333332,
+        "harvest_fraction_of_observed_supply": 0.9279279279279279
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "self": {
+        "day20_h0_harvestable_stock": 3,
+        "refresh_added_available_before_day24": 5,
+        "harvestable_supply_available_in_window": 8,
+        "harvest_to_carried_units": 8,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 3,
+        "max_turn_start_harvestable_stock": 3,
+        "mean_turn_start_harvestable_stock": 0.3541666666666667,
+        "harvest_fraction_of_observed_supply": 1.0
+      },
+      "opponent": {
+        "day20_h0_harvestable_stock": 22,
+        "refresh_added_available_before_day24": 89,
+        "harvestable_supply_available_in_window": 111,
+        "harvest_to_carried_units": 103,
+        "refresh_harvestable_losses_inside_window": 0,
+        "other_harvestable_losses_inside_window": 0,
+        "day24_h0_endpoint_refresh_addition_excluded": 29,
+        "max_turn_start_harvestable_stock": 47,
+        "mean_turn_start_harvestable_stock": 25.46875,
+        "harvest_fraction_of_observed_supply": 0.9279279279279279
+      }
+    }
+  ],
+  "boundary": [
+    "Absolute means are reported for World-side harvestable STRAWBERRY supply and exact HARVEST->carried units.",
+    "harvest_fraction_of_observed_supply is descriptive only; it is not an efficiency score or policy judgment.",
+    "Supply is not a time-sum of stock snapshots; it is starting harvestable stock plus public daily-refresh additions that became available before Day24.",
+    "No cause for unharvested supply and no Candidate are inferred."
+  ]
+}
