@@ -1,0 +1,174 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.day8-day12-reinvestment-amplification-bridge.result.v0",
+  "source_run_id": 35963016456,
+  "battle_count": 10,
+  "terminal_context": {
+    "self_absolute_mean": 22561.9,
+    "opponent_absolute_mean": 121629.6,
+    "mean_margin": -99067.7,
+    "wins": 0
+  },
+  "bridge": {
+    "day8_state": {
+      "cash": {
+        "self": 950.3,
+        "opponent": 850.2
+      },
+      "non_wheat_future_units_total": {
+        "self": 78.4,
+        "opponent": 172.1,
+        "opponent_ahead_cases": 10
+      },
+      "G0_future_units": {
+        "self": 50,
+        "opponent": 107,
+        "opponent_ahead_cases": 10
+      },
+      "G1_future_units": {
+        "self": 28.4,
+        "opponent": 65.1,
+        "opponent_ahead_cases": 10
+      }
+    },
+    "current_return_day8_to_12": {
+      "non_wheat_production_units": {
+        "self": 18.3,
+        "opponent": 56,
+        "gap": 37.7,
+        "opponent_ahead_cases": 10
+      },
+      "G1_non_wheat_production_units": {
+        "self": 0,
+        "opponent": 12,
+        "gap": 12,
+        "opponent_ahead_cases": 10
+      },
+      "sell_cash_total": {
+        "self": 11681,
+        "opponent": 19545.1,
+        "gap": 7864.1,
+        "opponent_ahead_cases": 10
+      },
+      "non_wheat_sell_cash": {
+        "self": 4379.4,
+        "opponent": 18267.4,
+        "gap": 13888,
+        "opponent_ahead_cases": 10
+      },
+      "sell_cash_by_item": {
+        "self": {
+          "FERTILIZER": 1412.6,
+          "MILK": 2966.8,
+          "WHEAT": 7301.6
+        },
+        "opponent": {
+          "FERTILIZER": 2404,
+          "MELON": 10582,
+          "MILK": 3069.9,
+          "WHEAT": 1277.7,
+          "WOOL": 2211.5
+        }
+      }
+    },
+    "operating_burden": {
+      "total": {
+        "self": 7581.6,
+        "opponent": 4394.3,
+        "self_minus_opponent": 3187.3,
+        "self_higher_cases": 10
+      },
+      "by_item": {
+        "self": {
+          "WHEAT": 7581.6
+        },
+        "opponent": {
+          "WHEAT": 4394.3
+        }
+      }
+    },
+    "surplus_after_operating": {
+      "self": 4099.4,
+      "opponent": 15150.8,
+      "gap": 11051.4,
+      "opponent_ahead_cases": 10
+    },
+    "productive_spend": {
+      "total": {
+        "self": 3494.9,
+        "opponent": 9322.6,
+        "gap": 5827.7,
+        "opponent_ahead_cases": 10
+      },
+      "by_op": {
+        "self": {
+          "BUY_ANIMAL": 800,
+          "BUY_LAND": 1000,
+          "BUY_SEED": 1611,
+          "HIRE": 83.9
+        },
+        "opponent": {
+          "BUY_ANIMAL": 3200,
+          "BUY_LAND": 2000,
+          "BUY_SEED": 3010,
+          "HIRE": 1112.6
+        }
+      }
+    },
+    "G2_day12": {
+      "asset_count": {
+        "self": 5.5,
+        "opponent": 29.3,
+        "opponent_ahead_cases": 10
+      },
+      "future_units": {
+        "self": 28.4,
+        "opponent": 136,
+        "gap": 107.6,
+        "opponent_ahead_cases": 10
+      }
+    },
+    "day12_state": {
+      "non_wheat_future_units_total": {
+        "self": 93.6,
+        "opponent": 252.1,
+        "gap": 158.5,
+        "opponent_ahead_cases": 10
+      },
+      "cash": {
+        "self": 1554.8,
+        "opponent": 6678.4
+      }
+    }
+  },
+  "descriptive_scale": {
+    "opponent_to_self_multiple": {
+      "day8_non_wheat_future_units": 2.195,
+      "day8_to_12_non_wheat_production_units": 3.06,
+      "total_sell_cash": 1.673,
+      "non_wheat_sell_cash": 4.171,
+      "surplus_after_operating": 3.696,
+      "productive_spend": 2.668,
+      "G2_future_units": 4.789,
+      "day12_non_wheat_future_units": 2.693
+    },
+    "note": "These are descriptive magnitude comparisons only, not optimization scores or causal multipliers."
+  },
+  "derived_observations": [
+    "The second-cycle divergence is already visible at Current Return, before Surplus or reinvestment: opponent Day8 G1 produces 12.0 non-WHEAT units during Day8-12 while self G1 produces 0, with the same direction in all 10 cases.",
+    "Total non-WHEAT production over Day8-12 is 56.0 opponent versus 18.3 self, so the Day8 starting thickness gap is not merely carried forward; it appears as a wider observed Return gap.",
+    "Cash-flow separation then widens further. Self sells 11681.0 total versus opponent 19545.1, while self operating BUY_PRODUCT WHEAT spend is higher: 7581.6 versus 4394.3 in all 10 cases.",
+    "As a result, surplus after operating is 4099.4 self versus 15150.8 opponent, a gap of 11051.4 in all 10 cases.",
+    "Productive spend is then 3494.9 self versus 9322.6 opponent, after which G2 physical future capacity is 28.4 versus 136.0 units, opponent ahead in all 10 cases.",
+    "Therefore the bridge does not identify a single late reinvestment failure. The first clear second-cycle separator is the transition from Day8 future cohort to observed Current Return, and downstream operating burden, surplus, productive spend, and G2 formation compound the gap.",
+    "A second large divergence exists between productive-spend magnitude and resulting G2 physical capacity, but this audit does not call it conversion efficiency because spend composition differs and Cash is fungible."
+  ],
+  "boundary": [
+    "No Candidate, Direction, score, or policy mutation is introduced.",
+    "Day8 States are already different; Day8-12 is not treated as an isolated failure interval.",
+    "SELL is not assigned to a cohort or specific reinvestment.",
+    "Surplus is SELL minus observed BUY_PRODUCT operating spend.",
+    "G2 physical future capacity uses public asset origin-day [8,12) and remaining potential units at Day12.",
+    "Descriptive multiples are not adopted objectives or causal multipliers.",
+    "No asset is ranked or declared independently causal."
+  ]
+}
