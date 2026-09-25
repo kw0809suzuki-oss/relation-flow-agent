@@ -1,0 +1,302 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.wr02-value-carry-reanchor.result.v0",
+  "active_model": "Baseline+WR-02",
+  "battle_count": 5,
+  "seeds": [
+    7351,
+    7352,
+    7353,
+    7354,
+    7355
+  ],
+  "anchor": {
+    "day": 20,
+    "hour": 0,
+    "phase": "pre_market"
+  },
+  "terminal_absolute": {
+    "mean_self": 25765.6,
+    "mean_opponent": 130109.4,
+    "mean_margin": -104343.79999999999
+  },
+  "boundary_surface": {
+    "committed_anchor": {
+      "self_absolute_mean": 10942.4,
+      "opponent_absolute_mean": 55304.0,
+      "mean_residual_opponent_minus_self": 44361.6,
+      "median_residual_opponent_minus_self": 44061.0,
+      "min_residual": 39931.0,
+      "max_residual": 50117.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 47326.0,
+        "7352": 44061.0,
+        "7353": 39931.0,
+        "7354": 50117.0,
+        "7355": 40373.0
+      }
+    },
+    "output_reached_by_terminal": {
+      "self_absolute_mean": 9206.2,
+      "opponent_absolute_mean": 50854.8,
+      "mean_residual_opponent_minus_self": 41648.6,
+      "median_residual_opponent_minus_self": 41899.0,
+      "min_residual": 37921.0,
+      "max_residual": 46653.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 43832.0,
+        "7352": 41899.0,
+        "7353": 37921.0,
+        "7354": 46653.0,
+        "7355": 37938.0
+      }
+    },
+    "harvested_from_anchor_assets": {
+      "self_absolute_mean": 9206.2,
+      "opponent_absolute_mean": 50415.2,
+      "mean_residual_opponent_minus_self": 41209.0,
+      "median_residual_opponent_minus_self": 41491.0,
+      "min_residual": 37454.0,
+      "max_residual": 46233.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 43374.0,
+        "7352": 41491.0,
+        "7353": 37493.0,
+        "7354": 46233.0,
+        "7355": 37454.0
+      }
+    },
+    "not_reached_by_terminal": {
+      "self_absolute_mean": 1736.2,
+      "opponent_absolute_mean": 4449.2,
+      "mean_residual_opponent_minus_self": 2713.0,
+      "median_residual_opponent_minus_self": 2435.0,
+      "min_residual": 2010.0,
+      "max_residual": 3494.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 3494.0,
+        "7352": 2162.0,
+        "7353": 2010.0,
+        "7354": 3464.0,
+        "7355": 2435.0
+      }
+    },
+    "reached_but_not_harvested": {
+      "self_absolute_mean": 0.0,
+      "opponent_absolute_mean": 439.6,
+      "mean_residual_opponent_minus_self": 439.6,
+      "median_residual_opponent_minus_self": 428.0,
+      "min_residual": 408.0,
+      "max_residual": 484.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 458.0,
+        "7352": 408.0,
+        "7353": 428.0,
+        "7354": 420.0,
+        "7355": 484.0
+      }
+    },
+    "residual_retention": {
+      "output_reached_over_committed": 0.9388435042920003,
+      "harvested_over_output_reached": 0.9894450233621298,
+      "harvested_over_committed": 0.928934033037582
+    },
+    "residual_loss": {
+      "committed_to_output_reached": 2713.0,
+      "output_reached_to_harvested": 439.59999999999854,
+      "committed_to_harvested": 3152.5999999999985
+    },
+    "largest_observed_loss_boundary_through_harvest": "committed_to_output_reached"
+  },
+  "comparison_to_prior_body_only": {
+    "prior_active_model": "Strong Origin v2 Body-only",
+    "prior_committed_residual": 46432.2,
+    "wr02_committed_residual": 44361.6,
+    "committed_residual_delta_wr02_minus_body_only": -2070.5999999999985,
+    "prior_output_reached_residual": 43428.4,
+    "wr02_output_reached_residual": 41648.6,
+    "prior_harvested_residual": 42986.8,
+    "wr02_harvested_residual": 41209.0,
+    "prior_mean_terminal_self": 24042.8,
+    "wr02_mean_terminal_self": 25765.6,
+    "terminal_self_delta_wr02_minus_body_only": 1722.7999999999993
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal": {
+        "self": 14742.0,
+        "opponent": 123537.0,
+        "margin": -108795.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 7306.0,
+        "anchor_ready_mark": 1159.0,
+        "output_reached_mark_same_basis": 6624.0,
+        "harvested_mark_same_basis": 6624.0,
+        "not_reached_mark_same_basis": 682.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 44,
+        "asset_count": 17,
+        "active_asset_count_at_terminal": 10
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 54632.0,
+        "anchor_ready_mark": 10471.0,
+        "output_reached_mark_same_basis": 50456.0,
+        "harvested_mark_same_basis": 49998.0,
+        "not_reached_mark_same_basis": 4176.0,
+        "reached_unharvested_mark_same_basis": 458.0,
+        "extra_output_units_beyond_anchor_basis": 211,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal": {
+        "self": 15182.0,
+        "opponent": 120726.0,
+        "margin": -105544.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 8478.0,
+        "anchor_ready_mark": 1210.0,
+        "output_reached_mark_same_basis": 6418.0,
+        "harvested_mark_same_basis": 6418.0,
+        "not_reached_mark_same_basis": 2060.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 44,
+        "asset_count": 21,
+        "active_asset_count_at_terminal": 15
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 52539.0,
+        "anchor_ready_mark": 10062.0,
+        "output_reached_mark_same_basis": 48317.0,
+        "harvested_mark_same_basis": 47909.0,
+        "not_reached_mark_same_basis": 4222.0,
+        "reached_unharvested_mark_same_basis": 408.0,
+        "extra_output_units_beyond_anchor_basis": 211,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal": {
+        "self": 48751.0,
+        "opponent": 139754.0,
+        "margin": -91003.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 18426.0,
+        "anchor_ready_mark": 3966.0,
+        "output_reached_mark_same_basis": 15534.0,
+        "harvested_mark_same_basis": 15534.0,
+        "not_reached_mark_same_basis": 2892.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 43,
+        "asset_count": 18,
+        "active_asset_count_at_terminal": 16
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 58357.0,
+        "anchor_ready_mark": 8869.0,
+        "output_reached_mark_same_basis": 53455.0,
+        "harvested_mark_same_basis": 53027.0,
+        "not_reached_mark_same_basis": 4902.0,
+        "reached_unharvested_mark_same_basis": 428.0,
+        "extra_output_units_beyond_anchor_basis": 183,
+        "asset_count": 64,
+        "active_asset_count_at_terminal": 17
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal": {
+        "self": 34768.0,
+        "opponent": 161643.0,
+        "margin": -126875.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 12824.0,
+        "anchor_ready_mark": 4192.0,
+        "output_reached_mark_same_basis": 11412.0,
+        "harvested_mark_same_basis": 11412.0,
+        "not_reached_mark_same_basis": 1412.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 37,
+        "asset_count": 16,
+        "active_asset_count_at_terminal": 9
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 62941.0,
+        "anchor_ready_mark": 12270.0,
+        "output_reached_mark_same_basis": 58065.0,
+        "harvested_mark_same_basis": 57645.0,
+        "not_reached_mark_same_basis": 4876.0,
+        "reached_unharvested_mark_same_basis": 420.0,
+        "extra_output_units_beyond_anchor_basis": 210,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal": {
+        "self": 15385.0,
+        "opponent": 104887.0,
+        "margin": -89502.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 7678.0,
+        "anchor_ready_mark": 1422.0,
+        "output_reached_mark_same_basis": 6043.0,
+        "harvested_mark_same_basis": 6043.0,
+        "not_reached_mark_same_basis": 1635.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 43,
+        "asset_count": 22,
+        "active_asset_count_at_terminal": 11
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 48051.0,
+        "anchor_ready_mark": 6297.0,
+        "output_reached_mark_same_basis": 43981.0,
+        "harvested_mark_same_basis": 43497.0,
+        "not_reached_mark_same_basis": 4070.0,
+        "reached_unharvested_mark_same_basis": 484.0,
+        "extra_output_units_beyond_anchor_basis": 211,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    }
+  ],
+  "boundary": [
+    "This is a re-anchor of the existing fixed-five Day20 cohort surface onto Baseline+WR-02.",
+    "Only the same productive assets present at Day20 h0 are followed through actual Output reach and HARVEST.",
+    "Marks remain on the Day20 displayed-price basis; they are not realized profit.",
+    "The probe still stops at HARVEST/carried. Shed, executable SELL and realized Cash lineage remain open.",
+    "No Candidate or adoption decision is introduced."
+  ]
+}
