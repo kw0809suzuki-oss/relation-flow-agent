@@ -1,0 +1,168 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.world-reference-reachability-candidate.result.v0",
+  "battle_count": 5,
+  "terminal_self": {
+    "baseline_absolute_mean": 24042.8,
+    "candidate_absolute_mean": 25332.2,
+    "delta_mean": 1289.4,
+    "delta_median": 1153.0,
+    "delta_min": 455.0,
+    "delta_max": 2076.0,
+    "improved_cases": 5,
+    "worsened_cases": 0,
+    "equal_cases": 0,
+    "by_seed": {
+      "7351": 455.0,
+      "7352": 1153.0,
+      "7353": 942.0,
+      "7354": 2076.0,
+      "7355": 1821.0
+    }
+  },
+  "terminal_margin": {
+    "baseline_absolute_mean": -104411.6,
+    "candidate_absolute_mean": -105005.6,
+    "delta_mean": -594.0
+  },
+  "connection": {
+    "reopened_orders_total": 140,
+    "reopened_orders_mean": 28.0,
+    "cases_with_reopening": 5,
+    "reopened_by_key_total": {
+      "BUY_ANIMAL:COW": 1,
+      "BUY_SEED:MELON": 1,
+      "BUY_SEED:STRAWBERRY": 12,
+      "BUY_SEED:WHEAT": 126
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "baseline": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "candidate": {
+        "self": 14621.0,
+        "opponent": 122303.0,
+        "margin": -107682.0
+      },
+      "delta": {
+        "self": 455.0,
+        "opponent": 777.0,
+        "margin": -322.0
+      },
+      "reopened_orders": 21,
+      "reopened_by_key": {
+        "BUY_SEED:STRAWBERRY": 2,
+        "BUY_SEED:MELON": 1,
+        "BUY_SEED:WHEAT": 18
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "baseline": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "candidate": {
+        "self": 12917.0,
+        "opponent": 111914.0,
+        "margin": -98997.0
+      },
+      "delta": {
+        "self": 1153.0,
+        "opponent": 3686.0,
+        "margin": -2533.0
+      },
+      "reopened_orders": 29,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 26,
+        "BUY_SEED:STRAWBERRY": 3
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "baseline": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "candidate": {
+        "self": 46798.0,
+        "opponent": 141431.0,
+        "margin": -94633.0
+      },
+      "delta": {
+        "self": 942.0,
+        "opponent": -1267.0,
+        "margin": 2209.0
+      },
+      "reopened_orders": 31,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 29,
+        "BUY_SEED:STRAWBERRY": 2
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "baseline": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "candidate": {
+        "self": 36961.0,
+        "opponent": 167757.0,
+        "margin": -130796.0
+      },
+      "delta": {
+        "self": 2076.0,
+        "opponent": 2708.0,
+        "margin": -632.0
+      },
+      "reopened_orders": 33,
+      "reopened_by_key": {
+        "BUY_ANIMAL:COW": 1,
+        "BUY_SEED:WHEAT": 30,
+        "BUY_SEED:STRAWBERRY": 2
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "baseline": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "candidate": {
+        "self": 15364.0,
+        "opponent": 108284.0,
+        "margin": -92920.0
+      },
+      "delta": {
+        "self": 1821.0,
+        "opponent": 3513.0,
+        "margin": -1692.0
+      },
+      "reopened_orders": 26,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 23,
+        "BUY_SEED:STRAWBERRY": 3
+      }
+    }
+  ],
+  "boundary": [
+    "This is a fixed-five first-pass Battle test, not independent validation.",
+    "The candidate only reopens native productive purchases that pass public terminal first-output reachability.",
+    "A positive local reopening count is not an adoption result.",
+    "Adoption is determined by terminal self; if promising, independent fresh validation is required."
+  ]
+}
