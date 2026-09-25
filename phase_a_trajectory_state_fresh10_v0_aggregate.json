@@ -1,0 +1,5916 @@
+{
+  "schema": "kaggriculture.phase-a-trajectory-state.fresh10.aggregate.v0",
+  "cases": [
+    {
+      "seed": 8801,
+      "seat": 0,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1242.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1250.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1679.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 1562.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1110.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 2331.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1047.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 2169.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3041.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 28,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 2310.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 7156.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 22,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8802,
+      "seat": 1,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 11,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1242.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1679.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 1551.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.34,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 5,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1298.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 2451.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1192.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 2,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 2734.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 24,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.44,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3189.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 27,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 2849.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 23,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 7123.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 21,
+            "productive_tiles": 52,
+            "workers": 1,
+            "productive_occupancy": 0.6933333333333334,
+            "productive_per_worker": 52.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 7,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8803,
+      "seat": 0,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 11,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 800.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1241.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 632.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2027.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 608.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1041.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1690.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 902.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 837.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 1014.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 28,
+            "productive_tiles": 16,
+            "workers": 1,
+            "productive_occupancy": 0.32,
+            "productive_per_worker": 16.0,
+            "crop_count": {
+              "WHEAT": 2,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 8,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1153.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 1558.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.36,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 8,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1072.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 1764.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 5,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 8,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3118.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 28,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 1890.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 24,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 5,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 8,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 7118.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 22,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8804,
+      "seat": 1,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 11,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 800.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1241.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 632.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2107.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 608.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1221.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1806.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 982.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 953.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 1098.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 30,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.36,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 5,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 887.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 1678.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 28,
+            "productive_tiles": 20,
+            "workers": 1,
+            "productive_occupancy": 0.4,
+            "productive_per_worker": 20.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 5,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 929.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 1676.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.46,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 5,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 28,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 1830.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 20,
+            "workers": 1,
+            "productive_occupancy": 0.4,
+            "productive_per_worker": 20.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 5,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 7246.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 22,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8805,
+      "seat": 0,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 11,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1242.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1680.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 911.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 827.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 959.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.34,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 736.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 1283.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 28,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 2,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 646.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 1305.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.44,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 3,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 2665.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 27,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 1476.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.44,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 3,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 6634.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 20,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8806,
+      "seat": 1,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1242.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1250.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1679.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 1695.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 28,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1298.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 2473.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1189.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 2399.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3183.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 27,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 2550.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 7116.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 21,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8807,
+      "seat": 0,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1227.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1342.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2250.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1281.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1679.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 941.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 835.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 3052.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 1
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 728.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 3893.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 1
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 629.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 1989.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 1
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 2628.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 28,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 1908.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 27,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 1
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 6580.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 21,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8808,
+      "seat": 1,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 8,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1027.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1142.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2050.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1680.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 911.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 827.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 904.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.36,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 1,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 735.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 1064.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 28,
+            "productive_tiles": 20,
+            "workers": 1,
+            "productive_occupancy": 0.4,
+            "productive_per_worker": 20.0,
+            "crop_count": {
+              "WHEAT": 3,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 647.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 1273.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.46,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 11,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 2684.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 28,
+            "productive_tiles": 45,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 45.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 1444.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 25,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.44,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 10,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 6674.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 22,
+            "productive_tiles": 53,
+            "workers": 1,
+            "productive_occupancy": 0.7066666666666667,
+            "productive_per_worker": 53.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8809,
+      "seat": 0,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 11,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1242.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1679.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 24,
+            "workers": 1,
+            "productive_occupancy": 0.96,
+            "productive_per_worker": 24.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 2
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 903.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.34,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 329.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 41,
+            "workers": 1,
+            "productive_occupancy": 0.82,
+            "productive_per_worker": 41.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 6
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 1554.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 28,
+            "productive_tiles": 20,
+            "workers": 1,
+            "productive_occupancy": 0.4,
+            "productive_per_worker": 20.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 229.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 47,
+            "workers": 1,
+            "productive_occupancy": 0.94,
+            "productive_per_worker": 47.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 1074.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 26,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.44,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 2381.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 29,
+            "productive_tiles": 43,
+            "workers": 1,
+            "productive_occupancy": 0.5733333333333334,
+            "productive_per_worker": 43.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 19,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 6
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 1073.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 26,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 7,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 6329.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 23,
+            "productive_tiles": 51,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 51.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 25,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 8810,
+      "seat": 1,
+      "days": {
+        "0": {
+          "hour": 0,
+          "self": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 3000.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 25,
+            "productive_tiles": 0,
+            "workers": 1,
+            "productive_occupancy": 0.0,
+            "productive_per_worker": 0.0,
+            "crop_count": {
+              "WHEAT": 0,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 0
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 0,
+              "SHEEP": 0
+            }
+          }
+        },
+        "1": {
+          "hour": 0,
+          "self": {
+            "cash": 1322.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 53.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 4,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.84,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "2": {
+          "hour": 0,
+          "self": {
+            "cash": 967.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 11,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 140.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 3,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.88,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 7
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "3": {
+          "hour": 0,
+          "self": {
+            "cash": 1129.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 190.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "4": {
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "5": {
+          "hour": 0,
+          "self": {
+            "cash": 1242.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 631.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          }
+        },
+        "6": {
+          "hour": 0,
+          "self": {
+            "cash": 2150.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 13,
+            "workers": 1,
+            "productive_occupancy": 0.52,
+            "productive_per_worker": 13.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 616.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 1,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 1
+            }
+          }
+        },
+        "7": {
+          "hour": 0,
+          "self": {
+            "cash": 1151.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1585.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 0,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 10
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 1
+            }
+          }
+        },
+        "8": {
+          "hour": 0,
+          "self": {
+            "cash": 916.0,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 710.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 33,
+            "workers": 1,
+            "productive_occupancy": 0.66,
+            "productive_per_worker": 33.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 1
+            }
+          }
+        },
+        "9": {
+          "hour": 0,
+          "self": {
+            "cash": 961.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 17,
+            "workers": 1,
+            "productive_occupancy": 0.34,
+            "productive_per_worker": 17.0,
+            "crop_count": {
+              "WHEAT": 2,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 9,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 1089.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 7,
+            "productive_tiles": 40,
+            "workers": 1,
+            "productive_occupancy": 0.8,
+            "productive_per_worker": 40.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 12,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 5
+            }
+          }
+        },
+        "10": {
+          "hour": 0,
+          "self": {
+            "cash": 1854.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 29,
+            "productive_tiles": 19,
+            "workers": 1,
+            "productive_occupancy": 0.38,
+            "productive_per_worker": 19.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 9,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 992.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 3,
+            "productive_tiles": 46,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 46.0,
+            "crop_count": {
+              "WHEAT": 7,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 17,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 5
+            }
+          }
+        },
+        "11": {
+          "hour": 0,
+          "self": {
+            "cash": 2110.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 26,
+            "productive_tiles": 22,
+            "workers": 1,
+            "productive_occupancy": 0.44,
+            "productive_per_worker": 22.0,
+            "crop_count": {
+              "WHEAT": 5,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 9,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 2915.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 28,
+            "productive_tiles": 44,
+            "workers": 1,
+            "productive_occupancy": 0.5866666666666667,
+            "productive_per_worker": 44.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 21,
+              "MELON": 4
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 5
+            }
+          }
+        },
+        "12": {
+          "hour": 0,
+          "self": {
+            "cash": 2230.0,
+            "unlocked_tiles": 50,
+            "empty_tiles": 26,
+            "productive_tiles": 21,
+            "workers": 1,
+            "productive_occupancy": 0.42,
+            "productive_per_worker": 21.0,
+            "crop_count": {
+              "WHEAT": 4,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 9,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 6,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 5579.0,
+            "unlocked_tiles": 75,
+            "empty_tiles": 22,
+            "productive_tiles": 52,
+            "workers": 1,
+            "productive_occupancy": 0.6933333333333334,
+            "productive_per_worker": 52.0,
+            "crop_count": {
+              "WHEAT": 6,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 27,
+              "MELON": 6
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 8,
+              "SHEEP": 5
+            }
+          }
+        }
+      }
+    }
+  ],
+  "sealed_outcome": "No terminal-best direction label is included."
+}

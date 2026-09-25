@@ -1,0 +1,1904 @@
+{
+  "schema": "kaggriculture.phase-a-trajectory-signature.fresh10.result.v0",
+  "case_count": 10,
+  "unique_signature_count": 9,
+  "all_cases_same_signature": false,
+  "signature_frequencies": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "cases": [
+    {
+      "seed": 8801,
+      "seat": 0,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 19,
+            "delta": 1
+          },
+          {
+            "day": 11,
+            "from": 19,
+            "to": 21,
+            "delta": 2
+          },
+          {
+            "day": 12,
+            "from": 21,
+            "to": 19,
+            "delta": -2
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "-",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -9,
+          -9,
+          -10,
+          -11,
+          -7,
+          -16,
+          -22,
+          -28,
+          -24,
+          -34
+        ]
+      }
+    },
+    {
+      "seed": 8802,
+      "seat": 1,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 17,
+            "delta": -1
+          },
+          {
+            "day": 10,
+            "from": 17,
+            "to": 19,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 19,
+            "to": 22,
+            "delta": 3
+          },
+          {
+            "day": 12,
+            "from": 22,
+            "to": 21,
+            "delta": -1
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 52,
+            "delta": 7
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -11,
+          -7,
+          -16,
+          -24,
+          -28,
+          -23,
+          -31
+        ]
+      }
+    },
+    {
+      "seed": 8803,
+      "seat": 0,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 16,
+            "delta": -2
+          },
+          {
+            "day": 10,
+            "from": 16,
+            "to": 18,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 18,
+            "to": 21,
+            "delta": 3
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -11,
+          -7,
+          -16,
+          -25,
+          -29,
+          -24,
+          -32
+        ]
+      }
+    },
+    {
+      "seed": 8804,
+      "seat": 1,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 10,
+            "from": 18,
+            "to": 20,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 20,
+            "to": 23,
+            "delta": 3
+          },
+          {
+            "day": 12,
+            "from": 23,
+            "to": 20,
+            "delta": -3
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "-",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -11,
+          -7,
+          -16,
+          -23,
+          -27,
+          -22,
+          -33
+        ]
+      }
+    },
+    {
+      "seed": 8805,
+      "seat": 0,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 17,
+            "delta": -1
+          },
+          {
+            "day": 10,
+            "from": 17,
+            "to": 19,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 19,
+            "to": 22,
+            "delta": 3
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "-",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -11,
+          -7,
+          -16,
+          -24,
+          -28,
+          -23,
+          -31
+        ]
+      }
+    },
+    {
+      "seed": 8806,
+      "seat": 1,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 19,
+            "delta": 1
+          },
+          {
+            "day": 11,
+            "from": 19,
+            "to": 21,
+            "delta": 2
+          },
+          {
+            "day": 12,
+            "from": 21,
+            "to": 19,
+            "delta": -2
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "-",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -9,
+          -9,
+          -10,
+          -11,
+          -7,
+          -16,
+          -22,
+          -28,
+          -24,
+          -34
+        ]
+      }
+    },
+    {
+      "seed": 8807,
+      "seat": 0,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 11,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 18,
+            "delta": 5
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 15,
+            "delta": -3
+          },
+          {
+            "day": 10,
+            "from": 15,
+            "to": 17,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 17,
+            "to": 21,
+            "delta": 4
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "-",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -11,
+          -6,
+          -16,
+          -26,
+          -30,
+          -24,
+          -32
+        ]
+      }
+    },
+    {
+      "seed": 8808,
+      "seat": 1,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 10,
+            "from": 18,
+            "to": 20,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 20,
+            "to": 23,
+            "delta": 3
+          },
+          {
+            "day": 12,
+            "from": 23,
+            "to": 22,
+            "delta": -1
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "-",
+          "+",
+          "+",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 45,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 45,
+            "to": 53,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "-",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -9,
+          -9,
+          -10,
+          -11,
+          -7,
+          -16,
+          -23,
+          -27,
+          -22,
+          -31
+        ]
+      }
+    },
+    {
+      "seed": 8809,
+      "seat": 0,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 17,
+            "delta": -1
+          },
+          {
+            "day": 10,
+            "from": 17,
+            "to": 20,
+            "delta": 3
+          },
+          {
+            "day": 11,
+            "from": 20,
+            "to": 22,
+            "delta": 2
+          },
+          {
+            "day": 12,
+            "from": 22,
+            "to": 21,
+            "delta": -1
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "-",
+          "+",
+          "-",
+          "-"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 6,
+            "from": 23,
+            "to": 24,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 24,
+            "to": 34,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 34,
+            "to": 41,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 41,
+            "to": 47,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 47,
+            "to": 43,
+            "delta": -4
+          },
+          {
+            "day": 12,
+            "from": 43,
+            "to": 51,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "-",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -11,
+          -7,
+          -16,
+          -24,
+          -27,
+          -21,
+          -30
+        ]
+      }
+    },
+    {
+      "seed": 8810,
+      "seat": 1,
+      "signature": {
+        "self_unlocked_changes": [
+          {
+            "day": 9,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          }
+        ],
+        "self_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 13,
+            "delta": 13
+          },
+          {
+            "day": 2,
+            "from": 13,
+            "to": 14,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 14,
+            "to": 15,
+            "delta": 1
+          },
+          {
+            "day": 5,
+            "from": 15,
+            "to": 14,
+            "delta": -1
+          },
+          {
+            "day": 6,
+            "from": 14,
+            "to": 13,
+            "delta": -1
+          },
+          {
+            "day": 7,
+            "from": 13,
+            "to": 17,
+            "delta": 4
+          },
+          {
+            "day": 8,
+            "from": 17,
+            "to": 18,
+            "delta": 1
+          },
+          {
+            "day": 9,
+            "from": 18,
+            "to": 17,
+            "delta": -1
+          },
+          {
+            "day": 10,
+            "from": 17,
+            "to": 19,
+            "delta": 2
+          },
+          {
+            "day": 11,
+            "from": 19,
+            "to": 22,
+            "delta": 3
+          },
+          {
+            "day": 12,
+            "from": 22,
+            "to": 21,
+            "delta": -1
+          }
+        ],
+        "self_worker_changes": [],
+        "self_cash_delta_signs": [
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "opponent_unlocked_changes": [
+          {
+            "day": 8,
+            "from": 25,
+            "to": 50,
+            "delta": 25
+          },
+          {
+            "day": 11,
+            "from": 50,
+            "to": 75,
+            "delta": 25
+          }
+        ],
+        "opponent_productive_changes": [
+          {
+            "day": 1,
+            "from": 0,
+            "to": 21,
+            "delta": 21
+          },
+          {
+            "day": 2,
+            "from": 21,
+            "to": 22,
+            "delta": 1
+          },
+          {
+            "day": 3,
+            "from": 22,
+            "to": 23,
+            "delta": 1
+          },
+          {
+            "day": 8,
+            "from": 23,
+            "to": 33,
+            "delta": 10
+          },
+          {
+            "day": 9,
+            "from": 33,
+            "to": 40,
+            "delta": 7
+          },
+          {
+            "day": 10,
+            "from": 40,
+            "to": 46,
+            "delta": 6
+          },
+          {
+            "day": 11,
+            "from": 46,
+            "to": 44,
+            "delta": -2
+          },
+          {
+            "day": 12,
+            "from": 44,
+            "to": 52,
+            "delta": 8
+          }
+        ],
+        "opponent_worker_changes": [],
+        "opponent_cash_delta_signs": [
+          "-",
+          "+",
+          "+",
+          "+",
+          "-",
+          "-",
+          "+",
+          "-",
+          "+",
+          "-",
+          "+",
+          "+"
+        ],
+        "productive_gap_sequence": [
+          0,
+          -8,
+          -8,
+          -8,
+          -8,
+          -9,
+          -10,
+          -6,
+          -15,
+          -23,
+          -27,
+          -22,
+          -31
+        ]
+      }
+    }
+  ],
+  "boundary": [
+    "Signature uses only day-by-day external State change points and cash-delta signs.",
+    "No terminal label or candidate outcome is used.",
+    "A distinct signature establishes only that trajectory representation exposes case-level variation, not that the variation predicts the terminal-best direction."
+  ]
+}
