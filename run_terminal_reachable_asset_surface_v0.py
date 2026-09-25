@@ -287,7 +287,8 @@ def main():
             "interpreter_sha256":hashlib.sha256(inspect.getsource(kg.interpreter).encode("utf-8")).hexdigest(),
         },
         "boundary":[
-            "Snapshot phase is Day20 h0 immediately before public market processing, matching Dynamic Economic Surface v0.",\n            "READY means current output units already at the public harvest/output boundary at that snapshot.",
+            "Snapshot phase is Day20 h0 immediately before public market processing, matching Dynamic Economic Surface v0.",
+            "READY means current output units already at the public harvest/output boundary at that snapshot.",
             "REACHABLE means committed units not READY at Day20 h0 whose public output boundary can be reached by the season terminal under the same explicit survival/WATER/FEED/timely-harvest assumptions used by the existing Committed Production valuation.",
             "NOT_REACHABLE means committed units on that same valuation basis whose public harvest/output boundary lies after terminal.",
             "The decomposition stops at Asset -> Output boundary. It does not assert completion of HARVEST -> carried -> shed -> SELL -> Cash.",
