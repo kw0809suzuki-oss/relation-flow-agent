@@ -1,0 +1,653 @@
+{
+  "schema": "kaggriculture.phase-a-instruction-eval.fresh10.result.v0",
+  "battle_count": 10,
+  "hold_absolute_mean_self": 32827.7,
+  "oracle_absolute_mean_self": 42311.5,
+  "oracle_delta_vs_hold": 9483.800000000003,
+  "scores": {
+    "v0_direction_picker": {
+      "hits": 2,
+      "accuracy": 0.2,
+      "mean_chosen_terminal_self": 36209.2,
+      "mean_delta_vs_hold": 3381.5,
+      "mean_terminal_regret": 6102.3,
+      "median_terminal_regret": [
+        1160.0,
+        7097.0
+      ],
+      "max_terminal_regret": 16746.0,
+      "cases": [
+        {
+          "seed": 8701,
+          "choice": "throughput_first",
+          "chosen_self": 26835.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 26903.0,
+          "regret": 68.0,
+          "hit": false
+        },
+        {
+          "seed": 8702,
+          "choice": "throughput_first",
+          "chosen_self": 46908.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 55149.0,
+          "regret": 8241.0,
+          "hit": false
+        },
+        {
+          "seed": 8703,
+          "choice": "throughput_first",
+          "chosen_self": 28009.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 28009.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8704,
+          "choice": "throughput_first",
+          "chosen_self": 47064.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 48224.0,
+          "regret": 1160.0,
+          "hit": false
+        },
+        {
+          "seed": 8705,
+          "choice": "throughput_first",
+          "chosen_self": 24653.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 41399.0,
+          "regret": 16746.0,
+          "hit": false
+        },
+        {
+          "seed": 8706,
+          "choice": "throughput_first",
+          "chosen_self": 39568.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 46665.0,
+          "regret": 7097.0,
+          "hit": false
+        },
+        {
+          "seed": 8707,
+          "choice": "throughput_first",
+          "chosen_self": 45176.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 45176.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8708,
+          "choice": "throughput_first",
+          "chosen_self": 47419.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 47487.0,
+          "regret": 68.0,
+          "hit": false
+        },
+        {
+          "seed": 8709,
+          "choice": "throughput_first",
+          "chosen_self": 39927.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 54140.0,
+          "regret": 14213.0,
+          "hit": false
+        },
+        {
+          "seed": 8710,
+          "choice": "throughput_first",
+          "chosen_self": 16533.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 29963.0,
+          "regret": 13430.0,
+          "hit": false
+        }
+      ]
+    },
+    "v1_growth_continuation": {
+      "hits": 2,
+      "accuracy": 0.2,
+      "mean_chosen_terminal_self": 32913.0,
+      "mean_delta_vs_hold": 85.3,
+      "mean_terminal_regret": 9398.5,
+      "median_terminal_regret": [
+        8977.0,
+        9708.0
+      ],
+      "max_terminal_regret": 22210.0,
+      "cases": [
+        {
+          "seed": 8701,
+          "choice": "engine_first",
+          "chosen_self": 17926.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 26903.0,
+          "regret": 8977.0,
+          "hit": false
+        },
+        {
+          "seed": 8702,
+          "choice": "engine_first",
+          "chosen_self": 32939.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 55149.0,
+          "regret": 22210.0,
+          "hit": false
+        },
+        {
+          "seed": 8703,
+          "choice": "engine_first",
+          "chosen_self": 23399.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 28009.0,
+          "regret": 4610.0,
+          "hit": false
+        },
+        {
+          "seed": 8704,
+          "choice": "engine_first",
+          "chosen_self": 42415.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 48224.0,
+          "regret": 5809.0,
+          "hit": false
+        },
+        {
+          "seed": 8705,
+          "choice": "engine_first",
+          "chosen_self": 21182.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 41399.0,
+          "regret": 20217.0,
+          "hit": false
+        },
+        {
+          "seed": 8706,
+          "choice": "engine_first",
+          "chosen_self": 46665.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 46665.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8707,
+          "choice": "engine_first",
+          "chosen_self": 35468.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 45176.0,
+          "regret": 9708.0,
+          "hit": false
+        },
+        {
+          "seed": 8708,
+          "choice": "engine_first",
+          "chosen_self": 36140.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 47487.0,
+          "regret": 11347.0,
+          "hit": false
+        },
+        {
+          "seed": 8709,
+          "choice": "engine_first",
+          "chosen_self": 43033.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 54140.0,
+          "regret": 11107.0,
+          "hit": false
+        },
+        {
+          "seed": 8710,
+          "choice": "engine_first",
+          "chosen_self": 29963.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 29963.0,
+          "regret": 0.0,
+          "hit": true
+        }
+      ]
+    },
+    "v2_completion_contract": {
+      "hits": 2,
+      "accuracy": 0.2,
+      "mean_chosen_terminal_self": 32913.0,
+      "mean_delta_vs_hold": 85.3,
+      "mean_terminal_regret": 9398.5,
+      "median_terminal_regret": [
+        8977.0,
+        9708.0
+      ],
+      "max_terminal_regret": 22210.0,
+      "cases": [
+        {
+          "seed": 8701,
+          "choice": "engine_first",
+          "chosen_self": 17926.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 26903.0,
+          "regret": 8977.0,
+          "hit": false
+        },
+        {
+          "seed": 8702,
+          "choice": "engine_first",
+          "chosen_self": 32939.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 55149.0,
+          "regret": 22210.0,
+          "hit": false
+        },
+        {
+          "seed": 8703,
+          "choice": "engine_first",
+          "chosen_self": 23399.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 28009.0,
+          "regret": 4610.0,
+          "hit": false
+        },
+        {
+          "seed": 8704,
+          "choice": "engine_first",
+          "chosen_self": 42415.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 48224.0,
+          "regret": 5809.0,
+          "hit": false
+        },
+        {
+          "seed": 8705,
+          "choice": "engine_first",
+          "chosen_self": 21182.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 41399.0,
+          "regret": 20217.0,
+          "hit": false
+        },
+        {
+          "seed": 8706,
+          "choice": "engine_first",
+          "chosen_self": 46665.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 46665.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8707,
+          "choice": "engine_first",
+          "chosen_self": 35468.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 45176.0,
+          "regret": 9708.0,
+          "hit": false
+        },
+        {
+          "seed": 8708,
+          "choice": "engine_first",
+          "chosen_self": 36140.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 47487.0,
+          "regret": 11347.0,
+          "hit": false
+        },
+        {
+          "seed": 8709,
+          "choice": "engine_first",
+          "chosen_self": 43033.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 54140.0,
+          "regret": 11107.0,
+          "hit": false
+        },
+        {
+          "seed": 8710,
+          "choice": "engine_first",
+          "chosen_self": 29963.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 29963.0,
+          "regret": 0.0,
+          "hit": true
+        }
+      ]
+    },
+    "v3_world_gap_bridge": {
+      "hits": 3,
+      "accuracy": 0.3,
+      "mean_chosen_terminal_self": 32840.6,
+      "mean_delta_vs_hold": 12.9,
+      "mean_terminal_regret": 9470.9,
+      "median_terminal_regret": [
+        8507.0,
+        9392.0
+      ],
+      "max_terminal_regret": 19992.0,
+      "cases": [
+        {
+          "seed": 8701,
+          "choice": "surface_first",
+          "chosen_self": 18396.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 26903.0,
+          "regret": 8507.0,
+          "hit": false
+        },
+        {
+          "seed": 8702,
+          "choice": "surface_first",
+          "chosen_self": 37389.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 55149.0,
+          "regret": 17760.0,
+          "hit": false
+        },
+        {
+          "seed": 8703,
+          "choice": "surface_first",
+          "chosen_self": 22920.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 28009.0,
+          "regret": 5089.0,
+          "hit": false
+        },
+        {
+          "seed": 8704,
+          "choice": "surface_first",
+          "chosen_self": 48224.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 48224.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8705,
+          "choice": "surface_first",
+          "chosen_self": 41399.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 41399.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8706,
+          "choice": "surface_first",
+          "chosen_self": 27226.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 46665.0,
+          "regret": 19439.0,
+          "hit": false
+        },
+        {
+          "seed": 8707,
+          "choice": "surface_first",
+          "chosen_self": 25184.0,
+          "winners": [
+            "throughput_first"
+          ],
+          "oracle_best_self": 45176.0,
+          "regret": 19992.0,
+          "hit": false
+        },
+        {
+          "seed": 8708,
+          "choice": "surface_first",
+          "chosen_self": 38095.0,
+          "winners": [
+            "hold"
+          ],
+          "oracle_best_self": 47487.0,
+          "regret": 9392.0,
+          "hit": false
+        },
+        {
+          "seed": 8709,
+          "choice": "surface_first",
+          "chosen_self": 54140.0,
+          "winners": [
+            "surface_first"
+          ],
+          "oracle_best_self": 54140.0,
+          "regret": 0.0,
+          "hit": true
+        },
+        {
+          "seed": 8710,
+          "choice": "surface_first",
+          "chosen_self": 15433.0,
+          "winners": [
+            "engine_first"
+          ],
+          "oracle_best_self": 29963.0,
+          "regret": 14530.0,
+          "hit": false
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "seed": 8701,
+      "seat": 0,
+      "terminal_self": {
+        "hold": 26903.0,
+        "surface_first": 18396.0,
+        "throughput_first": 26835.0,
+        "engine_first": 17926.0
+      },
+      "oracle_best_self": 26903.0,
+      "winners": [
+        "hold"
+      ]
+    },
+    {
+      "seed": 8702,
+      "seat": 1,
+      "terminal_self": {
+        "hold": 55149.0,
+        "surface_first": 37389.0,
+        "throughput_first": 46908.0,
+        "engine_first": 32939.0
+      },
+      "oracle_best_self": 55149.0,
+      "winners": [
+        "hold"
+      ]
+    },
+    {
+      "seed": 8703,
+      "seat": 0,
+      "terminal_self": {
+        "hold": 22920.0,
+        "surface_first": 22920.0,
+        "throughput_first": 28009.0,
+        "engine_first": 23399.0
+      },
+      "oracle_best_self": 28009.0,
+      "winners": [
+        "throughput_first"
+      ]
+    },
+    {
+      "seed": 8704,
+      "seat": 1,
+      "terminal_self": {
+        "hold": 31980.0,
+        "surface_first": 48224.0,
+        "throughput_first": 47064.0,
+        "engine_first": 42415.0
+      },
+      "oracle_best_self": 48224.0,
+      "winners": [
+        "surface_first"
+      ]
+    },
+    {
+      "seed": 8705,
+      "seat": 0,
+      "terminal_self": {
+        "hold": 22270.0,
+        "surface_first": 41399.0,
+        "throughput_first": 24653.0,
+        "engine_first": 21182.0
+      },
+      "oracle_best_self": 41399.0,
+      "winners": [
+        "surface_first"
+      ]
+    },
+    {
+      "seed": 8706,
+      "seat": 1,
+      "terminal_self": {
+        "hold": 40378.0,
+        "surface_first": 27226.0,
+        "throughput_first": 39568.0,
+        "engine_first": 46665.0
+      },
+      "oracle_best_self": 46665.0,
+      "winners": [
+        "engine_first"
+      ]
+    },
+    {
+      "seed": 8707,
+      "seat": 0,
+      "terminal_self": {
+        "hold": 25156.0,
+        "surface_first": 25184.0,
+        "throughput_first": 45176.0,
+        "engine_first": 35468.0
+      },
+      "oracle_best_self": 45176.0,
+      "winners": [
+        "throughput_first"
+      ]
+    },
+    {
+      "seed": 8708,
+      "seat": 1,
+      "terminal_self": {
+        "hold": 47487.0,
+        "surface_first": 38095.0,
+        "throughput_first": 47419.0,
+        "engine_first": 36140.0
+      },
+      "oracle_best_self": 47487.0,
+      "winners": [
+        "hold"
+      ]
+    },
+    {
+      "seed": 8709,
+      "seat": 0,
+      "terminal_self": {
+        "hold": 38737.0,
+        "surface_first": 54140.0,
+        "throughput_first": 39927.0,
+        "engine_first": 43033.0
+      },
+      "oracle_best_self": 54140.0,
+      "winners": [
+        "surface_first"
+      ]
+    },
+    {
+      "seed": 8710,
+      "seat": 1,
+      "terminal_self": {
+        "hold": 17297.0,
+        "surface_first": 15433.0,
+        "throughput_first": 16533.0,
+        "engine_first": 29963.0
+      },
+      "oracle_best_self": 29963.0,
+      "winners": [
+        "engine_first"
+      ]
+    }
+  ],
+  "boundary": [
+    "Predictions were committed before these four-arm outcome Battles were run.",
+    "A prediction counts as a hit when its arm is tied for maximum terminal self.",
+    "Terminal regret is oracle best self minus chosen arm self.",
+    "This evaluates instruction-to-direction judgment on saved World State; it is not yet an online Battle policy adoption test."
+  ]
+}
