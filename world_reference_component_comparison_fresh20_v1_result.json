@@ -1,0 +1,886 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.world-reference-component-comparison.fresh20.result.v1",
+  "battle_count": 20,
+  "seed_range": [
+    8201,
+    8220
+  ],
+  "arms": {
+    "baseline": {
+      "absolute_mean_self": 29838.35,
+      "delta_mean_vs_baseline": 0.0,
+      "delta_median_vs_baseline": 0.0,
+      "improved_cases": 0,
+      "worsened_cases": 0,
+      "equal_cases": 20,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "absolute_mean_margin": -100167.25,
+      "by_seed": {
+        "8201": 0.0,
+        "8202": 0.0,
+        "8203": 0.0,
+        "8204": 0.0,
+        "8205": 0.0,
+        "8206": 0.0,
+        "8207": 0.0,
+        "8208": 0.0,
+        "8209": 0.0,
+        "8210": 0.0,
+        "8211": 0.0,
+        "8212": 0.0,
+        "8213": 0.0,
+        "8214": 0.0,
+        "8215": 0.0,
+        "8216": 0.0,
+        "8217": 0.0,
+        "8218": 0.0,
+        "8219": 0.0,
+        "8220": 0.0
+      }
+    },
+    "wr01": {
+      "absolute_mean_self": 30179.55,
+      "delta_mean_vs_baseline": 341.2,
+      "delta_median_vs_baseline": 329.0,
+      "improved_cases": 14,
+      "worsened_cases": 6,
+      "equal_cases": 0,
+      "min_delta": -1567.0,
+      "max_delta": 2985.0,
+      "absolute_mean_margin": -100382.8,
+      "by_seed": {
+        "8201": -492.0,
+        "8202": -679.0,
+        "8203": 245.0,
+        "8204": 700.0,
+        "8205": 881.0,
+        "8206": 389.0,
+        "8207": 1033.0,
+        "8208": -1567.0,
+        "8209": 1135.0,
+        "8210": 269.0,
+        "8211": 1389.0,
+        "8212": 2985.0,
+        "8213": -172.0,
+        "8214": -1422.0,
+        "8215": 88.0,
+        "8216": 1093.0,
+        "8217": 690.0,
+        "8218": -221.0,
+        "8219": 421.0,
+        "8220": 59.0
+      }
+    },
+    "wr02": {
+      "absolute_mean_self": 30741.6,
+      "delta_mean_vs_baseline": 903.25,
+      "delta_median_vs_baseline": 1593.5,
+      "improved_cases": 14,
+      "worsened_cases": 6,
+      "equal_cases": 0,
+      "min_delta": -8697.0,
+      "max_delta": 7150.0,
+      "absolute_mean_margin": -95682.95,
+      "by_seed": {
+        "8201": -6003.0,
+        "8202": 1319.0,
+        "8203": 1342.0,
+        "8204": 3027.0,
+        "8205": 7150.0,
+        "8206": 1058.0,
+        "8207": 4693.0,
+        "8208": 1845.0,
+        "8209": 2587.0,
+        "8210": -3951.0,
+        "8211": 3540.0,
+        "8212": -959.0,
+        "8213": 2881.0,
+        "8214": 1183.0,
+        "8215": 2283.0,
+        "8216": -1089.0,
+        "8217": 4920.0,
+        "8218": 1873.0,
+        "8219": -937.0,
+        "8220": -8697.0
+      }
+    },
+    "bundle": {
+      "absolute_mean_self": 30358.1,
+      "delta_mean_vs_baseline": 519.75,
+      "delta_median_vs_baseline": 2040.5,
+      "improved_cases": 14,
+      "worsened_cases": 6,
+      "equal_cases": 0,
+      "min_delta": -11163.0,
+      "max_delta": 8015.0,
+      "absolute_mean_margin": -96344.45,
+      "by_seed": {
+        "8201": -4736.0,
+        "8202": -281.0,
+        "8203": 1778.0,
+        "8204": 3556.0,
+        "8205": 8015.0,
+        "8206": 2929.0,
+        "8207": 4260.0,
+        "8208": 1348.0,
+        "8209": 2728.0,
+        "8210": -6607.0,
+        "8211": 2192.0,
+        "8212": -443.0,
+        "8213": 2235.0,
+        "8214": 945.0,
+        "8215": 2779.0,
+        "8216": -5891.0,
+        "8217": 2670.0,
+        "8218": 2083.0,
+        "8219": 1998.0,
+        "8220": -11163.0
+      }
+    }
+  },
+  "ablation_view": {
+    "bundle_minus_wr01_mean": 178.55,
+    "bundle_minus_wr01_median": 1786.5,
+    "bundle_minus_wr01_positive_cases": 15,
+    "bundle_minus_wr01_negative_cases": 5,
+    "bundle_minus_wr02_mean": -383.5,
+    "bundle_minus_wr02_positive_cases": 10,
+    "bundle_minus_wr02_negative_cases": 10
+  },
+  "connection": {
+    "wr02_duplicate_seen_total": 571,
+    "wr02_moved_total": 571,
+    "bundle_wr01_reopened_orders_total": 544,
+    "bundle_wr02_duplicate_seen_total": 1251,
+    "bundle_wr02_moved_total": 1251
+  },
+  "cases": [
+    {
+      "seed": 8201,
+      "seat": 0,
+      "baseline": {
+        "self": 37045.0,
+        "opponent": 161036.0,
+        "margin": -123991.0
+      },
+      "wr01": {
+        "self": 36553.0,
+        "opponent": 159097.0,
+        "margin": -122544.0
+      },
+      "wr02": {
+        "self": 31042.0,
+        "opponent": 147640.0,
+        "margin": -116598.0
+      },
+      "bundle": {
+        "self": 32309.0,
+        "opponent": 148762.0,
+        "margin": -116453.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 22,
+        "wr02_moved": 22,
+        "bundle_wr01_reopened_orders": 28,
+        "bundle_wr02_duplicate_seen": 69,
+        "bundle_wr02_moved": 69
+      },
+      "delta_self": {
+        "wr01": -492.0,
+        "wr02": -6003.0,
+        "bundle": -4736.0
+      }
+    },
+    {
+      "seed": 8202,
+      "seat": 1,
+      "baseline": {
+        "self": 30493.0,
+        "opponent": 121589.0,
+        "margin": -91096.0
+      },
+      "wr01": {
+        "self": 29814.0,
+        "opponent": 118963.0,
+        "margin": -89149.0
+      },
+      "wr02": {
+        "self": 31812.0,
+        "opponent": 117927.0,
+        "margin": -86115.0
+      },
+      "bundle": {
+        "self": 30212.0,
+        "opponent": 124385.0,
+        "margin": -94173.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 26,
+        "wr02_moved": 26,
+        "bundle_wr01_reopened_orders": 29,
+        "bundle_wr02_duplicate_seen": 59,
+        "bundle_wr02_moved": 59
+      },
+      "delta_self": {
+        "wr01": -679.0,
+        "wr02": 1319.0,
+        "bundle": -281.0
+      }
+    },
+    {
+      "seed": 8203,
+      "seat": 0,
+      "baseline": {
+        "self": 14097.0,
+        "opponent": 99848.0,
+        "margin": -85751.0
+      },
+      "wr01": {
+        "self": 14342.0,
+        "opponent": 108272.0,
+        "margin": -93930.0
+      },
+      "wr02": {
+        "self": 15439.0,
+        "opponent": 96608.0,
+        "margin": -81169.0
+      },
+      "bundle": {
+        "self": 15875.0,
+        "opponent": 98808.0,
+        "margin": -82933.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 26,
+        "wr02_moved": 26,
+        "bundle_wr01_reopened_orders": 26,
+        "bundle_wr02_duplicate_seen": 76,
+        "bundle_wr02_moved": 76
+      },
+      "delta_self": {
+        "wr01": 245.0,
+        "wr02": 1342.0,
+        "bundle": 1778.0
+      }
+    },
+    {
+      "seed": 8204,
+      "seat": 1,
+      "baseline": {
+        "self": 16814.0,
+        "opponent": 103028.0,
+        "margin": -86214.0
+      },
+      "wr01": {
+        "self": 17514.0,
+        "opponent": 103656.0,
+        "margin": -86142.0
+      },
+      "wr02": {
+        "self": 19841.0,
+        "opponent": 105773.0,
+        "margin": -85932.0
+      },
+      "bundle": {
+        "self": 20370.0,
+        "opponent": 105226.0,
+        "margin": -84856.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 19,
+        "wr02_moved": 19,
+        "bundle_wr01_reopened_orders": 22,
+        "bundle_wr02_duplicate_seen": 56,
+        "bundle_wr02_moved": 56
+      },
+      "delta_self": {
+        "wr01": 700.0,
+        "wr02": 3027.0,
+        "bundle": 3556.0
+      }
+    },
+    {
+      "seed": 8205,
+      "seat": 0,
+      "baseline": {
+        "self": 19683.0,
+        "opponent": 104794.0,
+        "margin": -85111.0
+      },
+      "wr01": {
+        "self": 20564.0,
+        "opponent": 107513.0,
+        "margin": -86949.0
+      },
+      "wr02": {
+        "self": 26833.0,
+        "opponent": 133392.0,
+        "margin": -106559.0
+      },
+      "bundle": {
+        "self": 27698.0,
+        "opponent": 132914.0,
+        "margin": -105216.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 32,
+        "wr02_moved": 32,
+        "bundle_wr01_reopened_orders": 25,
+        "bundle_wr02_duplicate_seen": 70,
+        "bundle_wr02_moved": 70
+      },
+      "delta_self": {
+        "wr01": 881.0,
+        "wr02": 7150.0,
+        "bundle": 8015.0
+      }
+    },
+    {
+      "seed": 8206,
+      "seat": 1,
+      "baseline": {
+        "self": 11848.0,
+        "opponent": 84085.0,
+        "margin": -72237.0
+      },
+      "wr01": {
+        "self": 12237.0,
+        "opponent": 82797.0,
+        "margin": -70560.0
+      },
+      "wr02": {
+        "self": 12906.0,
+        "opponent": 81831.0,
+        "margin": -68925.0
+      },
+      "bundle": {
+        "self": 14777.0,
+        "opponent": 83935.0,
+        "margin": -69158.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 29,
+        "wr02_moved": 29,
+        "bundle_wr01_reopened_orders": 33,
+        "bundle_wr02_duplicate_seen": 42,
+        "bundle_wr02_moved": 42
+      },
+      "delta_self": {
+        "wr01": 389.0,
+        "wr02": 1058.0,
+        "bundle": 2929.0
+      }
+    },
+    {
+      "seed": 8207,
+      "seat": 0,
+      "baseline": {
+        "self": 33927.0,
+        "opponent": 132837.0,
+        "margin": -98910.0
+      },
+      "wr01": {
+        "self": 34960.0,
+        "opponent": 134332.0,
+        "margin": -99372.0
+      },
+      "wr02": {
+        "self": 38620.0,
+        "opponent": 129729.0,
+        "margin": -91109.0
+      },
+      "bundle": {
+        "self": 38187.0,
+        "opponent": 137241.0,
+        "margin": -99054.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 40,
+        "wr02_moved": 40,
+        "bundle_wr01_reopened_orders": 31,
+        "bundle_wr02_duplicate_seen": 73,
+        "bundle_wr02_moved": 73
+      },
+      "delta_self": {
+        "wr01": 1033.0,
+        "wr02": 4693.0,
+        "bundle": 4260.0
+      }
+    },
+    {
+      "seed": 8208,
+      "seat": 1,
+      "baseline": {
+        "self": 45830.0,
+        "opponent": 173959.0,
+        "margin": -128129.0
+      },
+      "wr01": {
+        "self": 44263.0,
+        "opponent": 172144.0,
+        "margin": -127881.0
+      },
+      "wr02": {
+        "self": 47675.0,
+        "opponent": 149666.0,
+        "margin": -101991.0
+      },
+      "bundle": {
+        "self": 47178.0,
+        "opponent": 149389.0,
+        "margin": -102211.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 32,
+        "wr02_moved": 32,
+        "bundle_wr01_reopened_orders": 22,
+        "bundle_wr02_duplicate_seen": 64,
+        "bundle_wr02_moved": 64
+      },
+      "delta_self": {
+        "wr01": -1567.0,
+        "wr02": 1845.0,
+        "bundle": 1348.0
+      }
+    },
+    {
+      "seed": 8209,
+      "seat": 0,
+      "baseline": {
+        "self": 10286.0,
+        "opponent": 100072.0,
+        "margin": -89786.0
+      },
+      "wr01": {
+        "self": 11421.0,
+        "opponent": 103888.0,
+        "margin": -92467.0
+      },
+      "wr02": {
+        "self": 12873.0,
+        "opponent": 112931.0,
+        "margin": -100058.0
+      },
+      "bundle": {
+        "self": 13014.0,
+        "opponent": 116106.0,
+        "margin": -103092.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 29,
+        "wr02_moved": 29,
+        "bundle_wr01_reopened_orders": 36,
+        "bundle_wr02_duplicate_seen": 60,
+        "bundle_wr02_moved": 60
+      },
+      "delta_self": {
+        "wr01": 1135.0,
+        "wr02": 2587.0,
+        "bundle": 2728.0
+      }
+    },
+    {
+      "seed": 8210,
+      "seat": 1,
+      "baseline": {
+        "self": 34950.0,
+        "opponent": 156638.0,
+        "margin": -121688.0
+      },
+      "wr01": {
+        "self": 35219.0,
+        "opponent": 152464.0,
+        "margin": -117245.0
+      },
+      "wr02": {
+        "self": 30999.0,
+        "opponent": 146005.0,
+        "margin": -115006.0
+      },
+      "bundle": {
+        "self": 28343.0,
+        "opponent": 138664.0,
+        "margin": -110321.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 28,
+        "wr02_moved": 28,
+        "bundle_wr01_reopened_orders": 30,
+        "bundle_wr02_duplicate_seen": 51,
+        "bundle_wr02_moved": 51
+      },
+      "delta_self": {
+        "wr01": 269.0,
+        "wr02": -3951.0,
+        "bundle": -6607.0
+      }
+    },
+    {
+      "seed": 8211,
+      "seat": 0,
+      "baseline": {
+        "self": 41671.0,
+        "opponent": 127075.0,
+        "margin": -85404.0
+      },
+      "wr01": {
+        "self": 43060.0,
+        "opponent": 133468.0,
+        "margin": -90408.0
+      },
+      "wr02": {
+        "self": 45211.0,
+        "opponent": 136894.0,
+        "margin": -91683.0
+      },
+      "bundle": {
+        "self": 43863.0,
+        "opponent": 142974.0,
+        "margin": -99111.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 36,
+        "wr02_moved": 36,
+        "bundle_wr01_reopened_orders": 30,
+        "bundle_wr02_duplicate_seen": 59,
+        "bundle_wr02_moved": 59
+      },
+      "delta_self": {
+        "wr01": 1389.0,
+        "wr02": 3540.0,
+        "bundle": 2192.0
+      }
+    },
+    {
+      "seed": 8212,
+      "seat": 1,
+      "baseline": {
+        "self": 24670.0,
+        "opponent": 72856.0,
+        "margin": -48186.0
+      },
+      "wr01": {
+        "self": 27655.0,
+        "opponent": 78423.0,
+        "margin": -50768.0
+      },
+      "wr02": {
+        "self": 23711.0,
+        "opponent": 87211.0,
+        "margin": -63500.0
+      },
+      "bundle": {
+        "self": 24227.0,
+        "opponent": 87544.0,
+        "margin": -63317.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 35,
+        "wr02_moved": 35,
+        "bundle_wr01_reopened_orders": 31,
+        "bundle_wr02_duplicate_seen": 61,
+        "bundle_wr02_moved": 61
+      },
+      "delta_self": {
+        "wr01": 2985.0,
+        "wr02": -959.0,
+        "bundle": -443.0
+      }
+    },
+    {
+      "seed": 8213,
+      "seat": 0,
+      "baseline": {
+        "self": 42252.0,
+        "opponent": 166795.0,
+        "margin": -124543.0
+      },
+      "wr01": {
+        "self": 42080.0,
+        "opponent": 168242.0,
+        "margin": -126162.0
+      },
+      "wr02": {
+        "self": 45133.0,
+        "opponent": 149307.0,
+        "margin": -104174.0
+      },
+      "bundle": {
+        "self": 44487.0,
+        "opponent": 153183.0,
+        "margin": -108696.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 32,
+        "wr02_moved": 32,
+        "bundle_wr01_reopened_orders": 24,
+        "bundle_wr02_duplicate_seen": 70,
+        "bundle_wr02_moved": 70
+      },
+      "delta_self": {
+        "wr01": -172.0,
+        "wr02": 2881.0,
+        "bundle": 2235.0
+      }
+    },
+    {
+      "seed": 8214,
+      "seat": 1,
+      "baseline": {
+        "self": 21500.0,
+        "opponent": 135999.0,
+        "margin": -114499.0
+      },
+      "wr01": {
+        "self": 20078.0,
+        "opponent": 133565.0,
+        "margin": -113487.0
+      },
+      "wr02": {
+        "self": 22683.0,
+        "opponent": 116883.0,
+        "margin": -94200.0
+      },
+      "bundle": {
+        "self": 22445.0,
+        "opponent": 114512.0,
+        "margin": -92067.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 26,
+        "wr02_moved": 26,
+        "bundle_wr01_reopened_orders": 26,
+        "bundle_wr02_duplicate_seen": 58,
+        "bundle_wr02_moved": 58
+      },
+      "delta_self": {
+        "wr01": -1422.0,
+        "wr02": 1183.0,
+        "bundle": 945.0
+      }
+    },
+    {
+      "seed": 8215,
+      "seat": 0,
+      "baseline": {
+        "self": 14463.0,
+        "opponent": 121887.0,
+        "margin": -107424.0
+      },
+      "wr01": {
+        "self": 14551.0,
+        "opponent": 122511.0,
+        "margin": -107960.0
+      },
+      "wr02": {
+        "self": 16746.0,
+        "opponent": 124506.0,
+        "margin": -107760.0
+      },
+      "bundle": {
+        "self": 17242.0,
+        "opponent": 121013.0,
+        "margin": -103771.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 24,
+        "wr02_moved": 24,
+        "bundle_wr01_reopened_orders": 30,
+        "bundle_wr02_duplicate_seen": 68,
+        "bundle_wr02_moved": 68
+      },
+      "delta_self": {
+        "wr01": 88.0,
+        "wr02": 2283.0,
+        "bundle": 2779.0
+      }
+    },
+    {
+      "seed": 8216,
+      "seat": 1,
+      "baseline": {
+        "self": 34107.0,
+        "opponent": 119652.0,
+        "margin": -85545.0
+      },
+      "wr01": {
+        "self": 35200.0,
+        "opponent": 112397.0,
+        "margin": -77197.0
+      },
+      "wr02": {
+        "self": 33018.0,
+        "opponent": 90418.0,
+        "margin": -57400.0
+      },
+      "bundle": {
+        "self": 28216.0,
+        "opponent": 80071.0,
+        "margin": -51855.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 40,
+        "wr02_moved": 40,
+        "bundle_wr01_reopened_orders": 32,
+        "bundle_wr02_duplicate_seen": 69,
+        "bundle_wr02_moved": 69
+      },
+      "delta_self": {
+        "wr01": 1093.0,
+        "wr02": -1089.0,
+        "bundle": -5891.0
+      }
+    },
+    {
+      "seed": 8217,
+      "seat": 0,
+      "baseline": {
+        "self": 26308.0,
+        "opponent": 129665.0,
+        "margin": -103357.0
+      },
+      "wr01": {
+        "self": 26998.0,
+        "opponent": 131577.0,
+        "margin": -104579.0
+      },
+      "wr02": {
+        "self": 31228.0,
+        "opponent": 136222.0,
+        "margin": -104994.0
+      },
+      "bundle": {
+        "self": 28978.0,
+        "opponent": 130368.0,
+        "margin": -101390.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 25,
+        "wr02_moved": 25,
+        "bundle_wr01_reopened_orders": 22,
+        "bundle_wr02_duplicate_seen": 52,
+        "bundle_wr02_moved": 52
+      },
+      "delta_self": {
+        "wr01": 690.0,
+        "wr02": 4920.0,
+        "bundle": 2670.0
+      }
+    },
+    {
+      "seed": 8218,
+      "seat": 1,
+      "baseline": {
+        "self": 49872.0,
+        "opponent": 180706.0,
+        "margin": -130834.0
+      },
+      "wr01": {
+        "self": 49651.0,
+        "opponent": 181423.0,
+        "margin": -131772.0
+      },
+      "wr02": {
+        "self": 51745.0,
+        "opponent": 166667.0,
+        "margin": -114922.0
+      },
+      "bundle": {
+        "self": 51955.0,
+        "opponent": 176295.0,
+        "margin": -124340.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 23,
+        "wr02_moved": 23,
+        "bundle_wr01_reopened_orders": 22,
+        "bundle_wr02_duplicate_seen": 59,
+        "bundle_wr02_moved": 59
+      },
+      "delta_self": {
+        "wr01": -221.0,
+        "wr02": 1873.0,
+        "bundle": 2083.0
+      }
+    },
+    {
+      "seed": 8219,
+      "seat": 0,
+      "baseline": {
+        "self": 42995.0,
+        "opponent": 166173.0,
+        "margin": -123178.0
+      },
+      "wr01": {
+        "self": 43416.0,
+        "opponent": 166065.0,
+        "margin": -122649.0
+      },
+      "wr02": {
+        "self": 42058.0,
+        "opponent": 161326.0,
+        "margin": -119268.0
+      },
+      "bundle": {
+        "self": 44993.0,
+        "opponent": 163442.0,
+        "margin": -118449.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 26,
+        "wr02_moved": 26,
+        "bundle_wr01_reopened_orders": 22,
+        "bundle_wr02_duplicate_seen": 72,
+        "bundle_wr02_moved": 72
+      },
+      "delta_self": {
+        "wr01": 421.0,
+        "wr02": -937.0,
+        "bundle": 1998.0
+      }
+    },
+    {
+      "seed": 8220,
+      "seat": 1,
+      "baseline": {
+        "self": 43956.0,
+        "opponent": 141418.0,
+        "margin": -97462.0
+      },
+      "wr01": {
+        "self": 44015.0,
+        "opponent": 140450.0,
+        "margin": -96435.0
+      },
+      "wr02": {
+        "self": 35259.0,
+        "opponent": 137555.0,
+        "margin": -102296.0
+      },
+      "bundle": {
+        "self": 32793.0,
+        "opponent": 129219.0,
+        "margin": -96426.0
+      },
+      "connection": {
+        "wr02_duplicate_seen": 21,
+        "wr02_moved": 21,
+        "bundle_wr01_reopened_orders": 23,
+        "bundle_wr02_duplicate_seen": 63,
+        "bundle_wr02_moved": 63
+      },
+      "delta_self": {
+        "wr01": 59.0,
+        "wr02": -8697.0,
+        "bundle": -11163.0
+      }
+    }
+  ],
+  "boundary": [
+    "Independent fresh20 matched on seeds 8201-8220 and alternating seats.",
+    "Baseline and WR-01 values come from the previously completed unchanged WR-01 fresh20 run.",
+    "WR-02 and Bundle logic are unchanged after the fixed-five comparison.",
+    "Terminal self is primary; ablation differences determine whether each component earns retention."
+  ]
+}
