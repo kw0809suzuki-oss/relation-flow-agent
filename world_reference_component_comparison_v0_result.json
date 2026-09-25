@@ -39,39 +39,39 @@
       }
     },
     "wr02": {
-      "absolute_mean_self": 3000.0,
-      "delta_mean_vs_baseline": -21042.8,
-      "delta_median_vs_baseline": -11166.0,
+      "absolute_mean_self": 24042.8,
+      "delta_mean_vs_baseline": 0.0,
+      "delta_median_vs_baseline": 0.0,
       "improved_cases": 0,
-      "worsened_cases": 5,
-      "equal_cases": 0,
-      "min_delta": -42856.0,
-      "max_delta": -8764.0,
-      "absolute_mean_margin": -156325.0,
+      "worsened_cases": 0,
+      "equal_cases": 5,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "absolute_mean_margin": -104411.6,
       "by_seed": {
-        "7351": -11166.0,
-        "7352": -8764.0,
-        "7353": -42856.0,
-        "7354": -31885.0,
-        "7355": -10543.0
+        "7351": 0.0,
+        "7352": 0.0,
+        "7353": 0.0,
+        "7354": 0.0,
+        "7355": 0.0
       }
     },
     "bundle": {
-      "absolute_mean_self": 3000.0,
-      "delta_mean_vs_baseline": -21042.8,
-      "delta_median_vs_baseline": -11166.0,
-      "improved_cases": 0,
-      "worsened_cases": 5,
+      "absolute_mean_self": 25332.2,
+      "delta_mean_vs_baseline": 1289.4,
+      "delta_median_vs_baseline": 1153.0,
+      "improved_cases": 5,
+      "worsened_cases": 0,
       "equal_cases": 0,
-      "min_delta": -42856.0,
-      "max_delta": -8764.0,
-      "absolute_mean_margin": -156325.0,
+      "min_delta": 455.0,
+      "max_delta": 2076.0,
+      "absolute_mean_margin": -105005.6,
       "by_seed": {
-        "7351": -11166.0,
-        "7352": -8764.0,
-        "7353": -42856.0,
-        "7354": -31885.0,
-        "7355": -10543.0
+        "7351": 455.0,
+        "7352": 1153.0,
+        "7353": 942.0,
+        "7354": 2076.0,
+        "7355": 1821.0
       }
     }
   },
@@ -79,7 +79,7 @@
     "wr01_reopened_orders_total": 140,
     "wr02_reopened_land_orders_total": 0,
     "wr02_cases_with_reopened_land": 0,
-    "bundle_wr01_reopened_orders_total": 0,
+    "bundle_wr01_reopened_orders_total": 140,
     "bundle_wr02_reopened_land_orders_total": 0
   },
   "cases": [
@@ -97,24 +97,24 @@
         "margin": -107682.0
       },
       "wr02": {
-        "self": 3000.0,
-        "opponent": 156607.0,
-        "margin": -153607.0
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
       },
       "bundle": {
-        "self": 3000.0,
-        "opponent": 156607.0,
-        "margin": -153607.0
+        "self": 14621.0,
+        "opponent": 122303.0,
+        "margin": -107682.0
       },
       "delta_self": {
         "wr01": 455.0,
-        "wr02": -11166.0,
-        "bundle": -11166.0
+        "wr02": 0.0,
+        "bundle": 455.0
       },
       "connection": {
         "wr01_reopened_orders": 21,
         "wr02_reopened_land_orders": 0,
-        "bundle_wr01_reopened_orders": 0,
+        "bundle_wr01_reopened_orders": 21,
         "bundle_wr02_reopened_land_orders": 0
       }
     },
@@ -132,24 +132,24 @@
         "margin": -98997.0
       },
       "wr02": {
-        "self": 3000.0,
-        "opponent": 177785.0,
-        "margin": -174785.0
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
       },
       "bundle": {
-        "self": 3000.0,
-        "opponent": 177785.0,
-        "margin": -174785.0
+        "self": 12917.0,
+        "opponent": 111914.0,
+        "margin": -98997.0
       },
       "delta_self": {
         "wr01": 1153.0,
-        "wr02": -8764.0,
-        "bundle": -8764.0
+        "wr02": 0.0,
+        "bundle": 1153.0
       },
       "connection": {
         "wr01_reopened_orders": 29,
         "wr02_reopened_land_orders": 0,
-        "bundle_wr01_reopened_orders": 0,
+        "bundle_wr01_reopened_orders": 29,
         "bundle_wr02_reopened_land_orders": 0
       }
     },
@@ -167,24 +167,24 @@
         "margin": -94633.0
       },
       "wr02": {
-        "self": 3000.0,
-        "opponent": 124981.0,
-        "margin": -121981.0
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
       },
       "bundle": {
-        "self": 3000.0,
-        "opponent": 124981.0,
-        "margin": -121981.0
+        "self": 46798.0,
+        "opponent": 141431.0,
+        "margin": -94633.0
       },
       "delta_self": {
         "wr01": 942.0,
-        "wr02": -42856.0,
-        "bundle": -42856.0
+        "wr02": 0.0,
+        "bundle": 942.0
       },
       "connection": {
         "wr01_reopened_orders": 31,
         "wr02_reopened_land_orders": 0,
-        "bundle_wr01_reopened_orders": 0,
+        "bundle_wr01_reopened_orders": 31,
         "bundle_wr02_reopened_land_orders": 0
       }
     },
@@ -202,24 +202,24 @@
         "margin": -130796.0
       },
       "wr02": {
-        "self": 3000.0,
-        "opponent": 165481.0,
-        "margin": -162481.0
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
       },
       "bundle": {
-        "self": 3000.0,
-        "opponent": 165481.0,
-        "margin": -162481.0
+        "self": 36961.0,
+        "opponent": 167757.0,
+        "margin": -130796.0
       },
       "delta_self": {
         "wr01": 2076.0,
-        "wr02": -31885.0,
-        "bundle": -31885.0
+        "wr02": 0.0,
+        "bundle": 2076.0
       },
       "connection": {
         "wr01_reopened_orders": 33,
         "wr02_reopened_land_orders": 0,
-        "bundle_wr01_reopened_orders": 0,
+        "bundle_wr01_reopened_orders": 33,
         "bundle_wr02_reopened_land_orders": 0
       }
     },
@@ -237,24 +237,24 @@
         "margin": -92920.0
       },
       "wr02": {
-        "self": 3000.0,
-        "opponent": 171771.0,
-        "margin": -168771.0
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
       },
       "bundle": {
-        "self": 3000.0,
-        "opponent": 171771.0,
-        "margin": -168771.0
+        "self": 15364.0,
+        "opponent": 108284.0,
+        "margin": -92920.0
       },
       "delta_self": {
         "wr01": 1821.0,
-        "wr02": -10543.0,
-        "bundle": -10543.0
+        "wr02": 0.0,
+        "bundle": 1821.0
       },
       "connection": {
         "wr01_reopened_orders": 26,
         "wr02_reopened_land_orders": 0,
-        "bundle_wr01_reopened_orders": 0,
+        "bundle_wr01_reopened_orders": 26,
         "bundle_wr02_reopened_land_orders": 0
       }
     }
