@@ -1,0 +1,56 @@
+{
+  "schema": "kaggriculture.phase-a-surface-shop-path-hold.result.v0",
+  "cases": [
+    {
+      "seed": 8801,
+      "terminal_self": {
+        "active": 20391.0,
+        "surface_original": 38755.0,
+        "surface_active_shop_path": 18035.0
+      },
+      "delta_vs_active": {
+        "surface_original": 18364.0,
+        "surface_active_shop_path": -2356.0
+      },
+      "shop_path_hold_effect_on_surface": -20720.0,
+      "original_sign": "positive",
+      "held_sign": "negative",
+      "sign_changed": true,
+      "held_path_matches_active": true,
+      "changed_turns": {
+        "surface_original": 1,
+        "surface_active_shop_path": 1
+      }
+    },
+    {
+      "seed": 8806,
+      "terminal_self": {
+        "active": 47304.0,
+        "surface_original": 29983.0,
+        "surface_active_shop_path": 51412.0
+      },
+      "delta_vs_active": {
+        "surface_original": -17321.0,
+        "surface_active_shop_path": 4108.0
+      },
+      "shop_path_hold_effect_on_surface": 21429.0,
+      "original_sign": "negative",
+      "held_sign": "positive",
+      "sign_changed": true,
+      "held_path_matches_active": true,
+      "changed_turns": {
+        "surface_original": 1,
+        "surface_active_shop_path": 1
+      }
+    }
+  ],
+  "mechanical_summary": {
+    "both_held_paths_match_active": true,
+    "any_terminal_sign_changed": true
+  },
+  "boundary": [
+    "A sign change after holding the Active shop path is evidence that the candidate-induced shop-path channel materially participates in the terminal Surface effect for that seed.",
+    "No sign change does not prove the channel is irrelevant; magnitude changes remain informative.",
+    "This probe does not remove every downstream effect of altered RNG consumption."
+  ]
+}
