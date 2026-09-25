@@ -1,0 +1,66 @@
+name: Phase A Trajectory Terminal Correspondence fresh10 v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - .github/workflows/phase-a-trajectory-terminal-correspondence-fresh10-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 8801, seat: 0}
+          - {seed: 8802, seat: 1}
+          - {seed: 8803, seat: 0}
+          - {seed: 8804, seat: 1}
+          - {seed: 8805, seat: 0}
+          - {seed: 8806, seat: 1}
+          - {seed: 8807, seat: 0}
+          - {seed: 8808, seat: 1}
+          - {seed: 8809, seat: 0}
+          - {seed: 8810, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_phase_a_takeoff_fresh20_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase-a-trajectory-outcome-${{ matrix.seed }}
+          path: phase_a_takeoff_fresh20_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: phase-a-trajectory-outcome-*
+          path: phase-a-trajectory-outcome-artifacts
+          merge-multiple: true
+      - run: python analyze_phase_a_trajectory_terminal_correspondence_fresh10_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add phase_a_trajectory_terminal_correspondence_fresh10_v0_result.json
+          git commit -m "Record Phase A trajectory terminal correspondence fresh10 v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
