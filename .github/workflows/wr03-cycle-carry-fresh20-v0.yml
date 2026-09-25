@@ -1,0 +1,76 @@
+name: WR-03 Cycle Carry fresh20 v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - .github/workflows/wr03-cycle-carry-fresh20-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 8301, seat: 0}
+          - {seed: 8302, seat: 1}
+          - {seed: 8303, seat: 0}
+          - {seed: 8304, seat: 1}
+          - {seed: 8305, seat: 0}
+          - {seed: 8306, seat: 1}
+          - {seed: 8307, seat: 0}
+          - {seed: 8308, seat: 1}
+          - {seed: 8309, seat: 0}
+          - {seed: 8310, seat: 1}
+          - {seed: 8311, seat: 0}
+          - {seed: 8312, seat: 1}
+          - {seed: 8313, seat: 0}
+          - {seed: 8314, seat: 1}
+          - {seed: 8315, seat: 0}
+          - {seed: 8316, seat: 1}
+          - {seed: 8317, seat: 0}
+          - {seed: 8318, seat: 1}
+          - {seed: 8319, seat: 0}
+          - {seed: 8320, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_wr03_fresh20_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wr03-fresh20-${{ matrix.seed }}
+          path: wr03_fresh20_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wr03-fresh20-*
+          path: wr03-fresh20-artifacts
+          merge-multiple: true
+      - run: python analyze_wr03_fresh20_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add wr03_fresh20_v0_result.json
+          git commit -m "Record WR-03 fresh20 v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
