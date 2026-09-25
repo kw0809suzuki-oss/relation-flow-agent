@@ -1,0 +1,76 @@
+name: WR-02 plus P12 Day0 Reservation fresh20 v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [experiment/wr02-p12-day0-reservation-v0-20260926]
+    paths:
+      - .github/workflows/wr02-p12-day0-reservation-fresh20-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 8601, seat: 0}
+          - {seed: 8602, seat: 1}
+          - {seed: 8603, seat: 0}
+          - {seed: 8604, seat: 1}
+          - {seed: 8605, seat: 0}
+          - {seed: 8606, seat: 1}
+          - {seed: 8607, seat: 0}
+          - {seed: 8608, seat: 1}
+          - {seed: 8609, seat: 0}
+          - {seed: 8610, seat: 1}
+          - {seed: 8611, seat: 0}
+          - {seed: 8612, seat: 1}
+          - {seed: 8613, seat: 0}
+          - {seed: 8614, seat: 1}
+          - {seed: 8615, seat: 0}
+          - {seed: 8616, seat: 1}
+          - {seed: 8617, seat: 0}
+          - {seed: 8618, seat: 1}
+          - {seed: 8619, seat: 0}
+          - {seed: 8620, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_wr02_p12_day0_reservation_fresh20_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wr02-p12-fresh20-${{ matrix.seed }}
+          path: wr02_p12_day0_reservation_fresh20_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wr02-p12-fresh20-*
+          path: wr02-p12-fresh20-artifacts
+          merge-multiple: true
+      - run: python analyze_wr02_p12_day0_reservation_fresh20_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add wr02_p12_day0_reservation_fresh20_v0_result.json
+          git commit -m "Record WR-02 plus P12 fresh20 v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
