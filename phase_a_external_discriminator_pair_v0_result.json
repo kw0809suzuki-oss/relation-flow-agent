@@ -1,0 +1,558 @@
+{
+  "schema": "kaggriculture.phase-a-external-discriminator-pair.result.v0",
+  "pair": [
+    8801,
+    8806
+  ],
+  "first_observable_difference_day": 3,
+  "first_difference_domains": [
+    "town"
+  ],
+  "first_differences": [
+    {
+      "field": "town.unlocked_shops",
+      "seed8801": [
+        "PIZZA_SHOP"
+      ],
+      "seed8806": [
+        "ICE_CREAM_SHOP"
+      ]
+    }
+  ],
+  "daily_differences": [
+    {
+      "day": 3,
+      "differences": [
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "PIZZA_SHOP"
+          ],
+          "seed8806": [
+            "ICE_CREAM_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "differences": [
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9996.0,
+          "seed8806": 9990.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 137.0,
+          "seed8806": 147.0
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "PIZZA_SHOP"
+          ],
+          "seed8806": [
+            "ICE_CREAM_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "differences": [
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9995.0,
+          "seed8806": 9983.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 139.0,
+          "seed8806": 155.0
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "PIZZA_SHOP"
+          ],
+          "seed8806": [
+            "ICE_CREAM_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "differences": [
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9994.0,
+          "seed8806": 9976.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 141.0,
+          "seed8806": 161.0
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "seed8806": [
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "differences": [
+        {
+          "field": "market.inventory.EGG",
+          "seed8801": 9987.0,
+          "seed8806": 9993.0
+        },
+        {
+          "field": "market.inventory.MILK",
+          "seed8801": 9969.0,
+          "seed8806": 9963.0
+        },
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9987.0,
+          "seed8806": 9969.0
+        },
+        {
+          "field": "market.prices.EGG",
+          "seed8801": 51.0,
+          "seed8806": 50.0
+        },
+        {
+          "field": "market.prices.MILK",
+          "seed8801": 208.0,
+          "seed8806": 213.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 150.0,
+          "seed8806": 167.0
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "seed8806": [
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "differences": [
+        {
+          "field": "market.inventory.EGG",
+          "seed8801": 9980.0,
+          "seed8806": 9992.0
+        },
+        {
+          "field": "market.inventory.MILK",
+          "seed8801": 9962.0,
+          "seed8806": 9950.0
+        },
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9980.0,
+          "seed8806": 9962.0
+        },
+        {
+          "field": "market.prices.EGG",
+          "seed8801": 51.0,
+          "seed8806": 50.0
+        },
+        {
+          "field": "market.prices.MILK",
+          "seed8801": 214.0,
+          "seed8806": 221.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 158.0,
+          "seed8806": 172.0
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP"
+          ],
+          "seed8806": [
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "differences": [
+        {
+          "field": "market.inventory.EGG",
+          "seed8801": 9973.0,
+          "seed8806": 9991.0
+        },
+        {
+          "field": "market.inventory.MILK",
+          "seed8801": 9985.0,
+          "seed8806": 9967.0
+        },
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9973.0,
+          "seed8806": 9955.0
+        },
+        {
+          "field": "market.prices.EGG",
+          "seed8801": 52.0,
+          "seed8806": 51.0
+        },
+        {
+          "field": "market.prices.MILK",
+          "seed8801": 194.0,
+          "seed8806": 210.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 164.0,
+          "seed8806": 176.0
+        },
+        {
+          "field": "opponent.cash",
+          "seed8801": 1110.0,
+          "seed8806": 1298.0
+        },
+        {
+          "field": "self.cash",
+          "seed8801": 1562.0,
+          "seed8806": 1695.0
+        },
+        {
+          "field": "self.crop_count.STRAWBERRY",
+          "seed8801": 6,
+          "seed8806": 7
+        },
+        {
+          "field": "self.crop_count.WHEAT",
+          "seed8801": 7,
+          "seed8806": 6
+        },
+        {
+          "field": "self.empty_tiles",
+          "seed8801": 29,
+          "seed8806": 28
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP",
+            "YARN_STORE"
+          ],
+          "seed8806": [
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "differences": [
+        {
+          "field": "market.inventory.EGG",
+          "seed8801": 9966.0,
+          "seed8806": 9984.0
+        },
+        {
+          "field": "market.inventory.MILK",
+          "seed8801": 9978.0,
+          "seed8806": 9954.0
+        },
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9966.0,
+          "seed8806": 9948.0
+        },
+        {
+          "field": "market.inventory.WHEAT",
+          "seed8801": 9897.0,
+          "seed8806": 9891.0
+        },
+        {
+          "field": "market.inventory.WOOL",
+          "seed8801": 9988.0,
+          "seed8806": 10000.0
+        },
+        {
+          "field": "market.prices.EGG",
+          "seed8801": 52.0,
+          "seed8806": 51.0
+        },
+        {
+          "field": "market.prices.MILK",
+          "seed8801": 201.0,
+          "seed8806": 219.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 169.0,
+          "seed8806": 181.0
+        },
+        {
+          "field": "market.prices.WOOL",
+          "seed8801": 222.0,
+          "seed8806": 200.0
+        },
+        {
+          "field": "opponent.cash",
+          "seed8801": 1047.0,
+          "seed8806": 1189.0
+        },
+        {
+          "field": "self.cash",
+          "seed8801": 2331.0,
+          "seed8806": 2473.0
+        },
+        {
+          "field": "self.crop_count.STRAWBERRY",
+          "seed8801": 6,
+          "seed8806": 7
+        },
+        {
+          "field": "self.crop_count.WHEAT",
+          "seed8801": 7,
+          "seed8806": 6
+        },
+        {
+          "field": "self.empty_tiles",
+          "seed8801": 29,
+          "seed8806": 27
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP",
+            "YARN_STORE"
+          ],
+          "seed8806": [
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "differences": [
+        {
+          "field": "market.inventory.EGG",
+          "seed8801": 9959.0,
+          "seed8806": 9977.0
+        },
+        {
+          "field": "market.inventory.MILK",
+          "seed8801": 9977.0,
+          "seed8806": 9947.0
+        },
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9959.0,
+          "seed8806": 9941.0
+        },
+        {
+          "field": "market.inventory.WHEAT",
+          "seed8801": 9844.0,
+          "seed8806": 9832.0
+        },
+        {
+          "field": "market.inventory.WOOL",
+          "seed8801": 9975.0,
+          "seed8806": 9999.0
+        },
+        {
+          "field": "market.prices.EGG",
+          "seed8801": 52.0,
+          "seed8806": 51.0
+        },
+        {
+          "field": "market.prices.MILK",
+          "seed8801": 202.0,
+          "seed8806": 223.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 174.0,
+          "seed8806": 185.0
+        },
+        {
+          "field": "market.prices.WHEAT",
+          "seed8801": 37.0,
+          "seed8806": 38.0
+        },
+        {
+          "field": "market.prices.WOOL",
+          "seed8801": 228.0,
+          "seed8806": 206.0
+        },
+        {
+          "field": "opponent.cash",
+          "seed8801": 3041.0,
+          "seed8806": 3183.0
+        },
+        {
+          "field": "opponent.empty_tiles",
+          "seed8801": 28,
+          "seed8806": 27
+        },
+        {
+          "field": "self.cash",
+          "seed8801": 2169.0,
+          "seed8806": 2399.0
+        },
+        {
+          "field": "self.crop_count.STRAWBERRY",
+          "seed8801": 6,
+          "seed8806": 7
+        },
+        {
+          "field": "self.crop_count.WHEAT",
+          "seed8801": 7,
+          "seed8806": 6
+        },
+        {
+          "field": "self.empty_tiles",
+          "seed8801": 27,
+          "seed8806": 25
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP",
+            "YARN_STORE"
+          ],
+          "seed8806": [
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "differences": [
+        {
+          "field": "market.inventory.EGG",
+          "seed8801": 9952.0,
+          "seed8806": 9970.0
+        },
+        {
+          "field": "market.inventory.MILK",
+          "seed8801": 9970.0,
+          "seed8806": 9934.0
+        },
+        {
+          "field": "market.inventory.STRAWBERRY",
+          "seed8801": 9952.0,
+          "seed8806": 9934.0
+        },
+        {
+          "field": "market.inventory.WHEAT",
+          "seed8801": 9792.0,
+          "seed8806": 9774.0
+        },
+        {
+          "field": "market.inventory.WOOL",
+          "seed8801": 9968.0,
+          "seed8806": 10004.0
+        },
+        {
+          "field": "market.prices.EGG",
+          "seed8801": 53.0,
+          "seed8806": 52.0
+        },
+        {
+          "field": "market.prices.MILK",
+          "seed8801": 208.0,
+          "seed8806": 231.0
+        },
+        {
+          "field": "market.prices.STRAWBERRY",
+          "seed8801": 178.0,
+          "seed8806": 188.0
+        },
+        {
+          "field": "market.prices.WHEAT",
+          "seed8801": 39.0,
+          "seed8806": 40.0
+        },
+        {
+          "field": "market.prices.WOOL",
+          "seed8801": 230.0,
+          "seed8806": 199.0
+        },
+        {
+          "field": "opponent.cash",
+          "seed8801": 7156.0,
+          "seed8806": 7116.0
+        },
+        {
+          "field": "opponent.empty_tiles",
+          "seed8801": 22,
+          "seed8806": 21
+        },
+        {
+          "field": "self.cash",
+          "seed8801": 2310.0,
+          "seed8806": 2550.0
+        },
+        {
+          "field": "self.empty_tiles",
+          "seed8801": 27,
+          "seed8806": 25
+        },
+        {
+          "field": "town.unlocked_shops",
+          "seed8801": [
+            "BRUNCH_SPOT",
+            "BRUNCH_SPOT",
+            "PIZZA_SHOP",
+            "YARN_STORE"
+          ],
+          "seed8806": [
+            "BAKERY",
+            "ICE_CREAM_SHOP",
+            "PIZZA_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        }
+      ]
+    }
+  ],
+  "boundary": [
+    "The pair had identical previously-tested farm trajectory signatures but different terminal-best directions.",
+    "This result only locates external observable differences; it does not establish which difference causes the terminal response.",
+    "No new representation or policy is promoted by this audit."
+  ]
+}
