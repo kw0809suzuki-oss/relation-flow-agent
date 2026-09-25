@@ -1,0 +1,227 @@
+{
+  "schema": "kaggriculture.wr02-native-origin-hysteresis.fresh20.result.v0",
+  "battle_count": 20,
+  "current_absolute_mean_self": 33921.55,
+  "candidate_absolute_mean_self": 33493.65,
+  "delta_mean_self": -427.9,
+  "delta_median_self": 0.0,
+  "self_improved": 2,
+  "self_worsened": 6,
+  "self_equal": 12,
+  "min_delta_self": -6760.0,
+  "max_delta_self": 488.0,
+  "current_absolute_mean_margin": -100105.2,
+  "candidate_absolute_mean_margin": -97170.35,
+  "delta_mean_margin": 2934.85,
+  "delta_median_margin": 0.0,
+  "mean_delayed_switch_turns": 3.25,
+  "mean_confirmed_switches": 3.9,
+  "cases": [
+    {
+      "seed": 8701,
+      "seat": 0,
+      "current_self": 26903.0,
+      "candidate_self": 26903.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8702,
+      "seat": 1,
+      "current_self": 55149.0,
+      "candidate_self": 55149.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8703,
+      "seat": 0,
+      "current_self": 22920.0,
+      "candidate_self": 22920.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8704,
+      "seat": 1,
+      "current_self": 31980.0,
+      "candidate_self": 31980.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8705,
+      "seat": 0,
+      "current_self": 22270.0,
+      "candidate_self": 22270.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8706,
+      "seat": 1,
+      "current_self": 40378.0,
+      "candidate_self": 40378.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8707,
+      "seat": 0,
+      "current_self": 25156.0,
+      "candidate_self": 25156.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8708,
+      "seat": 1,
+      "current_self": 47487.0,
+      "candidate_self": 40727.0,
+      "delta_self": -6760.0,
+      "delta_margin": 31497.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8709,
+      "seat": 0,
+      "current_self": 38737.0,
+      "candidate_self": 38737.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8710,
+      "seat": 1,
+      "current_self": 17297.0,
+      "candidate_self": 17297.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8711,
+      "seat": 0,
+      "current_self": 21569.0,
+      "candidate_self": 21556.0,
+      "delta_self": -13.0,
+      "delta_margin": -13.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8712,
+      "seat": 1,
+      "current_self": 13142.0,
+      "candidate_self": 12774.0,
+      "delta_self": -368.0,
+      "delta_margin": 8149.0,
+      "delayed_switch_turns": 5,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8713,
+      "seat": 0,
+      "current_self": 23902.0,
+      "candidate_self": 23502.0,
+      "delta_self": -400.0,
+      "delta_margin": -723.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8714,
+      "seat": 1,
+      "current_self": 35558.0,
+      "candidate_self": 35558.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8715,
+      "seat": 0,
+      "current_self": 42327.0,
+      "candidate_self": 42314.0,
+      "delta_self": -13.0,
+      "delta_margin": -13.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8716,
+      "seat": 1,
+      "current_self": 43577.0,
+      "candidate_self": 43577.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8717,
+      "seat": 0,
+      "current_self": 41769.0,
+      "candidate_self": 42257.0,
+      "delta_self": 488.0,
+      "delta_margin": 13890.0,
+      "delayed_switch_turns": 10,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8718,
+      "seat": 1,
+      "current_self": 46218.0,
+      "candidate_self": 46231.0,
+      "delta_self": 13.0,
+      "delta_margin": 13.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    },
+    {
+      "seed": 8719,
+      "seat": 0,
+      "current_self": 35528.0,
+      "candidate_self": 35528.0,
+      "delta_self": 0.0,
+      "delta_margin": 0.0,
+      "delayed_switch_turns": 2,
+      "confirmed_switches": 3
+    },
+    {
+      "seed": 8720,
+      "seat": 1,
+      "current_self": 46564.0,
+      "candidate_self": 45059.0,
+      "delta_self": -1505.0,
+      "delta_margin": 5897.0,
+      "delayed_switch_turns": 4,
+      "confirmed_switches": 5
+    }
+  ],
+  "boundary": [
+    "Fresh independent seeds 8701-8720 with alternating seats.",
+    "Only one-turn native Origin switch hysteresis is added to current WR-02.",
+    "No post-hoc rescue condition or threshold sweep.",
+    "Terminal self is the adoption authority."
+  ]
+}
