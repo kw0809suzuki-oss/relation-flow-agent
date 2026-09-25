@@ -32,7 +32,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: '3.11'}
+        with:
+          python-version: '3.11'
       - run: pip install -r requirements.txt
       - run: bash scripts/fetch_opponent.sh
       - run: python run_phase_a_prompt_state_fresh10_v0.py
@@ -42,11 +43,15 @@ jobs:
           path: phase_a_prompt_state_fresh10_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
   aggregate:
     needs: capture
+    if: ${{ needs.capture.result == 'success' }}
     runs-on: ubuntu-latest
-    permissions: {contents: write}
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-        with: {ref: ${{ github.ref_name }}, fetch-depth: 0}
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
           pattern: phase-a-prompt-state-*
