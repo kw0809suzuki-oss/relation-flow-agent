@@ -1,0 +1,82 @@
+name: WR Component Comparison fresh20 v1
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/wr-component-comparison-fresh20-v1.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {seed: 8201, seat: 0}
+          - {seed: 8202, seat: 1}
+          - {seed: 8203, seat: 0}
+          - {seed: 8204, seat: 1}
+          - {seed: 8205, seat: 0}
+          - {seed: 8206, seat: 1}
+          - {seed: 8207, seat: 0}
+          - {seed: 8208, seat: 1}
+          - {seed: 8209, seat: 0}
+          - {seed: 8210, seat: 1}
+          - {seed: 8211, seat: 0}
+          - {seed: 8212, seat: 1}
+          - {seed: 8213, seat: 0}
+          - {seed: 8214, seat: 1}
+          - {seed: 8215, seat: 0}
+          - {seed: 8216, seat: 1}
+          - {seed: 8217, seat: 0}
+          - {seed: 8218, seat: 1}
+          - {seed: 8219, seat: 0}
+          - {seed: 8220, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_wr02_bundle_fresh20_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wr02-bundle-fresh20-${{ matrix.seed }}
+          path: wr02_bundle_fresh20_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wr02-bundle-fresh20-*
+          path: wr02-bundle-fresh20-artifacts
+          merge-multiple: true
+      - run: python analyze_world_reference_component_comparison_fresh20_v1.py
+      - name: Record result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add world_reference_component_comparison_fresh20_v1_result.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record WR component comparison fresh20 v1"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
