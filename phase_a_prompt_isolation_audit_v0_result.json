@@ -1,0 +1,32 @@
+{
+  "schema": "kaggriculture.phase-a-prompt-isolation.audit.result.v0",
+  "status": "PASS",
+  "errors": [],
+  "guarantees": {
+    "same_saved_state_artifact": true,
+    "same_seed_seat_set": true,
+    "same_allowed_output_space": true,
+    "same_outcome_runner": true,
+    "same_evaluator": true,
+    "variant_surface_is_prompt_text_only": true,
+    "predictions_committed_before_outcome_result": true,
+    "deterministic_model_sampling_guaranteed": false
+  },
+  "hashes": {
+    "contract_sha256": "3e12705406815bd6e322613dcc6dd9c4031a9cbca3d6036d26c637e622a11095",
+    "saved_state_sha256": "ed2e44d13a7bad740ae1eec72afa8ac98f58de96bd2a665da023ec6933f4a69e",
+    "prediction_sha256": "20a909ea72587181402d1522c408c19887341cf98a1c488c9829259543073ce2",
+    "outcome_runner_sha256": "11d08e0c0d4f6a2e7f9a47bab7a8d516c131c6ec7b38b1615d6c4a24304aeb5b",
+    "evaluator_sha256": "6fbd0097985d83c05e86756ccd31eb724b40c4ad36b836daed00f2203a47593f",
+    "result_sha256": "eabdcaa967b3bf5b3f18a50a70af9a896b027ea81998250b14e8289c85063ab7"
+  },
+  "git_order": {
+    "prediction_first_commit": "719082116c9ccf5f6c8e6e213344064ad3327864|2026-09-25T18:01:38+09:00",
+    "outcome_result_first_commit": "1255d2a622c6601e7dfb5928b3940d644a3887ac|2026-09-25T09:04:02Z"
+  },
+  "boundary": [
+    "PASS means code-side Prompt isolation is verified for the declared artifacts.",
+    "PASS does not claim that model sampling is deterministic or that one prompt is semantically superior.",
+    "Any future non-prompt experimental change requires a new contract version."
+  ]
+}
