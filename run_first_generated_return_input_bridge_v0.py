@@ -28,8 +28,8 @@ def cfgget(obj,key,default):
     if isinstance(obj,dict):return obj.get(key,default)
     return getattr(obj,key,default)
 
-def stock(obs,p,item):
-    pr=obs[p].private
+def stock(obs,item):
+    pr=obs.private
     shed=pr.shed if hasattr(pr,"shed") else {}
     qty=int(shed.get(item,0) or 0)
     for inv in pr.inventories:
