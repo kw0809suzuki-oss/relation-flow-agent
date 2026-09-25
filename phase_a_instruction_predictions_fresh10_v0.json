@@ -1,0 +1,78 @@
+{
+  "schema": "kaggriculture.phase-a-instruction-predictions.fresh10.v0",
+  "committed_before_outcome_battle": true,
+  "input_artifact": "phase_a_prompt_state_fresh10_v0_aggregate.json",
+  "instruction_artifact": "PHASE_A_INSTRUCTION_VARIANTS_V0.md",
+  "variants": {
+    "v0_direction_picker": {
+      "description": "Strongest-current-constraint framing.",
+      "predictions": {
+        "8701": "throughput_first",
+        "8702": "throughput_first",
+        "8703": "throughput_first",
+        "8704": "throughput_first",
+        "8705": "throughput_first",
+        "8706": "throughput_first",
+        "8707": "throughput_first",
+        "8708": "throughput_first",
+        "8709": "throughput_first",
+        "8710": "throughput_first"
+      },
+      "common_observation": "At Day8 self has 18 productive tiles with 1 worker; this framing reads throughput as the dominant current constraint."
+    },
+    "v1_growth_continuation": {
+      "description": "Keep Return -> productive state -> next Return connected.",
+      "predictions": {
+        "8701": "engine_first",
+        "8702": "engine_first",
+        "8703": "engine_first",
+        "8704": "engine_first",
+        "8705": "engine_first",
+        "8706": "engine_first",
+        "8707": "engine_first",
+        "8708": "engine_first",
+        "8709": "engine_first",
+        "8710": "engine_first"
+      },
+      "common_observation": "At Day8 self still has roughly five empty unlocked tiles; the shortest next conversion to a new productive state is to complete the current surface before opening another layer."
+    },
+    "v2_completion_contract": {
+      "description": "Count growth only when the investment reaches an observable productive state.",
+      "predictions": {
+        "8701": "engine_first",
+        "8702": "engine_first",
+        "8703": "engine_first",
+        "8704": "engine_first",
+        "8705": "engine_first",
+        "8706": "engine_first",
+        "8707": "engine_first",
+        "8708": "engine_first",
+        "8709": "engine_first",
+        "8710": "engine_first"
+      },
+      "common_observation": "Surface and labor investments add intermediate capacity; filling existing usable surface has fewer missing links to a productive state capable of the next Return."
+    },
+    "v3_world_gap_bridge": {
+      "description": "Use opponent World state as reference; reproduce missing function, not exact action.",
+      "predictions": {
+        "8701": "surface_first",
+        "8702": "surface_first",
+        "8703": "surface_first",
+        "8704": "surface_first",
+        "8705": "surface_first",
+        "8706": "surface_first",
+        "8707": "surface_first",
+        "8708": "surface_first",
+        "8709": "surface_first",
+        "8710": "surface_first"
+      },
+      "common_observation": "By Day8 opponent is already at two quadrants and 33-34 productive tiles while self remains at one quadrant and 18; this framing reads the missing surface conversion as the dominant World gap."
+    }
+  },
+  "boundary": [
+    "Predictions use only the previously captured WR-02 Day4/Day8 World State.",
+    "No 8701-8710 Surface/Throughput/Engine/HOLD candidate Battle has been run before this artifact is committed.",
+    "These are current-session model judgments, not repeated independent model samples.",
+    "Outcome evaluation will use exact winning-direction accuracy and terminal regret."
+  ]
+}
