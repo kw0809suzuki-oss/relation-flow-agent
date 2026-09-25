@@ -1,0 +1,367 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.terminal-reachable-asset-surface.result.v0",
+  "battle_count": 5,
+  "anchor": {
+    "day": 20,
+    "hour": 0,
+    "terminal_day": 30
+  },
+  "terminal_absolute": {
+    "mean_self": 24042.8,
+    "mean_opponent": 128454.4,
+    "mean_margin": -104411.6
+  },
+  "day20_committed_production_decomposition": {
+    "ready": {
+      "self_absolute_mean": 2662.4,
+      "opponent_absolute_mean": 9580.0,
+      "mean_residual_opponent_minus_self": 6917.6,
+      "median_residual_opponent_minus_self": 8183.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "min_residual": 3807.0,
+      "max_residual": 8913.0,
+      "by_seed": {
+        "7351": 8913.0,
+        "7352": 8552.0,
+        "7353": 3807.0,
+        "7354": 8183.0,
+        "7355": 5133.0
+      }
+    },
+    "reachable": {
+      "self_absolute_mean": 6311.0,
+      "opponent_absolute_mean": 45663.6,
+      "mean_residual_opponent_minus_self": 39352.6,
+      "median_residual_opponent_minus_self": 38311.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "min_residual": 38027.0,
+      "max_residual": 42559.0,
+      "by_seed": {
+        "7351": 39688.0,
+        "7352": 38027.0,
+        "7353": 38311.0,
+        "7354": 42559.0,
+        "7355": 38178.0
+      }
+    },
+    "not_reachable": {
+      "self_absolute_mean": 0.0,
+      "opponent_absolute_mean": 0.0,
+      "mean_residual_opponent_minus_self": 0.0,
+      "median_residual_opponent_minus_self": 0.0,
+      "opponent_ahead_cases": 0,
+      "self_ahead_cases": 0,
+      "equal_cases": 5,
+      "min_residual": 0.0,
+      "max_residual": 0.0,
+      "by_seed": {
+        "7351": 0.0,
+        "7352": 0.0,
+        "7353": 0.0,
+        "7354": 0.0,
+        "7355": 0.0
+      }
+    },
+    "existing_committed_production": {
+      "self_absolute_mean": 8973.4,
+      "opponent_absolute_mean": 55243.6,
+      "mean_residual_opponent_minus_self": 46270.2,
+      "median_residual_opponent_minus_self": 46579.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "min_residual": 42118.0,
+      "max_residual": 50742.0,
+      "by_seed": {
+        "7351": 48601.0,
+        "7352": 46579.0,
+        "7353": 42118.0,
+        "7354": 50742.0,
+        "7355": 43311.0
+      }
+    },
+    "residual_reconstruction": {
+      "parts_sum": 46270.2,
+      "existing_total": 46270.2,
+      "error": 0.0
+    },
+    "reachable_share_of_opponent_minus_self_committed_residual": 0.850495567341399,
+    "ready_plus_reachable_share_of_residual": 1.0
+  },
+  "asset_type_detail": {
+    "COW": {
+      "ready_mark": {
+        "self_absolute_mean": 1590.6,
+        "opponent_absolute_mean": 887.4,
+        "mean_residual_opponent_minus_self": -703.2
+      },
+      "reachable_mark": {
+        "self_absolute_mean": 2744.0,
+        "opponent_absolute_mean": 3676.0,
+        "mean_residual_opponent_minus_self": 932.0
+      },
+      "not_reachable_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 0.0,
+        "mean_residual_opponent_minus_self": 0.0
+      }
+    },
+    "MELON": {
+      "ready_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 0.0,
+        "mean_residual_opponent_minus_self": 0.0
+      },
+      "reachable_mark": {
+        "self_absolute_mean": 261.6,
+        "opponent_absolute_mean": 12117.6,
+        "mean_residual_opponent_minus_self": 11856.0
+      },
+      "not_reachable_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 0.0,
+        "mean_residual_opponent_minus_self": 0.0
+      }
+    },
+    "SHEEP": {
+      "ready_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 3258.4,
+        "mean_residual_opponent_minus_self": 3258.4
+      },
+      "reachable_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 3107.8,
+        "mean_residual_opponent_minus_self": 3107.8
+      },
+      "not_reachable_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 0.0,
+        "mean_residual_opponent_minus_self": 0.0
+      }
+    },
+    "STRAWBERRY": {
+      "ready_mark": {
+        "self_absolute_mean": 627.0,
+        "opponent_absolute_mean": 4943.6,
+        "mean_residual_opponent_minus_self": 4316.6
+      },
+      "reachable_mark": {
+        "self_absolute_mean": 3004.4,
+        "opponent_absolute_mean": 26583.8,
+        "mean_residual_opponent_minus_self": 23579.4
+      },
+      "not_reachable_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 0.0,
+        "mean_residual_opponent_minus_self": 0.0
+      }
+    },
+    "WHEAT": {
+      "ready_mark": {
+        "self_absolute_mean": 444.8,
+        "opponent_absolute_mean": 490.6,
+        "mean_residual_opponent_minus_self": 45.8
+      },
+      "reachable_mark": {
+        "self_absolute_mean": 301.0,
+        "opponent_absolute_mean": 178.4,
+        "mean_residual_opponent_minus_self": -122.6
+      },
+      "not_reachable_mark": {
+        "self_absolute_mean": 0.0,
+        "opponent_absolute_mean": 0.0,
+        "mean_residual_opponent_minus_self": 0.0
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "self_summary": {
+        "ready_mark": 1558.0,
+        "reachable_mark": 4473.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 6031.0,
+        "committed_mark_existing_basis": 6031.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      },
+      "opponent_summary": {
+        "ready_mark": 10471.0,
+        "reachable_mark": 44161.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 54632.0,
+        "committed_mark_existing_basis": 54632.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "self_summary": {
+        "ready_mark": 1211.0,
+        "reachable_mark": 3010.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 4221.0,
+        "committed_mark_existing_basis": 4221.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      },
+      "opponent_summary": {
+        "ready_mark": 9763.0,
+        "reachable_mark": 41037.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 50800.0,
+        "committed_mark_existing_basis": 50800.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "self_summary": {
+        "ready_mark": 5150.0,
+        "reachable_mark": 11669.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 16819.0,
+        "committed_mark_existing_basis": 16819.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      },
+      "opponent_summary": {
+        "ready_mark": 8957.0,
+        "reachable_mark": 49980.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 58937.0,
+        "committed_mark_existing_basis": 58937.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "self_summary": {
+        "ready_mark": 4207.0,
+        "reachable_mark": 8707.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 12914.0,
+        "committed_mark_existing_basis": 12914.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      },
+      "opponent_summary": {
+        "ready_mark": 12390.0,
+        "reachable_mark": 51266.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 63656.0,
+        "committed_mark_existing_basis": 63656.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "self_summary": {
+        "ready_mark": 1186.0,
+        "reachable_mark": 3696.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 4882.0,
+        "committed_mark_existing_basis": 4882.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      },
+      "opponent_summary": {
+        "ready_mark": 6319.0,
+        "reachable_mark": 41874.0,
+        "not_reachable_mark": 0.0,
+        "committed_mark_reconstructed": 48193.0,
+        "committed_mark_existing_basis": 48193.0,
+        "decomposition_error_vs_existing_basis": 0.0
+      }
+    }
+  ],
+  "integrity": [
+    {
+      "seed": 7351,
+      "side": "self",
+      "error": 0.0
+    },
+    {
+      "seed": 7351,
+      "side": "opponent",
+      "error": 0.0
+    },
+    {
+      "seed": 7352,
+      "side": "self",
+      "error": 0.0
+    },
+    {
+      "seed": 7352,
+      "side": "opponent",
+      "error": 0.0
+    },
+    {
+      "seed": 7353,
+      "side": "self",
+      "error": 0.0
+    },
+    {
+      "seed": 7353,
+      "side": "opponent",
+      "error": 0.0
+    },
+    {
+      "seed": 7354,
+      "side": "self",
+      "error": 0.0
+    },
+    {
+      "seed": 7354,
+      "side": "opponent",
+      "error": 0.0
+    },
+    {
+      "seed": 7355,
+      "side": "self",
+      "error": 0.0
+    },
+    {
+      "seed": 7355,
+      "side": "opponent",
+      "error": 0.0
+    }
+  ],
+  "boundary": [
+    "READY / REACHABLE / NOT_REACHABLE exactly reconstruct the existing Day20 Committed Production valuation in every side/case.",
+    "REACHABLE is reachability only to the public Asset -> Output boundary by terminal, not to terminal Cash.",
+    "The reachable share is a valuation decomposition on current displayed-price basis and is not realized profit.",
+    "Asset-type detail is retained only for drill-down after the aggregate surface; no product preference or Candidate is inferred."
+  ]
+}
