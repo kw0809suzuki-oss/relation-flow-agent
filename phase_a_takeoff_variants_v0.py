@@ -122,15 +122,18 @@ def _engine_call(obs):
         desired=max(current,int(capacity*ENGINE_TARGET_OCCUPANCY))
         if current<=0 or desired<=current:
             return native
-        scaled={}
+        positive=[(crop,n) for crop,n in native.items() if n>0]
+        if not positive:
+            return native
+        scaled={crop:0 for crop in native}
         assigned=0
-        items=list(native.items())
-        for i,(crop,n) in enumerate(items):
-            if i==len(items)-1:
-                scaled[crop]=max(0,desired-assigned)
-            else:
-                v=int(round(desired*(n/current)))
-                scaled[crop]=max(0,v);assigned+=scaled[crop]
+        for crop,n in positive:
+            v=int(desired*(n/current))
+            scaled[crop]=max(0,v)
+            assigned+=scaled[crop]
+        remainder=max(0,desired-assigned)
+        largest=max(positive,key=lambda kv:kv[1])[0]
+        scaled[largest]+=remainder
         return scaled
 
     try:
