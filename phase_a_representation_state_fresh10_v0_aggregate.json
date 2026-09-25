@@ -1,0 +1,1537 @@
+{
+  "schema": "kaggriculture.phase-a-representation-state.fresh10.aggregate.v0",
+  "cases": [
+    {
+      "seed": 8801,
+      "seat": 0,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 137.0,
+              "MELON": 264.0,
+              "MILK": 187.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9996.0,
+              "MELON": 9996.0,
+              "MILK": 9990.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "PIZZA_SHOP"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 33.0,
+              "STRAWBERRY": 158.0,
+              "MELON": 269.0,
+              "MILK": 214.0,
+              "WOOL": 209.0,
+              "EGG": 51.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9940.0,
+              "STRAWBERRY": 9980.0,
+              "MELON": 9992.0,
+              "MILK": 9962.0,
+              "WOOL": 9998.0,
+              "EGG": 9980.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "BRUNCH_SPOT",
+              "PIZZA_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8802,
+      "seat": 1,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 137.0,
+              "MELON": 264.0,
+              "MILK": 187.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9996.0,
+              "MELON": 9996.0,
+              "MILK": 9990.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "PIZZA_SHOP"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 33.0,
+              "STRAWBERRY": 158.0,
+              "MELON": 269.0,
+              "MILK": 221.0,
+              "WOOL": 209.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9940.0,
+              "STRAWBERRY": 9980.0,
+              "MELON": 9992.0,
+              "MILK": 9950.0,
+              "WOOL": 9998.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "PIZZA_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8803,
+      "seat": 0,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 800.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 31.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 187.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9958.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9990.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "SMOOTHIE_SHOP"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 902.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 837.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 30.0,
+              "STRAWBERRY": 172.0,
+              "MELON": 269.0,
+              "MILK": 214.0,
+              "WOOL": 209.0,
+              "EGG": 51.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9970.0,
+              "STRAWBERRY": 9962.0,
+              "MELON": 9992.0,
+              "MILK": 9962.0,
+              "WOOL": 9998.0,
+              "EGG": 9980.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "BAKERY",
+              "SMOOTHIE_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8804,
+      "seat": 1,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 800.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 31.0,
+              "STRAWBERRY": 137.0,
+              "MELON": 264.0,
+              "MILK": 177.0,
+              "WOOL": 224.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9958.0,
+              "STRAWBERRY": 9996.0,
+              "MELON": 9996.0,
+              "MILK": 9996.0,
+              "WOOL": 9984.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "YARN_STORE"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 982.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 953.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 30.0,
+              "STRAWBERRY": 144.0,
+              "MELON": 269.0,
+              "MILK": 199.0,
+              "WOOL": 236.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9970.0,
+              "STRAWBERRY": 9992.0,
+              "MELON": 9992.0,
+              "MILK": 9980.0,
+              "WOOL": 9938.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "PIZZA_SHOP",
+              "YARN_STORE"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8805,
+      "seat": 0,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 177.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9996.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 911.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 827.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 179.0,
+              "MELON": 269.0,
+              "MILK": 199.0,
+              "WOOL": 209.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9950.0,
+              "MELON": 9992.0,
+              "MILK": 9980.0,
+              "WOOL": 9998.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET",
+              "SMOOTHIE_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8806,
+      "seat": 1,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 187.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9990.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 33.0,
+              "STRAWBERRY": 172.0,
+              "MELON": 269.0,
+              "MILK": 221.0,
+              "WOOL": 209.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9940.0,
+              "STRAWBERRY": 9962.0,
+              "MELON": 9992.0,
+              "MILK": 9950.0,
+              "WOOL": 9998.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "PIZZA_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8807,
+      "seat": 0,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1227.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 177.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9996.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 941.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 6,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 3,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 835.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 33.0,
+              "STRAWBERRY": 172.0,
+              "MELON": 269.0,
+              "MILK": 199.0,
+              "WOOL": 209.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9941.0,
+              "STRAWBERRY": 9962.0,
+              "MELON": 9992.0,
+              "MILK": 9980.0,
+              "WOOL": 9998.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET",
+              "PIZZA_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8808,
+      "seat": 1,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1027.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 10,
+            "productive_tiles": 14,
+            "workers": 1,
+            "productive_occupancy": 0.56,
+            "productive_per_worker": 14.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 1,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 177.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9996.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 911.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 827.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 179.0,
+              "MELON": 269.0,
+              "MILK": 199.0,
+              "WOOL": 209.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9950.0,
+              "MELON": 9992.0,
+              "MILK": 9980.0,
+              "WOOL": 9998.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET",
+              "SMOOTHIE_SHOP"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8809,
+      "seat": 0,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 177.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9996.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "FARMERS_MARKET"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 909.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 833.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 34,
+            "workers": 1,
+            "productive_occupancy": 0.68,
+            "productive_per_worker": 34.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 2
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 33.0,
+              "STRAWBERRY": 172.0,
+              "MELON": 269.0,
+              "MILK": 185.0,
+              "WOOL": 209.0,
+              "EGG": 51.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9940.0,
+              "STRAWBERRY": 9962.0,
+              "MELON": 9992.0,
+              "MILK": 9992.0,
+              "WOOL": 9998.0,
+              "EGG": 9980.0,
+              "FERTILIZER": 10045.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "BAKERY",
+              "FARMERS_MARKET"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "seed": 8810,
+      "seat": 1,
+      "checkpoints": {
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "self": {
+            "cash": 1127.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 9,
+            "productive_tiles": 15,
+            "workers": 1,
+            "productive_occupancy": 0.6,
+            "productive_per_worker": 15.0,
+            "crop_count": {
+              "WHEAT": 9,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 2,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 2,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 798.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 2,
+            "productive_tiles": 23,
+            "workers": 1,
+            "productive_occupancy": 0.92,
+            "productive_per_worker": 23.0,
+            "crop_count": {
+              "WHEAT": 11,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 0,
+              "MELON": 8
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 3,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 32.0,
+              "STRAWBERRY": 147.0,
+              "MELON": 264.0,
+              "MILK": 187.0,
+              "WOOL": 214.0,
+              "EGG": 50.0,
+              "FERTILIZER": 97.0
+            },
+            "inventory": {
+              "WHEAT": 9952.0,
+              "STRAWBERRY": 9990.0,
+              "MELON": 9996.0,
+              "MILK": 9990.0,
+              "WOOL": 9996.0,
+              "EGG": 9996.0,
+              "FERTILIZER": 10017.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP"
+            ]
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "self": {
+            "cash": 916.0,
+            "quadrants": 1,
+            "unlocked_tiles": 25,
+            "empty_tiles": 5,
+            "productive_tiles": 18,
+            "workers": 1,
+            "productive_occupancy": 0.72,
+            "productive_per_worker": 18.0,
+            "crop_count": {
+              "WHEAT": 8,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 4,
+              "MELON": 2
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 4,
+              "SHEEP": 0
+            }
+          },
+          "opponent": {
+            "cash": 710.0,
+            "quadrants": 2,
+            "unlocked_tiles": 50,
+            "empty_tiles": 16,
+            "productive_tiles": 33,
+            "workers": 1,
+            "productive_occupancy": 0.66,
+            "productive_per_worker": 33.0,
+            "crop_count": {
+              "WHEAT": 10,
+              "CARROT": 0,
+              "TOMATO": 0,
+              "STRAWBERRY": 6,
+              "MELON": 11
+            },
+            "animal_count": {
+              "GOOSE": 0,
+              "COW": 5,
+              "SHEEP": 1
+            }
+          },
+          "market": {
+            "prices": {
+              "WHEAT": 33.0,
+              "STRAWBERRY": 179.0,
+              "MELON": 269.0,
+              "MILK": 221.0,
+              "WOOL": 209.0,
+              "EGG": 50.0,
+              "FERTILIZER": 91.0
+            },
+            "inventory": {
+              "WHEAT": 9942.0,
+              "STRAWBERRY": 9950.0,
+              "MELON": 9992.0,
+              "MILK": 9950.0,
+              "WOOL": 9998.0,
+              "EGG": 9992.0,
+              "FERTILIZER": 10043.0
+            }
+          },
+          "town": {
+            "unlocked_shops": [
+              "ICE_CREAM_SHOP",
+              "ICE_CREAM_SHOP"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "sealed_outcome": "No HOLD / Surface / Throughput / Engine outcome Battle has been run for seeds 8801-8810 at capture time.",
+  "next": "Transform these states into neutral cycle representations before committing any direction prediction."
+}
