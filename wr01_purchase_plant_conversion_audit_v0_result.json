@@ -1,0 +1,318 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.wr01-purchase-plant-conversion-audit.result.v0",
+  "battle_count": 5,
+  "terminal_self_delta_mean": 1289.4,
+  "by_crop": {
+    "WHEAT": {
+      "extra_executed_buy_units_mean": 43.0,
+      "extra_plant_commands_mean": 93.6,
+      "extra_successful_plants_mean": 22.6,
+      "day24_extra_seed_inventory_mean": 9.4,
+      "buy_to_command_drop_mean": -50.6,
+      "command_to_success_drop_mean": 71.0,
+      "by_seed": {
+        "7351": {
+          "buy": 36,
+          "command": 54,
+          "success": 12,
+          "day24_seed": 13
+        },
+        "7352": {
+          "buy": 42,
+          "command": 94,
+          "success": 23,
+          "day24_seed": 8
+        },
+        "7353": {
+          "buy": 47,
+          "command": 117,
+          "success": 30,
+          "day24_seed": 9
+        },
+        "7354": {
+          "buy": 48,
+          "command": 103,
+          "success": 25,
+          "day24_seed": 7
+        },
+        "7355": {
+          "buy": 42,
+          "command": 100,
+          "success": 23,
+          "day24_seed": 10
+        }
+      }
+    },
+    "STRAWBERRY": {
+      "extra_executed_buy_units_mean": 2.4,
+      "extra_plant_commands_mean": -22.6,
+      "extra_successful_plants_mean": -3.0,
+      "day24_extra_seed_inventory_mean": 5.4,
+      "buy_to_command_drop_mean": 25.0,
+      "command_to_success_drop_mean": -19.6,
+      "by_seed": {
+        "7351": {
+          "buy": 2,
+          "command": -1,
+          "success": 0,
+          "day24_seed": 2
+        },
+        "7352": {
+          "buy": 3,
+          "command": -25,
+          "success": -3,
+          "day24_seed": 6
+        },
+        "7353": {
+          "buy": 2,
+          "command": -32,
+          "success": -5,
+          "day24_seed": 7
+        },
+        "7354": {
+          "buy": 2,
+          "command": -30,
+          "success": -4,
+          "day24_seed": 6
+        },
+        "7355": {
+          "buy": 3,
+          "command": -25,
+          "success": -3,
+          "day24_seed": 6
+        }
+      }
+    },
+    "MELON": {
+      "extra_executed_buy_units_mean": 0.2,
+      "extra_plant_commands_mean": 0.0,
+      "extra_successful_plants_mean": 0.0,
+      "day24_extra_seed_inventory_mean": 0.2,
+      "buy_to_command_drop_mean": 0.2,
+      "command_to_success_drop_mean": 0.0,
+      "by_seed": {
+        "7351": {
+          "buy": 1,
+          "command": 0,
+          "success": 0,
+          "day24_seed": 1
+        },
+        "7352": {
+          "buy": 0,
+          "command": 0,
+          "success": 0,
+          "day24_seed": 0
+        },
+        "7353": {
+          "buy": 0,
+          "command": 0,
+          "success": 0,
+          "day24_seed": 0
+        },
+        "7354": {
+          "buy": 0,
+          "command": 0,
+          "success": 0,
+          "day24_seed": 0
+        },
+        "7355": {
+          "buy": 0,
+          "command": 0,
+          "success": 0,
+          "day24_seed": 0
+        }
+      }
+    }
+  },
+  "totals": {
+    "executed_buy_seed_units": {
+      "mean": 45.6,
+      "by_seed": {
+        "7351": 39,
+        "7352": 45,
+        "7353": 49,
+        "7354": 50,
+        "7355": 45
+      }
+    },
+    "plant_command_units": {
+      "mean": 71.0,
+      "by_seed": {
+        "7351": 53,
+        "7352": 69,
+        "7353": 85,
+        "7354": 73,
+        "7355": 75
+      }
+    },
+    "successful_plant_units": {
+      "mean": 19.6,
+      "by_seed": {
+        "7351": 12,
+        "7352": 20,
+        "7353": 25,
+        "7354": 21,
+        "7355": 20
+      }
+    },
+    "seed_inventory_day24": {
+      "mean": 15.0,
+      "by_seed": {
+        "7351": 16,
+        "7352": 14,
+        "7353": 16,
+        "7354": 13,
+        "7355": 16
+      }
+    }
+  },
+  "connection_drop": {
+    "purchase_to_plant_command_mean": -25.4,
+    "plant_command_to_success_mean": 51.4,
+    "cases_purchase_gt_command": 0,
+    "cases_command_gt_success": 5
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal_delta": 455.0,
+      "delta": {
+        "executed_buy_seed_units": {
+          "WHEAT": 36,
+          "STRAWBERRY": 2,
+          "MELON": 1
+        },
+        "plant_command_units": {
+          "WHEAT": 54,
+          "STRAWBERRY": -1,
+          "MELON": 0
+        },
+        "successful_plant_units": {
+          "WHEAT": 12,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "seed_inventory_day24": {
+          "WHEAT": 13,
+          "STRAWBERRY": 2,
+          "MELON": 1
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal_delta": 1153.0,
+      "delta": {
+        "executed_buy_seed_units": {
+          "WHEAT": 42,
+          "STRAWBERRY": 3,
+          "MELON": 0
+        },
+        "plant_command_units": {
+          "WHEAT": 94,
+          "STRAWBERRY": -25,
+          "MELON": 0
+        },
+        "successful_plant_units": {
+          "WHEAT": 23,
+          "STRAWBERRY": -3,
+          "MELON": 0
+        },
+        "seed_inventory_day24": {
+          "WHEAT": 8,
+          "STRAWBERRY": 6,
+          "MELON": 0
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal_delta": 942.0,
+      "delta": {
+        "executed_buy_seed_units": {
+          "WHEAT": 47,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "plant_command_units": {
+          "WHEAT": 117,
+          "STRAWBERRY": -32,
+          "MELON": 0
+        },
+        "successful_plant_units": {
+          "WHEAT": 30,
+          "STRAWBERRY": -5,
+          "MELON": 0
+        },
+        "seed_inventory_day24": {
+          "WHEAT": 9,
+          "STRAWBERRY": 7,
+          "MELON": 0
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal_delta": 2076.0,
+      "delta": {
+        "executed_buy_seed_units": {
+          "WHEAT": 48,
+          "STRAWBERRY": 2,
+          "MELON": 0
+        },
+        "plant_command_units": {
+          "WHEAT": 103,
+          "STRAWBERRY": -30,
+          "MELON": 0
+        },
+        "successful_plant_units": {
+          "WHEAT": 25,
+          "STRAWBERRY": -4,
+          "MELON": 0
+        },
+        "seed_inventory_day24": {
+          "WHEAT": 7,
+          "STRAWBERRY": 6,
+          "MELON": 0
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal_delta": 1821.0,
+      "delta": {
+        "executed_buy_seed_units": {
+          "WHEAT": 42,
+          "STRAWBERRY": 3,
+          "MELON": 0
+        },
+        "plant_command_units": {
+          "WHEAT": 100,
+          "STRAWBERRY": -25,
+          "MELON": 0
+        },
+        "successful_plant_units": {
+          "WHEAT": 23,
+          "STRAWBERRY": -3,
+          "MELON": 0
+        },
+        "seed_inventory_day24": {
+          "WHEAT": 10,
+          "STRAWBERRY": 6,
+          "MELON": 0
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "Incremental flow is WR-01 minus matched baseline from Day14 onward.",
+    "The first connection drop is descriptive; negative deltas can occur because WR-01 changes later World state and model actions.",
+    "A PLANT command is not counted as successful unless World state confirms seed consumption and matching crop-tile creation.",
+    "No WR-02 is created by this aggregation."
+  ]
+}
