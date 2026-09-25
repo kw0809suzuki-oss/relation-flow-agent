@@ -1,0 +1,289 @@
+{
+  "schema": "kaggriculture.phase-a-router.fresh20.result.v0",
+  "battle_count": 20,
+  "active_wr02": {
+    "absolute_mean_self": 31224.7,
+    "absolute_median_self": 31074.5,
+    "absolute_mean_opponent": 129463.5,
+    "absolute_mean_margin": -98238.8,
+    "wins": 0,
+    "min_self": 10020.0,
+    "max_self": 51278.0
+  },
+  "router": {
+    "absolute_mean_self": 31571.85,
+    "absolute_median_self": 28757.0,
+    "absolute_mean_opponent": 133592.0,
+    "absolute_mean_margin": -102020.15,
+    "wins": 0,
+    "min_self": 10820.0,
+    "max_self": 53537.0
+  },
+  "paired": {
+    "baseline_absolute_mean_self": 31224.7,
+    "candidate_absolute_mean_self": 31571.85,
+    "mean_delta_self": 347.15,
+    "median_delta_self": 2535.0,
+    "mean_delta_margin": -3781.35,
+    "improved_cases": 11,
+    "worsened_cases": 9,
+    "equal_cases": 0,
+    "min_delta_self": -26504.0,
+    "max_delta_self": 32093.0
+  },
+  "router_mode_days": {
+    "engine_first": 20,
+    "throughput_first": 218,
+    "hold": 360,
+    "surface_first": 2
+  },
+  "cases": [
+    {
+      "seed": 8501,
+      "seat": 0,
+      "active_wr02_self": 32215.0,
+      "router_self": 51079.0,
+      "delta_self": 18864.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8502,
+      "seat": 1,
+      "active_wr02_self": 14035.0,
+      "router_self": 39506.0,
+      "delta_self": 25471.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8503,
+      "seat": 0,
+      "active_wr02_self": 50114.0,
+      "router_self": 23739.0,
+      "delta_self": -26375.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8504,
+      "seat": 1,
+      "active_wr02_self": 33318.0,
+      "router_self": 10820.0,
+      "delta_self": -22498.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8505,
+      "seat": 0,
+      "active_wr02_self": 24150.0,
+      "router_self": 28176.0,
+      "delta_self": 4026.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8506,
+      "seat": 1,
+      "active_wr02_self": 45080.0,
+      "router_self": 29338.0,
+      "delta_self": -15742.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8507,
+      "seat": 0,
+      "active_wr02_self": 36545.0,
+      "router_self": 35936.0,
+      "delta_self": -609.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8508,
+      "seat": 1,
+      "active_wr02_self": 29934.0,
+      "router_self": 52423.0,
+      "delta_self": 22489.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8509,
+      "seat": 0,
+      "active_wr02_self": 10020.0,
+      "router_self": 19925.0,
+      "delta_self": 9905.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8510,
+      "seat": 1,
+      "active_wr02_self": 23196.0,
+      "router_self": 21821.0,
+      "delta_self": -1375.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 10,
+        "surface_first": 1,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8511,
+      "seat": 0,
+      "active_wr02_self": 51278.0,
+      "router_self": 24774.0,
+      "delta_self": -26504.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8512,
+      "seat": 1,
+      "active_wr02_self": 29772.0,
+      "router_self": 12598.0,
+      "delta_self": -17174.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8513,
+      "seat": 0,
+      "active_wr02_self": 22787.0,
+      "router_self": 30919.0,
+      "delta_self": 8132.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8514,
+      "seat": 1,
+      "active_wr02_self": 39269.0,
+      "router_self": 21668.0,
+      "delta_self": -17601.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8515,
+      "seat": 0,
+      "active_wr02_self": 12218.0,
+      "router_self": 44311.0,
+      "delta_self": 32093.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8516,
+      "seat": 1,
+      "active_wr02_self": 15738.0,
+      "router_self": 18261.0,
+      "delta_self": 2523.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8517,
+      "seat": 0,
+      "active_wr02_self": 45631.0,
+      "router_self": 51747.0,
+      "delta_self": 6116.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8518,
+      "seat": 1,
+      "active_wr02_self": 43794.0,
+      "router_self": 53537.0,
+      "delta_self": 9743.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 10,
+        "surface_first": 1,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8519,
+      "seat": 0,
+      "active_wr02_self": 19688.0,
+      "router_self": 12600.0,
+      "delta_self": -7088.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    },
+    {
+      "seed": 8520,
+      "seat": 1,
+      "active_wr02_self": 45712.0,
+      "router_self": 48259.0,
+      "delta_self": 2547.0,
+      "mode_days": {
+        "engine_first": 1,
+        "throughput_first": 11,
+        "hold": 18
+      }
+    }
+  ],
+  "boundary": [
+    "Adoption is decided by terminal self, not routing frequency.",
+    "Router mode counts are reference telemetry only.",
+    "A non-positive result does not prove State-routing impossible; it closes only this Router v0."
+  ]
+}
