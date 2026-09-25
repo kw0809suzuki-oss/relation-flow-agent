@@ -8,10 +8,6 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
-    branches: [experiment/nr01-scan-v0-20260926]
-    paths:
-      - .github/workflows/nr01-scan-v0-fresh10.yml
   workflow_dispatch:
 
 jobs:
