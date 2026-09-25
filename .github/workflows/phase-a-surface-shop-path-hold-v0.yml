@@ -1,0 +1,57 @@
+name: Phase A Surface Shop Path Hold v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - .github/workflows/phase-a-surface-shop-path-hold-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {seed: 8801, seat: 0}
+          - {seed: 8806, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_phase_a_surface_shop_path_hold_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase-a-surface-shop-path-hold-${{ matrix.seed }}
+          path: phase_a_surface_shop_path_hold_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: phase-a-surface-shop-path-hold-*
+          path: phase-a-surface-shop-path-hold-artifacts
+          merge-multiple: true
+      - run: python analyze_phase_a_surface_shop_path_hold_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add phase_a_surface_shop_path_hold_v0_result.json
+          git commit -m "Record Phase A surface shop path hold v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
