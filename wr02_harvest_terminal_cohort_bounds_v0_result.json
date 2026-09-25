@@ -1,0 +1,1282 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.wr02-harvest-terminal-cohort-bounds.result.v0",
+  "active_model": "Baseline+WR-02",
+  "battle_count": 5,
+  "mean_surface": {
+    "harvested_residual_anchor_mark": 41209.0,
+    "realized_sell_residual_anchor_mark_bound": [
+      41155.0,
+      42095.4
+    ],
+    "realized_sell_residual_retention_bound": [
+      0.9986896066393264,
+      1.0215098643500207
+    ],
+    "realized_cash_residual_bound": [
+      38020.6,
+      42326.8
+    ]
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal": {
+        "self": 14742.0,
+        "opponent": 123537.0,
+        "margin": -108795.0
+      },
+      "harvested_residual_anchor_mark": 43374.0,
+      "realized_sell_residual_anchor_mark_bound": [
+        43119.0,
+        43834.0
+      ],
+      "realized_cash_residual_bound": [
+        40588.0,
+        43336.0
+      ],
+      "self": {
+        "items": {
+          "STRAWBERRY": {
+            "cohort_harvested_units": 24,
+            "cohort_harvested_anchor_mark": 5496.0,
+            "anchor_unit_price": 229.0,
+            "anchor_on_hand_units": 1,
+            "all_unit_action_inflow_units": 24,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 23,
+            "terminal_on_hand_units_all_sources": 2,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              22,
+              23
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              5038.0,
+              5267.0
+            ],
+            "cohort_realized_cash_bound": [
+              4900.0,
+              5129.0
+            ],
+            "conservation_error": 0
+          },
+          "MELON": {
+            "cohort_harvested_units": 5,
+            "cohort_harvested_anchor_mark": 1090.0,
+            "anchor_unit_price": 218.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 6,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 6,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              5,
+              5
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              1090.0,
+              1090.0
+            ],
+            "cohort_realized_cash_bound": [
+              938.0,
+              946.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 38,
+            "cohort_harvested_anchor_mark": 38.0,
+            "anchor_unit_price": 1.0,
+            "anchor_on_hand_units": 3,
+            "all_unit_action_inflow_units": 82,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 83,
+            "terminal_on_hand_units_all_sources": 2,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              36,
+              38
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              36.0,
+              38.0
+            ],
+            "cohort_realized_cash_bound": [
+              36.0,
+              134.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 6624.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          6164.0,
+          6395.0
+        ],
+        "cohort_realized_cash_bound": [
+          5874.0,
+          6209.0
+        ],
+        "conservation_error_by_item": {
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "MILK": 0
+        }
+      },
+      "opponent": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 11,
+            "cohort_harvested_anchor_mark": 484.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 42,
+            "all_unit_action_inflow_units": 113,
+            "all_nonmarket_outflow_units": 121,
+            "market_buy_units": 304,
+            "realized_sell_units_all_sources": 338,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              0,
+              11
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              484.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              582.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 136,
+            "cohort_harvested_anchor_mark": 31144.0,
+            "anchor_unit_price": 229.0,
+            "anchor_on_hand_units": 12,
+            "all_unit_action_inflow_units": 218,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 230,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              136,
+              136
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              31144.0,
+              31144.0
+            ],
+            "cohort_realized_cash_bound": [
+              30219.0,
+              30890.0
+            ],
+            "conservation_error": 0
+          },
+          "MELON": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 8938.0,
+            "anchor_unit_price": 218.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 54,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 54,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              8938.0,
+              8938.0
+            ],
+            "cohort_realized_cash_bound": [
+              7078.0,
+              7915.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 46,
+            "cohort_harvested_anchor_mark": 46.0,
+            "anchor_unit_price": 1.0,
+            "anchor_on_hand_units": 15,
+            "all_unit_action_inflow_units": 119,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 134,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              46,
+              46
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              46.0,
+              46.0
+            ],
+            "cohort_realized_cash_bound": [
+              46.0,
+              184.0
+            ],
+            "conservation_error": 0
+          },
+          "WOOL": {
+            "cohort_harvested_units": 38,
+            "cohort_harvested_anchor_mark": 9386.0,
+            "anchor_unit_price": 247.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 92,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 92,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              38,
+              38
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9386.0,
+              9386.0
+            ],
+            "cohort_realized_cash_bound": [
+              9454.0,
+              9639.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 49998.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          49514.0,
+          49998.0
+        ],
+        "cohort_realized_cash_bound": [
+          46797.0,
+          49210.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "WOOL": 0
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal": {
+        "self": 15182.0,
+        "opponent": 120726.0,
+        "margin": -105544.0
+      },
+      "harvested_residual_anchor_mark": 41491.0,
+      "realized_sell_residual_anchor_mark_bound": [
+        41415.0,
+        42191.0
+      ],
+      "realized_cash_residual_bound": [
+        38169.0,
+        42489.0
+      ],
+      "self": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 2,
+            "cohort_harvested_anchor_mark": 88.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 6,
+            "all_unit_action_inflow_units": 2,
+            "all_nonmarket_outflow_units": 55,
+            "market_buy_units": 660,
+            "realized_sell_units_all_sources": 604,
+            "terminal_on_hand_units_all_sources": 9,
+            "terminal_shed_units_all_sources": 1,
+            "cohort_realized_sell_units_bound": [
+              0,
+              2
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              88.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              104.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 25,
+            "cohort_harvested_anchor_mark": 5100.0,
+            "anchor_unit_price": 204.0,
+            "anchor_on_hand_units": 1,
+            "all_unit_action_inflow_units": 25,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 23,
+            "terminal_on_hand_units_all_sources": 3,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              22,
+              23
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              4488.0,
+              4692.0
+            ],
+            "cohort_realized_cash_bound": [
+              4331.0,
+              4535.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 1230.0,
+            "anchor_unit_price": 30.0,
+            "anchor_on_hand_units": 3,
+            "all_unit_action_inflow_units": 82,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 85,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              1230.0,
+              1230.0
+            ],
+            "cohort_realized_cash_bound": [
+              201.0,
+              1039.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 6418.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          5718.0,
+          6010.0
+        ],
+        "cohort_realized_cash_bound": [
+          4532.0,
+          5678.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MILK": 0
+        }
+      },
+      "opponent": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 11,
+            "cohort_harvested_anchor_mark": 484.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 42,
+            "all_unit_action_inflow_units": 106,
+            "all_nonmarket_outflow_units": 121,
+            "market_buy_units": 304,
+            "realized_sell_units_all_sources": 331,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              0,
+              11
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              484.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              572.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 136,
+            "cohort_harvested_anchor_mark": 27744.0,
+            "anchor_unit_price": 204.0,
+            "anchor_on_hand_units": 12,
+            "all_unit_action_inflow_units": 218,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 230,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              136,
+              136
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              27744.0,
+              27744.0
+            ],
+            "cohort_realized_cash_bound": [
+              26664.0,
+              27442.0
+            ],
+            "conservation_error": 0
+          },
+          "MELON": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 9143.0,
+            "anchor_unit_price": 223.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 54,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 54,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9143.0,
+              9143.0
+            ],
+            "cohort_realized_cash_bound": [
+              7732.0,
+              8374.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 46,
+            "cohort_harvested_anchor_mark": 1380.0,
+            "anchor_unit_price": 30.0,
+            "anchor_on_hand_units": 15,
+            "all_unit_action_inflow_units": 119,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 134,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              46,
+              46
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              1380.0,
+              1380.0
+            ],
+            "cohort_realized_cash_bound": [
+              282.0,
+              1362.0
+            ],
+            "conservation_error": 0
+          },
+          "WOOL": {
+            "cohort_harvested_units": 38,
+            "cohort_harvested_anchor_mark": 9158.0,
+            "anchor_unit_price": 241.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 92,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 92,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              38,
+              38
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9158.0,
+              9158.0
+            ],
+            "cohort_realized_cash_bound": [
+              9169.0,
+              9271.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 47909.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          47425.0,
+          47909.0
+        ],
+        "cohort_realized_cash_bound": [
+          43847.0,
+          47021.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "WOOL": 0
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal": {
+        "self": 48751.0,
+        "opponent": 139754.0,
+        "margin": -91003.0
+      },
+      "harvested_residual_anchor_mark": 37493.0,
+      "realized_sell_residual_anchor_mark_bound": [
+        37618.0,
+        38617.0
+      ],
+      "realized_cash_residual_bound": [
+        32234.0,
+        38280.0
+      ],
+      "self": {
+        "items": {
+          "STRAWBERRY": {
+            "cohort_harvested_units": 25,
+            "cohort_harvested_anchor_mark": 5350.0,
+            "anchor_unit_price": 214.0,
+            "anchor_on_hand_units": 1,
+            "all_unit_action_inflow_units": 25,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 22,
+            "terminal_on_hand_units_all_sources": 4,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              21,
+              22
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              4494.0,
+              4708.0
+            ],
+            "cohort_realized_cash_bound": [
+              4425.0,
+              4640.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 38,
+            "cohort_harvested_anchor_mark": 10184.0,
+            "anchor_unit_price": 268.0,
+            "anchor_on_hand_units": 3,
+            "all_unit_action_inflow_units": 81,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 83,
+            "terminal_on_hand_units_all_sources": 1,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              37,
+              38
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9916.0,
+              10184.0
+            ],
+            "cohort_realized_cash_bound": [
+              10191.0,
+              11740.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 15534.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          14410.0,
+          14892.0
+        ],
+        "cohort_realized_cash_bound": [
+          14616.0,
+          16380.0
+        ],
+        "conservation_error_by_item": {
+          "STRAWBERRY": 0,
+          "MILK": 0
+        }
+      },
+      "opponent": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 11,
+            "cohort_harvested_anchor_mark": 517.0,
+            "anchor_unit_price": 47.0,
+            "anchor_on_hand_units": 53,
+            "all_unit_action_inflow_units": 111,
+            "all_nonmarket_outflow_units": 103,
+            "market_buy_units": 304,
+            "realized_sell_units_all_sources": 365,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              0,
+              11
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              517.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              605.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 139,
+            "cohort_harvested_anchor_mark": 29746.0,
+            "anchor_unit_price": 214.0,
+            "anchor_on_hand_units": 11,
+            "all_unit_action_inflow_units": 212,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 223,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              139,
+              139
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              29746.0,
+              29746.0
+            ],
+            "cohort_realized_cash_bound": [
+              29242.0,
+              29774.0
+            ],
+            "conservation_error": 0
+          },
+          "MELON": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 9389.0,
+            "anchor_unit_price": 229.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 54,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 54,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9389.0,
+              9389.0
+            ],
+            "cohort_realized_cash_bound": [
+              8099.0,
+              8688.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 10988.0,
+            "anchor_unit_price": 268.0,
+            "anchor_on_hand_units": 12,
+            "all_unit_action_inflow_units": 104,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 116,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              10988.0,
+              10988.0
+            ],
+            "cohort_realized_cash_bound": [
+              11242.0,
+              13040.0
+            ],
+            "conservation_error": 0
+          },
+          "WOOL": {
+            "cohort_harvested_units": 31,
+            "cohort_harvested_anchor_mark": 2387.0,
+            "anchor_unit_price": 77.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 76,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 76,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              31,
+              31
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              2387.0,
+              2387.0
+            ],
+            "cohort_realized_cash_bound": [
+              31.0,
+              789.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 53027.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          52510.0,
+          53027.0
+        ],
+        "cohort_realized_cash_bound": [
+          48614.0,
+          52896.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "WOOL": 0
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal": {
+        "self": 34768.0,
+        "opponent": 161643.0,
+        "margin": -126875.0
+      },
+      "harvested_residual_anchor_mark": 46233.0,
+      "realized_sell_residual_anchor_mark_bound": [
+        46169.0,
+        47215.0
+      ],
+      "realized_cash_residual_bound": [
+        43766.0,
+        46989.0
+      ],
+      "self": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 8,
+            "cohort_harvested_anchor_mark": 352.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 13,
+            "all_unit_action_inflow_units": 8,
+            "all_nonmarket_outflow_units": 48,
+            "market_buy_units": 612,
+            "realized_sell_units_all_sources": 576,
+            "terminal_on_hand_units_all_sources": 9,
+            "terminal_shed_units_all_sources": 9,
+            "cohort_realized_sell_units_bound": [
+              0,
+              8
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              352.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              416.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 17,
+            "cohort_harvested_anchor_mark": 3570.0,
+            "anchor_unit_price": 210.0,
+            "anchor_on_hand_units": 1,
+            "all_unit_action_inflow_units": 17,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 15,
+            "terminal_on_hand_units_all_sources": 3,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              14,
+              15
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              2940.0,
+              3150.0
+            ],
+            "cohort_realized_cash_bound": [
+              2850.0,
+              3060.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 35,
+            "cohort_harvested_anchor_mark": 7490.0,
+            "anchor_unit_price": 214.0,
+            "anchor_on_hand_units": 3,
+            "all_unit_action_inflow_units": 69,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 72,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              35,
+              35
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              7490.0,
+              7490.0
+            ],
+            "cohort_realized_cash_bound": [
+              7171.0,
+              7437.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 11412.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          10430.0,
+          10992.0
+        ],
+        "cohort_realized_cash_bound": [
+          10021.0,
+          10913.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MILK": 0
+        }
+      },
+      "opponent": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 11,
+            "cohort_harvested_anchor_mark": 484.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 42,
+            "all_unit_action_inflow_units": 102,
+            "all_nonmarket_outflow_units": 121,
+            "market_buy_units": 304,
+            "realized_sell_units_all_sources": 327,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              0,
+              11
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              484.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              572.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 137,
+            "cohort_harvested_anchor_mark": 28770.0,
+            "anchor_unit_price": 210.0,
+            "anchor_on_hand_units": 12,
+            "all_unit_action_inflow_units": 218,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 230,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              137,
+              137
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              28770.0,
+              28770.0
+            ],
+            "cohort_realized_cash_bound": [
+              27970.0,
+              28614.0
+            ],
+            "conservation_error": 0
+          },
+          "MELON": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 9389.0,
+            "anchor_unit_price": 229.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 54,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 54,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9389.0,
+              9389.0
+            ],
+            "cohort_realized_cash_bound": [
+              8099.0,
+              8688.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 46,
+            "cohort_harvested_anchor_mark": 9844.0,
+            "anchor_unit_price": 214.0,
+            "anchor_on_hand_units": 15,
+            "all_unit_action_inflow_units": 119,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 134,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              46,
+              46
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9844.0,
+              9844.0
+            ],
+            "cohort_realized_cash_bound": [
+              9441.0,
+              9865.0
+            ],
+            "conservation_error": 0
+          },
+          "WOOL": {
+            "cohort_harvested_units": 38,
+            "cohort_harvested_anchor_mark": 9158.0,
+            "anchor_unit_price": 241.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 92,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 92,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              38,
+              38
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9158.0,
+              9158.0
+            ],
+            "cohort_realized_cash_bound": [
+              9169.0,
+              9271.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 57645.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          57161.0,
+          57645.0
+        ],
+        "cohort_realized_cash_bound": [
+          54679.0,
+          57010.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "WOOL": 0
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal": {
+        "self": 15385.0,
+        "opponent": 104887.0,
+        "margin": -89502.0
+      },
+      "harvested_residual_anchor_mark": 37454.0,
+      "realized_sell_residual_anchor_mark_bound": [
+        37454.0,
+        38620.0
+      ],
+      "realized_cash_residual_bound": [
+        35346.0,
+        40540.0
+      ],
+      "self": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 10,
+            "cohort_harvested_anchor_mark": 440.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 11,
+            "all_unit_action_inflow_units": 10,
+            "all_nonmarket_outflow_units": 53,
+            "market_buy_units": 655,
+            "realized_sell_units_all_sources": 614,
+            "terminal_on_hand_units_all_sources": 9,
+            "terminal_shed_units_all_sources": 9,
+            "cohort_realized_sell_units_bound": [
+              0,
+              10
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              440.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              528.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 23,
+            "cohort_harvested_anchor_mark": 5566.0,
+            "anchor_unit_price": 242.0,
+            "anchor_on_hand_units": 1,
+            "all_unit_action_inflow_units": 23,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 21,
+            "terminal_on_hand_units_all_sources": 3,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              20,
+              21
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              4840.0,
+              5082.0
+            ],
+            "cohort_realized_cash_bound": [
+              5076.0,
+              5351.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 37,
+            "cohort_harvested_anchor_mark": 37.0,
+            "anchor_unit_price": 1.0,
+            "anchor_on_hand_units": 3,
+            "all_unit_action_inflow_units": 80,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 83,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              37,
+              37
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              37.0,
+              37.0
+            ],
+            "cohort_realized_cash_bound": [
+              85.0,
+              565.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 6043.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          4877.0,
+          5559.0
+        ],
+        "cohort_realized_cash_bound": [
+          5161.0,
+          6444.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MILK": 0
+        }
+      },
+      "opponent": {
+        "items": {
+          "WHEAT": {
+            "cohort_harvested_units": 11,
+            "cohort_harvested_anchor_mark": 484.0,
+            "anchor_unit_price": 44.0,
+            "anchor_on_hand_units": 42,
+            "all_unit_action_inflow_units": 113,
+            "all_nonmarket_outflow_units": 121,
+            "market_buy_units": 304,
+            "realized_sell_units_all_sources": 338,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              0,
+              11
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              0.0,
+              484.0
+            ],
+            "cohort_realized_cash_bound": [
+              0.0,
+              575.0
+            ],
+            "conservation_error": 0
+          },
+          "STRAWBERRY": {
+            "cohort_harvested_units": 136,
+            "cohort_harvested_anchor_mark": 32912.0,
+            "anchor_unit_price": 242.0,
+            "anchor_on_hand_units": 12,
+            "all_unit_action_inflow_units": 218,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 230,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              136,
+              136
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              32912.0,
+              32912.0
+            ],
+            "cohort_realized_cash_bound": [
+              33956.0,
+              35758.0
+            ],
+            "conservation_error": 0
+          },
+          "MELON": {
+            "cohort_harvested_units": 41,
+            "cohort_harvested_anchor_mark": 9143.0,
+            "anchor_unit_price": 223.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 54,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 54,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              41,
+              41
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              9143.0,
+              9143.0
+            ],
+            "cohort_realized_cash_bound": [
+              7732.0,
+              8374.0
+            ],
+            "conservation_error": 0
+          },
+          "MILK": {
+            "cohort_harvested_units": 46,
+            "cohort_harvested_anchor_mark": 46.0,
+            "anchor_unit_price": 1.0,
+            "anchor_on_hand_units": 15,
+            "all_unit_action_inflow_units": 119,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 134,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              46,
+              46
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              46.0,
+              46.0
+            ],
+            "cohort_realized_cash_bound": [
+              64.0,
+              805.0
+            ],
+            "conservation_error": 0
+          },
+          "WOOL": {
+            "cohort_harvested_units": 38,
+            "cohort_harvested_anchor_mark": 912.0,
+            "anchor_unit_price": 24.0,
+            "anchor_on_hand_units": 0,
+            "all_unit_action_inflow_units": 92,
+            "all_nonmarket_outflow_units": 0,
+            "market_buy_units": 0,
+            "realized_sell_units_all_sources": 92,
+            "terminal_on_hand_units_all_sources": 0,
+            "terminal_shed_units_all_sources": 0,
+            "cohort_realized_sell_units_bound": [
+              38,
+              38
+            ],
+            "cohort_realized_sell_anchor_mark_bound": [
+              912.0,
+              912.0
+            ],
+            "cohort_realized_cash_bound": [
+              38.0,
+              189.0
+            ],
+            "conservation_error": 0
+          }
+        },
+        "cohort_harvested_anchor_mark": 43497.0,
+        "cohort_realized_sell_anchor_mark_bound": [
+          43013.0,
+          43497.0
+        ],
+        "cohort_realized_cash_bound": [
+          41790.0,
+          45701.0
+        ],
+        "conservation_error_by_item": {
+          "WHEAT": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "WOOL": 0
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "Bounds preserve fungibility uncertainty instead of assigning identity to mixed product units.",
+    "A wide interval means the current public accounting surface is insufficient to locate Harvest->Sellable->Executable->Realized exactly.",
+    "A narrow high-retention interval can close a major-loss hypothesis; a narrow low-retention interval can expose a downstream Value Carry gap.",
+    "No Candidate or adoption decision is introduced."
+  ]
+}
