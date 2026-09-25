@@ -1,0 +1,300 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.world-reference-component-comparison.result.v1",
+  "battle_count": 5,
+  "arms": {
+    "baseline": {
+      "absolute_mean_self": 24042.8,
+      "delta_mean_vs_baseline": 0.0,
+      "delta_median_vs_baseline": 0.0,
+      "improved_cases": 0,
+      "worsened_cases": 0,
+      "equal_cases": 5,
+      "min_delta": 0.0,
+      "max_delta": 0.0,
+      "absolute_mean_margin": -104411.6,
+      "by_seed": {
+        "7351": 0.0,
+        "7352": 0.0,
+        "7353": 0.0,
+        "7354": 0.0,
+        "7355": 0.0
+      }
+    },
+    "wr01": {
+      "absolute_mean_self": 25332.2,
+      "delta_mean_vs_baseline": 1289.4,
+      "delta_median_vs_baseline": 1153.0,
+      "improved_cases": 5,
+      "worsened_cases": 0,
+      "equal_cases": 0,
+      "min_delta": 455.0,
+      "max_delta": 2076.0,
+      "absolute_mean_margin": -105005.6,
+      "by_seed": {
+        "7351": 455.0,
+        "7352": 1153.0,
+        "7353": 942.0,
+        "7354": 2076.0,
+        "7355": 1821.0
+      }
+    },
+    "wr02": {
+      "absolute_mean_self": 25765.6,
+      "delta_mean_vs_baseline": 1722.8,
+      "delta_median_vs_baseline": 1842.0,
+      "improved_cases": 4,
+      "worsened_cases": 1,
+      "equal_cases": 0,
+      "min_delta": -117.0,
+      "max_delta": 3418.0,
+      "absolute_mean_margin": -104343.8,
+      "by_seed": {
+        "7351": 576.0,
+        "7352": 3418.0,
+        "7353": 2895.0,
+        "7354": -117.0,
+        "7355": 1842.0
+      }
+    },
+    "bundle": {
+      "absolute_mean_self": 25921.8,
+      "delta_mean_vs_baseline": 1879.0,
+      "delta_median_vs_baseline": 1954.0,
+      "improved_cases": 5,
+      "worsened_cases": 0,
+      "equal_cases": 0,
+      "min_delta": 483.0,
+      "max_delta": 3167.0,
+      "absolute_mean_margin": -102598.2,
+      "by_seed": {
+        "7351": 483.0,
+        "7352": 3167.0,
+        "7353": 1954.0,
+        "7354": 2304.0,
+        "7355": 1487.0
+      }
+    }
+  },
+  "ablation_view": {
+    "bundle_minus_wr01_mean": 589.6,
+    "bundle_minus_wr02_mean": 156.2,
+    "bundle_minus_wr01_by_seed": {
+      "7351": 28.0,
+      "7352": 2014.0,
+      "7353": 1012.0,
+      "7354": 228.0,
+      "7355": -334.0
+    }
+  },
+  "connection": {
+    "wr01_reopened_orders_total": 140,
+    "wr02_duplicate_seen_total": 136,
+    "wr02_moved_total": 136,
+    "bundle_wr01_reopened_orders_total": 159,
+    "bundle_wr02_duplicate_seen_total": 301,
+    "bundle_wr02_moved_total": 301
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "baseline": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "wr01": {
+        "self": 14621.0,
+        "opponent": 122303.0,
+        "margin": -107682.0
+      },
+      "wr02": {
+        "self": 14742.0,
+        "opponent": 123537.0,
+        "margin": -108795.0
+      },
+      "bundle": {
+        "self": 14649.0,
+        "opponent": 121398.0,
+        "margin": -106749.0
+      },
+      "delta_self": {
+        "wr01": 455.0,
+        "wr02": 576.0,
+        "bundle": 483.0
+      },
+      "connection": {
+        "wr01_reopened_orders": 21,
+        "wr02_duplicate_seen": 25,
+        "wr02_moved": 25,
+        "wr02_passed": 0,
+        "bundle_wr01_reopened_orders": 22,
+        "bundle_wr02_duplicate_seen": 60,
+        "bundle_wr02_moved": 60,
+        "bundle_wr02_passed": 0
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "baseline": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "wr01": {
+        "self": 12917.0,
+        "opponent": 111914.0,
+        "margin": -98997.0
+      },
+      "wr02": {
+        "self": 15182.0,
+        "opponent": 120726.0,
+        "margin": -105544.0
+      },
+      "bundle": {
+        "self": 14931.0,
+        "opponent": 121735.0,
+        "margin": -106804.0
+      },
+      "delta_self": {
+        "wr01": 1153.0,
+        "wr02": 3418.0,
+        "bundle": 3167.0
+      },
+      "connection": {
+        "wr01_reopened_orders": 29,
+        "wr02_duplicate_seen": 27,
+        "wr02_moved": 27,
+        "wr02_passed": 0,
+        "bundle_wr01_reopened_orders": 30,
+        "bundle_wr02_duplicate_seen": 44,
+        "bundle_wr02_moved": 44,
+        "bundle_wr02_passed": 0
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "baseline": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "wr01": {
+        "self": 46798.0,
+        "opponent": 141431.0,
+        "margin": -94633.0
+      },
+      "wr02": {
+        "self": 48751.0,
+        "opponent": 139754.0,
+        "margin": -91003.0
+      },
+      "bundle": {
+        "self": 47810.0,
+        "opponent": 137425.0,
+        "margin": -89615.0
+      },
+      "delta_self": {
+        "wr01": 942.0,
+        "wr02": 2895.0,
+        "bundle": 1954.0
+      },
+      "connection": {
+        "wr01_reopened_orders": 31,
+        "wr02_duplicate_seen": 31,
+        "wr02_moved": 31,
+        "wr02_passed": 0,
+        "bundle_wr01_reopened_orders": 40,
+        "bundle_wr02_duplicate_seen": 77,
+        "bundle_wr02_moved": 77,
+        "bundle_wr02_passed": 0
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "baseline": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "wr01": {
+        "self": 36961.0,
+        "opponent": 167757.0,
+        "margin": -130796.0
+      },
+      "wr02": {
+        "self": 34768.0,
+        "opponent": 161643.0,
+        "margin": -126875.0
+      },
+      "bundle": {
+        "self": 37189.0,
+        "opponent": 158955.0,
+        "margin": -121766.0
+      },
+      "delta_self": {
+        "wr01": 2076.0,
+        "wr02": -117.0,
+        "bundle": 2304.0
+      },
+      "connection": {
+        "wr01_reopened_orders": 33,
+        "wr02_duplicate_seen": 25,
+        "wr02_moved": 25,
+        "wr02_passed": 0,
+        "bundle_wr01_reopened_orders": 36,
+        "bundle_wr02_duplicate_seen": 71,
+        "bundle_wr02_moved": 71,
+        "bundle_wr02_passed": 0
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "baseline": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "wr01": {
+        "self": 15364.0,
+        "opponent": 108284.0,
+        "margin": -92920.0
+      },
+      "wr02": {
+        "self": 15385.0,
+        "opponent": 104887.0,
+        "margin": -89502.0
+      },
+      "bundle": {
+        "self": 15030.0,
+        "opponent": 103087.0,
+        "margin": -88057.0
+      },
+      "delta_self": {
+        "wr01": 1821.0,
+        "wr02": 1842.0,
+        "bundle": 1487.0
+      },
+      "connection": {
+        "wr01_reopened_orders": 26,
+        "wr02_duplicate_seen": 28,
+        "wr02_moved": 28,
+        "wr02_passed": 0,
+        "bundle_wr01_reopened_orders": 31,
+        "bundle_wr02_duplicate_seen": 49,
+        "bundle_wr02_moved": 49,
+        "bundle_wr02_passed": 0
+      }
+    }
+  ],
+  "boundary": [
+    "Fixed-five first-pass comparison only.",
+    "Every arm records baseline absolute mean self / candidate absolute mean self / delta.",
+    "Ablation view is direct Battle difference; no additive contribution assumption is made.",
+    "Independent validation is required before retaining a new component."
+  ]
+}
