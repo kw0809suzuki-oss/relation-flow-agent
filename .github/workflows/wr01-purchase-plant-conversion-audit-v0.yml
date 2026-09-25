@@ -1,4 +1,5 @@
 name: WR-01 Purchase Plant Conversion Audit v0
+# rerun with same-tile collision observation
 
 permissions:
   contents: read
