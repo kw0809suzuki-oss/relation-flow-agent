@@ -1,0 +1,84 @@
+name: Composition Transformation Candidate fresh20 v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/sb01-economic-layer-export-v0-20260923]
+    paths:
+      - .github/workflows/composition-transformation-candidate-fresh20-v0.yml
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        include:
+          - {seed: 8101, seat: 0}
+          - {seed: 8102, seat: 1}
+          - {seed: 8103, seat: 0}
+          - {seed: 8104, seat: 1}
+          - {seed: 8105, seat: 0}
+          - {seed: 8106, seat: 1}
+          - {seed: 8107, seat: 0}
+          - {seed: 8108, seat: 1}
+          - {seed: 8109, seat: 0}
+          - {seed: 8110, seat: 1}
+          - {seed: 8111, seat: 0}
+          - {seed: 8112, seat: 1}
+          - {seed: 8113, seat: 0}
+          - {seed: 8114, seat: 1}
+          - {seed: 8115, seat: 0}
+          - {seed: 8116, seat: 1}
+          - {seed: 8117, seat: 0}
+          - {seed: 8118, seat: 1}
+          - {seed: 8119, seat: 0}
+          - {seed: 8120, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_composition_transformation_candidate_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: composition-fresh20-${{ matrix.seed }}
+          path: composition_transformation_candidate_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: composition-fresh20-*
+          path: composition-fresh20-artifacts
+          merge-multiple: true
+      - run: python analyze_composition_transformation_candidate_fresh20_v0.py
+      - name: Record fresh20 composition validation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add composition_transformation_candidate_fresh20_v0_result.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Record Composition Transformation fresh20 Battle"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
