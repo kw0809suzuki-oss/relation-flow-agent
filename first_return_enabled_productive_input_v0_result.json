@@ -1,0 +1,426 @@
+{
+  "schema": "kaggriculture.first-return-enabled-productive-input.result.v0",
+  "battle_count": 10,
+  "opponent": {
+    "found_cases": 10,
+    "first_event_signature_frequency": {
+      "D0h8:BUY_SEED:MELON": 10
+    },
+    "first_event_op_item_frequency": {
+      "BUY_SEED:MELON": 10
+    },
+    "mean_day": 0.0,
+    "mean_hour": 8.0,
+    "mean_cost": 80.0,
+    "mean_prior_sell_cash": 29.0,
+    "mean_cash_without_prior_sell": 74.0
+  },
+  "self": {
+    "found_cases": 10,
+    "first_event_signature_frequency": {
+      "D2h0:HIRE:-": 10
+    },
+    "first_event_op_item_frequency": {
+      "HIRE:None": 10
+    },
+    "mean_day": 2.0,
+    "mean_hour": 0.0
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 2,
+        "hour": 0,
+        "event_index": 7,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 2,
+        "hour": 0,
+        "event_index": 8,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 2,
+        "hour": 0,
+        "event_index": 7,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 2,
+        "hour": 0,
+        "event_index": 8,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 2,
+        "hour": 0,
+        "event_index": 7,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 2,
+        "hour": 0,
+        "event_index": 8,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 12638.0,
+        "opponent": 111344.0,
+        "margin": -98706.0
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 2,
+        "hour": 0,
+        "event_index": 7,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 13630.0,
+        "opponent": 124733.0,
+        "margin": -111103.0
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 2,
+        "hour": 0,
+        "event_index": 8,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 15334.0,
+        "opponent": 66711.0,
+        "margin": -51377.0
+      }
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 2,
+        "hour": 0,
+        "event_index": 7,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 31927.0,
+        "opponent": 138610.0,
+        "margin": -106683.0
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 2,
+        "hour": 0,
+        "event_index": 8,
+        "op": "HIRE",
+        "item": null,
+        "cash_before": 1029.0,
+        "cash_after": 1028.0,
+        "cost": 1.0,
+        "prior_sell_cash": 1159.0,
+        "cash_without_prior_sell": -130.0,
+        "return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 0,
+        "hour": 8,
+        "event_index": 3,
+        "op": "BUY_SEED",
+        "item": "MELON",
+        "price": 80.0,
+        "cash_before": 103.0,
+        "cash_after": 23.0,
+        "cash_delta": -80.0,
+        "prior_sell_cash": 29.0,
+        "cost": 80.0,
+        "cash_without_prior_sell": 74.0,
+        "return_necessary": true
+      },
+      "terminal": {
+        "self": 31876.0,
+        "opponent": 132626.0,
+        "margin": -100750.0
+      }
+    }
+  ],
+  "boundary": [
+    "This identifies the first productive order whose affordability depends on prior realized SELL cash on the actual outflow path.",
+    "It does not yet prove that this exact order causes the next Production separator.",
+    "The next step is to connect only a repeated opponent event to a later public productive asset/production event."
+  ]
+}
