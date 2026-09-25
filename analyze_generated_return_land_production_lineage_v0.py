@@ -32,17 +32,17 @@ payload={
  "battle_count":10,
  "opponent":{
    "generated_return_land_cases":len(opp_land),
-   "land_time_frequency":dict(Counter((z["day"],z["hour"]) for z in opp_land)),
+   "land_time_frequency":dict(Counter("D{}h{}".format(z["day"],z["hour"]) for z in opp_land)),
    "new_land_successful_plant_cases":sum(bool(r["opponent_plants"]) for r in rows),
    "new_land_plant_crop_frequency":dict(Counter(z["crop"] for z in opp_plants)),
    "first_production_cases":len(opp_prod),
-   "first_production_time_frequency":dict(Counter((z["day"],z["hour"]) for z in opp_prod)),
+   "first_production_time_frequency":dict(Counter("D{}h{}".format(z["day"],z["hour"]) for z in opp_prod)),
    "first_production_crop_frequency":dict(Counter(z["crop"] for z in opp_prod)),
    "mean_first_production_units":mean([z["units"] for z in opp_prod]),
  },
  "self":{
    "first_production_cases":len(self_prod),
-   "first_production_time_frequency":dict(Counter((z["day"],z["hour"]) for z in self_prod)),
+   "first_production_time_frequency":dict(Counter("D{}h{}".format(z["day"],z["hour"]) for z in self_prod)),
  },
  "cases":rows,
  "boundary":[
