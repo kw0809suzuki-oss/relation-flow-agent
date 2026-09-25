@@ -1,0 +1,426 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.wr01-world-transformation-audit.result.v0",
+  "battle_count": 5,
+  "reopened_orders_mean": 28.0,
+  "terminal_self_delta_mean": 1289.4,
+  "checkpoints": {
+    "d14h0": {
+      "committed_mark_delta_mean": 0.0,
+      "crop_mark_delta_mean": 0.0,
+      "animal_mark_delta_mean": 0.0,
+      "empty_tile_delta_mean": 0.0,
+      "seed_delta_mean": {
+        "WHEAT": 0.0,
+        "STRAWBERRY": 0.0,
+        "MELON": 0.0
+      },
+      "crop_count_delta_mean": {
+        "WHEAT": 0.0,
+        "STRAWBERRY": 0.0,
+        "MELON": 0.0
+      },
+      "rows": [
+        {
+          "seed": 7351,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7352,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7353,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7354,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7355,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        }
+      ]
+    },
+    "d16h0": {
+      "committed_mark_delta_mean": 170.4,
+      "crop_mark_delta_mean": 0.0,
+      "animal_mark_delta_mean": 170.4,
+      "empty_tile_delta_mean": 0.0,
+      "seed_delta_mean": {
+        "WHEAT": 2.0,
+        "STRAWBERRY": 1.0,
+        "MELON": 0.2
+      },
+      "crop_count_delta_mean": {
+        "WHEAT": 0.0,
+        "STRAWBERRY": 0.0,
+        "MELON": 0.0
+      },
+      "rows": [
+        {
+          "seed": 7351,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 2,
+            "STRAWBERRY": 1,
+            "MELON": 1
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7352,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 2,
+            "STRAWBERRY": 1,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7353,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 3,
+            "STRAWBERRY": 1,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7354,
+          "committed_mark_delta": 852.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 852.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 2,
+            "STRAWBERRY": 1,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7355,
+          "committed_mark_delta": 0.0,
+          "crop_mark_delta": 0.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 1,
+            "STRAWBERRY": 1,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        }
+      ]
+    },
+    "d20h0": {
+      "committed_mark_delta_mean": -531.6,
+      "crop_mark_delta_mean": -702.8,
+      "animal_mark_delta_mean": 171.2,
+      "empty_tile_delta_mean": -1.0,
+      "seed_delta_mean": {
+        "WHEAT": 5.4,
+        "STRAWBERRY": 5.4,
+        "MELON": 0.2
+      },
+      "crop_count_delta_mean": {
+        "WHEAT": 4.2,
+        "STRAWBERRY": -3.0,
+        "MELON": 0.0
+      },
+      "rows": [
+        {
+          "seed": 7351,
+          "committed_mark_delta": -44.0,
+          "crop_mark_delta": -44.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 7,
+            "STRAWBERRY": 2,
+            "MELON": 1
+          },
+          "crop_count_delta": {
+            "WHEAT": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7352,
+          "committed_mark_delta": -666.0,
+          "crop_mark_delta": -666.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 6,
+            "STRAWBERRY": 6,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 3,
+            "STRAWBERRY": -3,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7353,
+          "committed_mark_delta": -1347.0,
+          "crop_mark_delta": -1347.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": -2,
+          "seed_delta": {
+            "WHEAT": 4,
+            "STRAWBERRY": 7,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 7,
+            "STRAWBERRY": -5,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7354,
+          "committed_mark_delta": 329.0,
+          "crop_mark_delta": -527.0,
+          "animal_mark_delta": 856.0,
+          "empty_tile_delta": -3,
+          "seed_delta": {
+            "WHEAT": 3,
+            "STRAWBERRY": 6,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 8,
+            "STRAWBERRY": -4,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7355,
+          "committed_mark_delta": -930.0,
+          "crop_mark_delta": -930.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": 0,
+          "seed_delta": {
+            "WHEAT": 7,
+            "STRAWBERRY": 6,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 3,
+            "STRAWBERRY": -3,
+            "MELON": 0
+          }
+        }
+      ]
+    },
+    "d24h0": {
+      "committed_mark_delta_mean": 406.8,
+      "crop_mark_delta_mean": -113.4,
+      "animal_mark_delta_mean": 520.2,
+      "empty_tile_delta_mean": -10.2,
+      "seed_delta_mean": {
+        "WHEAT": 9.4,
+        "STRAWBERRY": 5.4,
+        "MELON": 0.2
+      },
+      "crop_count_delta_mean": {
+        "WHEAT": 7.4,
+        "STRAWBERRY": -3.0,
+        "MELON": 0.0
+      },
+      "rows": [
+        {
+          "seed": 7351,
+          "committed_mark_delta": 752.0,
+          "crop_mark_delta": 752.0,
+          "animal_mark_delta": 0.0,
+          "empty_tile_delta": -8,
+          "seed_delta": {
+            "WHEAT": 13,
+            "STRAWBERRY": 2,
+            "MELON": 1
+          },
+          "crop_count_delta": {
+            "WHEAT": 4,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7352,
+          "committed_mark_delta": 396.0,
+          "crop_mark_delta": 624.0,
+          "animal_mark_delta": -228.0,
+          "empty_tile_delta": -11,
+          "seed_delta": {
+            "WHEAT": 8,
+            "STRAWBERRY": 6,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 9,
+            "STRAWBERRY": -3,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7353,
+          "committed_mark_delta": 66.0,
+          "crop_mark_delta": -1204.0,
+          "animal_mark_delta": 1270.0,
+          "empty_tile_delta": -10,
+          "seed_delta": {
+            "WHEAT": 9,
+            "STRAWBERRY": 7,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 8,
+            "STRAWBERRY": -5,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7354,
+          "committed_mark_delta": 480.0,
+          "crop_mark_delta": -519.0,
+          "animal_mark_delta": 999.0,
+          "empty_tile_delta": -13,
+          "seed_delta": {
+            "WHEAT": 7,
+            "STRAWBERRY": 6,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 9,
+            "STRAWBERRY": -4,
+            "MELON": 0
+          }
+        },
+        {
+          "seed": 7355,
+          "committed_mark_delta": 340.0,
+          "crop_mark_delta": -220.0,
+          "animal_mark_delta": 560.0,
+          "empty_tile_delta": -9,
+          "seed_delta": {
+            "WHEAT": 10,
+            "STRAWBERRY": 6,
+            "MELON": 0
+          },
+          "crop_count_delta": {
+            "WHEAT": 7,
+            "STRAWBERRY": -3,
+            "MELON": 0
+          }
+        }
+      ]
+    }
+  },
+  "boundary": [
+    "Checkpoint deltas compare WR-01 World State against baseline on matched fixed-five Battles.",
+    "Additional seed inventory is not equated with productive transformation.",
+    "Additional committed-production mark/crop count is observed World transformation, not proof of value realization to terminal Cash.",
+    "No next Candidate is selected by this result alone."
+  ]
+}
