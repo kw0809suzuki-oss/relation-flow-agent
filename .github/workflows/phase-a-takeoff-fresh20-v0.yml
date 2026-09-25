@@ -1,0 +1,76 @@
+name: Phase A Takeoff fresh20 v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - .github/workflows/phase-a-takeoff-fresh20-v0.yml
+  workflow_dispatch:
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 8401, seat: 0}
+          - {seed: 8402, seat: 1}
+          - {seed: 8403, seat: 0}
+          - {seed: 8404, seat: 1}
+          - {seed: 8405, seat: 0}
+          - {seed: 8406, seat: 1}
+          - {seed: 8407, seat: 0}
+          - {seed: 8408, seat: 1}
+          - {seed: 8409, seat: 0}
+          - {seed: 8410, seat: 1}
+          - {seed: 8411, seat: 0}
+          - {seed: 8412, seat: 1}
+          - {seed: 8413, seat: 0}
+          - {seed: 8414, seat: 1}
+          - {seed: 8415, seat: 0}
+          - {seed: 8416, seat: 1}
+          - {seed: 8417, seat: 0}
+          - {seed: 8418, seat: 1}
+          - {seed: 8419, seat: 0}
+          - {seed: 8420, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_phase_a_takeoff_fresh20_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase-a-takeoff-${{ matrix.seed }}
+          path: phase_a_takeoff_fresh20_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+  aggregate:
+    needs: battle
+    if: ${{ needs.battle.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: phase-a-takeoff-*
+          path: phase-a-takeoff-artifacts
+          merge-multiple: true
+      - run: python analyze_phase_a_takeoff_fresh20_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add phase_a_takeoff_fresh20_v0_result.json
+          git commit -m "Record Phase A takeoff fresh20 v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
