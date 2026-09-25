@@ -60,6 +60,19 @@
       "MELON": 8
     },
     "seed_sufficient_for_requests": true,
+    "prior_current_seed_acquisition": {
+      "WHEAT": {
+        "row_index": 7,
+        "day": 0,
+        "hour": 7,
+        "crop": "WHEAT",
+        "issued_qty": 3,
+        "inferred_realized_qty": 3,
+        "seed_before": 8,
+        "seed_next": 11
+      }
+    },
+    "resource_origin_confirmed": true,
     "target_was_empty": true
   },
   "world": {
@@ -395,9 +408,10 @@
   },
   "guard": {
     "resource_state_present": true,
+    "resource_generated_or_acquired_by_current": true,
     "current_productive_action_generated": true,
     "world_failure_observed": true,
-    "alternate_productive_capacity_present": true
+    "alternate_empty_capacity_observed": true
   },
   "decision_boundary": {
     "scan_result_only": true,

@@ -24,6 +24,8 @@
 - alternate empty tiles: 19
 - available seed: \`{"WHEAT": 9, "CARROT": 0, "TOMATO": 0, "STRAWBERRY": 0, "MELON": 8}\`
 - seed sufficient for requests: True
+- Current seed acquisition confirmed: True
+- prior Current seed acquisition: `{"WHEAT": {"row_index": 7, "day": 0, "hour": 7, "crop": "WHEAT", "issued_qty": 3, "inferred_realized_qty": 3, "seed_before": 8, "seed_next": 11}}`
 - target was empty at State_t: True
 
 ## World execution
@@ -138,9 +140,10 @@
 \`\`\`json
 {
   "resource_state_present": true,
+  "resource_generated_or_acquired_by_current": true,
   "current_productive_action_generated": true,
   "world_failure_observed": true,
-  "alternate_productive_capacity_present": true
+  "alternate_empty_capacity_observed": true
 }
 \`\`\`
 
