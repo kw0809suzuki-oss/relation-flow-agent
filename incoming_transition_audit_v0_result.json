@@ -1,0 +1,561 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.incoming-transition-audit.result.v0",
+  "source": "ready_output_surface_v0_result.json",
+  "success_anchor_days": [
+    14,
+    15,
+    17,
+    19
+  ],
+  "boundary_anchor_day": 18,
+  "by_anchor_day": {
+    "14": {
+      "class": "success_anchor",
+      "incoming_interval": "13->14",
+      "incoming_ready_residual_change": {
+        "mean": 9386.2,
+        "min": 7758.0,
+        "max": 10592.0,
+        "values": [
+          9596.0,
+          10592.0,
+          7758.0,
+          9398.0,
+          9587.0
+        ]
+      },
+      "incoming_sell_cash_residual": {
+        "mean": -1095.8,
+        "min": -2612.0,
+        "max": 819.0,
+        "values": [
+          -2612.0,
+          -1801.0,
+          -548.0,
+          819.0,
+          -1337.0
+        ]
+      },
+      "incoming_cash_residual_change": {
+        "mean": -3523.6,
+        "min": -5272.0,
+        "max": -1514.0,
+        "values": [
+          -5272.0,
+          -4078.0,
+          -2738.0,
+          -1514.0,
+          -4016.0
+        ]
+      },
+      "common_signature_5of5": null,
+      "cases": [
+        {
+          "seed": 7351,
+          "incoming_ready_residual_change": 9596.0,
+          "incoming_sell_cash_residual": -2612.0,
+          "incoming_cash_residual_change": -5272.0,
+          "incoming_signature": [
+            "+",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "seed": 7352,
+          "incoming_ready_residual_change": 10592.0,
+          "incoming_sell_cash_residual": -1801.0,
+          "incoming_cash_residual_change": -4078.0,
+          "incoming_signature": [
+            "+",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "seed": 7353,
+          "incoming_ready_residual_change": 7758.0,
+          "incoming_sell_cash_residual": -548.0,
+          "incoming_cash_residual_change": -2738.0,
+          "incoming_signature": [
+            "+",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "seed": 7354,
+          "incoming_ready_residual_change": 9398.0,
+          "incoming_sell_cash_residual": 819.0,
+          "incoming_cash_residual_change": -1514.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "-"
+          ]
+        },
+        {
+          "seed": 7355,
+          "incoming_ready_residual_change": 9587.0,
+          "incoming_sell_cash_residual": -1337.0,
+          "incoming_cash_residual_change": -4016.0,
+          "incoming_signature": [
+            "+",
+            "-",
+            "-"
+          ]
+        }
+      ]
+    },
+    "15": {
+      "class": "success_anchor",
+      "incoming_interval": "14->15",
+      "incoming_ready_residual_change": {
+        "mean": -7433.0,
+        "min": -8728.0,
+        "max": -5837.0,
+        "values": [
+          -8728.0,
+          -8394.0,
+          -5837.0,
+          -6479.0,
+          -7727.0
+        ]
+      },
+      "incoming_sell_cash_residual": {
+        "mean": 4690.2,
+        "min": 2267.0,
+        "max": 6366.0,
+        "values": [
+          6366.0,
+          5720.0,
+          2267.0,
+          4996.0,
+          4102.0
+        ]
+      },
+      "incoming_cash_residual_change": {
+        "mean": 5808.4,
+        "min": 3597.0,
+        "max": 6956.0,
+        "values": [
+          6921.0,
+          6956.0,
+          3597.0,
+          6233.0,
+          5335.0
+        ]
+      },
+      "common_signature_5of5": [
+        "-",
+        "+",
+        "+"
+      ],
+      "cases": [
+        {
+          "seed": 7351,
+          "incoming_ready_residual_change": -8728.0,
+          "incoming_sell_cash_residual": 6366.0,
+          "incoming_cash_residual_change": 6921.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7352,
+          "incoming_ready_residual_change": -8394.0,
+          "incoming_sell_cash_residual": 5720.0,
+          "incoming_cash_residual_change": 6956.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7353,
+          "incoming_ready_residual_change": -5837.0,
+          "incoming_sell_cash_residual": 2267.0,
+          "incoming_cash_residual_change": 3597.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7354,
+          "incoming_ready_residual_change": -6479.0,
+          "incoming_sell_cash_residual": 4996.0,
+          "incoming_cash_residual_change": 6233.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7355,
+          "incoming_ready_residual_change": -7727.0,
+          "incoming_sell_cash_residual": 4102.0,
+          "incoming_cash_residual_change": 5335.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        }
+      ]
+    },
+    "17": {
+      "class": "success_anchor",
+      "incoming_interval": "16->17",
+      "incoming_ready_residual_change": {
+        "mean": 6843.2,
+        "min": 4939.0,
+        "max": 9303.0,
+        "values": [
+          6664.0,
+          7424.0,
+          5886.0,
+          9303.0,
+          4939.0
+        ]
+      },
+      "incoming_sell_cash_residual": {
+        "mean": 530.0,
+        "min": -242.0,
+        "max": 1213.0,
+        "values": [
+          66.0,
+          1213.0,
+          -242.0,
+          960.0,
+          653.0
+        ]
+      },
+      "incoming_cash_residual_change": {
+        "mean": -12.4,
+        "min": -1139.0,
+        "max": 379.0,
+        "values": [
+          369.0,
+          379.0,
+          -1139.0,
+          339.0,
+          -10.0
+        ]
+      },
+      "common_signature_5of5": null,
+      "cases": [
+        {
+          "seed": 7351,
+          "incoming_ready_residual_change": 6664.0,
+          "incoming_sell_cash_residual": 66.0,
+          "incoming_cash_residual_change": 369.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7352,
+          "incoming_ready_residual_change": 7424.0,
+          "incoming_sell_cash_residual": 1213.0,
+          "incoming_cash_residual_change": 379.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7353,
+          "incoming_ready_residual_change": 5886.0,
+          "incoming_sell_cash_residual": -242.0,
+          "incoming_cash_residual_change": -1139.0,
+          "incoming_signature": [
+            "+",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "seed": 7354,
+          "incoming_ready_residual_change": 9303.0,
+          "incoming_sell_cash_residual": 960.0,
+          "incoming_cash_residual_change": 339.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7355,
+          "incoming_ready_residual_change": 4939.0,
+          "incoming_sell_cash_residual": 653.0,
+          "incoming_cash_residual_change": -10.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "-"
+          ]
+        }
+      ]
+    },
+    "18": {
+      "class": "boundary_anchor",
+      "incoming_interval": "17->18",
+      "incoming_ready_residual_change": {
+        "mean": -4562.2,
+        "min": -8357.0,
+        "max": -1478.0,
+        "values": [
+          -3559.0,
+          -3925.0,
+          -5492.0,
+          -8357.0,
+          -1478.0
+        ]
+      },
+      "incoming_sell_cash_residual": {
+        "mean": 5810.6,
+        "min": 2674.0,
+        "max": 9070.0,
+        "values": [
+          5239.0,
+          5905.0,
+          6165.0,
+          9070.0,
+          2674.0
+        ]
+      },
+      "incoming_cash_residual_change": {
+        "mean": 5801.6,
+        "min": 2681.0,
+        "max": 8516.0,
+        "values": [
+          5502.0,
+          5863.0,
+          6446.0,
+          8516.0,
+          2681.0
+        ]
+      },
+      "common_signature_5of5": [
+        "-",
+        "+",
+        "+"
+      ],
+      "cases": [
+        {
+          "seed": 7351,
+          "incoming_ready_residual_change": -3559.0,
+          "incoming_sell_cash_residual": 5239.0,
+          "incoming_cash_residual_change": 5502.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7352,
+          "incoming_ready_residual_change": -3925.0,
+          "incoming_sell_cash_residual": 5905.0,
+          "incoming_cash_residual_change": 5863.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7353,
+          "incoming_ready_residual_change": -5492.0,
+          "incoming_sell_cash_residual": 6165.0,
+          "incoming_cash_residual_change": 6446.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7354,
+          "incoming_ready_residual_change": -8357.0,
+          "incoming_sell_cash_residual": 9070.0,
+          "incoming_cash_residual_change": 8516.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7355,
+          "incoming_ready_residual_change": -1478.0,
+          "incoming_sell_cash_residual": 2674.0,
+          "incoming_cash_residual_change": 2681.0,
+          "incoming_signature": [
+            "-",
+            "+",
+            "+"
+          ]
+        }
+      ]
+    },
+    "19": {
+      "class": "success_anchor",
+      "incoming_interval": "18->19",
+      "incoming_ready_residual_change": {
+        "mean": 3042.2,
+        "min": 400.0,
+        "max": 6818.0,
+        "values": [
+          400.0,
+          402.0,
+          6754.0,
+          6818.0,
+          837.0
+        ]
+      },
+      "incoming_sell_cash_residual": {
+        "mean": 459.8,
+        "min": -3810.0,
+        "max": 2469.0,
+        "values": [
+          2469.0,
+          1918.0,
+          -3810.0,
+          273.0,
+          1449.0
+        ]
+      },
+      "incoming_cash_residual_change": {
+        "mean": 1909.2,
+        "min": -2016.0,
+        "max": 4165.0,
+        "values": [
+          4165.0,
+          3440.0,
+          -2016.0,
+          922.0,
+          3035.0
+        ]
+      },
+      "common_signature_5of5": null,
+      "cases": [
+        {
+          "seed": 7351,
+          "incoming_ready_residual_change": 400.0,
+          "incoming_sell_cash_residual": 2469.0,
+          "incoming_cash_residual_change": 4165.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7352,
+          "incoming_ready_residual_change": 402.0,
+          "incoming_sell_cash_residual": 1918.0,
+          "incoming_cash_residual_change": 3440.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7353,
+          "incoming_ready_residual_change": 6754.0,
+          "incoming_sell_cash_residual": -3810.0,
+          "incoming_cash_residual_change": -2016.0,
+          "incoming_signature": [
+            "+",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "seed": 7354,
+          "incoming_ready_residual_change": 6818.0,
+          "incoming_sell_cash_residual": 273.0,
+          "incoming_cash_residual_change": 922.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        },
+        {
+          "seed": 7355,
+          "incoming_ready_residual_change": 837.0,
+          "incoming_sell_cash_residual": 1449.0,
+          "incoming_cash_residual_change": 3035.0,
+          "incoming_signature": [
+            "+",
+            "+",
+            "+"
+          ]
+        }
+      ]
+    }
+  },
+  "direct_boundary_test": {
+    "day15_success_common_signature": [
+      "-",
+      "+",
+      "+"
+    ],
+    "day18_boundary_common_signature": [
+      "-",
+      "+",
+      "+"
+    ],
+    "same_signature": true,
+    "day15_ranges": {
+      "ready_change": [
+        -8728.0,
+        -5837.0
+      ],
+      "sell": [
+        2267.0,
+        6366.0
+      ],
+      "cash": [
+        3597.0,
+        6956.0
+      ]
+    },
+    "day18_ranges": {
+      "ready_change": [
+        -8357.0,
+        -1478.0
+      ],
+      "sell": [
+        2674.0,
+        9070.0
+      ],
+      "cash": [
+        2681.0,
+        8516.0
+      ]
+    },
+    "one_step_incoming_direction_separates_boundary": false
+  },
+  "boundary": [
+    "The audit uses only the immediately preceding one-day transition.",
+    "Incoming Ready Output direction is the change in opponent-minus-self Ready Output residual between consecutive day-h0 anchors.",
+    "SELL and Cash fields are realized/public outcomes of the same incoming interval.",
+    "Day15 success and Day18 boundary share the same -/+/+ incoming signature 5/5.",
+    "The numeric ranges also overlap, so no one-step direction or simple magnitude separator is asserted.",
+    "No longer-history explanation, causal mechanism, Action diagnosis, Candidate, or policy rule is introduced."
+  ]
+}
