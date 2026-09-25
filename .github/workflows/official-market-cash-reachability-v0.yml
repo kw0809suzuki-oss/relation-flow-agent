@@ -1,0 +1,85 @@
+name: Official Market Cash Reachability v0
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - experiment/official-market-cash-v0
+    paths:
+      - .github/workflows/official-market-cash-reachability-v0.yml
+      - OFFICIAL_MARKET_CASH_REACHABILITY_RUN
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Prepare baseline and opponent
+        run: |
+          git worktree add /tmp/baseline origin/main
+          bash scripts/fetch_opponent.sh
+          mkdir -p /tmp/baseline/opponents
+          cp opponents/seyamalam_v21.py /tmp/baseline/opponents/
+      - name: Capture action traces
+        run: |
+          cat > /tmp/capture.py <<'PY'
+          import importlib, json, sys
+          from pathlib import Path
+          root=Path(sys.argv[1]).resolve(); label=sys.argv[2]
+          sys.path.insert(0,str(root)); sys.path.insert(0,str(root/'opponents'))
+          from kaggle_environments import make
+          current=importlib.import_module('whole_flow_control_agent')
+          opponent=importlib.import_module('seyamalam_v21')
+          seeds=range(7001,7011); allrows={}
+          for seed in seeds:
+              if hasattr(current,'reset_telemetry'): current.reset_telemetry()
+              for name in ('reset_telemetry','reset_trace','reset'):
+                  fn=getattr(opponent,name,None)
+                  if callable(fn):
+                      try: fn()
+                      except TypeError: pass
+              rows=[]
+              def wrapped(obs):
+                  a=current.agent(obs)
+                  rows.append({'turn':len(rows),'day':obs.get('day'),'hour':obs.get('hour'),'action':a})
+                  return a
+              env=make('kaggriculture',configuration={'seed':seed},debug=False)
+              env.run([wrapped,opponent.agent])
+              allrows[str(seed)]=rows
+          Path(f'/tmp/{label}_actions.json').write_text(json.dumps(allrows))
+          PY
+          python /tmp/capture.py /tmp/baseline baseline
+          python /tmp/capture.py "$GITHUB_WORKSPACE" candidate
+      - name: Compare actions
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          b=json.loads(Path('/tmp/baseline_actions.json').read_text())
+          c=json.loads(Path('/tmp/candidate_actions.json').read_text())
+          rows=[]; total=0
+          for seed in sorted(b,key=int):
+              diffs=[]
+              for br,cr in zip(b[seed],c[seed]):
+                  if br['action']!=cr['action']:
+                      diffs.append({'turn':br['turn'],'day':br['day'],'hour':br['hour'],'baseline':br['action'],'candidate':cr['action']})
+              rows.append({'seed':int(seed),'action_diff_count':len(diffs),'first_diffs':diffs[:5]})
+              total+=len(diffs)
+          out={'schema':'official-market-cash-reachability-v0','total_action_diffs':total,'seeds':rows}
+          Path('official_market_cash_reachability_v0.json').write_text(json.dumps(out,indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-market-cash-reachability-v0
+          path: official_market_cash_reachability_v0.json
