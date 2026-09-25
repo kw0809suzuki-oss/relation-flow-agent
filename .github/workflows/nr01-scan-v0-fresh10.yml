@@ -1,0 +1,78 @@
+name: NR-01 SCAN v0 Fresh10
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [experiment/nr01-scan-v0-20260926]
+    paths:
+      - .github/workflows/nr01-scan-v0-fresh10.yml
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 8301, seat: 0}
+          - {seed: 8302, seat: 1}
+          - {seed: 8303, seat: 0}
+          - {seed: 8304, seat: 1}
+          - {seed: 8305, seat: 0}
+          - {seed: 8306, seat: 1}
+          - {seed: 8307, seat: 0}
+          - {seed: 8308, seat: 1}
+          - {seed: 8309, seat: 0}
+          - {seed: 8310, seat: 1}
+
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_nr01_scan_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nr01-scan-raw-${{ matrix.seed }}
+          path: nr01_scan_raw_${{ matrix.seed }}.json
+
+  aggregate:
+    needs: scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: nr01-scan-raw-*
+          path: inputs
+          merge-multiple: true
+      - run: python analyze_nr01_scan_v0.py inputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nr01-scan-evidence-packet-v0
+          path: |
+            nr01_scan_fresh10.json
+            nr01_evidence_packet.md
+      - name: Record Evidence Packet on branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nr01_scan_fresh10.json nr01_evidence_packet.md
+          if git diff --cached --quiet; then
+            echo "No packet changes to commit"
+          else
+            git commit -m "Record NR-01 SCAN fresh10 v0"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
