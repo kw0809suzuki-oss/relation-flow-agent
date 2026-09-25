@@ -30,7 +30,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: '3.11'}
+        with:
+          python-version: '3.11'
       - run: pip install -r requirements.txt
       - run: bash scripts/fetch_opponent.sh
       - run: python run_wr01_world_transformation_audit_v0.py
@@ -42,10 +43,13 @@ jobs:
     needs: observe
     if: ${{ needs.observe.result == 'success' }}
     runs-on: ubuntu-latest
-    permissions: {contents: write}
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-        with: {ref: ${{ github.ref_name }}, fetch-depth: 0}
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
           pattern: wr01-transform-*
