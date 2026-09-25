@@ -78,8 +78,24 @@ def play(module):
         day=int(obs.get("day",0) or 0)
         hour=int(obs.get("hour",0) or 0)
         if day>=START_DAY:
-            for crop in plant_commands(action):
-                command_events.append({"day":day,"hour":hour,"crop":crop})
+            me=obs["farms"][int(obs["player"])]
+            positions=[me["farmer"]] + list(me.get("hands",[]) or [])
+            acts=[action.get("farmer",["PASS"])] + list(action.get("hands",[]) or [])
+            seen={}
+            for idx,a in enumerate(acts):
+                if not (isinstance(a,(list,tuple)) and len(a)>=2 and a[0]=="PLANT" and a[1] in CROPS):
+                    continue
+                pos=positions[idx] if idx < len(positions) else None
+                pkey=tuple(pos) if pos is not None else None
+                duplicate=pkey in seen if pkey is not None else False
+                if pkey is not None:
+                    seen[pkey]=seen.get(pkey,0)+1
+                command_events.append({
+                    "day":day,"hour":hour,"crop":a[1],
+                    "unit_index":idx,
+                    "position":list(pos) if pos is not None else None,
+                    "same_tile_duplicate":duplicate,
+                })
         return action
 
     def measured_market(state,env):
@@ -167,6 +183,10 @@ def play(module):
         "executed_buy_seed_units":{c:int(buy[c]) for c in CROPS},
         "plant_command_units":{c:int(cmd[c]) for c in CROPS},
         "successful_plant_units":{c:int(suc[c]) for c in CROPS},
+        "duplicate_plant_commands":sum(1 for e in command_events if e.get("same_tile_duplicate")),
+        "duplicate_plant_commands_by_crop":{
+            c:sum(1 for e in command_events if e.get("same_tile_duplicate") and e.get("crop")==c) for c in CROPS
+        },
         "seed_inventory_day14":start,
         "seed_inventory_day24":end,
         "seed_inventory_change":{c:int(end.get(c,0)-start.get(c,0)) for c in CROPS},
@@ -195,6 +215,10 @@ def main():
             },
             "successful_plant_units":{
                 c:w["successful_plant_units"][c]-b["successful_plant_units"][c] for c in CROPS
+            },
+            "duplicate_plant_commands":w["duplicate_plant_commands"]-b["duplicate_plant_commands"],
+            "duplicate_plant_commands_by_crop":{
+                c:w["duplicate_plant_commands_by_crop"][c]-b["duplicate_plant_commands_by_crop"][c] for c in CROPS
             },
             "seed_inventory_day24":{
                 c:w["seed_inventory_day24"][c]-b["seed_inventory_day24"][c] for c in CROPS
