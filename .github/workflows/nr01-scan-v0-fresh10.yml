@@ -3,6 +3,10 @@ name: NR-01 SCAN v0 Fresh10
 permissions:
   contents: write
 
+concurrency:
+  group: nr01-scan-v0-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [experiment/nr01-scan-v0-20260926]
@@ -77,4 +81,4 @@ jobs:
             git push origin HEAD:${GITHUB_REF_NAME}
           fi
 
-# trigger: nr01-scan-v0
+# trigger: nr01-scan-v0-resource-origin
