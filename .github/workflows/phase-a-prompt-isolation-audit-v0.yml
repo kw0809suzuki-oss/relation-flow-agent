@@ -1,0 +1,28 @@
+name: Phase A Prompt Isolation Audit v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - phase_a_prompt_isolation_contract_v0.json
+      - verify_phase_a_prompt_isolation_v0.py
+      - .github/workflows/phase-a-prompt-isolation-audit-v0.yml
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - run: python verify_phase_a_prompt_isolation_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add phase_a_prompt_isolation_audit_v0_result.json
+          git commit -m "Record Phase A prompt isolation audit v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
