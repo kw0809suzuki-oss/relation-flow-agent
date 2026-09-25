@@ -69,16 +69,3 @@ jobs:
           path: |
             nr01_scan_fresh10.json
             nr01_evidence_packet.md
-      - name: Record Evidence Packet on branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nr01_scan_fresh10.json nr01_evidence_packet.md
-          if git diff --cached --quiet; then
-            echo "No packet changes to commit"
-          else
-            git commit -m "Record NR-01 SCAN fresh10 v0"
-            git push origin HEAD:${GITHUB_REF_NAME}
-          fi
-
-# trigger: nr01-scan-v0-resource-origin
