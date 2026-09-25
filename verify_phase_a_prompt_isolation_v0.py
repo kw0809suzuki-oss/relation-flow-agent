@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import hashlib,json,subprocess
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT=Path(".")
@@ -68,7 +69,9 @@ result_add=git_first_commit(RESULT) if RESULT.exists() else None
 if prediction_add and result_add:
     pred_sha,pred_time=prediction_add.split("|",1)
     result_sha,result_time=result_add.split("|",1)
-    if pred_time>result_time:
+    pred_dt=datetime.fromisoformat(pred_time.replace("Z","+00:00")).astimezone(timezone.utc)
+    result_dt=datetime.fromisoformat(result_time.replace("Z","+00:00")).astimezone(timezone.utc)
+    if pred_dt>result_dt:
         errors.append("outcome_result_precedes_prediction_commit")
 else:
     pred_sha=pred_time=result_sha=result_time=None
