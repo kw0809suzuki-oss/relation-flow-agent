@@ -1,6 +1,7 @@
 """G8: compose a real livestock revenue loop over G7."""
 
 import g7_agent as g7
+from kaggle_environments.envs.kaggriculture.kaggriculture import market_price as official_market_price
 
 ANIMAL_COST = {"COW": 400}
 FEED_CARRY = 3
@@ -44,6 +45,56 @@ def _cow_target(day):
     return 0
 
 
+def _self_only_sell_projection(obs, sells):
+    """Project only our SELL orders with the official per-unit price function.
+
+    Boundary: opponent actions and same-turn unit-action shed changes are unknown
+    at decision time, so this is not a prediction of the actual market result.
+    """
+    market = obs.get("market", {}) or {}
+    inventory = dict(market.get("inventory", {}) or {})
+    params = market.get("params")
+    available = dict(obs.get("private", {}).get("shed", {}) or {})
+    cash = 0
+    sold_units = 0
+
+    for order in sells:
+        if len(order) < 3:
+            continue
+        item = order[1]
+        remaining = max(0, min(int(order[2]), int(available.get(item, 0))))
+        for _ in range(remaining):
+            if item not in inventory:
+                break
+            inv = inventory[item]
+            price = official_market_price(item, inv, params)
+            cash += price
+            available[item] = max(0, available.get(item, 0) - 1)
+            sold_units += 1
+            if price > 1:
+                inventory[item] = inv + 1
+    return cash, inventory, sold_units
+
+
+def _self_only_wheat_buy_capacity(inventory, params, cash, requested, shed_room, reserve=350):
+    """Use the official BUY_PRODUCT quote rule for our own projected units only."""
+    inv = inventory.get("WHEAT")
+    if inv is None:
+        return 0, 0
+    count = 0
+    spent = 0
+    limit = max(0, min(int(requested), int(shed_room)))
+    for _ in range(limit):
+        price = official_market_price("WHEAT", inv - 1, params)
+        if cash - spent - price < reserve:
+            break
+        spent += price
+        inv -= 1
+        count += 1
+    inventory["WHEAT"] = inv
+    return count, spent
+
+
 def agent(obs):
     base_action = g7.agent(obs)
     player = obs["player"]
@@ -81,24 +132,33 @@ def agent(obs):
     sells = [o for o in base_action.get("market", []) if o and o[0] == "SELL"]
     others = [o for o in base_action.get("market", []) if o and o[0] != "SELL"]
     market = list(sells)
-    sale_cash = sum(prices.get(o[1], 0) * o[2] for o in sells if len(o) >= 3)
+    sale_cash, projected_inventory, projected_sold_units = _self_only_sell_projection(obs, sells)
     available_cash = me.get("money", 0) + sale_cash
+    projected_shed_count = max(0, sum(shed.values()) - projected_sold_units)
 
     target_cows = _cow_target(day)
     if target_cows and total_cows < target_cows and available_cash >= 1100 and len(market) < 10:
         market.append(["BUY_ANIMAL", "COW", 1])
         available_cash -= ANIMAL_COST["COW"]
+        projected_shed_count += 1
 
     feed_stock = shed.get("WHEAT", 0) + carried_wheat
     feed_target = max(0, total_cows * 2)
     if total_cows > 0 and feed_stock < feed_target and len(market) < 10:
-        buy = min(12, feed_target - feed_stock)
-        wheat_price = max(1, prices.get("WHEAT", 25))
-        affordable = int(max(0, available_cash - 350) // wheat_price)
-        buy = min(buy, affordable)
+        requested = min(12, feed_target - feed_stock)
+        market_state = obs.get("market", {}) or {}
+        shed_room = max(0, 100 - projected_shed_count)
+        buy, buy_cost = _self_only_wheat_buy_capacity(
+            projected_inventory,
+            market_state.get("params"),
+            available_cash,
+            requested,
+            shed_room,
+        )
         if buy > 0:
             market.append(["BUY_PRODUCT", "WHEAT", buy])
-            available_cash -= buy * wheat_price
+            available_cash -= buy_cost
+            projected_shed_count += buy
 
     for order in sorted(others, key=lambda o: 0 if o[0] == "HIRE" else (1 if o[0] == "BUY_LAND" else 2)):
         if len(market) >= 10:
