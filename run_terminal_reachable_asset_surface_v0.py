@@ -237,31 +237,44 @@ def classify_side(obs):
 
 def main():
     configure()
+    snap_holder={}
+    original_market=kg._process_market
+
+    def capture_pre_market(state,env):
+        obs0=plain(getv(state[0],"observation"))
+        if isinstance(obs0,dict):
+            day=int(obs0.get("day",0) or 0)
+            hour=int(obs0.get("hour",0) or 0)
+            if day==ANCHOR_DAY and hour==0 and "snap" not in snap_holder:
+                sides=[]
+                for p in (0,1):
+                    op=plain(getv(state[p],"observation"))
+                    sides.append(classify_side(op))
+                snap_holder["snap"]={
+                    "self":sides[SEAT],
+                    "opponent":sides[1-SEAT],
+                }
+        return original_market(state,env)
+
     env=make("kaggriculture",configuration={"seed":SEED},debug=False)
     players=[basecfg.OPPONENT,basecfg.OPPONENT]
     players[SEAT]=body_only.agent
-    env.run(players)
+    kg._process_market=capture_pre_market
+    try:
+        env.run(players)
+    finally:
+        kg._process_market=original_market
 
-    snap=None
-    for step in getattr(env,"steps",[]) or []:
-        if not isinstance(step,(list,tuple)) or len(step)<2:
-            continue
-        so=plain(getv(step[SEAT],"observation"))
-        oo=plain(getv(step[1-SEAT],"observation"))
-        if not isinstance(so,dict) or not isinstance(oo,dict):
-            continue
-        if int(so.get("day",0) or 0)==ANCHOR_DAY and int(so.get("hour",0) or 0)==0:
-            snap={"self":classify_side(so),"opponent":classify_side(oo)}
-            break
+    snap=snap_holder.get("snap")
     if snap is None:
-        raise SystemExit("Day20 h0 snapshot not found")
+        raise SystemExit("Day20 h0 pre-market snapshot not found")
 
     rewards=[float(x.reward) for x in env.state]
     payload={
         "schema":"kaggriculture.strong-origin-v2.terminal-reachable-asset-surface.v0",
         "seed":SEED,
         "seat":SEAT,
-        "anchor":{"day":ANCHOR_DAY,"hour":0,"terminal_day":TERMINAL_DAY},
+        "anchor":{"day":ANCHOR_DAY,"hour":0,"phase":"pre_market","terminal_day":TERMINAL_DAY},
         "terminal":{
             "self":rewards[SEAT],
             "opponent":rewards[1-SEAT],
@@ -274,7 +287,7 @@ def main():
             "interpreter_sha256":hashlib.sha256(inspect.getsource(kg.interpreter).encode("utf-8")).hexdigest(),
         },
         "boundary":[
-            "READY means current output units already at the public harvest/output boundary at Day20 h0.",
+            "Snapshot phase is Day20 h0 immediately before public market processing, matching Dynamic Economic Surface v0.",\n            "READY means current output units already at the public harvest/output boundary at that snapshot.",
             "REACHABLE means committed units not READY at Day20 h0 whose public output boundary can be reached by the season terminal under the same explicit survival/WATER/FEED/timely-harvest assumptions used by the existing Committed Production valuation.",
             "NOT_REACHABLE means committed units on that same valuation basis whose public harvest/output boundary lies after terminal.",
             "The decomposition stops at Asset -> Output boundary. It does not assert completion of HARVEST -> carried -> shed -> SELL -> Cash.",
