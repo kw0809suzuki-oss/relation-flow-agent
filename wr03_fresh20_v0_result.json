@@ -1,0 +1,329 @@
+{
+  "schema": "kaggriculture.wr03.fresh20.result.v0",
+  "battle_count": 20,
+  "arms": {
+    "body": {
+      "absolute_mean_self": 32933.6,
+      "absolute_median_self": 36218.0,
+      "absolute_mean_opponent": 140950.0,
+      "absolute_mean_margin": -108016.4,
+      "wins": 0,
+      "min_self": 14241.0,
+      "max_self": 54262.0
+    },
+    "wr02": {
+      "absolute_mean_self": 33127.45,
+      "absolute_median_self": 31473.5,
+      "absolute_mean_opponent": 135835.4,
+      "absolute_mean_margin": -102707.95,
+      "wins": 0,
+      "min_self": 16417.0,
+      "max_self": 54813.0
+    },
+    "wr03": {
+      "absolute_mean_self": 32207.95,
+      "absolute_median_self": 36113.0,
+      "absolute_mean_opponent": 139035.55,
+      "absolute_mean_margin": -106827.6,
+      "wins": 0,
+      "min_self": 13295.0,
+      "max_self": 54249.0
+    },
+    "bundle": {
+      "absolute_mean_self": 33382.85,
+      "absolute_median_self": 32215.5,
+      "absolute_mean_opponent": 135173.9,
+      "absolute_mean_margin": -101791.05,
+      "wins": 0,
+      "min_self": 16408.0,
+      "max_self": 54800.0
+    }
+  },
+  "paired": {
+    "wr02_vs_body": {
+      "mean_delta_self": 193.85,
+      "median_delta_self": 358.5,
+      "mean_delta_margin": 5308.45,
+      "improved_cases": 12,
+      "worsened_cases": 8,
+      "equal_cases": 0,
+      "min_delta_self": -10836.0,
+      "max_delta_self": 9100.0
+    },
+    "wr03_vs_body": {
+      "mean_delta_self": -725.65,
+      "median_delta_self": -6.5,
+      "mean_delta_margin": 1188.8,
+      "improved_cases": 4,
+      "worsened_cases": 10,
+      "equal_cases": 6,
+      "min_delta_self": -11862.0,
+      "max_delta_self": 4172.0
+    },
+    "bundle_vs_body": {
+      "mean_delta_self": 449.25,
+      "median_delta_self": 338.0,
+      "mean_delta_margin": 6225.35,
+      "improved_cases": 11,
+      "worsened_cases": 9,
+      "equal_cases": 0,
+      "min_delta_self": -9178.0,
+      "max_delta_self": 9100.0
+    },
+    "bundle_vs_wr02": {
+      "mean_delta_self": 255.4,
+      "median_delta_self": 0.0,
+      "mean_delta_margin": 916.9,
+      "improved_cases": 5,
+      "worsened_cases": 9,
+      "equal_cases": 6,
+      "min_delta_self": -2656.0,
+      "max_delta_self": 6503.0
+    },
+    "bundle_vs_wr03": {
+      "mean_delta_self": 1174.9,
+      "median_delta_self": 1463.5,
+      "mean_delta_margin": 5036.55,
+      "improved_cases": 13,
+      "worsened_cases": 7,
+      "equal_cases": 0,
+      "min_delta_self": -9120.0,
+      "max_delta_self": 10841.0
+    }
+  },
+  "wr03_connection": {
+    "standalone_return_signals": 91,
+    "standalone_active_turns": 1546,
+    "standalone_surface_closures": 71,
+    "bundle_return_signals": 91,
+    "bundle_active_turns": 1546,
+    "bundle_surface_closures": 71
+  },
+  "cases": [
+    {
+      "seed": 8301,
+      "seat": 0,
+      "self": {
+        "body": 17286.0,
+        "wr02": 19886.0,
+        "wr03": 17187.0,
+        "bundle": 19787.0
+      },
+      "bundle_vs_wr02": -99.0
+    },
+    {
+      "seed": 8302,
+      "seat": 1,
+      "self": {
+        "body": 37228.0,
+        "wr02": 46144.0,
+        "wr03": 41400.0,
+        "bundle": 44134.0
+      },
+      "bundle_vs_wr02": -2010.0
+    },
+    {
+      "seed": 8303,
+      "seat": 0,
+      "self": {
+        "body": 54262.0,
+        "wr02": 54813.0,
+        "wr03": 54249.0,
+        "bundle": 54800.0
+      },
+      "bundle_vs_wr02": -13.0
+    },
+    {
+      "seed": 8304,
+      "seat": 1,
+      "self": {
+        "body": 19593.0,
+        "wr02": 20178.0,
+        "wr03": 13295.0,
+        "bundle": 19043.0
+      },
+      "bundle_vs_wr02": -1135.0
+    },
+    {
+      "seed": 8305,
+      "seat": 0,
+      "self": {
+        "body": 37733.0,
+        "wr02": 33344.0,
+        "wr03": 36307.0,
+        "bundle": 39847.0
+      },
+      "bundle_vs_wr02": 6503.0
+    },
+    {
+      "seed": 8306,
+      "seat": 1,
+      "self": {
+        "body": 49130.0,
+        "wr02": 47775.0,
+        "wr03": 49117.0,
+        "bundle": 47762.0
+      },
+      "bundle_vs_wr02": -13.0
+    },
+    {
+      "seed": 8307,
+      "seat": 0,
+      "self": {
+        "body": 17127.0,
+        "wr02": 26227.0,
+        "wr03": 17127.0,
+        "bundle": 26227.0
+      },
+      "bundle_vs_wr02": 0.0
+    },
+    {
+      "seed": 8308,
+      "seat": 1,
+      "self": {
+        "body": 38990.0,
+        "wr02": 36350.0,
+        "wr03": 38990.0,
+        "bundle": 36350.0
+      },
+      "bundle_vs_wr02": 0.0
+    },
+    {
+      "seed": 8309,
+      "seat": 0,
+      "self": {
+        "body": 42549.0,
+        "wr02": 46450.0,
+        "wr03": 41989.0,
+        "bundle": 46666.0
+      },
+      "bundle_vs_wr02": 216.0
+    },
+    {
+      "seed": 8310,
+      "seat": 1,
+      "self": {
+        "body": 33825.0,
+        "wr02": 29600.0,
+        "wr03": 33812.0,
+        "bundle": 29587.0
+      },
+      "bundle_vs_wr02": -13.0
+    },
+    {
+      "seed": 8311,
+      "seat": 0,
+      "self": {
+        "body": 14241.0,
+        "wr02": 16417.0,
+        "wr03": 14936.0,
+        "bundle": 16408.0
+      },
+      "bundle_vs_wr02": -9.0
+    },
+    {
+      "seed": 8312,
+      "seat": 1,
+      "self": {
+        "body": 14901.0,
+        "wr02": 17457.0,
+        "wr03": 14721.0,
+        "bundle": 17905.0
+      },
+      "bundle_vs_wr02": 448.0
+    },
+    {
+      "seed": 8313,
+      "seat": 0,
+      "self": {
+        "body": 20866.0,
+        "wr02": 21032.0,
+        "wr03": 21982.0,
+        "bundle": 23437.0
+      },
+      "bundle_vs_wr02": 2405.0
+    },
+    {
+      "seed": 8314,
+      "seat": 1,
+      "self": {
+        "body": 40634.0,
+        "wr02": 37484.0,
+        "wr03": 40634.0,
+        "bundle": 37484.0
+      },
+      "bundle_vs_wr02": 0.0
+    },
+    {
+      "seed": 8315,
+      "seat": 0,
+      "self": {
+        "body": 22061.0,
+        "wr02": 22199.0,
+        "wr03": 22061.0,
+        "bundle": 22199.0
+      },
+      "bundle_vs_wr02": 0.0
+    },
+    {
+      "seed": 8316,
+      "seat": 1,
+      "self": {
+        "body": 35919.0,
+        "wr02": 41092.0,
+        "wr03": 35919.0,
+        "bundle": 41092.0
+      },
+      "bundle_vs_wr02": 0.0
+    },
+    {
+      "seed": 8317,
+      "seat": 0,
+      "self": {
+        "body": 31772.0,
+        "wr02": 30925.0,
+        "wr03": 19910.0,
+        "bundle": 30751.0
+      },
+      "bundle_vs_wr02": -174.0
+    },
+    {
+      "seed": 8318,
+      "seat": 1,
+      "self": {
+        "body": 36517.0,
+        "wr02": 29835.0,
+        "wr03": 36517.0,
+        "bundle": 29835.0
+      },
+      "bundle_vs_wr02": 0.0
+    },
+    {
+      "seed": 8319,
+      "seat": 0,
+      "self": {
+        "body": 42858.0,
+        "wr02": 32022.0,
+        "wr03": 42800.0,
+        "bundle": 33680.0
+      },
+      "bundle_vs_wr02": 1658.0
+    },
+    {
+      "seed": 8320,
+      "seat": 1,
+      "self": {
+        "body": 51180.0,
+        "wr02": 53319.0,
+        "wr03": 51206.0,
+        "bundle": 50663.0
+      },
+      "bundle_vs_wr02": -2656.0
+    }
+  ],
+  "boundary": [
+    "Primary adoption comparison is WR-02 versus WR-02+WR-03.",
+    "All arms are paired on identical fresh seed/seat cases.",
+    "Report absolute mean self for every arm and paired deltas; do not infer adoption from local telemetry alone."
+  ]
+}
