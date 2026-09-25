@@ -124,7 +124,10 @@ def main():
     configure();events.clear();gen_cash[0]=gen_cash[1]=0.0
     env=make("kaggriculture",configuration={"seed":SEED},debug=False)
     obs=env.state[0].observation
-    initial_on_hand=[{i:stock([obs,obs],p,i) for i in EXACT_RETURN_ITEMS} for p in (0,1)]
+    initial_on_hand=[]
+    for p in (0,1):
+        op=env.state[p].observation
+        initial_on_hand.append({i:stock(op,i) for i in EXACT_RETURN_ITEMS})
     original=kg._process_market;kg._process_market=measured_market
     try:
         players=[basecfg.OPPONENT,basecfg.OPPONENT];players[SEAT]=body.agent;env.run(players)
