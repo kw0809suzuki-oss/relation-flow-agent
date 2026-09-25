@@ -12,6 +12,30 @@ if not files:
 rows = [json.loads(p.read_text(encoding="utf-8")) for p in files]
 rows.sort(key=lambda r: int(r["seed"]))
 
+EXPECTED_BATTLES = 10
+EXPECTED_IDENTITY = "Baseline + WR-02"
+
+if len(rows) != EXPECTED_BATTLES:
+    raise SystemExit(f"NR-01 SCAN contract violation: expected {EXPECTED_BATTLES} raw battles, got {len(rows)}")
+
+seeds = [int(r["seed"]) for r in rows]
+if len(set(seeds)) != EXPECTED_BATTLES:
+    raise SystemExit(f"NR-01 SCAN contract violation: duplicate/missing seeds: {seeds}")
+
+bad_identity = [
+    int(r["seed"]) for r in rows
+    if r.get("current_identity") != EXPECTED_IDENTITY
+]
+if bad_identity:
+    raise SystemExit(f"NR-01 SCAN contract violation: unexpected Current identity in seeds {bad_identity}")
+
+mutated = [
+    int(r["seed"]) for r in rows
+    if r.get("scanner_policy_mutated") is not False
+]
+if mutated:
+    raise SystemExit(f"NR-01 SCAN contract violation: scanner policy mutation not false in seeds {mutated}")
+
 events = []
 for r in rows:
     for e in r.get("scan_events", []):
@@ -33,8 +57,16 @@ for e in events:
 packet = {
     "schema": "kaggriculture.nr01-scan.evidence-packet.v0",
     "candidate": candidate,
-    "current_identity": "Baseline + WR-02",
+    "current_identity": EXPECTED_IDENTITY,
     "battle_count": len(rows),
+    "scan_surface": "same-position multi-PLANT with alternate empty productive capacity",
+    "candidate_definition": [
+        "Current previously generated/acquired the requested seed resource.",
+        "Current generated multiple PLANT actions from the same position.",
+        "Seed stock at State_t was sufficient for those requests.",
+        "Another empty unlocked tile existed at State_t.",
+        "World execution produced TARGET_TILE_NOT_EMPTY for at least one request."
+    ],
     "support": {
         "cases_with_candidate": len(support_cases),
         "support_seeds": support_cases,
@@ -180,6 +212,7 @@ print(
             "qualifying_events_total": len(events),
             "representative": packet["representative"],
             "boundary": packet["boundary"],
+            "scan_surface": packet["scan_surface"],
         },
         ensure_ascii=False,
         separators=(",", ":"),
