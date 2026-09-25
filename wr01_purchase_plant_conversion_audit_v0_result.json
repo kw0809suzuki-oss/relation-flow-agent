@@ -169,8 +169,11 @@
   "connection_drop": {
     "purchase_to_plant_command_mean": -25.4,
     "plant_command_to_success_mean": 51.4,
+    "same_tile_duplicate_plant_delta_mean": 51.4,
+    "same_tile_duplicate_share_of_command_success_drop": 1.0,
     "cases_purchase_gt_command": 0,
-    "cases_command_gt_success": 5
+    "cases_command_gt_success": 5,
+    "cases_with_positive_duplicate_delta": 5
   },
   "cases": [
     {
@@ -191,6 +194,12 @@
         "successful_plant_units": {
           "WHEAT": 12,
           "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "duplicate_plant_commands": 41,
+        "duplicate_plant_commands_by_crop": {
+          "WHEAT": 42,
+          "STRAWBERRY": -1,
           "MELON": 0
         },
         "seed_inventory_day24": {
@@ -220,6 +229,12 @@
           "STRAWBERRY": -3,
           "MELON": 0
         },
+        "duplicate_plant_commands": 49,
+        "duplicate_plant_commands_by_crop": {
+          "WHEAT": 71,
+          "STRAWBERRY": -22,
+          "MELON": 0
+        },
         "seed_inventory_day24": {
           "WHEAT": 8,
           "STRAWBERRY": 6,
@@ -245,6 +260,12 @@
         "successful_plant_units": {
           "WHEAT": 30,
           "STRAWBERRY": -5,
+          "MELON": 0
+        },
+        "duplicate_plant_commands": 60,
+        "duplicate_plant_commands_by_crop": {
+          "WHEAT": 87,
+          "STRAWBERRY": -27,
           "MELON": 0
         },
         "seed_inventory_day24": {
@@ -274,6 +295,12 @@
           "STRAWBERRY": -4,
           "MELON": 0
         },
+        "duplicate_plant_commands": 52,
+        "duplicate_plant_commands_by_crop": {
+          "WHEAT": 78,
+          "STRAWBERRY": -26,
+          "MELON": 0
+        },
         "seed_inventory_day24": {
           "WHEAT": 7,
           "STRAWBERRY": 6,
@@ -299,6 +326,12 @@
         "successful_plant_units": {
           "WHEAT": 23,
           "STRAWBERRY": -3,
+          "MELON": 0
+        },
+        "duplicate_plant_commands": 55,
+        "duplicate_plant_commands_by_crop": {
+          "WHEAT": 77,
+          "STRAWBERRY": -22,
           "MELON": 0
         },
         "seed_inventory_day24": {
