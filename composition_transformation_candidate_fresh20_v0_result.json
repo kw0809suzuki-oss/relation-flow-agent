@@ -1,0 +1,249 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.composition-transformation-candidate.fresh20.validation.v0",
+  "battle_count": 20,
+  "seed_range": [
+    8101,
+    8120
+  ],
+  "baseline_absolute_mean_self": 24434.0,
+  "candidate_absolute_mean_self": 23191.95,
+  "delta_mean_self": -1242.05,
+  "delta_median_self": -961.5,
+  "delta_min_self": -17830.0,
+  "delta_max_self": 17340.0,
+  "baseline_absolute_mean_margin": -100031.65,
+  "candidate_absolute_mean_margin": -102389.7,
+  "delta_mean_margin": -2358.05,
+  "improved_cases": 6,
+  "worsened_cases": 14,
+  "equal_cases": 0,
+  "replacement_reached_cases": 20,
+  "cases": [
+    {
+      "seed": 8101,
+      "seat": 0,
+      "baseline_self": 13942.0,
+      "candidate_self": 13464.0,
+      "delta_self": -478.0,
+      "baseline_margin": -92738.0,
+      "candidate_margin": -86915.0,
+      "delta_margin": 5823.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8102,
+      "seat": 1,
+      "baseline_self": 28446.0,
+      "candidate_self": 10616.0,
+      "delta_self": -17830.0,
+      "baseline_margin": -98708.0,
+      "candidate_margin": -81645.0,
+      "delta_margin": 17063.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8103,
+      "seat": 0,
+      "baseline_self": 20382.0,
+      "candidate_self": 37722.0,
+      "delta_self": 17340.0,
+      "baseline_margin": -113819.0,
+      "candidate_margin": -129581.0,
+      "delta_margin": -15762.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8104,
+      "seat": 1,
+      "baseline_self": 10954.0,
+      "candidate_self": 23893.0,
+      "delta_self": 12939.0,
+      "baseline_margin": -100911.0,
+      "candidate_margin": -90091.0,
+      "delta_margin": 10820.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8105,
+      "seat": 0,
+      "baseline_self": 11264.0,
+      "candidate_self": 15077.0,
+      "delta_self": 3813.0,
+      "baseline_margin": -113715.0,
+      "candidate_margin": -94557.0,
+      "delta_margin": 19158.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8106,
+      "seat": 1,
+      "baseline_self": 14994.0,
+      "candidate_self": 15755.0,
+      "delta_self": 761.0,
+      "baseline_margin": -90766.0,
+      "candidate_margin": -106228.0,
+      "delta_margin": -15462.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8107,
+      "seat": 0,
+      "baseline_self": 44475.0,
+      "candidate_self": 40955.0,
+      "delta_self": -3520.0,
+      "baseline_margin": -111415.0,
+      "candidate_margin": -114368.0,
+      "delta_margin": -2953.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8108,
+      "seat": 1,
+      "baseline_self": 16870.0,
+      "candidate_self": 10813.0,
+      "delta_self": -6057.0,
+      "baseline_margin": -72015.0,
+      "candidate_margin": -80221.0,
+      "delta_margin": -8206.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8109,
+      "seat": 0,
+      "baseline_self": 18091.0,
+      "candidate_self": 17748.0,
+      "delta_self": -343.0,
+      "baseline_margin": -100885.0,
+      "candidate_margin": -102081.0,
+      "delta_margin": -1196.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8110,
+      "seat": 1,
+      "baseline_self": 50476.0,
+      "candidate_self": 33392.0,
+      "delta_self": -17084.0,
+      "baseline_margin": -99394.0,
+      "candidate_margin": -87289.0,
+      "delta_margin": 12105.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8111,
+      "seat": 0,
+      "baseline_self": 21052.0,
+      "candidate_self": 19365.0,
+      "delta_self": -1687.0,
+      "baseline_margin": -81652.0,
+      "candidate_margin": -110225.0,
+      "delta_margin": -28573.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8112,
+      "seat": 1,
+      "baseline_self": 21395.0,
+      "candidate_self": 13558.0,
+      "delta_self": -7837.0,
+      "baseline_margin": -96853.0,
+      "candidate_margin": -93526.0,
+      "delta_margin": 3327.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8113,
+      "seat": 0,
+      "baseline_self": 43183.0,
+      "candidate_self": 40805.0,
+      "delta_self": -2378.0,
+      "baseline_margin": -100022.0,
+      "candidate_margin": -127114.0,
+      "delta_margin": -27092.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8114,
+      "seat": 1,
+      "baseline_self": 43041.0,
+      "candidate_self": 41596.0,
+      "delta_self": -1445.0,
+      "baseline_margin": -133169.0,
+      "candidate_margin": -135113.0,
+      "delta_margin": -1944.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8115,
+      "seat": 0,
+      "baseline_self": 8766.0,
+      "candidate_self": 10785.0,
+      "delta_self": 2019.0,
+      "baseline_margin": -81888.0,
+      "candidate_margin": -65128.0,
+      "delta_margin": 16760.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8116,
+      "seat": 1,
+      "baseline_self": 14301.0,
+      "candidate_self": 29227.0,
+      "delta_self": 14926.0,
+      "baseline_margin": -111478.0,
+      "candidate_margin": -92677.0,
+      "delta_margin": 18801.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8117,
+      "seat": 0,
+      "baseline_self": 16208.0,
+      "candidate_self": 15795.0,
+      "delta_self": -413.0,
+      "baseline_margin": -101796.0,
+      "candidate_margin": -109280.0,
+      "delta_margin": -7484.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8118,
+      "seat": 1,
+      "baseline_self": 44481.0,
+      "candidate_self": 35702.0,
+      "delta_self": -8779.0,
+      "baseline_margin": -98574.0,
+      "candidate_margin": -119142.0,
+      "delta_margin": -20568.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8119,
+      "seat": 0,
+      "baseline_self": 32319.0,
+      "candidate_self": 23980.0,
+      "delta_self": -8339.0,
+      "baseline_margin": -109585.0,
+      "candidate_margin": -107963.0,
+      "delta_margin": 1622.0,
+      "replacement_reached": true
+    },
+    {
+      "seed": 8120,
+      "seat": 1,
+      "baseline_self": 14040.0,
+      "candidate_self": 13591.0,
+      "delta_self": -449.0,
+      "baseline_margin": -91250.0,
+      "candidate_margin": -114650.0,
+      "delta_margin": -23400.0,
+      "replacement_reached": true
+    }
+  ],
+  "boundary": [
+    "This is independent fresh20 terminal Battle validation.",
+    "Candidate implementation is unchanged from the fixed-five Battle.",
+    "No new interpretation, threshold, rescue rule, or local optimization is introduced.",
+    "Primary adoption evidence is baseline absolute mean self, candidate absolute mean self, delta, and the per-case distribution."
+  ]
+}
