@@ -1,0 +1,185 @@
+{
+  "schema": "kaggriculture.wr02-p12-day0-reservation.fresh20.result.v0",
+  "battle_count": 20,
+  "current_absolute_mean_self": 31615.7,
+  "candidate_absolute_mean_self": 26765.5,
+  "delta_mean_self": -4850.2,
+  "delta_median_self": -5666.0,
+  "self_improved": 6,
+  "self_worsened": 14,
+  "self_equal": 0,
+  "min_delta_self": -23351.0,
+  "max_delta_self": 13699.0,
+  "current_absolute_mean_margin": -102068.3,
+  "candidate_absolute_mean_margin": -100372.9,
+  "delta_mean_margin": 1695.4,
+  "delta_median_margin": -1479.0,
+  "cases": [
+    {
+      "seed": 8601,
+      "seat": 0,
+      "current_self": 19960.0,
+      "candidate_self": 17832.0,
+      "delta_self": -2128.0,
+      "delta_margin": 24585.0
+    },
+    {
+      "seed": 8602,
+      "seat": 1,
+      "current_self": 11048.0,
+      "candidate_self": 24747.0,
+      "delta_self": 13699.0,
+      "delta_margin": -45802.0
+    },
+    {
+      "seed": 8603,
+      "seat": 0,
+      "current_self": 37106.0,
+      "candidate_self": 13755.0,
+      "delta_self": -23351.0,
+      "delta_margin": 673.0
+    },
+    {
+      "seed": 8604,
+      "seat": 1,
+      "current_self": 40525.0,
+      "candidate_self": 39429.0,
+      "delta_self": -1096.0,
+      "delta_margin": 31862.0
+    },
+    {
+      "seed": 8605,
+      "seat": 0,
+      "current_self": 15166.0,
+      "candidate_self": 27099.0,
+      "delta_self": 11933.0,
+      "delta_margin": -14775.0
+    },
+    {
+      "seed": 8606,
+      "seat": 1,
+      "current_self": 33941.0,
+      "candidate_self": 15337.0,
+      "delta_self": -18604.0,
+      "delta_margin": 330.0
+    },
+    {
+      "seed": 8607,
+      "seat": 0,
+      "current_self": 28662.0,
+      "candidate_self": 22796.0,
+      "delta_self": -5866.0,
+      "delta_margin": 41233.0
+    },
+    {
+      "seed": 8608,
+      "seat": 1,
+      "current_self": 14366.0,
+      "candidate_self": 20519.0,
+      "delta_self": 6153.0,
+      "delta_margin": -25817.0
+    },
+    {
+      "seed": 8609,
+      "seat": 0,
+      "current_self": 44687.0,
+      "candidate_self": 48567.0,
+      "delta_self": 3880.0,
+      "delta_margin": 16592.0
+    },
+    {
+      "seed": 8610,
+      "seat": 1,
+      "current_self": 20136.0,
+      "candidate_self": 14670.0,
+      "delta_self": -5466.0,
+      "delta_margin": -7068.0
+    },
+    {
+      "seed": 8611,
+      "seat": 0,
+      "current_self": 40192.0,
+      "candidate_self": 32569.0,
+      "delta_self": -7623.0,
+      "delta_margin": -12484.0
+    },
+    {
+      "seed": 8612,
+      "seat": 1,
+      "current_self": 45985.0,
+      "candidate_self": 29766.0,
+      "delta_self": -16219.0,
+      "delta_margin": -10996.0
+    },
+    {
+      "seed": 8613,
+      "seat": 0,
+      "current_self": 30333.0,
+      "candidate_self": 22654.0,
+      "delta_self": -7679.0,
+      "delta_margin": 8816.0
+    },
+    {
+      "seed": 8614,
+      "seat": 1,
+      "current_self": 47175.0,
+      "candidate_self": 39428.0,
+      "delta_self": -7747.0,
+      "delta_margin": -4293.0
+    },
+    {
+      "seed": 8615,
+      "seat": 0,
+      "current_self": 30886.0,
+      "candidate_self": 29142.0,
+      "delta_self": -1744.0,
+      "delta_margin": -1032.0
+    },
+    {
+      "seed": 8616,
+      "seat": 1,
+      "current_self": 27808.0,
+      "candidate_self": 19016.0,
+      "delta_self": -8792.0,
+      "delta_margin": -16417.0
+    },
+    {
+      "seed": 8617,
+      "seat": 0,
+      "current_self": 45791.0,
+      "candidate_self": 25930.0,
+      "delta_self": -19861.0,
+      "delta_margin": 25298.0
+    },
+    {
+      "seed": 8618,
+      "seat": 1,
+      "current_self": 32481.0,
+      "candidate_self": 43670.0,
+      "delta_self": 11189.0,
+      "delta_margin": -1926.0
+    },
+    {
+      "seed": 8619,
+      "seat": 0,
+      "current_self": 24105.0,
+      "candidate_self": 29121.0,
+      "delta_self": 5016.0,
+      "delta_margin": -6310.0
+    },
+    {
+      "seed": 8620,
+      "seat": 1,
+      "current_self": 41961.0,
+      "candidate_self": 19263.0,
+      "delta_self": -22698.0,
+      "delta_margin": 31439.0
+    }
+  ],
+  "boundary": [
+    "Fresh independent seeds 8601-8620 with alternating seats.",
+    "Only P12 Day0 target reservation is added to current WR-02.",
+    "No rescue condition is added after seeing this result.",
+    "Terminal self is the adoption authority."
+  ]
+}
