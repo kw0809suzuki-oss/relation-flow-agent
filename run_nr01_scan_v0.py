@@ -231,8 +231,58 @@ def previous_turns(rows, row_index, unit_indices, n=3):
     return out
 
 
+def seed_acquisitions(rows):
+    """Infer realized Current BUY_SEED inflow from State_t -> State_t+1.
+
+    Unit actions execute before market orders. Therefore:
+      seed_after_units = seed_before - successful_PLANTs
+      realized_market_inflow = seed_next - seed_after_units
+
+    We only call it a Current acquisition when the same turn also contains a
+    Current BUY_SEED order for that crop.
+    """
+    out = []
+    for row_index, row in enumerate(rows):
+        nxt = row.get("state_t1")
+        if nxt is None:
+            continue
+
+        successful_plants = Counter()
+        for e in row.get("execution_result_t", []):
+            a = e.get("projected_action")
+            if e.get("success") and is_plant(a):
+                successful_plants[str(a[1])] += 1
+
+        issued = Counter()
+        full = row.get("action_t", {}).get("full", {}) or {}
+        for order in full.get("market", []) or []:
+            if isinstance(order, (list, tuple)) and len(order) >= 2 and order[0] == "BUY_SEED":
+                qty = int(order[2]) if len(order) >= 3 else 1
+                issued[str(order[1])] += qty
+
+        before = row["state_t"].get("seeds", {}) or {}
+        after = nxt.get("seeds", {}) or {}
+        crops = set(before) | set(after) | set(issued)
+        for crop in sorted(crops):
+            seed_after_units = int(before.get(crop, 0) or 0) - int(successful_plants.get(crop, 0) or 0)
+            inferred_inflow = int(after.get(crop, 0) or 0) - seed_after_units
+            if issued.get(crop, 0) > 0 and inferred_inflow > 0:
+                out.append({
+                    "row_index": row_index,
+                    "day": row["day"],
+                    "hour": row["hour"],
+                    "crop": crop,
+                    "issued_qty": int(issued[crop]),
+                    "inferred_realized_qty": int(inferred_inflow),
+                    "seed_before": int(before.get(crop, 0) or 0),
+                    "seed_next": int(after.get(crop, 0) or 0),
+                })
+    return out
+
+
 def build_scan_events(rows):
     events = []
+    acquisitions = seed_acquisitions(rows)
     for row_index, row in enumerate(rows):
         positions = row["state_t"]["unit_positions"]
         actions = row["action_t"]["unit_actions"]
@@ -265,9 +315,21 @@ def build_scan_events(rows):
             target_was_empty = pos in empties
             alternate_empties = [list(x) for x in empties if x != pos]
 
+            prior_acquisition = {}
+            for crop in request_counts:
+                xs = [
+                    e for e in acquisitions
+                    if e["row_index"] < row_index and e["crop"] == crop
+                ]
+                prior_acquisition[crop] = xs[-1] if xs else None
+            resource_origin_confirmed = all(
+                prior_acquisition.get(crop) is not None for crop in request_counts
+            )
+
             qualifies = (
                 target_was_empty
                 and seed_sufficient
+                and resource_origin_confirmed
                 and len(alternate_empties) > 0
                 and target_not_empty > 0
             )
@@ -301,6 +363,8 @@ def build_scan_events(rows):
                         "alternate_empty_tiles": len(alternate_empties),
                         "available_seed": seed_stock,
                         "seed_sufficient_for_requests": bool(seed_sufficient),
+                        "prior_current_seed_acquisition": prior_acquisition,
+                        "resource_origin_confirmed": bool(resource_origin_confirmed),
                         "target_was_empty": bool(target_was_empty),
                     },
                     "world": {
@@ -314,9 +378,10 @@ def build_scan_events(rows):
                     "delta_state": delta_state,
                     "guard": {
                         "resource_state_present": bool(seed_sufficient),
+                        "resource_generated_or_acquired_by_current": bool(resource_origin_confirmed),
                         "current_productive_action_generated": True,
                         "world_failure_observed": target_not_empty > 0,
-                        "alternate_productive_capacity_present": len(alternate_empties) > 0,
+                        "alternate_empty_capacity_observed": len(alternate_empties) > 0,
                     },
                 }
             )
