@@ -1,0 +1,3055 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.composition-transformation-audit.result.v0",
+  "battle_count": 5,
+  "terminal_reference": {
+    "baseline_absolute_mean_self": 24042.8,
+    "position_candidate_absolute_mean_self": 18346.0,
+    "position_candidate_delta_mean_self": -5696.8
+  },
+  "aggregate_new_asset_return_profile": {
+    "baseline_self": {
+      "MELON": {
+        "quantity_absolute_mean": 0.0,
+        "present_cases": 0,
+        "first_return_day_values": [],
+        "turns_from_h13_values": [],
+        "quantity_by_seed": {
+          "7351": 0,
+          "7352": 0,
+          "7353": 0,
+          "7354": 0,
+          "7355": 0
+        }
+      },
+      "WHEAT": {
+        "quantity_absolute_mean": 0.0,
+        "present_cases": 0,
+        "first_return_day_values": [],
+        "turns_from_h13_values": [],
+        "quantity_by_seed": {
+          "7351": 0,
+          "7352": 0,
+          "7353": 0,
+          "7354": 0,
+          "7355": 0
+        }
+      }
+    },
+    "baseline_seyamalam": {
+      "MELON": {
+        "quantity_absolute_mean": 2.0,
+        "present_cases": 5,
+        "first_return_day_values": [
+          10
+        ],
+        "turns_from_h13_values": [
+          227
+        ],
+        "quantity_by_seed": {
+          "7351": 2,
+          "7352": 2,
+          "7353": 2,
+          "7354": 2,
+          "7355": 2
+        }
+      },
+      "WHEAT": {
+        "quantity_absolute_mean": 1.0,
+        "present_cases": 5,
+        "first_return_day_values": [
+          2
+        ],
+        "turns_from_h13_values": [
+          35
+        ],
+        "quantity_by_seed": {
+          "7351": 1,
+          "7352": 1,
+          "7353": 1,
+          "7354": 1,
+          "7355": 1
+        }
+      }
+    },
+    "position_candidate_self": {
+      "MELON": {
+        "quantity_absolute_mean": 0.0,
+        "present_cases": 0,
+        "first_return_day_values": [],
+        "turns_from_h13_values": [],
+        "quantity_by_seed": {
+          "7351": 0,
+          "7352": 0,
+          "7353": 0,
+          "7354": 0,
+          "7355": 0
+        }
+      },
+      "WHEAT": {
+        "quantity_absolute_mean": 2.0,
+        "present_cases": 5,
+        "first_return_day_values": [
+          2
+        ],
+        "turns_from_h13_values": [
+          35
+        ],
+        "quantity_by_seed": {
+          "7351": 2,
+          "7352": 2,
+          "7353": 2,
+          "7354": 2,
+          "7355": 2
+        }
+      }
+    }
+  },
+  "quantity_delta_profiles": {
+    "seyamalam_minus_baseline_self": {
+      "MELON": 2.0,
+      "WHEAT": 1.0
+    },
+    "position_candidate_minus_baseline_self": {
+      "MELON": 0.0,
+      "WHEAT": 2.0
+    },
+    "seyamalam_minus_position_candidate": {
+      "MELON": 2.0,
+      "WHEAT": -1.0
+    }
+  },
+  "cumulative_first_return_profiles": {
+    "baseline_self": {
+      "2": {
+        "cumulative_new_asset_count_absolute_mean": 0.0,
+        "by_type_absolute_mean": {
+          "MELON": 0.0,
+          "WHEAT": 0.0
+        }
+      },
+      "10": {
+        "cumulative_new_asset_count_absolute_mean": 0.0,
+        "by_type_absolute_mean": {
+          "MELON": 0.0,
+          "WHEAT": 0.0
+        }
+      }
+    },
+    "baseline_seyamalam": {
+      "2": {
+        "cumulative_new_asset_count_absolute_mean": 1.0,
+        "by_type_absolute_mean": {
+          "MELON": 0.0,
+          "WHEAT": 1.0
+        }
+      },
+      "10": {
+        "cumulative_new_asset_count_absolute_mean": 3.0,
+        "by_type_absolute_mean": {
+          "MELON": 2.0,
+          "WHEAT": 1.0
+        }
+      }
+    },
+    "position_candidate_self": {
+      "2": {
+        "cumulative_new_asset_count_absolute_mean": 2.0,
+        "by_type_absolute_mean": {
+          "MELON": 0.0,
+          "WHEAT": 2.0
+        }
+      },
+      "10": {
+        "cumulative_new_asset_count_absolute_mean": 2.0,
+        "by_type_absolute_mean": {
+          "MELON": 0.0,
+          "WHEAT": 2.0
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "baseline_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                4,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                3,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 0,
+          "units_on_empty_tiles": []
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        },
+        "new_asset_instances": [],
+        "new_asset_return_profile_by_type": {},
+        "cumulative_first_return_profile": []
+      },
+      "baseline_seyamalam": {
+        "h13_resources": {
+          "money": 53.0,
+          "seed_stock": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 5
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 19,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 5,
+          "hands_count": 4,
+          "acting_unit_count": 5,
+          "private_inventory_slot_count": 5,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 4,
+              "position": [
+                4,
+                4
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 2,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h14_composition": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 4,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 2,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 1
+        },
+        "new_asset_instances": [
+          {
+            "x": 2,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 1,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 2,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "MELON": {
+            "quantity": 2,
+            "first_return_day": 10,
+            "turns_from_h13_entry_to_first_return_boundary": 227,
+            "first_harvestable_day": 10,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "MELON"
+          },
+          "WHEAT": {
+            "quantity": 1,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 1,
+            "asset_types": {
+              "WHEAT": 1
+            }
+          },
+          {
+            "by_day": 10,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 3,
+            "asset_types": {
+              "MELON": 2,
+              "WHEAT": 1
+            }
+          }
+        ]
+      },
+      "position_candidate_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 7,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 2
+        },
+        "new_asset_instances": [
+          {
+            "x": 3,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "WHEAT": {
+            "quantity": 2,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 2,
+            "asset_types": {
+              "WHEAT": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "baseline_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                4,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                3,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 0,
+          "units_on_empty_tiles": []
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        },
+        "new_asset_instances": [],
+        "new_asset_return_profile_by_type": {},
+        "cumulative_first_return_profile": []
+      },
+      "baseline_seyamalam": {
+        "h13_resources": {
+          "money": 53.0,
+          "seed_stock": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 5
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 19,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 5,
+          "hands_count": 4,
+          "acting_unit_count": 5,
+          "private_inventory_slot_count": 5,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 4,
+              "position": [
+                4,
+                4
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 2,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h14_composition": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 4,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 2,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 1
+        },
+        "new_asset_instances": [
+          {
+            "x": 2,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 1,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 2,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "MELON": {
+            "quantity": 2,
+            "first_return_day": 10,
+            "turns_from_h13_entry_to_first_return_boundary": 227,
+            "first_harvestable_day": 10,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "MELON"
+          },
+          "WHEAT": {
+            "quantity": 1,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 1,
+            "asset_types": {
+              "WHEAT": 1
+            }
+          },
+          {
+            "by_day": 10,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 3,
+            "asset_types": {
+              "MELON": 2,
+              "WHEAT": 1
+            }
+          }
+        ]
+      },
+      "position_candidate_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 7,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 2
+        },
+        "new_asset_instances": [
+          {
+            "x": 3,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "WHEAT": {
+            "quantity": 2,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 2,
+            "asset_types": {
+              "WHEAT": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "baseline_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                4,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                3,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 0,
+          "units_on_empty_tiles": []
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        },
+        "new_asset_instances": [],
+        "new_asset_return_profile_by_type": {},
+        "cumulative_first_return_profile": []
+      },
+      "baseline_seyamalam": {
+        "h13_resources": {
+          "money": 53.0,
+          "seed_stock": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 5
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 19,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 5,
+          "hands_count": 4,
+          "acting_unit_count": 5,
+          "private_inventory_slot_count": 5,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 4,
+              "position": [
+                4,
+                4
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 2,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h14_composition": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 4,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 2,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 1
+        },
+        "new_asset_instances": [
+          {
+            "x": 2,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 1,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 2,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "MELON": {
+            "quantity": 2,
+            "first_return_day": 10,
+            "turns_from_h13_entry_to_first_return_boundary": 227,
+            "first_harvestable_day": 10,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "MELON"
+          },
+          "WHEAT": {
+            "quantity": 1,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 1,
+            "asset_types": {
+              "WHEAT": 1
+            }
+          },
+          {
+            "by_day": 10,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 3,
+            "asset_types": {
+              "MELON": 2,
+              "WHEAT": 1
+            }
+          }
+        ]
+      },
+      "position_candidate_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 7,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 2
+        },
+        "new_asset_instances": [
+          {
+            "x": 3,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "WHEAT": {
+            "quantity": 2,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 2,
+            "asset_types": {
+              "WHEAT": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "baseline_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                4,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                3,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 0,
+          "units_on_empty_tiles": []
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        },
+        "new_asset_instances": [],
+        "new_asset_return_profile_by_type": {},
+        "cumulative_first_return_profile": []
+      },
+      "baseline_seyamalam": {
+        "h13_resources": {
+          "money": 53.0,
+          "seed_stock": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 5
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 19,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 5,
+          "hands_count": 4,
+          "acting_unit_count": 5,
+          "private_inventory_slot_count": 5,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 4,
+              "position": [
+                4,
+                4
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 2,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h14_composition": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 4,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 2,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 1
+        },
+        "new_asset_instances": [
+          {
+            "x": 2,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 1,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 2,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "MELON": {
+            "quantity": 2,
+            "first_return_day": 10,
+            "turns_from_h13_entry_to_first_return_boundary": 227,
+            "first_harvestable_day": 10,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "MELON"
+          },
+          "WHEAT": {
+            "quantity": 1,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 1,
+            "asset_types": {
+              "WHEAT": 1
+            }
+          },
+          {
+            "by_day": 10,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 3,
+            "asset_types": {
+              "MELON": 2,
+              "WHEAT": 1
+            }
+          }
+        ]
+      },
+      "position_candidate_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 7,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 2
+        },
+        "new_asset_instances": [
+          {
+            "x": 3,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "WHEAT": {
+            "quantity": 2,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 2,
+            "asset_types": {
+              "WHEAT": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "baseline_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                4,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                3,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 0,
+          "units_on_empty_tiles": []
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        },
+        "new_asset_instances": [],
+        "new_asset_return_profile_by_type": {},
+        "cumulative_first_return_profile": []
+      },
+      "baseline_seyamalam": {
+        "h13_resources": {
+          "money": 53.0,
+          "seed_stock": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 5
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 19,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 5,
+          "hands_count": 4,
+          "acting_unit_count": 5,
+          "private_inventory_slot_count": 5,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                4,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 4,
+              "position": [
+                4,
+                4
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                3,
+                1
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 2,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h14_composition": {
+          "WHEAT": 1,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 4,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 1
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 2,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 1
+        },
+        "new_asset_instances": [
+          {
+            "x": 2,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 1,
+            "asset_class": "crop",
+            "asset_type": "MELON",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "MELON",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 312,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "MELON",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 10,
+              "turns_from_h13_entry_to_first_return_boundary": 227,
+              "first_harvestable_day": 10,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 6,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 3,
+            "y": 2,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "MELON": {
+            "quantity": 2,
+            "first_return_day": 10,
+            "turns_from_h13_entry_to_first_return_boundary": 227,
+            "first_harvestable_day": 10,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "MELON"
+          },
+          "WHEAT": {
+            "quantity": 1,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 1,
+            "asset_types": {
+              "WHEAT": 1
+            }
+          },
+          {
+            "by_day": 10,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 3,
+            "asset_types": {
+              "MELON": 2,
+              "WHEAT": 1
+            }
+          }
+        ]
+      },
+      "position_candidate_self": {
+        "h13_resources": {
+          "money": 1262.0,
+          "seed_stock": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8
+          },
+          "unplaced_animal_stock": {
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "empty_unlocked_tile_count": 18,
+          "unlocked_tile_count": 25,
+          "productive_occupied_tile_count": 7,
+          "hands_count": 3,
+          "acting_unit_count": 4,
+          "private_inventory_slot_count": 4,
+          "unit_positions": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 3,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ],
+          "units_on_empty_tile_count": 3,
+          "units_on_empty_tiles": [
+            {
+              "kind": "farmer",
+              "index": 0,
+              "position": [
+                3,
+                2
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 1,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "kind": "hand",
+              "index": 2,
+              "position": [
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        "h13_composition": {
+          "WHEAT": 5,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h14_composition": {
+          "WHEAT": 7,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "GOOSE": 0,
+          "COW": 2,
+          "SHEEP": 0
+        },
+        "h13_to_h14_present_asset_delta": {
+          "CARROT": 0,
+          "COW": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 2
+        },
+        "new_asset_instances": [
+          {
+            "x": 3,
+            "y": 0,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          },
+          {
+            "x": 2,
+            "y": 3,
+            "asset_class": "crop",
+            "asset_type": "WHEAT",
+            "before_identity": null,
+            "after_tile": {
+              "kind": "PLANT",
+              "crop": "WHEAT",
+              "planted_day": 0,
+              "watered_today": false,
+              "consecutive_unwatered": 1,
+              "yield_units": 1,
+              "max_lifespan_step": 120,
+              "fertilized_until_day": -1
+            },
+            "public_return": {
+              "status": "DERIVED_PUBLIC_RULE",
+              "output_item": "WHEAT",
+              "production_mode": "nonongoing_action_mediated",
+              "origin_day": 0,
+              "observed_formation_interval": {
+                "day": 0,
+                "from_hour": 13,
+                "to_hour": 14
+              },
+              "entry_hour_for_boundary_formula": 13,
+              "first_return_boundary_kind": "first_harvest_eligible",
+              "first_return_day": 2,
+              "turns_from_h13_entry_to_first_return_boundary": 35,
+              "first_harvestable_day": 2,
+              "base_held_units_on_entry": 1,
+              "no_fertilizer_max_held_if_all_window_waters": 4,
+              "held_yield_cap": 6,
+              "conditional_note": "Public timing only. Survival and any required future WATER/FEED remain Battle-path dependent."
+            }
+          }
+        ],
+        "new_asset_return_profile_by_type": {
+          "WHEAT": {
+            "quantity": 2,
+            "first_return_day": 2,
+            "turns_from_h13_entry_to_first_return_boundary": 35,
+            "first_harvestable_day": 2,
+            "production_mode": "nonongoing_action_mediated",
+            "output_item": "WHEAT"
+          }
+        },
+        "cumulative_first_return_profile": [
+          {
+            "by_day": 2,
+            "cumulative_new_asset_count_reaching_first_return_boundary": 2,
+            "asset_types": {
+              "WHEAT": 2
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "boundary": [
+    "This result is a public-rule timing audit, not a value score.",
+    "Unlike asset types remain separate; quantity means are not summed into economic value.",
+    "Cumulative first-return counts only locate public maturity boundaries.",
+    "No statement is made that reaching a boundary guarantees harvest, sale, cash, or terminal value.",
+    "No new Candidate or adoption decision is introduced."
+  ]
+}
