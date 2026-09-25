@@ -1,0 +1,581 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.ready-market-alignment.result.v0",
+  "source": "market_boundary_audit_v0_result.json",
+  "success_anchor_days": [
+    14,
+    15,
+    17,
+    19
+  ],
+  "boundary_anchor_day": 18,
+  "by_anchor_day": {
+    "14": {
+      "class": "success_5of5_word_anchor",
+      "price_rank_alignment": {
+        "mean": 0.8694984472102633,
+        "min": 0.7632992662473794,
+        "max": 0.9310195559177021,
+        "values": [
+          0.9273221343873518,
+          0.9251488095238095,
+          0.7632992662473794,
+          0.9310195559177021,
+          0.8007024699750738
+        ]
+      },
+      "scarcity_rank_alignment": {
+        "mean": 0.5173386302644205,
+        "min": 0.2632992662473795,
+        "max": 0.7256422924901186,
+        "values": [
+          0.7256422924901186,
+          0.6183283730158731,
+          0.2632992662473795,
+          0.5966337339580363,
+          0.3827894856106957
+        ]
+      },
+      "mean_alignment": {
+        "mean": 0.693418538737342,
+        "min": 0.5132992662473794,
+        "max": 0.8264822134387352,
+        "values": [
+          0.8264822134387352,
+          0.7717385912698413,
+          0.5132992662473794,
+          0.7638266449378692,
+          0.5917459777928847
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "price_rank_alignment": 0.9273221343873518,
+          "scarcity_rank_alignment": 0.7256422924901186,
+          "mean_alignment": 0.8264822134387352,
+          "ready_residual": 9814,
+          "sell_cash_residual": 6366,
+          "cash_residual_change": 6921
+        },
+        {
+          "seed": 7352,
+          "price_rank_alignment": 0.9251488095238095,
+          "scarcity_rank_alignment": 0.6183283730158731,
+          "mean_alignment": 0.7717385912698413,
+          "ready_residual": 9396,
+          "sell_cash_residual": 5720,
+          "cash_residual_change": 6956
+        },
+        {
+          "seed": 7353,
+          "price_rank_alignment": 0.7632992662473794,
+          "scarcity_rank_alignment": 0.2632992662473795,
+          "mean_alignment": 0.5132992662473794,
+          "ready_residual": 6156,
+          "sell_cash_residual": 2267,
+          "cash_residual_change": 3597
+        },
+        {
+          "seed": 7354,
+          "price_rank_alignment": 0.9310195559177021,
+          "scarcity_rank_alignment": 0.5966337339580363,
+          "mean_alignment": 0.7638266449378692,
+          "ready_residual": 9002,
+          "sell_cash_residual": 4996,
+          "cash_residual_change": 6233
+        },
+        {
+          "seed": 7355,
+          "price_rank_alignment": 0.8007024699750738,
+          "scarcity_rank_alignment": 0.3827894856106957,
+          "mean_alignment": 0.5917459777928847,
+          "ready_residual": 8370,
+          "sell_cash_residual": 4102,
+          "cash_residual_change": 5335
+        }
+      ]
+    },
+    "15": {
+      "class": "success_5of5_word_anchor",
+      "price_rank_alignment": {
+        "mean": 0.730325039695134,
+        "min": 0.5984649122807018,
+        "max": 0.8410999160369437,
+        "values": [
+          0.75057781201849,
+          0.8410999160369437,
+          0.625,
+          0.836482558139535,
+          0.5984649122807018
+        ]
+      },
+      "scarcity_rank_alignment": {
+        "mean": 0.4939038940045526,
+        "min": 0.25,
+        "max": 0.6833543240973972,
+        "values": [
+          0.6444530046224961,
+          0.6833543240973972,
+          0.25,
+          0.5047238372093024,
+          0.38698830409356727
+        ]
+      },
+      "mean_alignment": {
+        "mean": 0.6121144668498434,
+        "min": 0.4375,
+        "max": 0.7622271200671704,
+        "values": [
+          0.6975154083204931,
+          0.7622271200671704,
+          0.4375,
+          0.6706031976744187,
+          0.49272660818713454
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "price_rank_alignment": 0.75057781201849,
+          "scarcity_rank_alignment": 0.6444530046224961,
+          "mean_alignment": 0.6975154083204931,
+          "ready_residual": 1086,
+          "sell_cash_residual": 2806,
+          "cash_residual_change": 3060
+        },
+        {
+          "seed": 7352,
+          "price_rank_alignment": 0.8410999160369437,
+          "scarcity_rank_alignment": 0.6833543240973972,
+          "mean_alignment": 0.7622271200671704,
+          "ready_residual": 1002,
+          "sell_cash_residual": 2680,
+          "cash_residual_change": 2954
+        },
+        {
+          "seed": 7353,
+          "price_rank_alignment": 0.625,
+          "scarcity_rank_alignment": 0.25,
+          "mean_alignment": 0.4375,
+          "ready_residual": 319,
+          "sell_cash_residual": 1954,
+          "cash_residual_change": 2001
+        },
+        {
+          "seed": 7354,
+          "price_rank_alignment": 0.836482558139535,
+          "scarcity_rank_alignment": 0.5047238372093024,
+          "mean_alignment": 0.6706031976744187,
+          "ready_residual": 2523,
+          "sell_cash_residual": 3758,
+          "cash_residual_change": 3468
+        },
+        {
+          "seed": 7355,
+          "price_rank_alignment": 0.5984649122807018,
+          "scarcity_rank_alignment": 0.38698830409356727,
+          "mean_alignment": 0.49272660818713454,
+          "ready_residual": 643,
+          "sell_cash_residual": 2510,
+          "cash_residual_change": 2781
+        }
+      ]
+    },
+    "17": {
+      "class": "success_5of5_word_anchor",
+      "price_rank_alignment": {
+        "mean": 0.8558826328603176,
+        "min": 0.786674933231591,
+        "max": 0.9379355103156168,
+        "values": [
+          0.9379355103156168,
+          0.8870560063855262,
+          0.7957779515246286,
+          0.8719687628442252,
+          0.786674933231591
+        ]
+      },
+      "scarcity_rank_alignment": {
+        "mean": 0.5443491665534158,
+        "min": 0.4147272033574972,
+        "max": 0.7566607460035524,
+        "values": [
+          0.7566607460035524,
+          0.6074065451642943,
+          0.42779515246286154,
+          0.5151561857788738,
+          0.4147272033574972
+        ]
+      },
+      "mean_alignment": {
+        "mean": 0.7001158997068667,
+        "min": 0.6007010682945441,
+        "max": 0.8472981281595846,
+        "values": [
+          0.8472981281595846,
+          0.7472312757749102,
+          0.6117865519937451,
+          0.6935624743115495,
+          0.6007010682945441
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "price_rank_alignment": 0.9379355103156168,
+          "scarcity_rank_alignment": 0.7566607460035524,
+          "mean_alignment": 0.8472981281595846,
+          "ready_residual": 7193,
+          "sell_cash_residual": 5239,
+          "cash_residual_change": 5502
+        },
+        {
+          "seed": 7352,
+          "price_rank_alignment": 0.8870560063855262,
+          "scarcity_rank_alignment": 0.6074065451642943,
+          "mean_alignment": 0.7472312757749102,
+          "ready_residual": 7307,
+          "sell_cash_residual": 5905,
+          "cash_residual_change": 5863
+        },
+        {
+          "seed": 7353,
+          "price_rank_alignment": 0.7957779515246286,
+          "scarcity_rank_alignment": 0.42779515246286154,
+          "mean_alignment": 0.6117865519937451,
+          "ready_residual": 6263,
+          "sell_cash_residual": 6165,
+          "cash_residual_change": 6446
+        },
+        {
+          "seed": 7354,
+          "price_rank_alignment": 0.8719687628442252,
+          "scarcity_rank_alignment": 0.5151561857788738,
+          "mean_alignment": 0.6935624743115495,
+          "ready_residual": 9522,
+          "sell_cash_residual": 9070,
+          "cash_residual_change": 8516
+        },
+        {
+          "seed": 7355,
+          "price_rank_alignment": 0.786674933231591,
+          "scarcity_rank_alignment": 0.4147272033574972,
+          "mean_alignment": 0.6007010682945441,
+          "ready_residual": 5074,
+          "sell_cash_residual": 2674,
+          "cash_residual_change": 2681
+        }
+      ]
+    },
+    "18": {
+      "class": "boundary_anchor",
+      "price_rank_alignment": {
+        "mean": 0.8020403225297901,
+        "min": 0.7059671694764862,
+        "max": 0.9304300191728294,
+        "values": [
+          0.8760226343059723,
+          0.7885390428211587,
+          0.7059671694764862,
+          0.7092427468725047,
+          0.9304300191728294
+        ]
+      },
+      "scarcity_rank_alignment": {
+        "mean": 0.7204782167029566,
+        "min": 0.5827417923691215,
+        "max": 0.8475934005999455,
+        "values": [
+          0.8475934005999455,
+          0.7307304785894206,
+          0.5827417923691215,
+          0.7237822730902315,
+          0.7175431388660641
+        ]
+      },
+      "mean_alignment": {
+        "mean": 0.7612592696163735,
+        "min": 0.6443544809228039,
+        "max": 0.8618080174529589,
+        "values": [
+          0.8618080174529589,
+          0.7596347607052897,
+          0.6443544809228039,
+          0.7165125099813681,
+          0.8239865790194467
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "price_rank_alignment": 0.8760226343059723,
+          "scarcity_rank_alignment": 0.8475934005999455,
+          "mean_alignment": 0.8618080174529589,
+          "ready_residual": 3634,
+          "sell_cash_residual": 2469,
+          "cash_residual_change": 4165
+        },
+        {
+          "seed": 7352,
+          "price_rank_alignment": 0.7885390428211587,
+          "scarcity_rank_alignment": 0.7307304785894206,
+          "mean_alignment": 0.7596347607052897,
+          "ready_residual": 3382,
+          "sell_cash_residual": 1918,
+          "cash_residual_change": 3440
+        },
+        {
+          "seed": 7353,
+          "price_rank_alignment": 0.7059671694764862,
+          "scarcity_rank_alignment": 0.5827417923691215,
+          "mean_alignment": 0.6443544809228039,
+          "ready_residual": 771,
+          "sell_cash_residual": -3810,
+          "cash_residual_change": -2016
+        },
+        {
+          "seed": 7354,
+          "price_rank_alignment": 0.7092427468725047,
+          "scarcity_rank_alignment": 0.7237822730902315,
+          "mean_alignment": 0.7165125099813681,
+          "ready_residual": 1165,
+          "sell_cash_residual": 273,
+          "cash_residual_change": 922
+        },
+        {
+          "seed": 7355,
+          "price_rank_alignment": 0.9304300191728294,
+          "scarcity_rank_alignment": 0.7175431388660641,
+          "mean_alignment": 0.8239865790194467,
+          "ready_residual": 3596,
+          "sell_cash_residual": 1449,
+          "cash_residual_change": 3035
+        }
+      ]
+    },
+    "19": {
+      "class": "success_5of5_word_anchor",
+      "price_rank_alignment": {
+        "mean": 0.8080722105362028,
+        "min": 0.6813576651381832,
+        "max": 0.9312824272501692,
+        "values": [
+          0.8558812592959841,
+          0.6896802325581396,
+          0.8821594684385381,
+          0.6813576651381832,
+          0.9312824272501692
+        ]
+      },
+      "scarcity_rank_alignment": {
+        "mean": 0.6696218738962624,
+        "min": 0.5440729954145496,
+        "max": 0.7525099157164105,
+        "values": [
+          0.7525099157164105,
+          0.6008853065539111,
+          0.6994850498338869,
+          0.5440729954145496,
+          0.7511561019625534
+        ]
+      },
+      "mean_alignment": {
+        "mean": 0.7388470422162325,
+        "min": 0.6127153302763664,
+        "max": 0.8412192646063613,
+        "values": [
+          0.8041955875061972,
+          0.6452827695560254,
+          0.7908222591362125,
+          0.6127153302763664,
+          0.8412192646063613
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "price_rank_alignment": 0.8558812592959841,
+          "scarcity_rank_alignment": 0.7525099157164105,
+          "mean_alignment": 0.8041955875061972,
+          "ready_residual": 4034,
+          "sell_cash_residual": 2183,
+          "cash_residual_change": 2594
+        },
+        {
+          "seed": 7352,
+          "price_rank_alignment": 0.6896802325581396,
+          "scarcity_rank_alignment": 0.6008853065539111,
+          "mean_alignment": 0.6452827695560254,
+          "ready_residual": 3784,
+          "sell_cash_residual": 2599,
+          "cash_residual_change": 3118
+        },
+        {
+          "seed": 7353,
+          "price_rank_alignment": 0.8821594684385381,
+          "scarcity_rank_alignment": 0.6994850498338869,
+          "mean_alignment": 0.7908222591362125,
+          "ready_residual": 7525,
+          "sell_cash_residual": 5919,
+          "cash_residual_change": 6380
+        },
+        {
+          "seed": 7354,
+          "price_rank_alignment": 0.6813576651381832,
+          "scarcity_rank_alignment": 0.5440729954145496,
+          "mean_alignment": 0.6127153302763664,
+          "ready_residual": 7983,
+          "sell_cash_residual": 6255,
+          "cash_residual_change": 5820
+        },
+        {
+          "seed": 7355,
+          "price_rank_alignment": 0.9312824272501692,
+          "scarcity_rank_alignment": 0.7511561019625534,
+          "mean_alignment": 0.8412192646063613,
+          "ready_residual": 4433,
+          "sell_cash_residual": 3130,
+          "cash_residual_change": 3668
+        }
+      ]
+    }
+  },
+  "success_vs_boundary": {
+    "price_rank_alignment": {
+      "success": {
+        "mean": 0.8159445825754794,
+        "min": 0.5984649122807018,
+        "max": 0.9379355103156168,
+        "values": [
+          0.9273221343873518,
+          0.9251488095238095,
+          0.7632992662473794,
+          0.9310195559177021,
+          0.8007024699750738,
+          0.75057781201849,
+          0.8410999160369437,
+          0.625,
+          0.836482558139535,
+          0.5984649122807018,
+          0.9379355103156168,
+          0.8870560063855262,
+          0.7957779515246286,
+          0.8719687628442252,
+          0.786674933231591,
+          0.8558812592959841,
+          0.6896802325581396,
+          0.8821594684385381,
+          0.6813576651381832,
+          0.9312824272501692
+        ]
+      },
+      "boundary": {
+        "mean": 0.8020403225297901,
+        "min": 0.7059671694764862,
+        "max": 0.9304300191728294,
+        "values": [
+          0.8760226343059723,
+          0.7885390428211587,
+          0.7059671694764862,
+          0.7092427468725047,
+          0.9304300191728294
+        ]
+      }
+    },
+    "scarcity_rank_alignment": {
+      "success": {
+        "mean": 0.5563033911796629,
+        "min": 0.25,
+        "max": 0.7566607460035524,
+        "values": [
+          0.7256422924901186,
+          0.6183283730158731,
+          0.2632992662473795,
+          0.5966337339580363,
+          0.3827894856106957,
+          0.6444530046224961,
+          0.6833543240973972,
+          0.25,
+          0.5047238372093024,
+          0.38698830409356727,
+          0.7566607460035524,
+          0.6074065451642943,
+          0.42779515246286154,
+          0.5151561857788738,
+          0.4147272033574972,
+          0.7525099157164105,
+          0.6008853065539111,
+          0.6994850498338869,
+          0.5440729954145496,
+          0.7511561019625534
+        ]
+      },
+      "boundary": {
+        "mean": 0.7204782167029566,
+        "min": 0.5827417923691215,
+        "max": 0.8475934005999455,
+        "values": [
+          0.8475934005999455,
+          0.7307304785894206,
+          0.5827417923691215,
+          0.7237822730902315,
+          0.7175431388660641
+        ]
+      }
+    },
+    "mean_alignment": {
+      "success": {
+        "mean": 0.6861239868775713,
+        "min": 0.4375,
+        "max": 0.8472981281595846,
+        "values": [
+          0.8264822134387352,
+          0.7717385912698413,
+          0.5132992662473794,
+          0.7638266449378692,
+          0.5917459777928847,
+          0.6975154083204931,
+          0.7622271200671704,
+          0.4375,
+          0.6706031976744187,
+          0.49272660818713454,
+          0.8472981281595846,
+          0.7472312757749102,
+          0.6117865519937451,
+          0.6935624743115495,
+          0.6007010682945441,
+          0.8041955875061972,
+          0.6452827695560254,
+          0.7908222591362125,
+          0.6127153302763664,
+          0.8412192646063613
+        ]
+      },
+      "boundary": {
+        "mean": 0.7612592696163735,
+        "min": 0.6443544809228039,
+        "max": 0.8618080174529589,
+        "values": [
+          0.8618080174529589,
+          0.7596347607052897,
+          0.6443544809228039,
+          0.7165125099813681,
+          0.8239865790194467
+        ]
+      }
+    }
+  },
+  "mechanical_range_separation": {
+    "price_rank_alignment": false,
+    "scarcity_rank_alignment": false,
+    "mean_alignment": false
+  },
+  "boundary": [
+    "Alignment uses only current-anchor Ready Output positive residual products and their same-product public market price/inventory ranks.",
+    "Price rank is higher for higher displayed price within the same market snapshot.",
+    "Scarcity rank is higher for lower shared market inventory within the same market snapshot.",
+    "Ranks are weighted by each product's share of positive Ready Output mark; product identity is not itself a rule feature.",
+    "No range separator between success anchors and Day18 boundary is observed for price-rank, scarcity-rank, or their simple mean.",
+    "No causal claim, action diagnosis, Candidate, or policy rule is introduced."
+  ]
+}
