@@ -1,0 +1,387 @@
+{
+  "schema": "kaggriculture.first-generated-return-input-bridge.result.v0",
+  "battle_count": 10,
+  "opponent": {
+    "found_cases": 10,
+    "signature_frequency": {
+      "D7h1:BUY_LAND:-": 10
+    },
+    "op_item_frequency": {
+      "BUY_LAND:None": 10
+    },
+    "mean_day": 7.0,
+    "mean_hour": 1.0,
+    "mean_generated_return_cash_before": 1317.0,
+    "mean_cash_without_generated_return": 412.2,
+    "mean_cost": 1000.0
+  },
+  "self": {
+    "found_cases": 10,
+    "signature_frequency": {
+      "D8h3:BUY_LAND:-": 5,
+      "D8h12:BUY_LAND:-": 1,
+      "D8h4:BUY_LAND:-": 1,
+      "D8h13:BUY_LAND:-": 3
+    },
+    "op_item_frequency": {
+      "BUY_LAND:None": 10
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1994.0,
+        "cash_after": 994.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1091.0,
+        "cash_without_generated_return": 903.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 8,
+        "hour": 12,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2751.0,
+        "cash_after": 1751.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1830.0,
+        "cash_without_generated_return": 921.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2208.0,
+        "cash_after": 1208.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1330.0,
+        "cash_without_generated_return": 878.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1602.0,
+        "cash_after": 602.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 317.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 8,
+        "hour": 4,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2076.0,
+        "cash_after": 1076.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1279.0,
+        "cash_without_generated_return": 797.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1965.0,
+        "cash_after": 965.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1091.0,
+        "cash_without_generated_return": 874.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1723.0,
+        "cash_after": 723.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 438.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 8,
+        "hour": 13,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2431.0,
+        "cash_after": 1431.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1830.0,
+        "cash_without_generated_return": 601.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1855.0,
+        "cash_after": 855.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1409.0,
+        "cash_without_generated_return": 446.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 12638.0,
+        "opponent": 111344.0,
+        "margin": -98706.0
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2031.0,
+        "cash_after": 1031.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1091.0,
+        "cash_without_generated_return": 940.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 13630.0,
+        "opponent": 124733.0,
+        "margin": -111103.0
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 8,
+        "hour": 13,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2431.0,
+        "cash_after": 1431.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1830.0,
+        "cash_without_generated_return": 601.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1731.0,
+        "cash_after": 731.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 446.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 15334.0,
+        "opponent": 66711.0,
+        "margin": -51377.0
+      }
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "self": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2013.0,
+        "cash_after": 1013.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1279.0,
+        "cash_without_generated_return": 734.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1695.0,
+        "cash_after": 695.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 410.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 31927.0,
+        "opponent": 138610.0,
+        "margin": -106683.0
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "self": {
+        "player": 1,
+        "day": 8,
+        "hour": 13,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2742.0,
+        "cash_after": 1742.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 2121.0,
+        "cash_without_generated_return": 621.0,
+        "generated_return_necessary": true
+      },
+      "opponent": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1698.0,
+        "cash_after": 698.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true
+      },
+      "terminal": {
+        "self": 31876.0,
+        "opponent": 132626.0,
+        "margin": -100750.0
+      }
+    }
+  ],
+  "boundary": [
+    "Only generated non-WHEAT realized SELL cash with zero initial stock is removed in the affordability counterfactual.",
+    "A repeated event is a candidate connection point, not yet a WR-03 trigger.",
+    "Production consequence must be verified separately before any intervention."
+  ]
+}
