@@ -58,9 +58,10 @@ packet = {
     } if selected else None,
     "guard": selected["guard"] if selected else {
         "resource_state_present": False,
+        "resource_generated_or_acquired_by_current": False,
         "current_productive_action_generated": False,
         "world_failure_observed": False,
-        "alternate_productive_capacity_present": False,
+        "alternate_empty_capacity_observed": False,
     },
     "decision_boundary": {
         "scan_result_only": True,
@@ -108,6 +109,8 @@ if selected:
 - alternate empty tiles: {selected["back"]["alternate_empty_tiles"]}
 - available seed: \`{json.dumps(selected["back"]["available_seed"], ensure_ascii=False)}\`
 - seed sufficient for requests: {selected["back"]["seed_sufficient_for_requests"]}
+- Current seed acquisition confirmed: {selected["back"]["resource_origin_confirmed"]}
+- prior Current seed acquisition: `{json.dumps(selected["back"]["prior_current_seed_acquisition"], ensure_ascii=False)}`
 - target was empty at State_t: {selected["back"]["target_was_empty"]}
 
 ## World execution
