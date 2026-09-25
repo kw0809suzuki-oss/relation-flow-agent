@@ -1,0 +1,1290 @@
+{
+  "schema": "kaggriculture.phase-a-surface-pair-flow.result.v0",
+  "cases": [
+    {
+      "seed": 8801,
+      "delta_terminal_self": 18364.0,
+      "first_active_surface_difference_day": 5,
+      "surface_changed_turns": 1,
+      "daily_differences": [
+        {
+          "day": 5,
+          "differences": [
+            {
+              "field": "self.cash",
+              "active": 1242.0,
+              "surface": 262.0
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 10,
+              "surface": 35
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "differences": [
+            {
+              "field": "self.cash",
+              "active": 2150.0,
+              "surface": 982.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 5
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 6,
+              "surface": 7
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 10,
+              "surface": 32
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 13,
+              "surface": 17
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "differences": [
+            {
+              "field": "market.inventory.EGG",
+              "active": 9987.0,
+              "surface": 9993.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9969.0,
+              "surface": 9963.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9950.0,
+              "surface": 9954.0
+            },
+            {
+              "field": "market.prices.EGG",
+              "active": 51.0,
+              "surface": 50.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 208.0,
+              "surface": 213.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 1679.0,
+              "surface": 1680.0
+            },
+            {
+              "field": "self.animals.COW",
+              "active": 4,
+              "surface": 3
+            },
+            {
+              "field": "self.cash",
+              "active": 1250.0,
+              "surface": 613.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 5
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 8,
+              "surface": 7
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 6,
+              "surface": 31
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 17,
+              "surface": 18
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "differences": [
+            {
+              "field": "market.inventory.EGG",
+              "active": 9980.0,
+              "surface": 9992.0
+            },
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10045.0,
+              "surface": 10044.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9962.0,
+              "surface": 9950.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9940.0,
+              "surface": 9943.0
+            },
+            {
+              "field": "market.prices.EGG",
+              "active": 51.0,
+              "surface": 50.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 214.0,
+              "surface": 221.0
+            },
+            {
+              "field": "self.animals.COW",
+              "active": 4,
+              "surface": 3
+            },
+            {
+              "field": "self.cash",
+              "active": 909.0,
+              "surface": 856.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 0
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 4,
+              "surface": 0
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 8,
+              "surface": 1
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 5,
+              "surface": 31
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 18,
+              "surface": 4
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "differences": [
+            {
+              "field": "market.inventory.EGG",
+              "active": 9973.0,
+              "surface": 9991.0
+            },
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10055.0,
+              "surface": 10052.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9985.0,
+              "surface": 9961.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9907.0,
+              "surface": 9902.0
+            },
+            {
+              "field": "market.prices.EGG",
+              "active": 52.0,
+              "surface": 51.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 89.0,
+              "surface": 90.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 194.0,
+              "surface": 214.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 1110.0,
+              "surface": 1305.0
+            },
+            {
+              "field": "self.cash",
+              "active": 1562.0,
+              "surface": 745.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 0
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 6,
+              "surface": 1
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 7,
+              "surface": 8
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 29,
+              "surface": 31
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 19,
+              "surface": 13
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "differences": [
+            {
+              "field": "market.inventory.EGG",
+              "active": 9966.0,
+              "surface": 9990.0
+            },
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10064.0,
+              "surface": 10061.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9978.0,
+              "surface": 9954.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9897.0,
+              "surface": 9878.0
+            },
+            {
+              "field": "market.prices.EGG",
+              "active": 52.0,
+              "surface": 51.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 87.0,
+              "surface": 88.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 201.0,
+              "surface": 219.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 35.0,
+              "surface": 36.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 1047.0,
+              "surface": 1234.0
+            },
+            {
+              "field": "self.cash",
+              "active": 2331.0,
+              "surface": 1042.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 0
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 6,
+              "surface": 1
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 7,
+              "surface": 11
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 29,
+              "surface": 31
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 19,
+              "surface": 16
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "differences": [
+            {
+              "field": "market.inventory.EGG",
+              "active": 9959.0,
+              "surface": 9989.0
+            },
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10075.0,
+              "surface": 10072.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9977.0,
+              "surface": 9946.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9844.0,
+              "surface": 9829.0
+            },
+            {
+              "field": "market.prices.EGG",
+              "active": 52.0,
+              "surface": 51.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 85.0,
+              "surface": 86.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 202.0,
+              "surface": 224.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 37.0,
+              "surface": 38.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 3041.0,
+              "surface": 3222.0
+            },
+            {
+              "field": "self.cash",
+              "active": 2169.0,
+              "surface": 770.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 0
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 6,
+              "surface": 1
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 7,
+              "surface": 11
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 27,
+              "surface": 29
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 21,
+              "surface": 18
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "differences": [
+            {
+              "field": "market.inventory.EGG",
+              "active": 9952.0,
+              "surface": 9988.0
+            },
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10089.0,
+              "surface": 10087.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9970.0,
+              "surface": 9933.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9792.0,
+              "surface": 9780.0
+            },
+            {
+              "field": "market.prices.EGG",
+              "active": 53.0,
+              "surface": 51.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 82.0,
+              "surface": 83.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 208.0,
+              "surface": 231.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 39.0,
+              "surface": 40.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 7156.0,
+              "surface": 7323.0
+            },
+            {
+              "field": "self.cash",
+              "active": 2310.0,
+              "surface": 1116.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 0
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 4,
+              "surface": 1
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 7,
+              "surface": 11
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 27,
+              "surface": 29
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 19,
+              "surface": 18
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BRUNCH_SPOT",
+                "BRUNCH_SPOT",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ],
+              "surface": [
+                "BRUNCH_SPOT",
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 8806,
+      "delta_terminal_self": -17321.0,
+      "first_active_surface_difference_day": 5,
+      "surface_changed_turns": 1,
+      "daily_differences": [
+        {
+          "day": 5,
+          "differences": [
+            {
+              "field": "self.cash",
+              "active": 1242.0,
+              "surface": 292.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 3
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 6,
+              "surface": 5
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 10,
+              "surface": 35
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "differences": [
+            {
+              "field": "self.cash",
+              "active": 2150.0,
+              "surface": 824.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 6,
+              "surface": 8
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 10,
+              "surface": 32
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 13,
+              "surface": 17
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "differences": [
+            {
+              "field": "market.inventory.MILK",
+              "active": 9963.0,
+              "surface": 9969.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9950.0,
+              "surface": 9962.0
+            },
+            {
+              "field": "market.inventory.WOOL",
+              "active": 9999.0,
+              "surface": 9987.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 213.0,
+              "surface": 208.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 32.0,
+              "surface": 31.0
+            },
+            {
+              "field": "market.prices.WOOL",
+              "active": 206.0,
+              "surface": 223.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 1679.0,
+              "surface": 1728.0
+            },
+            {
+              "field": "self.animals.COW",
+              "active": 4,
+              "surface": 2
+            },
+            {
+              "field": "self.cash",
+              "active": 1250.0,
+              "surface": 862.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 6,
+              "surface": 32
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "differences": [
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10045.0,
+              "surface": 10043.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9950.0,
+              "surface": 9962.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9940.0,
+              "surface": 9957.0
+            },
+            {
+              "field": "market.inventory.WOOL",
+              "active": 9998.0,
+              "surface": 9974.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 221.0,
+              "surface": 214.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 33.0,
+              "surface": 32.0
+            },
+            {
+              "field": "market.prices.WOOL",
+              "active": 209.0,
+              "surface": 228.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 833.0,
+              "surface": 878.0
+            },
+            {
+              "field": "self.animals.COW",
+              "active": 4,
+              "surface": 2
+            },
+            {
+              "field": "self.cash",
+              "active": 909.0,
+              "surface": 893.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 4,
+              "surface": 5
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 5,
+              "surface": 30
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 18,
+              "surface": 19
+            },
+            {
+              "field": "self.quadrants",
+              "active": 1,
+              "surface": 2
+            },
+            {
+              "field": "self.unlocked_tiles",
+              "active": 25,
+              "surface": 50
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "ICE_CREAM_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "differences": [
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10055.0,
+              "surface": 10051.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9967.0,
+              "surface": 9985.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9907.0,
+              "surface": 9927.0
+            },
+            {
+              "field": "market.inventory.WOOL",
+              "active": 9997.0,
+              "surface": 9961.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 89.0,
+              "surface": 90.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 210.0,
+              "surface": 194.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 35.0,
+              "surface": 34.0
+            },
+            {
+              "field": "market.prices.WOOL",
+              "active": 212.0,
+              "surface": 232.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 1298.0,
+              "surface": 1184.0
+            },
+            {
+              "field": "self.cash",
+              "active": 1695.0,
+              "surface": 1053.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 7,
+              "surface": 8
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 6,
+              "surface": 4
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 28,
+              "surface": 27
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 19,
+              "surface": 20
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BAKERY",
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "BRUNCH_SPOT",
+                "ICE_CREAM_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "differences": [
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10064.0,
+              "surface": 10060.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9954.0,
+              "surface": 9978.0
+            },
+            {
+              "field": "market.inventory.STRAWBERRY",
+              "active": 9948.0,
+              "surface": 9942.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9891.0,
+              "surface": 9917.0
+            },
+            {
+              "field": "market.inventory.WOOL",
+              "active": 10000.0,
+              "surface": 9952.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 87.0,
+              "surface": 88.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 219.0,
+              "surface": 201.0
+            },
+            {
+              "field": "market.prices.STRAWBERRY",
+              "active": 181.0,
+              "surface": 184.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 35.0,
+              "surface": 34.0
+            },
+            {
+              "field": "market.prices.WOOL",
+              "active": 200.0,
+              "surface": 233.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 1189.0,
+              "surface": 1184.0
+            },
+            {
+              "field": "self.cash",
+              "active": 2473.0,
+              "surface": 1782.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 6,
+              "surface": 4
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BAKERY",
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "BRUNCH_SPOT",
+                "ICE_CREAM_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "differences": [
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10075.0,
+              "surface": 10072.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9947.0,
+              "surface": 9977.0
+            },
+            {
+              "field": "market.inventory.STRAWBERRY",
+              "active": 9941.0,
+              "surface": 9929.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9832.0,
+              "surface": 9871.0
+            },
+            {
+              "field": "market.inventory.WOOL",
+              "active": 9999.0,
+              "surface": 9939.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 85.0,
+              "surface": 86.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 223.0,
+              "surface": 202.0
+            },
+            {
+              "field": "market.prices.STRAWBERRY",
+              "active": 185.0,
+              "surface": 191.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 38.0,
+              "surface": 36.0
+            },
+            {
+              "field": "market.prices.WOOL",
+              "active": 206.0,
+              "surface": 235.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 3183.0,
+              "surface": 3228.0
+            },
+            {
+              "field": "self.cash",
+              "active": 2399.0,
+              "surface": 2302.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 6,
+              "surface": 5
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 21,
+              "surface": 22
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BAKERY",
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP"
+              ],
+              "surface": [
+                "BRUNCH_SPOT",
+                "ICE_CREAM_SHOP",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "differences": [
+            {
+              "field": "market.inventory.FERTILIZER",
+              "active": 10089.0,
+              "surface": 10087.0
+            },
+            {
+              "field": "market.inventory.MILK",
+              "active": 9934.0,
+              "surface": 9970.0
+            },
+            {
+              "field": "market.inventory.STRAWBERRY",
+              "active": 9934.0,
+              "surface": 9916.0
+            },
+            {
+              "field": "market.inventory.WHEAT",
+              "active": 9774.0,
+              "surface": 9816.0
+            },
+            {
+              "field": "market.inventory.WOOL",
+              "active": 10004.0,
+              "surface": 9932.0
+            },
+            {
+              "field": "market.prices.FERTILIZER",
+              "active": 82.0,
+              "surface": 83.0
+            },
+            {
+              "field": "market.prices.MILK",
+              "active": 231.0,
+              "surface": 208.0
+            },
+            {
+              "field": "market.prices.STRAWBERRY",
+              "active": 188.0,
+              "surface": 197.0
+            },
+            {
+              "field": "market.prices.WHEAT",
+              "active": 40.0,
+              "surface": 39.0
+            },
+            {
+              "field": "market.prices.WOOL",
+              "active": 199.0,
+              "surface": 236.0
+            },
+            {
+              "field": "opponent.cash",
+              "active": 7116.0,
+              "surface": 7412.0
+            },
+            {
+              "field": "self.cash",
+              "active": 2550.0,
+              "surface": 2445.0
+            },
+            {
+              "field": "self.crops.MELON",
+              "active": 2,
+              "surface": 4
+            },
+            {
+              "field": "self.crops.STRAWBERRY",
+              "active": 4,
+              "surface": 7
+            },
+            {
+              "field": "self.crops.WHEAT",
+              "active": 7,
+              "surface": 8
+            },
+            {
+              "field": "self.empty_tiles",
+              "active": 25,
+              "surface": 24
+            },
+            {
+              "field": "self.productive_tiles",
+              "active": 19,
+              "surface": 25
+            },
+            {
+              "field": "town.unlocked_shops",
+              "active": [
+                "BAKERY",
+                "ICE_CREAM_SHOP",
+                "PIZZA_SHOP",
+                "SMOOTHIE_SHOP"
+              ],
+              "surface": [
+                "BRUNCH_SPOT",
+                "ICE_CREAM_SHOP",
+                "YARN_STORE",
+                "YARN_STORE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "boundary": [
+    "This result compares Active WR-02 with Surface First within each seed.",
+    "It locates the first observed downstream state difference caused by the candidate path.",
+    "Cross-seed shop/market differences remain separate evidence; no causal bridge is asserted without overlap."
+  ]
+}
