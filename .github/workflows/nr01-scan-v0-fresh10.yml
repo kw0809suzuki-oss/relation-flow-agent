@@ -76,3 +76,5 @@ jobs:
             git commit -m "Record NR-01 SCAN fresh10 v0"
             git push origin HEAD:${GITHUB_REF_NAME}
           fi
+
+# trigger: nr01-scan-v0
