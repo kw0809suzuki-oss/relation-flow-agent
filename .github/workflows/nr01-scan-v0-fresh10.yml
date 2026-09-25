@@ -1,7 +1,7 @@
 name: NR-01 SCAN v0 Fresh10
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: nr01-scan-v0-${{ github.ref }}
@@ -46,6 +46,7 @@ jobs:
         with:
           name: nr01-scan-raw-${{ matrix.seed }}
           path: nr01_scan_raw_${{ matrix.seed }}.json
+          if-no-files-found: error
 
   aggregate:
     needs: scan
@@ -65,3 +66,4 @@ jobs:
           path: |
             nr01_scan_fresh10.json
             nr01_evidence_packet.md
+          if-no-files-found: error
