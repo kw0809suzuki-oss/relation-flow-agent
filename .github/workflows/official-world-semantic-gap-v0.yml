@@ -1,0 +1,166 @@
+name: Official World Semantic Gap Probe v0
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - experiment/official-market-cash-v0
+    paths:
+      - .github/workflows/official-world-semantic-gap-v0.yml
+      - OFFICIAL_WORLD_SEMANTIC_GAP_RUN
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Fetch pinned opponent
+        run: bash scripts/fetch_opponent.sh
+      - name: Observe current baseline
+        run: |
+          cat > /tmp/probe.py <<'PY'
+          import copy, importlib, json
+          from kaggle_environments import make
+          import whole_flow_control_agent as current
+          import opponents.seyamalam_v21 as opponent
+
+          SEEDS=range(7001,7011)
+          PRODUCE={"MILK","WOOL","EGG","FERTILIZER","WHEAT","CARROT","TOMATO","STRAWBERRY","MELON"}
+          INPUT_ONLY={"COW","SHEEP","GOOSE"}
+          rows=[]
+          totals={
+              "turns":0,
+              "drop_actions":0,
+              "drop_with_mixed_inventory":0,
+              "drop_input_units":0,
+              "sell_orders":0,
+              "sell_requested_units":0,
+              "sell_pre_market_shortfall_orders":0,
+              "sell_pre_market_shortfall_units":0,
+              "atomic_plant_block_crop_turns":0,
+              "endday_overflow_risk_turns":0,
+              "endday_overflow_risk_units":0,
+          }
+
+          def add_inv(d,k,n):
+              if n:
+                  d[k]=d.get(k,0)+n
+                  if d[k]==0: d.pop(k,None)
+
+          for seed in SEEDS:
+              if hasattr(current,"reset_telemetry"): current.reset_telemetry()
+              for name in ("reset_telemetry","reset_trace","reset"):
+                  fn=getattr(opponent,name,None)
+                  if callable(fn):
+                      try: fn()
+                      except TypeError: pass
+              seed_counts={k:0 for k in totals}
+              def wrapped(obs):
+                  action=current.agent(obs)
+                  me=obs["farms"][obs["player"]]
+                  priv=obs["private"]
+                  shed=dict(priv.get("shed",{}))
+                  invs=[dict(x) for x in priv.get("inventories",[])]
+                  units=[me.get("farmer")]+list(me.get("hands",[]))
+                  acts=[action.get("farmer",["PASS"])]+list(action.get("hands",[]))
+                  while len(invs)<len(units): invs.append({})
+                  while len(acts)<len(units): acts.append(["PASS"])
+                  totals["turns"]+=1; seed_counts["turns"]+=1
+
+                  # DROP semantics: official DROP empties the whole carried inventory.
+                  for inv,a in zip(invs,acts):
+                      if isinstance(a,list) and a and a[0]=="DROP":
+                          totals["drop_actions"]+=1; seed_counts["drop_actions"]+=1
+                          # livestock/crop production-triggered DROP can also dump feed/animals.
+                          input_units=sum(inv.get(k,0) for k in ("COW","SHEEP","GOOSE"))
+                          # WHEAT is ambiguous: output and feed. Count it separately as mixed if other produce exists.
+                          non_wheat_produce=sum(inv.get(k,0) for k in ("MILK","WOOL","EGG","FERTILIZER","CARROT","TOMATO","STRAWBERRY","MELON"))
+                          wheat=inv.get("WHEAT",0)
+                          if non_wheat_produce>0 and (wheat>0 or input_units>0):
+                              totals["drop_with_mixed_inventory"]+=1; seed_counts["drop_with_mixed_inventory"]+=1
+                              totals["drop_input_units"]+=wheat+input_units; seed_counts["drop_input_units"]+=wheat+input_units
+
+                  # Atomic PLANT validation.
+                  demand={}
+                  for a in acts:
+                      if isinstance(a,list) and len(a)>=2 and a[0]=="PLANT":
+                          demand[a[1]]=demand.get(a[1],0)+1
+                  seeds=priv.get("seeds",{})
+                  blocked=sum(1 for crop,n in demand.items() if n>seeds.get(crop,0))
+                  totals["atomic_plant_block_crop_turns"]+=blocked; seed_counts["atomic_plant_block_crop_turns"]+=blocked
+
+                  # Reconstruct only shed-affecting unit actions before market, using official semantics.
+                  shed2=dict(shed)
+                  inv2=[dict(x) for x in invs]
+                  cap=100
+                  n=len(me["tiles"])
+                  h=n//2
+                  centers={(h-1,h-1),(h,h-1),(h-1,h),(h,h)}
+                  for idx,(pos,a) in enumerate(zip(units,acts)):
+                      if not isinstance(a,list) or not a or pos is None: continue
+                      x,y=pos
+                      op=a[0]
+                      if op=="DROP" and (x,y) in centers:
+                          for item,qty in list(inv2[idx].items()):
+                              room=max(0,cap-sum(shed2.values()))
+                              take=min(qty,room)
+                              if take>0: add_inv(shed2,item,take)
+                              inv2[idx].pop(item,None)
+                      elif op=="PICKUP" and (x,y) in centers and len(a)>=2:
+                          item=a[1]; req=int(a[2]) if len(a)>=3 else 1
+                          take=min(max(0,req),shed2.get(item,0))
+                          if take>0:
+                              add_inv(shed2,item,-take); add_inv(inv2[idx],item,take)
+                      elif op=="PLACE" and (x,y) in centers and len(a)>=2:
+                          # Only shed-path PLACE here. Structure placement does not change shed.
+                          tile=me["tiles"][y][x]
+                          item=a[1]
+                          animal_on_matching=isinstance(tile,dict) and item in ("COW","SHEEP","GOOSE") and tile.get("kind") in ("PASTURE","COOP") and not tile.get("animal")
+                          if not animal_on_matching:
+                              req=int(a[2]) if len(a)>=3 else 1
+                              take=min(max(0,req),inv2[idx].get(item,0),max(0,cap-sum(shed2.values())))
+                              if take>0:
+                                  add_inv(inv2[idx],item,-take); add_inv(shed2,item,take)
+
+                  for o in action.get("market",[]):
+                      if isinstance(o,list) and len(o)>=3 and o[0]=="SELL":
+                          totals["sell_orders"]+=1; seed_counts["sell_orders"]+=1
+                          req=max(0,int(o[2])); totals["sell_requested_units"]+=req; seed_counts["sell_requested_units"]+=req
+                          avail=shed2.get(o[1],0)
+                          if avail<req:
+                              totals["sell_pre_market_shortfall_orders"]+=1; seed_counts["sell_pre_market_shortfall_orders"]+=1
+                              diff=req-avail
+                              totals["sell_pre_market_shortfall_units"]+=diff; seed_counts["sell_pre_market_shortfall_units"]+=diff
+
+                  # Just before end of day, carried + shed above cap implies discard risk.
+                  if obs.get("hour")==23:
+                      combined=sum(shed2.values())+sum(sum(x.values()) for x in inv2)
+                      if combined>cap:
+                          totals["endday_overflow_risk_turns"]+=1; seed_counts["endday_overflow_risk_turns"]+=1
+                          totals["endday_overflow_risk_units"]+=combined-cap; seed_counts["endday_overflow_risk_units"]+=combined-cap
+
+                  return action
+
+              env=make("kaggriculture",configuration={"seed":seed},debug=False)
+              env.run([wrapped,opponent.agent])
+              rewards=[float(s.reward) for s in env.state]
+              rows.append({"seed":seed,"self":rewards[0],"opponent":rewards[1],"margin":rewards[0]-rewards[1],"counts":seed_counts})
+
+          out={"schema":"official-world-semantic-gap-v0","totals":totals,"seeds":rows,
+               "boundary":"descriptive reachability only; no causal attribution"}
+          open("official_world_semantic_gap_v0.json","w").write(json.dumps(out,indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+          python /tmp/probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-world-semantic-gap-v0
+          path: official_world_semantic_gap_v0.json
