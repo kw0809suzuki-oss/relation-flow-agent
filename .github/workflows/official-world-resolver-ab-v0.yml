@@ -1,0 +1,105 @@
+name: Official World Resolver A-B v0
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - experiment/official-world-resolver-v0
+    paths:
+      - .github/workflows/official-world-resolver-ab-v0.yml
+      - OFFICIAL_WORLD_RESOLVER_AB_RUN
+  workflow_dispatch:
+
+jobs:
+  battle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Prepare baseline and opponent
+        run: |
+          git worktree add /tmp/baseline origin/main
+          bash scripts/fetch_opponent.sh
+          mkdir -p /tmp/baseline/opponents
+          cp opponents/seyamalam_v21.py /tmp/baseline/opponents/
+      - name: Run paired battles
+        run: |
+          cat > /tmp/run_bundle.py <<'PY'
+          import importlib, json, statistics, sys
+          from pathlib import Path
+
+          root=Path(sys.argv[1]).resolve()
+          module_name=sys.argv[2]
+          label=sys.argv[3]
+          sys.path.insert(0,str(root))
+          sys.path.insert(0,str(root/'opponents'))
+          from kaggle_environments import make
+          current=importlib.import_module(module_name)
+          opponent=importlib.import_module('seyamalam_v21')
+          seeds=list(range(7001,7011))
+          rows=[]
+          for seed in seeds:
+              if hasattr(current,'reset_telemetry'): current.reset_telemetry()
+              for name in ('reset_telemetry','reset_trace','reset'):
+                  fn=getattr(opponent,name,None)
+                  if callable(fn):
+                      try: fn()
+                      except TypeError: pass
+              env=make('kaggriculture',configuration={'seed':seed},debug=False)
+              env.run([current.agent,opponent.agent])
+              rewards=[float(s.reward) for s in env.state]
+              rows.append({'seed':seed,'self':rewards[0],'opponent':rewards[1],'margin':rewards[0]-rewards[1]})
+          out={'label':label,'rows':rows}
+          Path(f'/tmp/{label}.json').write_text(json.dumps(out))
+          PY
+          python /tmp/run_bundle.py /tmp/baseline whole_flow_control_agent baseline
+          python /tmp/run_bundle.py "$GITHUB_WORKSPACE" official_resolved_agent candidate
+      - name: Aggregate
+        run: |
+          python - <<'PY'
+          import json, statistics
+          from pathlib import Path
+          b=json.loads(Path('/tmp/baseline.json').read_text())
+          c=json.loads(Path('/tmp/candidate.json').read_text())
+          pairs=[]
+          for br,cr in zip(b['rows'],c['rows']):
+              assert br['seed']==cr['seed']
+              pairs.append({
+                  'seed':br['seed'],
+                  'baseline_self':br['self'],
+                  'candidate_self':cr['self'],
+                  'delta_self':cr['self']-br['self'],
+                  'baseline_margin':br['margin'],
+                  'candidate_margin':cr['margin'],
+                  'delta_margin':cr['margin']-br['margin'],
+              })
+          out={
+              'schema':'official-world-resolver-ab-v0',
+              'battle_count':len(pairs),
+              'baseline_absolute_mean_self':statistics.mean(x['baseline_self'] for x in pairs),
+              'candidate_absolute_mean_self':statistics.mean(x['candidate_self'] for x in pairs),
+              'delta_mean_self':statistics.mean(x['delta_self'] for x in pairs),
+              'baseline_absolute_mean_margin':statistics.mean(x['baseline_margin'] for x in pairs),
+              'candidate_absolute_mean_margin':statistics.mean(x['candidate_margin'] for x in pairs),
+              'delta_mean_margin':statistics.mean(x['delta_margin'] for x in pairs),
+              'improved':sum(x['delta_self']>0 for x in pairs),
+              'worsened':sum(x['delta_self']<0 for x in pairs),
+              'equal':sum(x['delta_self']==0 for x in pairs),
+              'pairs':pairs,
+              'boundary':'terminal Battle evidence only; no automatic adoption'
+          }
+          Path('official_world_resolver_ab_v0.json').write_text(json.dumps(out,indent=2))
+          print(json.dumps(out,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-world-resolver-ab-v0
+          path: official_world_resolver_ab_v0.json
