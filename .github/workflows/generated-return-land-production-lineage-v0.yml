@@ -1,0 +1,66 @@
+name: Generated Return LAND Production Lineage v0
+permissions:
+  contents: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - .github/workflows/generated-return-land-production-lineage-v0.yml
+  workflow_dispatch:
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {seed: 7351, seat: 0}
+          - {seed: 7352, seat: 1}
+          - {seed: 7353, seat: 0}
+          - {seed: 7354, seat: 1}
+          - {seed: 7355, seat: 0}
+          - {seed: 7356, seat: 1}
+          - {seed: 7357, seat: 0}
+          - {seed: 7358, seat: 1}
+          - {seed: 7359, seat: 0}
+          - {seed: 7360, seat: 1}
+    env:
+      BATTLE_SEED: ${{ matrix.seed }}
+      BATTLE_SEAT: ${{ matrix.seat }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+      - run: python run_generated_return_land_production_lineage_v0.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-return-land-lineage-${{ matrix.seed }}
+          path: generated_return_land_production_lineage_v0_${{ matrix.seed }}_seat${{ matrix.seat }}.json
+  aggregate:
+    needs: observe
+    if: ${{ needs.observe.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: generated-return-land-lineage-*
+          path: generated-return-land-lineage-artifacts
+          merge-multiple: true
+      - run: python analyze_generated_return_land_production_lineage_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated_return_land_production_lineage_v0_result.json
+          git commit -m "Record generated Return LAND production lineage v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
