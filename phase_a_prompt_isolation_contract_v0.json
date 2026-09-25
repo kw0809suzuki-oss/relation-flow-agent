@@ -1,0 +1,78 @@
+{
+  "schema": "kaggriculture.phase-a-prompt-isolation.contract.v0",
+  "purpose": "Test instruction wording/structure while holding every non-prompt experimental condition fixed.",
+  "fixed": {
+    "input_artifact": "phase_a_prompt_state_fresh10_v0_aggregate.json",
+    "input_checkpoints": [
+      "4",
+      "8"
+    ],
+    "input_scope": "observable World State only",
+    "active_reference": "Baseline+WR02",
+    "seeds": [
+      8701,
+      8702,
+      8703,
+      8704,
+      8705,
+      8706,
+      8707,
+      8708,
+      8709,
+      8710
+    ],
+    "seats": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "allowed_choices": [
+      "hold",
+      "surface_first",
+      "throughput_first",
+      "engine_first"
+    ],
+    "output_schema": [
+      "choice",
+      "evidence",
+      "confidence"
+    ],
+    "outcome_runner": "run_phase_a_takeoff_fresh20_v0.py",
+    "evaluator": "analyze_phase_a_instruction_eval_fresh10_v0.py",
+    "metrics": [
+      "winner_hit_rate",
+      "mean_terminal_regret",
+      "mean_chosen_terminal_self",
+      "mean_delta_vs_hold"
+    ],
+    "prediction_commit_required_before_outcome": true,
+    "no_future_state": true,
+    "no_terminal_result_in_prompt": true
+  },
+  "variants": {
+    "v0_direction_picker": {
+      "prompt_text": "Objective: raise terminal self. Read the current observable World State and choose one growth direction: HOLD, SURFACE, THROUGHPUT, or ENGINE. Choose the direction that best fits the strongest current constraint. Do not use future information."
+    },
+    "v1_growth_continuation": {
+      "prompt_text": "Objective: raise terminal self. During Phase A, do not optimize a component in isolation. Keep growth connected. Read the current observable World State and decide what the returned value should become next so that a new productive state is established and can create the next Return. Do not begin by choosing LAND, workers, or production commitment as a category. First decide what conversion would keep the growth chain moving, then normalize to HOLD, SURFACE, THROUGHPUT, or ENGINE."
+    },
+    "v2_completion_contract": {
+      "prompt_text": "Objective: raise terminal self. A purchase or investment is not growth by itself. Count growth only when the investment can become an observable productive state capable of producing the next Return. Identify the next productive state worth completing, choose the direction with the fewest missing links, state the completion condition, and choose HOLD if no direction has a credible completion path. Normalize to HOLD, SURFACE, THROUGHPUT, or ENGINE."
+    },
+    "v3_world_gap_bridge": {
+      "prompt_text": "Objective: raise terminal self. Use the World as the reference plane. Compare self and opponent at the same observable State. Identify the next growth conversion the opponent has already established, or is positioned to establish, while self has not. Do not copy a specific crop, product, or action merely because it appears in the trace. Reproduce the missing function: connect current value to the next productive state. Normalize to HOLD, SURFACE, THROUGHPUT, or ENGINE."
+    }
+  },
+  "boundary": [
+    "Only variants.*.prompt_text may differ across instruction arms.",
+    "All fixed fields are single-source-of-truth and shared by every arm.",
+    "This contract does not guarantee deterministic model sampling; it guarantees code-side experimental isolation."
+  ]
+}
