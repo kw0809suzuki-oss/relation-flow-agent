@@ -1,0 +1,742 @@
+{
+  "schema": "kaggriculture.phase-a-growth-cycle.fresh20.result.v0",
+  "battle_count": 20,
+  "active_wr02": {
+    "absolute_mean_self": 31615.7,
+    "absolute_median_self": 31683.5,
+    "absolute_mean_opponent": 133684.0,
+    "absolute_mean_margin": -102068.3,
+    "wins": 0,
+    "min_self": 11048.0,
+    "max_self": 47175.0
+  },
+  "cycle": {
+    "absolute_mean_self": 32188.2,
+    "absolute_median_self": 35493.0,
+    "absolute_mean_opponent": 134229.25,
+    "absolute_mean_margin": -102041.05,
+    "wins": 0,
+    "min_self": 7937.0,
+    "max_self": 48697.0
+  },
+  "paired": {
+    "baseline_absolute_mean_self": 31615.7,
+    "candidate_absolute_mean_self": 32188.2,
+    "mean_delta_self": 572.5,
+    "median_delta_self": 2926.0,
+    "mean_delta_margin": 27.25,
+    "improved_cases": 12,
+    "worsened_cases": 8,
+    "equal_cases": 0,
+    "min_delta_self": -26271.0,
+    "max_delta_self": 21057.0
+  },
+  "stage_turns": {
+    "engine": 5461,
+    "throughput": 14,
+    "surface": 285,
+    "hold": 8620
+  },
+  "transition_reasons": {
+    "productive_occupancy_reached": 10,
+    "throughput_target_reached": 10,
+    "new_surface_realized": 10
+  },
+  "cases": [
+    {
+      "seed": 8601,
+      "seat": 0,
+      "active_wr02_self": 19960.0,
+      "cycle_self": 29873.0,
+      "delta_self": 9913.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1126.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1153.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 933.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8602,
+      "seat": 1,
+      "active_wr02_self": 11048.0,
+      "cycle_self": 7937.0,
+      "delta_self": -3111.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8603,
+      "seat": 0,
+      "active_wr02_self": 37106.0,
+      "cycle_self": 24197.0,
+      "delta_self": -12909.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8604,
+      "seat": 1,
+      "active_wr02_self": 40525.0,
+      "cycle_self": 45582.0,
+      "delta_self": 5057.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8605,
+      "seat": 0,
+      "active_wr02_self": 15166.0,
+      "cycle_self": 11188.0,
+      "delta_self": -3978.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8606,
+      "seat": 1,
+      "active_wr02_self": 33941.0,
+      "cycle_self": 35783.0,
+      "delta_self": 1842.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8607,
+      "seat": 0,
+      "active_wr02_self": 28662.0,
+      "cycle_self": 41746.0,
+      "delta_self": 13084.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1100.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1125.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 996.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8608,
+      "seat": 1,
+      "active_wr02_self": 14366.0,
+      "cycle_self": 22087.0,
+      "delta_self": 7721.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8609,
+      "seat": 0,
+      "active_wr02_self": 44687.0,
+      "cycle_self": 48697.0,
+      "delta_self": 4010.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1104.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1129.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 953.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8610,
+      "seat": 1,
+      "active_wr02_self": 20136.0,
+      "cycle_self": 11858.0,
+      "delta_self": -8278.0,
+      "stage_turns": {
+        "engine": 259,
+        "throughput": 5,
+        "surface": 24,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1159.0
+          }
+        },
+        {
+          "day": 7,
+          "hour": 4,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 798.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 21,
+            "unlocked": 50,
+            "occupancy": 0.42,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 1027.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8611,
+      "seat": 0,
+      "active_wr02_self": 40192.0,
+      "cycle_self": 13921.0,
+      "delta_self": -26271.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8612,
+      "seat": 1,
+      "active_wr02_self": 45985.0,
+      "cycle_self": 37876.0,
+      "delta_self": -8109.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8613,
+      "seat": 0,
+      "active_wr02_self": 30333.0,
+      "cycle_self": 35013.0,
+      "delta_self": 4680.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1127.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1154.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 935.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8614,
+      "seat": 1,
+      "active_wr02_self": 47175.0,
+      "cycle_self": 21552.0,
+      "delta_self": -25623.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1126.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1153.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 921.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8615,
+      "seat": 0,
+      "active_wr02_self": 30886.0,
+      "cycle_self": 35203.0,
+      "delta_self": 4317.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1126.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1153.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 933.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8616,
+      "seat": 1,
+      "active_wr02_self": 27808.0,
+      "cycle_self": 42477.0,
+      "delta_self": 14669.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1126.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1153.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 921.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8617,
+      "seat": 0,
+      "active_wr02_self": 45791.0,
+      "cycle_self": 45145.0,
+      "delta_self": -646.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1127.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1154.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 974.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8618,
+      "seat": 1,
+      "active_wr02_self": 32481.0,
+      "cycle_self": 46033.0,
+      "delta_self": 13552.0,
+      "stage_turns": {
+        "engine": 258,
+        "throughput": 1,
+        "surface": 29,
+        "hold": 431
+      },
+      "transitions": [
+        {
+          "day": 6,
+          "hour": 22,
+          "to": "throughput",
+          "reason": "productive_occupancy_reached",
+          "outer_state": {
+            "productive": 18,
+            "unlocked": 25,
+            "occupancy": 0.72,
+            "workers": 5,
+            "quadrants": 1,
+            "cash": 1100.0
+          }
+        },
+        {
+          "day": 6,
+          "hour": 23,
+          "to": "surface",
+          "reason": "throughput_target_reached",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 25,
+            "occupancy": 0.76,
+            "workers": 6,
+            "quadrants": 1,
+            "cash": 1125.0
+          }
+        },
+        {
+          "day": 8,
+          "hour": 4,
+          "to": "engine",
+          "reason": "new_surface_realized",
+          "outer_state": {
+            "productive": 19,
+            "unlocked": 50,
+            "occupancy": 0.38,
+            "workers": 5,
+            "quadrants": 2,
+            "cash": 947.0
+          }
+        }
+      ]
+    },
+    {
+      "seed": 8619,
+      "seat": 0,
+      "active_wr02_self": 24105.0,
+      "cycle_self": 45162.0,
+      "delta_self": 21057.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    },
+    {
+      "seed": 8620,
+      "seat": 1,
+      "active_wr02_self": 41961.0,
+      "cycle_self": 42434.0,
+      "delta_self": 473.0,
+      "stage_turns": {
+        "engine": 288,
+        "hold": 431
+      },
+      "transitions": []
+    }
+  ],
+  "boundary": [
+    "Terminal self is the adoption gate.",
+    "Stage telemetry is descriptive only.",
+    "A non-positive result closes this Growth Cycle v0, not the Phase A objective."
+  ]
+}
