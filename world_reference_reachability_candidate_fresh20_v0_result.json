@@ -1,0 +1,536 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.world-reference-reachability-candidate.fresh20.result.v0",
+  "battle_count": 20,
+  "seed_range": [
+    8201,
+    8220
+  ],
+  "terminal_self": {
+    "baseline_absolute_mean": 29838.35,
+    "candidate_absolute_mean": 30179.55,
+    "delta_mean": 341.2,
+    "delta_median": 329.0,
+    "delta_min": -1567.0,
+    "delta_max": 2985.0,
+    "improved_cases": 14,
+    "worsened_cases": 6,
+    "equal_cases": 0,
+    "by_seed": {
+      "8201": -492.0,
+      "8202": -679.0,
+      "8203": 245.0,
+      "8204": 700.0,
+      "8205": 881.0,
+      "8206": 389.0,
+      "8207": 1033.0,
+      "8208": -1567.0,
+      "8209": 1135.0,
+      "8210": 269.0,
+      "8211": 1389.0,
+      "8212": 2985.0,
+      "8213": -172.0,
+      "8214": -1422.0,
+      "8215": 88.0,
+      "8216": 1093.0,
+      "8217": 690.0,
+      "8218": -221.0,
+      "8219": 421.0,
+      "8220": 59.0
+    }
+  },
+  "terminal_margin": {
+    "baseline_absolute_mean": -100167.25,
+    "candidate_absolute_mean": -100382.8,
+    "delta_mean": -215.55
+  },
+  "connection": {
+    "reopened_orders_total": 468,
+    "reopened_orders_mean": 23.4,
+    "cases_with_reopening": 20,
+    "reopened_by_key_total": {
+      "BUY_SEED:MELON": 1,
+      "BUY_SEED:STRAWBERRY": 24,
+      "BUY_SEED:WHEAT": 443
+    }
+  },
+  "cases": [
+    {
+      "seed": 8201,
+      "seat": 0,
+      "baseline": {
+        "self": 37045.0,
+        "opponent": 161036.0,
+        "margin": -123991.0
+      },
+      "candidate": {
+        "self": 36553.0,
+        "opponent": 159097.0,
+        "margin": -122544.0
+      },
+      "delta": {
+        "self": -492.0,
+        "opponent": -1939.0,
+        "margin": 1447.0
+      },
+      "reopened_orders": 24,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 24
+      }
+    },
+    {
+      "seed": 8202,
+      "seat": 1,
+      "baseline": {
+        "self": 30493.0,
+        "opponent": 121589.0,
+        "margin": -91096.0
+      },
+      "candidate": {
+        "self": 29814.0,
+        "opponent": 118963.0,
+        "margin": -89149.0
+      },
+      "delta": {
+        "self": -679.0,
+        "opponent": -2626.0,
+        "margin": 1947.0
+      },
+      "reopened_orders": 27,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 24,
+        "BUY_SEED:STRAWBERRY": 3
+      }
+    },
+    {
+      "seed": 8203,
+      "seat": 0,
+      "baseline": {
+        "self": 14097.0,
+        "opponent": 99848.0,
+        "margin": -85751.0
+      },
+      "candidate": {
+        "self": 14342.0,
+        "opponent": 108272.0,
+        "margin": -93930.0
+      },
+      "delta": {
+        "self": 245.0,
+        "opponent": 8424.0,
+        "margin": -8179.0
+      },
+      "reopened_orders": 26,
+      "reopened_by_key": {
+        "BUY_SEED:STRAWBERRY": 3,
+        "BUY_SEED:WHEAT": 23
+      }
+    },
+    {
+      "seed": 8204,
+      "seat": 1,
+      "baseline": {
+        "self": 16814.0,
+        "opponent": 103028.0,
+        "margin": -86214.0
+      },
+      "candidate": {
+        "self": 17514.0,
+        "opponent": 103656.0,
+        "margin": -86142.0
+      },
+      "delta": {
+        "self": 700.0,
+        "opponent": 628.0,
+        "margin": 72.0
+      },
+      "reopened_orders": 22,
+      "reopened_by_key": {
+        "BUY_SEED:STRAWBERRY": 3,
+        "BUY_SEED:WHEAT": 19
+      }
+    },
+    {
+      "seed": 8205,
+      "seat": 0,
+      "baseline": {
+        "self": 19683.0,
+        "opponent": 104794.0,
+        "margin": -85111.0
+      },
+      "candidate": {
+        "self": 20564.0,
+        "opponent": 107513.0,
+        "margin": -86949.0
+      },
+      "delta": {
+        "self": 881.0,
+        "opponent": 2719.0,
+        "margin": -1838.0
+      },
+      "reopened_orders": 23,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 21,
+        "BUY_SEED:MELON": 1,
+        "BUY_SEED:STRAWBERRY": 1
+      }
+    },
+    {
+      "seed": 8206,
+      "seat": 1,
+      "baseline": {
+        "self": 11848.0,
+        "opponent": 84085.0,
+        "margin": -72237.0
+      },
+      "candidate": {
+        "self": 12237.0,
+        "opponent": 82797.0,
+        "margin": -70560.0
+      },
+      "delta": {
+        "self": 389.0,
+        "opponent": -1288.0,
+        "margin": 1677.0
+      },
+      "reopened_orders": 26,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 24,
+        "BUY_SEED:STRAWBERRY": 2
+      }
+    },
+    {
+      "seed": 8207,
+      "seat": 0,
+      "baseline": {
+        "self": 33927.0,
+        "opponent": 132837.0,
+        "margin": -98910.0
+      },
+      "candidate": {
+        "self": 34960.0,
+        "opponent": 134332.0,
+        "margin": -99372.0
+      },
+      "delta": {
+        "self": 1033.0,
+        "opponent": 1495.0,
+        "margin": -462.0
+      },
+      "reopened_orders": 28,
+      "reopened_by_key": {
+        "BUY_SEED:STRAWBERRY": 3,
+        "BUY_SEED:WHEAT": 25
+      }
+    },
+    {
+      "seed": 8208,
+      "seat": 1,
+      "baseline": {
+        "self": 45830.0,
+        "opponent": 173959.0,
+        "margin": -128129.0
+      },
+      "candidate": {
+        "self": 44263.0,
+        "opponent": 172144.0,
+        "margin": -127881.0
+      },
+      "delta": {
+        "self": -1567.0,
+        "opponent": -1815.0,
+        "margin": 248.0
+      },
+      "reopened_orders": 21,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 21
+      }
+    },
+    {
+      "seed": 8209,
+      "seat": 0,
+      "baseline": {
+        "self": 10286.0,
+        "opponent": 100072.0,
+        "margin": -89786.0
+      },
+      "candidate": {
+        "self": 11421.0,
+        "opponent": 103888.0,
+        "margin": -92467.0
+      },
+      "delta": {
+        "self": 1135.0,
+        "opponent": 3816.0,
+        "margin": -2681.0
+      },
+      "reopened_orders": 22,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 22
+      }
+    },
+    {
+      "seed": 8210,
+      "seat": 1,
+      "baseline": {
+        "self": 34950.0,
+        "opponent": 156638.0,
+        "margin": -121688.0
+      },
+      "candidate": {
+        "self": 35219.0,
+        "opponent": 152464.0,
+        "margin": -117245.0
+      },
+      "delta": {
+        "self": 269.0,
+        "opponent": -4174.0,
+        "margin": 4443.0
+      },
+      "reopened_orders": 28,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 25,
+        "BUY_SEED:STRAWBERRY": 3
+      }
+    },
+    {
+      "seed": 8211,
+      "seat": 0,
+      "baseline": {
+        "self": 41671.0,
+        "opponent": 127075.0,
+        "margin": -85404.0
+      },
+      "candidate": {
+        "self": 43060.0,
+        "opponent": 133468.0,
+        "margin": -90408.0
+      },
+      "delta": {
+        "self": 1389.0,
+        "opponent": 6393.0,
+        "margin": -5004.0
+      },
+      "reopened_orders": 26,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 24,
+        "BUY_SEED:STRAWBERRY": 2
+      }
+    },
+    {
+      "seed": 8212,
+      "seat": 1,
+      "baseline": {
+        "self": 24670.0,
+        "opponent": 72856.0,
+        "margin": -48186.0
+      },
+      "candidate": {
+        "self": 27655.0,
+        "opponent": 78423.0,
+        "margin": -50768.0
+      },
+      "delta": {
+        "self": 2985.0,
+        "opponent": 5567.0,
+        "margin": -2582.0
+      },
+      "reopened_orders": 25,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 25
+      }
+    },
+    {
+      "seed": 8213,
+      "seat": 0,
+      "baseline": {
+        "self": 42252.0,
+        "opponent": 166795.0,
+        "margin": -124543.0
+      },
+      "candidate": {
+        "self": 42080.0,
+        "opponent": 168242.0,
+        "margin": -126162.0
+      },
+      "delta": {
+        "self": -172.0,
+        "opponent": 1447.0,
+        "margin": -1619.0
+      },
+      "reopened_orders": 21,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 21
+      }
+    },
+    {
+      "seed": 8214,
+      "seat": 1,
+      "baseline": {
+        "self": 21500.0,
+        "opponent": 135999.0,
+        "margin": -114499.0
+      },
+      "candidate": {
+        "self": 20078.0,
+        "opponent": 133565.0,
+        "margin": -113487.0
+      },
+      "delta": {
+        "self": -1422.0,
+        "opponent": -2434.0,
+        "margin": 1012.0
+      },
+      "reopened_orders": 24,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 24
+      }
+    },
+    {
+      "seed": 8215,
+      "seat": 0,
+      "baseline": {
+        "self": 14463.0,
+        "opponent": 121887.0,
+        "margin": -107424.0
+      },
+      "candidate": {
+        "self": 14551.0,
+        "opponent": 122511.0,
+        "margin": -107960.0
+      },
+      "delta": {
+        "self": 88.0,
+        "opponent": 624.0,
+        "margin": -536.0
+      },
+      "reopened_orders": 27,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 25,
+        "BUY_SEED:STRAWBERRY": 2
+      }
+    },
+    {
+      "seed": 8216,
+      "seat": 1,
+      "baseline": {
+        "self": 34107.0,
+        "opponent": 119652.0,
+        "margin": -85545.0
+      },
+      "candidate": {
+        "self": 35200.0,
+        "opponent": 112397.0,
+        "margin": -77197.0
+      },
+      "delta": {
+        "self": 1093.0,
+        "opponent": -7255.0,
+        "margin": 8348.0
+      },
+      "reopened_orders": 24,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 24
+      }
+    },
+    {
+      "seed": 8217,
+      "seat": 0,
+      "baseline": {
+        "self": 26308.0,
+        "opponent": 129665.0,
+        "margin": -103357.0
+      },
+      "candidate": {
+        "self": 26998.0,
+        "opponent": 131577.0,
+        "margin": -104579.0
+      },
+      "delta": {
+        "self": 690.0,
+        "opponent": 1912.0,
+        "margin": -1222.0
+      },
+      "reopened_orders": 17,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 17
+      }
+    },
+    {
+      "seed": 8218,
+      "seat": 1,
+      "baseline": {
+        "self": 49872.0,
+        "opponent": 180706.0,
+        "margin": -130834.0
+      },
+      "candidate": {
+        "self": 49651.0,
+        "opponent": 181423.0,
+        "margin": -131772.0
+      },
+      "delta": {
+        "self": -221.0,
+        "opponent": 717.0,
+        "margin": -938.0
+      },
+      "reopened_orders": 21,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 21
+      }
+    },
+    {
+      "seed": 8219,
+      "seat": 0,
+      "baseline": {
+        "self": 42995.0,
+        "opponent": 166173.0,
+        "margin": -123178.0
+      },
+      "candidate": {
+        "self": 43416.0,
+        "opponent": 166065.0,
+        "margin": -122649.0
+      },
+      "delta": {
+        "self": 421.0,
+        "opponent": -108.0,
+        "margin": 529.0
+      },
+      "reopened_orders": 18,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 17,
+        "BUY_SEED:STRAWBERRY": 1
+      }
+    },
+    {
+      "seed": 8220,
+      "seat": 1,
+      "baseline": {
+        "self": 43956.0,
+        "opponent": 141418.0,
+        "margin": -97462.0
+      },
+      "candidate": {
+        "self": 44015.0,
+        "opponent": 140450.0,
+        "margin": -96435.0
+      },
+      "delta": {
+        "self": 59.0,
+        "opponent": -968.0,
+        "margin": 1027.0
+      },
+      "reopened_orders": 18,
+      "reopened_by_key": {
+        "BUY_SEED:WHEAT": 17,
+        "BUY_SEED:STRAWBERRY": 1
+      }
+    }
+  ],
+  "boundary": [
+    "This is independent fresh20 validation of the unchanged Candidate v0.",
+    "No trigger, threshold, product selection, or policy logic was changed after the fixed-five result.",
+    "Candidate retains only native BUY_SEED / BUY_ANIMAL orders that are terminal-reachable by public first-output schedule.",
+    "Terminal self is the primary adoption criterion."
+  ]
+}
