@@ -1,0 +1,2359 @@
+{
+  "schema": "kaggriculture.phase-a-outer-state-label-audit.result.v0",
+  "battle_count": 20,
+  "label_counts": {
+    "surface_first": 4,
+    "throughput_first": 6,
+    "engine_first": 7,
+    "hold": 3
+  },
+  "features": [
+    "cash",
+    "quadrants",
+    "unlocked_tiles",
+    "empty_tiles",
+    "productive_tiles",
+    "plants",
+    "animals",
+    "workers",
+    "productive_occupancy",
+    "productive_per_worker",
+    "seed_total"
+  ],
+  "group_summary": {
+    "0": {
+      "surface_first": {
+        "n": 4,
+        "features": {
+          "cash": {
+            "mean": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "productive_tiles": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "plants": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "animals": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "productive_per_worker": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "seed_total": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "throughput_first": {
+        "n": 6,
+        "features": {
+          "cash": {
+            "mean": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "productive_tiles": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "plants": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "animals": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "productive_per_worker": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "seed_total": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "engine_first": {
+        "n": 7,
+        "features": {
+          "cash": {
+            "mean": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "productive_tiles": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "plants": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "animals": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "productive_per_worker": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "seed_total": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "hold": {
+        "n": 3,
+        "features": {
+          "cash": {
+            "mean": 3000.0,
+            "min": 3000.0,
+            "max": 3000.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "productive_tiles": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "plants": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "animals": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "productive_per_worker": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "seed_total": {
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      }
+    },
+    "4": {
+      "surface_first": {
+        "n": 4,
+        "features": {
+          "cash": {
+            "mean": 1127.0,
+            "min": 1127.0,
+            "max": 1127.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 9.0,
+            "min": 9.0,
+            "max": 9.0
+          },
+          "productive_tiles": {
+            "mean": 15.0,
+            "min": 15.0,
+            "max": 15.0
+          },
+          "plants": {
+            "mean": 13.0,
+            "min": 13.0,
+            "max": 13.0
+          },
+          "animals": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.6,
+            "min": 0.6,
+            "max": 0.6
+          },
+          "productive_per_worker": {
+            "mean": 15.0,
+            "min": 15.0,
+            "max": 15.0
+          },
+          "seed_total": {
+            "mean": 10.0,
+            "min": 10.0,
+            "max": 10.0
+          }
+        }
+      },
+      "throughput_first": {
+        "n": 6,
+        "features": {
+          "cash": {
+            "mean": 1143.6666666666667,
+            "min": 1127.0,
+            "max": 1227.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 9.0,
+            "min": 8.0,
+            "max": 10.0
+          },
+          "productive_tiles": {
+            "mean": 14.833333333333334,
+            "min": 14.0,
+            "max": 15.0
+          },
+          "plants": {
+            "mean": 12.833333333333334,
+            "min": 12.0,
+            "max": 13.0
+          },
+          "animals": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.5933333333333334,
+            "min": 0.56,
+            "max": 0.6
+          },
+          "productive_per_worker": {
+            "mean": 14.833333333333334,
+            "min": 14.0,
+            "max": 15.0
+          },
+          "seed_total": {
+            "mean": 10.166666666666666,
+            "min": 10.0,
+            "max": 11.0
+          }
+        }
+      },
+      "engine_first": {
+        "n": 7,
+        "features": {
+          "cash": {
+            "mean": 1112.7142857142858,
+            "min": 1027.0,
+            "max": 1127.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 9.142857142857142,
+            "min": 9.0,
+            "max": 10.0
+          },
+          "productive_tiles": {
+            "mean": 14.857142857142858,
+            "min": 14.0,
+            "max": 15.0
+          },
+          "plants": {
+            "mean": 12.857142857142858,
+            "min": 12.0,
+            "max": 13.0
+          },
+          "animals": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.5942857142857143,
+            "min": 0.56,
+            "max": 0.6
+          },
+          "productive_per_worker": {
+            "mean": 14.857142857142858,
+            "min": 14.0,
+            "max": 15.0
+          },
+          "seed_total": {
+            "mean": 10.142857142857142,
+            "min": 10.0,
+            "max": 11.0
+          }
+        }
+      },
+      "hold": {
+        "n": 3,
+        "features": {
+          "cash": {
+            "mean": 1127.0,
+            "min": 1127.0,
+            "max": 1127.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 9.0,
+            "min": 9.0,
+            "max": 9.0
+          },
+          "productive_tiles": {
+            "mean": 15.0,
+            "min": 15.0,
+            "max": 15.0
+          },
+          "plants": {
+            "mean": 13.0,
+            "min": 13.0,
+            "max": 13.0
+          },
+          "animals": {
+            "mean": 2.0,
+            "min": 2.0,
+            "max": 2.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.6,
+            "min": 0.6,
+            "max": 0.6
+          },
+          "productive_per_worker": {
+            "mean": 15.0,
+            "min": 15.0,
+            "max": 15.0
+          },
+          "seed_total": {
+            "mean": 10.0,
+            "min": 10.0,
+            "max": 10.0
+          }
+        }
+      }
+    },
+    "8": {
+      "surface_first": {
+        "n": 4,
+        "features": {
+          "cash": {
+            "mean": 906.0,
+            "min": 902.0,
+            "max": 911.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 5.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "productive_tiles": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "plants": {
+            "mean": 14.0,
+            "min": 14.0,
+            "max": 14.0
+          },
+          "animals": {
+            "mean": 4.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.72,
+            "min": 0.72,
+            "max": 0.72
+          },
+          "productive_per_worker": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "seed_total": {
+            "mean": 13.0,
+            "min": 13.0,
+            "max": 13.0
+          }
+        }
+      },
+      "throughput_first": {
+        "n": 6,
+        "features": {
+          "cash": {
+            "mean": 928.6666666666666,
+            "min": 886.0,
+            "max": 982.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 5.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "productive_tiles": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "plants": {
+            "mean": 14.0,
+            "min": 14.0,
+            "max": 14.0
+          },
+          "animals": {
+            "mean": 4.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.7200000000000001,
+            "min": 0.72,
+            "max": 0.72
+          },
+          "productive_per_worker": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "seed_total": {
+            "mean": 13.5,
+            "min": 13.0,
+            "max": 16.0
+          }
+        }
+      },
+      "engine_first": {
+        "n": 7,
+        "features": {
+          "cash": {
+            "mean": 953.1428571428571,
+            "min": 886.0,
+            "max": 1086.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 4.857142857142857,
+            "min": 4.0,
+            "max": 5.0
+          },
+          "productive_tiles": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "plants": {
+            "mean": 14.0,
+            "min": 14.0,
+            "max": 14.0
+          },
+          "animals": {
+            "mean": 4.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.72,
+            "min": 0.72,
+            "max": 0.72
+          },
+          "productive_per_worker": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "seed_total": {
+            "mean": 12.428571428571429,
+            "min": 11.0,
+            "max": 13.0
+          }
+        }
+      },
+      "hold": {
+        "n": 3,
+        "features": {
+          "cash": {
+            "mean": 909.6666666666666,
+            "min": 909.0,
+            "max": 911.0
+          },
+          "quadrants": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "unlocked_tiles": {
+            "mean": 25.0,
+            "min": 25.0,
+            "max": 25.0
+          },
+          "empty_tiles": {
+            "mean": 4.666666666666667,
+            "min": 4.0,
+            "max": 5.0
+          },
+          "productive_tiles": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "plants": {
+            "mean": 14.0,
+            "min": 14.0,
+            "max": 14.0
+          },
+          "animals": {
+            "mean": 4.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "workers": {
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "productive_occupancy": {
+            "mean": 0.7200000000000001,
+            "min": 0.72,
+            "max": 0.72
+          },
+          "productive_per_worker": {
+            "mean": 18.0,
+            "min": 18.0,
+            "max": 18.0
+          },
+          "seed_total": {
+            "mean": 13.0,
+            "min": 13.0,
+            "max": 13.0
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 8401,
+      "seat": 0,
+      "winner": "surface_first",
+      "terminal_self_by_direction": {
+        "hold": 17890.0,
+        "surface_first": 32284.0,
+        "throughput_first": 18124.0,
+        "engine_first": 11834.0
+      },
+      "best_delta_vs_hold": 14394.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 909.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8402,
+      "seat": 1,
+      "winner": "throughput_first",
+      "terminal_self_by_direction": {
+        "hold": 6958.0,
+        "surface_first": 7939.0,
+        "throughput_first": 11629.0,
+        "engine_first": 6111.0
+      },
+      "best_delta_vs_hold": 4671.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 10,
+          "productive_tiles": 14,
+          "plants": 12,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.56,
+          "productive_per_worker": 14.0,
+          "seed_total": 11,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 982.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8403,
+      "seat": 0,
+      "winner": "surface_first",
+      "terminal_self_by_direction": {
+        "hold": 36062.0,
+        "surface_first": 48843.0,
+        "throughput_first": 44607.0,
+        "engine_first": 42101.0
+      },
+      "best_delta_vs_hold": 12781.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 902.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 7
+          }
+        }
+      }
+    },
+    {
+      "seed": 8404,
+      "seat": 1,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 22371.0,
+        "surface_first": 18922.0,
+        "throughput_first": 22318.0,
+        "engine_first": 42281.0
+      },
+      "best_delta_vs_hold": 19910.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 911.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8405,
+      "seat": 0,
+      "winner": "throughput_first",
+      "terminal_self_by_direction": {
+        "hold": 49972.0,
+        "surface_first": 39945.0,
+        "throughput_first": 51002.0,
+        "engine_first": 49163.0
+      },
+      "best_delta_vs_hold": 1030.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 902.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 7
+          }
+        }
+      }
+    },
+    {
+      "seed": 8406,
+      "seat": 1,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 23246.0,
+        "surface_first": 23246.0,
+        "throughput_first": 22627.0,
+        "engine_first": 27834.0
+      },
+      "best_delta_vs_hold": 4588.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1027.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 10,
+          "productive_tiles": 14,
+          "plants": 12,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.56,
+          "productive_per_worker": 14.0,
+          "seed_total": 11,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 909.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8407,
+      "seat": 0,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 13113.0,
+        "surface_first": 13116.0,
+        "throughput_first": 9735.0,
+        "engine_first": 21418.0
+      },
+      "best_delta_vs_hold": 8305.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 982.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 12,
+          "seed_by_crop": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8408,
+      "seat": 1,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 11087.0,
+        "surface_first": 13259.0,
+        "throughput_first": 11852.0,
+        "engine_first": 15543.0
+      },
+      "best_delta_vs_hold": 4456.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 1086.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 11,
+          "seed_by_crop": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8409,
+      "seat": 0,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 15126.0,
+        "surface_first": 13773.0,
+        "throughput_first": 17023.0,
+        "engine_first": 44573.0
+      },
+      "best_delta_vs_hold": 29447.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 982.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 12,
+          "seed_by_crop": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8410,
+      "seat": 1,
+      "winner": "throughput_first",
+      "terminal_self_by_direction": {
+        "hold": 41946.0,
+        "surface_first": 32925.0,
+        "throughput_first": 43716.0,
+        "engine_first": 41861.0
+      },
+      "best_delta_vs_hold": 1770.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 8,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 911.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 16,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8411,
+      "seat": 0,
+      "winner": "hold",
+      "terminal_self_by_direction": {
+        "hold": 50465.0,
+        "surface_first": 44174.0,
+        "throughput_first": 50397.0,
+        "engine_first": 44354.0
+      },
+      "best_delta_vs_hold": 0.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 909.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8412,
+      "seat": 1,
+      "winner": "hold",
+      "terminal_self_by_direction": {
+        "hold": 45212.0,
+        "surface_first": 36248.0,
+        "throughput_first": 43039.0,
+        "engine_first": 26152.0
+      },
+      "best_delta_vs_hold": 0.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 911.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 4,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8413,
+      "seat": 0,
+      "winner": "throughput_first",
+      "terminal_self_by_direction": {
+        "hold": 20558.0,
+        "surface_first": 36986.0,
+        "throughput_first": 43043.0,
+        "engine_first": 17086.0
+      },
+      "best_delta_vs_hold": 22485.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1227.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 982.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 5
+          }
+        }
+      }
+    },
+    {
+      "seed": 8414,
+      "seat": 1,
+      "winner": "throughput_first",
+      "terminal_self_by_direction": {
+        "hold": 37905.0,
+        "surface_first": 29953.0,
+        "throughput_first": 37937.0,
+        "engine_first": 25234.0
+      },
+      "best_delta_vs_hold": 32.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 909.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8415,
+      "seat": 0,
+      "winner": "hold",
+      "terminal_self_by_direction": {
+        "hold": 38086.0,
+        "surface_first": 9611.0,
+        "throughput_first": 38018.0,
+        "engine_first": 11952.0
+      },
+      "best_delta_vs_hold": 0.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 909.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8416,
+      "seat": 1,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 15916.0,
+        "surface_first": 16014.0,
+        "throughput_first": 15682.0,
+        "engine_first": 26612.0
+      },
+      "best_delta_vs_hold": 10696.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 916.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 4,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8417,
+      "seat": 0,
+      "winner": "engine_first",
+      "terminal_self_by_direction": {
+        "hold": 24176.0,
+        "surface_first": 19600.0,
+        "throughput_first": 18351.0,
+        "engine_first": 45485.0
+      },
+      "best_delta_vs_hold": 21309.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 886.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8418,
+      "seat": 1,
+      "winner": "throughput_first",
+      "terminal_self_by_direction": {
+        "hold": 33767.0,
+        "surface_first": 4083.0,
+        "throughput_first": 36697.0,
+        "engine_first": 13670.0
+      },
+      "best_delta_vs_hold": 2930.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 886.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    },
+    {
+      "seed": 8419,
+      "seat": 0,
+      "winner": "surface_first",
+      "terminal_self_by_direction": {
+        "hold": 43234.0,
+        "surface_first": 47211.0,
+        "throughput_first": 28821.0,
+        "engine_first": 24454.0
+      },
+      "best_delta_vs_hold": 3977.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 902.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 7
+          }
+        }
+      }
+    },
+    {
+      "seed": 8420,
+      "seat": 1,
+      "winner": "surface_first",
+      "terminal_self_by_direction": {
+        "hold": 15640.0,
+        "surface_first": 18909.0,
+        "throughput_first": 14798.0,
+        "engine_first": 10677.0
+      },
+      "best_delta_vs_hold": 3269.0,
+      "checkpoints": {
+        "0": {
+          "day": 0,
+          "hour": 0,
+          "cash": 3000.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 25,
+          "productive_tiles": 0,
+          "plants": 0,
+          "animals": 0,
+          "workers": 1,
+          "productive_occupancy": 0.0,
+          "productive_per_worker": 0.0,
+          "seed_total": 0,
+          "seed_by_crop": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          }
+        },
+        "4": {
+          "day": 4,
+          "hour": 0,
+          "cash": 1127.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 9,
+          "productive_tiles": 15,
+          "plants": 13,
+          "animals": 2,
+          "workers": 1,
+          "productive_occupancy": 0.6,
+          "productive_per_worker": 15.0,
+          "seed_total": 10,
+          "seed_by_crop": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6
+          }
+        },
+        "8": {
+          "day": 8,
+          "hour": 0,
+          "cash": 911.0,
+          "quadrants": 1,
+          "unlocked_tiles": 25,
+          "empty_tiles": 5,
+          "productive_tiles": 18,
+          "plants": 14,
+          "animals": 4,
+          "workers": 1,
+          "productive_occupancy": 0.72,
+          "productive_per_worker": 18.0,
+          "seed_total": 13,
+          "seed_by_crop": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 6
+          }
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "Labels come only from already-observed terminal self in the four-arm Phase A Battle.",
+    "Features come only from WR-02 self-visible outer State at Day0 / Day4 / Day8.",
+    "No classifier, threshold, policy rule, or causal claim is introduced here.",
+    "This audit asks only whether terminal-winning directions visibly occupy different outer-State regions."
+  ]
+}
