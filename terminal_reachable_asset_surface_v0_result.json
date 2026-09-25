@@ -13,21 +13,21 @@
   },
   "day20_committed_production_decomposition": {
     "ready": {
-      "self_absolute_mean": 2662.4,
+      "self_absolute_mean": 2500.4,
       "opponent_absolute_mean": 9580.0,
-      "mean_residual_opponent_minus_self": 6917.6,
+      "mean_residual_opponent_minus_self": 7079.6,
       "median_residual_opponent_minus_self": 8183.0,
       "opponent_ahead_cases": 5,
       "self_ahead_cases": 0,
       "equal_cases": 0,
-      "min_residual": 3807.0,
-      "max_residual": 8913.0,
+      "min_residual": 4611.0,
+      "max_residual": 8916.0,
       "by_seed": {
-        "7351": 8913.0,
+        "7351": 8916.0,
         "7352": 8552.0,
-        "7353": 3807.0,
+        "7353": 4611.0,
         "7354": 8183.0,
-        "7355": 5133.0
+        "7355": 5136.0
       }
     },
     "reachable": {
@@ -67,37 +67,37 @@
       }
     },
     "existing_committed_production": {
-      "self_absolute_mean": 8973.4,
+      "self_absolute_mean": 8811.4,
       "opponent_absolute_mean": 55243.6,
-      "mean_residual_opponent_minus_self": 46270.2,
+      "mean_residual_opponent_minus_self": 46432.2,
       "median_residual_opponent_minus_self": 46579.0,
       "opponent_ahead_cases": 5,
       "self_ahead_cases": 0,
       "equal_cases": 0,
-      "min_residual": 42118.0,
+      "min_residual": 42922.0,
       "max_residual": 50742.0,
       "by_seed": {
-        "7351": 48601.0,
+        "7351": 48604.0,
         "7352": 46579.0,
-        "7353": 42118.0,
+        "7353": 42922.0,
         "7354": 50742.0,
-        "7355": 43311.0
+        "7355": 43314.0
       }
     },
     "residual_reconstruction": {
-      "parts_sum": 46270.2,
-      "existing_total": 46270.2,
+      "parts_sum": 46432.2,
+      "existing_total": 46432.2,
       "error": 0.0
     },
-    "reachable_share_of_opponent_minus_self_committed_residual": 0.850495567341399,
+    "reachable_share_of_opponent_minus_self_committed_residual": 0.8475282239480361,
     "ready_plus_reachable_share_of_residual": 1.0
   },
   "asset_type_detail": {
     "COW": {
       "ready_mark": {
-        "self_absolute_mean": 1590.6,
+        "self_absolute_mean": 1428.6,
         "opponent_absolute_mean": 887.4,
-        "mean_residual_opponent_minus_self": -703.2
+        "mean_residual_opponent_minus_self": -541.2
       },
       "reachable_mark": {
         "self_absolute_mean": 2744.0,
@@ -189,11 +189,11 @@
         "margin": -107360.0
       },
       "self_summary": {
-        "ready_mark": 1558.0,
+        "ready_mark": 1555.0,
         "reachable_mark": 4473.0,
         "not_reachable_mark": 0.0,
-        "committed_mark_reconstructed": 6031.0,
-        "committed_mark_existing_basis": 6031.0,
+        "committed_mark_reconstructed": 6028.0,
+        "committed_mark_existing_basis": 6028.0,
         "decomposition_error_vs_existing_basis": 0.0
       },
       "opponent_summary": {
@@ -239,11 +239,11 @@
         "margin": -96842.0
       },
       "self_summary": {
-        "ready_mark": 5150.0,
+        "ready_mark": 4346.0,
         "reachable_mark": 11669.0,
         "not_reachable_mark": 0.0,
-        "committed_mark_reconstructed": 16819.0,
-        "committed_mark_existing_basis": 16819.0,
+        "committed_mark_reconstructed": 16015.0,
+        "committed_mark_existing_basis": 16015.0,
         "decomposition_error_vs_existing_basis": 0.0
       },
       "opponent_summary": {
@@ -289,11 +289,11 @@
         "margin": -91228.0
       },
       "self_summary": {
-        "ready_mark": 1186.0,
+        "ready_mark": 1183.0,
         "reachable_mark": 3696.0,
         "not_reachable_mark": 0.0,
-        "committed_mark_reconstructed": 4882.0,
-        "committed_mark_existing_basis": 4882.0,
+        "committed_mark_reconstructed": 4879.0,
+        "committed_mark_existing_basis": 4879.0,
         "decomposition_error_vs_existing_basis": 0.0
       },
       "opponent_summary": {
