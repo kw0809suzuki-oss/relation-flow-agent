@@ -45,6 +45,7 @@ def main():
     cmd=[totals["plant_command_units"]["by_seed"][str(r["seed"])] for r in rs]
     suc=[totals["successful_plant_units"]["by_seed"][str(r["seed"])] for r in rs]
 
+    dup=[int(r["delta"].get("duplicate_plant_commands",0)) for r in rs]
     payload={
         "schema":"kaggriculture.strong-origin-v2.wr01-purchase-plant-conversion-audit.result.v0",
         "battle_count":5,
@@ -54,8 +55,14 @@ def main():
         "connection_drop":{
             "purchase_to_plant_command_mean":mean([b-c for b,c in zip(buy,cmd)]),
             "plant_command_to_success_mean":mean([c-s for c,s in zip(cmd,suc)]),
+            "same_tile_duplicate_plant_delta_mean":mean(dup),
+            "same_tile_duplicate_share_of_command_success_drop":(
+                mean(dup)/mean([c-s for c,s in zip(cmd,suc)])
+                if mean([c-s for c,s in zip(cmd,suc)]) else None
+            ),
             "cases_purchase_gt_command":sum(b>c for b,c in zip(buy,cmd)),
             "cases_command_gt_success":sum(c>s for c,s in zip(cmd,suc)),
+            "cases_with_positive_duplicate_delta":sum(x>0 for x in dup),
         },
         "cases":[{
             "seed":r["seed"],
