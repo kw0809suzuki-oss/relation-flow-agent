@@ -1,0 +1,360 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.production-downstream-boundary-surface.result.v0",
+  "battle_count": 5,
+  "anchor": {
+    "day": 20,
+    "hour": 0,
+    "phase": "pre_market"
+  },
+  "terminal_absolute": {
+    "mean_self": 24042.8,
+    "mean_opponent": 128454.4,
+    "mean_margin": -104411.6
+  },
+  "boundary_surface": {
+    "committed_anchor": {
+      "self_absolute_mean": 8811.4,
+      "opponent_absolute_mean": 55243.6,
+      "mean_residual_opponent_minus_self": 46432.2,
+      "median_residual_opponent_minus_self": 46579.0,
+      "min_residual": 42922.0,
+      "max_residual": 50742.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 48604.0,
+        "7352": 46579.0,
+        "7353": 42922.0,
+        "7354": 50742.0,
+        "7355": 43314.0
+      }
+    },
+    "anchor_ready": {
+      "self_absolute_mean": 2500.4,
+      "opponent_absolute_mean": 9580.0,
+      "mean_residual_opponent_minus_self": 7079.6,
+      "median_residual_opponent_minus_self": 8183.0,
+      "min_residual": 4611.0,
+      "max_residual": 8916.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 8916.0,
+        "7352": 8552.0,
+        "7353": 4611.0,
+        "7354": 8183.0,
+        "7355": 5136.0
+      }
+    },
+    "output_reached_by_terminal": {
+      "self_absolute_mean": 7374.6,
+      "opponent_absolute_mean": 50803.0,
+      "mean_residual_opponent_minus_self": 43428.4,
+      "median_residual_opponent_minus_self": 43271.0,
+      "min_residual": 39999.0,
+      "max_residual": 47263.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 45398.0,
+        "7352": 43271.0,
+        "7353": 41211.0,
+        "7354": 47263.0,
+        "7355": 39999.0
+      }
+    },
+    "harvested_from_anchor_assets": {
+      "self_absolute_mean": 7374.6,
+      "opponent_absolute_mean": 50361.4,
+      "mean_residual_opponent_minus_self": 42986.8,
+      "median_residual_opponent_minus_self": 42873.0,
+      "min_residual": 39513.0,
+      "max_residual": 46833.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 44940.0,
+        "7352": 42873.0,
+        "7353": 40775.0,
+        "7354": 46833.0,
+        "7355": 39513.0
+      }
+    },
+    "not_reached_by_terminal": {
+      "self_absolute_mean": 1436.8,
+      "opponent_absolute_mean": 4440.6,
+      "mean_residual_opponent_minus_self": 3003.8,
+      "median_residual_opponent_minus_self": 3308.0,
+      "min_residual": 1711.0,
+      "max_residual": 3479.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 3206.0,
+        "7352": 3308.0,
+        "7353": 1711.0,
+        "7354": 3479.0,
+        "7355": 3315.0
+      }
+    },
+    "reached_but_not_harvested": {
+      "self_absolute_mean": 0.0,
+      "opponent_absolute_mean": 441.6,
+      "mean_residual_opponent_minus_self": 441.6,
+      "median_residual_opponent_minus_self": 436.0,
+      "min_residual": 398.0,
+      "max_residual": 486.0,
+      "opponent_ahead_cases": 5,
+      "self_ahead_cases": 0,
+      "equal_cases": 0,
+      "by_seed": {
+        "7351": 458.0,
+        "7352": 398.0,
+        "7353": 436.0,
+        "7354": 430.0,
+        "7355": 486.0
+      }
+    },
+    "residual_retention": {
+      "output_reached_over_committed": 0.9353078251730481,
+      "harvested_over_output_reached": 0.9898315388087059,
+      "harvested_over_committed": 0.9257971838508623
+    },
+    "residual_change": {
+      "committed_to_output_reached": -3003.7999999999956,
+      "output_reached_to_harvested": -441.59999999999854
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 6028.0,
+        "anchor_ready_mark": 1555.0,
+        "output_reached_mark_same_basis": 5058.0,
+        "harvested_mark_same_basis": 5058.0,
+        "not_reached_mark_same_basis": 970.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 43,
+        "asset_count": 19,
+        "active_asset_count_at_terminal": 6
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 54632.0,
+        "anchor_ready_mark": 10471.0,
+        "output_reached_mark_same_basis": 50456.0,
+        "harvested_mark_same_basis": 49998.0,
+        "not_reached_mark_same_basis": 4176.0,
+        "reached_unharvested_mark_same_basis": 458.0,
+        "extra_output_units_beyond_anchor_basis": 211,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 4221.0,
+        "anchor_ready_mark": 1211.0,
+        "output_reached_mark_same_basis": 3390.0,
+        "harvested_mark_same_basis": 3390.0,
+        "not_reached_mark_same_basis": 831.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 38,
+        "asset_count": 18,
+        "active_asset_count_at_terminal": 8
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 50800.0,
+        "anchor_ready_mark": 9763.0,
+        "output_reached_mark_same_basis": 46661.0,
+        "harvested_mark_same_basis": 46263.0,
+        "not_reached_mark_same_basis": 4139.0,
+        "reached_unharvested_mark_same_basis": 398.0,
+        "extra_output_units_beyond_anchor_basis": 211,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 16015.0,
+        "anchor_ready_mark": 4346.0,
+        "output_reached_mark_same_basis": 12808.0,
+        "harvested_mark_same_basis": 12808.0,
+        "not_reached_mark_same_basis": 3207.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 39,
+        "asset_count": 16,
+        "active_asset_count_at_terminal": 10
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 58937.0,
+        "anchor_ready_mark": 8957.0,
+        "output_reached_mark_same_basis": 54019.0,
+        "harvested_mark_same_basis": 53583.0,
+        "not_reached_mark_same_basis": 4918.0,
+        "reached_unharvested_mark_same_basis": 436.0,
+        "extra_output_units_beyond_anchor_basis": 183,
+        "asset_count": 64,
+        "active_asset_count_at_terminal": 17
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 12914.0,
+        "anchor_ready_mark": 4207.0,
+        "output_reached_mark_same_basis": 11497.0,
+        "harvested_mark_same_basis": 11497.0,
+        "not_reached_mark_same_basis": 1417.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 37,
+        "asset_count": 16,
+        "active_asset_count_at_terminal": 9
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 63656.0,
+        "anchor_ready_mark": 12390.0,
+        "output_reached_mark_same_basis": 58760.0,
+        "harvested_mark_same_basis": 58330.0,
+        "not_reached_mark_same_basis": 4896.0,
+        "reached_unharvested_mark_same_basis": 430.0,
+        "extra_output_units_beyond_anchor_basis": 210,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "self": {
+        "committed_mark_anchor_existing_basis": 4879.0,
+        "anchor_ready_mark": 1183.0,
+        "output_reached_mark_same_basis": 4120.0,
+        "harvested_mark_same_basis": 4120.0,
+        "not_reached_mark_same_basis": 759.0,
+        "reached_unharvested_mark_same_basis": 0.0,
+        "extra_output_units_beyond_anchor_basis": 40,
+        "asset_count": 17,
+        "active_asset_count_at_terminal": 8
+      },
+      "opponent": {
+        "committed_mark_anchor_existing_basis": 48193.0,
+        "anchor_ready_mark": 6319.0,
+        "output_reached_mark_same_basis": 44119.0,
+        "harvested_mark_same_basis": 43633.0,
+        "not_reached_mark_same_basis": 4074.0,
+        "reached_unharvested_mark_same_basis": 486.0,
+        "extra_output_units_beyond_anchor_basis": 211,
+        "asset_count": 65,
+        "active_asset_count_at_terminal": 19
+      }
+    }
+  ],
+  "integrity": [
+    {
+      "seed": 7351,
+      "side": "self",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7351,
+      "side": "opponent",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7352,
+      "side": "self",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7352,
+      "side": "opponent",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7353,
+      "side": "self",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7353,
+      "side": "opponent",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7354,
+      "side": "self",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7354,
+      "side": "opponent",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7355,
+      "side": "self",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    },
+    {
+      "seed": 7355,
+      "side": "opponent",
+      "committed_reconstruction_error": 0.0,
+      "reached_reconstruction_error": 0.0
+    }
+  ],
+  "boundary": [
+    "All marks use the Day20 anchor displayed-price basis and only assets already present at that anchor.",
+    "Committed = Output reached + Not reached and Output reached = Harvested + Reached-but-not-harvested exactly for each side/case on this accounting projection.",
+    "Passage ratios compare opponent-minus-self residuals across boundaries; they are descriptive residual retention, not causal conversion rates.",
+    "Post-anchor bonus output beyond the anchor committed basis is excluded from passage and retained only in raw artifacts.",
+    "The surface closes at HARVEST -> carried. No shed, SELL, or Cash lineage is asserted.",
+    "No Candidate or adoption decision is introduced."
+  ]
+}
