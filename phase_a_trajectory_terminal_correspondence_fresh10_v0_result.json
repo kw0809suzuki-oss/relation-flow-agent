@@ -1,0 +1,182 @@
+{
+  "schema": "kaggriculture.phase-a-trajectory-terminal-correspondence.fresh10.result.v0",
+  "battle_count": 10,
+  "hold_absolute_mean_self": 31076.4,
+  "oracle_absolute_mean_self": 39098.9,
+  "oracle_delta_vs_hold": 8022.5,
+  "winner_counts": {
+    "surface_first": 3,
+    "hold": 3,
+    "engine_first": 2,
+    "throughput_first": 2
+  },
+  "trajectory_unique_signature_count": 9,
+  "duplicate_signature_groups": [
+    {
+      "signature_hash": "ceddfd95a5707c0e29dac01545fb05f71dd606fbb7e5df91fd301051093823f3",
+      "seeds": [
+        8801,
+        8806
+      ],
+      "winner_sets": [
+        [
+          "surface_first"
+        ],
+        [
+          "hold"
+        ]
+      ],
+      "consistent_terminal_best_direction": false
+    }
+  ],
+  "same_trajectory_signature_different_terminal_best_direction": true,
+  "mechanical_result": "trajectory_signature_insufficient",
+  "cases": [
+    {
+      "seed": 8801,
+      "signature_hash": "ceddfd95a5707c0e29dac01545fb05f71dd606fbb7e5df91fd301051093823f3",
+      "terminal_self": {
+        "hold": 20391.0,
+        "surface_first": 38755.0,
+        "throughput_first": 20793.0,
+        "engine_first": 18427.0
+      },
+      "oracle_best_self": 38755.0,
+      "winners": [
+        "surface_first"
+      ]
+    },
+    {
+      "seed": 8802,
+      "signature_hash": "cd9e9221f24fced94e1cde36767da8a7da36fa03b207a5431b45e016a140824c",
+      "terminal_self": {
+        "hold": 50288.0,
+        "surface_first": 29680.0,
+        "throughput_first": 50220.0,
+        "engine_first": 44242.0
+      },
+      "oracle_best_self": 50288.0,
+      "winners": [
+        "hold"
+      ]
+    },
+    {
+      "seed": 8803,
+      "signature_hash": "f419855ec326ab46edf17f06048217a20d6c8fc5a56987f0e3331e1a40e375b4",
+      "terminal_self": {
+        "hold": 47186.0,
+        "surface_first": 54209.0,
+        "throughput_first": 37405.0,
+        "engine_first": 44954.0
+      },
+      "oracle_best_self": 54209.0,
+      "winners": [
+        "surface_first"
+      ]
+    },
+    {
+      "seed": 8804,
+      "signature_hash": "a9f28d83239796c7260529b32347cbd4988d1e27493a1a924db74d23c02438b5",
+      "terminal_self": {
+        "hold": 18402.0,
+        "surface_first": 24821.0,
+        "throughput_first": 15709.0,
+        "engine_first": 34605.0
+      },
+      "oracle_best_self": 34605.0,
+      "winners": [
+        "engine_first"
+      ]
+    },
+    {
+      "seed": 8805,
+      "signature_hash": "8b17918cd97a4343500662995fb11f1ecde9cfdd172f09a2e2c3c5e51af41d80",
+      "terminal_self": {
+        "hold": 25751.0,
+        "surface_first": 24669.0,
+        "throughput_first": 38161.0,
+        "engine_first": 30625.0
+      },
+      "oracle_best_self": 38161.0,
+      "winners": [
+        "throughput_first"
+      ]
+    },
+    {
+      "seed": 8806,
+      "signature_hash": "ceddfd95a5707c0e29dac01545fb05f71dd606fbb7e5df91fd301051093823f3",
+      "terminal_self": {
+        "hold": 47304.0,
+        "surface_first": 29983.0,
+        "throughput_first": 42651.0,
+        "engine_first": 42412.0
+      },
+      "oracle_best_self": 47304.0,
+      "winners": [
+        "hold"
+      ]
+    },
+    {
+      "seed": 8807,
+      "signature_hash": "3ed784cacde50c5f371c2f50c8dd99b9e56ef936ba5ad0fd5c4324d4455019a4",
+      "terminal_self": {
+        "hold": 20907.0,
+        "surface_first": 15559.0,
+        "throughput_first": 17389.0,
+        "engine_first": 40720.0
+      },
+      "oracle_best_self": 40720.0,
+      "winners": [
+        "engine_first"
+      ]
+    },
+    {
+      "seed": 8808,
+      "signature_hash": "a1c5be5e75c073e1893cbd3445fe927df1d316c07895e4ad6b8f64d78b15dc3b",
+      "terminal_self": {
+        "hold": 23786.0,
+        "surface_first": 23786.0,
+        "throughput_first": 23946.0,
+        "engine_first": 18257.0
+      },
+      "oracle_best_self": 23946.0,
+      "winners": [
+        "throughput_first"
+      ]
+    },
+    {
+      "seed": 8809,
+      "signature_hash": "981e4a194eb2effed28838016d1929a613874b86833d8f1b20a2b6d064e19533",
+      "terminal_self": {
+        "hold": 13130.0,
+        "surface_first": 19382.0,
+        "throughput_first": 13677.0,
+        "engine_first": 13555.0
+      },
+      "oracle_best_self": 19382.0,
+      "winners": [
+        "surface_first"
+      ]
+    },
+    {
+      "seed": 8810,
+      "signature_hash": "7f139b5bcc127241e011495b0c9711a1e554650f1b096cccfbcac2bb04202420",
+      "terminal_self": {
+        "hold": 43619.0,
+        "surface_first": 23997.0,
+        "throughput_first": 39413.0,
+        "engine_first": 25637.0
+      },
+      "oracle_best_self": 43619.0,
+      "winners": [
+        "hold"
+      ]
+    }
+  ],
+  "boundary": [
+    "Trajectory signatures were fixed before candidate outcome Battles were opened.",
+    "This test asks only whether identical trajectory signatures can map to different terminal-best directions.",
+    "If an identical signature has different winners, the tested signature is mechanically insufficient.",
+    "If no contradiction is observed, correspondence is not automatically established."
+  ]
+}
