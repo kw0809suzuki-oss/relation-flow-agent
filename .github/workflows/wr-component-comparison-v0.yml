@@ -1,4 +1,5 @@
 name: WR Component Comparison v0
+# rerun after WR-02 early-return fix
 
 permissions:
   contents: read
