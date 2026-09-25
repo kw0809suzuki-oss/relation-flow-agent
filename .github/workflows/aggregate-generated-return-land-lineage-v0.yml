@@ -1,0 +1,33 @@
+name: Aggregate Generated Return LAND Lineage v0
+permissions:
+  contents: write
+  actions: read
+on:
+  push:
+    branches: [observer/wr02-value-carry-reanchor-v0-20260925]
+    paths:
+      - .github/workflows/aggregate-generated-return-land-lineage-v0.yml
+  workflow_dispatch:
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 36103930903
+          github-token: ${{ github.token }}
+          pattern: generated-return-land-lineage-*
+          path: generated-return-land-lineage-artifacts
+          merge-multiple: true
+      - run: python analyze_generated_return_land_production_lineage_v0.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated_return_land_production_lineage_v0_result.json
+          git commit -m "Record generated Return LAND production lineage v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
