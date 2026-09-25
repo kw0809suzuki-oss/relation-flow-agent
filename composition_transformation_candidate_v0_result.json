@@ -1,0 +1,3189 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.composition-transformation-candidate.result.v0",
+  "battle_count": 5,
+  "baseline_absolute_mean_self": 24042.8,
+  "candidate_absolute_mean_self": 32906.0,
+  "delta_mean_self": 8863.2,
+  "baseline_absolute_mean_opponent": 128454.4,
+  "candidate_absolute_mean_opponent": 132811.6,
+  "baseline_absolute_mean_margin": -104411.6,
+  "candidate_absolute_mean_margin": -99905.6,
+  "delta_mean_margin": 4506.0,
+  "improved_cases": 4,
+  "worsened_cases": 1,
+  "equal_cases": 0,
+  "replacement_reached_cases": 5,
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "baseline_terminal": {
+        "self": 14166.0,
+        "opponent": 121526.0,
+        "margin": -107360.0
+      },
+      "candidate_terminal": {
+        "self": 37042.0,
+        "opponent": 168455.0,
+        "margin": -131413.0
+      },
+      "terminal_delta": {
+        "self": 22876.0,
+        "opponent": 46929.0,
+        "margin": -24053.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "replaced_actions": 1,
+        "replacement": {
+          "unit_kind": "farmer",
+          "unit_index": 0,
+          "from": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "to": [
+            "PLANT",
+            "MELON"
+          ]
+        }
+      },
+      "baseline_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 21,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 911.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1582.0,
+          "present_asset_count": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 1320.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 11,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 6160.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 13,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 9050.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 17,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 11,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 957.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1661.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 1892.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 8993.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 14,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 10,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 17644.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 16,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 10,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "baseline_terminal": {
+        "self": 11764.0,
+        "opponent": 108228.0,
+        "margin": -96464.0
+      },
+      "candidate_terminal": {
+        "self": 14198.0,
+        "opponent": 93441.0,
+        "margin": -79243.0
+      },
+      "terminal_delta": {
+        "self": 2434.0,
+        "opponent": -14787.0,
+        "margin": 17221.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "replaced_actions": 1,
+        "replacement": {
+          "unit_kind": "farmer",
+          "unit_index": 0,
+          "from": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "to": [
+            "PLANT",
+            "MELON"
+          ]
+        }
+      },
+      "baseline_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 21,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 911.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1543.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 24,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 1069.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 12,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 5716.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 19,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 9,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 8994.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 17,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 960.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 25,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1382.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 24,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 1279.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 16,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 6568.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 19,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 9702.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 16,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 16,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "baseline_terminal": {
+        "self": 45856.0,
+        "opponent": 142698.0,
+        "margin": -96842.0
+      },
+      "candidate_terminal": {
+        "self": 45950.0,
+        "opponent": 148897.0,
+        "margin": -102947.0
+      },
+      "terminal_delta": {
+        "self": 94.0,
+        "opponent": 6199.0,
+        "margin": -6105.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "replaced_actions": 1,
+        "replacement": {
+          "unit_kind": "farmer",
+          "unit_index": 0,
+          "from": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "to": [
+            "PLANT",
+            "MELON"
+          ]
+        }
+      },
+      "baseline_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 21,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 885.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 23,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 2365.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 2446.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 11,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 14,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 9684.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 20,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 17,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 20380.0,
+          "present_asset_count": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 17,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 929.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 25,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1839.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 24,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 2421.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 17,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 10635.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 17,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 20227.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 16,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 16,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 10,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "baseline_terminal": {
+        "self": 34885.0,
+        "opponent": 165049.0,
+        "margin": -130164.0
+      },
+      "candidate_terminal": {
+        "self": 32949.0,
+        "opponent": 113197.0,
+        "margin": -80248.0
+      },
+      "terminal_delta": {
+        "self": -1936.0,
+        "opponent": -51852.0,
+        "margin": 49916.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "replaced_actions": 1,
+        "replacement": {
+          "unit_kind": "farmer",
+          "unit_index": 0,
+          "from": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "to": [
+            "PLANT",
+            "MELON"
+          ]
+        }
+      },
+      "baseline_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 21,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 911.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 2300.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 9,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 24,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 2236.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 20,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 12,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 7712.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 5,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 14,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 9,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 19,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 9,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 10,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 16567.0,
+          "present_asset_count": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 5,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 15,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 10,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 960.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 25,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 11,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1694.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 24,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 2168.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 16,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 9696.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 19,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 17706.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 16,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 3,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "baseline_terminal": {
+        "self": 13543.0,
+        "opponent": 104771.0,
+        "margin": -91228.0
+      },
+      "candidate_terminal": {
+        "self": 34391.0,
+        "opponent": 140068.0,
+        "margin": -105677.0
+      },
+      "terminal_delta": {
+        "self": 20848.0,
+        "opponent": 35297.0,
+        "margin": -14449.0
+      },
+      "candidate_telemetry": {
+        "modified_turns": 1,
+        "replaced_actions": 1,
+        "replacement": {
+          "unit_kind": "farmer",
+          "unit_index": 0,
+          "from": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "to": [
+            "PLANT",
+            "MELON"
+          ]
+        }
+      },
+      "baseline_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 21,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 27,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 882.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1542.0,
+          "present_asset_count": {
+            "WHEAT": 7,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 8,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 21,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 1298.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 12,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 9,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 5,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 6029.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 6,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 19,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 13,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 11,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 9036.0,
+          "present_asset_count": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 17,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      },
+      "candidate_views": {
+        "d0_h14": {
+          "money": 1322.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h15": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 6,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 18,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d0_h23": {
+          "money": 1262.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d2_h0": {
+          "money": 967.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 2,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 30,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          }
+        },
+        "d8_h0": {
+          "money": 948.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          }
+        },
+        "d10_h0": {
+          "money": 1628.0,
+          "present_asset_count": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 4,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 4,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 15,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 1,
+            "MELON": 2,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          }
+        },
+        "d12_h0": {
+          "money": 2011.0,
+          "present_asset_count": {
+            "WHEAT": 8,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 1,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 12,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 6,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 19,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 2,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 8,
+            "SHEEP": 0
+          }
+        },
+        "d16_h0": {
+          "money": 8662.0,
+          "present_asset_count": {
+            "WHEAT": 10,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 4,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 16,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 11,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 22,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 7,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        },
+        "d20_h0": {
+          "money": 15725.0,
+          "present_asset_count": {
+            "WHEAT": 2,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 10,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 6,
+            "SHEEP": 0
+          },
+          "current_harvestable_units": {
+            "WHEAT": 5,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 3,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 16,
+            "SHEEP": 0
+          },
+          "near4_conditional": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 8,
+            "MELON": 0,
+            "GOOSE": 0,
+            "COW": 12,
+            "SHEEP": 0
+          }
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "This is the terminal Battle A/B result for a one-unit composition replacement.",
+    "The Candidate replaces exactly one native Day0 h14 PLANT WHEAT with PLANT MELON when reachable.",
+    "No positioning, timing, movement count, market order, or additional composition change is intentionally introduced.",
+    "Local State checkpoints are diagnostic only; adoption is determined by terminal self relative to the parent objective."
+  ]
+}
