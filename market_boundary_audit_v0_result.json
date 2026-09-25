@@ -1,0 +1,3034 @@
+{
+  "schema": "kaggriculture.strong-origin-v2.market-boundary-audit.result.v0",
+  "battle_count": 5,
+  "success_anchor_days": [
+    14,
+    15,
+    17,
+    19
+  ],
+  "boundary_anchor_day": 18,
+  "by_anchor_day": {
+    "14": {
+      "class": "success_5of5_word_anchor",
+      "ready_residual": {
+        "mean": 8547.6,
+        "min": 6156.0,
+        "max": 9814.0,
+        "values": [
+          9814.0,
+          9396.0,
+          6156.0,
+          9002.0,
+          8370.0
+        ]
+      },
+      "positive_product_count": {
+        "mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "values": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      },
+      "top_positive_mark_share": {
+        "mean": 0.6377515281682872,
+        "min": 0.5707547169811321,
+        "max": 0.6816052149113873,
+        "values": [
+          0.666798418972332,
+          0.6638888888888889,
+          0.5707547169811321,
+          0.6816052149113873,
+          0.6057104010876955
+        ]
+      },
+      "positive_ready_market_inventory_mean": {
+        "mean": 9916.9,
+        "min": 9896.0,
+        "max": 9931.0,
+        "values": [
+          9896.0,
+          9917.25,
+          9924.25,
+          9916.0,
+          9931.0
+        ]
+      },
+      "ready_mark_weighted_market_inventory": {
+        "mean": 9959.284403916605,
+        "min": 9919.606719367588,
+        "max": 10002.441299790356,
+        "values": [
+          9919.606719367588,
+          9938.388888888889,
+          10002.441299790356,
+          9939.255449174985,
+          9996.729662361206
+        ]
+      },
+      "positive_ready_price_mean": {
+        "mean": 172.5,
+        "min": 165.0,
+        "max": 179.75,
+        "values": [
+          179.75,
+          173.75,
+          165.0,
+          174.75,
+          169.25
+        ]
+      },
+      "ready_mark_weighted_displayed_price": {
+        "mean": 219.5878420768467,
+        "min": 202.46634942216178,
+        "max": 231.5339172947647,
+        "values": [
+          231.0201581027668,
+          227.40515873015872,
+          205.51362683438154,
+          231.5339172947647,
+          202.46634942216178
+        ]
+      },
+      "remaining_season_turns": {
+        "mean": 384.0,
+        "min": 384.0,
+        "max": 384.0,
+        "values": [
+          384.0,
+          384.0,
+          384.0,
+          384.0,
+          384.0
+        ]
+      },
+      "sell_cash_residual": {
+        "mean": 4690.2,
+        "min": 2267.0,
+        "max": 6366.0,
+        "values": [
+          6366.0,
+          5720.0,
+          2267.0,
+          4996.0,
+          4102.0
+        ]
+      },
+      "cash_residual_change": {
+        "mean": 5808.4,
+        "min": 3597.0,
+        "max": 6956.0,
+        "values": [
+          6921.0,
+          6956.0,
+          3597.0,
+          6233.0,
+          5335.0
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "anchor_day": 14,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 1005.0,
+            "opponent_mark": 10819.0,
+            "residual": 9814.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MELON",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 10120.0,
+            "top_positive_mark_share": 0.666798418972332,
+            "by_item_residual_mark": {
+              "WHEAT": 240.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 832.0,
+              "MELON": 2300.0,
+              "EGG": 0.0,
+              "MILK": -306.0,
+              "WOOL": 6748.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9762.0,
+              "CARROT": 9920.0,
+              "TOMATO": 9920.0,
+              "STRAWBERRY": 9891.0,
+              "MELON": 10045.0,
+              "EGG": 9956.0,
+              "MILK": 10052.0,
+              "WOOL": 9886.0,
+              "FERTILIZER": 10125.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 41.0,
+              "TOMATO": 70.0,
+              "STRAWBERRY": 208.0,
+              "MELON": 230.0,
+              "EGG": 53.0,
+              "MILK": 51.0,
+              "WOOL": 241.0,
+              "FERTILIZER": 75.0
+            },
+            "positive_ready_products_inventory_mean": 9896.0,
+            "positive_ready_products_inventory_min": 9762.0,
+            "positive_ready_products_inventory_max": 10045.0,
+            "positive_ready_products_price_mean": 179.75,
+            "positive_ready_products_price_min": 40.0,
+            "positive_ready_products_price_max": 241.0,
+            "ready_mark_weighted_market_inventory": 9919.606719367588,
+            "ready_mark_weighted_displayed_price": 231.0201581027668
+          },
+          "time": {
+            "remaining_season_turns": 384
+          },
+          "response": {
+            "sell_cash_residual": 6366.0,
+            "cash_residual_change": 6921.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -396.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -208.0,
+              "MELON": 1371.0,
+              "EGG": 0.0,
+              "MILK": -497.0,
+              "WOOL": 5790.0,
+              "FERTILIZER": 306.0
+            }
+          }
+        },
+        {
+          "seed": 7352,
+          "anchor_day": 14,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 1528.0,
+            "opponent_mark": 10924.0,
+            "residual": 9396.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MELON",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 10080.0,
+            "top_positive_mark_share": 0.6638888888888889,
+            "by_item_residual_mark": {
+              "WHEAT": 320.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 728.0,
+              "MELON": 2340.0,
+              "EGG": 0.0,
+              "MILK": -684.0,
+              "WOOL": 6692.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9774.0,
+              "CARROT": 9986.0,
+              "TOMATO": 9986.0,
+              "STRAWBERRY": 9945.0,
+              "MELON": 10040.0,
+              "EGG": 9890.0,
+              "MILK": 10040.0,
+              "WOOL": 9910.0,
+              "FERTILIZER": 10125.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 36.0,
+              "TOMATO": 62.0,
+              "STRAWBERRY": 182.0,
+              "MELON": 234.0,
+              "EGG": 57.0,
+              "MILK": 76.0,
+              "WOOL": 239.0,
+              "FERTILIZER": 75.0
+            },
+            "positive_ready_products_inventory_mean": 9917.25,
+            "positive_ready_products_inventory_min": 9774.0,
+            "positive_ready_products_inventory_max": 10040.0,
+            "positive_ready_products_price_mean": 173.75,
+            "positive_ready_products_price_min": 40.0,
+            "positive_ready_products_price_max": 239.0,
+            "ready_mark_weighted_market_inventory": 9938.388888888889,
+            "ready_mark_weighted_displayed_price": 227.40515873015872
+          },
+          "time": {
+            "remaining_season_turns": 384
+          },
+          "response": {
+            "sell_cash_residual": 5720.0,
+            "cash_residual_change": 6956.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1209.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -182.0,
+              "MELON": 1397.0,
+              "EGG": 0.0,
+              "MILK": -390.0,
+              "WOOL": 5726.0,
+              "FERTILIZER": 378.0
+            }
+          }
+        },
+        {
+          "seed": 7353,
+          "anchor_day": 14,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 3984.0,
+            "opponent_mark": 10140.0,
+            "residual": 6156.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MELON",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 7632.0,
+            "top_positive_mark_share": 0.5707547169811321,
+            "by_item_residual_mark": {
+              "WHEAT": 168.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 728.0,
+              "MELON": 2380.0,
+              "EGG": 0.0,
+              "MILK": -1476.0,
+              "WOOL": 4356.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9712.0,
+              "CARROT": 9986.0,
+              "TOMATO": 9872.0,
+              "STRAWBERRY": 9945.0,
+              "MELON": 10034.0,
+              "EGG": 9974.0,
+              "MILK": 9902.0,
+              "WOOL": 10006.0,
+              "FERTILIZER": 10114.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 36.0,
+              "TOMATO": 75.0,
+              "STRAWBERRY": 182.0,
+              "MELON": 238.0,
+              "EGG": 52.0,
+              "MILK": 246.0,
+              "WOOL": 198.0,
+              "FERTILIZER": 77.0
+            },
+            "positive_ready_products_inventory_mean": 9924.25,
+            "positive_ready_products_inventory_min": 9712.0,
+            "positive_ready_products_inventory_max": 10034.0,
+            "positive_ready_products_price_mean": 165.0,
+            "positive_ready_products_price_min": 42.0,
+            "positive_ready_products_price_max": 238.0,
+            "ready_mark_weighted_market_inventory": 10002.441299790356,
+            "ready_mark_weighted_displayed_price": 205.51362683438154
+          },
+          "time": {
+            "remaining_season_turns": 384
+          },
+          "response": {
+            "sell_cash_residual": 2267.0,
+            "cash_residual_change": 3597.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1269.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -182.0,
+              "MELON": 1424.0,
+              "EGG": 0.0,
+              "MILK": -1476.0,
+              "WOOL": 3381.0,
+              "FERTILIZER": 389.0
+            }
+          }
+        },
+        {
+          "seed": 7354,
+          "anchor_day": 14,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 3114.0,
+            "opponent_mark": 12116.0,
+            "residual": 9002.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MELON",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 9818.0,
+            "top_positive_mark_share": 0.6816052149113873,
+            "by_item_residual_mark": {
+              "WHEAT": 200.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 546.0,
+              "MELON": 2380.0,
+              "EGG": 0.0,
+              "MILK": -816.0,
+              "WOOL": 6692.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9775.0,
+              "CARROT": 9956.0,
+              "TOMATO": 9890.0,
+              "STRAWBERRY": 9945.0,
+              "MELON": 10034.0,
+              "EGG": 9986.0,
+              "MILK": 9974.0,
+              "WOOL": 9910.0,
+              "FERTILIZER": 10125.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 38.0,
+              "TOMATO": 73.0,
+              "STRAWBERRY": 182.0,
+              "MELON": 238.0,
+              "EGG": 51.0,
+              "MILK": 204.0,
+              "WOOL": 239.0,
+              "FERTILIZER": 75.0
+            },
+            "positive_ready_products_inventory_mean": 9916.0,
+            "positive_ready_products_inventory_min": 9775.0,
+            "positive_ready_products_inventory_max": 10034.0,
+            "positive_ready_products_price_mean": 174.75,
+            "positive_ready_products_price_min": 40.0,
+            "positive_ready_products_price_max": 239.0,
+            "ready_mark_weighted_market_inventory": 9939.255449174985,
+            "ready_mark_weighted_displayed_price": 231.5339172947647
+          },
+          "time": {
+            "remaining_season_turns": 384
+          },
+          "response": {
+            "sell_cash_residual": 4996.0,
+            "cash_residual_change": 6233.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1209.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -182.0,
+              "MELON": 1424.0,
+              "EGG": 0.0,
+              "MILK": -1213.0,
+              "WOOL": 5726.0,
+              "FERTILIZER": 450.0
+            }
+          }
+        },
+        {
+          "seed": 7355,
+          "anchor_day": 14,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 1300.0,
+            "opponent_mark": 9670.0,
+            "residual": 8370.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MELON",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 8826.0,
+            "top_positive_mark_share": 0.6057104010876955,
+            "by_item_residual_mark": {
+              "WHEAT": 320.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 820.0,
+              "MELON": 2340.0,
+              "EGG": 0.0,
+              "MILK": -456.0,
+              "WOOL": 5346.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9781.0,
+              "CARROT": 9806.0,
+              "TOMATO": 9938.0,
+              "STRAWBERRY": 9897.0,
+              "MELON": 10040.0,
+              "EGG": 9956.0,
+              "MILK": 10040.0,
+              "WOOL": 10006.0,
+              "FERTILIZER": 10125.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 50.0,
+              "TOMATO": 67.0,
+              "STRAWBERRY": 205.0,
+              "MELON": 234.0,
+              "EGG": 53.0,
+              "MILK": 76.0,
+              "WOOL": 198.0,
+              "FERTILIZER": 75.0
+            },
+            "positive_ready_products_inventory_mean": 9931.0,
+            "positive_ready_products_inventory_min": 9781.0,
+            "positive_ready_products_inventory_max": 10040.0,
+            "positive_ready_products_price_mean": 169.25,
+            "positive_ready_products_price_min": 40.0,
+            "positive_ready_products_price_max": 234.0,
+            "ready_mark_weighted_market_inventory": 9996.729662361206,
+            "ready_mark_weighted_displayed_price": 202.46634942216178
+          },
+          "time": {
+            "remaining_season_turns": 384
+          },
+          "response": {
+            "sell_cash_residual": 4102.0,
+            "cash_residual_change": 5335.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1278.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -205.0,
+              "MELON": 1397.0,
+              "EGG": 0.0,
+              "MILK": -390.0,
+              "WOOL": 4200.0,
+              "FERTILIZER": 378.0
+            }
+          }
+        }
+      ]
+    },
+    "15": {
+      "class": "success_5of5_word_anchor",
+      "ready_residual": {
+        "mean": 1114.6,
+        "min": 319.0,
+        "max": 2523.0,
+        "values": [
+          1086.0,
+          1002.0,
+          319.0,
+          2523.0,
+          643.0
+        ]
+      },
+      "positive_product_count": {
+        "mean": 2.4,
+        "min": 1.0,
+        "max": 3.0,
+        "values": [
+          3.0,
+          3.0,
+          1.0,
+          2.0,
+          3.0
+        ]
+      },
+      "top_positive_mark_share": {
+        "mean": 0.7833093894029843,
+        "min": 0.6540697674418605,
+        "max": 1.0,
+        "values": [
+          0.7426810477657936,
+          0.799328295549958,
+          1.0,
+          0.6540697674418605,
+          0.7204678362573099
+        ]
+      },
+      "positive_ready_market_inventory_mean": {
+        "mean": 9948.333333333334,
+        "min": 9901.333333333334,
+        "max": 10023.0,
+        "values": [
+          9901.333333333334,
+          9914.333333333334,
+          10023.0,
+          9950.0,
+          9953.0
+        ]
+      },
+      "ready_mark_weighted_market_inventory": {
+        "mean": 9966.139295720383,
+        "min": 9911.408320493067,
+        "max": 10023.0,
+        "values": [
+          9911.408320493067,
+          9928.27959697733,
+          10023.0,
+          9958.936046511628,
+          10009.072514619884
+        ]
+      },
+      "positive_ready_price_mean": {
+        "mean": 136.8,
+        "min": 82.33333333333333,
+        "max": 219.0,
+        "values": [
+          103.33333333333333,
+          110.33333333333333,
+          169.0,
+          219.0,
+          82.33333333333333
+        ]
+      },
+      "ready_mark_weighted_displayed_price": {
+        "mean": 178.74221431565476,
+        "min": 124.55087719298245,
+        "max": 213.1453488372093,
+        "values": [
+          187.01232665639446,
+          200.00251889168766,
+          169.0,
+          213.1453488372093,
+          124.55087719298245
+        ]
+      },
+      "remaining_season_turns": {
+        "mean": 360.0,
+        "min": 360.0,
+        "max": 360.0,
+        "values": [
+          360.0,
+          360.0,
+          360.0,
+          360.0,
+          360.0
+        ]
+      },
+      "sell_cash_residual": {
+        "mean": 2741.6,
+        "min": 1954.0,
+        "max": 3758.0,
+        "values": [
+          2806.0,
+          2680.0,
+          1954.0,
+          3758.0,
+          2510.0
+        ]
+      },
+      "cash_residual_change": {
+        "mean": 2852.8,
+        "min": 2001.0,
+        "max": 3468.0,
+        "values": [
+          3060.0,
+          2954.0,
+          2001.0,
+          3468.0,
+          2781.0
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "anchor_day": 15,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 663.0,
+            "opponent_mark": 1749.0,
+            "residual": 1086.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "STRAWBERRY"
+            ],
+            "positive_mark_total": 1298.0,
+            "top_positive_mark_share": 0.7426810477657936,
+            "by_item_residual_mark": {
+              "WHEAT": 82.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -212.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 252.0,
+              "WOOL": 964.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9756.0,
+              "CARROT": 9913.0,
+              "TOMATO": 9913.0,
+              "STRAWBERRY": 9879.0,
+              "MELON": 10050.0,
+              "EGG": 9949.0,
+              "MILK": 10063.0,
+              "WOOL": 9885.0,
+              "FERTILIZER": 10141.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 41.0,
+              "CARROT": 42.0,
+              "TOMATO": 70.0,
+              "STRAWBERRY": 212.0,
+              "MELON": 225.0,
+              "EGG": 53.0,
+              "MILK": 28.0,
+              "WOOL": 241.0,
+              "FERTILIZER": 72.0
+            },
+            "positive_ready_products_inventory_mean": 9901.333333333334,
+            "positive_ready_products_inventory_min": 9756.0,
+            "positive_ready_products_inventory_max": 10063.0,
+            "positive_ready_products_price_mean": 103.33333333333333,
+            "positive_ready_products_price_min": 28.0,
+            "positive_ready_products_price_max": 241.0,
+            "ready_mark_weighted_market_inventory": 9911.408320493067,
+            "ready_mark_weighted_displayed_price": 187.01232665639446
+          },
+          "time": {
+            "remaining_season_turns": 360
+          },
+          "response": {
+            "sell_cash_residual": 2806.0,
+            "cash_residual_change": 3060.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -936.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 854.0,
+              "MELON": 1335.0,
+              "EGG": 0.0,
+              "MILK": -55.0,
+              "WOOL": 964.0,
+              "FERTILIZER": 644.0
+            }
+          }
+        },
+        {
+          "seed": 7352,
+          "anchor_day": 15,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 947.0,
+            "opponent_mark": 1949.0,
+            "residual": 1002.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "STRAWBERRY"
+            ],
+            "positive_mark_total": 1191.0,
+            "top_positive_mark_share": 0.799328295549958,
+            "by_item_residual_mark": {
+              "WHEAT": 80.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -189.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 159.0,
+              "WOOL": 952.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9771.0,
+              "CARROT": 9985.0,
+              "TOMATO": 9985.0,
+              "STRAWBERRY": 9933.0,
+              "MELON": 10045.0,
+              "EGG": 9877.0,
+              "MILK": 10051.0,
+              "WOOL": 9921.0,
+              "FERTILIZER": 10140.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 36.0,
+              "TOMATO": 62.0,
+              "STRAWBERRY": 189.0,
+              "MELON": 230.0,
+              "EGG": 57.0,
+              "MILK": 53.0,
+              "WOOL": 238.0,
+              "FERTILIZER": 72.0
+            },
+            "positive_ready_products_inventory_mean": 9914.333333333334,
+            "positive_ready_products_inventory_min": 9771.0,
+            "positive_ready_products_inventory_max": 10051.0,
+            "positive_ready_products_price_mean": 110.33333333333333,
+            "positive_ready_products_price_min": 40.0,
+            "positive_ready_products_price_max": 238.0,
+            "ready_mark_weighted_market_inventory": 9928.27959697733,
+            "ready_mark_weighted_displayed_price": 200.00251889168766
+          },
+          "time": {
+            "remaining_season_turns": 360
+          },
+          "response": {
+            "sell_cash_residual": 2680.0,
+            "cash_residual_change": 2954.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -725.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 758.0,
+              "MELON": 1365.0,
+              "EGG": 0.0,
+              "MILK": -242.0,
+              "WOOL": 952.0,
+              "FERTILIZER": 572.0
+            }
+          }
+        },
+        {
+          "seed": 7353,
+          "anchor_day": 15,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 2295.0,
+            "opponent_mark": 2614.0,
+            "residual": 319.0,
+            "positive_product_count": 1,
+            "negative_product_count": 2,
+            "positive_products": [
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT",
+              "STRAWBERRY"
+            ],
+            "positive_mark_total": 676.0,
+            "top_positive_mark_share": 1.0,
+            "by_item_residual_mark": {
+              "WHEAT": -168.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -189.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 0.0,
+              "WOOL": 676.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9697.0,
+              "CARROT": 9985.0,
+              "TOMATO": 9859.0,
+              "STRAWBERRY": 9933.0,
+              "MELON": 10039.0,
+              "EGG": 9967.0,
+              "MILK": 9901.0,
+              "WOOL": 10023.0,
+              "FERTILIZER": 10129.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 36.0,
+              "TOMATO": 77.0,
+              "STRAWBERRY": 189.0,
+              "MELON": 235.0,
+              "EGG": 52.0,
+              "MILK": 246.0,
+              "WOOL": 169.0,
+              "FERTILIZER": 74.0
+            },
+            "positive_ready_products_inventory_mean": 10023.0,
+            "positive_ready_products_inventory_min": 10023.0,
+            "positive_ready_products_inventory_max": 10023.0,
+            "positive_ready_products_price_mean": 169.0,
+            "positive_ready_products_price_min": 169.0,
+            "positive_ready_products_price_max": 169.0,
+            "ready_mark_weighted_market_inventory": 10023.0,
+            "ready_mark_weighted_displayed_price": 169.0
+          },
+          "time": {
+            "remaining_season_turns": 360
+          },
+          "response": {
+            "sell_cash_residual": 1954.0,
+            "cash_residual_change": 2001.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -537.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 760.0,
+              "MELON": 1397.0,
+              "EGG": 0.0,
+              "MILK": -783.0,
+              "WOOL": 672.0,
+              "FERTILIZER": 445.0
+            }
+          }
+        },
+        {
+          "seed": 7354,
+          "anchor_day": 15,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 749.0,
+            "opponent_mark": 3272.0,
+            "residual": 2523.0,
+            "positive_product_count": 2,
+            "negative_product_count": 2,
+            "positive_products": [
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT",
+              "STRAWBERRY"
+            ],
+            "positive_mark_total": 2752.0,
+            "top_positive_mark_share": 0.6540697674418605,
+            "by_item_residual_mark": {
+              "WHEAT": -40.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -189.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 1800.0,
+              "WOOL": 952.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9772.0,
+              "CARROT": 9949.0,
+              "TOMATO": 9877.0,
+              "STRAWBERRY": 9933.0,
+              "MELON": 10039.0,
+              "EGG": 9985.0,
+              "MILK": 9979.0,
+              "WOOL": 9921.0,
+              "FERTILIZER": 10139.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 39.0,
+              "TOMATO": 75.0,
+              "STRAWBERRY": 189.0,
+              "MELON": 235.0,
+              "EGG": 51.0,
+              "MILK": 200.0,
+              "WOOL": 238.0,
+              "FERTILIZER": 72.0
+            },
+            "positive_ready_products_inventory_mean": 9950.0,
+            "positive_ready_products_inventory_min": 9921.0,
+            "positive_ready_products_inventory_max": 9979.0,
+            "positive_ready_products_price_mean": 219.0,
+            "positive_ready_products_price_min": 200.0,
+            "positive_ready_products_price_max": 238.0,
+            "ready_mark_weighted_market_inventory": 9958.936046511628,
+            "ready_mark_weighted_displayed_price": 213.1453488372093
+          },
+          "time": {
+            "remaining_season_turns": 360
+          },
+          "response": {
+            "sell_cash_residual": 3758.0,
+            "cash_residual_change": 3468.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -348.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 569.0,
+              "MELON": 1397.0,
+              "EGG": 0.0,
+              "MILK": 608.0,
+              "WOOL": 952.0,
+              "FERTILIZER": 580.0
+            }
+          }
+        },
+        {
+          "seed": 7355,
+          "anchor_day": 15,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 970.0,
+            "opponent_mark": 1613.0,
+            "residual": 643.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "STRAWBERRY"
+            ],
+            "positive_mark_total": 855.0,
+            "top_positive_mark_share": 0.7204678362573099,
+            "by_item_residual_mark": {
+              "WHEAT": 80.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": -212.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 159.0,
+              "WOOL": 616.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9780.0,
+              "CARROT": 9787.0,
+              "TOMATO": 9931.0,
+              "STRAWBERRY": 9879.0,
+              "MELON": 10045.0,
+              "EGG": 9949.0,
+              "MILK": 10051.0,
+              "WOOL": 10028.0,
+              "FERTILIZER": 10140.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 40.0,
+              "CARROT": 52.0,
+              "TOMATO": 68.0,
+              "STRAWBERRY": 212.0,
+              "MELON": 230.0,
+              "EGG": 53.0,
+              "MILK": 53.0,
+              "WOOL": 154.0,
+              "FERTILIZER": 72.0
+            },
+            "positive_ready_products_inventory_mean": 9953.0,
+            "positive_ready_products_inventory_min": 9780.0,
+            "positive_ready_products_inventory_max": 10051.0,
+            "positive_ready_products_price_mean": 82.33333333333333,
+            "positive_ready_products_price_min": 40.0,
+            "positive_ready_products_price_max": 154.0,
+            "ready_mark_weighted_market_inventory": 10009.072514619884,
+            "ready_mark_weighted_displayed_price": 124.55087719298245
+          },
+          "time": {
+            "remaining_season_turns": 360
+          },
+          "response": {
+            "sell_cash_residual": 2510.0,
+            "cash_residual_change": 2781.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -722.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 855.0,
+              "MELON": 1365.0,
+              "EGG": 0.0,
+              "MILK": -171.0,
+              "WOOL": 611.0,
+              "FERTILIZER": 572.0
+            }
+          }
+        }
+      ]
+    },
+    "17": {
+      "class": "success_5of5_word_anchor",
+      "ready_residual": {
+        "mean": 7071.8,
+        "min": 5074.0,
+        "max": 9522.0,
+        "values": [
+          7193.0,
+          7307.0,
+          6263.0,
+          9522.0,
+          5074.0
+        ]
+      },
+      "positive_product_count": {
+        "mean": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "values": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      },
+      "top_positive_mark_share": {
+        "mean": 0.53526307043228,
+        "min": 0.3777951524628616,
+        "max": 0.6640251400464544,
+        "values": [
+          0.6640251400464544,
+          0.6358919781827856,
+          0.3777951524628616,
+          0.49116317303740237,
+          0.5074399084318962
+        ]
+      },
+      "positive_ready_market_inventory_mean": {
+        "mean": 9968.6,
+        "min": 9952.25,
+        "max": 9995.25,
+        "values": [
+          9954.75,
+          9979.0,
+          9961.75,
+          9952.25,
+          9995.25
+        ]
+      },
+      "ready_mark_weighted_market_inventory": {
+        "mean": 9942.433049942505,
+        "min": 9875.725372318622,
+        "max": 9995.524227394124,
+        "values": [
+          9875.725372318622,
+          9938.269788479447,
+          9967.641751368257,
+          9935.004110152076,
+          9995.524227394124
+        ]
+      },
+      "positive_ready_price_mean": {
+        "mean": 187.5,
+        "min": 153.25,
+        "max": 222.25,
+        "values": [
+          172.25,
+          178.75,
+          211.0,
+          222.25,
+          153.25
+        ]
+      },
+      "ready_mark_weighted_displayed_price": {
+        "mean": 210.15506985927632,
+        "min": 167.33918351774133,
+        "max": 235.85886050006832,
+        "values": [
+          235.85886050006832,
+          216.44499135293336,
+          203.96544175136825,
+          227.16687217427045,
+          167.33918351774133
+        ]
+      },
+      "remaining_season_turns": {
+        "mean": 312.0,
+        "min": 312.0,
+        "max": 312.0,
+        "values": [
+          312.0,
+          312.0,
+          312.0,
+          312.0,
+          312.0
+        ]
+      },
+      "sell_cash_residual": {
+        "mean": 5810.6,
+        "min": 2674.0,
+        "max": 9070.0,
+        "values": [
+          5239.0,
+          5905.0,
+          6165.0,
+          9070.0,
+          2674.0
+        ]
+      },
+      "cash_residual_change": {
+        "mean": 5801.6,
+        "min": 2681.0,
+        "max": 8516.0,
+        "values": [
+          5502.0,
+          5863.0,
+          6446.0,
+          8516.0,
+          2681.0
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "anchor_day": 17,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 744.0,
+            "opponent_mark": 7937.0,
+            "residual": 7193.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "STRAWBERRY",
+              "MELON",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT"
+            ],
+            "positive_mark_total": 7319.0,
+            "top_positive_mark_share": 0.6640251400464544,
+            "by_item_residual_mark": {
+              "WHEAT": -126.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1344.0,
+              "MELON": 1105.0,
+              "EGG": 0.0,
+              "MILK": 10.0,
+              "WOOL": 4860.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9696.0,
+              "CARROT": 9899.0,
+              "TOMATO": 9899.0,
+              "STRAWBERRY": 9846.0,
+              "MELON": 10054.0,
+              "EGG": 9923.0,
+              "MILK": 10076.0,
+              "WOOL": 9843.0,
+              "FERTILIZER": 10177.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 43.0,
+              "TOMATO": 72.0,
+              "STRAWBERRY": 224.0,
+              "MELON": 221.0,
+              "EGG": 55.0,
+              "MILK": 1.0,
+              "WOOL": 243.0,
+              "FERTILIZER": 65.0
+            },
+            "positive_ready_products_inventory_mean": 9954.75,
+            "positive_ready_products_inventory_min": 9843.0,
+            "positive_ready_products_inventory_max": 10076.0,
+            "positive_ready_products_price_mean": 172.25,
+            "positive_ready_products_price_min": 1.0,
+            "positive_ready_products_price_max": 243.0,
+            "ready_mark_weighted_market_inventory": 9875.725372318622,
+            "ready_mark_weighted_displayed_price": 235.85886050006832
+          },
+          "time": {
+            "remaining_season_turns": 312
+          },
+          "response": {
+            "sell_cash_residual": 5239.0,
+            "cash_residual_change": 5502.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -551.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 675.0,
+              "MELON": 882.0,
+              "EGG": 0.0,
+              "MILK": 9.0,
+              "WOOL": 3904.0,
+              "FERTILIZER": 320.0
+            }
+          }
+        },
+        {
+          "seed": 7352,
+          "anchor_day": 17,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 975.0,
+            "opponent_mark": 8282.0,
+            "residual": 7307.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "STRAWBERRY",
+              "MELON",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT"
+            ],
+            "positive_mark_total": 7517.0,
+            "top_positive_mark_share": 0.6358919781827856,
+            "by_item_residual_mark": {
+              "WHEAT": -210.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 995.0,
+              "MELON": 1130.0,
+              "EGG": 0.0,
+              "MILK": 612.0,
+              "WOOL": 4780.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9706.0,
+              "CARROT": 9983.0,
+              "TOMATO": 9971.0,
+              "STRAWBERRY": 9912.0,
+              "MELON": 10049.0,
+              "EGG": 9851.0,
+              "MILK": 10052.0,
+              "WOOL": 9903.0,
+              "FERTILIZER": 10178.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 36.0,
+              "TOMATO": 63.0,
+              "STRAWBERRY": 199.0,
+              "MELON": 226.0,
+              "EGG": 59.0,
+              "MILK": 51.0,
+              "WOOL": 239.0,
+              "FERTILIZER": 64.0
+            },
+            "positive_ready_products_inventory_mean": 9979.0,
+            "positive_ready_products_inventory_min": 9903.0,
+            "positive_ready_products_inventory_max": 10052.0,
+            "positive_ready_products_price_mean": 178.75,
+            "positive_ready_products_price_min": 51.0,
+            "positive_ready_products_price_max": 239.0,
+            "ready_mark_weighted_market_inventory": 9938.269788479447,
+            "ready_mark_weighted_displayed_price": 216.44499135293336
+          },
+          "time": {
+            "remaining_season_turns": 312
+          },
+          "response": {
+            "sell_cash_residual": 5905.0,
+            "cash_residual_change": 5863.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -585.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 798.0,
+              "MELON": 902.0,
+              "EGG": 0.0,
+              "MILK": 570.0,
+              "WOOL": 3836.0,
+              "FERTILIZER": 384.0
+            }
+          }
+        },
+        {
+          "seed": 7353,
+          "anchor_day": 17,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 1230.0,
+            "opponent_mark": 7493.0,
+            "residual": 6263.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "STRAWBERRY",
+              "MELON",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT"
+            ],
+            "positive_mark_total": 6395.0,
+            "top_positive_mark_share": 0.3777951524628616,
+            "by_item_residual_mark": {
+              "WHEAT": -132.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1020.0,
+              "MELON": 1160.0,
+              "EGG": 0.0,
+              "MILK": 1799.0,
+              "WOOL": 2416.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9626.0,
+              "CARROT": 9983.0,
+              "TOMATO": 9833.0,
+              "STRAWBERRY": 9900.0,
+              "MELON": 10043.0,
+              "EGG": 9953.0,
+              "MILK": 9875.0,
+              "WOOL": 10029.0,
+              "FERTILIZER": 10162.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 44.0,
+              "CARROT": 36.0,
+              "TOMATO": 80.0,
+              "STRAWBERRY": 204.0,
+              "MELON": 232.0,
+              "EGG": 53.0,
+              "MILK": 257.0,
+              "WOOL": 151.0,
+              "FERTILIZER": 68.0
+            },
+            "positive_ready_products_inventory_mean": 9961.75,
+            "positive_ready_products_inventory_min": 9875.0,
+            "positive_ready_products_inventory_max": 10043.0,
+            "positive_ready_products_price_mean": 211.0,
+            "positive_ready_products_price_min": 151.0,
+            "positive_ready_products_price_max": 257.0,
+            "ready_mark_weighted_market_inventory": 9967.641751368257,
+            "ready_mark_weighted_displayed_price": 203.96544175136825
+          },
+          "time": {
+            "remaining_season_turns": 312
+          },
+          "response": {
+            "sell_cash_residual": 6165.0,
+            "cash_residual_change": 6446.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -788.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 820.0,
+              "MELON": 925.0,
+              "EGG": 0.0,
+              "MILK": 3865.0,
+              "WOOL": 1008.0,
+              "FERTILIZER": 335.0
+            }
+          }
+        },
+        {
+          "seed": 7354,
+          "anchor_day": 17,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 786.0,
+            "opponent_mark": 10308.0,
+            "residual": 9522.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "STRAWBERRY",
+              "MELON",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT"
+            ],
+            "positive_mark_total": 9732.0,
+            "top_positive_mark_share": 0.49116317303740237,
+            "by_item_residual_mark": {
+              "WHEAT": -210.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1224.0,
+              "MELON": 1160.0,
+              "EGG": 0.0,
+              "MILK": 2568.0,
+              "WOOL": 4780.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9714.0,
+              "CARROT": 9935.0,
+              "TOMATO": 9851.0,
+              "STRAWBERRY": 9901.0,
+              "MELON": 10043.0,
+              "EGG": 9983.0,
+              "MILK": 9962.0,
+              "WOOL": 9903.0,
+              "FERTILIZER": 10175.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 40.0,
+              "TOMATO": 78.0,
+              "STRAWBERRY": 204.0,
+              "MELON": 232.0,
+              "EGG": 51.0,
+              "MILK": 214.0,
+              "WOOL": 239.0,
+              "FERTILIZER": 65.0
+            },
+            "positive_ready_products_inventory_mean": 9952.25,
+            "positive_ready_products_inventory_min": 9901.0,
+            "positive_ready_products_inventory_max": 10043.0,
+            "positive_ready_products_price_mean": 222.25,
+            "positive_ready_products_price_min": 204.0,
+            "positive_ready_products_price_max": 239.0,
+            "ready_mark_weighted_market_inventory": 9935.004110152076,
+            "ready_mark_weighted_displayed_price": 227.16687217427045
+          },
+          "time": {
+            "remaining_season_turns": 312
+          },
+          "response": {
+            "sell_cash_residual": 9070.0,
+            "cash_residual_change": 8516.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": 180.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 613.0,
+              "MELON": 925.0,
+              "EGG": 0.0,
+              "MILK": 3196.0,
+              "WOOL": 3836.0,
+              "FERTILIZER": 320.0
+            }
+          }
+        },
+        {
+          "seed": 7355,
+          "anchor_day": 17,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 1020.0,
+            "opponent_mark": 6094.0,
+            "residual": 5074.0,
+            "positive_product_count": 4,
+            "negative_product_count": 1,
+            "positive_products": [
+              "STRAWBERRY",
+              "MELON",
+              "MILK",
+              "WOOL"
+            ],
+            "negative_products": [
+              "WHEAT"
+            ],
+            "positive_mark_total": 5242.0,
+            "top_positive_mark_share": 0.5074399084318962,
+            "by_item_residual_mark": {
+              "WHEAT": -168.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1140.0,
+              "MELON": 1130.0,
+              "EGG": 0.0,
+              "MILK": 312.0,
+              "WOOL": 2660.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9715.0,
+              "CARROT": 9749.0,
+              "TOMATO": 9917.0,
+              "STRAWBERRY": 9834.0,
+              "MELON": 10049.0,
+              "EGG": 9923.0,
+              "MILK": 10064.0,
+              "WOOL": 10034.0,
+              "FERTILIZER": 10178.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 55.0,
+              "TOMATO": 70.0,
+              "STRAWBERRY": 228.0,
+              "MELON": 226.0,
+              "EGG": 55.0,
+              "MILK": 26.0,
+              "WOOL": 133.0,
+              "FERTILIZER": 64.0
+            },
+            "positive_ready_products_inventory_mean": 9995.25,
+            "positive_ready_products_inventory_min": 9834.0,
+            "positive_ready_products_inventory_max": 10064.0,
+            "positive_ready_products_price_mean": 153.25,
+            "positive_ready_products_price_min": 26.0,
+            "positive_ready_products_price_max": 228.0,
+            "ready_mark_weighted_market_inventory": 9995.524227394124,
+            "ready_mark_weighted_displayed_price": 167.33918351774133
+          },
+          "time": {
+            "remaining_season_turns": 312
+          },
+          "response": {
+            "sell_cash_residual": 2674.0,
+            "cash_residual_change": 2681.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -587.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 918.0,
+              "MELON": 902.0,
+              "EGG": 0.0,
+              "MILK": 184.0,
+              "WOOL": 873.0,
+              "FERTILIZER": 384.0
+            }
+          }
+        }
+      ]
+    },
+    "18": {
+      "class": "boundary_anchor",
+      "ready_residual": {
+        "mean": 2509.6,
+        "min": 771.0,
+        "max": 3634.0,
+        "values": [
+          3634.0,
+          3382.0,
+          771.0,
+          1165.0,
+          3596.0
+        ]
+      },
+      "positive_product_count": {
+        "mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "values": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      },
+      "top_positive_mark_share": {
+        "mean": 0.754040085755743,
+        "min": 0.6869375511317153,
+        "max": 0.8367570528622296,
+        "values": [
+          0.6869375511317153,
+          0.7158690176322419,
+          0.8074534161490683,
+          0.7231833910034602,
+          0.8367570528622296
+        ]
+      },
+      "positive_ready_market_inventory_mean": {
+        "mean": 9826.933333333332,
+        "min": 9780.0,
+        "max": 9851.0,
+        "values": [
+          9780.0,
+          9833.666666666666,
+          9841.0,
+          9829.0,
+          9851.0
+        ]
+      },
+      "ready_mark_weighted_market_inventory": {
+        "mean": 9867.653109162247,
+        "min": 9825.121352604308,
+        "max": 9896.632653061224,
+        "values": [
+          9825.121352604308,
+          9894.580856423174,
+          9896.632653061224,
+          9887.5195634815,
+          9834.41112024103
+        ]
+      },
+      "positive_ready_price_mean": {
+        "mean": 150.6,
+        "min": 128.0,
+        "max": 172.0,
+        "values": [
+          172.0,
+          161.66666666666666,
+          128.0,
+          163.33333333333334,
+          128.0
+        ]
+      },
+      "ready_mark_weighted_displayed_price": {
+        "mean": 208.81372904463691,
+        "min": 191.0496894409938,
+        "max": 224.2680665394055,
+        "values": [
+          224.2680665394055,
+          204.73702770780855,
+          191.0496894409938,
+          212.8999201490551,
+          211.11394138592166
+        ]
+      },
+      "remaining_season_turns": {
+        "mean": 288.0,
+        "min": 288.0,
+        "max": 288.0,
+        "values": [
+          288.0,
+          288.0,
+          288.0,
+          288.0,
+          288.0
+        ]
+      },
+      "sell_cash_residual": {
+        "mean": 459.8,
+        "min": -3810.0,
+        "max": 2469.0,
+        "values": [
+          2469.0,
+          1918.0,
+          -3810.0,
+          273.0,
+          1449.0
+        ]
+      },
+      "cash_residual_change": {
+        "mean": 1909.2,
+        "min": -2016.0,
+        "max": 4165.0,
+        "values": [
+          4165.0,
+          3440.0,
+          -2016.0,
+          922.0,
+          3035.0
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "anchor_day": 18,
+          "class": "boundary_anchor",
+          "ready_output": {
+            "self_mark": 1463.0,
+            "opponent_mark": 5097.0,
+            "residual": 3634.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 3667.0,
+            "top_positive_mark_share": 0.6869375511317153,
+            "by_item_residual_mark": {
+              "WHEAT": 172.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 2519.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": -33.0,
+              "WOOL": 976.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9674.0,
+              "CARROT": 9892.0,
+              "TOMATO": 9892.0,
+              "STRAWBERRY": 9832.0,
+              "MELON": 10057.0,
+              "EGG": 9910.0,
+              "MILK": 10075.0,
+              "WOOL": 9834.0,
+              "FERTILIZER": 10194.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 43.0,
+              "CARROT": 43.0,
+              "TOMATO": 73.0,
+              "STRAWBERRY": 229.0,
+              "MELON": 218.0,
+              "EGG": 55.0,
+              "MILK": 3.0,
+              "WOOL": 244.0,
+              "FERTILIZER": 61.0
+            },
+            "positive_ready_products_inventory_mean": 9780.0,
+            "positive_ready_products_inventory_min": 9674.0,
+            "positive_ready_products_inventory_max": 9834.0,
+            "positive_ready_products_price_mean": 172.0,
+            "positive_ready_products_price_min": 43.0,
+            "positive_ready_products_price_max": 244.0,
+            "ready_mark_weighted_market_inventory": 9825.121352604308,
+            "ready_mark_weighted_displayed_price": 224.2680665394055
+          },
+          "time": {
+            "remaining_season_turns": 288
+          },
+          "response": {
+            "sell_cash_residual": 2469.0,
+            "cash_residual_change": 4165.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1685.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1832.0,
+              "MELON": 437.0,
+              "EGG": 0.0,
+              "MILK": -11.0,
+              "WOOL": 1956.0,
+              "FERTILIZER": -60.0
+            }
+          }
+        },
+        {
+          "seed": 7352,
+          "anchor_day": 18,
+          "class": "boundary_anchor",
+          "ready_output": {
+            "self_mark": 1630.0,
+            "opponent_mark": 5012.0,
+            "residual": 3382.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 3970.0,
+            "top_positive_mark_share": 0.7158690176322419,
+            "by_item_residual_mark": {
+              "WHEAT": 172.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 2842.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": -588.0,
+              "WOOL": 956.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9692.0,
+              "CARROT": 9982.0,
+              "TOMATO": 9964.0,
+              "STRAWBERRY": 9903.0,
+              "MELON": 10052.0,
+              "EGG": 9838.0,
+              "MILK": 10056.0,
+              "WOOL": 9906.0,
+              "FERTILIZER": 10194.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 43.0,
+              "CARROT": 36.0,
+              "TOMATO": 64.0,
+              "STRAWBERRY": 203.0,
+              "MELON": 223.0,
+              "EGG": 60.0,
+              "MILK": 42.0,
+              "WOOL": 239.0,
+              "FERTILIZER": 61.0
+            },
+            "positive_ready_products_inventory_mean": 9833.666666666666,
+            "positive_ready_products_inventory_min": 9692.0,
+            "positive_ready_products_inventory_max": 9906.0,
+            "positive_ready_products_price_mean": 161.66666666666666,
+            "positive_ready_products_price_min": 43.0,
+            "positive_ready_products_price_max": 239.0,
+            "ready_mark_weighted_market_inventory": 9894.580856423174,
+            "ready_mark_weighted_displayed_price": 204.73702770780855
+          },
+          "time": {
+            "remaining_season_turns": 288
+          },
+          "response": {
+            "sell_cash_residual": 1918.0,
+            "cash_residual_change": 3440.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1546.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1409.0,
+              "MELON": 447.0,
+              "EGG": 0.0,
+              "MILK": -248.0,
+              "WOOL": 1916.0,
+              "FERTILIZER": -60.0
+            }
+          }
+        },
+        {
+          "seed": 7353,
+          "anchor_day": 18,
+          "class": "boundary_anchor",
+          "ready_output": {
+            "self_mark": 5484.0,
+            "opponent_mark": 6255.0,
+            "residual": 771.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 3381.0,
+            "top_positive_mark_share": 0.8074534161490683,
+            "by_item_residual_mark": {
+              "WHEAT": 135.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 2730.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": -2610.0,
+              "WOOL": 516.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9603.0,
+              "CARROT": 9982.0,
+              "TOMATO": 9820.0,
+              "STRAWBERRY": 9885.0,
+              "MELON": 10046.0,
+              "EGG": 9946.0,
+              "MILK": 9865.0,
+              "WOOL": 10035.0,
+              "FERTILIZER": 10177.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 45.0,
+              "CARROT": 36.0,
+              "TOMATO": 82.0,
+              "STRAWBERRY": 210.0,
+              "MELON": 229.0,
+              "EGG": 53.0,
+              "MILK": 261.0,
+              "WOOL": 129.0,
+              "FERTILIZER": 65.0
+            },
+            "positive_ready_products_inventory_mean": 9841.0,
+            "positive_ready_products_inventory_min": 9603.0,
+            "positive_ready_products_inventory_max": 10035.0,
+            "positive_ready_products_price_mean": 128.0,
+            "positive_ready_products_price_min": 45.0,
+            "positive_ready_products_price_max": 210.0,
+            "ready_mark_weighted_market_inventory": 9896.632653061224,
+            "ready_mark_weighted_displayed_price": 191.0496894409938
+          },
+          "time": {
+            "remaining_season_turns": 288
+          },
+          "response": {
+            "sell_cash_residual": -3810.0,
+            "cash_residual_change": -2016.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1762.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1481.0,
+              "MELON": 459.0,
+              "EGG": 0.0,
+              "MILK": -4969.0,
+              "WOOL": 1043.0,
+              "FERTILIZER": -62.0
+            }
+          }
+        },
+        {
+          "seed": 7354,
+          "anchor_day": 18,
+          "class": "boundary_anchor",
+          "ready_output": {
+            "self_mark": 5499.0,
+            "opponent_mark": 6664.0,
+            "residual": 1165.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 3757.0,
+            "top_positive_mark_share": 0.7231833910034602,
+            "by_item_residual_mark": {
+              "WHEAT": 84.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 2717.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": -2592.0,
+              "WOOL": 956.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9694.0,
+              "CARROT": 9928.0,
+              "TOMATO": 9838.0,
+              "STRAWBERRY": 9887.0,
+              "MELON": 10046.0,
+              "EGG": 9982.0,
+              "MILK": 9958.0,
+              "WOOL": 9906.0,
+              "FERTILIZER": 10192.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 41.0,
+              "TOMATO": 79.0,
+              "STRAWBERRY": 209.0,
+              "MELON": 229.0,
+              "EGG": 51.0,
+              "MILK": 216.0,
+              "WOOL": 239.0,
+              "FERTILIZER": 62.0
+            },
+            "positive_ready_products_inventory_mean": 9829.0,
+            "positive_ready_products_inventory_min": 9694.0,
+            "positive_ready_products_inventory_max": 9906.0,
+            "positive_ready_products_price_mean": 163.33333333333334,
+            "positive_ready_products_price_min": 42.0,
+            "positive_ready_products_price_max": 239.0,
+            "ready_mark_weighted_market_inventory": 9887.5195634815,
+            "ready_mark_weighted_displayed_price": 212.8999201490551
+          },
+          "time": {
+            "remaining_season_turns": 288
+          },
+          "response": {
+            "sell_cash_residual": 273.0,
+            "cash_residual_change": 922.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -631.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1683.0,
+              "MELON": 459.0,
+              "EGG": 0.0,
+              "MILK": -3157.0,
+              "WOOL": 1916.0,
+              "FERTILIZER": 3.0
+            }
+          }
+        },
+        {
+          "seed": 7355,
+          "anchor_day": 18,
+          "class": "boundary_anchor",
+          "ready_output": {
+            "self_mark": 1057.0,
+            "opponent_mark": 4653.0,
+            "residual": 3596.0,
+            "positive_product_count": 3,
+            "negative_product_count": 1,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "WOOL"
+            ],
+            "negative_products": [
+              "MILK"
+            ],
+            "positive_mark_total": 3651.0,
+            "top_positive_mark_share": 0.8367570528622296,
+            "by_item_residual_mark": {
+              "WHEAT": 168.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3055.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": -55.0,
+              "WOOL": 428.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9700.0,
+              "CARROT": 9730.0,
+              "TOMATO": 9910.0,
+              "STRAWBERRY": 9813.0,
+              "MELON": 10052.0,
+              "EGG": 9910.0,
+              "MILK": 10074.0,
+              "WOOL": 10040.0,
+              "FERTILIZER": 10194.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 42.0,
+              "CARROT": 56.0,
+              "TOMATO": 71.0,
+              "STRAWBERRY": 235.0,
+              "MELON": 223.0,
+              "EGG": 55.0,
+              "MILK": 5.0,
+              "WOOL": 107.0,
+              "FERTILIZER": 61.0
+            },
+            "positive_ready_products_inventory_mean": 9851.0,
+            "positive_ready_products_inventory_min": 9700.0,
+            "positive_ready_products_inventory_max": 10040.0,
+            "positive_ready_products_price_mean": 128.0,
+            "positive_ready_products_price_min": 42.0,
+            "positive_ready_products_price_max": 235.0,
+            "ready_mark_weighted_market_inventory": 9834.41112024103,
+            "ready_mark_weighted_displayed_price": 211.11394138592166
+          },
+          "time": {
+            "remaining_season_turns": 288
+          },
+          "response": {
+            "sell_cash_residual": 1449.0,
+            "cash_residual_change": 3035.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1625.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 1654.0,
+              "MELON": 447.0,
+              "EGG": 0.0,
+              "MILK": -29.0,
+              "WOOL": 1062.0,
+              "FERTILIZER": -60.0
+            }
+          }
+        }
+      ]
+    },
+    "19": {
+      "class": "success_5of5_word_anchor",
+      "ready_residual": {
+        "mean": 5551.8,
+        "min": 3784.0,
+        "max": 7983.0,
+        "values": [
+          4034.0,
+          3784.0,
+          7525.0,
+          7983.0,
+          4433.0
+        ]
+      },
+      "positive_product_count": {
+        "mean": 2.8,
+        "min": 2.0,
+        "max": 3.0,
+        "values": [
+          3.0,
+          3.0,
+          3.0,
+          2.0,
+          3.0
+        ]
+      },
+      "top_positive_mark_share": {
+        "mean": 0.7828369267533679,
+        "min": 0.5491386788945346,
+        "max": 0.973475458601884,
+        "values": [
+          0.973475458601884,
+          0.9119978858350951,
+          0.5592026578073089,
+          0.5491386788945346,
+          0.9203699526280171
+        ]
+      },
+      "positive_ready_market_inventory_mean": {
+        "mean": 9854.0,
+        "min": 9767.333333333334,
+        "max": 9920.0,
+        "values": [
+          9852.0,
+          9880.333333333334,
+          9767.333333333334,
+          9920.0,
+          9850.333333333334
+        ]
+      },
+      "ready_mark_weighted_market_inventory": {
+        "mean": 9862.118185489187,
+        "min": 9794.402436273404,
+        "max": 9924.520758458297,
+        "values": [
+          9822.473723351512,
+          9908.559989429175,
+          9860.634019933555,
+          9924.520758458297,
+          9794.402436273404
+        ]
+      },
+      "positive_ready_price_mean": {
+        "mean": 132.3,
+        "min": 86.33333333333333,
+        "max": 212.5,
+        "values": [
+          92.0,
+          86.33333333333333,
+          174.66666666666666,
+          212.5,
+          96.0
+        ]
+      },
+      "ready_mark_weighted_displayed_price": {
+        "mean": 217.6850929203536,
+        "min": 186.96141649048627,
+        "max": 239.77554817275748,
+        "values": [
+          225.83738225086762,
+          186.96141649048627,
+          239.77554817275748,
+          212.3525839633164,
+          223.49853372434018
+        ]
+      },
+      "remaining_season_turns": {
+        "mean": 264.0,
+        "min": 264.0,
+        "max": 264.0,
+        "values": [
+          264.0,
+          264.0,
+          264.0,
+          264.0,
+          264.0
+        ]
+      },
+      "sell_cash_residual": {
+        "mean": 4017.2,
+        "min": 2183.0,
+        "max": 6255.0,
+        "values": [
+          2183.0,
+          2599.0,
+          5919.0,
+          6255.0,
+          3130.0
+        ]
+      },
+      "cash_residual_change": {
+        "mean": 4316.0,
+        "min": 2594.0,
+        "max": 6380.0,
+        "values": [
+          2594.0,
+          3118.0,
+          6380.0,
+          5820.0,
+          3668.0
+        ]
+      },
+      "cases": [
+        {
+          "seed": 7351,
+          "anchor_day": 19,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 673.0,
+            "opponent_mark": 4707.0,
+            "residual": 4034.0,
+            "positive_product_count": 3,
+            "negative_product_count": 0,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MILK"
+            ],
+            "negative_products": [],
+            "positive_mark_total": 4034.0,
+            "top_positive_mark_share": 0.973475458601884,
+            "by_item_residual_mark": {
+              "WHEAT": 88.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3927.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 19.0,
+              "WOOL": 0.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9655.0,
+              "CARROT": 9885.0,
+              "TOMATO": 9885.0,
+              "STRAWBERRY": 9825.0,
+              "MELON": 10058.0,
+              "EGG": 9897.0,
+              "MILK": 10076.0,
+              "WOOL": 9805.0,
+              "FERTILIZER": 10203.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 44.0,
+              "CARROT": 44.0,
+              "TOMATO": 74.0,
+              "STRAWBERRY": 231.0,
+              "MELON": 216.0,
+              "EGG": 56.0,
+              "MILK": 1.0,
+              "WOOL": 245.0,
+              "FERTILIZER": 59.0
+            },
+            "positive_ready_products_inventory_mean": 9852.0,
+            "positive_ready_products_inventory_min": 9655.0,
+            "positive_ready_products_inventory_max": 10076.0,
+            "positive_ready_products_price_mean": 92.0,
+            "positive_ready_products_price_min": 1.0,
+            "positive_ready_products_price_max": 231.0,
+            "ready_mark_weighted_market_inventory": 9822.473723351512,
+            "ready_mark_weighted_displayed_price": 225.83738225086762
+          },
+          "time": {
+            "remaining_season_turns": 264
+          },
+          "response": {
+            "sell_cash_residual": 2183.0,
+            "cash_residual_change": 2594.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1085.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3428.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 15.0,
+              "WOOL": 0.0,
+              "FERTILIZER": -175.0
+            }
+          }
+        },
+        {
+          "seed": 7352,
+          "anchor_day": 19,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 659.0,
+            "opponent_mark": 4443.0,
+            "residual": 3784.0,
+            "positive_product_count": 3,
+            "negative_product_count": 0,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MILK"
+            ],
+            "negative_products": [],
+            "positive_mark_total": 3784.0,
+            "top_positive_mark_share": 0.9119978858350951,
+            "by_item_residual_mark": {
+              "WHEAT": 86.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3451.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 247.0,
+              "WOOL": 0.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9668.0,
+              "CARROT": 9981.0,
+              "TOMATO": 9957.0,
+              "STRAWBERRY": 9903.0,
+              "MELON": 10053.0,
+              "EGG": 9819.0,
+              "MILK": 10070.0,
+              "WOOL": 9901.0,
+              "FERTILIZER": 10203.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 43.0,
+              "CARROT": 36.0,
+              "TOMATO": 65.0,
+              "STRAWBERRY": 203.0,
+              "MELON": 222.0,
+              "EGG": 61.0,
+              "MILK": 13.0,
+              "WOOL": 240.0,
+              "FERTILIZER": 59.0
+            },
+            "positive_ready_products_inventory_mean": 9880.333333333334,
+            "positive_ready_products_inventory_min": 9668.0,
+            "positive_ready_products_inventory_max": 10070.0,
+            "positive_ready_products_price_mean": 86.33333333333333,
+            "positive_ready_products_price_min": 13.0,
+            "positive_ready_products_price_max": 203.0,
+            "ready_mark_weighted_market_inventory": 9908.559989429175,
+            "ready_mark_weighted_displayed_price": 186.96141649048627
+          },
+          "time": {
+            "remaining_season_turns": 264
+          },
+          "response": {
+            "sell_cash_residual": 2599.0,
+            "cash_residual_change": 3118.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1038.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3596.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 216.0,
+              "WOOL": 0.0,
+              "FERTILIZER": -175.0
+            }
+          }
+        },
+        {
+          "seed": 7353,
+          "anchor_day": 19,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 1201.0,
+            "opponent_mark": 8726.0,
+            "residual": 7525.0,
+            "positive_product_count": 3,
+            "negative_product_count": 0,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MILK"
+            ],
+            "negative_products": [],
+            "positive_mark_total": 7525.0,
+            "top_positive_mark_share": 0.5592026578073089,
+            "by_item_residual_mark": {
+              "WHEAT": 92.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3225.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 4208.0,
+              "WOOL": 0.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9572.0,
+              "CARROT": 9981.0,
+              "TOMATO": 9807.0,
+              "STRAWBERRY": 9871.0,
+              "MELON": 10047.0,
+              "EGG": 9939.0,
+              "MILK": 9859.0,
+              "WOOL": 10043.0,
+              "FERTILIZER": 10186.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 46.0,
+              "CARROT": 36.0,
+              "TOMATO": 83.0,
+              "STRAWBERRY": 215.0,
+              "MELON": 228.0,
+              "EGG": 54.0,
+              "MILK": 263.0,
+              "WOOL": 93.0,
+              "FERTILIZER": 63.0
+            },
+            "positive_ready_products_inventory_mean": 9767.333333333334,
+            "positive_ready_products_inventory_min": 9572.0,
+            "positive_ready_products_inventory_max": 9871.0,
+            "positive_ready_products_price_mean": 174.66666666666666,
+            "positive_ready_products_price_min": 46.0,
+            "positive_ready_products_price_max": 263.0,
+            "ready_mark_weighted_market_inventory": 9860.634019933555,
+            "ready_mark_weighted_displayed_price": 239.77554817275748
+          },
+          "time": {
+            "remaining_season_turns": 264
+          },
+          "response": {
+            "sell_cash_residual": 5919.0,
+            "cash_residual_change": 6380.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1145.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3452.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 3458.0,
+              "WOOL": 340.0,
+              "FERTILIZER": -186.0
+            }
+          }
+        },
+        {
+          "seed": 7354,
+          "anchor_day": 19,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 816.0,
+            "opponent_mark": 8799.0,
+            "residual": 7983.0,
+            "positive_product_count": 2,
+            "negative_product_count": 1,
+            "positive_products": [
+              "STRAWBERRY",
+              "MILK"
+            ],
+            "negative_products": [
+              "WHEAT"
+            ],
+            "positive_mark_total": 8069.0,
+            "top_positive_mark_share": 0.5491386788945346,
+            "by_item_residual_mark": {
+              "WHEAT": -86.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3638.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 4431.0,
+              "WOOL": 0.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9669.0,
+              "CARROT": 9915.0,
+              "TOMATO": 9819.0,
+              "STRAWBERRY": 9874.0,
+              "MELON": 10047.0,
+              "EGG": 9981.0,
+              "MILK": 9966.0,
+              "WOOL": 9901.0,
+              "FERTILIZER": 10200.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 43.0,
+              "CARROT": 42.0,
+              "TOMATO": 82.0,
+              "STRAWBERRY": 214.0,
+              "MELON": 228.0,
+              "EGG": 51.0,
+              "MILK": 211.0,
+              "WOOL": 240.0,
+              "FERTILIZER": 60.0
+            },
+            "positive_ready_products_inventory_mean": 9920.0,
+            "positive_ready_products_inventory_min": 9874.0,
+            "positive_ready_products_inventory_max": 9966.0,
+            "positive_ready_products_price_mean": 212.5,
+            "positive_ready_products_price_min": 211.0,
+            "positive_ready_products_price_max": 214.0,
+            "ready_mark_weighted_market_inventory": 9924.520758458297,
+            "ready_mark_weighted_displayed_price": 212.3525839633164
+          },
+          "time": {
+            "remaining_season_turns": 264
+          },
+          "response": {
+            "sell_cash_residual": 6255.0,
+            "cash_residual_change": 5820.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -382.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 3623.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 3192.0,
+              "WOOL": 0.0,
+              "FERTILIZER": -178.0
+            }
+          }
+        },
+        {
+          "seed": 7355,
+          "anchor_day": 19,
+          "class": "success_5of5_word_anchor",
+          "ready_output": {
+            "self_mark": 508.0,
+            "opponent_mark": 4941.0,
+            "residual": 4433.0,
+            "positive_product_count": 3,
+            "negative_product_count": 0,
+            "positive_products": [
+              "WHEAT",
+              "STRAWBERRY",
+              "MILK"
+            ],
+            "negative_products": [],
+            "positive_mark_total": 4433.0,
+            "top_positive_mark_share": 0.9203699526280171,
+            "by_item_residual_mark": {
+              "WHEAT": 258.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 4080.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 95.0,
+              "WOOL": 0.0
+            }
+          },
+          "market": {
+            "shared_inventory_by_item": {
+              "WHEAT": 9682.0,
+              "CARROT": 9711.0,
+              "TOMATO": 9903.0,
+              "STRAWBERRY": 9795.0,
+              "MELON": 10053.0,
+              "EGG": 9897.0,
+              "MILK": 10074.0,
+              "WOOL": 10052.0,
+              "FERTILIZER": 10203.0
+            },
+            "displayed_price_by_item": {
+              "WHEAT": 43.0,
+              "CARROT": 57.0,
+              "TOMATO": 72.0,
+              "STRAWBERRY": 240.0,
+              "MELON": 222.0,
+              "EGG": 56.0,
+              "MILK": 5.0,
+              "WOOL": 43.0,
+              "FERTILIZER": 59.0
+            },
+            "positive_ready_products_inventory_mean": 9850.333333333334,
+            "positive_ready_products_inventory_min": 9682.0,
+            "positive_ready_products_inventory_max": 10074.0,
+            "positive_ready_products_price_mean": 96.0,
+            "positive_ready_products_price_min": 5.0,
+            "positive_ready_products_price_max": 240.0,
+            "ready_mark_weighted_market_inventory": 9794.402436273404,
+            "ready_mark_weighted_displayed_price": 223.49853372434018
+          },
+          "time": {
+            "remaining_season_turns": 264
+          },
+          "response": {
+            "sell_cash_residual": 3130.0,
+            "cash_residual_change": 3668.0,
+            "sell_cash_by_item_residual": {
+              "WHEAT": -1035.0,
+              "CARROT": 0.0,
+              "TOMATO": 0.0,
+              "STRAWBERRY": 4082.0,
+              "MELON": 0.0,
+              "EGG": 0.0,
+              "MILK": 123.0,
+              "WOOL": 135.0,
+              "FERTILIZER": -175.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "feature_range_comparison": {
+    "ready_residual": {
+      "success": {
+        "mean": 5571.45,
+        "min": 319.0,
+        "max": 9814.0,
+        "values": [
+          9814.0,
+          9396.0,
+          6156.0,
+          9002.0,
+          8370.0,
+          1086.0,
+          1002.0,
+          319.0,
+          2523.0,
+          643.0,
+          7193.0,
+          7307.0,
+          6263.0,
+          9522.0,
+          5074.0,
+          4034.0,
+          3784.0,
+          7525.0,
+          7983.0,
+          4433.0
+        ]
+      },
+      "boundary": {
+        "mean": 2509.6,
+        "min": 771.0,
+        "max": 3634.0,
+        "values": [
+          3634.0,
+          3382.0,
+          771.0,
+          1165.0,
+          3596.0
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "positive_product_count": {
+      "success": {
+        "mean": 3.3,
+        "min": 1.0,
+        "max": 4.0,
+        "values": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          3.0,
+          3.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          3.0,
+          3.0,
+          3.0,
+          2.0,
+          3.0
+        ]
+      },
+      "boundary": {
+        "mean": 3.0,
+        "min": 3.0,
+        "max": 3.0,
+        "values": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "top_positive_mark_share": {
+      "success": {
+        "mean": 0.6847902286892299,
+        "min": 0.3777951524628616,
+        "max": 1.0,
+        "values": [
+          0.666798418972332,
+          0.6638888888888889,
+          0.5707547169811321,
+          0.6816052149113873,
+          0.6057104010876955,
+          0.7426810477657936,
+          0.799328295549958,
+          1.0,
+          0.6540697674418605,
+          0.7204678362573099,
+          0.6640251400464544,
+          0.6358919781827856,
+          0.3777951524628616,
+          0.49116317303740237,
+          0.5074399084318962,
+          0.973475458601884,
+          0.9119978858350951,
+          0.5592026578073089,
+          0.5491386788945346,
+          0.9203699526280171
+        ]
+      },
+      "boundary": {
+        "mean": 0.754040085755743,
+        "min": 0.6869375511317153,
+        "max": 0.8367570528622296,
+        "values": [
+          0.6869375511317153,
+          0.7158690176322419,
+          0.8074534161490683,
+          0.7231833910034602,
+          0.8367570528622296
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "positive_ready_market_inventory_mean": {
+      "success": {
+        "mean": 9921.958333333332,
+        "min": 9767.333333333334,
+        "max": 10023.0,
+        "values": [
+          9896.0,
+          9917.25,
+          9924.25,
+          9916.0,
+          9931.0,
+          9901.333333333334,
+          9914.333333333334,
+          10023.0,
+          9950.0,
+          9953.0,
+          9954.75,
+          9979.0,
+          9961.75,
+          9952.25,
+          9995.25,
+          9852.0,
+          9880.333333333334,
+          9767.333333333334,
+          9920.0,
+          9850.333333333334
+        ]
+      },
+      "boundary": {
+        "mean": 9826.933333333332,
+        "min": 9780.0,
+        "max": 9851.0,
+        "values": [
+          9780.0,
+          9833.666666666666,
+          9841.0,
+          9829.0,
+          9851.0
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "ready_mark_weighted_market_inventory": {
+      "success": {
+        "mean": 9932.493733767169,
+        "min": 9794.402436273404,
+        "max": 10023.0,
+        "values": [
+          9919.606719367588,
+          9938.388888888889,
+          10002.441299790356,
+          9939.255449174985,
+          9996.729662361206,
+          9911.408320493067,
+          9928.27959697733,
+          10023.0,
+          9958.936046511628,
+          10009.072514619884,
+          9875.725372318622,
+          9938.269788479447,
+          9967.641751368257,
+          9935.004110152076,
+          9995.524227394124,
+          9822.473723351512,
+          9908.559989429175,
+          9860.634019933555,
+          9924.520758458297,
+          9794.402436273404
+        ]
+      },
+      "boundary": {
+        "mean": 9867.653109162247,
+        "min": 9825.121352604308,
+        "max": 9896.632653061224,
+        "values": [
+          9825.121352604308,
+          9894.580856423174,
+          9896.632653061224,
+          9887.5195634815,
+          9834.41112024103
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "positive_ready_price_mean": {
+      "success": {
+        "mean": 157.275,
+        "min": 82.33333333333333,
+        "max": 222.25,
+        "values": [
+          179.75,
+          173.75,
+          165.0,
+          174.75,
+          169.25,
+          103.33333333333333,
+          110.33333333333333,
+          169.0,
+          219.0,
+          82.33333333333333,
+          172.25,
+          178.75,
+          211.0,
+          222.25,
+          153.25,
+          92.0,
+          86.33333333333333,
+          174.66666666666666,
+          212.5,
+          96.0
+        ]
+      },
+      "boundary": {
+        "mean": 150.6,
+        "min": 128.0,
+        "max": 172.0,
+        "values": [
+          172.0,
+          161.66666666666666,
+          128.0,
+          163.33333333333334,
+          128.0
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "ready_mark_weighted_displayed_price": {
+      "success": {
+        "mean": 206.54255479303282,
+        "min": 124.55087719298245,
+        "max": 239.77554817275748,
+        "values": [
+          231.0201581027668,
+          227.40515873015872,
+          205.51362683438154,
+          231.5339172947647,
+          202.46634942216178,
+          187.01232665639446,
+          200.00251889168766,
+          169.0,
+          213.1453488372093,
+          124.55087719298245,
+          235.85886050006832,
+          216.44499135293336,
+          203.96544175136825,
+          227.16687217427045,
+          167.33918351774133,
+          225.83738225086762,
+          186.96141649048627,
+          239.77554817275748,
+          212.3525839633164,
+          223.49853372434018
+        ]
+      },
+      "boundary": {
+        "mean": 208.81372904463691,
+        "min": 191.0496894409938,
+        "max": 224.2680665394055,
+        "values": [
+          224.2680665394055,
+          204.73702770780855,
+          191.0496894409938,
+          212.8999201490551,
+          211.11394138592166
+        ]
+      },
+      "range_nonoverlap": null
+    },
+    "remaining_season_turns": {
+      "success": {
+        "mean": 330.0,
+        "min": 264.0,
+        "max": 384.0,
+        "values": [
+          384.0,
+          384.0,
+          384.0,
+          384.0,
+          384.0,
+          360.0,
+          360.0,
+          360.0,
+          360.0,
+          360.0,
+          312.0,
+          312.0,
+          312.0,
+          312.0,
+          312.0,
+          264.0,
+          264.0,
+          264.0,
+          264.0,
+          264.0
+        ]
+      },
+      "boundary": {
+        "mean": 288.0,
+        "min": 288.0,
+        "max": 288.0,
+        "values": [
+          288.0,
+          288.0,
+          288.0,
+          288.0,
+          288.0
+        ]
+      },
+      "range_nonoverlap": null
+    }
+  },
+  "boundary": [
+    "Success/boundary labels refer only to whether the +++ signature held 5/5 in Ready Output Surface v0.",
+    "Market inventory and displayed price are shared public World State at the anchor.",
+    "Cross-product Ready Output is a displayed-price valuation mark, not realized Cash.",
+    "Range non-overlap is a mechanical sample property only; it is not a causal separator or a rule.",
+    "Day/time identity is retained for audit but is not used as a candidate trigger.",
+    "No Action reason, policy state, Candidate, or adoption conclusion is introduced."
+  ]
+}
