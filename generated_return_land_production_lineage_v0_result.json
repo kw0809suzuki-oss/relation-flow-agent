@@ -1,0 +1,7559 @@
+{
+  "schema": "kaggriculture.generated-return-land-production-lineage.result.v0",
+  "battle_count": 10,
+  "opponent": {
+    "generated_return_land_cases": 10,
+    "land_time_frequency": {
+      "D7h1": 10
+    },
+    "new_land_successful_plant_cases": 10,
+    "new_land_plant_crop_frequency": {
+      "MELON": 50,
+      "STRAWBERRY": 170,
+      "WHEAT": 179
+    },
+    "first_production_cases": 10,
+    "first_production_time_frequency": {
+      "D9h11": 10
+    },
+    "first_production_crop_frequency": {
+      "WHEAT": 10
+    },
+    "mean_first_production_units": 1.0
+  },
+  "self": {
+    "first_production_cases": 10,
+    "first_production_time_frequency": {
+      "D17h24": 8,
+      "D10h1": 2
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "self_land": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1994.0,
+        "cash_after": 994.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1091.0,
+        "cash_without_generated_return": 903.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 12,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 0,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 1,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 14742.0,
+        "opponent": 123537.0,
+        "margin": -108795.0
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "self_land": {
+        "player": 1,
+        "day": 8,
+        "hour": 12,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2751.0,
+        "cash_after": 1751.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1830.0,
+        "cash_without_generated_return": 921.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 17,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 1,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 0,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 15182.0,
+        "opponent": 120726.0,
+        "margin": -105544.0
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "self_land": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2208.0,
+        "cash_after": 1208.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1330.0,
+        "cash_without_generated_return": 878.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1602.0,
+        "cash_after": 602.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 317.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 18,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 0,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 1,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 48751.0,
+        "opponent": 139754.0,
+        "margin": -91003.0
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "self_land": {
+        "player": 1,
+        "day": 8,
+        "hour": 4,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2076.0,
+        "cash_after": 1076.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1279.0,
+        "cash_without_generated_return": 797.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 6,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 17,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 18,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 1,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 0,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 34768.0,
+        "opponent": 161643.0,
+        "margin": -126875.0
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "self_land": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1965.0,
+        "cash_after": 965.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1091.0,
+        "cash_without_generated_return": 874.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1723.0,
+        "cash_after": 723.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 438.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 0,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 1,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 15385.0,
+        "opponent": 104887.0,
+        "margin": -89502.0
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "self_land": {
+        "player": 1,
+        "day": 8,
+        "hour": 13,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2431.0,
+        "cash_after": 1431.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1830.0,
+        "cash_without_generated_return": 601.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1855.0,
+        "cash_after": 855.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1409.0,
+        "cash_without_generated_return": 446.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 12,
+          "hour": 2,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 12
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 2,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 13,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 1,
+        "day": 10,
+        "hour": 1,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 0,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 14628.0,
+        "opponent": 110248.0,
+        "margin": -95620.0
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "self_land": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2031.0,
+        "cash_after": 1031.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1091.0,
+        "cash_without_generated_return": 940.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1747.0,
+        "cash_after": 747.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1334.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 0,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 1,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 14066.0,
+        "opponent": 125409.0,
+        "margin": -111343.0
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "self_land": {
+        "player": 1,
+        "day": 8,
+        "hour": 13,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2431.0,
+        "cash_after": 1431.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1830.0,
+        "cash_without_generated_return": 601.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1731.0,
+        "cash_after": 731.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 446.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 12,
+          "hour": 2,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 12
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 2,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 13,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 14,
+          "crop": "MELON",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 1,
+        "day": 10,
+        "hour": 1,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 0,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 15892.0,
+        "opponent": 66301.0,
+        "margin": -50409.0
+      }
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "self_land": {
+        "player": 0,
+        "day": 8,
+        "hour": 3,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2013.0,
+        "cash_after": 1013.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1279.0,
+        "cash_without_generated_return": 734.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 1,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1695.0,
+        "cash_after": 695.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 410.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 6,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 20,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 16
+        },
+        {
+          "player": 0,
+          "day": 16,
+          "hour": 20,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 1,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 1,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 0,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 1,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 29681.0,
+        "opponent": 138509.0,
+        "margin": -108828.0
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "self_land": {
+        "player": 1,
+        "day": 8,
+        "hour": 13,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 2742.0,
+        "cash_after": 1742.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 2121.0,
+        "cash_without_generated_return": 621.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "opponent_land": {
+        "player": 0,
+        "day": 7,
+        "hour": 1,
+        "op": "BUY_LAND",
+        "item": null,
+        "cash_before": 1698.0,
+        "cash_after": 698.0,
+        "cost": 1000.0,
+        "generated_return_cash_before": 1285.0,
+        "cash_without_generated_return": 413.0,
+        "generated_return_necessary": true,
+        "newly_unlocked_positions": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            9,
+            4
+          ]
+        ]
+      },
+      "self_plants": [
+        {
+          "player": 1,
+          "day": 8,
+          "hour": 15,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            4
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 1,
+          "day": 16,
+          "hour": 23,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 16
+        }
+      ],
+      "opponent_plants": [
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 7,
+          "crop": "MELON",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 14,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 7,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 7
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 5,
+          "crop": "STRAWBERRY",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 22,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 8,
+          "hour": 23,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 8
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 8,
+          "crop": "STRAWBERRY",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 10,
+          "crop": "STRAWBERRY",
+          "position": [
+            7,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 12,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 16,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            2
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 9,
+          "hour": 19,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            3
+          ],
+          "planted_day": 9
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 11,
+          "crop": "STRAWBERRY",
+          "position": [
+            9,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 10,
+          "hour": 22,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 10
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 10,
+          "crop": "MELON",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 15,
+          "crop": "MELON",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 11,
+          "hour": 18,
+          "crop": "WHEAT",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 11
+        },
+        {
+          "player": 0,
+          "day": 14,
+          "hour": 13,
+          "crop": "STRAWBERRY",
+          "position": [
+            8,
+            4
+          ],
+          "planted_day": 14
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            0
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 15,
+          "hour": 17,
+          "crop": "MELON",
+          "position": [
+            9,
+            1
+          ],
+          "planted_day": 15
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 7,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 10,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 13,
+          "crop": "WHEAT",
+          "position": [
+            5,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 14,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            3
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 16,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            6,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 17,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            2
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 19,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            0
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            7,
+            1
+          ],
+          "planted_day": 26
+        },
+        {
+          "player": 0,
+          "day": 26,
+          "hour": 20,
+          "crop": "WHEAT",
+          "position": [
+            8,
+            1
+          ],
+          "planted_day": 26
+        }
+      ],
+      "self_first_production": {
+        "player": 1,
+        "day": 17,
+        "hour": 24,
+        "source": "DAILY_CROP",
+        "crop": "STRAWBERRY",
+        "position": [
+          5,
+          4
+        ],
+        "planted_day": 8,
+        "units": 1
+      },
+      "opponent_first_production": {
+        "player": 0,
+        "day": 9,
+        "hour": 11,
+        "source": "WATER",
+        "crop": "WHEAT",
+        "position": [
+          6,
+          1
+        ],
+        "planted_day": 7,
+        "units": 1
+      },
+      "context": {
+        "timestamp": {
+          "day": 9,
+          "hour": 11
+        },
+        "self_generated_land_production_units": 0,
+        "opponent_generated_land_production_units": 1
+      },
+      "terminal": {
+        "self": 37265.0,
+        "opponent": 134801.0,
+        "margin": -97536.0
+      }
+    }
+  ],
+  "boundary": [
+    "The bridge is closed only when generated Return necessity, exact newly unlocked coordinates, successful PLANT on those coordinates, and actual yield increase all appear on the same Battle path.",
+    "No terminal causal attribution or WR-03 is introduced by this observer."
+  ]
+}
