@@ -1,0 +1,1361 @@
+{
+  "schema": "kaggriculture.post-land-first12-productive-conversion-audit.v0",
+  "source_run_id": 35913668518,
+  "battle_count": 50,
+  "window": "first 12 retained turns after each side's first realized LAND expansion",
+  "self": {
+    "issued_mean": 1.9,
+    "success_mean": 1.28,
+    "collision_mean": 0.62,
+    "success_rate_mean": 0.8907118055555555,
+    "success_positive_cases": 32,
+    "collision_positive_cases": 8,
+    "first_success_turn_mean": 2.65625,
+    "first_success_turn_median": 3.0,
+    "first_collision_turn_mean": 4.375,
+    "crop_issued_mean": {
+      "STRAWBERRY": 1.06,
+      "WHEAT": 0.84
+    }
+  },
+  "opponent": {
+    "issued_mean": 3.0,
+    "success_mean": 3.0,
+    "collision_mean": 0.0,
+    "success_rate_mean": 1.0,
+    "success_positive_cases": 50,
+    "collision_positive_cases": 0,
+    "first_success_turn_mean": 6.0,
+    "first_success_turn_median": 6.0,
+    "first_collision_turn_mean": null,
+    "crop_issued_mean": {
+      "MELON": 1.0,
+      "STRAWBERRY": 2.0
+    }
+  },
+  "cases": [
+    {
+      "seed": 7001,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7002,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7003,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7004,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7005,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7006,
+      "seat": 1,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7007,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 2,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7008,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7009,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7010,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7011,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7012,
+      "seat": 1,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7013,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7014,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7015,
+      "seat": 0,
+      "self": {
+        "issued": 9,
+        "success": 5,
+        "collision": 4,
+        "success_rate": 0.5555555555555556,
+        "crop": {
+          "STRAWBERRY": 9
+        },
+        "first_success_turn": 1,
+        "first_collision_turn": 5
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7016,
+      "seat": 1,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7017,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7018,
+      "seat": 1,
+      "self": {
+        "issued": 9,
+        "success": 5,
+        "collision": 4,
+        "success_rate": 0.5555555555555556,
+        "crop": {
+          "STRAWBERRY": 9
+        },
+        "first_success_turn": 1,
+        "first_collision_turn": 5
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7019,
+      "seat": 0,
+      "self": {
+        "issued": 10,
+        "success": 6,
+        "collision": 4,
+        "success_rate": 0.6,
+        "crop": {
+          "STRAWBERRY": 6,
+          "WHEAT": 4
+        },
+        "first_success_turn": 2,
+        "first_collision_turn": 4
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7020,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7021,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7022,
+      "seat": 1,
+      "self": {
+        "issued": 9,
+        "success": 6,
+        "collision": 3,
+        "success_rate": 0.6666666666666666,
+        "crop": {
+          "STRAWBERRY": 5,
+          "WHEAT": 4
+        },
+        "first_success_turn": 1,
+        "first_collision_turn": 5
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7023,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7024,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7025,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7026,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7027,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7028,
+      "seat": 1,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7029,
+      "seat": 0,
+      "self": {
+        "issued": 4,
+        "success": 2,
+        "collision": 2,
+        "success_rate": 0.5,
+        "crop": {
+          "WHEAT": 4
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": 8
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7030,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7031,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7032,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7033,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7034,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7035,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7036,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7037,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7038,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7039,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7040,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7041,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7042,
+      "seat": 1,
+      "self": {
+        "issued": 11,
+        "success": 5,
+        "collision": 6,
+        "success_rate": 0.45454545454545453,
+        "crop": {
+          "STRAWBERRY": 5,
+          "WHEAT": 6
+        },
+        "first_success_turn": 2,
+        "first_collision_turn": 2
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7043,
+      "seat": 0,
+      "self": {
+        "issued": 8,
+        "success": 5,
+        "collision": 3,
+        "success_rate": 0.625,
+        "crop": {
+          "STRAWBERRY": 8
+        },
+        "first_success_turn": 2,
+        "first_collision_turn": 4
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7044,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7045,
+      "seat": 0,
+      "self": {
+        "issued": 11,
+        "success": 6,
+        "collision": 5,
+        "success_rate": 0.5454545454545454,
+        "crop": {
+          "STRAWBERRY": 11
+        },
+        "first_success_turn": 2,
+        "first_collision_turn": 2
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7046,
+      "seat": 1,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7047,
+      "seat": 0,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7048,
+      "seat": 1,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7049,
+      "seat": 0,
+      "self": {
+        "issued": 0,
+        "success": 0,
+        "collision": 0,
+        "success_rate": null,
+        "crop": {},
+        "first_success_turn": null,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    },
+    {
+      "seed": 7050,
+      "seat": 1,
+      "self": {
+        "issued": 1,
+        "success": 1,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "WHEAT": 1
+        },
+        "first_success_turn": 3,
+        "first_collision_turn": null
+      },
+      "opponent": {
+        "issued": 3,
+        "success": 3,
+        "collision": 0,
+        "success_rate": 1.0,
+        "crop": {
+          "MELON": 1,
+          "STRAWBERRY": 2
+        },
+        "first_success_turn": 6,
+        "first_collision_turn": null
+      }
+    }
+  ],
+  "boundary": [
+    "Reanalysis of existing observation-only LAND PLANT raw artifacts; no new Battle and no policy mutation.",
+    "Window is relative to each side's own first realized LAND expansion.",
+    "success_unit_phase and same_turn_target_became_nonempty are mechanical public-rule execution classes.",
+    "This localizes Input->Productive-State conversion behavior; it does not yet adopt a rule."
+  ]
+}
