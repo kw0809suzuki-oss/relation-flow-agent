@@ -60,10 +60,10 @@ def _reachable(order,day):
 
 def _apply(obs,action):
     if not isinstance(action,dict):
-        return action,[],[]
+        return action,[],[],None
     day=int(obs.get("day",0) or 0)
     if day<D14_START_DAY:
-        return action,[],[]
+        return action,[],[],None
 
     player=int(obs["player"])
     self_mark=wr02._public_committed_mark(obs,player)
