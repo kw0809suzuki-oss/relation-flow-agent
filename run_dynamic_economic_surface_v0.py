@@ -110,6 +110,17 @@ def side_snapshot(obs):
             },
         },
         "stock":stock_snapshot(obs),
+        "inventory_display_mark":{
+            "total":float(d["liquidatable_inventory"]["display_price_mark"]),
+            "by_item":{
+                item:{
+                    "quantity":int(v["quantity"]),
+                    "price":float(v["price"]),
+                    "mark":float(v["mark"]),
+                }
+                for item,v in d["liquidatable_inventory"]["by_item"].items()
+            },
+        },
     }
 
 def common_market(obs):
