@@ -1,0 +1,813 @@
+{
+  "schema": "kaggriculture.p12-trigger-observer.fresh20.result.v0",
+  "battle_count": 20,
+  "terminal_counts": {
+    "improved": 6,
+    "worsened": 14,
+    "tied": 0
+  },
+  "group_summary": {
+    "improved": {
+      "count": 6,
+      "delta_self": {
+        "mean": 8645.0,
+        "median": 8671.0,
+        "min": 3880.0,
+        "max": 13699.0
+      },
+      "delta_margin": {
+        "mean": -13006.333333333334,
+        "median": -10542.5,
+        "min": -45802.0,
+        "max": 16592.0
+      },
+      "day0_current_duplicate_plant_requests": {
+        "mean": 9,
+        "median": 9.0,
+        "min": 9,
+        "max": 9
+      },
+      "day0_candidate_duplicate_plant_requests": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "day0_delta_duplicate_plant_requests": {
+        "mean": -9,
+        "median": -9.0,
+        "min": -9,
+        "max": -9
+      },
+      "day0_current_plant_requests": {
+        "mean": 22,
+        "median": 22.0,
+        "min": 22,
+        "max": 22
+      },
+      "day0_candidate_plant_requests": {
+        "mean": 17,
+        "median": 17.0,
+        "min": 17,
+        "max": 17
+      },
+      "day0_delta_plant_requests": {
+        "mean": -5,
+        "median": -5.0,
+        "min": -5,
+        "max": -5
+      },
+      "day0_changed_turn_count": {
+        "mean": 21,
+        "median": 21.0,
+        "min": 21,
+        "max": 21
+      },
+      "day1_delta_money": {
+        "mean": -60.0,
+        "median": -60.0,
+        "min": -60.0,
+        "max": -60.0
+      },
+      "day1_delta_hands_count": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "day1_delta_occupied_unlocked": {
+        "mean": 4,
+        "median": 4.0,
+        "min": 4,
+        "max": 4
+      },
+      "day1_delta_empty_unlocked": {
+        "mean": -4,
+        "median": -4.0,
+        "min": -4,
+        "max": -4
+      },
+      "day1_delta_plant_tiles": {
+        "mean": 3,
+        "median": 3.0,
+        "min": 3,
+        "max": 3
+      },
+      "day1_delta_animal_tiles": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "day1_delta_melon_seed": {
+        "mean": -3,
+        "median": -3.0,
+        "min": -3,
+        "max": -3
+      },
+      "day1_delta_wheat_seed": {
+        "mean": -1,
+        "median": -1.0,
+        "min": -1,
+        "max": -1
+      }
+    },
+    "worsened": {
+      "count": 14,
+      "delta_self": {
+        "mean": -10633.857142857143,
+        "median": -7713.0,
+        "min": -23351.0,
+        "max": -1096.0
+      },
+      "delta_margin": {
+        "mean": 7996.142857142857,
+        "median": 501.5,
+        "min": -16417.0,
+        "max": 41233.0
+      },
+      "day0_current_duplicate_plant_requests": {
+        "mean": 9,
+        "median": 9.0,
+        "min": 9,
+        "max": 9
+      },
+      "day0_candidate_duplicate_plant_requests": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "day0_delta_duplicate_plant_requests": {
+        "mean": -9,
+        "median": -9.0,
+        "min": -9,
+        "max": -9
+      },
+      "day0_current_plant_requests": {
+        "mean": 22,
+        "median": 22.0,
+        "min": 22,
+        "max": 22
+      },
+      "day0_candidate_plant_requests": {
+        "mean": 17,
+        "median": 17.0,
+        "min": 17,
+        "max": 17
+      },
+      "day0_delta_plant_requests": {
+        "mean": -5,
+        "median": -5.0,
+        "min": -5,
+        "max": -5
+      },
+      "day0_changed_turn_count": {
+        "mean": 21,
+        "median": 21.0,
+        "min": 21,
+        "max": 21
+      },
+      "day1_delta_money": {
+        "mean": -60.0,
+        "median": -60.0,
+        "min": -60.0,
+        "max": -60.0
+      },
+      "day1_delta_hands_count": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "day1_delta_occupied_unlocked": {
+        "mean": 4,
+        "median": 4.0,
+        "min": 4,
+        "max": 4
+      },
+      "day1_delta_empty_unlocked": {
+        "mean": -4,
+        "median": -4.0,
+        "min": -4,
+        "max": -4
+      },
+      "day1_delta_plant_tiles": {
+        "mean": 3,
+        "median": 3.0,
+        "min": 3,
+        "max": 3
+      },
+      "day1_delta_animal_tiles": {
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "day1_delta_melon_seed": {
+        "mean": -3,
+        "median": -3.0,
+        "min": -3,
+        "max": -3
+      },
+      "day1_delta_wheat_seed": {
+        "mean": -1,
+        "median": -1.0,
+        "min": -1,
+        "max": -1
+      }
+    },
+    "tied": {
+      "count": 0
+    }
+  },
+  "cross_tabs": {
+    "baseline_had_duplicate_plant_requests": {
+      "yes_improved": 6,
+      "yes_worsened": 14,
+      "no_improved": 0,
+      "no_worsened": 0
+    },
+    "p12_reduced_duplicate_plant_requests": {
+      "yes_improved": 6,
+      "yes_worsened": 14,
+      "no_improved": 0,
+      "no_worsened": 0
+    },
+    "day1_plant_tiles_increased": {
+      "yes_improved": 6,
+      "yes_worsened": 14,
+      "no_improved": 0,
+      "no_worsened": 0
+    }
+  },
+  "cases": [
+    {
+      "seed": 8601,
+      "seat": 0,
+      "delta_self": -2128.0,
+      "delta_margin": 24585.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8602,
+      "seat": 1,
+      "delta_self": 13699.0,
+      "delta_margin": -45802.0,
+      "terminal_group": "IMPROVED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8603,
+      "seat": 0,
+      "delta_self": -23351.0,
+      "delta_margin": 673.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8604,
+      "seat": 1,
+      "delta_self": -1096.0,
+      "delta_margin": 31862.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8605,
+      "seat": 0,
+      "delta_self": 11933.0,
+      "delta_margin": -14775.0,
+      "terminal_group": "IMPROVED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8606,
+      "seat": 1,
+      "delta_self": -18604.0,
+      "delta_margin": 330.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8607,
+      "seat": 0,
+      "delta_self": -5866.0,
+      "delta_margin": 41233.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8608,
+      "seat": 1,
+      "delta_self": 6153.0,
+      "delta_margin": -25817.0,
+      "terminal_group": "IMPROVED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8609,
+      "seat": 0,
+      "delta_self": 3880.0,
+      "delta_margin": 16592.0,
+      "terminal_group": "IMPROVED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8610,
+      "seat": 1,
+      "delta_self": -5466.0,
+      "delta_margin": -7068.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8611,
+      "seat": 0,
+      "delta_self": -7623.0,
+      "delta_margin": -12484.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8612,
+      "seat": 1,
+      "delta_self": -16219.0,
+      "delta_margin": -10996.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8613,
+      "seat": 0,
+      "delta_self": -7679.0,
+      "delta_margin": 8816.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8614,
+      "seat": 1,
+      "delta_self": -7747.0,
+      "delta_margin": -4293.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8615,
+      "seat": 0,
+      "delta_self": -1744.0,
+      "delta_margin": -1032.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8616,
+      "seat": 1,
+      "delta_self": -8792.0,
+      "delta_margin": -16417.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8617,
+      "seat": 0,
+      "delta_self": -19861.0,
+      "delta_margin": 25298.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8618,
+      "seat": 1,
+      "delta_self": 11189.0,
+      "delta_margin": -1926.0,
+      "terminal_group": "IMPROVED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8619,
+      "seat": 0,
+      "delta_self": 5016.0,
+      "delta_margin": -6310.0,
+      "terminal_group": "IMPROVED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    },
+    {
+      "seed": 8620,
+      "seat": 1,
+      "delta_self": -22698.0,
+      "delta_margin": 31439.0,
+      "terminal_group": "WORSENED",
+      "day0_current_duplicate_plant_requests": 9,
+      "day0_candidate_duplicate_plant_requests": 0,
+      "day0_delta_duplicate_plant_requests": -9,
+      "day0_current_plant_requests": 22,
+      "day0_candidate_plant_requests": 17,
+      "day0_delta_plant_requests": -5,
+      "day0_changed_turn_count": 21,
+      "day1_delta_money": -60.0,
+      "day1_delta_hands_count": 0,
+      "day1_delta_occupied_unlocked": 4,
+      "day1_delta_empty_unlocked": -4,
+      "day1_delta_plant_tiles": 3,
+      "day1_delta_animal_tiles": 0,
+      "day1_delta_melon_seed": -3,
+      "day1_delta_wheat_seed": -1,
+      "first_changed_turn": {
+        "day": 0,
+        "hour": 3,
+        "current_plant_requests": [],
+        "candidate_plant_requests": []
+      }
+    }
+  ],
+  "boundary": [
+    "Observation-only association scan on the already-existing WR-02 vs WR-02+P12 Fresh20 comparison.",
+    "No feature here is treated as a causal trigger.",
+    "duplicate_plant_requests counts same-turn PLANT requests whose actors occupy the same current tile.",
+    "occupied_unlocked is an observable non-null/non-LOCKED count, not a semantic productive-value score.",
+    "The purpose is to identify the next discriminating observation, not to adopt P12."
+  ]
+}
