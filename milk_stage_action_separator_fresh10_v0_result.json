@@ -1,0 +1,2502 @@
+{
+  "schema": "kaggriculture.milk-stage-action-separator.fresh10.result.v0",
+  "group_summary": {
+    "SELF_IMPROVED": {
+      "count": 7,
+      "observed_action_separator_cases": 6,
+      "classification_counts": {
+        "A_MORE_HARVESTABLE_COW_HARVEST": 5,
+        "B_MORE_HARVESTABLE_COW_HARVEST": 1
+      },
+      "by_seed": {
+        "7351": {
+          "delta_self": 455.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D21h17",
+          "first_physical_difference": "D21h18",
+          "sell_boundary": "D21h22",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "CARE": 2,
+            "HARVEST": 1,
+            "SOUTH": 5
+          },
+          "B_op_counts": {
+            "CARE": 3,
+            "PLANT": 5
+          }
+        },
+        "7352": {
+          "delta_self": 1153.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D20h16",
+          "first_physical_difference": "D20h17",
+          "sell_boundary": "D20h21",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "EAST": 1,
+            "FEED": 1,
+            "HARVEST": 1,
+            "SOUTH": 4
+          },
+          "B_op_counts": {
+            "COLLECT_FERTILIZER": 1,
+            "NORTH": 4,
+            "PICKUP": 1,
+            "SOUTH": 1
+          }
+        },
+        "7353": {
+          "delta_self": 942.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D20h11",
+          "first_physical_difference": "D20h12",
+          "sell_boundary": "D20h14",
+          "classification": "B_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "EAST": 1,
+            "SOUTH": 2,
+            "WEST": 4
+          },
+          "B_op_counts": {
+            "HARVEST": 1,
+            "PLANT": 4,
+            "SOUTH": 1,
+            "WEST": 1
+          }
+        },
+        "7354": {
+          "delta_self": 2293.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D20h17",
+          "first_physical_difference": "D20h18",
+          "sell_boundary": "D20h21",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "CARE": 1,
+            "COLLECT_FERTILIZER": 1,
+            "HARVEST": 1,
+            "SOUTH": 4
+          },
+          "B_op_counts": {
+            "CARE": 1,
+            "HARVEST": 4,
+            "WEST": 2
+          }
+        },
+        "7355": {
+          "delta_self": 1821.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D21h17",
+          "first_physical_difference": "D21h18",
+          "sell_boundary": "D21h22",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "CARE": 2,
+            "EAST": 4,
+            "HARVEST": 1
+          },
+          "B_op_counts": {
+            "CARE": 3,
+            "NORTH": 4
+          }
+        },
+        "7356": {
+          "delta_self": 745.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D22h2",
+          "first_physical_difference": "D22h3",
+          "sell_boundary": "D22h5",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "COLLECT_FERTILIZER": 2,
+            "HARVEST": 2,
+            "WEST": 3
+          },
+          "B_op_counts": {
+            "COLLECT_FERTILIZER": 1,
+            "HARVEST": 1,
+            "NORTH": 1,
+            "PICKUP": 1,
+            "WEST": 3
+          }
+        },
+        "7358": {
+          "delta_self": 3215.0,
+          "status": "NO_COMPACT_PHYSICAL_PRECURSOR",
+          "last_equal_timestamp": null,
+          "first_physical_difference": null,
+          "sell_boundary": "D22h0",
+          "classification": null,
+          "A_op_counts": null,
+          "B_op_counts": null
+        }
+      }
+    },
+    "SELF_WORSE": {
+      "count": 3,
+      "observed_action_separator_cases": 3,
+      "classification_counts": {
+        "A_MORE_HARVESTABLE_COW_HARVEST": 2,
+        "B_MORE_HARVESTABLE_COW_HARVEST": 1
+      },
+      "by_seed": {
+        "7357": {
+          "delta_self": -567.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D19h20",
+          "first_physical_difference": "D19h21",
+          "sell_boundary": "D20h0",
+          "classification": "B_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "EAST": 7
+          },
+          "B_op_counts": {
+            "EAST": 1,
+            "HARVEST": 1,
+            "NORTH": 1,
+            "SOUTH": 4
+          }
+        },
+        "7359": {
+          "delta_self": -2441.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D21h17",
+          "first_physical_difference": "D21h18",
+          "sell_boundary": "D21h22",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "CARE": 2,
+            "HARVEST": 1,
+            "WATER": 4
+          },
+          "B_op_counts": {
+            "CARE": 3,
+            "EAST": 4
+          }
+        },
+        "7360": {
+          "delta_self": -845.0,
+          "status": "OBSERVED",
+          "last_equal_timestamp": "D23h17",
+          "first_physical_difference": "D23h18",
+          "sell_boundary": "D23h22",
+          "classification": "A_MORE_HARVESTABLE_COW_HARVEST",
+          "A_op_counts": {
+            "HARVEST": 1,
+            "NORTH": 1,
+            "SOUTH": 3,
+            "WEST": 1
+          },
+          "B_op_counts": {
+            "CARE": 3,
+            "WATER": 4
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 455.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "sell_boundary": "D21h22",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            3
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 2
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:6",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:6",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "hand:1",
+            "actor_index": 2,
+            "position": [
+              2,
+              3
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 2
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "CARE": 2,
+          "HARVEST": 1,
+          "SOUTH": 5
+        },
+        "B_op_counts": {
+          "CARE": 3,
+          "PLANT": 5
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 0,
+          "cow_ready_count": 0,
+          "carried_milk": 2,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 2,
+          "cow_ready_count": 1,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 1153.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D20h16",
+      "first_physical_difference": "D20h17",
+      "sell_boundary": "D20h21",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 5,
+        "cow_ready_count": 2,
+        "carried_milk": 0,
+        "shed_milk": 3,
+        "sell_ready_milk": 3,
+        "physical_milk_total": 8
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 5,
+        "cow_ready_count": 2,
+        "carried_milk": 0,
+        "shed_milk": 3,
+        "sell_ready_milk": 3,
+        "physical_milk_total": 8
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            2
+          ],
+          "action": [
+            "FEED"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            5,
+            4
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            3
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 2
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            2,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            2,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            2,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            2,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            3
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            6,
+            4
+          ],
+          "action": [
+            "COLLECT_FERTILIZER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            5,
+            4
+          ],
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "hand:1",
+            "actor_index": 2,
+            "position": [
+              2,
+              3
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 2
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "EAST": 1,
+          "FEED": 1,
+          "HARVEST": 1,
+          "SOUTH": 4
+        },
+        "B_op_counts": {
+          "COLLECT_FERTILIZER": 1,
+          "NORTH": 4,
+          "PICKUP": 1,
+          "SOUTH": 1
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 3,
+          "cow_ready_count": 1,
+          "carried_milk": 2,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 5
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 5,
+          "cow_ready_count": 2,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 5
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 942.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D20h11",
+      "first_physical_difference": "D20h12",
+      "sell_boundary": "D20h14",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 8,
+        "cow_ready_count": 3,
+        "carried_milk": 3,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 11
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 8,
+        "cow_ready_count": 3,
+        "carried_milk": 3,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 11
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            3
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 3,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            5,
+            3
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            5,
+            3
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            3
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 3,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            6,
+            4
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 3
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            5,
+            3
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            3,
+            2
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            2
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            3,
+            2
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            3,
+            2
+          ],
+          "action": [
+            "PLANT",
+            "WHEAT"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "B_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [],
+        "B_harvestable_cow_harvest": [
+          {
+            "actor": "hand:0",
+            "actor_index": 1,
+            "position": [
+              6,
+              4
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 3
+          }
+        ],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "EAST": 1,
+          "SOUTH": 2,
+          "WEST": 4
+        },
+        "B_op_counts": {
+          "HARVEST": 1,
+          "PLANT": 4,
+          "SOUTH": 1,
+          "WEST": 1
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 8,
+          "cow_ready_count": 3,
+          "carried_milk": 3,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 11
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 5,
+          "cow_ready_count": 2,
+          "carried_milk": 6,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 11
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 2293.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D20h17",
+      "first_physical_difference": "D20h18",
+      "sell_boundary": "D20h21",
+      "A_last_equal_state": {
+        "cow_count": 5,
+        "cow_yield_total": 3,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 3
+      },
+      "B_last_equal_state": {
+        "cow_count": 5,
+        "cow_yield_total": 3,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 3
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            2
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            6,
+            4
+          ],
+          "action": [
+            "COLLECT_FERTILIZER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 3
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            2
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            6,
+            4
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            5,
+            4
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            3,
+            0
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "hand:1",
+            "actor_index": 2,
+            "position": [
+              2,
+              4
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 3
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "CARE": 1,
+          "COLLECT_FERTILIZER": 1,
+          "HARVEST": 1,
+          "SOUTH": 4
+        },
+        "B_op_counts": {
+          "CARE": 1,
+          "HARVEST": 4,
+          "WEST": 2
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 5,
+          "cow_yield_total": 0,
+          "cow_ready_count": 0,
+          "carried_milk": 3,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 3
+        },
+        "B": {
+          "cow_count": 5,
+          "cow_yield_total": 3,
+          "cow_ready_count": 1,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 3
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 1821.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "sell_boundary": "D21h22",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            3
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 2
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            2,
+            2
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            2,
+            2
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            2,
+            2
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            2,
+            2
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "hand:1",
+            "actor_index": 2,
+            "position": [
+              2,
+              3
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 2
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "CARE": 2,
+          "EAST": 4,
+          "HARVEST": 1
+        },
+        "B_op_counts": {
+          "CARE": 3,
+          "NORTH": 4
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 0,
+          "cow_ready_count": 0,
+          "carried_milk": 2,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 2,
+          "cow_ready_count": 1,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        }
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 745.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D22h2",
+      "first_physical_difference": "D22h3",
+      "sell_boundary": "D22h5",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 14,
+        "cow_ready_count": 5,
+        "carried_milk": 0,
+        "shed_milk": 3,
+        "sell_ready_milk": 3,
+        "physical_milk_total": 17
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 14,
+        "cow_ready_count": 5,
+        "carried_milk": 0,
+        "shed_milk": 3,
+        "sell_ready_milk": 3,
+        "physical_milk_total": 17
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            4
+          ],
+          "action": [
+            "COLLECT_FERTILIZER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            5,
+            3
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 3
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            4,
+            4
+          ],
+          "action": [
+            "COLLECT_FERTILIZER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            4,
+            5
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            4
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            4,
+            4
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            5,
+            4
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            4,
+            4
+          ],
+          "action": [
+            "COLLECT_FERTILIZER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            5,
+            4
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            4,
+            5
+          ],
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            3
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            4,
+            5
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            4
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            5,
+            5
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            4,
+            4
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "hand:0",
+            "actor_index": 1,
+            "position": [
+              5,
+              3
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 3
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "COLLECT_FERTILIZER": 2,
+          "HARVEST": 2,
+          "WEST": 3
+        },
+        "B_op_counts": {
+          "COLLECT_FERTILIZER": 1,
+          "HARVEST": 1,
+          "NORTH": 1,
+          "PICKUP": 1,
+          "WEST": 3
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 11,
+          "cow_ready_count": 4,
+          "carried_milk": 3,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 14
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 14,
+          "cow_ready_count": 5,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 14
+        }
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "group": "SELF_WORSE",
+      "delta_self": -567.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D19h20",
+      "first_physical_difference": "D19h21",
+      "sell_boundary": "D20h0",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 1,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 1
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 1,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 1
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            3,
+            4
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            3,
+            4
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            1,
+            3
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            1,
+            3
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            1,
+            3
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            1,
+            3
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            1,
+            3
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            3,
+            4
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            1,
+            4
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 1
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            1,
+            3
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            1,
+            1
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "B_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [],
+        "B_harvestable_cow_harvest": [
+          {
+            "actor": "hand:0",
+            "actor_index": 1,
+            "position": [
+              1,
+              4
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 1
+          }
+        ],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "EAST": 7
+        },
+        "B_op_counts": {
+          "EAST": 1,
+          "HARVEST": 1,
+          "NORTH": 1,
+          "SOUTH": 4
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 1,
+          "cow_ready_count": 1,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 1
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 0,
+          "cow_ready_count": 0,
+          "carried_milk": 1,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 1
+        }
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 3215.0,
+      "sell_boundary": "D22h0",
+      "status": "NO_COMPACT_PHYSICAL_PRECURSOR"
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "group": "SELF_WORSE",
+      "delta_self": -2441.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "sell_boundary": "D21h22",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            3
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 2
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            3,
+            1
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            2,
+            0
+          ],
+          "action": [
+            "EAST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "hand:1",
+            "actor_index": 2,
+            "position": [
+              2,
+              3
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 2
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "CARE": 2,
+          "HARVEST": 1,
+          "WATER": 4
+        },
+        "B_op_counts": {
+          "CARE": 3,
+          "EAST": 4
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 0,
+          "cow_ready_count": 0,
+          "carried_milk": 2,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 2,
+          "cow_ready_count": 1,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        }
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "group": "SELF_WORSE",
+      "delta_self": -845.0,
+      "status": "OBSERVED",
+      "last_equal_timestamp": "D23h17",
+      "first_physical_difference": "D23h18",
+      "sell_boundary": "D23h22",
+      "A_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "B_last_equal_state": {
+        "cow_count": 6,
+        "cow_yield_total": 2,
+        "cow_ready_count": 1,
+        "carried_milk": 0,
+        "shed_milk": 0,
+        "sell_ready_milk": 0,
+        "physical_milk_total": 2
+      },
+      "A_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            3
+          ],
+          "action": [
+            "HARVEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 2
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            5,
+            4
+          ],
+          "action": [
+            "WEST"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            4,
+            4
+          ],
+          "action": [
+            "NORTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            4,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            4,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            4,
+            0
+          ],
+          "action": [
+            "SOUTH"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "B_action_signature": [
+        {
+          "actor": "farmer",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:0",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:1",
+          "position": [
+            2,
+            4
+          ],
+          "action": [
+            "CARE"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": 0
+        },
+        {
+          "actor": "hand:2",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:3",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:4",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        },
+        {
+          "actor": "hand:5",
+          "position": [
+            1,
+            0
+          ],
+          "action": [
+            "WATER"
+          ],
+          "milk_carried_before": 0,
+          "standing_cow_yield_before": null
+        }
+      ],
+      "classification": {
+        "label": "A_MORE_HARVESTABLE_COW_HARVEST",
+        "A_harvestable_cow_harvest": [
+          {
+            "actor": "farmer",
+            "actor_index": 0,
+            "position": [
+              2,
+              3
+            ],
+            "action": [
+              "HARVEST"
+            ],
+            "milk_carried_before": 0,
+            "standing_cow_yield_before": 2
+          }
+        ],
+        "B_harvestable_cow_harvest": [],
+        "A_milk_drop_requests": [],
+        "B_milk_drop_requests": [],
+        "A_op_counts": {
+          "HARVEST": 1,
+          "NORTH": 1,
+          "SOUTH": 3,
+          "WEST": 1
+        },
+        "B_op_counts": {
+          "CARE": 3,
+          "WATER": 4
+        }
+      },
+      "next_physical_state": {
+        "A": {
+          "cow_count": 6,
+          "cow_yield_total": 0,
+          "cow_ready_count": 0,
+          "carried_milk": 2,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        },
+        "B": {
+          "cow_count": 6,
+          "cow_yield_total": 2,
+          "cow_ready_count": 1,
+          "carried_milk": 0,
+          "shed_milk": 0,
+          "sell_ready_milk": 0,
+          "physical_milk_total": 2
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "The inspected action is submitted at the last compact-MILK-equal timestamp immediately before the first compact MILK physical difference.",
+    "A HARVEST is called harvestable-COW HARVEST only when the actor is already standing on a COW with yield_units > 0 in the live pre-action state.",
+    "This identifies the direct action/state transition associated with the first MILK stage displacement; it does not explain why the agent chose that action.",
+    "A/B differ only in D14 BUY_SEED suppression.",
+    "Improved/worse grouping is retrospective."
+  ]
+}
