@@ -1,0 +1,3551 @@
+{
+  "schema": "kaggriculture.value-transition-timing-audit.fresh10.result.v0",
+  "summary": {
+    "observed_cases": 9,
+    "mover_is_B": 2,
+    "mover_is_A": 7,
+    "mover_terminal_better": 3,
+    "mover_terminal_worse": 6,
+    "mover_milk_cash_better": 5,
+    "mover_milk_cash_worse": 3,
+    "mean_mover_minus_other_terminal_self": -311.77777777777777,
+    "mean_mover_minus_other_milk_cash": 403.8888888888889,
+    "mean_decision_market_price_diff": 0.1111111111111111,
+    "mean_decision_market_inventory_diff": 0.0,
+    "by_group": {
+      "SELF_IMPROVED": {
+        "count": 6,
+        "mover_is_B": 1,
+        "mover_is_A": 5,
+        "mover_terminal_better": 1,
+        "mover_terminal_worse": 5,
+        "mover_milk_cash_better": 3,
+        "mover_milk_cash_worse": 2,
+        "mean_mover_minus_other_milk_cash": -223.16666666666666,
+        "mean_decision_market_price_diff": -1.6666666666666667,
+        "by_seed": {
+          "7351": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": 455.0,
+            "mover_minus_other_terminal_self": -455.0,
+            "mover_minus_other_milk_cash": 1.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D21h22",
+              "turns_after_decision": 5,
+              "units": 2,
+              "cash": 2.0,
+              "prices": [
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10076,
+                10076
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D22h0",
+              "turns_after_decision": 7,
+              "units": 2,
+              "cash": 2.0,
+              "prices": [
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10076,
+                10076
+              ]
+            }
+          },
+          "7352": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": 1153.0,
+            "mover_minus_other_terminal_self": -1153.0,
+            "mover_minus_other_milk_cash": 0.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D20h16",
+              "turns_after_decision": 0,
+              "units": 3,
+              "cash": 5.0,
+              "prices": [
+                3.0,
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10075,
+                10076,
+                10076
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D20h16",
+              "turns_after_decision": 0,
+              "units": 3,
+              "cash": 5.0,
+              "prices": [
+                3.0,
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10075,
+                10076,
+                10076
+              ]
+            }
+          },
+          "7353": {
+            "early_mover": "B",
+            "delta_self_B_minus_A": 942.0,
+            "mover_minus_other_terminal_self": 942.0,
+            "mover_minus_other_milk_cash": 1216.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D20h13",
+              "turns_after_decision": 2,
+              "units": 3,
+              "cash": 807.0,
+              "prices": [
+                269.0,
+                269.0,
+                269.0
+              ],
+              "market_inventory_before": [
+                9842,
+                9843,
+                9844
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D20h13",
+              "turns_after_decision": 2,
+              "units": 3,
+              "cash": 807.0,
+              "prices": [
+                269.0,
+                269.0,
+                269.0
+              ],
+              "market_inventory_before": [
+                9842,
+                9843,
+                9844
+              ]
+            }
+          },
+          "7354": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": 2293.0,
+            "mover_minus_other_terminal_self": -2293.0,
+            "mover_minus_other_milk_cash": -1217.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D20h21",
+              "turns_after_decision": 4,
+              "units": 3,
+              "cash": 606.0,
+              "prices": [
+                203.0,
+                202.0,
+                201.0
+              ],
+              "market_inventory_before": [
+                9976,
+                9977,
+                9978
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D21h0",
+              "turns_after_decision": 7,
+              "units": 3,
+              "cash": 606.0,
+              "prices": [
+                203.0,
+                202.0,
+                201.0
+              ],
+              "market_inventory_before": [
+                9976,
+                9977,
+                9978
+              ]
+            }
+          },
+          "7355": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": 1821.0,
+            "mover_minus_other_terminal_self": -1821.0,
+            "mover_minus_other_milk_cash": -1516.0,
+            "decision_market_price_diff": -10.0,
+            "decision_market_inventory_diff": 5,
+            "mover_next_sell": {
+              "timestamp": "D21h22",
+              "turns_after_decision": 5,
+              "units": 2,
+              "cash": 12.0,
+              "prices": [
+                7.0,
+                5.0
+              ],
+              "market_inventory_before": [
+                10073,
+                10074
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D22h0",
+              "turns_after_decision": 7,
+              "units": 2,
+              "cash": 36.0,
+              "prices": [
+                19.0,
+                17.0
+              ],
+              "market_inventory_before": [
+                10067,
+                10068
+              ]
+            }
+          },
+          "7356": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": 745.0,
+            "mover_minus_other_terminal_self": -745.0,
+            "mover_minus_other_milk_cash": 177.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D22h2",
+              "turns_after_decision": 0,
+              "units": 3,
+              "cash": 5.0,
+              "prices": [
+                3.0,
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10075,
+                10076,
+                10076
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D22h2",
+              "turns_after_decision": 0,
+              "units": 3,
+              "cash": 5.0,
+              "prices": [
+                3.0,
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10075,
+                10076,
+                10076
+              ]
+            }
+          }
+        }
+      },
+      "SELF_WORSE": {
+        "count": 3,
+        "mover_is_B": 1,
+        "mover_is_A": 2,
+        "mover_terminal_better": 2,
+        "mover_terminal_worse": 1,
+        "mover_milk_cash_better": 2,
+        "mover_milk_cash_worse": 1,
+        "mean_mover_minus_other_milk_cash": 1658.0,
+        "mean_decision_market_price_diff": 3.6666666666666665,
+        "by_seed": {
+          "7357": {
+            "early_mover": "B",
+            "delta_self_B_minus_A": -567.0,
+            "mover_minus_other_terminal_self": -567.0,
+            "mover_minus_other_milk_cash": -444.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D20h0",
+              "turns_after_decision": 4,
+              "units": 1,
+              "cash": 1.0,
+              "prices": [
+                1.0
+              ],
+              "market_inventory_before": [
+                10076
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D20h2",
+              "turns_after_decision": 6,
+              "units": 3,
+              "cash": 5.0,
+              "prices": [
+                3.0,
+                1.0,
+                1.0
+              ],
+              "market_inventory_before": [
+                10075,
+                10076,
+                10076
+              ]
+            }
+          },
+          "7359": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": -2441.0,
+            "mover_minus_other_terminal_self": 2441.0,
+            "mover_minus_other_milk_cash": 3849.0,
+            "decision_market_price_diff": 11.0,
+            "decision_market_inventory_diff": -5,
+            "mover_next_sell": {
+              "timestamp": "D21h22",
+              "turns_after_decision": 5,
+              "units": 2,
+              "cash": 268.0,
+              "prices": [
+                135.0,
+                133.0
+              ],
+              "market_inventory_before": [
+                10012,
+                10013
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D22h0",
+              "turns_after_decision": 7,
+              "units": 2,
+              "cash": 242.0,
+              "prices": [
+                122.0,
+                120.0
+              ],
+              "market_inventory_before": [
+                10018,
+                10019
+              ]
+            }
+          },
+          "7360": {
+            "early_mover": "A",
+            "delta_self_B_minus_A": -845.0,
+            "mover_minus_other_terminal_self": 845.0,
+            "mover_minus_other_milk_cash": 1569.0,
+            "decision_market_price_diff": 0.0,
+            "decision_market_inventory_diff": 0,
+            "mover_next_sell": {
+              "timestamp": "D23h22",
+              "turns_after_decision": 5,
+              "units": 2,
+              "cash": 264.0,
+              "prices": [
+                133.0,
+                131.0
+              ],
+              "market_inventory_before": [
+                10013,
+                10014
+              ]
+            },
+            "other_next_sell": {
+              "timestamp": "D24h0",
+              "turns_after_decision": 7,
+              "units": 2,
+              "cash": 264.0,
+              "prices": [
+                133.0,
+                131.0
+              ],
+              "market_inventory_before": [
+                10013,
+                10014
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 455.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D21h17",
+      "first_milk_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 0,
+            "cow_ready_count": 0,
+            "carried_milk": 2,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 1.0,
+          "market_inventory_milk": 10076,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 7,
+              "actor": "hand:6",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 1.0,
+          "market_inventory_milk": 10076,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 7,
+              "actor": "hand:6",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D21h22",
+          "turns_after_decision": 5,
+          "units": 2,
+          "cash": 2.0,
+          "prices": [
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10076,
+            10076
+          ]
+        },
+        "other": {
+          "timestamp": "D22h0",
+          "turns_after_decision": 7,
+          "units": 2,
+          "cash": 2.0,
+          "prices": [
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10076,
+            10076
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 69,
+          "cash": 73.0,
+          "avg_realized_price": 1.0579710144927537
+        },
+        "other": {
+          "units": 68,
+          "cash": 72.0,
+          "avg_realized_price": 1.0588235294117647
+        },
+        "mover_minus_other_cash": 1.0,
+        "mover_minus_other_units": 1
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D21h21",
+          "turns_after_decision": 4,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D22h0",
+          "turns_after_decision": 7,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 14166.0,
+        "other_self": 14621.0,
+        "mover_minus_other_self": -455.0
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 1153.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D20h16",
+      "first_milk_physical_difference": "D20h17",
+      "first_milk_sell_difference": "D20h21",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 5,
+            "cow_ready_count": 2,
+            "carried_milk": 0,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 8
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 3,
+            "cow_ready_count": 1,
+            "carried_milk": 2,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 8
+          },
+          "market_price_milk": 3.0,
+          "market_inventory_milk": 10075,
+          "sell_milk_request": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "all_market_orders": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                2
+              ],
+              "action": [
+                "FEED"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                5,
+                4
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                2,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                2,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                2,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                2,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 5,
+            "cow_ready_count": 2,
+            "carried_milk": 0,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 8
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 5,
+            "cow_ready_count": 2,
+            "carried_milk": 0,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 8
+          },
+          "market_price_milk": 3.0,
+          "market_inventory_milk": 10075,
+          "sell_milk_request": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "all_market_orders": [
+            [
+              "SELL",
+              "WHEAT",
+              2
+            ],
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                3
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                6,
+                4
+              ],
+              "action": [
+                "COLLECT_FERTILIZER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                5,
+                4
+              ],
+              "action": [
+                "PICKUP",
+                "WHEAT",
+                2
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D20h16",
+          "turns_after_decision": 0,
+          "units": 3,
+          "cash": 5.0,
+          "prices": [
+            3.0,
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10075,
+            10076,
+            10076
+          ]
+        },
+        "other": {
+          "timestamp": "D20h16",
+          "turns_after_decision": 0,
+          "units": 3,
+          "cash": 5.0,
+          "prices": [
+            3.0,
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10075,
+            10076,
+            10076
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 67,
+          "cash": 406.0,
+          "avg_realized_price": 6.059701492537314
+        },
+        "other": {
+          "units": 72,
+          "cash": 406.0,
+          "avg_realized_price": 5.638888888888889
+        },
+        "mover_minus_other_cash": 0.0,
+        "mover_minus_other_units": -5
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D20h17",
+          "turns_after_decision": 1,
+          "previous_sell_ready": 3,
+          "sell_ready": 0,
+          "direction": "DOWN"
+        },
+        "other": {
+          "timestamp": "D20h17",
+          "turns_after_decision": 1,
+          "previous_sell_ready": 3,
+          "sell_ready": 0,
+          "direction": "DOWN"
+        }
+      },
+      "terminal": {
+        "mover_self": 11764.0,
+        "other_self": 12917.0,
+        "mover_minus_other_self": -1153.0
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 942.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D20h11",
+      "first_milk_physical_difference": "D20h12",
+      "first_milk_sell_difference": "D20h14",
+      "early_mover": "B",
+      "later_arm": "A",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 8,
+            "cow_ready_count": 3,
+            "carried_milk": 3,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 11
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 8,
+            "cow_ready_count": 3,
+            "carried_milk": 3,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 11
+          },
+          "market_price_milk": 268.0,
+          "market_inventory_milk": 9847,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                3
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 3,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                5,
+                3
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                5,
+                3
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 8,
+            "cow_ready_count": 3,
+            "carried_milk": 3,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 11
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 5,
+            "cow_ready_count": 2,
+            "carried_milk": 6,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 11
+          },
+          "market_price_milk": 268.0,
+          "market_inventory_milk": 9847,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "SELL",
+              "WHEAT",
+              1
+            ],
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                3
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 3,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                6,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 3
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                5,
+                3
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                3,
+                2
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                2
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                3,
+                2
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                3,
+                2
+              ],
+              "action": [
+                "PLANT",
+                "WHEAT"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:0",
+              "actor_index": 1,
+              "position": [
+                6,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 3
+            }
+          ]
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D20h13",
+          "turns_after_decision": 2,
+          "units": 3,
+          "cash": 807.0,
+          "prices": [
+            269.0,
+            269.0,
+            269.0
+          ],
+          "market_inventory_before": [
+            9842,
+            9843,
+            9844
+          ]
+        },
+        "other": {
+          "timestamp": "D20h13",
+          "turns_after_decision": 2,
+          "units": 3,
+          "cash": 807.0,
+          "prices": [
+            269.0,
+            269.0,
+            269.0
+          ],
+          "market_inventory_before": [
+            9842,
+            9843,
+            9844
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 76,
+          "cash": 21940.0,
+          "avg_realized_price": 288.6842105263158
+        },
+        "other": {
+          "units": 71,
+          "cash": 20724.0,
+          "avg_realized_price": 291.88732394366195
+        },
+        "mover_minus_other_cash": 1216.0,
+        "mover_minus_other_units": 5
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D20h12",
+          "turns_after_decision": 1,
+          "previous_sell_ready": 0,
+          "sell_ready": 3,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D20h12",
+          "turns_after_decision": 1,
+          "previous_sell_ready": 0,
+          "sell_ready": 3,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 46798.0,
+        "other_self": 45856.0,
+        "mover_minus_other_self": 942.0
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 2293.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D20h17",
+      "first_milk_physical_difference": "D20h18",
+      "first_milk_sell_difference": "D20h21",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 5,
+            "cow_yield_total": 3,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 3
+          },
+          "milk_state_pre_market": {
+            "cow_count": 5,
+            "cow_yield_total": 0,
+            "cow_ready_count": 0,
+            "carried_milk": 3,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 3
+          },
+          "market_price_milk": 205.0,
+          "market_inventory_milk": 9973,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                2
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                6,
+                4
+              ],
+              "action": [
+                "COLLECT_FERTILIZER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 3
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 3
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 5,
+            "cow_yield_total": 3,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 3
+          },
+          "milk_state_pre_market": {
+            "cow_count": 5,
+            "cow_yield_total": 3,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 3
+          },
+          "market_price_milk": 205.0,
+          "market_inventory_milk": 9973,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                2
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                6,
+                4
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                5,
+                4
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                3,
+                0
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D20h21",
+          "turns_after_decision": 4,
+          "units": 3,
+          "cash": 606.0,
+          "prices": [
+            203.0,
+            202.0,
+            201.0
+          ],
+          "market_inventory_before": [
+            9976,
+            9977,
+            9978
+          ]
+        },
+        "other": {
+          "timestamp": "D21h0",
+          "turns_after_decision": 7,
+          "units": 3,
+          "cash": 606.0,
+          "prices": [
+            203.0,
+            202.0,
+            201.0
+          ],
+          "market_inventory_before": [
+            9976,
+            9977,
+            9978
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 60,
+          "cash": 12506.0,
+          "avg_realized_price": 208.43333333333334
+        },
+        "other": {
+          "units": 61,
+          "cash": 13723.0,
+          "avg_realized_price": 224.9672131147541
+        },
+        "mover_minus_other_cash": -1217.0,
+        "mover_minus_other_units": -1
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D20h20",
+          "turns_after_decision": 3,
+          "previous_sell_ready": 0,
+          "sell_ready": 3,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D20h23",
+          "turns_after_decision": 6,
+          "previous_sell_ready": 0,
+          "sell_ready": 3,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 34885.0,
+        "other_self": 37178.0,
+        "mover_minus_other_self": -2293.0
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 1821.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D21h17",
+      "first_milk_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 0,
+            "cow_ready_count": 0,
+            "carried_milk": 2,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 9.0,
+          "market_inventory_milk": 10072,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 19.0,
+          "market_inventory_milk": 10067,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                2,
+                2
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                2,
+                2
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                2,
+                2
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                2,
+                2
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": -10.0,
+          "market_inventory_milk": 5
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D21h22",
+          "turns_after_decision": 5,
+          "units": 2,
+          "cash": 12.0,
+          "prices": [
+            7.0,
+            5.0
+          ],
+          "market_inventory_before": [
+            10073,
+            10074
+          ]
+        },
+        "other": {
+          "timestamp": "D22h0",
+          "turns_after_decision": 7,
+          "units": 2,
+          "cash": 36.0,
+          "prices": [
+            19.0,
+            17.0
+          ],
+          "market_inventory_before": [
+            10067,
+            10068
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 63,
+          "cash": 579.0,
+          "avg_realized_price": 9.19047619047619
+        },
+        "other": {
+          "units": 68,
+          "cash": 2095.0,
+          "avg_realized_price": 30.808823529411764
+        },
+        "mover_minus_other_cash": -1516.0,
+        "mover_minus_other_units": -5
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D21h21",
+          "turns_after_decision": 4,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D22h0",
+          "turns_after_decision": 7,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 13543.0,
+        "other_self": 15364.0,
+        "mover_minus_other_self": -1821.0
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 745.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D22h2",
+      "first_milk_physical_difference": "D22h3",
+      "first_milk_sell_difference": "D22h5",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 14,
+            "cow_ready_count": 5,
+            "carried_milk": 0,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 17
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 11,
+            "cow_ready_count": 4,
+            "carried_milk": 3,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 17
+          },
+          "market_price_milk": 3.0,
+          "market_inventory_milk": 10075,
+          "sell_milk_request": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "all_market_orders": [
+            [
+              "SELL",
+              "WHEAT",
+              12
+            ],
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                4
+              ],
+              "action": [
+                "COLLECT_FERTILIZER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                5,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 3
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                4,
+                4
+              ],
+              "action": [
+                "COLLECT_FERTILIZER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                4,
+                5
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                4,
+                4
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                5,
+                4
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:0",
+              "actor_index": 1,
+              "position": [
+                5,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 3
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 14,
+            "cow_ready_count": 5,
+            "carried_milk": 0,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 17
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 14,
+            "cow_ready_count": 5,
+            "carried_milk": 0,
+            "shed_milk": 3,
+            "sell_ready_milk": 3,
+            "physical_milk_total": 17
+          },
+          "market_price_milk": 3.0,
+          "market_inventory_milk": 10075,
+          "sell_milk_request": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "all_market_orders": [
+            [
+              "SELL",
+              "WHEAT",
+              11
+            ],
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                4,
+                4
+              ],
+              "action": [
+                "COLLECT_FERTILIZER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                5,
+                4
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                4,
+                5
+              ],
+              "action": [
+                "PICKUP",
+                "WHEAT",
+                3
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                4,
+                5
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                5,
+                5
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                4,
+                4
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D22h2",
+          "turns_after_decision": 0,
+          "units": 3,
+          "cash": 5.0,
+          "prices": [
+            3.0,
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10075,
+            10076,
+            10076
+          ]
+        },
+        "other": {
+          "timestamp": "D22h2",
+          "turns_after_decision": 0,
+          "units": 3,
+          "cash": 5.0,
+          "prices": [
+            3.0,
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10075,
+            10076,
+            10076
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 66,
+          "cash": 328.0,
+          "avg_realized_price": 4.96969696969697
+        },
+        "other": {
+          "units": 61,
+          "cash": 151.0,
+          "avg_realized_price": 2.4754098360655736
+        },
+        "mover_minus_other_cash": 177.0,
+        "mover_minus_other_units": 5
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D22h3",
+          "turns_after_decision": 1,
+          "previous_sell_ready": 3,
+          "sell_ready": 0,
+          "direction": "DOWN"
+        },
+        "other": {
+          "timestamp": "D22h3",
+          "turns_after_decision": 1,
+          "previous_sell_ready": 3,
+          "sell_ready": 0,
+          "direction": "DOWN"
+        }
+      },
+      "terminal": {
+        "mover_self": 12638.0,
+        "other_self": 13383.0,
+        "mover_minus_other_self": -745.0
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "group": "SELF_WORSE",
+      "delta_self": -567.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D19h20",
+      "first_milk_physical_difference": "D19h21",
+      "first_milk_sell_difference": "D20h0",
+      "early_mover": "B",
+      "later_arm": "A",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 1,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 1
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 1,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 1
+          },
+          "market_price_milk": 3.0,
+          "market_inventory_milk": 10075,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "SELL",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                3,
+                4
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                3,
+                4
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                1,
+                3
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                1,
+                3
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                1,
+                3
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                1,
+                3
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                1,
+                3
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 1,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 1
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 0,
+            "cow_ready_count": 0,
+            "carried_milk": 1,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 1
+          },
+          "market_price_milk": 3.0,
+          "market_inventory_milk": 10075,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                3,
+                4
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                1,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 1
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                1,
+                3
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                1,
+                1
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:0",
+              "actor_index": 1,
+              "position": [
+                1,
+                4
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 1
+            }
+          ]
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D20h0",
+          "turns_after_decision": 4,
+          "units": 1,
+          "cash": 1.0,
+          "prices": [
+            1.0
+          ],
+          "market_inventory_before": [
+            10076
+          ]
+        },
+        "other": {
+          "timestamp": "D20h2",
+          "turns_after_decision": 6,
+          "units": 3,
+          "cash": 5.0,
+          "prices": [
+            3.0,
+            1.0,
+            1.0
+          ],
+          "market_inventory_before": [
+            10075,
+            10076,
+            10076
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 81,
+          "cash": 199.0,
+          "avg_realized_price": 2.45679012345679
+        },
+        "other": {
+          "units": 74,
+          "cash": 643.0,
+          "avg_realized_price": 8.68918918918919
+        },
+        "mover_minus_other_cash": -444.0,
+        "mover_minus_other_units": 7
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D20h0",
+          "turns_after_decision": 4,
+          "previous_sell_ready": 0,
+          "sell_ready": 1,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D20h1",
+          "turns_after_decision": 5,
+          "previous_sell_ready": 0,
+          "sell_ready": 3,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 13063.0,
+        "other_self": 13630.0,
+        "mover_minus_other_self": -567.0
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 3215.0,
+      "status": "NO_COMPACT_PHYSICAL_PRECURSOR",
+      "sell_boundary": "D22h0"
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "group": "SELF_WORSE",
+      "delta_self": -2441.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D21h17",
+      "first_milk_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 0,
+            "cow_ready_count": 0,
+            "carried_milk": 2,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 135.0,
+          "market_inventory_milk": 10012,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                3,
+                1
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 124.0,
+          "market_inventory_milk": 10017,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                2,
+                0
+              ],
+              "action": [
+                "EAST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": 11.0,
+          "market_inventory_milk": -5
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D21h22",
+          "turns_after_decision": 5,
+          "units": 2,
+          "cash": 268.0,
+          "prices": [
+            135.0,
+            133.0
+          ],
+          "market_inventory_before": [
+            10012,
+            10013
+          ]
+        },
+        "other": {
+          "timestamp": "D22h0",
+          "turns_after_decision": 7,
+          "units": 2,
+          "cash": 242.0,
+          "prices": [
+            122.0,
+            120.0
+          ],
+          "market_inventory_before": [
+            10018,
+            10019
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 68,
+          "cash": 8006.0,
+          "avg_realized_price": 117.73529411764706
+        },
+        "other": {
+          "units": 63,
+          "cash": 4157.0,
+          "avg_realized_price": 65.98412698412699
+        },
+        "mover_minus_other_cash": 3849.0,
+        "mover_minus_other_units": 5
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D21h21",
+          "turns_after_decision": 4,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D22h0",
+          "turns_after_decision": 7,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 31927.0,
+        "other_self": 29486.0,
+        "mover_minus_other_self": 2441.0
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "group": "SELF_WORSE",
+      "delta_self": -845.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D23h17",
+      "first_milk_physical_difference": "D23h18",
+      "first_milk_sell_difference": "D23h22",
+      "early_mover": "A",
+      "later_arm": "B",
+      "decision_world": {
+        "A": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 0,
+            "cow_ready_count": 0,
+            "carried_milk": 2,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 133.0,
+          "market_inventory_milk": 10013,
+          "sell_milk_request": [],
+          "all_market_orders": [],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                5,
+                4
+              ],
+              "action": [
+                "WEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                4,
+                4
+              ],
+              "action": [
+                "NORTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                4,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                4,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                4,
+                0
+              ],
+              "action": [
+                "SOUTH"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": [
+            {
+              "actor": "farmer",
+              "actor_index": 0,
+              "position": [
+                2,
+                3
+              ],
+              "action": [
+                "HARVEST"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 2
+            }
+          ]
+        },
+        "B": {
+          "milk_state_pre_unit": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "milk_state_pre_market": {
+            "cow_count": 6,
+            "cow_yield_total": 2,
+            "cow_ready_count": 1,
+            "carried_milk": 0,
+            "shed_milk": 0,
+            "sell_ready_milk": 0,
+            "physical_milk_total": 2
+          },
+          "market_price_milk": 133.0,
+          "market_inventory_milk": 10013,
+          "sell_milk_request": [],
+          "all_market_orders": [
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              1
+            ]
+          ],
+          "unit_actions": [
+            {
+              "actor_index": 0,
+              "actor": "farmer",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 1,
+              "actor": "hand:0",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 2,
+              "actor": "hand:1",
+              "position": [
+                2,
+                4
+              ],
+              "action": [
+                "CARE"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": 0
+            },
+            {
+              "actor_index": 3,
+              "actor": "hand:2",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 4,
+              "actor": "hand:3",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 5,
+              "actor": "hand:4",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            },
+            {
+              "actor_index": 6,
+              "actor": "hand:5",
+              "position": [
+                1,
+                0
+              ],
+              "action": [
+                "WATER"
+              ],
+              "milk_carried_before": 0,
+              "standing_cow_yield_before": null
+            }
+          ],
+          "harvestable_cow_harvest": []
+        },
+        "mover_minus_other": {
+          "market_price_milk": 0.0,
+          "market_inventory_milk": 0
+        }
+      },
+      "next_sell": {
+        "mover": {
+          "timestamp": "D23h22",
+          "turns_after_decision": 5,
+          "units": 2,
+          "cash": 264.0,
+          "prices": [
+            133.0,
+            131.0
+          ],
+          "market_inventory_before": [
+            10013,
+            10014
+          ]
+        },
+        "other": {
+          "timestamp": "D24h0",
+          "turns_after_decision": 7,
+          "units": 2,
+          "cash": 264.0,
+          "prices": [
+            133.0,
+            131.0
+          ],
+          "market_inventory_before": [
+            10013,
+            10014
+          ]
+        }
+      },
+      "post_decision_realized_milk": {
+        "mover": {
+          "units": 50,
+          "cash": 7673.0,
+          "avg_realized_price": 153.46
+        },
+        "other": {
+          "units": 51,
+          "cash": 6104.0,
+          "avg_realized_price": 119.68627450980392
+        },
+        "mover_minus_other_cash": 1569.0,
+        "mover_minus_other_units": -1
+      },
+      "sell_ready_transition": {
+        "mover": {
+          "timestamp": "D23h21",
+          "turns_after_decision": 4,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        },
+        "other": {
+          "timestamp": "D24h0",
+          "turns_after_decision": 7,
+          "previous_sell_ready": 0,
+          "sell_ready": 2,
+          "direction": "UP"
+        }
+      },
+      "terminal": {
+        "mover_self": 31876.0,
+        "other_self": 31031.0,
+        "mover_minus_other_self": 845.0
+      }
+    }
+  ],
+  "boundary": [
+    "Comparison begins at the last compact-MILK-equal state before the first compact MILK physical divergence.",
+    "Early mover is defined only by more submitted HARVEST actions while standing on visible-yield COWs at that turn.",
+    "A/B already differ elsewhere in the Battle path; early movement is not an isolated causal intervention.",
+    "Decision-time market state is observed, not held equal.",
+    "Post-decision realized MILK Cash is an outcome of the whole subsequent path, not attribution to the one HARVEST choice.",
+    "Improved/worse grouping is retrospective."
+  ]
+}
