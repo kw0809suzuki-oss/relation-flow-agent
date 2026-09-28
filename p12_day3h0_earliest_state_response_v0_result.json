@@ -1,0 +1,915 @@
+{
+  "schema": "kaggriculture.p12-day3h0-earliest-state-response.aggregate.v0",
+  "case_count": 20,
+  "action_changed_count": 20,
+  "terminal_response_count": 20,
+  "earliest_point_distribution": {
+    "3:1": 20
+  },
+  "first_global_response_point": "3:1",
+  "cases_at_first_global_response_point": 20,
+  "paths_at_first_global_response_point": {
+    "market.inventory.WHEAT": 20,
+    "private.seeds.STRAWBERRY": 20,
+    "private.seeds.WHEAT": 20,
+    "private.shed.WHEAT": 20,
+    "farms[0].money": 10,
+    "farms[1].money": 10
+  },
+  "most_common_earliest_paths_all_cases": {
+    "market.inventory.WHEAT": 20,
+    "private.seeds.STRAWBERRY": 20,
+    "private.seeds.WHEAT": 20,
+    "private.shed.WHEAT": 20,
+    "farms[0].money": 10,
+    "farms[1].money": 10
+  },
+  "cases": [
+    {
+      "seed": 8601,
+      "seat": 0,
+      "replacement_terminal_effect": -1024.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8602,
+      "seat": 1,
+      "replacement_terminal_effect": 6268.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8603,
+      "seat": 0,
+      "replacement_terminal_effect": 3565.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8604,
+      "seat": 1,
+      "replacement_terminal_effect": 7338.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8605,
+      "seat": 0,
+      "replacement_terminal_effect": -9871.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8606,
+      "seat": 1,
+      "replacement_terminal_effect": 4102.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8607,
+      "seat": 0,
+      "replacement_terminal_effect": 19183.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8608,
+      "seat": 1,
+      "replacement_terminal_effect": -921.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8609,
+      "seat": 0,
+      "replacement_terminal_effect": -4415.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8610,
+      "seat": 1,
+      "replacement_terminal_effect": 852.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8611,
+      "seat": 0,
+      "replacement_terminal_effect": -15310.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8612,
+      "seat": 1,
+      "replacement_terminal_effect": 3410.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8613,
+      "seat": 0,
+      "replacement_terminal_effect": -6787.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8614,
+      "seat": 1,
+      "replacement_terminal_effect": 7367.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8615,
+      "seat": 0,
+      "replacement_terminal_effect": 3081.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8616,
+      "seat": 1,
+      "replacement_terminal_effect": 15668.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8617,
+      "seat": 0,
+      "replacement_terminal_effect": 10878.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8618,
+      "seat": 1,
+      "replacement_terminal_effect": -6074.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8619,
+      "seat": 0,
+      "replacement_terminal_effect": -11331.0,
+      "terminal_effect_group": "replacement_lowers_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[0].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[0].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9964,
+          "replaced": 9960
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    },
+    {
+      "seed": 8620,
+      "seat": 1,
+      "replacement_terminal_effect": 24446.0,
+      "terminal_effect_group": "replacement_raises_terminal",
+      "earliest_point": "3:1",
+      "earliest_difference_count": 5,
+      "earliest_paths": [
+        "farms[1].money",
+        "market.inventory.WHEAT",
+        "private.seeds.STRAWBERRY",
+        "private.seeds.WHEAT",
+        "private.shed.WHEAT"
+      ],
+      "earliest_differences": [
+        {
+          "path": "farms[1].money",
+          "normal": 1177.0,
+          "replaced": 963.0
+        },
+        {
+          "path": "market.inventory.WHEAT",
+          "normal": 9965,
+          "replaced": 9961
+        },
+        {
+          "path": "private.seeds.STRAWBERRY",
+          "normal": 0,
+          "replaced": 1
+        },
+        {
+          "path": "private.seeds.WHEAT",
+          "normal": 3,
+          "replaced": 2
+        },
+        {
+          "path": "private.shed.WHEAT",
+          "normal": 0,
+          "replaced": 4
+        }
+      ],
+      "first_full_state_reconvergence_after_difference": null,
+      "changed_observation_point_count": 646
+    }
+  ],
+  "boundary": [
+    "Earliest response is computed independently inside each same-seed normal-vs-replaced pair.",
+    "Terminal effect grouping is descriptive only and does not select the earliest field.",
+    "A frequent earliest field is intervention-sensitive, not automatically a sufficient mechanism.",
+    "If earliest paths differ by case, do not collapse them into one causal story without a new discriminating probe."
+  ]
+}
