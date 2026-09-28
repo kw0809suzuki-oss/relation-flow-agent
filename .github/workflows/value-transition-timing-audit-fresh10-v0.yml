@@ -1,0 +1,47 @@
+name: Value Transition Timing Audit fresh10 v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/cross-view-timeline-v0-20260928]
+    paths:
+      - .github/workflows/value-transition-timing-audit-fresh10-v0.yml
+      - run_value_transition_timing_audit_fresh10_v0.py
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+
+      - name: Run Value Transition timing audit
+        run: python run_value_transition_timing_audit_fresh10_v0.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: value-transition-timing-audit-fresh10-v0
+          path: value_transition_timing_audit_fresh10_v0_result.json
+
+      - name: Record result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add value_transition_timing_audit_fresh10_v0_result.json
+          git commit -m "Record Value Transition timing audit fresh10 v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
