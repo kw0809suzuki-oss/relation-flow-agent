@@ -1,0 +1,5477 @@
+{
+  "schema": "kaggriculture.work-allocation-surface-compare.fresh10.result.v0",
+  "group_summary": {
+    "SELF_IMPROVED": {
+      "count_observed": 6,
+      "mean_B_minus_A_scalar": {
+        "cash": -447.3333333333333,
+        "hands_count": 0.0,
+        "plant_tiles": 4.833333333333333,
+        "animal_tiles": 0.0,
+        "harvestable_cow_count": 0.0,
+        "harvestable_cow_yield": 0.0,
+        "harvestable_crop_count": 3.0,
+        "harvestable_crop_yield": 5.166666666666667,
+        "water_needed_plant_count": 4.5,
+        "care_needed_animal_count": -0.3333333333333333,
+        "feed_needed_animal_count": -0.3333333333333333
+      },
+      "mean_B_minus_A_action_count": {
+        "CARE": 0.3333333333333333,
+        "COLLECT_FERTILIZER": -0.16666666666666666,
+        "EAST": -1.0,
+        "FEED": -0.16666666666666666,
+        "HARVEST": 0.0,
+        "NORTH": 1.5,
+        "PICKUP": 0.3333333333333333,
+        "PLANT": 1.5,
+        "SOUTH": -2.1666666666666665,
+        "WEST": -0.16666666666666666
+      },
+      "by_seed": {
+        "7351": {
+          "delta_self": 455.0,
+          "timestamp": "D21h17",
+          "scalar_delta": {
+            "cash": -453.0,
+            "plant_tiles": 2.0,
+            "empty_tiles": -2.0,
+            "water_needed_plant_count": 2.0
+          },
+          "seed_stock_delta": {
+            "MELON": 1,
+            "STRAWBERRY": 2,
+            "WHEAT": 11
+          },
+          "carried_delta": {},
+          "action_count_delta": {
+            "CARE": 1,
+            "HARVEST": -1,
+            "PLANT": 5,
+            "SOUTH": -5
+          }
+        },
+        "7352": {
+          "delta_self": 1153.0,
+          "timestamp": "D20h16",
+          "scalar_delta": {
+            "cash": -487.0,
+            "plant_tiles": 4.0,
+            "empty_tiles": -4.0,
+            "harvestable_crop_count": 4.0,
+            "harvestable_crop_yield": 7.0,
+            "water_needed_plant_count": 3.0,
+            "care_needed_animal_count": -1.0,
+            "feed_needed_animal_count": -1.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 6,
+            "WHEAT": 8
+          },
+          "carried_delta": {
+            "WHEAT": -5
+          },
+          "action_count_delta": {
+            "COLLECT_FERTILIZER": 1,
+            "EAST": -1,
+            "FEED": -1,
+            "HARVEST": -1,
+            "NORTH": 4,
+            "PICKUP": 1,
+            "SOUTH": -3
+          }
+        },
+        "7353": {
+          "delta_self": 942.0,
+          "timestamp": "D20h11",
+          "scalar_delta": {
+            "cash": -408.0,
+            "plant_tiles": 4.0,
+            "empty_tiles": -4.0,
+            "harvestable_crop_count": 5.0,
+            "harvestable_crop_yield": 11.0,
+            "water_needed_plant_count": 4.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 7,
+            "WHEAT": 7
+          },
+          "carried_delta": {},
+          "action_count_delta": {
+            "EAST": -1,
+            "HARVEST": 1,
+            "PLANT": 4,
+            "SOUTH": -1,
+            "WEST": -3
+          }
+        },
+        "7354": {
+          "delta_self": 2293.0,
+          "timestamp": "D20h17",
+          "scalar_delta": {
+            "cash": -370.0,
+            "plant_tiles": 7.0,
+            "empty_tiles": -7.0,
+            "harvestable_crop_count": 4.0,
+            "harvestable_crop_yield": 9.0,
+            "water_needed_plant_count": 6.0,
+            "care_needed_animal_count": -1.0,
+            "feed_needed_animal_count": -1.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 6,
+            "WHEAT": 6
+          },
+          "carried_delta": {
+            "FERTILIZER": 1,
+            "WHEAT": -1
+          },
+          "action_count_delta": {
+            "COLLECT_FERTILIZER": -1,
+            "HARVEST": 3,
+            "SOUTH": -4,
+            "WEST": 2
+          }
+        },
+        "7355": {
+          "delta_self": 1821.0,
+          "timestamp": "D21h17",
+          "scalar_delta": {
+            "cash": -561.0,
+            "plant_tiles": 6.0,
+            "empty_tiles": -6.0,
+            "harvestable_crop_count": 3.0,
+            "harvestable_crop_yield": 6.0,
+            "water_needed_plant_count": 6.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 6,
+            "WHEAT": 8
+          },
+          "carried_delta": {
+            "WHEAT": 1
+          },
+          "action_count_delta": {
+            "CARE": 1,
+            "EAST": -4,
+            "HARVEST": -1,
+            "NORTH": 4
+          }
+        },
+        "7356": {
+          "delta_self": 745.0,
+          "timestamp": "D22h2",
+          "scalar_delta": {
+            "cash": -405.0,
+            "plant_tiles": 6.0,
+            "empty_tiles": -8.0,
+            "harvestable_crop_count": 2.0,
+            "harvestable_crop_yield": -2.0,
+            "water_needed_plant_count": 6.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 2,
+            "WHEAT": 9
+          },
+          "carried_delta": {
+            "WHEAT": 1
+          },
+          "action_count_delta": {
+            "COLLECT_FERTILIZER": -1,
+            "HARVEST": -1,
+            "NORTH": 1,
+            "PICKUP": 1
+          }
+        }
+      }
+    },
+    "SELF_WORSE": {
+      "count_observed": 3,
+      "mean_B_minus_A_scalar": {
+        "cash": -358.6666666666667,
+        "hands_count": 0.3333333333333333,
+        "plant_tiles": 6.0,
+        "animal_tiles": 0.0,
+        "harvestable_cow_count": 0.0,
+        "harvestable_cow_yield": 0.0,
+        "harvestable_crop_count": 2.0,
+        "harvestable_crop_yield": 2.3333333333333335,
+        "water_needed_plant_count": 4.0,
+        "care_needed_animal_count": 0.3333333333333333,
+        "feed_needed_animal_count": 0.0
+      },
+      "mean_B_minus_A_action_count": {
+        "CARE": 1.3333333333333333,
+        "EAST": -0.6666666666666666,
+        "HARVEST": -0.3333333333333333,
+        "NORTH": 0.0,
+        "SOUTH": 0.3333333333333333,
+        "WATER": 0.0,
+        "WEST": -0.3333333333333333
+      },
+      "by_seed": {
+        "7357": {
+          "delta_self": -567.0,
+          "timestamp": "D19h20",
+          "scalar_delta": {
+            "cash": -496.0,
+            "plant_tiles": 2.0,
+            "empty_tiles": -2.0,
+            "water_needed_plant_count": 1.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 8,
+            "WHEAT": 4
+          },
+          "carried_delta": {
+            "WHEAT": 3
+          },
+          "action_count_delta": {
+            "EAST": -6,
+            "HARVEST": 1,
+            "NORTH": 1,
+            "SOUTH": 4
+          }
+        },
+        "7359": {
+          "delta_self": -2441.0,
+          "timestamp": "D21h17",
+          "scalar_delta": {
+            "cash": -263.0,
+            "plant_tiles": 9.0,
+            "empty_tiles": -9.0,
+            "harvestable_crop_count": 2.0,
+            "water_needed_plant_count": 6.0
+          },
+          "seed_stock_delta": {
+            "WHEAT": 7
+          },
+          "carried_delta": {},
+          "action_count_delta": {
+            "CARE": 1,
+            "EAST": 4,
+            "HARVEST": -1,
+            "WATER": -4
+          }
+        },
+        "7360": {
+          "delta_self": -845.0,
+          "timestamp": "D23h17",
+          "scalar_delta": {
+            "cash": -317.0,
+            "hands_count": 1.0,
+            "actor_count": 1.0,
+            "plant_tiles": 7.0,
+            "empty_tiles": -10.0,
+            "harvestable_crop_count": 4.0,
+            "harvestable_crop_yield": 7.0,
+            "water_needed_plant_count": 5.0,
+            "care_needed_animal_count": 1.0
+          },
+          "seed_stock_delta": {
+            "STRAWBERRY": 1,
+            "WHEAT": 9
+          },
+          "carried_delta": {
+            "WHEAT": -1
+          },
+          "action_count_delta": {
+            "CARE": 3,
+            "HARVEST": -1,
+            "NORTH": -1,
+            "SOUTH": -3,
+            "WATER": 4,
+            "WEST": -1
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 455.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D21h17",
+      "first_milk_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "A": {
+        "day": 21,
+        "hour": 17,
+        "cash": 10786.0,
+        "hands_count": 7,
+        "actor_count": 8,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:6",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          }
+        ],
+        "plant_tiles": 10,
+        "animal_tiles": 6,
+        "empty_tiles": 23,
+        "seed_stock": {
+          "STRAWBERRY": 12,
+          "MELON": 10
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 14
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 2,
+        "harvestable_crop_yield": 2,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          }
+        ],
+        "water_needed_plant_count": 5,
+        "water_needed_plants": [
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 2,
+          "HARVEST": 1,
+          "SOUTH": 5
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 21,
+        "hour": 17,
+        "cash": 10333.0,
+        "hands_count": 7,
+        "actor_count": 8,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:6",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          }
+        ],
+        "plant_tiles": 12,
+        "animal_tiles": 6,
+        "empty_tiles": 21,
+        "seed_stock": {
+          "WHEAT": 11,
+          "STRAWBERRY": 14,
+          "MELON": 11
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 14
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 2,
+        "harvestable_crop_yield": 2,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          }
+        ],
+        "water_needed_plant_count": 7,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "MELON",
+            "age_days": 9,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 3,
+          "PLANT": 5
+        },
+        "market_orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -453.0,
+          "plant_tiles": 2.0,
+          "empty_tiles": -2.0,
+          "water_needed_plant_count": 2.0
+        },
+        "seed_stock": {
+          "MELON": 1,
+          "STRAWBERRY": 2,
+          "WHEAT": 11
+        },
+        "carried_total_by_product": {},
+        "submitted_action_counts": {
+          "CARE": 1,
+          "HARVEST": -1,
+          "PLANT": 5,
+          "SOUTH": -5
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 1153.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D20h16",
+      "first_milk_physical_difference": "D20h17",
+      "first_milk_sell_difference": "D20h21",
+      "A": {
+        "day": 20,
+        "hour": 16,
+        "cash": 9610.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              2
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "FEED"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              5,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              2,
+              1
+            ],
+            "inventory": {
+              "WHEAT": 9
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              2,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              2,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              2,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          }
+        ],
+        "plant_tiles": 8,
+        "animal_tiles": 6,
+        "empty_tiles": 30,
+        "seed_stock": {
+          "STRAWBERRY": 11,
+          "MELON": 12
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 2,
+          "WHEAT": 15
+        },
+        "harvestable_cow_count": 2,
+        "harvestable_cow_yield": 5,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 2,
+        "harvestable_crop_yield": 4,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 4,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 2,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 4,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 4,
+        "feed_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "submitted_action_counts": {
+          "EAST": 1,
+          "FEED": 1,
+          "HARVEST": 1,
+          "SOUTH": 4
+        },
+        "market_orders": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 20,
+        "hour": 16,
+        "cash": 9123.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              3
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              6,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "COLLECT_FERTILIZER"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              5,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "PICKUP",
+              "WHEAT",
+              2
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "NORTH"
+            ]
+          }
+        ],
+        "plant_tiles": 12,
+        "animal_tiles": 6,
+        "empty_tiles": 26,
+        "seed_stock": {
+          "WHEAT": 8,
+          "STRAWBERRY": 17,
+          "MELON": 12
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 2,
+          "WHEAT": 10
+        },
+        "harvestable_cow_count": 2,
+        "harvestable_cow_yield": 5,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 6,
+        "harvestable_crop_yield": 11,
+        "harvestable_crops": [
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 7,
+        "water_needed_plants": [
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 3,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "feed_needed_animal_count": 3,
+        "feed_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "submitted_action_counts": {
+          "COLLECT_FERTILIZER": 1,
+          "NORTH": 4,
+          "PICKUP": 1,
+          "SOUTH": 1
+        },
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -487.0,
+          "plant_tiles": 4.0,
+          "empty_tiles": -4.0,
+          "harvestable_crop_count": 4.0,
+          "harvestable_crop_yield": 7.0,
+          "water_needed_plant_count": 3.0,
+          "care_needed_animal_count": -1.0,
+          "feed_needed_animal_count": -1.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 6,
+          "WHEAT": 8
+        },
+        "carried_total_by_product": {
+          "WHEAT": -5
+        },
+        "submitted_action_counts": {
+          "COLLECT_FERTILIZER": 1,
+          "EAST": -1,
+          "FEED": -1,
+          "HARVEST": -1,
+          "NORTH": 4,
+          "PICKUP": 1,
+          "SOUTH": -3
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 942.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D20h11",
+      "first_milk_physical_difference": "D20h12",
+      "first_milk_sell_difference": "D20h14",
+      "A": {
+        "day": 20,
+        "hour": 11,
+        "cash": 22634.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              3
+            ],
+            "inventory": {
+              "MILK": 3,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              5,
+              3
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              5,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {
+              "WHEAT": 8
+            },
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          }
+        ],
+        "plant_tiles": 7,
+        "animal_tiles": 6,
+        "empty_tiles": 30,
+        "seed_stock": {
+          "STRAWBERRY": 11,
+          "MELON": 11
+        },
+        "carried_total_by_product": {
+          "MILK": 3,
+          "STRAWBERRY": 1,
+          "WHEAT": 12
+        },
+        "harvestable_cow_count": 3,
+        "harvestable_cow_yield": 8,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 10
+          }
+        ],
+        "harvestable_crop_count": 0,
+        "harvestable_crop_yield": 0,
+        "harvestable_crops": [],
+        "water_needed_plant_count": 4,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 3,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 3,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 2,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 4,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "feed_needed_animal_count": 4,
+        "feed_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "submitted_action_counts": {
+          "EAST": 1,
+          "SOUTH": 2,
+          "WEST": 4
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 20,
+        "hour": 11,
+        "cash": 22226.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              3
+            ],
+            "inventory": {
+              "MILK": 3,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              6,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 1
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              5,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              3,
+              2
+            ],
+            "inventory": {
+              "WHEAT": 4
+            },
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              2
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              3,
+              2
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              3,
+              2
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "PLANT",
+              "WHEAT"
+            ]
+          }
+        ],
+        "plant_tiles": 11,
+        "animal_tiles": 6,
+        "empty_tiles": 26,
+        "seed_stock": {
+          "WHEAT": 7,
+          "STRAWBERRY": 18,
+          "MELON": 11
+        },
+        "carried_total_by_product": {
+          "MILK": 3,
+          "STRAWBERRY": 1,
+          "WHEAT": 12
+        },
+        "harvestable_cow_count": 3,
+        "harvestable_cow_yield": 8,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 10
+          }
+        ],
+        "harvestable_crop_count": 5,
+        "harvestable_crop_yield": 11,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          }
+        ],
+        "water_needed_plant_count": 8,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 4,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "feed_needed_animal_count": 4,
+        "feed_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "submitted_action_counts": {
+          "HARVEST": 1,
+          "PLANT": 4,
+          "SOUTH": 1,
+          "WEST": 1
+        },
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -408.0,
+          "plant_tiles": 4.0,
+          "empty_tiles": -4.0,
+          "harvestable_crop_count": 5.0,
+          "harvestable_crop_yield": 11.0,
+          "water_needed_plant_count": 4.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 7,
+          "WHEAT": 7
+        },
+        "carried_total_by_product": {},
+        "submitted_action_counts": {
+          "EAST": -1,
+          "HARVEST": 1,
+          "PLANT": 4,
+          "SOUTH": -1,
+          "WEST": -3
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 2293.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D20h17",
+      "first_milk_physical_difference": "D20h18",
+      "first_milk_sell_difference": "D20h21",
+      "A": {
+        "day": 20,
+        "hour": 17,
+        "cash": 19600.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              2
+            ],
+            "inventory": {
+              "WHEAT": 1
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              6,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "COLLECT_FERTILIZER"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1,
+              "WHEAT": 8
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          }
+        ],
+        "plant_tiles": 8,
+        "animal_tiles": 5,
+        "empty_tiles": 31,
+        "seed_stock": {
+          "STRAWBERRY": 10,
+          "MELON": 12
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 3,
+          "WHEAT": 11
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 3,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 0,
+        "harvestable_crop_yield": 0,
+        "harvestable_crops": [],
+        "water_needed_plant_count": 3,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 3,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 3,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 3,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 2,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 1,
+          "COLLECT_FERTILIZER": 1,
+          "HARVEST": 1,
+          "SOUTH": 4
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 20,
+        "hour": 17,
+        "cash": 19230.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              2
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              6,
+              4
+            ],
+            "inventory": {
+              "FERTILIZER": 1
+            },
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              5,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1,
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              3,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "HARVEST"
+            ]
+          }
+        ],
+        "plant_tiles": 15,
+        "animal_tiles": 5,
+        "empty_tiles": 24,
+        "seed_stock": {
+          "WHEAT": 6,
+          "STRAWBERRY": 16,
+          "MELON": 12
+        },
+        "carried_total_by_product": {
+          "FERTILIZER": 1,
+          "STRAWBERRY": 3,
+          "WHEAT": 10
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 3,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 4,
+        "harvestable_crop_yield": 9,
+        "harvestable_crops": [
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 9,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 1,
+          "HARVEST": 4,
+          "WEST": 2
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -370.0,
+          "plant_tiles": 7.0,
+          "empty_tiles": -7.0,
+          "harvestable_crop_count": 4.0,
+          "harvestable_crop_yield": 9.0,
+          "water_needed_plant_count": 6.0,
+          "care_needed_animal_count": -1.0,
+          "feed_needed_animal_count": -1.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 6,
+          "WHEAT": 6
+        },
+        "carried_total_by_product": {
+          "FERTILIZER": 1,
+          "WHEAT": -1
+        },
+        "submitted_action_counts": {
+          "COLLECT_FERTILIZER": -1,
+          "HARVEST": 3,
+          "SOUTH": -4,
+          "WEST": 2
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "group": "SELF_IMPROVED",
+      "delta_self": 1821.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D21h17",
+      "first_milk_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "A": {
+        "day": 21,
+        "hour": 17,
+        "cash": 10527.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 1
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {
+              "WHEAT": 5
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          }
+        ],
+        "plant_tiles": 7,
+        "animal_tiles": 6,
+        "empty_tiles": 28,
+        "seed_stock": {
+          "STRAWBERRY": 10,
+          "MELON": 6
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 11
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 0,
+        "harvestable_crop_yield": 0,
+        "harvestable_crops": [],
+        "water_needed_plant_count": 1,
+        "water_needed_plants": [
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 2,
+          "EAST": 4,
+          "HARVEST": 1
+        },
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 21,
+        "hour": 17,
+        "cash": 9966.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              2,
+              2
+            ],
+            "inventory": {
+              "WHEAT": 4
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              2,
+              2
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              2,
+              2
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              2,
+              2
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "NORTH"
+            ]
+          }
+        ],
+        "plant_tiles": 13,
+        "animal_tiles": 6,
+        "empty_tiles": 22,
+        "seed_stock": {
+          "WHEAT": 8,
+          "STRAWBERRY": 16,
+          "MELON": 6
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 12
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 3,
+        "harvestable_crop_yield": 6,
+        "harvestable_crops": [
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 7,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 3,
+          "NORTH": 4
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -561.0,
+          "plant_tiles": 6.0,
+          "empty_tiles": -6.0,
+          "harvestable_crop_count": 3.0,
+          "harvestable_crop_yield": 6.0,
+          "water_needed_plant_count": 6.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 6,
+          "WHEAT": 8
+        },
+        "carried_total_by_product": {
+          "WHEAT": 1
+        },
+        "submitted_action_counts": {
+          "CARE": 1,
+          "EAST": -4,
+          "HARVEST": -1,
+          "NORTH": 4
+        }
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 745.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D22h2",
+      "first_milk_physical_difference": "D22h3",
+      "first_milk_sell_difference": "D22h5",
+      "A": {
+        "day": 22,
+        "hour": 2,
+        "cash": 10385.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "COLLECT_FERTILIZER"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              5,
+              3
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              4,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "COLLECT_FERTILIZER"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              4,
+              5
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              4,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              5,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          }
+        ],
+        "plant_tiles": 6,
+        "animal_tiles": 6,
+        "empty_tiles": 33,
+        "seed_stock": {
+          "STRAWBERRY": 14,
+          "MELON": 10
+        },
+        "carried_total_by_product": {},
+        "harvestable_cow_count": 5,
+        "harvestable_cow_yield": 14,
+        "harvestable_cows": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "yield_units": 3,
+            "placed_day": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              5,
+              3
+            ],
+            "yield_units": 3,
+            "placed_day": 10
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 10
+          }
+        ],
+        "harvestable_crop_count": 5,
+        "harvestable_crop_yield": 12,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "MELON",
+            "age_days": 10,
+            "yield_units": 5
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          }
+        ],
+        "water_needed_plant_count": 6,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "MELON",
+            "age_days": 10,
+            "yield_units": 5
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 4,
+            "yield_units": 3
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 15,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              3,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          }
+        ],
+        "care_needed_animal_count": 6,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              5,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              4,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "feed_needed_animal_count": 6,
+        "feed_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              5,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              4,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "submitted_action_counts": {
+          "COLLECT_FERTILIZER": 2,
+          "HARVEST": 2,
+          "WEST": 3
+        },
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            12
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 22,
+        "hour": 2,
+        "cash": 9980.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              4,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "COLLECT_FERTILIZER"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              5,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 1
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              4,
+              5
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "PICKUP",
+              "WHEAT",
+              3
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              4,
+              5
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              5,
+              5
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              4,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WEST"
+            ]
+          }
+        ],
+        "plant_tiles": 12,
+        "animal_tiles": 6,
+        "empty_tiles": 25,
+        "seed_stock": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 10
+        },
+        "carried_total_by_product": {
+          "WHEAT": 1
+        },
+        "harvestable_cow_count": 5,
+        "harvestable_cow_yield": 14,
+        "harvestable_cows": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "yield_units": 3,
+            "placed_day": 0
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              5,
+              3
+            ],
+            "yield_units": 3,
+            "placed_day": 10
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 6
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "yield_units": 3,
+            "placed_day": 10
+          }
+        ],
+        "harvestable_crop_count": 7,
+        "harvestable_crop_yield": 10,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "MELON",
+            "age_days": 10,
+            "yield_units": 4
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              5,
+              4
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          }
+        ],
+        "water_needed_plant_count": 12,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "MELON",
+            "age_days": 10,
+            "yield_units": 4
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 15,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              3,
+              4
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 14,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              5,
+              4
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          }
+        ],
+        "care_needed_animal_count": 6,
+        "care_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              5,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              4,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "feed_needed_animal_count": 6,
+        "feed_needed_animals": [
+          {
+            "position": [
+              4,
+              2
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              5,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          },
+          {
+            "position": [
+              4,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          },
+          {
+            "position": [
+              6,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 3
+          }
+        ],
+        "submitted_action_counts": {
+          "COLLECT_FERTILIZER": 1,
+          "HARVEST": 1,
+          "NORTH": 1,
+          "PICKUP": 1,
+          "WEST": 3
+        },
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            11
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -405.0,
+          "plant_tiles": 6.0,
+          "empty_tiles": -8.0,
+          "harvestable_crop_count": 2.0,
+          "harvestable_crop_yield": -2.0,
+          "water_needed_plant_count": 6.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 2,
+          "WHEAT": 9
+        },
+        "carried_total_by_product": {
+          "WHEAT": 1
+        },
+        "submitted_action_counts": {
+          "COLLECT_FERTILIZER": -1,
+          "HARVEST": -1,
+          "NORTH": 1,
+          "PICKUP": 1
+        }
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "group": "SELF_WORSE",
+      "delta_self": -567.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D19h20",
+      "first_milk_physical_difference": "D19h21",
+      "first_milk_sell_difference": "D20h0",
+      "A": {
+        "day": 19,
+        "hour": 20,
+        "cash": 8048.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              3,
+              4
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              3,
+              4
+            ],
+            "inventory": {
+              "FERTILIZER": 1,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              1,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              1,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              1,
+              3
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              1,
+              3
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              1,
+              3
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          }
+        ],
+        "plant_tiles": 13,
+        "animal_tiles": 6,
+        "empty_tiles": 26,
+        "seed_stock": {
+          "STRAWBERRY": 8,
+          "MELON": 11
+        },
+        "carried_total_by_product": {
+          "FERTILIZER": 1,
+          "WHEAT": 11
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 1,
+        "harvestable_cows": [
+          {
+            "position": [
+              1,
+              4
+            ],
+            "yield_units": 1,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 3,
+        "harvestable_crop_yield": 6,
+        "harvestable_crops": [
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              4,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              4,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 5,
+        "water_needed_plants": [
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              4,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 1,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              4,
+              1
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 11,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              4,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "care_needed_animal_count": 1,
+        "care_needed_animals": [
+          {
+            "position": [
+              1,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 1
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              1,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 1
+          }
+        ],
+        "submitted_action_counts": {
+          "EAST": 7
+        },
+        "market_orders": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 19,
+        "hour": 20,
+        "cash": 7552.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              3,
+              4
+            ],
+            "inventory": {
+              "FERTILIZER": 1,
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              1,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              1,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              1,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          }
+        ],
+        "plant_tiles": 15,
+        "animal_tiles": 6,
+        "empty_tiles": 24,
+        "seed_stock": {
+          "WHEAT": 4,
+          "STRAWBERRY": 16,
+          "MELON": 11
+        },
+        "carried_total_by_product": {
+          "FERTILIZER": 1,
+          "WHEAT": 14
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 1,
+        "harvestable_cows": [
+          {
+            "position": [
+              1,
+              4
+            ],
+            "yield_units": 1,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 3,
+        "harvestable_crop_yield": 6,
+        "harvestable_crops": [
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              4,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              4,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 6,
+        "water_needed_plants": [
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              4,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              4,
+              1
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 11,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              4,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          }
+        ],
+        "care_needed_animal_count": 1,
+        "care_needed_animals": [
+          {
+            "position": [
+              1,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 1
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              1,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 1
+          }
+        ],
+        "submitted_action_counts": {
+          "EAST": 1,
+          "HARVEST": 1,
+          "NORTH": 1,
+          "SOUTH": 4
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -496.0,
+          "plant_tiles": 2.0,
+          "empty_tiles": -2.0,
+          "water_needed_plant_count": 1.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 8,
+          "WHEAT": 4
+        },
+        "carried_total_by_product": {
+          "WHEAT": 3
+        },
+        "submitted_action_counts": {
+          "EAST": -6,
+          "HARVEST": 1,
+          "NORTH": 1,
+          "SOUTH": 4
+        }
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "group": "SELF_IMPROVED",
+      "delta_self": 3215.0,
+      "sell_boundary": "D22h0",
+      "status": "NO_PHYSICAL_PRECURSOR"
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "group": "SELF_WORSE",
+      "delta_self": -2441.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D21h17",
+      "first_milk_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "A": {
+        "day": 21,
+        "hour": 17,
+        "cash": 22813.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "WATER"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "WATER"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WATER"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              3,
+              1
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WATER"
+            ]
+          }
+        ],
+        "plant_tiles": 4,
+        "animal_tiles": 6,
+        "empty_tiles": 32,
+        "seed_stock": {
+          "STRAWBERRY": 16,
+          "MELON": 6
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 11
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 1,
+        "harvestable_crop_yield": 3,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 3
+          }
+        ],
+        "water_needed_plant_count": 1,
+        "water_needed_plants": [
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 2,
+          "HARVEST": 1,
+          "WATER": 4
+        },
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 21,
+        "hour": 17,
+        "cash": 22550.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 4
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "EAST"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              2,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "EAST"
+            ]
+          }
+        ],
+        "plant_tiles": 13,
+        "animal_tiles": 6,
+        "empty_tiles": 23,
+        "seed_stock": {
+          "WHEAT": 7,
+          "STRAWBERRY": 16,
+          "MELON": 6
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 11
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 3,
+        "harvestable_crop_yield": 3,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          }
+        ],
+        "water_needed_plant_count": 7,
+        "water_needed_plants": [
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 13,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              1,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 3,
+          "EAST": 4
+        },
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -263.0,
+          "plant_tiles": 9.0,
+          "empty_tiles": -9.0,
+          "harvestable_crop_count": 2.0,
+          "water_needed_plant_count": 6.0
+        },
+        "seed_stock": {
+          "WHEAT": 7
+        },
+        "carried_total_by_product": {},
+        "submitted_action_counts": {
+          "CARE": 1,
+          "EAST": 4,
+          "HARVEST": -1,
+          "WATER": -4
+        }
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "group": "SELF_WORSE",
+      "delta_self": -845.0,
+      "status": "OBSERVED",
+      "last_milk_equal_timestamp": "D23h17",
+      "first_milk_physical_difference": "D23h18",
+      "first_milk_sell_difference": "D23h22",
+      "A": {
+        "day": 23,
+        "hour": 17,
+        "cash": 23528.0,
+        "hands_count": 5,
+        "actor_count": 6,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              3
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "HARVEST"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              5,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "WEST"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              4,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "NORTH"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              4,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              4,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "SOUTH"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              4,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "SOUTH"
+            ]
+          }
+        ],
+        "plant_tiles": 5,
+        "animal_tiles": 6,
+        "empty_tiles": 36,
+        "seed_stock": {
+          "STRAWBERRY": 15,
+          "MELON": 6
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 12
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 1,
+        "harvestable_crop_yield": 3,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 3
+          }
+        ],
+        "water_needed_plant_count": 0,
+        "water_needed_plants": [],
+        "care_needed_animal_count": 1,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "HARVEST": 1,
+          "NORTH": 1,
+          "SOUTH": 3,
+          "WEST": 1
+        },
+        "market_orders": [],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "B": {
+        "day": 23,
+        "hour": 17,
+        "cash": 23211.0,
+        "hands_count": 6,
+        "actor_count": 7,
+        "actors": [
+          {
+            "actor": "farmer",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 2
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:0",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 3
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:1",
+            "position": [
+              2,
+              4
+            ],
+            "inventory": {
+              "WHEAT": 6
+            },
+            "submitted_action": [
+              "CARE"
+            ]
+          },
+          {
+            "actor": "hand:2",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WATER"
+            ]
+          },
+          {
+            "actor": "hand:3",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {
+              "STRAWBERRY": 1
+            },
+            "submitted_action": [
+              "WATER"
+            ]
+          },
+          {
+            "actor": "hand:4",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WATER"
+            ]
+          },
+          {
+            "actor": "hand:5",
+            "position": [
+              1,
+              0
+            ],
+            "inventory": {},
+            "submitted_action": [
+              "WATER"
+            ]
+          }
+        ],
+        "plant_tiles": 12,
+        "animal_tiles": 6,
+        "empty_tiles": 26,
+        "seed_stock": {
+          "WHEAT": 9,
+          "STRAWBERRY": 16,
+          "MELON": 6
+        },
+        "carried_total_by_product": {
+          "STRAWBERRY": 1,
+          "WHEAT": 11
+        },
+        "harvestable_cow_count": 1,
+        "harvestable_cow_yield": 2,
+        "harvestable_cows": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "yield_units": 2,
+            "placed_day": 6
+          }
+        ],
+        "harvestable_crop_count": 5,
+        "harvestable_crop_yield": 10,
+        "harvestable_crops": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              1,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 2,
+            "yield_units": 2
+          }
+        ],
+        "water_needed_plant_count": 5,
+        "water_needed_plants": [
+          {
+            "position": [
+              1,
+              0
+            ],
+            "crop": "WHEAT",
+            "age_days": 3,
+            "yield_units": 2
+          },
+          {
+            "position": [
+              3,
+              0
+            ],
+            "crop": "STRAWBERRY",
+            "age_days": 15,
+            "yield_units": 0
+          },
+          {
+            "position": [
+              3,
+              1
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              2
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          },
+          {
+            "position": [
+              3,
+              3
+            ],
+            "crop": "WHEAT",
+            "age_days": 1,
+            "yield_units": 1
+          }
+        ],
+        "care_needed_animal_count": 2,
+        "care_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          },
+          {
+            "position": [
+              2,
+              4
+            ],
+            "animal": "COW",
+            "yield_units": 0
+          }
+        ],
+        "feed_needed_animal_count": 1,
+        "feed_needed_animals": [
+          {
+            "position": [
+              2,
+              3
+            ],
+            "animal": "COW",
+            "yield_units": 2
+          }
+        ],
+        "submitted_action_counts": {
+          "CARE": 3,
+          "WATER": 4
+        },
+        "market_orders": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ],
+        "boundary": [
+          "Counts are raw visible-state counts, not a combined pressure score.",
+          "water_needed means PLANT and watered_today is false.",
+          "care_needed/feed_needed means animal tile and cared_today/fed_today is false.",
+          "harvestable crop uses public first_yield_day plus yield_units > 0.",
+          "harvestable COW means visible COW yield_units > 0."
+        ]
+      },
+      "delta_B_minus_A": {
+        "scalar": {
+          "cash": -317.0,
+          "hands_count": 1.0,
+          "actor_count": 1.0,
+          "plant_tiles": 7.0,
+          "empty_tiles": -10.0,
+          "harvestable_crop_count": 4.0,
+          "harvestable_crop_yield": 7.0,
+          "water_needed_plant_count": 5.0,
+          "care_needed_animal_count": 1.0
+        },
+        "seed_stock": {
+          "STRAWBERRY": 1,
+          "WHEAT": 9
+        },
+        "carried_total_by_product": {
+          "WHEAT": -1
+        },
+        "submitted_action_counts": {
+          "CARE": 3,
+          "HARVEST": -1,
+          "NORTH": -1,
+          "SOUTH": -3,
+          "WATER": 4,
+          "WEST": -1
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "Comparison timestamp is the last compact-MILK-equal live state immediately before the first compact MILK physical divergence.",
+    "A/B differ only in D14 BUY_SEED suppression.",
+    "Work fields are raw visible-state counts; no synthetic pressure score is used.",
+    "Differences at this timestamp are candidate separators only.",
+    "Improved/worse grouping is retrospective and not live-safe."
+  ]
+}
