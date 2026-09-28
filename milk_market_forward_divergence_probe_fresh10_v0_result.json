@@ -1,0 +1,2513 @@
+{
+  "schema": "kaggriculture.milk-market-forward-divergence.fresh10.result.v0",
+  "summary": {
+    "matched_current_and_history_cases": 7,
+    "pre_market_diverges_before_first_sell": 0,
+    "pre_market_first_diverges_at_first_sell": 0,
+    "pre_market_no_divergence_through_first_sell": 7,
+    "milk_event_diff_before_first_sell": 0,
+    "milk_event_diff_at_first_sell": 7,
+    "milk_event_no_diff_through_first_sell": 0,
+    "post_market_diverges_before_first_sell": 0,
+    "post_market_first_diverges_at_first_sell": 5,
+    "post_market_no_divergence_through_first_sell": 2,
+    "by_seed": {
+      "7351": {
+        "delta_terminal_self_B_minus_A": 455.0,
+        "decision_timestamp": "D21h17",
+        "first_physical_difference": "D21h18",
+        "first_milk_sell_difference": "D21h22",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D21h22",
+          "A": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B": []
+        },
+        "first_post": null
+      },
+      "7352": {
+        "delta_terminal_self_B_minus_A": 1153.0,
+        "decision_timestamp": "D20h16",
+        "first_physical_difference": "D20h17",
+        "first_milk_sell_difference": "D20h21",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D20h21",
+          "A": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 9.0,
+              "unit_price": 9.0,
+              "market_inventory_before": 10072
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 7.0,
+              "unit_price": 7.0,
+              "market_inventory_before": 10073
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 5.0,
+              "unit_price": 5.0,
+              "market_inventory_before": 10074
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            }
+          ],
+          "B": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 9.0,
+              "unit_price": 9.0,
+              "market_inventory_before": 10072
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 7.0,
+              "unit_price": 7.0,
+              "market_inventory_before": 10073
+            }
+          ]
+        },
+        "first_post": {
+          "timestamp": "D20h21",
+          "A": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B": {
+            "price": 5.0,
+            "inventory": 10074
+          }
+        }
+      },
+      "7353": {
+        "delta_terminal_self_B_minus_A": 942.0,
+        "decision_timestamp": "D20h11",
+        "first_physical_difference": "D20h12",
+        "first_milk_sell_difference": "D20h14",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D20h14",
+          "A": [],
+          "B": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9845
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9846
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9847
+            }
+          ]
+        },
+        "first_post": {
+          "timestamp": "D20h14",
+          "A": {
+            "price": 268.0,
+            "inventory": 9845
+          },
+          "B": {
+            "price": 267.0,
+            "inventory": 9848
+          }
+        }
+      },
+      "7354": {
+        "delta_terminal_self_B_minus_A": 2293.0,
+        "decision_timestamp": "D20h17",
+        "first_physical_difference": "D20h18",
+        "first_milk_sell_difference": "D20h21",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D20h21",
+          "A": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 208.0,
+              "unit_price": 208.0,
+              "market_inventory_before": 9970
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 207.0,
+              "unit_price": 207.0,
+              "market_inventory_before": 9971
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 206.0,
+              "unit_price": 206.0,
+              "market_inventory_before": 9972
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 205.0,
+              "unit_price": 205.0,
+              "market_inventory_before": 9973
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 204.0,
+              "unit_price": 204.0,
+              "market_inventory_before": 9974
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9975
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9976
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 202.0,
+              "unit_price": 202.0,
+              "market_inventory_before": 9977
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 201.0,
+              "unit_price": 201.0,
+              "market_inventory_before": 9978
+            }
+          ],
+          "B": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 208.0,
+              "unit_price": 208.0,
+              "market_inventory_before": 9970
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 207.0,
+              "unit_price": 207.0,
+              "market_inventory_before": 9971
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 206.0,
+              "unit_price": 206.0,
+              "market_inventory_before": 9972
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 205.0,
+              "unit_price": 205.0,
+              "market_inventory_before": 9973
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 204.0,
+              "unit_price": 204.0,
+              "market_inventory_before": 9974
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9975
+            }
+          ]
+        },
+        "first_post": {
+          "timestamp": "D20h21",
+          "A": {
+            "price": 200.0,
+            "inventory": 9979
+          },
+          "B": {
+            "price": 203.0,
+            "inventory": 9976
+          }
+        }
+      },
+      "7356": {
+        "delta_terminal_self_B_minus_A": 745.0,
+        "decision_timestamp": "D22h2",
+        "first_physical_difference": "D22h3",
+        "first_milk_sell_difference": "D22h5",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D22h5",
+          "A": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10077
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10077
+            }
+          ],
+          "B": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            }
+          ]
+        },
+        "first_post": {
+          "timestamp": "D22h5",
+          "A": {
+            "price": 1.0,
+            "inventory": 10077
+          },
+          "B": {
+            "price": 1.0,
+            "inventory": 10076
+          }
+        }
+      },
+      "7357": {
+        "delta_terminal_self_B_minus_A": -567.0,
+        "decision_timestamp": "D19h20",
+        "first_physical_difference": "D19h21",
+        "first_milk_sell_difference": "D20h0",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D20h0",
+          "A": [],
+          "B": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ]
+        },
+        "first_post": null
+      },
+      "7360": {
+        "delta_terminal_self_B_minus_A": -845.0,
+        "decision_timestamp": "D23h17",
+        "first_physical_difference": "D23h18",
+        "first_milk_sell_difference": "D23h22",
+        "pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+        "event_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "post_relation": "AT_FIRST_SELL_DIFFERENCE",
+        "first_pre": null,
+        "first_event": {
+          "timestamp": "D23h22",
+          "A": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 133.0,
+              "unit_price": 133.0,
+              "market_inventory_before": 10013
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 131.0,
+              "unit_price": 131.0,
+              "market_inventory_before": 10014
+            }
+          ],
+          "B": []
+        },
+        "first_post": {
+          "timestamp": "D23h22",
+          "A": {
+            "price": 129.0,
+            "inventory": 10015
+          },
+          "B": {
+            "price": 133.0,
+            "inventory": 10013
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 455.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D21h22",
+        "A": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 1.0,
+            "unit_price": 1.0,
+            "market_inventory_before": 10076
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 1.0,
+            "unit_price": 1.0,
+            "market_inventory_before": 10076
+          }
+        ],
+        "B": []
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": null,
+      "first_milk_market_post_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D21h17",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D21h18",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D21h19",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D21h20",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D21h21",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D21h22",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        }
+      ]
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 1153.0,
+      "decision_timestamp": "D20h16",
+      "first_physical_difference": "D20h17",
+      "first_milk_sell_difference": "D20h21",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D20h21",
+        "A": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 9.0,
+            "unit_price": 9.0,
+            "market_inventory_before": 10072
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 7.0,
+            "unit_price": 7.0,
+            "market_inventory_before": 10073
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 5.0,
+            "unit_price": 5.0,
+            "market_inventory_before": 10074
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 3.0,
+            "unit_price": 3.0,
+            "market_inventory_before": 10075
+          }
+        ],
+        "B": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 9.0,
+            "unit_price": 9.0,
+            "market_inventory_before": 10072
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 7.0,
+            "unit_price": 7.0,
+            "market_inventory_before": 10073
+          }
+        ]
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": {
+        "timestamp": "D20h21",
+        "A": {
+          "price": 1.0,
+          "inventory": 10076
+        },
+        "B": {
+          "price": 5.0,
+          "inventory": 10074
+        }
+      },
+      "first_milk_market_post_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D20h16",
+          "A_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "B_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h17",
+          "A_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h18",
+          "A_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h19",
+          "A_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h20",
+          "A_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h21",
+          "A_pre": {
+            "price": 9.0,
+            "inventory": 10072
+          },
+          "B_pre": {
+            "price": 9.0,
+            "inventory": 10072
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 9.0,
+              "unit_price": 9.0,
+              "market_inventory_before": 10072
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 7.0,
+              "unit_price": 7.0,
+              "market_inventory_before": 10073
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 5.0,
+              "unit_price": 5.0,
+              "market_inventory_before": 10074
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 9.0,
+              "unit_price": 9.0,
+              "market_inventory_before": 10072
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 7.0,
+              "unit_price": 7.0,
+              "market_inventory_before": 10073
+            }
+          ],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "post_equal": false
+        }
+      ]
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 942.0,
+      "decision_timestamp": "D20h11",
+      "first_physical_difference": "D20h12",
+      "first_milk_sell_difference": "D20h14",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D20h14",
+        "A": [],
+        "B": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 268.0,
+            "unit_price": 268.0,
+            "market_inventory_before": 9845
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 268.0,
+            "unit_price": 268.0,
+            "market_inventory_before": 9846
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 268.0,
+            "unit_price": 268.0,
+            "market_inventory_before": 9847
+          }
+        ]
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": {
+        "timestamp": "D20h14",
+        "A": {
+          "price": 268.0,
+          "inventory": 9845
+        },
+        "B": {
+          "price": 267.0,
+          "inventory": 9848
+        }
+      },
+      "first_milk_market_post_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D20h11",
+          "A_pre": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "B_pre": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "B_post": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h12",
+          "A_pre": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "B_pre": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "B_post": {
+            "price": 268.0,
+            "inventory": 9847
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h13",
+          "A_pre": {
+            "price": 269.0,
+            "inventory": 9842
+          },
+          "B_pre": {
+            "price": 269.0,
+            "inventory": 9842
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 269.0,
+              "unit_price": 269.0,
+              "market_inventory_before": 9842
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 269.0,
+              "unit_price": 269.0,
+              "market_inventory_before": 9843
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 269.0,
+              "unit_price": 269.0,
+              "market_inventory_before": 9844
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 269.0,
+              "unit_price": 269.0,
+              "market_inventory_before": 9842
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 269.0,
+              "unit_price": 269.0,
+              "market_inventory_before": 9843
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 269.0,
+              "unit_price": 269.0,
+              "market_inventory_before": 9844
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 268.0,
+            "inventory": 9845
+          },
+          "B_post": {
+            "price": 268.0,
+            "inventory": 9845
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h14",
+          "A_pre": {
+            "price": 268.0,
+            "inventory": 9845
+          },
+          "B_pre": {
+            "price": 268.0,
+            "inventory": 9845
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9845
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9846
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9847
+            }
+          ],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 268.0,
+            "inventory": 9845
+          },
+          "B_post": {
+            "price": 267.0,
+            "inventory": 9848
+          },
+          "post_equal": false
+        }
+      ]
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 2293.0,
+      "decision_timestamp": "D20h17",
+      "first_physical_difference": "D20h18",
+      "first_milk_sell_difference": "D20h21",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D20h21",
+        "A": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 208.0,
+            "unit_price": 208.0,
+            "market_inventory_before": 9970
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 207.0,
+            "unit_price": 207.0,
+            "market_inventory_before": 9971
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 206.0,
+            "unit_price": 206.0,
+            "market_inventory_before": 9972
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 205.0,
+            "unit_price": 205.0,
+            "market_inventory_before": 9973
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 204.0,
+            "unit_price": 204.0,
+            "market_inventory_before": 9974
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 203.0,
+            "unit_price": 203.0,
+            "market_inventory_before": 9975
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 203.0,
+            "unit_price": 203.0,
+            "market_inventory_before": 9976
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 202.0,
+            "unit_price": 202.0,
+            "market_inventory_before": 9977
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 201.0,
+            "unit_price": 201.0,
+            "market_inventory_before": 9978
+          }
+        ],
+        "B": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 208.0,
+            "unit_price": 208.0,
+            "market_inventory_before": 9970
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 207.0,
+            "unit_price": 207.0,
+            "market_inventory_before": 9971
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 206.0,
+            "unit_price": 206.0,
+            "market_inventory_before": 9972
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 205.0,
+            "unit_price": 205.0,
+            "market_inventory_before": 9973
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 204.0,
+            "unit_price": 204.0,
+            "market_inventory_before": 9974
+          },
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 203.0,
+            "unit_price": 203.0,
+            "market_inventory_before": 9975
+          }
+        ]
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": {
+        "timestamp": "D20h21",
+        "A": {
+          "price": 200.0,
+          "inventory": 9979
+        },
+        "B": {
+          "price": 203.0,
+          "inventory": 9976
+        }
+      },
+      "first_milk_market_post_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D20h17",
+          "A_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h18",
+          "A_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h19",
+          "A_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h20",
+          "A_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_pre": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "B_post": {
+            "price": 205.0,
+            "inventory": 9973
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h21",
+          "A_pre": {
+            "price": 208.0,
+            "inventory": 9970
+          },
+          "B_pre": {
+            "price": 208.0,
+            "inventory": 9970
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 208.0,
+              "unit_price": 208.0,
+              "market_inventory_before": 9970
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 207.0,
+              "unit_price": 207.0,
+              "market_inventory_before": 9971
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 206.0,
+              "unit_price": 206.0,
+              "market_inventory_before": 9972
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 205.0,
+              "unit_price": 205.0,
+              "market_inventory_before": 9973
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 204.0,
+              "unit_price": 204.0,
+              "market_inventory_before": 9974
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9975
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9976
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 202.0,
+              "unit_price": 202.0,
+              "market_inventory_before": 9977
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 201.0,
+              "unit_price": 201.0,
+              "market_inventory_before": 9978
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 208.0,
+              "unit_price": 208.0,
+              "market_inventory_before": 9970
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 207.0,
+              "unit_price": 207.0,
+              "market_inventory_before": 9971
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 206.0,
+              "unit_price": 206.0,
+              "market_inventory_before": 9972
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 205.0,
+              "unit_price": 205.0,
+              "market_inventory_before": 9973
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 204.0,
+              "unit_price": 204.0,
+              "market_inventory_before": 9974
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9975
+            }
+          ],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 200.0,
+            "inventory": 9979
+          },
+          "B_post": {
+            "price": 203.0,
+            "inventory": 9976
+          },
+          "post_equal": false
+        }
+      ]
+    },
+    {
+      "seed": 7355,
+      "status": "NOT_MATCHED_CURRENT_AND_HISTORY",
+      "decision_timestamp": "D21h17",
+      "first_milk_sell_difference": "D21h22"
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 745.0,
+      "decision_timestamp": "D22h2",
+      "first_physical_difference": "D22h3",
+      "first_milk_sell_difference": "D22h5",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D22h5",
+        "A": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 3.0,
+            "unit_price": 3.0,
+            "market_inventory_before": 10075
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 3.0,
+            "unit_price": 3.0,
+            "market_inventory_before": 10076
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 1.0,
+            "unit_price": 1.0,
+            "market_inventory_before": 10077
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 1.0,
+            "unit_price": 1.0,
+            "market_inventory_before": 10077
+          }
+        ],
+        "B": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 3.0,
+            "unit_price": 3.0,
+            "market_inventory_before": 10075
+          }
+        ]
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": {
+        "timestamp": "D22h5",
+        "A": {
+          "price": 1.0,
+          "inventory": 10077
+        },
+        "B": {
+          "price": 1.0,
+          "inventory": 10076
+        }
+      },
+      "first_milk_market_post_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D22h2",
+          "A_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "B_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D22h3",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D22h4",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D22h5",
+          "A_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "B_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10077
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10077
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            }
+          ],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10077
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": false
+        }
+      ]
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": -567.0,
+      "decision_timestamp": "D19h20",
+      "first_physical_difference": "D19h21",
+      "first_milk_sell_difference": "D20h0",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D20h0",
+        "A": [],
+        "B": [
+          {
+            "player": 0,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 1.0,
+            "unit_price": 1.0,
+            "market_inventory_before": 10076
+          }
+        ]
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": null,
+      "first_milk_market_post_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D19h20",
+          "A_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "B_pre": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "B_post": {
+            "price": 3.0,
+            "inventory": 10075
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D19h21",
+          "A_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B_pre": {
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 5.0,
+              "unit_price": 5.0,
+              "market_inventory_before": 10074
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 5.0,
+              "unit_price": 5.0,
+              "market_inventory_before": 10074
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D19h22",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D19h23",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D20h0",
+          "A_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_pre": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076
+            }
+          ],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "B_post": {
+            "price": 1.0,
+            "inventory": 10076
+          },
+          "post_equal": true
+        }
+      ]
+    },
+    {
+      "seed": 7358,
+      "status": "NO_COMPACT_PHYSICAL_PRECURSOR",
+      "first_milk_sell_difference": "D22h0"
+    },
+    {
+      "seed": 7359,
+      "status": "NOT_MATCHED_CURRENT_AND_HISTORY",
+      "decision_timestamp": "D21h17",
+      "first_milk_sell_difference": "D21h22"
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": -845.0,
+      "decision_timestamp": "D23h17",
+      "first_physical_difference": "D23h18",
+      "first_milk_sell_difference": "D23h22",
+      "first_milk_market_pre_difference": null,
+      "first_milk_market_pre_relation": "NONE_THROUGH_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_event_difference": {
+        "timestamp": "D23h22",
+        "A": [
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 133.0,
+            "unit_price": 133.0,
+            "market_inventory_before": 10013
+          },
+          {
+            "player": 1,
+            "op": "SELL",
+            "item": "MILK",
+            "cash_delta": 131.0,
+            "unit_price": 131.0,
+            "market_inventory_before": 10014
+          }
+        ],
+        "B": []
+      },
+      "first_milk_market_event_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "first_milk_market_post_difference": {
+        "timestamp": "D23h22",
+        "A": {
+          "price": 129.0,
+          "inventory": 10015
+        },
+        "B": {
+          "price": 133.0,
+          "inventory": 10013
+        }
+      },
+      "first_milk_market_post_relation": "AT_FIRST_SELL_DIFFERENCE",
+      "timeline": [
+        {
+          "timestamp": "D23h17",
+          "A_pre": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "B_pre": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 133.0,
+              "unit_price": 133.0,
+              "market_inventory_before": 10013
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 131.0,
+              "unit_price": 131.0,
+              "market_inventory_before": 10014
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 129.0,
+              "unit_price": 129.0,
+              "market_inventory_before": 10015
+            }
+          ],
+          "B_milk_events": [
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 133.0,
+              "unit_price": 133.0,
+              "market_inventory_before": 10013
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 131.0,
+              "unit_price": 131.0,
+              "market_inventory_before": 10014
+            },
+            {
+              "player": 0,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 129.0,
+              "unit_price": 129.0,
+              "market_inventory_before": 10015
+            }
+          ],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D23h18",
+          "A_pre": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_pre": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D23h19",
+          "A_pre": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_pre": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D23h20",
+          "A_pre": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_pre": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "B_post": {
+            "price": 126.0,
+            "inventory": 10016
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D23h21",
+          "A_pre": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "B_pre": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "pre_equal": true,
+          "A_milk_events": [],
+          "B_milk_events": [],
+          "milk_events_equal": true,
+          "A_post": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "B_post": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "post_equal": true
+        },
+        {
+          "timestamp": "D23h22",
+          "A_pre": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "B_pre": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "pre_equal": true,
+          "A_milk_events": [
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 133.0,
+              "unit_price": 133.0,
+              "market_inventory_before": 10013
+            },
+            {
+              "player": 1,
+              "op": "SELL",
+              "item": "MILK",
+              "cash_delta": 131.0,
+              "unit_price": 131.0,
+              "market_inventory_before": 10014
+            }
+          ],
+          "B_milk_events": [],
+          "milk_events_equal": false,
+          "A_post": {
+            "price": 129.0,
+            "inventory": 10015
+          },
+          "B_post": {
+            "price": 133.0,
+            "inventory": 10013
+          },
+          "post_equal": false
+        }
+      ]
+    }
+  ],
+  "boundary": [
+    "Primary set requires exact-equal current MILK price/inventory and exact-equal previous-6-turn raw MILK price/inventory history.",
+    "Only MILK market price, MILK market inventory, and successful MILK market events are compared.",
+    "Other-product market divergence is deliberately excluded.",
+    "A pre-market MILK difference before the first SELL boundary would show that the MILK market diverged before the return event.",
+    "A first difference only at the SELL boundary means the tested MILK market path remained equal until that boundary.",
+    "Chronology does not establish causal value of the earlier stage transition."
+  ]
+}
