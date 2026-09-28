@@ -1,0 +1,995 @@
+{
+  "schema": "kaggriculture.milk-market-raw-history-presence-probe.fresh10.result.v0",
+  "window_previous_turns": 6,
+  "summary": {
+    "observed_compact_precursor_cases": 9,
+    "current_snapshot_exact_equal_cases": 7,
+    "current_snapshot_diff_cases": 2,
+    "equal_current_with_identical_raw_history": 7,
+    "equal_current_with_different_raw_history": 0,
+    "by_seed_equal_current": {
+      "7351": {
+        "delta_terminal_self_B_minus_A": 455.0,
+        "decision_timestamp": "D21h17",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      },
+      "7352": {
+        "delta_terminal_self_B_minus_A": 1153.0,
+        "decision_timestamp": "D20h16",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      },
+      "7353": {
+        "delta_terminal_self_B_minus_A": 942.0,
+        "decision_timestamp": "D20h11",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      },
+      "7354": {
+        "delta_terminal_self_B_minus_A": 2293.0,
+        "decision_timestamp": "D20h17",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      },
+      "7356": {
+        "delta_terminal_self_B_minus_A": 745.0,
+        "decision_timestamp": "D22h2",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      },
+      "7357": {
+        "delta_terminal_self_B_minus_A": -567.0,
+        "decision_timestamp": "D19h20",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      },
+      "7360": {
+        "delta_terminal_self_B_minus_A": -845.0,
+        "decision_timestamp": "D23h17",
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    "by_seed_current_diff": {
+      "7355": {
+        "delta_terminal_self_B_minus_A": 1821.0,
+        "decision_timestamp": "D21h17",
+        "current_snapshot": {
+          "A": {
+            "price": 9.0,
+            "inventory": 10072
+          },
+          "B": {
+            "price": 19.0,
+            "inventory": 10067
+          },
+          "exact_equal": false
+        }
+      },
+      "7359": {
+        "delta_terminal_self_B_minus_A": -2441.0,
+        "decision_timestamp": "D21h17",
+        "current_snapshot": {
+          "A": {
+            "price": 135.0,
+            "inventory": 10012
+          },
+          "B": {
+            "price": 124.0,
+            "inventory": 10017
+          },
+          "exact_equal": false
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "delta_terminal_self_B_minus_A": 455.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D21h17",
+      "current_snapshot": {
+        "A": {
+          "price": 1.0,
+          "inventory": 10076
+        },
+        "B": {
+          "price": 1.0,
+          "inventory": 10076
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D21h11",
+          "D21h12",
+          "D21h13",
+          "D21h14",
+          "D21h15",
+          "D21h16"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D21h11",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 1.0,
+            "inventory": 10076
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D21h11",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 1.0,
+            "inventory": 10076
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "delta_terminal_self_B_minus_A": 1153.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D20h16",
+      "current_snapshot": {
+        "A": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "B": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D20h10",
+          "D20h11",
+          "D20h12",
+          "D20h13",
+          "D20h14",
+          "D20h15"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D20h10",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 9.0,
+            "inventory": 10072
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D20h10",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 9.0,
+            "inventory": 10072
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "delta_terminal_self_B_minus_A": 942.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D20h11",
+      "current_snapshot": {
+        "A": {
+          "price": 268.0,
+          "inventory": 9847
+        },
+        "B": {
+          "price": 268.0,
+          "inventory": 9847
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D20h5",
+          "D20h6",
+          "D20h7",
+          "D20h8",
+          "D20h9",
+          "D20h10"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D20h5",
+            "price": 267.0,
+            "inventory": 9849
+          },
+          {
+            "timestamp": "D20h6",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h7",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h8",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h9",
+            "price": 268.0,
+            "inventory": 9847
+          },
+          {
+            "timestamp": "D20h10",
+            "price": 268.0,
+            "inventory": 9847
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D20h5",
+            "price": 267.0,
+            "inventory": 9849
+          },
+          {
+            "timestamp": "D20h6",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h7",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h8",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h9",
+            "price": 268.0,
+            "inventory": 9847
+          },
+          {
+            "timestamp": "D20h10",
+            "price": 268.0,
+            "inventory": 9847
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "delta_terminal_self_B_minus_A": 2293.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D20h17",
+      "current_snapshot": {
+        "A": {
+          "price": 205.0,
+          "inventory": 9973
+        },
+        "B": {
+          "price": 205.0,
+          "inventory": 9973
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D20h11",
+          "D20h12",
+          "D20h13",
+          "D20h14",
+          "D20h15",
+          "D20h16"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D20h11",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 208.0,
+            "inventory": 9970
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h16",
+            "price": 205.0,
+            "inventory": 9973
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D20h11",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 208.0,
+            "inventory": 9970
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h16",
+            "price": 205.0,
+            "inventory": 9973
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    {
+      "seed": 7355,
+      "seat": 0,
+      "delta_terminal_self_B_minus_A": 1821.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D21h17",
+      "current_snapshot": {
+        "A": {
+          "price": 9.0,
+          "inventory": 10072
+        },
+        "B": {
+          "price": 19.0,
+          "inventory": 10067
+        },
+        "exact_equal": false
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D21h11",
+          "D21h12",
+          "D21h13",
+          "D21h14",
+          "D21h15",
+          "D21h16"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D21h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 9.0,
+            "inventory": 10072
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 5.0,
+            "inventory": 10074
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D21h11",
+            "price": 7.0,
+            "inventory": 10073
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 7.0,
+            "inventory": 10073
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 13.0,
+            "inventory": 10070
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 13.0,
+            "inventory": 10070
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 13.0,
+            "inventory": 10070
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 13.0,
+            "inventory": 10070
+          }
+        ],
+        "raw_history_exact_equal": false,
+        "first_raw_difference": {
+          "timestamp": "D21h11",
+          "A": {
+            "timestamp": "D21h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          "B": {
+            "timestamp": "D21h11",
+            "price": 7.0,
+            "inventory": 10073
+          },
+          "price_delta_B_minus_A": 2.0,
+          "inventory_delta_B_minus_A": -1
+        }
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "delta_terminal_self_B_minus_A": 745.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D22h2",
+      "current_snapshot": {
+        "A": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "B": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D21h20",
+          "D21h21",
+          "D21h22",
+          "D21h23",
+          "D22h0",
+          "D22h1"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D21h20",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h21",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D21h22",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h23",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h0",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h1",
+            "price": 5.0,
+            "inventory": 10074
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D21h20",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h21",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D21h22",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h23",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h0",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h1",
+            "price": 5.0,
+            "inventory": 10074
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "delta_terminal_self_B_minus_A": -567.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D19h20",
+      "current_snapshot": {
+        "A": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "B": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D19h14",
+          "D19h15",
+          "D19h16",
+          "D19h17",
+          "D19h18",
+          "D19h19"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D19h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h16",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h17",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h18",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h19",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D19h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h16",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h17",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h18",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h19",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    },
+    {
+      "seed": 7358,
+      "seat": 1,
+      "delta_terminal_self_B_minus_A": 3215.0,
+      "status": "NO_COMPACT_PHYSICAL_PRECURSOR"
+    },
+    {
+      "seed": 7359,
+      "seat": 0,
+      "delta_terminal_self_B_minus_A": -2441.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D21h17",
+      "current_snapshot": {
+        "A": {
+          "price": 135.0,
+          "inventory": 10012
+        },
+        "B": {
+          "price": 124.0,
+          "inventory": 10017
+        },
+        "exact_equal": false
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D21h11",
+          "D21h12",
+          "D21h13",
+          "D21h14",
+          "D21h15",
+          "D21h16"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D21h11",
+            "price": 122.0,
+            "inventory": 10018
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 122.0,
+            "inventory": 10018
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 129.0,
+            "inventory": 10015
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 129.0,
+            "inventory": 10015
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 129.0,
+            "inventory": 10015
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 129.0,
+            "inventory": 10015
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D21h11",
+            "price": 116.0,
+            "inventory": 10021
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 116.0,
+            "inventory": 10021
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 120.0,
+            "inventory": 10019
+          }
+        ],
+        "raw_history_exact_equal": false,
+        "first_raw_difference": {
+          "timestamp": "D21h11",
+          "A": {
+            "timestamp": "D21h11",
+            "price": 122.0,
+            "inventory": 10018
+          },
+          "B": {
+            "timestamp": "D21h11",
+            "price": 116.0,
+            "inventory": 10021
+          },
+          "price_delta_B_minus_A": -6.0,
+          "inventory_delta_B_minus_A": 3
+        }
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "delta_terminal_self_B_minus_A": -845.0,
+      "status": "OBSERVED",
+      "decision_timestamp": "D23h17",
+      "current_snapshot": {
+        "A": {
+          "price": 133.0,
+          "inventory": 10013
+        },
+        "B": {
+          "price": 133.0,
+          "inventory": 10013
+        },
+        "exact_equal": true
+      },
+      "history_window": {
+        "requested_previous_turns": 6,
+        "observed_previous_turns": 6,
+        "timestamps": [
+          "D23h11",
+          "D23h12",
+          "D23h13",
+          "D23h14",
+          "D23h15",
+          "D23h16"
+        ],
+        "A_raw": [
+          {
+            "timestamp": "D23h11",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h12",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h13",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h14",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h15",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h16",
+            "price": 126.0,
+            "inventory": 10016
+          }
+        ],
+        "B_raw": [
+          {
+            "timestamp": "D23h11",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h12",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h13",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h14",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h15",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h16",
+            "price": 126.0,
+            "inventory": 10016
+          }
+        ],
+        "raw_history_exact_equal": true,
+        "first_raw_difference": null
+      }
+    }
+  ],
+  "boundary": [
+    "This probe asks only whether a raw historical MILK market difference exists before the decision.",
+    "It does not test whether history predicts later Cash, terminal self, or whether value should move/hold.",
+    "The history window is fixed at the previous 6 completed turns for this probe.",
+    "No trend, slope, persistence, moving average, score, or fitted feature is created.",
+    "Only cases with exact-equal current MILK price and inventory are used to answer the primary question.",
+    "A/B already differ elsewhere in the Battle path; any historical difference is descriptive, not causal."
+  ]
+}
