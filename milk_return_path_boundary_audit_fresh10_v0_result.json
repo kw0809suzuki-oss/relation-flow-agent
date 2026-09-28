@@ -1,0 +1,695 @@
+{
+  "schema": "kaggriculture.milk-return-path-boundary-audit.fresh10.result.v0",
+  "summary": {
+    "matched_current_and_history_cases": 7,
+    "earliest_boundary_counts": {
+      "EXECUTED_SELL": 1,
+      "MILK_DROP_ACTION": 6,
+      "SELL_READY_SHED": 7,
+      "SELL_REQUEST": 1
+    },
+    "boundary_presence_counts": {
+      "MILK_DROP_ACTION": 6,
+      "SELL_READY_SHED": 7,
+      "SELL_REQUEST": 7,
+      "EXECUTED_SELL": 7
+    },
+    "by_seed": {
+      "7351": {
+        "delta_terminal_self_B_minus_A": 455.0,
+        "first_physical_difference": "D21h18",
+        "first_milk_sell_difference": "D21h22",
+        "earliest_downstream": {
+          "earliest_timestamp": "D21h21",
+          "earliest_boundaries": [
+            "MILK_DROP_ACTION",
+            "SELL_READY_SHED"
+          ],
+          "turns_after_first_physical_difference": 3
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": "D21h21",
+          "SELL_READY_SHED": "D21h21",
+          "SELL_REQUEST": "D21h22",
+          "EXECUTED_SELL": "D21h22"
+        }
+      },
+      "7352": {
+        "delta_terminal_self_B_minus_A": 1153.0,
+        "first_physical_difference": "D20h17",
+        "first_milk_sell_difference": "D20h21",
+        "earliest_downstream": {
+          "earliest_timestamp": "D20h20",
+          "earliest_boundaries": [
+            "MILK_DROP_ACTION",
+            "SELL_READY_SHED"
+          ],
+          "turns_after_first_physical_difference": 3
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": "D20h20",
+          "SELL_READY_SHED": "D20h20",
+          "SELL_REQUEST": "D20h21",
+          "EXECUTED_SELL": "D20h21"
+        }
+      },
+      "7353": {
+        "delta_terminal_self_B_minus_A": 942.0,
+        "first_physical_difference": "D20h12",
+        "first_milk_sell_difference": "D20h14",
+        "earliest_downstream": {
+          "earliest_timestamp": "D20h13",
+          "earliest_boundaries": [
+            "MILK_DROP_ACTION",
+            "SELL_READY_SHED"
+          ],
+          "turns_after_first_physical_difference": 1
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": "D20h13",
+          "SELL_READY_SHED": "D20h13",
+          "SELL_REQUEST": "D20h14",
+          "EXECUTED_SELL": "D20h14"
+        }
+      },
+      "7354": {
+        "delta_terminal_self_B_minus_A": 2293.0,
+        "first_physical_difference": "D20h18",
+        "first_milk_sell_difference": "D20h21",
+        "earliest_downstream": {
+          "earliest_timestamp": "D20h20",
+          "earliest_boundaries": [
+            "MILK_DROP_ACTION",
+            "SELL_READY_SHED"
+          ],
+          "turns_after_first_physical_difference": 2
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": "D20h20",
+          "SELL_READY_SHED": "D20h20",
+          "SELL_REQUEST": "D20h21",
+          "EXECUTED_SELL": "D20h21"
+        }
+      },
+      "7356": {
+        "delta_terminal_self_B_minus_A": 745.0,
+        "first_physical_difference": "D22h3",
+        "first_milk_sell_difference": "D22h5",
+        "earliest_downstream": {
+          "earliest_timestamp": "D22h4",
+          "earliest_boundaries": [
+            "MILK_DROP_ACTION",
+            "SELL_READY_SHED"
+          ],
+          "turns_after_first_physical_difference": 1
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": "D22h4",
+          "SELL_READY_SHED": "D22h4",
+          "SELL_REQUEST": "D22h5",
+          "EXECUTED_SELL": "D22h5"
+        }
+      },
+      "7357": {
+        "delta_terminal_self_B_minus_A": -567.0,
+        "first_physical_difference": "D19h21",
+        "first_milk_sell_difference": "D20h0",
+        "earliest_downstream": {
+          "earliest_timestamp": "D20h0",
+          "earliest_boundaries": [
+            "EXECUTED_SELL",
+            "SELL_READY_SHED",
+            "SELL_REQUEST"
+          ],
+          "turns_after_first_physical_difference": 3
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": null,
+          "SELL_READY_SHED": "D20h0",
+          "SELL_REQUEST": "D20h0",
+          "EXECUTED_SELL": "D20h0"
+        }
+      },
+      "7360": {
+        "delta_terminal_self_B_minus_A": -845.0,
+        "first_physical_difference": "D23h18",
+        "first_milk_sell_difference": "D23h22",
+        "earliest_downstream": {
+          "earliest_timestamp": "D23h21",
+          "earliest_boundaries": [
+            "MILK_DROP_ACTION",
+            "SELL_READY_SHED"
+          ],
+          "turns_after_first_physical_difference": 3
+        },
+        "boundary_timestamps": {
+          "MILK_DROP_ACTION": "D23h21",
+          "SELL_READY_SHED": "D23h21",
+          "SELL_REQUEST": "D23h22",
+          "EXECUTED_SELL": "D23h22"
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 455.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "boundaries": {
+        "MILK_DROP_ACTION": {
+          "timestamp": "D21h21",
+          "A": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                4,
+                4
+              ],
+              "milk_carried_before": 2,
+              "action": [
+                "DROP"
+              ]
+            }
+          ],
+          "B": []
+        },
+        "SELL_READY_SHED": {
+          "timestamp": "D21h21",
+          "A": 2,
+          "B": 0
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D21h22",
+          "A": [
+            [
+              "SELL",
+              "MILK",
+              2
+            ]
+          ],
+          "B": []
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D21h22",
+          "A": [
+            {
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076,
+              "item_stock_before": 2,
+              "item_stock_after": 1
+            },
+            {
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076,
+              "item_stock_before": 1,
+              "item_stock_after": 0
+            }
+          ],
+          "B": []
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D21h21",
+        "earliest_boundaries": [
+          "MILK_DROP_ACTION",
+          "SELL_READY_SHED"
+        ],
+        "turns_after_first_physical_difference": 3
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 1153.0,
+      "decision_timestamp": "D20h16",
+      "first_physical_difference": "D20h17",
+      "first_milk_sell_difference": "D20h21",
+      "boundaries": {
+        "MILK_DROP_ACTION": {
+          "timestamp": "D20h20",
+          "A": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                4,
+                4
+              ],
+              "milk_carried_before": 2,
+              "action": [
+                "DROP"
+              ]
+            }
+          ],
+          "B": []
+        },
+        "SELL_READY_SHED": {
+          "timestamp": "D20h20",
+          "A": 2,
+          "B": 0
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D20h21",
+          "A": [
+            [
+              "SELL",
+              "MILK",
+              2
+            ]
+          ],
+          "B": []
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D20h21",
+          "A": [
+            {
+              "cash_delta": 5.0,
+              "unit_price": 5.0,
+              "market_inventory_before": 10074,
+              "item_stock_before": 2,
+              "item_stock_after": 1
+            },
+            {
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10075,
+              "item_stock_before": 1,
+              "item_stock_after": 0
+            }
+          ],
+          "B": []
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D20h20",
+        "earliest_boundaries": [
+          "MILK_DROP_ACTION",
+          "SELL_READY_SHED"
+        ],
+        "turns_after_first_physical_difference": 3
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 942.0,
+      "decision_timestamp": "D20h11",
+      "first_physical_difference": "D20h12",
+      "first_milk_sell_difference": "D20h14",
+      "boundaries": {
+        "MILK_DROP_ACTION": {
+          "timestamp": "D20h13",
+          "A": [],
+          "B": [
+            {
+              "actor": "hand:0",
+              "actor_index": 1,
+              "position": [
+                5,
+                4
+              ],
+              "milk_carried_before": 3,
+              "action": [
+                "DROP"
+              ]
+            }
+          ]
+        },
+        "SELL_READY_SHED": {
+          "timestamp": "D20h13",
+          "A": 3,
+          "B": 6
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D20h14",
+          "A": [],
+          "B": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ]
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D20h14",
+          "A": [],
+          "B": [
+            {
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9845,
+              "item_stock_before": 3,
+              "item_stock_after": 2
+            },
+            {
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9846,
+              "item_stock_before": 2,
+              "item_stock_after": 1
+            },
+            {
+              "cash_delta": 268.0,
+              "unit_price": 268.0,
+              "market_inventory_before": 9847,
+              "item_stock_before": 1,
+              "item_stock_after": 0
+            }
+          ]
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D20h13",
+        "earliest_boundaries": [
+          "MILK_DROP_ACTION",
+          "SELL_READY_SHED"
+        ],
+        "turns_after_first_physical_difference": 1
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 2293.0,
+      "decision_timestamp": "D20h17",
+      "first_physical_difference": "D20h18",
+      "first_milk_sell_difference": "D20h21",
+      "boundaries": {
+        "MILK_DROP_ACTION": {
+          "timestamp": "D20h20",
+          "A": [
+            {
+              "actor": "hand:1",
+              "actor_index": 2,
+              "position": [
+                4,
+                4
+              ],
+              "milk_carried_before": 3,
+              "action": [
+                "DROP"
+              ]
+            }
+          ],
+          "B": []
+        },
+        "SELL_READY_SHED": {
+          "timestamp": "D20h20",
+          "A": 3,
+          "B": 0
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D20h21",
+          "A": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "B": []
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D20h21",
+          "A": [
+            {
+              "cash_delta": 203.0,
+              "unit_price": 203.0,
+              "market_inventory_before": 9976,
+              "item_stock_before": 3,
+              "item_stock_after": 2
+            },
+            {
+              "cash_delta": 202.0,
+              "unit_price": 202.0,
+              "market_inventory_before": 9977,
+              "item_stock_before": 2,
+              "item_stock_after": 1
+            },
+            {
+              "cash_delta": 201.0,
+              "unit_price": 201.0,
+              "market_inventory_before": 9978,
+              "item_stock_before": 1,
+              "item_stock_after": 0
+            }
+          ],
+          "B": []
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D20h20",
+        "earliest_boundaries": [
+          "MILK_DROP_ACTION",
+          "SELL_READY_SHED"
+        ],
+        "turns_after_first_physical_difference": 2
+      }
+    },
+    {
+      "seed": 7355,
+      "status": "NOT_MATCHED_CURRENT_AND_HISTORY",
+      "delta_terminal_self_B_minus_A": 1821.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22"
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 745.0,
+      "decision_timestamp": "D22h2",
+      "first_physical_difference": "D22h3",
+      "first_milk_sell_difference": "D22h5",
+      "boundaries": {
+        "MILK_DROP_ACTION": {
+          "timestamp": "D22h4",
+          "A": [
+            {
+              "actor": "hand:0",
+              "actor_index": 1,
+              "position": [
+                5,
+                4
+              ],
+              "milk_carried_before": 3,
+              "action": [
+                "DROP"
+              ]
+            }
+          ],
+          "B": []
+        },
+        "SELL_READY_SHED": {
+          "timestamp": "D22h4",
+          "A": 3,
+          "B": 0
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D22h5",
+          "A": [
+            [
+              "SELL",
+              "MILK",
+              3
+            ]
+          ],
+          "B": []
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D22h5",
+          "A": [
+            {
+              "cash_delta": 3.0,
+              "unit_price": 3.0,
+              "market_inventory_before": 10076,
+              "item_stock_before": 3,
+              "item_stock_after": 2
+            },
+            {
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10077,
+              "item_stock_before": 2,
+              "item_stock_after": 1
+            },
+            {
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10077,
+              "item_stock_before": 1,
+              "item_stock_after": 0
+            }
+          ],
+          "B": []
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D22h4",
+        "earliest_boundaries": [
+          "MILK_DROP_ACTION",
+          "SELL_READY_SHED"
+        ],
+        "turns_after_first_physical_difference": 1
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": -567.0,
+      "decision_timestamp": "D19h20",
+      "first_physical_difference": "D19h21",
+      "first_milk_sell_difference": "D20h0",
+      "boundaries": {
+        "MILK_DROP_ACTION": null,
+        "SELL_READY_SHED": {
+          "timestamp": "D20h0",
+          "A": 0,
+          "B": 1
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D20h0",
+          "A": [],
+          "B": [
+            [
+              "SELL",
+              "MILK",
+              1
+            ]
+          ]
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D20h0",
+          "A": [],
+          "B": [
+            {
+              "cash_delta": 1.0,
+              "unit_price": 1.0,
+              "market_inventory_before": 10076,
+              "item_stock_before": 4,
+              "item_stock_after": 3
+            }
+          ]
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D20h0",
+        "earliest_boundaries": [
+          "EXECUTED_SELL",
+          "SELL_READY_SHED",
+          "SELL_REQUEST"
+        ],
+        "turns_after_first_physical_difference": 3
+      }
+    },
+    {
+      "seed": 7358,
+      "status": "NO_COMPACT_PHYSICAL_PRECURSOR",
+      "delta_terminal_self_B_minus_A": 3215.0,
+      "first_milk_sell_difference": "D22h0"
+    },
+    {
+      "seed": 7359,
+      "status": "NOT_MATCHED_CURRENT_AND_HISTORY",
+      "delta_terminal_self_B_minus_A": -2441.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22"
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": -845.0,
+      "decision_timestamp": "D23h17",
+      "first_physical_difference": "D23h18",
+      "first_milk_sell_difference": "D23h22",
+      "boundaries": {
+        "MILK_DROP_ACTION": {
+          "timestamp": "D23h21",
+          "A": [
+            {
+              "actor": "farmer",
+              "actor_index": 0,
+              "position": [
+                4,
+                4
+              ],
+              "milk_carried_before": 2,
+              "action": [
+                "DROP"
+              ]
+            }
+          ],
+          "B": []
+        },
+        "SELL_READY_SHED": {
+          "timestamp": "D23h21",
+          "A": 2,
+          "B": 0
+        },
+        "SELL_REQUEST": {
+          "timestamp": "D23h22",
+          "A": [
+            [
+              "SELL",
+              "MILK",
+              2
+            ]
+          ],
+          "B": []
+        },
+        "EXECUTED_SELL": {
+          "timestamp": "D23h22",
+          "A": [
+            {
+              "cash_delta": 133.0,
+              "unit_price": 133.0,
+              "market_inventory_before": 10013,
+              "item_stock_before": 2,
+              "item_stock_after": 1
+            },
+            {
+              "cash_delta": 131.0,
+              "unit_price": 131.0,
+              "market_inventory_before": 10014,
+              "item_stock_before": 1,
+              "item_stock_after": 0
+            }
+          ],
+          "B": []
+        }
+      },
+      "earliest_downstream": {
+        "earliest_timestamp": "D23h21",
+        "earliest_boundaries": [
+          "MILK_DROP_ACTION",
+          "SELL_READY_SHED"
+        ],
+        "turns_after_first_physical_difference": 3
+      }
+    }
+  ],
+  "boundary": [
+    "Primary set requires exact-equal current MILK market snapshot and exact-equal previous-6-turn raw MILK market history.",
+    "The already-known first COW/Carry physical MILK divergence is the starting boundary and is not re-ranked.",
+    "MILK_DROP_ACTION means a submitted DROP by an actor carrying MILK in the live pre-unit state.",
+    "SELL_READY_SHED is measured after unit actions and before market execution, matching the public rule that SELL consumes shed inventory.",
+    "SELL_REQUEST is the submitted MILK market order; EXECUTED_SELL is successful public-rule market execution.",
+    "Earliest downstream boundary is chronology only and does not imply strategic superiority or causality to terminal result."
+  ]
+}
