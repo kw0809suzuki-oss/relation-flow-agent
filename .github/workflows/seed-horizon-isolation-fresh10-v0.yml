@@ -1,0 +1,52 @@
+name: Seed Horizon Isolation fresh10 v0
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [experiment/cross-view-timeline-v0-20260928]
+    paths:
+      - .github/workflows/seed-horizon-isolation-fresh10-v0.yml
+      - seed_horizon_isolation_probe_v0.py
+      - test_seed_horizon_isolation_probe_v0.py
+      - run_seed_horizon_isolation_fresh10_v0.py
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+      - run: bash scripts/fetch_opponent.sh
+
+      - name: Boundary tests
+        run: python -m unittest -v test_seed_horizon_isolation_probe_v0.py
+
+      - name: Run A/B/C fixed fresh10
+        run: python run_seed_horizon_isolation_fresh10_v0.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seed-horizon-isolation-fresh10-v0
+          path: seed_horizon_isolation_fresh10_v0_result.json
+
+      - name: Record result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seed_horizon_isolation_fresh10_v0_result.json
+          git commit -m "Record Seed Horizon isolation fresh10 v0" || exit 0
+          git push origin HEAD:"${GITHUB_REF_NAME}"
