@@ -1,0 +1,4264 @@
+{
+  "schema": "kaggriculture.post-decision-world-first-difference.fresh10.result.v0",
+  "summary": {
+    "matched_current_and_history_cases": 7,
+    "first_difference_category_counts": {
+      "MARKET_EXECUTION": 5,
+      "OPPONENT_CASH_AFTER": 6,
+      "PUBLIC_MARKET_AFTER": 7,
+      "PUBLIC_MARKET_BEFORE": 5,
+      "SELF_CASH_AFTER": 7,
+      "SELF_NON_MILK_CARRY": 5,
+      "SELF_SELL_READY_MILK": 2,
+      "SELF_SHED": 3
+    },
+    "by_seed": {
+      "7351": {
+        "delta_terminal_self_B_minus_A": 455.0,
+        "decision_timestamp": "D21h17",
+        "first_physical_difference": "D21h18",
+        "first_milk_sell_difference": "D21h22",
+        "first_downstream_world_difference": {
+          "timestamp": "D21h19",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "PUBLIC_MARKET_BEFORE": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9865,
+                  "EGG": 9855,
+                  "FERTILIZER": 10236,
+                  "MELON": 10055,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9836,
+                  "TOMATO": 9865,
+                  "WHEAT": 9587,
+                  "WOOL": 9720
+                },
+                "prices": {
+                  "CARROT": 46,
+                  "EGG": 59,
+                  "FERTILIZER": 53,
+                  "MELON": 220,
+                  "MILK": 1,
+                  "STRAWBERRY": 228,
+                  "TOMATO": 76,
+                  "WHEAT": 45,
+                  "WOOL": 248
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9865,
+                  "EGG": 9860,
+                  "FERTILIZER": 10236,
+                  "MELON": 10055,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9836,
+                  "TOMATO": 9865,
+                  "WHEAT": 9591,
+                  "WOOL": 9710
+                },
+                "prices": {
+                  "CARROT": 46,
+                  "EGG": 58,
+                  "FERTILIZER": 53,
+                  "MELON": 220,
+                  "MILK": 1,
+                  "STRAWBERRY": 228,
+                  "TOMATO": 76,
+                  "WHEAT": 45,
+                  "WOOL": 249
+                }
+              }
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9865,
+                  "EGG": 9855,
+                  "FERTILIZER": 10236,
+                  "MELON": 10055,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9836,
+                  "TOMATO": 9865,
+                  "WHEAT": 9587,
+                  "WOOL": 9720
+                },
+                "prices": {
+                  "CARROT": 46,
+                  "EGG": 59,
+                  "FERTILIZER": 53,
+                  "MELON": 220,
+                  "MILK": 1,
+                  "STRAWBERRY": 228,
+                  "TOMATO": 76,
+                  "WHEAT": 45,
+                  "WOOL": 248
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9865,
+                  "EGG": 9860,
+                  "FERTILIZER": 10236,
+                  "MELON": 10055,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9836,
+                  "TOMATO": 9865,
+                  "WHEAT": 9591,
+                  "WOOL": 9710
+                },
+                "prices": {
+                  "CARROT": 46,
+                  "EGG": 58,
+                  "FERTILIZER": 53,
+                  "MELON": 220,
+                  "MILK": 1,
+                  "STRAWBERRY": 228,
+                  "TOMATO": 76,
+                  "WHEAT": 45,
+                  "WOOL": 249
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 10786.0,
+              "B": 10323.0
+            },
+            "OPPONENT_CASH_AFTER": {
+              "A": 49831.0,
+              "B": 49828.0
+            }
+          }
+        }
+      },
+      "7352": {
+        "delta_terminal_self_B_minus_A": 1153.0,
+        "decision_timestamp": "D20h16",
+        "first_physical_difference": "D20h17",
+        "first_milk_sell_difference": "D20h21",
+        "first_downstream_world_difference": {
+          "timestamp": "D20h18",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "SELF_SHED": {
+              "A": {
+                "CARROT": 0,
+                "COW": 0,
+                "EGG": 0,
+                "FERTILIZER": 0,
+                "GOOSE": 0,
+                "MELON": 0,
+                "MILK": 0,
+                "SHEEP": 0,
+                "STRAWBERRY": 0,
+                "TOMATO": 0,
+                "WHEAT": 0,
+                "WOOL": 0
+              },
+              "B": {
+                "CARROT": 0,
+                "COW": 0,
+                "EGG": 0,
+                "FERTILIZER": 1,
+                "GOOSE": 0,
+                "MELON": 0,
+                "MILK": 0,
+                "SHEEP": 0,
+                "STRAWBERRY": 0,
+                "TOMATO": 0,
+                "WHEAT": 2,
+                "WOOL": 0
+              }
+            },
+            "SELF_NON_MILK_CARRY": {
+              "A": {
+                "FERTILIZER": 2,
+                "STRAWBERRY": 2,
+                "WHEAT": 14
+              },
+              "B": {
+                "STRAWBERRY": 2,
+                "WHEAT": 13
+              }
+            },
+            "PUBLIC_MARKET_BEFORE": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9979,
+                  "EGG": 9784,
+                  "FERTILIZER": 10223,
+                  "MELON": 10051,
+                  "MILK": 10074,
+                  "STRAWBERRY": 9918,
+                  "TOMATO": 9944,
+                  "WHEAT": 9616,
+                  "WOOL": 9889
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 63,
+                  "FERTILIZER": 55,
+                  "MELON": 224,
+                  "MILK": 5,
+                  "STRAWBERRY": 196,
+                  "TOMATO": 67,
+                  "WHEAT": 45,
+                  "WOOL": 240
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9979,
+                  "EGG": 9784,
+                  "FERTILIZER": 10223,
+                  "MELON": 10051,
+                  "MILK": 10074,
+                  "STRAWBERRY": 9918,
+                  "TOMATO": 9944,
+                  "WHEAT": 9615,
+                  "WOOL": 9889
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 63,
+                  "FERTILIZER": 55,
+                  "MELON": 224,
+                  "MILK": 5,
+                  "STRAWBERRY": 196,
+                  "TOMATO": 67,
+                  "WHEAT": 45,
+                  "WOOL": 240
+                }
+              }
+            },
+            "MARKET_EXECUTION": {
+              "A": [],
+              "B": [
+                {
+                  "player": 1,
+                  "op": "BUY_SEED",
+                  "item": "WHEAT",
+                  "cash_delta": -10.0,
+                  "unit_price": 10.0,
+                  "market_inventory_before": 9615
+                }
+              ]
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9979,
+                  "EGG": 9784,
+                  "FERTILIZER": 10223,
+                  "MELON": 10051,
+                  "MILK": 10074,
+                  "STRAWBERRY": 9918,
+                  "TOMATO": 9944,
+                  "WHEAT": 9616,
+                  "WOOL": 9889
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 63,
+                  "FERTILIZER": 55,
+                  "MELON": 224,
+                  "MILK": 5,
+                  "STRAWBERRY": 196,
+                  "TOMATO": 67,
+                  "WHEAT": 45,
+                  "WOOL": 240
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9979,
+                  "EGG": 9784,
+                  "FERTILIZER": 10223,
+                  "MELON": 10051,
+                  "MILK": 10074,
+                  "STRAWBERRY": 9918,
+                  "TOMATO": 9944,
+                  "WHEAT": 9615,
+                  "WOOL": 9889
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 63,
+                  "FERTILIZER": 55,
+                  "MELON": 224,
+                  "MILK": 5,
+                  "STRAWBERRY": 196,
+                  "TOMATO": 67,
+                  "WHEAT": 45,
+                  "WOOL": 240
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 9615.0,
+              "B": 9118.0
+            },
+            "OPPONENT_CASH_AFTER": {
+              "A": 44450.0,
+              "B": 44453.0
+            }
+          }
+        }
+      },
+      "7353": {
+        "delta_terminal_self_B_minus_A": 942.0,
+        "decision_timestamp": "D20h11",
+        "first_physical_difference": "D20h12",
+        "first_milk_sell_difference": "D20h14",
+        "first_downstream_world_difference": {
+          "timestamp": "D20h13",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "SELF_SELL_READY_MILK": {
+              "A": 3,
+              "B": 6
+            },
+            "SELF_SHED": {
+              "A": {
+                "CARROT": 0,
+                "COW": 0,
+                "EGG": 0,
+                "FERTILIZER": 0,
+                "GOOSE": 0,
+                "MELON": 0,
+                "MILK": 3,
+                "SHEEP": 0,
+                "STRAWBERRY": 0,
+                "TOMATO": 0,
+                "WHEAT": 0,
+                "WOOL": 0
+              },
+              "B": {
+                "CARROT": 0,
+                "COW": 0,
+                "EGG": 0,
+                "FERTILIZER": 0,
+                "GOOSE": 0,
+                "MELON": 0,
+                "MILK": 6,
+                "SHEEP": 0,
+                "STRAWBERRY": 0,
+                "TOMATO": 0,
+                "WHEAT": 1,
+                "WOOL": 0
+              }
+            },
+            "SELF_NON_MILK_CARRY": {
+              "A": {
+                "STRAWBERRY": 1,
+                "WHEAT": 12
+              },
+              "B": {
+                "STRAWBERRY": 1,
+                "WHEAT": 10
+              }
+            },
+            "MARKET_EXECUTION": {
+              "A": [
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 82.0,
+                  "unit_price": 82.0,
+                  "market_inventory_before": 10045
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 77.0,
+                  "unit_price": 77.0,
+                  "market_inventory_before": 10046
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 72.0,
+                  "unit_price": 72.0,
+                  "market_inventory_before": 10047
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 66.0,
+                  "unit_price": 66.0,
+                  "market_inventory_before": 10048
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "MILK",
+                  "cash_delta": 269.0,
+                  "unit_price": 269.0,
+                  "market_inventory_before": 9842
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9477
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "MILK",
+                  "cash_delta": 269.0,
+                  "unit_price": 269.0,
+                  "market_inventory_before": 9843
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9478
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "MILK",
+                  "cash_delta": 269.0,
+                  "unit_price": 269.0,
+                  "market_inventory_before": 9844
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9479
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9480
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9481
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9482
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9483
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9484
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9485
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9486
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9487
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9488
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9489
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9490
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9491
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9492
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9493
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9494
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9495
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9496
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9497
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9498
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9499
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9500
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9501
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9502
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9503
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9504
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9505
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9506
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9507
+                }
+              ],
+              "B": [
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9477
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 82.0,
+                  "unit_price": 82.0,
+                  "market_inventory_before": 10045
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 77.0,
+                  "unit_price": 77.0,
+                  "market_inventory_before": 10046
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 72.0,
+                  "unit_price": 72.0,
+                  "market_inventory_before": 10047
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WOOL",
+                  "cash_delta": 66.0,
+                  "unit_price": 66.0,
+                  "market_inventory_before": 10048
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "MILK",
+                  "cash_delta": 269.0,
+                  "unit_price": 269.0,
+                  "market_inventory_before": 9842
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9478
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "MILK",
+                  "cash_delta": 269.0,
+                  "unit_price": 269.0,
+                  "market_inventory_before": 9843
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9479
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "MILK",
+                  "cash_delta": 269.0,
+                  "unit_price": 269.0,
+                  "market_inventory_before": 9844
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9480
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9481
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9482
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9483
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9484
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9485
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9486
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9487
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9488
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9489
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9490
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9491
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9492
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 48.0,
+                  "unit_price": 48.0,
+                  "market_inventory_before": 9493
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9494
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9495
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9496
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9497
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9498
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9499
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9500
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9501
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9502
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9503
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9504
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9505
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9506
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9507
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 47.0,
+                  "unit_price": 47.0,
+                  "market_inventory_before": 9508
+                }
+              ]
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9979,
+                  "EGG": 9927,
+                  "FERTILIZER": 10203,
+                  "MELON": 10045,
+                  "MILK": 9845,
+                  "STRAWBERRY": 9861,
+                  "TOMATO": 9785,
+                  "WHEAT": 9508,
+                  "WOOL": 10049
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 54,
+                  "FERTILIZER": 59,
+                  "MELON": 230,
+                  "MILK": 268,
+                  "STRAWBERRY": 219,
+                  "TOMATO": 87,
+                  "WHEAT": 47,
+                  "WOOL": 61
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9979,
+                  "EGG": 9927,
+                  "FERTILIZER": 10203,
+                  "MELON": 10045,
+                  "MILK": 9845,
+                  "STRAWBERRY": 9861,
+                  "TOMATO": 9785,
+                  "WHEAT": 9509,
+                  "WOOL": 10049
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 54,
+                  "FERTILIZER": 59,
+                  "MELON": 230,
+                  "MILK": 268,
+                  "STRAWBERRY": 219,
+                  "TOMATO": 87,
+                  "WHEAT": 47,
+                  "WOOL": 61
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 23441.0,
+              "B": 23119.0
+            },
+            "OPPONENT_CASH_AFTER": {
+              "A": 49264.0,
+              "B": 49262.0
+            }
+          }
+        }
+      },
+      "7354": {
+        "delta_terminal_self_B_minus_A": 2293.0,
+        "decision_timestamp": "D20h17",
+        "first_physical_difference": "D20h18",
+        "first_milk_sell_difference": "D20h21",
+        "first_downstream_world_difference": {
+          "timestamp": "D20h19",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "SELF_NON_MILK_CARRY": {
+              "A": {
+                "FERTILIZER": 1,
+                "STRAWBERRY": 3,
+                "WHEAT": 11
+              },
+              "B": {
+                "FERTILIZER": 1,
+                "STRAWBERRY": 3,
+                "WHEAT": 13
+              }
+            },
+            "MARKET_EXECUTION": {
+              "A": [
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 217.0,
+                  "unit_price": 217.0,
+                  "market_inventory_before": 9868
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 216.0,
+                  "unit_price": 216.0,
+                  "market_inventory_before": 9869
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 216.0,
+                  "unit_price": 216.0,
+                  "market_inventory_before": 9870
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 215.0,
+                  "unit_price": 215.0,
+                  "market_inventory_before": 9871
+                }
+              ],
+              "B": [
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 217.0,
+                  "unit_price": 217.0,
+                  "market_inventory_before": 9868
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "FERTILIZER",
+                  "cash_delta": 56.0,
+                  "unit_price": 56.0,
+                  "market_inventory_before": 10220
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 216.0,
+                  "unit_price": 216.0,
+                  "market_inventory_before": 9869
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 216.0,
+                  "unit_price": 216.0,
+                  "market_inventory_before": 9870
+                },
+                {
+                  "player": 0,
+                  "op": "SELL",
+                  "item": "STRAWBERRY",
+                  "cash_delta": 215.0,
+                  "unit_price": 215.0,
+                  "market_inventory_before": 9871
+                }
+              ]
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9891,
+                  "EGG": 9979,
+                  "FERTILIZER": 10220,
+                  "MELON": 10045,
+                  "MILK": 9973,
+                  "STRAWBERRY": 9872,
+                  "TOMATO": 9784,
+                  "WHEAT": 9624,
+                  "WOOL": 9889
+                },
+                "prices": {
+                  "CARROT": 43,
+                  "EGG": 51,
+                  "FERTILIZER": 56,
+                  "MELON": 230,
+                  "MILK": 205,
+                  "STRAWBERRY": 215,
+                  "TOMATO": 87,
+                  "WHEAT": 44,
+                  "WOOL": 240
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9891,
+                  "EGG": 9979,
+                  "FERTILIZER": 10221,
+                  "MELON": 10045,
+                  "MILK": 9973,
+                  "STRAWBERRY": 9872,
+                  "TOMATO": 9784,
+                  "WHEAT": 9624,
+                  "WOOL": 9889
+                },
+                "prices": {
+                  "CARROT": 43,
+                  "EGG": 51,
+                  "FERTILIZER": 56,
+                  "MELON": 230,
+                  "MILK": 205,
+                  "STRAWBERRY": 215,
+                  "TOMATO": 87,
+                  "WHEAT": 44,
+                  "WOOL": 240
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 19600.0,
+              "B": 19276.0
+            }
+          }
+        }
+      },
+      "7356": {
+        "delta_terminal_self_B_minus_A": 745.0,
+        "decision_timestamp": "D22h2",
+        "first_physical_difference": "D22h3",
+        "first_milk_sell_difference": "D22h5",
+        "first_downstream_world_difference": {
+          "timestamp": "D22h4",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "SELF_SELL_READY_MILK": {
+              "A": 3,
+              "B": 0
+            },
+            "SELF_SHED": {
+              "A": {
+                "CARROT": 0,
+                "COW": 0,
+                "EGG": 0,
+                "FERTILIZER": 1,
+                "GOOSE": 0,
+                "MELON": 0,
+                "MILK": 3,
+                "SHEEP": 0,
+                "STRAWBERRY": 0,
+                "TOMATO": 0,
+                "WHEAT": 6,
+                "WOOL": 0
+              },
+              "B": {
+                "CARROT": 0,
+                "COW": 0,
+                "EGG": 0,
+                "FERTILIZER": 1,
+                "GOOSE": 0,
+                "MELON": 0,
+                "MILK": 0,
+                "SHEEP": 0,
+                "STRAWBERRY": 0,
+                "TOMATO": 0,
+                "WHEAT": 5,
+                "WOOL": 0
+              }
+            },
+            "PUBLIC_MARKET_BEFORE": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9859,
+                  "EGG": 9977,
+                  "FERTILIZER": 10240,
+                  "MELON": 10061,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9953,
+                  "TOMATO": 9873,
+                  "WHEAT": 9697,
+                  "WOOL": 9495
+                },
+                "prices": {
+                  "CARROT": 46,
+                  "EGG": 51,
+                  "FERTILIZER": 52,
+                  "MELON": 213,
+                  "MILK": 1,
+                  "STRAWBERRY": 178,
+                  "TOMATO": 75,
+                  "WHEAT": 42,
+                  "WOOL": 253
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9866,
+                  "EGG": 9977,
+                  "FERTILIZER": 10241,
+                  "MELON": 10061,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9946,
+                  "TOMATO": 9866,
+                  "WHEAT": 9688,
+                  "WOOL": 9495
+                },
+                "prices": {
+                  "CARROT": 45,
+                  "EGG": 51,
+                  "FERTILIZER": 52,
+                  "MELON": 213,
+                  "MILK": 1,
+                  "STRAWBERRY": 182,
+                  "TOMATO": 76,
+                  "WHEAT": 43,
+                  "WOOL": 253
+                }
+              }
+            },
+            "MARKET_EXECUTION": {
+              "A": [
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 42.0,
+                  "unit_price": 42.0,
+                  "market_inventory_before": 9697
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 42.0,
+                  "unit_price": 42.0,
+                  "market_inventory_before": 9698
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 42.0,
+                  "unit_price": 42.0,
+                  "market_inventory_before": 9699
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 42.0,
+                  "unit_price": 42.0,
+                  "market_inventory_before": 9700
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 42.0,
+                  "unit_price": 42.0,
+                  "market_inventory_before": 9701
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 42.0,
+                  "unit_price": 42.0,
+                  "market_inventory_before": 9702
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "FERTILIZER",
+                  "cash_delta": 52.0,
+                  "unit_price": 52.0,
+                  "market_inventory_before": 10240
+                }
+              ],
+              "B": [
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 43.0,
+                  "unit_price": 43.0,
+                  "market_inventory_before": 9688
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 43.0,
+                  "unit_price": 43.0,
+                  "market_inventory_before": 9689
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 43.0,
+                  "unit_price": 43.0,
+                  "market_inventory_before": 9690
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 43.0,
+                  "unit_price": 43.0,
+                  "market_inventory_before": 9691
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "WHEAT",
+                  "cash_delta": 43.0,
+                  "unit_price": 43.0,
+                  "market_inventory_before": 9692
+                },
+                {
+                  "player": 1,
+                  "op": "SELL",
+                  "item": "FERTILIZER",
+                  "cash_delta": 52.0,
+                  "unit_price": 52.0,
+                  "market_inventory_before": 10241
+                }
+              ]
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9859,
+                  "EGG": 9977,
+                  "FERTILIZER": 10241,
+                  "MELON": 10061,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9953,
+                  "TOMATO": 9873,
+                  "WHEAT": 9703,
+                  "WOOL": 9495
+                },
+                "prices": {
+                  "CARROT": 46,
+                  "EGG": 51,
+                  "FERTILIZER": 52,
+                  "MELON": 213,
+                  "MILK": 1,
+                  "STRAWBERRY": 178,
+                  "TOMATO": 75,
+                  "WHEAT": 42,
+                  "WOOL": 253
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9866,
+                  "EGG": 9977,
+                  "FERTILIZER": 10242,
+                  "MELON": 10061,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9946,
+                  "TOMATO": 9866,
+                  "WHEAT": 9693,
+                  "WOOL": 9495
+                },
+                "prices": {
+                  "CARROT": 45,
+                  "EGG": 51,
+                  "FERTILIZER": 52,
+                  "MELON": 213,
+                  "MILK": 1,
+                  "STRAWBERRY": 182,
+                  "TOMATO": 76,
+                  "WHEAT": 43,
+                  "WOOL": 253
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 10694.0,
+              "B": 10252.0
+            },
+            "OPPONENT_CASH_AFTER": {
+              "A": 51745.0,
+              "B": 51797.0
+            }
+          }
+        }
+      },
+      "7357": {
+        "delta_terminal_self_B_minus_A": -567.0,
+        "decision_timestamp": "D19h20",
+        "first_physical_difference": "D19h21",
+        "first_milk_sell_difference": "D20h0",
+        "first_downstream_world_difference": {
+          "timestamp": "D19h22",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "SELF_NON_MILK_CARRY": {
+              "A": {
+                "WHEAT": 12
+              },
+              "B": {
+                "WHEAT": 14
+              }
+            },
+            "PUBLIC_MARKET_BEFORE": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9824,
+                  "EGG": 9848,
+                  "FERTILIZER": 10207,
+                  "MELON": 10052,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9847,
+                  "TOMATO": 9980,
+                  "WHEAT": 9697,
+                  "WOOL": 9888
+                },
+                "prices": {
+                  "CARROT": 49,
+                  "EGG": 59,
+                  "FERTILIZER": 59,
+                  "MELON": 223,
+                  "MILK": 1,
+                  "STRAWBERRY": 224,
+                  "TOMATO": 62,
+                  "WHEAT": 42,
+                  "WOOL": 241
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9824,
+                  "EGG": 9848,
+                  "FERTILIZER": 10207,
+                  "MELON": 10052,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9847,
+                  "TOMATO": 9980,
+                  "WHEAT": 9695,
+                  "WOOL": 9888
+                },
+                "prices": {
+                  "CARROT": 49,
+                  "EGG": 59,
+                  "FERTILIZER": 59,
+                  "MELON": 223,
+                  "MILK": 1,
+                  "STRAWBERRY": 224,
+                  "TOMATO": 62,
+                  "WHEAT": 42,
+                  "WOOL": 241
+                }
+              }
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9824,
+                  "EGG": 9848,
+                  "FERTILIZER": 10208,
+                  "MELON": 10052,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9847,
+                  "TOMATO": 9980,
+                  "WHEAT": 9697,
+                  "WOOL": 9888
+                },
+                "prices": {
+                  "CARROT": 49,
+                  "EGG": 59,
+                  "FERTILIZER": 58,
+                  "MELON": 223,
+                  "MILK": 1,
+                  "STRAWBERRY": 224,
+                  "TOMATO": 62,
+                  "WHEAT": 42,
+                  "WOOL": 241
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9824,
+                  "EGG": 9848,
+                  "FERTILIZER": 10208,
+                  "MELON": 10052,
+                  "MILK": 10076,
+                  "STRAWBERRY": 9847,
+                  "TOMATO": 9980,
+                  "WHEAT": 9695,
+                  "WOOL": 9888
+                },
+                "prices": {
+                  "CARROT": 49,
+                  "EGG": 59,
+                  "FERTILIZER": 58,
+                  "MELON": 223,
+                  "MILK": 1,
+                  "STRAWBERRY": 224,
+                  "TOMATO": 62,
+                  "WHEAT": 42,
+                  "WOOL": 241
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 8107.0,
+              "B": 7611.0
+            },
+            "OPPONENT_CASH_AFTER": {
+              "A": 37889.0,
+              "B": 37891.0
+            }
+          }
+        }
+      },
+      "7360": {
+        "delta_terminal_self_B_minus_A": -845.0,
+        "decision_timestamp": "D23h17",
+        "first_physical_difference": "D23h18",
+        "first_milk_sell_difference": "D23h22",
+        "first_downstream_world_difference": {
+          "timestamp": "D23h19",
+          "turns_after_first_physical_difference": 1,
+          "categories": {
+            "SELF_NON_MILK_CARRY": {
+              "A": {
+                "STRAWBERRY": 1,
+                "WHEAT": 12
+              },
+              "B": {
+                "FERTILIZER": 1,
+                "STRAWBERRY": 1,
+                "WHEAT": 11
+              }
+            },
+            "PUBLIC_MARKET_BEFORE": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9976,
+                  "EGG": 9692,
+                  "FERTILIZER": 10265,
+                  "MELON": 10066,
+                  "MILK": 10016,
+                  "STRAWBERRY": 9757,
+                  "TOMATO": 9905,
+                  "WHEAT": 9415,
+                  "WOOL": 10059
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 69,
+                  "FERTILIZER": 47,
+                  "MELON": 206,
+                  "MILK": 126,
+                  "STRAWBERRY": 251,
+                  "TOMATO": 71,
+                  "WHEAT": 49,
+                  "WOOL": 1
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9976,
+                  "EGG": 9692,
+                  "FERTILIZER": 10264,
+                  "MELON": 10066,
+                  "MILK": 10016,
+                  "STRAWBERRY": 9757,
+                  "TOMATO": 9905,
+                  "WHEAT": 9415,
+                  "WOOL": 10059
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 69,
+                  "FERTILIZER": 47,
+                  "MELON": 206,
+                  "MILK": 126,
+                  "STRAWBERRY": 251,
+                  "TOMATO": 71,
+                  "WHEAT": 49,
+                  "WOOL": 1
+                }
+              }
+            },
+            "MARKET_EXECUTION": {
+              "A": [
+                {
+                  "player": 0,
+                  "op": "BUY_PRODUCT",
+                  "item": "WHEAT",
+                  "cash_delta": -49.0,
+                  "unit_price": 49.0,
+                  "market_inventory_before": 9415
+                },
+                {
+                  "player": 0,
+                  "op": "BUY_PRODUCT",
+                  "item": "WHEAT",
+                  "cash_delta": -49.0,
+                  "unit_price": 49.0,
+                  "market_inventory_before": 9414
+                }
+              ],
+              "B": [
+                {
+                  "player": 0,
+                  "op": "BUY_PRODUCT",
+                  "item": "WHEAT",
+                  "cash_delta": -49.0,
+                  "unit_price": 49.0,
+                  "market_inventory_before": 9415
+                },
+                {
+                  "player": 1,
+                  "op": "BUY_PRODUCT",
+                  "item": "WHEAT",
+                  "cash_delta": -49.0,
+                  "unit_price": 49.0,
+                  "market_inventory_before": 9414
+                },
+                {
+                  "player": 0,
+                  "op": "BUY_PRODUCT",
+                  "item": "WHEAT",
+                  "cash_delta": -49.0,
+                  "unit_price": 49.0,
+                  "market_inventory_before": 9413
+                }
+              ]
+            },
+            "PUBLIC_MARKET_AFTER": {
+              "A": {
+                "inventory": {
+                  "CARROT": 9976,
+                  "EGG": 9692,
+                  "FERTILIZER": 10265,
+                  "MELON": 10066,
+                  "MILK": 10016,
+                  "STRAWBERRY": 9757,
+                  "TOMATO": 9905,
+                  "WHEAT": 9413,
+                  "WOOL": 10059
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 69,
+                  "FERTILIZER": 47,
+                  "MELON": 206,
+                  "MILK": 126,
+                  "STRAWBERRY": 251,
+                  "TOMATO": 71,
+                  "WHEAT": 49,
+                  "WOOL": 1
+                }
+              },
+              "B": {
+                "inventory": {
+                  "CARROT": 9976,
+                  "EGG": 9692,
+                  "FERTILIZER": 10264,
+                  "MELON": 10066,
+                  "MILK": 10016,
+                  "STRAWBERRY": 9757,
+                  "TOMATO": 9905,
+                  "WHEAT": 9412,
+                  "WOOL": 10059
+                },
+                "prices": {
+                  "CARROT": 37,
+                  "EGG": 69,
+                  "FERTILIZER": 47,
+                  "MELON": 206,
+                  "MILK": 126,
+                  "STRAWBERRY": 251,
+                  "TOMATO": 71,
+                  "WHEAT": 49,
+                  "WOOL": 1
+                }
+              }
+            },
+            "SELF_CASH_AFTER": {
+              "A": 23528.0,
+              "B": 23162.0
+            },
+            "OPPONENT_CASH_AFTER": {
+              "A": 70952.0,
+              "B": 70945.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "seed": 7351,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 455.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 1.0,
+          "inventory": 10076
+        },
+        "current_B": {
+          "price": 1.0,
+          "inventory": 10076
+        },
+        "history_A": [
+          {
+            "timestamp": "D21h11",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 1.0,
+            "inventory": 10076
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D21h11",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 1.0,
+            "inventory": 10076
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D21h19",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "PUBLIC_MARKET_BEFORE": {
+            "A": {
+              "inventory": {
+                "CARROT": 9865,
+                "EGG": 9855,
+                "FERTILIZER": 10236,
+                "MELON": 10055,
+                "MILK": 10076,
+                "STRAWBERRY": 9836,
+                "TOMATO": 9865,
+                "WHEAT": 9587,
+                "WOOL": 9720
+              },
+              "prices": {
+                "CARROT": 46,
+                "EGG": 59,
+                "FERTILIZER": 53,
+                "MELON": 220,
+                "MILK": 1,
+                "STRAWBERRY": 228,
+                "TOMATO": 76,
+                "WHEAT": 45,
+                "WOOL": 248
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9865,
+                "EGG": 9860,
+                "FERTILIZER": 10236,
+                "MELON": 10055,
+                "MILK": 10076,
+                "STRAWBERRY": 9836,
+                "TOMATO": 9865,
+                "WHEAT": 9591,
+                "WOOL": 9710
+              },
+              "prices": {
+                "CARROT": 46,
+                "EGG": 58,
+                "FERTILIZER": 53,
+                "MELON": 220,
+                "MILK": 1,
+                "STRAWBERRY": 228,
+                "TOMATO": 76,
+                "WHEAT": 45,
+                "WOOL": 249
+              }
+            }
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9865,
+                "EGG": 9855,
+                "FERTILIZER": 10236,
+                "MELON": 10055,
+                "MILK": 10076,
+                "STRAWBERRY": 9836,
+                "TOMATO": 9865,
+                "WHEAT": 9587,
+                "WOOL": 9720
+              },
+              "prices": {
+                "CARROT": 46,
+                "EGG": 59,
+                "FERTILIZER": 53,
+                "MELON": 220,
+                "MILK": 1,
+                "STRAWBERRY": 228,
+                "TOMATO": 76,
+                "WHEAT": 45,
+                "WOOL": 248
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9865,
+                "EGG": 9860,
+                "FERTILIZER": 10236,
+                "MELON": 10055,
+                "MILK": 10076,
+                "STRAWBERRY": 9836,
+                "TOMATO": 9865,
+                "WHEAT": 9591,
+                "WOOL": 9710
+              },
+              "prices": {
+                "CARROT": 46,
+                "EGG": 58,
+                "FERTILIZER": 53,
+                "MELON": 220,
+                "MILK": 1,
+                "STRAWBERRY": 228,
+                "TOMATO": 76,
+                "WHEAT": 45,
+                "WOOL": 249
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 10786.0,
+            "B": 10323.0
+          },
+          "OPPONENT_CASH_AFTER": {
+            "A": 49831.0,
+            "B": 49828.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7352,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 1153.0,
+      "decision_timestamp": "D20h16",
+      "first_physical_difference": "D20h17",
+      "first_milk_sell_difference": "D20h21",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "current_B": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "history_A": [
+          {
+            "timestamp": "D20h10",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 9.0,
+            "inventory": 10072
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D20h10",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 9.0,
+            "inventory": 10072
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D20h18",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "SELF_SHED": {
+            "A": {
+              "CARROT": 0,
+              "COW": 0,
+              "EGG": 0,
+              "FERTILIZER": 0,
+              "GOOSE": 0,
+              "MELON": 0,
+              "MILK": 0,
+              "SHEEP": 0,
+              "STRAWBERRY": 0,
+              "TOMATO": 0,
+              "WHEAT": 0,
+              "WOOL": 0
+            },
+            "B": {
+              "CARROT": 0,
+              "COW": 0,
+              "EGG": 0,
+              "FERTILIZER": 1,
+              "GOOSE": 0,
+              "MELON": 0,
+              "MILK": 0,
+              "SHEEP": 0,
+              "STRAWBERRY": 0,
+              "TOMATO": 0,
+              "WHEAT": 2,
+              "WOOL": 0
+            }
+          },
+          "SELF_NON_MILK_CARRY": {
+            "A": {
+              "FERTILIZER": 2,
+              "STRAWBERRY": 2,
+              "WHEAT": 14
+            },
+            "B": {
+              "STRAWBERRY": 2,
+              "WHEAT": 13
+            }
+          },
+          "PUBLIC_MARKET_BEFORE": {
+            "A": {
+              "inventory": {
+                "CARROT": 9979,
+                "EGG": 9784,
+                "FERTILIZER": 10223,
+                "MELON": 10051,
+                "MILK": 10074,
+                "STRAWBERRY": 9918,
+                "TOMATO": 9944,
+                "WHEAT": 9616,
+                "WOOL": 9889
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 63,
+                "FERTILIZER": 55,
+                "MELON": 224,
+                "MILK": 5,
+                "STRAWBERRY": 196,
+                "TOMATO": 67,
+                "WHEAT": 45,
+                "WOOL": 240
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9979,
+                "EGG": 9784,
+                "FERTILIZER": 10223,
+                "MELON": 10051,
+                "MILK": 10074,
+                "STRAWBERRY": 9918,
+                "TOMATO": 9944,
+                "WHEAT": 9615,
+                "WOOL": 9889
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 63,
+                "FERTILIZER": 55,
+                "MELON": 224,
+                "MILK": 5,
+                "STRAWBERRY": 196,
+                "TOMATO": 67,
+                "WHEAT": 45,
+                "WOOL": 240
+              }
+            }
+          },
+          "MARKET_EXECUTION": {
+            "A": [],
+            "B": [
+              {
+                "player": 1,
+                "op": "BUY_SEED",
+                "item": "WHEAT",
+                "cash_delta": -10.0,
+                "unit_price": 10.0,
+                "market_inventory_before": 9615
+              }
+            ]
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9979,
+                "EGG": 9784,
+                "FERTILIZER": 10223,
+                "MELON": 10051,
+                "MILK": 10074,
+                "STRAWBERRY": 9918,
+                "TOMATO": 9944,
+                "WHEAT": 9616,
+                "WOOL": 9889
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 63,
+                "FERTILIZER": 55,
+                "MELON": 224,
+                "MILK": 5,
+                "STRAWBERRY": 196,
+                "TOMATO": 67,
+                "WHEAT": 45,
+                "WOOL": 240
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9979,
+                "EGG": 9784,
+                "FERTILIZER": 10223,
+                "MELON": 10051,
+                "MILK": 10074,
+                "STRAWBERRY": 9918,
+                "TOMATO": 9944,
+                "WHEAT": 9615,
+                "WOOL": 9889
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 63,
+                "FERTILIZER": 55,
+                "MELON": 224,
+                "MILK": 5,
+                "STRAWBERRY": 196,
+                "TOMATO": 67,
+                "WHEAT": 45,
+                "WOOL": 240
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 9615.0,
+            "B": 9118.0
+          },
+          "OPPONENT_CASH_AFTER": {
+            "A": 44450.0,
+            "B": 44453.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7353,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 942.0,
+      "decision_timestamp": "D20h11",
+      "first_physical_difference": "D20h12",
+      "first_milk_sell_difference": "D20h14",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 268.0,
+          "inventory": 9847
+        },
+        "current_B": {
+          "price": 268.0,
+          "inventory": 9847
+        },
+        "history_A": [
+          {
+            "timestamp": "D20h5",
+            "price": 267.0,
+            "inventory": 9849
+          },
+          {
+            "timestamp": "D20h6",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h7",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h8",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h9",
+            "price": 268.0,
+            "inventory": 9847
+          },
+          {
+            "timestamp": "D20h10",
+            "price": 268.0,
+            "inventory": 9847
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D20h5",
+            "price": 267.0,
+            "inventory": 9849
+          },
+          {
+            "timestamp": "D20h6",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h7",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h8",
+            "price": 266.0,
+            "inventory": 9852
+          },
+          {
+            "timestamp": "D20h9",
+            "price": 268.0,
+            "inventory": 9847
+          },
+          {
+            "timestamp": "D20h10",
+            "price": 268.0,
+            "inventory": 9847
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D20h13",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "SELF_SELL_READY_MILK": {
+            "A": 3,
+            "B": 6
+          },
+          "SELF_SHED": {
+            "A": {
+              "CARROT": 0,
+              "COW": 0,
+              "EGG": 0,
+              "FERTILIZER": 0,
+              "GOOSE": 0,
+              "MELON": 0,
+              "MILK": 3,
+              "SHEEP": 0,
+              "STRAWBERRY": 0,
+              "TOMATO": 0,
+              "WHEAT": 0,
+              "WOOL": 0
+            },
+            "B": {
+              "CARROT": 0,
+              "COW": 0,
+              "EGG": 0,
+              "FERTILIZER": 0,
+              "GOOSE": 0,
+              "MELON": 0,
+              "MILK": 6,
+              "SHEEP": 0,
+              "STRAWBERRY": 0,
+              "TOMATO": 0,
+              "WHEAT": 1,
+              "WOOL": 0
+            }
+          },
+          "SELF_NON_MILK_CARRY": {
+            "A": {
+              "STRAWBERRY": 1,
+              "WHEAT": 12
+            },
+            "B": {
+              "STRAWBERRY": 1,
+              "WHEAT": 10
+            }
+          },
+          "MARKET_EXECUTION": {
+            "A": [
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 82.0,
+                "unit_price": 82.0,
+                "market_inventory_before": 10045
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 77.0,
+                "unit_price": 77.0,
+                "market_inventory_before": 10046
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 72.0,
+                "unit_price": 72.0,
+                "market_inventory_before": 10047
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 66.0,
+                "unit_price": 66.0,
+                "market_inventory_before": 10048
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "MILK",
+                "cash_delta": 269.0,
+                "unit_price": 269.0,
+                "market_inventory_before": 9842
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9477
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "MILK",
+                "cash_delta": 269.0,
+                "unit_price": 269.0,
+                "market_inventory_before": 9843
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9478
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "MILK",
+                "cash_delta": 269.0,
+                "unit_price": 269.0,
+                "market_inventory_before": 9844
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9479
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9480
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9481
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9482
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9483
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9484
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9485
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9486
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9487
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9488
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9489
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9490
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9491
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9492
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9493
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9494
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9495
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9496
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9497
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9498
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9499
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9500
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9501
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9502
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9503
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9504
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9505
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9506
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9507
+              }
+            ],
+            "B": [
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9477
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 82.0,
+                "unit_price": 82.0,
+                "market_inventory_before": 10045
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 77.0,
+                "unit_price": 77.0,
+                "market_inventory_before": 10046
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 72.0,
+                "unit_price": 72.0,
+                "market_inventory_before": 10047
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WOOL",
+                "cash_delta": 66.0,
+                "unit_price": 66.0,
+                "market_inventory_before": 10048
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "MILK",
+                "cash_delta": 269.0,
+                "unit_price": 269.0,
+                "market_inventory_before": 9842
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9478
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "MILK",
+                "cash_delta": 269.0,
+                "unit_price": 269.0,
+                "market_inventory_before": 9843
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9479
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "MILK",
+                "cash_delta": 269.0,
+                "unit_price": 269.0,
+                "market_inventory_before": 9844
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9480
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9481
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9482
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9483
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9484
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9485
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9486
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9487
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9488
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9489
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9490
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9491
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9492
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 48.0,
+                "unit_price": 48.0,
+                "market_inventory_before": 9493
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9494
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9495
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9496
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9497
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9498
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9499
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9500
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9501
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9502
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9503
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9504
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9505
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9506
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9507
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 47.0,
+                "unit_price": 47.0,
+                "market_inventory_before": 9508
+              }
+            ]
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9979,
+                "EGG": 9927,
+                "FERTILIZER": 10203,
+                "MELON": 10045,
+                "MILK": 9845,
+                "STRAWBERRY": 9861,
+                "TOMATO": 9785,
+                "WHEAT": 9508,
+                "WOOL": 10049
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 54,
+                "FERTILIZER": 59,
+                "MELON": 230,
+                "MILK": 268,
+                "STRAWBERRY": 219,
+                "TOMATO": 87,
+                "WHEAT": 47,
+                "WOOL": 61
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9979,
+                "EGG": 9927,
+                "FERTILIZER": 10203,
+                "MELON": 10045,
+                "MILK": 9845,
+                "STRAWBERRY": 9861,
+                "TOMATO": 9785,
+                "WHEAT": 9509,
+                "WOOL": 10049
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 54,
+                "FERTILIZER": 59,
+                "MELON": 230,
+                "MILK": 268,
+                "STRAWBERRY": 219,
+                "TOMATO": 87,
+                "WHEAT": 47,
+                "WOOL": 61
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 23441.0,
+            "B": 23119.0
+          },
+          "OPPONENT_CASH_AFTER": {
+            "A": 49264.0,
+            "B": 49262.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7354,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 2293.0,
+      "decision_timestamp": "D20h17",
+      "first_physical_difference": "D20h18",
+      "first_milk_sell_difference": "D20h21",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 205.0,
+          "inventory": 9973
+        },
+        "current_B": {
+          "price": 205.0,
+          "inventory": 9973
+        },
+        "history_A": [
+          {
+            "timestamp": "D20h11",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 208.0,
+            "inventory": 9970
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h16",
+            "price": 205.0,
+            "inventory": 9973
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D20h11",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h12",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h13",
+            "price": 208.0,
+            "inventory": 9970
+          },
+          {
+            "timestamp": "D20h14",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h15",
+            "price": 205.0,
+            "inventory": 9973
+          },
+          {
+            "timestamp": "D20h16",
+            "price": 205.0,
+            "inventory": 9973
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D20h19",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "SELF_NON_MILK_CARRY": {
+            "A": {
+              "FERTILIZER": 1,
+              "STRAWBERRY": 3,
+              "WHEAT": 11
+            },
+            "B": {
+              "FERTILIZER": 1,
+              "STRAWBERRY": 3,
+              "WHEAT": 13
+            }
+          },
+          "MARKET_EXECUTION": {
+            "A": [
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 217.0,
+                "unit_price": 217.0,
+                "market_inventory_before": 9868
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 216.0,
+                "unit_price": 216.0,
+                "market_inventory_before": 9869
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 216.0,
+                "unit_price": 216.0,
+                "market_inventory_before": 9870
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 215.0,
+                "unit_price": 215.0,
+                "market_inventory_before": 9871
+              }
+            ],
+            "B": [
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 217.0,
+                "unit_price": 217.0,
+                "market_inventory_before": 9868
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "FERTILIZER",
+                "cash_delta": 56.0,
+                "unit_price": 56.0,
+                "market_inventory_before": 10220
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 216.0,
+                "unit_price": 216.0,
+                "market_inventory_before": 9869
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 216.0,
+                "unit_price": 216.0,
+                "market_inventory_before": 9870
+              },
+              {
+                "player": 0,
+                "op": "SELL",
+                "item": "STRAWBERRY",
+                "cash_delta": 215.0,
+                "unit_price": 215.0,
+                "market_inventory_before": 9871
+              }
+            ]
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9891,
+                "EGG": 9979,
+                "FERTILIZER": 10220,
+                "MELON": 10045,
+                "MILK": 9973,
+                "STRAWBERRY": 9872,
+                "TOMATO": 9784,
+                "WHEAT": 9624,
+                "WOOL": 9889
+              },
+              "prices": {
+                "CARROT": 43,
+                "EGG": 51,
+                "FERTILIZER": 56,
+                "MELON": 230,
+                "MILK": 205,
+                "STRAWBERRY": 215,
+                "TOMATO": 87,
+                "WHEAT": 44,
+                "WOOL": 240
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9891,
+                "EGG": 9979,
+                "FERTILIZER": 10221,
+                "MELON": 10045,
+                "MILK": 9973,
+                "STRAWBERRY": 9872,
+                "TOMATO": 9784,
+                "WHEAT": 9624,
+                "WOOL": 9889
+              },
+              "prices": {
+                "CARROT": 43,
+                "EGG": 51,
+                "FERTILIZER": 56,
+                "MELON": 230,
+                "MILK": 205,
+                "STRAWBERRY": 215,
+                "TOMATO": 87,
+                "WHEAT": 44,
+                "WOOL": 240
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 19600.0,
+            "B": 19276.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7355,
+      "status": "NOT_MATCHED_CURRENT_AND_HISTORY",
+      "delta_terminal_self_B_minus_A": 1821.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "match": {
+        "current_equal": false,
+        "history_equal": false,
+        "current_A": {
+          "price": 9.0,
+          "inventory": 10072
+        },
+        "current_B": {
+          "price": 19.0,
+          "inventory": 10067
+        },
+        "history_A": [
+          {
+            "timestamp": "D21h11",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 9.0,
+            "inventory": 10072
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 5.0,
+            "inventory": 10074
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 5.0,
+            "inventory": 10074
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D21h11",
+            "price": 7.0,
+            "inventory": 10073
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 7.0,
+            "inventory": 10073
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 13.0,
+            "inventory": 10070
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 13.0,
+            "inventory": 10070
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 13.0,
+            "inventory": 10070
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 13.0,
+            "inventory": 10070
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7356,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": 745.0,
+      "decision_timestamp": "D22h2",
+      "first_physical_difference": "D22h3",
+      "first_milk_sell_difference": "D22h5",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "current_B": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "history_A": [
+          {
+            "timestamp": "D21h20",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h21",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D21h22",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h23",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h0",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h1",
+            "price": 5.0,
+            "inventory": 10074
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D21h20",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h21",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D21h22",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D21h23",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h0",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D22h1",
+            "price": 5.0,
+            "inventory": 10074
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D22h4",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "SELF_SELL_READY_MILK": {
+            "A": 3,
+            "B": 0
+          },
+          "SELF_SHED": {
+            "A": {
+              "CARROT": 0,
+              "COW": 0,
+              "EGG": 0,
+              "FERTILIZER": 1,
+              "GOOSE": 0,
+              "MELON": 0,
+              "MILK": 3,
+              "SHEEP": 0,
+              "STRAWBERRY": 0,
+              "TOMATO": 0,
+              "WHEAT": 6,
+              "WOOL": 0
+            },
+            "B": {
+              "CARROT": 0,
+              "COW": 0,
+              "EGG": 0,
+              "FERTILIZER": 1,
+              "GOOSE": 0,
+              "MELON": 0,
+              "MILK": 0,
+              "SHEEP": 0,
+              "STRAWBERRY": 0,
+              "TOMATO": 0,
+              "WHEAT": 5,
+              "WOOL": 0
+            }
+          },
+          "PUBLIC_MARKET_BEFORE": {
+            "A": {
+              "inventory": {
+                "CARROT": 9859,
+                "EGG": 9977,
+                "FERTILIZER": 10240,
+                "MELON": 10061,
+                "MILK": 10076,
+                "STRAWBERRY": 9953,
+                "TOMATO": 9873,
+                "WHEAT": 9697,
+                "WOOL": 9495
+              },
+              "prices": {
+                "CARROT": 46,
+                "EGG": 51,
+                "FERTILIZER": 52,
+                "MELON": 213,
+                "MILK": 1,
+                "STRAWBERRY": 178,
+                "TOMATO": 75,
+                "WHEAT": 42,
+                "WOOL": 253
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9866,
+                "EGG": 9977,
+                "FERTILIZER": 10241,
+                "MELON": 10061,
+                "MILK": 10076,
+                "STRAWBERRY": 9946,
+                "TOMATO": 9866,
+                "WHEAT": 9688,
+                "WOOL": 9495
+              },
+              "prices": {
+                "CARROT": 45,
+                "EGG": 51,
+                "FERTILIZER": 52,
+                "MELON": 213,
+                "MILK": 1,
+                "STRAWBERRY": 182,
+                "TOMATO": 76,
+                "WHEAT": 43,
+                "WOOL": 253
+              }
+            }
+          },
+          "MARKET_EXECUTION": {
+            "A": [
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 42.0,
+                "unit_price": 42.0,
+                "market_inventory_before": 9697
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 42.0,
+                "unit_price": 42.0,
+                "market_inventory_before": 9698
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 42.0,
+                "unit_price": 42.0,
+                "market_inventory_before": 9699
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 42.0,
+                "unit_price": 42.0,
+                "market_inventory_before": 9700
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 42.0,
+                "unit_price": 42.0,
+                "market_inventory_before": 9701
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 42.0,
+                "unit_price": 42.0,
+                "market_inventory_before": 9702
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "FERTILIZER",
+                "cash_delta": 52.0,
+                "unit_price": 52.0,
+                "market_inventory_before": 10240
+              }
+            ],
+            "B": [
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 43.0,
+                "unit_price": 43.0,
+                "market_inventory_before": 9688
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 43.0,
+                "unit_price": 43.0,
+                "market_inventory_before": 9689
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 43.0,
+                "unit_price": 43.0,
+                "market_inventory_before": 9690
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 43.0,
+                "unit_price": 43.0,
+                "market_inventory_before": 9691
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "WHEAT",
+                "cash_delta": 43.0,
+                "unit_price": 43.0,
+                "market_inventory_before": 9692
+              },
+              {
+                "player": 1,
+                "op": "SELL",
+                "item": "FERTILIZER",
+                "cash_delta": 52.0,
+                "unit_price": 52.0,
+                "market_inventory_before": 10241
+              }
+            ]
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9859,
+                "EGG": 9977,
+                "FERTILIZER": 10241,
+                "MELON": 10061,
+                "MILK": 10076,
+                "STRAWBERRY": 9953,
+                "TOMATO": 9873,
+                "WHEAT": 9703,
+                "WOOL": 9495
+              },
+              "prices": {
+                "CARROT": 46,
+                "EGG": 51,
+                "FERTILIZER": 52,
+                "MELON": 213,
+                "MILK": 1,
+                "STRAWBERRY": 178,
+                "TOMATO": 75,
+                "WHEAT": 42,
+                "WOOL": 253
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9866,
+                "EGG": 9977,
+                "FERTILIZER": 10242,
+                "MELON": 10061,
+                "MILK": 10076,
+                "STRAWBERRY": 9946,
+                "TOMATO": 9866,
+                "WHEAT": 9693,
+                "WOOL": 9495
+              },
+              "prices": {
+                "CARROT": 45,
+                "EGG": 51,
+                "FERTILIZER": 52,
+                "MELON": 213,
+                "MILK": 1,
+                "STRAWBERRY": 182,
+                "TOMATO": 76,
+                "WHEAT": 43,
+                "WOOL": 253
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 10694.0,
+            "B": 10252.0
+          },
+          "OPPONENT_CASH_AFTER": {
+            "A": 51745.0,
+            "B": 51797.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7357,
+      "seat": 0,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": -567.0,
+      "decision_timestamp": "D19h20",
+      "first_physical_difference": "D19h21",
+      "first_milk_sell_difference": "D20h0",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "current_B": {
+          "price": 3.0,
+          "inventory": 10075
+        },
+        "history_A": [
+          {
+            "timestamp": "D19h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h16",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h17",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h18",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h19",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D19h14",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h15",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h16",
+            "price": 1.0,
+            "inventory": 10076
+          },
+          {
+            "timestamp": "D19h17",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h18",
+            "price": 3.0,
+            "inventory": 10075
+          },
+          {
+            "timestamp": "D19h19",
+            "price": 3.0,
+            "inventory": 10075
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D19h22",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "SELF_NON_MILK_CARRY": {
+            "A": {
+              "WHEAT": 12
+            },
+            "B": {
+              "WHEAT": 14
+            }
+          },
+          "PUBLIC_MARKET_BEFORE": {
+            "A": {
+              "inventory": {
+                "CARROT": 9824,
+                "EGG": 9848,
+                "FERTILIZER": 10207,
+                "MELON": 10052,
+                "MILK": 10076,
+                "STRAWBERRY": 9847,
+                "TOMATO": 9980,
+                "WHEAT": 9697,
+                "WOOL": 9888
+              },
+              "prices": {
+                "CARROT": 49,
+                "EGG": 59,
+                "FERTILIZER": 59,
+                "MELON": 223,
+                "MILK": 1,
+                "STRAWBERRY": 224,
+                "TOMATO": 62,
+                "WHEAT": 42,
+                "WOOL": 241
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9824,
+                "EGG": 9848,
+                "FERTILIZER": 10207,
+                "MELON": 10052,
+                "MILK": 10076,
+                "STRAWBERRY": 9847,
+                "TOMATO": 9980,
+                "WHEAT": 9695,
+                "WOOL": 9888
+              },
+              "prices": {
+                "CARROT": 49,
+                "EGG": 59,
+                "FERTILIZER": 59,
+                "MELON": 223,
+                "MILK": 1,
+                "STRAWBERRY": 224,
+                "TOMATO": 62,
+                "WHEAT": 42,
+                "WOOL": 241
+              }
+            }
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9824,
+                "EGG": 9848,
+                "FERTILIZER": 10208,
+                "MELON": 10052,
+                "MILK": 10076,
+                "STRAWBERRY": 9847,
+                "TOMATO": 9980,
+                "WHEAT": 9697,
+                "WOOL": 9888
+              },
+              "prices": {
+                "CARROT": 49,
+                "EGG": 59,
+                "FERTILIZER": 58,
+                "MELON": 223,
+                "MILK": 1,
+                "STRAWBERRY": 224,
+                "TOMATO": 62,
+                "WHEAT": 42,
+                "WOOL": 241
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9824,
+                "EGG": 9848,
+                "FERTILIZER": 10208,
+                "MELON": 10052,
+                "MILK": 10076,
+                "STRAWBERRY": 9847,
+                "TOMATO": 9980,
+                "WHEAT": 9695,
+                "WOOL": 9888
+              },
+              "prices": {
+                "CARROT": 49,
+                "EGG": 59,
+                "FERTILIZER": 58,
+                "MELON": 223,
+                "MILK": 1,
+                "STRAWBERRY": 224,
+                "TOMATO": 62,
+                "WHEAT": 42,
+                "WOOL": 241
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 8107.0,
+            "B": 7611.0
+          },
+          "OPPONENT_CASH_AFTER": {
+            "A": 37889.0,
+            "B": 37891.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 7358,
+      "status": "NO_COMPACT_PHYSICAL_PRECURSOR",
+      "delta_terminal_self_B_minus_A": 3215.0,
+      "first_milk_sell_difference": "D22h0"
+    },
+    {
+      "seed": 7359,
+      "status": "NOT_MATCHED_CURRENT_AND_HISTORY",
+      "delta_terminal_self_B_minus_A": -2441.0,
+      "decision_timestamp": "D21h17",
+      "first_physical_difference": "D21h18",
+      "first_milk_sell_difference": "D21h22",
+      "match": {
+        "current_equal": false,
+        "history_equal": false,
+        "current_A": {
+          "price": 135.0,
+          "inventory": 10012
+        },
+        "current_B": {
+          "price": 124.0,
+          "inventory": 10017
+        },
+        "history_A": [
+          {
+            "timestamp": "D21h11",
+            "price": 122.0,
+            "inventory": 10018
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 122.0,
+            "inventory": 10018
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 129.0,
+            "inventory": 10015
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 129.0,
+            "inventory": 10015
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 129.0,
+            "inventory": 10015
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 129.0,
+            "inventory": 10015
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D21h11",
+            "price": 116.0,
+            "inventory": 10021
+          },
+          {
+            "timestamp": "D21h12",
+            "price": 116.0,
+            "inventory": 10021
+          },
+          {
+            "timestamp": "D21h13",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D21h14",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D21h15",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D21h16",
+            "price": 120.0,
+            "inventory": 10019
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7360,
+      "seat": 1,
+      "status": "OBSERVED",
+      "delta_terminal_self_B_minus_A": -845.0,
+      "decision_timestamp": "D23h17",
+      "first_physical_difference": "D23h18",
+      "first_milk_sell_difference": "D23h22",
+      "current_and_history_match": {
+        "current_equal": true,
+        "history_equal": true,
+        "current_A": {
+          "price": 133.0,
+          "inventory": 10013
+        },
+        "current_B": {
+          "price": 133.0,
+          "inventory": 10013
+        },
+        "history_A": [
+          {
+            "timestamp": "D23h11",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h12",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h13",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h14",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h15",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h16",
+            "price": 126.0,
+            "inventory": 10016
+          }
+        ],
+        "history_B": [
+          {
+            "timestamp": "D23h11",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h12",
+            "price": 120.0,
+            "inventory": 10019
+          },
+          {
+            "timestamp": "D23h13",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h14",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h15",
+            "price": 126.0,
+            "inventory": 10016
+          },
+          {
+            "timestamp": "D23h16",
+            "price": 126.0,
+            "inventory": 10016
+          }
+        ]
+      },
+      "first_downstream_world_difference": {
+        "timestamp": "D23h19",
+        "turns_after_first_physical_difference": 1,
+        "categories": {
+          "SELF_NON_MILK_CARRY": {
+            "A": {
+              "STRAWBERRY": 1,
+              "WHEAT": 12
+            },
+            "B": {
+              "FERTILIZER": 1,
+              "STRAWBERRY": 1,
+              "WHEAT": 11
+            }
+          },
+          "PUBLIC_MARKET_BEFORE": {
+            "A": {
+              "inventory": {
+                "CARROT": 9976,
+                "EGG": 9692,
+                "FERTILIZER": 10265,
+                "MELON": 10066,
+                "MILK": 10016,
+                "STRAWBERRY": 9757,
+                "TOMATO": 9905,
+                "WHEAT": 9415,
+                "WOOL": 10059
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 69,
+                "FERTILIZER": 47,
+                "MELON": 206,
+                "MILK": 126,
+                "STRAWBERRY": 251,
+                "TOMATO": 71,
+                "WHEAT": 49,
+                "WOOL": 1
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9976,
+                "EGG": 9692,
+                "FERTILIZER": 10264,
+                "MELON": 10066,
+                "MILK": 10016,
+                "STRAWBERRY": 9757,
+                "TOMATO": 9905,
+                "WHEAT": 9415,
+                "WOOL": 10059
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 69,
+                "FERTILIZER": 47,
+                "MELON": 206,
+                "MILK": 126,
+                "STRAWBERRY": 251,
+                "TOMATO": 71,
+                "WHEAT": 49,
+                "WOOL": 1
+              }
+            }
+          },
+          "MARKET_EXECUTION": {
+            "A": [
+              {
+                "player": 0,
+                "op": "BUY_PRODUCT",
+                "item": "WHEAT",
+                "cash_delta": -49.0,
+                "unit_price": 49.0,
+                "market_inventory_before": 9415
+              },
+              {
+                "player": 0,
+                "op": "BUY_PRODUCT",
+                "item": "WHEAT",
+                "cash_delta": -49.0,
+                "unit_price": 49.0,
+                "market_inventory_before": 9414
+              }
+            ],
+            "B": [
+              {
+                "player": 0,
+                "op": "BUY_PRODUCT",
+                "item": "WHEAT",
+                "cash_delta": -49.0,
+                "unit_price": 49.0,
+                "market_inventory_before": 9415
+              },
+              {
+                "player": 1,
+                "op": "BUY_PRODUCT",
+                "item": "WHEAT",
+                "cash_delta": -49.0,
+                "unit_price": 49.0,
+                "market_inventory_before": 9414
+              },
+              {
+                "player": 0,
+                "op": "BUY_PRODUCT",
+                "item": "WHEAT",
+                "cash_delta": -49.0,
+                "unit_price": 49.0,
+                "market_inventory_before": 9413
+              }
+            ]
+          },
+          "PUBLIC_MARKET_AFTER": {
+            "A": {
+              "inventory": {
+                "CARROT": 9976,
+                "EGG": 9692,
+                "FERTILIZER": 10265,
+                "MELON": 10066,
+                "MILK": 10016,
+                "STRAWBERRY": 9757,
+                "TOMATO": 9905,
+                "WHEAT": 9413,
+                "WOOL": 10059
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 69,
+                "FERTILIZER": 47,
+                "MELON": 206,
+                "MILK": 126,
+                "STRAWBERRY": 251,
+                "TOMATO": 71,
+                "WHEAT": 49,
+                "WOOL": 1
+              }
+            },
+            "B": {
+              "inventory": {
+                "CARROT": 9976,
+                "EGG": 9692,
+                "FERTILIZER": 10264,
+                "MELON": 10066,
+                "MILK": 10016,
+                "STRAWBERRY": 9757,
+                "TOMATO": 9905,
+                "WHEAT": 9412,
+                "WOOL": 10059
+              },
+              "prices": {
+                "CARROT": 37,
+                "EGG": 69,
+                "FERTILIZER": 47,
+                "MELON": 206,
+                "MILK": 126,
+                "STRAWBERRY": 251,
+                "TOMATO": 71,
+                "WHEAT": 49,
+                "WOOL": 1
+              }
+            }
+          },
+          "SELF_CASH_AFTER": {
+            "A": 23528.0,
+            "B": 23162.0
+          },
+          "OPPONENT_CASH_AFTER": {
+            "A": 70952.0,
+            "B": 70945.0
+          }
+        }
+      }
+    }
+  ],
+  "boundary": [
+    "Primary set requires exact-equal current MILK price/inventory and exact-equal previous-6-turn raw MILK price/inventory history.",
+    "Scan starts strictly after the already-known compact MILK physical stage divergence.",
+    "Known self MILK COW/Carry stage difference and self unit-action difference are excluded as candidate downstream events.",
+    "All difference categories at the earliest differing timestamp are retained; no category priority is imposed.",
+    "The first downstream difference is chronological evidence only, not proof that it causes later MILK Cash or terminal differences."
+  ]
+}
