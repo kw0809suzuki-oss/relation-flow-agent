@@ -1,0 +1,81 @@
+{
+  "schema": "kaggriculture.cross-view-reconvergence-playground.observation.v0",
+  "scope": "two saved strong replays",
+  "view_boundary": "compact Cross-View Difference View only; empty does not mean full hidden-state identity",
+  "episodes": [
+    {
+      "episode": "Vadim Vasilenko vs DSM",
+      "rewards": [100923.0, 103103.0],
+      "difference_runs": [
+        {"start":"D0h0","end":"D1h3","duration_turns":28,"difference_view_empty":true},
+        {"start":"D1h4","end":"D2h4","duration_turns":25,"difference_view_empty":false},
+        {"start":"D2h5","end":"D5h8","duration_turns":76,"difference_view_empty":true},
+        {"start":"D5h9","end":"D5h11","duration_turns":3,"difference_view_empty":false},
+        {"start":"D5h12","end":"D5h12","duration_turns":1,"difference_view_empty":true},
+        {"start":"D5h13","end":"D5h13","duration_turns":1,"difference_view_empty":false},
+        {"start":"D5h14","end":"D5h14","duration_turns":1,"difference_view_empty":true},
+        {"start":"D5h15","end":"D29h23","duration_turns":585,"difference_view_empty":false}
+      ],
+      "transient_divergence_1": {
+        "start":"D1h4",
+        "reconverges":"D2h5",
+        "domain_expansion": [
+          {"time":"D1h4","new":["carried"],"detail":"DSM - Vadim carried FERTILIZER +1"},
+          {"time":"D1h6","new":["shed"],"detail":"shed/carry representation changes"},
+          {"time":"D1h7","new":["cash"],"detail":"Cash difference appears"},
+          {"time":"D1h8","new":["seed"],"detail":"MELON seed difference appears"},
+          {"time":"D1h15","new":["plant","yield"],"detail":"DSM has MELON plant +1 and MELON yield +1"}
+        ],
+        "close_detail":"At D2h5 DSM requests SELL WHEAT 2 while Vadim does not; the compact Difference View becomes empty.",
+        "cross_view_observation":"A difference reached productive state (seed/plant/yield) and still fully re-converged in the compact View."
+      },
+      "pre_lock_flicker": [
+        {"start":"D5h9","end":"D5h11","domain":"WHEAT shed/carry","reconverges":"D5h12"},
+        {"start":"D5h13","end":"D5h13","domain":"WHEAT carry","reconverges":"D5h14"}
+      ],
+      "final_nonempty_run": {
+        "start":"D5h15",
+        "end":"D29h23",
+        "duration_turns":585,
+        "domain_expansion": [
+          {"time":"D5h15","new":["cash","shed","carry"]},
+          {"time":"D5h16","new":["seed"],"detail":"DSM has STRAWBERRY seed +1 in player1-minus-player0 orientation"},
+          {"time":"D7h13","new":["yield"]},
+          {"time":"D7h19","new":["plant composition"]},
+          {"time":"D9h5","new":["unplaced animal"]},
+          {"time":"D9h10","new":["animal composition"]},
+          {"time":"D20h2","new":["hands"]}
+        ],
+        "boundary":"Non-empty through terminal in this compact View only. This is not proof of irreversible causal divergence."
+      }
+    },
+    {
+      "episode": "Boey vs Vadim Vasilenko",
+      "rewards": [121281.0, 122670.0],
+      "difference_runs": [
+        {"start":"D0h0","end":"D0h0","duration_turns":1,"difference_view_empty":true},
+        {"start":"D0h1","end":"D29h23","duration_turns":719,"difference_view_empty":false}
+      ],
+      "first_nonempty":"D0h1",
+      "first_domains":["cash","hands","seed","shed","unplaced animal"],
+      "later_domain_introductions":[
+        {"time":"D0h3","new":["animal composition"]},
+        {"time":"D0h5","new":["carry"]},
+        {"time":"D0h6","new":["plant","yield"]},
+        {"time":"D6h2","new":["land"]}
+      ],
+      "boundary":"This pair does not show the re-convergence pattern seen in Vadim vs DSM."
+    }
+  ],
+  "view_candidates": [
+    "Productive difference does not imply durable residual.",
+    "A replay can show repeated divergence/re-convergence flicker before a long non-empty Difference run.",
+    "Different strong-agent pairs can have very different Difference-run geometry."
+  ],
+  "do_not_promote": [
+    "Do not call the D5h15 boundary a cause of the terminal result.",
+    "Do not infer that long non-empty Difference runs are stronger or better.",
+    "Do not treat compact View equality as full State identity.",
+    "Do not generalize the two replay geometries into agent classes yet."
+  ]
+}
